@@ -47,7 +47,13 @@ dependencies {
     
 //    modImplementation("com.github.glitchfiend:TerraBlender-forge:${rootProject.minecraft_version}-${rootProject.terrablender_version}")
 	compileOnly "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
-    
+    if (!providers.gradleProperty('minimalRuntime').map { it.toBoolean() }.getOrElse(false)) {
+    modImplementation "curse.maven:project-atmosphere-1258344:8799655"
+    modImplementation "curse.maven:gabous-libs-1367332:8774253"
+    modImplementation "curse.maven:glitchcore-955399:5787839"
+    modImplementation "curse.maven:serene-seasons-291874:8246702"
+    modImplementation "curse.maven:simple-clouds-1121215:6928978"
+    }
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive false }
 }
