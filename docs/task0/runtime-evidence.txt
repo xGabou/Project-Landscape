@@ -1,0 +1,76 @@
+STANDALONE: build/task0-smoke.log
+[10:35:39] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN AccessibilityOnboardingScreen stage=0
+[10:35:41] [Render thread/INFO] [ReTerraForged/]: TASK0 TITLE_SCREEN modDetected=true world=task0-1788618932948
+[10:35:42] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN CreateWorldScreen stage=1
+[10:35:42] [Render thread/INFO] [ReTerraForged/]: TASK0 PRESET_EXPORTED .\saves\task0-1788618932948\datapacks\task0-preset
+[10:35:56] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN LevelLoadingScreen stage=2
+[10:35:57] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN ReceivingLevelScreen stage=2
+[10:35:57] [Server thread/INFO] [ReTerraForged/]: TASK0 WORLD_LOADED reopened=false seed=8675309 packs=[vanilla, mod:forge, mod:reterraforged, mod:baseline_smoke, file/task0-preset]
+[10:35:57] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=false x=0 z=0 status=minecraft:full height=76 surface=Block{minecraft:grass_block}[snowy=false] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:birch_forest]]
+[10:35:57] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=false x=-129 z=-129 status=minecraft:full height=89 surface=Block{minecraft:grass_block}[snowy=false] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:birch_forest]]
+[10:35:57] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=false x=127 z=127 status=minecraft:full height=75 surface=Block{minecraft:grass_block}[snowy=false] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:plains]]
+[10:35:57] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=false x=128 z=128 status=minecraft:full height=74 surface=Block{minecraft:grass_block}[snowy=false] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:plains]]
+[10:35:57] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN null stage=3
+[10:35:58] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=false x=1024 z=-1024 status=minecraft:full height=69 surface=Block{minecraft:snow}[layers=1] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:snowy_taiga]]
+[10:35:58] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=false x=-2048 z=2048 status=minecraft:full height=63 surface=Block{minecraft:water}[level=0] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:warm_ocean]]
+[10:35:59] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=false x=4096 z=0 status=minecraft:full height=63 surface=Block{minecraft:water}[level=0] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:ocean]]
+[10:35:59] [Server thread/INFO] [ReTerraForged/]: TASK0 REPRESENTATIVE kind=coast x=-4032 z=-4096 terrain=coast heightBits=1048711197 riverBits=1065353216 temperatureBits=1020054732 moistureBits=-1100585370 status=minecraft:full
+[10:36:00] [Server thread/INFO] [ReTerraForged/]: TASK0 REPRESENTATIVE kind=mountain x=-2688 z=-4096 terrain=mountains_2 heightBits=1050010780 riverBits=1065353216 temperatureBits=1020054732 moistureBits=-1100585370 status=minecraft:full
+[10:36:01] [Server thread/INFO] [ReTerraForged/]: TASK0 REPRESENTATIVE kind=river x=-64 z=-4096 terrain=river heightBits=1047871036 riverBits=983173120 temperatureBits=1020054732 moistureBits=-1100585370 status=minecraft:full
+[10:36:01] [Server thread/INFO] [ReTerraForged/]: TASK0 REPRESENTATIVE kind=plateau x=3392 z=-3072 terrain=badlands-plateau heightBits=1048639209 riverBits=1015653993 temperatureBits=-1097229926 moistureBits=1059481190 status=minecraft:full
+[10:36:02] [Server thread/INFO] [ReTerraForged/]: TASK0 SAVED reopened=false
+[10:36:04] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN TitleScreen stage=4
+[10:36:06] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN LevelLoadingScreen stage=5
+[10:36:06] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN ReceivingLevelScreen stage=5
+[10:36:06] [Server thread/INFO] [ReTerraForged/]: TASK0 WORLD_LOADED reopened=true seed=8675309 packs=[vanilla, mod:forge, mod:reterraforged, mod:baseline_smoke, file/task0-preset]
+[10:36:06] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN null stage=6
+[10:36:07] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=true x=2048 z=2048 status=minecraft:full height=63 surface=Block{minecraft:water}[level=0] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:deep_lukewarm_ocean]]
+[10:36:07] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=true x=1919 z=1919 status=minecraft:full height=63 surface=Block{minecraft:water}[level=0] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:deep_lukewarm_ocean]]
+[10:36:07] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=true x=2175 z=2175 status=minecraft:full height=63 surface=Block{minecraft:water}[level=0] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:deep_lukewarm_ocean]]
+[10:36:08] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=true x=2176 z=2176 status=minecraft:full height=63 surface=Block{minecraft:water}[level=0] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:deep_lukewarm_ocean]]
+[10:36:08] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=true x=3072 z=1024 status=minecraft:full height=63 surface=Block{minecraft:water}[level=0] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:deep_lukewarm_ocean]]
+[10:36:09] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=true x=0 z=4096 status=minecraft:full height=63 surface=Block{minecraft:water}[level=0] biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:deep_cold_ocean]]
+[10:36:09] [Server thread/INFO] [ReTerraForged/]: TASK0 CHUNK reopened=true x=6144 z=2048 status=minecraft:full height=66 surface=Block{minecraft:sand} biome=Optional[ResourceKey[minecraft:worldgen/biome / minecraft:desert]]
+[10:36:10] [Server thread/INFO] [ReTerraForged/]: TASK0 SAVED reopened=true
+[10:36:11] [Render thread/INFO] [ReTerraForged/]: TASK0 SCREEN TitleScreen stage=7
+[10:36:11] [Render thread/INFO] [ReTerraForged/]: TASK0 PASS: title, preset export/load, full chunks, save, reopen, additional full chunks; world=task0-1788618932948
+BUILD SUCCESSFUL in 55s
+TERRABLENDER: build/task0-smoke-terrablender.log
+[10:33:04] [main/INFO] [ReTerraForged/]: Enabling Terrablender compat
+[10:33:14] [Render thread/INFO] [ReTerraForged/]: TASK0 TITLE_SCREEN modDetected=true world=task0-1788618789154
+[10:33:33] [Server thread/INFO] [ReTerraForged/]: TASK0 WORLD_LOADED reopened=false seed=8675309 packs=[vanilla, mod:terrablender, mod:forge, mod:reterraforged, mod:baseline_smoke, file/task0-preset]
+[10:33:40] [Server thread/INFO] [ReTerraForged/]: TASK0 WORLD_LOADED reopened=true seed=8675309 packs=[vanilla, mod:terrablender, mod:forge, mod:reterraforged, mod:baseline_smoke, file/task0-preset]
+[10:33:46] [Render thread/INFO] [ReTerraForged/]: TASK0 PASS: title, preset export/load, full chunks, save, reopen, additional full chunks; world=task0-1788618789154
+BUILD SUCCESSFUL in 47s
+INJECTED WITH TERRABLENDER
+[05sept.2026 10:33:04.630] [main/DEBUG] [mixin/]: Mixing MixinUtil from reterraforged-common.mixins.json into net.minecraft.Util
+[05sept.2026 10:33:05.636] [pool-4-thread-1/DEBUG] [mixin/]: Mixing MixinChunkStatus from reterraforged-forge.mixins.json into net.minecraft.world.level.chunk.ChunkStatus
+[05sept.2026 10:33:08.150] [pool-4-thread-1/DEBUG] [mixin/]: Mixing MixinStructure from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.structure.Structure
+[05sept.2026 10:33:08.347] [pool-4-thread-1/DEBUG] [mixin/]: Mixing MixinBiomeGenerationSettings from reterraforged-common.mixins.json into net.minecraft.world.level.biome.BiomeGenerationSettings
+[05sept.2026 10:33:08.374] [pool-4-thread-1/DEBUG] [mixin/]: Mixing terrablender.MixinParameterList from reterraforged-common.mixins.json into net.minecraft.world.level.biome.Climate$ParameterList
+[05sept.2026 10:33:08.683] [Render thread/DEBUG] [mixin/]: Mixing ScreenInvoker from reterraforged-common.mixins.json into net.minecraft.client.gui.screens.Screen
+[05sept.2026 10:33:09.188] [modloading-worker-0/DEBUG] [mixin/]: Mixing MixinMinecraftServer from reterraforged-common.mixins.json into net.minecraft.server.MinecraftServer
+[05sept.2026 10:33:09.195] [modloading-worker-0/DEBUG] [mixin/]: Mixing MixinMinecraftServer from reterraforged-forge.mixins.json into net.minecraft.server.MinecraftServer
+[05sept.2026 10:33:15.276] [Render thread/DEBUG] [mixin/]: Mixing MixinTagsProvider from reterraforged-forge.mixins.json into net.minecraft.data.tags.TagsProvider
+[05sept.2026 10:33:16.062] [Server thread/DEBUG] [mixin/]: Mixing MixinBiomeGenerationSettingsPlainsBuilder from reterraforged-forge.mixins.json into net.minecraft.world.level.biome.BiomeGenerationSettings$PlainBuilder
+[05sept.2026 10:33:16.206] [Server thread/DEBUG] [mixin/]: Mixing MixinChunkMap from reterraforged-common.mixins.json into net.minecraft.server.level.ChunkMap
+[05sept.2026 10:33:16.223] [Server thread/DEBUG] [mixin/]: Mixing MixinRandomState from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.RandomState
+[05sept.2026 10:33:16.239] [Server thread/DEBUG] [mixin/]: Mixing MixinSurfaceSystem from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.SurfaceSystem
+[05sept.2026 10:33:16.282] [Server thread/DEBUG] [mixin/]: Mixing terrablender.MixinClimateSampler from reterraforged-common.mixins.json into net.minecraft.world.level.biome.Climate$Sampler
+[05sept.2026 10:33:16.452] [Worker-Main-23/DEBUG] [mixin/]: Mixing terrablender.MixinTargetPoint from reterraforged-common.mixins.json into net.minecraft.world.level.biome.Climate$TargetPoint
+[05sept.2026 10:33:17.164] [Worker-Main-18/DEBUG] [mixin/]: Mixing MixinNoiseChunk from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.NoiseChunk
+[05sept.2026 10:33:17.173] [Worker-Main-18/DEBUG] [mixin/]: Mixing terrablender.MixinNoiseChunk from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.NoiseChunk
+INJECTED STANDALONE
+[05sept.2026 10:35:24.102] [main/DEBUG] [mixin/]: Mixing MixinUtil from reterraforged-common.mixins.json into net.minecraft.Util
+[05sept.2026 10:35:26.267] [pool-4-thread-1/DEBUG] [mixin/]: Mixing MixinChunkStatus from reterraforged-forge.mixins.json into net.minecraft.world.level.chunk.ChunkStatus
+[05sept.2026 10:35:31.553] [pool-4-thread-1/DEBUG] [mixin/]: Mixing MixinStructure from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.structure.Structure
+[05sept.2026 10:35:31.827] [pool-4-thread-1/DEBUG] [mixin/]: Mixing MixinBiomeGenerationSettings from reterraforged-common.mixins.json into net.minecraft.world.level.biome.BiomeGenerationSettings
+[05sept.2026 10:35:32.412] [Render thread/DEBUG] [mixin/]: Mixing ScreenInvoker from reterraforged-common.mixins.json into net.minecraft.client.gui.screens.Screen
+[05sept.2026 10:35:33.217] [modloading-worker-0/DEBUG] [mixin/]: Mixing MixinMinecraftServer from reterraforged-common.mixins.json into net.minecraft.server.MinecraftServer
+[05sept.2026 10:35:33.237] [modloading-worker-0/DEBUG] [mixin/]: Mixing MixinMinecraftServer from reterraforged-forge.mixins.json into net.minecraft.server.MinecraftServer
+[05sept.2026 10:35:42.816] [Render thread/DEBUG] [mixin/]: Mixing MixinTagsProvider from reterraforged-forge.mixins.json into net.minecraft.data.tags.TagsProvider
+[05sept.2026 10:35:43.629] [Server thread/DEBUG] [mixin/]: Mixing MixinBiomeGenerationSettingsPlainsBuilder from reterraforged-forge.mixins.json into net.minecraft.world.level.biome.BiomeGenerationSettings$PlainBuilder
+[05sept.2026 10:35:43.706] [Server thread/DEBUG] [mixin/]: Mixing MixinChunkMap from reterraforged-common.mixins.json into net.minecraft.server.level.ChunkMap
+[05sept.2026 10:35:43.741] [Server thread/DEBUG] [mixin/]: Mixing MixinRandomState from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.RandomState
+[05sept.2026 10:35:43.758] [Server thread/DEBUG] [mixin/]: Mixing MixinSurfaceSystem from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.SurfaceSystem
+[05sept.2026 10:35:45.046] [Worker-Main-11/DEBUG] [mixin/]: Mixing MixinNoiseChunk from reterraforged-common.mixins.json into net.minecraft.world.level.levelgen.NoiseChunk
