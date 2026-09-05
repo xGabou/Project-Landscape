@@ -1,6 +1,6 @@
 modLoader="javafml"
-loaderVersion="[30,)"
-license="MIT"
+loaderVersion="[47,)"
+license="ARR"
 
 [[mods]]
 modId="reterraforged"

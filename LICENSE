@@ -1,3 +1,19 @@
+# License
+
+Copyright (c) 2026 Gabriel / Project Atmosphere Addon
+
+Except where otherwise noted, all original source code, assets, documentation, and other materials in this repository are **All Rights Reserved**.
+
+No permission is granted to copy, modify, redistribute, sublicense, or otherwise use the original portions of this project except as explicitly authorized by the copyright holder.
+
+## ReTerraForged-derived code
+
+Portions of this project are based on, adapted from, or derived from ReTerraForged.
+
+Those portions remain subject to the MIT License reproduced below and retain the rights granted by that license.
+
+---
+
 MIT License
 
 Copyright (c) 2023 ReTerraForged
@@ -19,3 +35,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Files or substantial portions derived from ReTerraForged should be identified in their source headers or in a `THIRD_PARTY_NOTICES.md` file.
+
+The MIT License applies only to the ReTerraForged-derived portions and does not grant rights to unrelated original code in this project.
