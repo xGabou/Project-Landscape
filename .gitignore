@@ -112,6 +112,8 @@ gradle-app.setting
 **/build/
 
 **/src/generated/
+!src/generated/
+src/generated/resources/.cache/
 **/src/main/generated/
 
 # Common working directory

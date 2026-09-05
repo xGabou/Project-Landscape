@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+modId="baseline_smoke"
+version="1"
+displayName="Task 0 development smoke harness"
+[[dependencies.baseline_smoke]]
+modId="reterraforged"
+mandatory=true
+versionRange="[0.0.6,)"
+ordering="AFTER"
+side="CLIENT"

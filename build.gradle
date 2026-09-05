@@ -1,54 +1,107 @@
 plugins {
-    id "architectury-plugin" version "3.4-SNAPSHOT"
-    id "dev.architectury.loom" version "1.9.+" apply false
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+    id 'net.minecraftforge.gradle' version '6.0.42'
+    id 'org.spongepowered.mixin' version '0.7.38'
 }
 
-architectury {
-    minecraft = rootProject.minecraft_version
+group = maven_group
+version = mod_version
+base { archivesName = "${mod_id}-forge-${minecraft_version}" }
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+    withSourcesJar()
 }
 
-subprojects {
-    apply plugin: "dev.architectury.loom"
-
-    loom {
-        silentMojangMappingsLicense()
+// Development-only smoke harness. Never packaged in the production mod jar.
+sourceSets {
+    smoke {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
     }
-
-    dependencies {
-        minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
-        mappings loom.officialMojangMappings()
-    }
 }
 
-allprojects {
-    apply plugin: "java"
-    apply plugin: "architectury-plugin"
-    apply plugin: "maven-publish"
-
-    archivesBaseName = rootProject.archives_base_name
-    version = rootProject.mod_version
-    group = rootProject.maven_group
-
-    repositories {
-        maven { url "https://maven.shedaniel.me" }
-        exclusiveContent {
-            forRepository {
-                maven {
-                    url "https://cursemaven.com"
-                }
-            }
-            filter {
-                includeGroup "curse.maven"
-            }
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    copyIdeResources = true
+    runs {
+        configureEach {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'info'
+            mods { reterraforged { source sourceSets.main } }
+        }
+        client { }
+        smokeClient {
+            parent runs.client
+            workingDirectory project.file('run/task0-smoke')
+            mods { baseline_smoke { source sourceSets.smoke } }
+            property 'mixin.debug.export', 'true'
+            jvmArgs '-Xmx6G'
+        }
+        server { args '--nogui' }
+        data {
+            workingDirectory project.file('run/data')
+            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'),
+                 '--existing', file('src/main/resources/')
         }
     }
+}
 
-    tasks.withType(JavaCompile) {
-        options.encoding = "UTF-8"
-        options.release = 17
+mixin {
+    add sourceSets.main, 'reterraforged-refmap.json'
+    config 'reterraforged-common.mixins.json'
+    config 'reterraforged-forge.mixins.json'
+}
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.minecraftforge.net/' }
+    maven {
+        url = 'https://cursemaven.com'
+        content { includeGroup 'curse.maven' }
     }
+}
 
-    java {
-        withSourcesJar()
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    compileOnly fg.deobf("curse.maven:terrablender-563928:${terrablender_curse_file}")
+    if (providers.gradleProperty('withTerraBlender').get().toBoolean()) {
+        runtimeOnly fg.deobf("curse.maven:terrablender-563928:${terrablender_curse_file}")
+    }
+    if (providers.gradleProperty('withDevelopmentMods').get().toBoolean()) {
+        runtimeOnly fg.deobf('curse.maven:project-atmosphere-1258344:8799655')
+        runtimeOnly fg.deobf('curse.maven:gabous-libs-1367332:8774253')
+        runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5787839')
+        runtimeOnly fg.deobf('curse.maven:serene-seasons-291874:8246702')
+        runtimeOnly fg.deobf('curse.maven:simple-clouds-1121215:6928978')
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 17
+}
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+tasks.named('jar', Jar) {
+    from('LICENSE') { into 'META-INF' }
+    manifest {
+        attributes 'MixinConfigs': 'reterraforged-common.mixins.json,reterraforged-forge.mixins.json'
+    }
+    finalizedBy 'reobfJar'
+}
+tasks.named('sourcesJar', Jar) { from('LICENSE') { into 'META-INF' } }
+
+tasks.matching { it.name == 'runSmokeClient' }.configureEach {
+    def marker = file('run/task0-smoke/task0-pass.txt')
+    doFirst { marker.delete() }
+    doLast {
+        if (!marker.isFile()) throw new GradleException('Task 0 smoke did not reach PASS; inspect run/task0-smoke/logs/latest.log')
     }
 }
