@@ -265,10 +265,21 @@ public final class ReproductionSuite {
         }
         var pool=new ThreadLocalPool<Cell>(4,Cell::new,Cell::reset);var r=pool.get();var reserved=pool.get();r.close();r.close();var a=pool.get();var b=pool.get();
         out.row("cell_resources","case","isolated fallback pool double close","subsequentBorrowAliases",a.get()==b.get());
+        r.close();
+        out.row("cell_resources","case","stale fallback close after reborrow","independentOpenBorrows",a.isOpen()&&b.isOpen()&&a.get()!=b.get());
+        a.close();b.close();reserved.close();
         ExecutorService exec=Executors.newFixedThreadPool(4);try{
             var barrier=new CyclicBarrier(4);List<Future<Cell>> futures=new ArrayList<>();
             for(int i=0;i<4;i++) futures.add(exec.submit(()->{try(var cell=Cell.getResource()){Cell value=cell.get();barrier.await();return value;}}));
             Set<Cell> set=Collections.newSetFromMap(new IdentityHashMap<>());for(var f:futures)set.add(f.get());out.row("cell_resources","case","concurrent normal resources","distinctCells",set.size());
+            futures.clear();set.clear();
+            for(int i=0;i<4;i++)futures.add(exec.submit(()->{
+                try(var outer=Cell.getResource()) {outer.get();try(var inner=Cell.getResource()) {Cell value=inner.get();barrier.await();return value;}}
+            }));
+            for(var f:futures)set.add(f.get());out.row("cell_resources","case","concurrent nested fallback","distinctCells",set.size());
+            var wrongThread=pool.get();
+            String wrongThreadError=exec.submit(()->{try{wrongThread.close();return "unexpected success";}catch(IllegalStateException expected){return Evidence.failure(expected);}}).get();
+            out.row("cell_resources","case","foreign thread release","error",wrongThreadError,"stillOpen",wrongThread.isOpen());wrongThread.close();
         }finally{exec.shutdown();}
     }
     private void missingContext(ServerLevel level) throws Exception {

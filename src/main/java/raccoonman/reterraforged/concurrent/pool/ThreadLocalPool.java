@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.concurrent.pool;
 
 import java.util.List;
@@ -36,7 +38,8 @@ public class ThreadLocalPool<T> {
         private int size;
         private Supplier<T> factory;
         private Consumer<T> cleaner;
-        private List<Resource<T>> pool;
+        private List<T> pool;
+        private final Thread owner = Thread.currentThread();
         private int index;
         
         private Pool(int size, Supplier<T> factory, Consumer<T> cleaner) {
@@ -46,23 +49,23 @@ public class ThreadLocalPool<T> {
             this.cleaner = cleaner;
             this.pool = new ObjectArrayList<>(size);
             for (int i = 0; i < size; ++i) {
-                this.pool.add(new PoolResource<>(factory.get(), this));
+                this.pool.add(factory.get());
             }
         }
         
         private Resource<T> retain() {
             if (this.index > 0) {
-                Resource<T> value = this.pool.remove(this.index);
+                T value = this.pool.remove(this.index);
                 --this.index;
-                return value;
+                return new PoolResource<>(value, this);
             }
             return new PoolResource<>(this.factory.get(), this);
         }
         
-        private void restore(Resource<T> resource) {
+        private void restore(T value) {
             if (this.index + 1 < this.size) {
-                this.cleaner.accept(resource.get());
-                this.pool.add(resource);
+                this.cleaner.accept(value);
+                this.pool.add(value);
                 ++this.index;
             }
         }
@@ -71,6 +74,7 @@ public class ThreadLocalPool<T> {
     private static class PoolResource<T> implements Resource<T> {
         private T value;
         private Pool<T> pool;
+        private boolean closed;
         
         private PoolResource(T value, Pool<T> pool) {
             this.value = value;
@@ -79,17 +83,29 @@ public class ThreadLocalPool<T> {
         
         @Override
         public T get() {
+            this.checkThread();
+            if (this.closed) throw new IllegalStateException("Cell fallback resource has been closed");
             return this.value;
         }
         
         @Override
         public boolean isOpen() {
-            return true;
+            return !this.closed;
         }
         
         @Override
         public void close() {
-            this.pool.restore(this);
+            this.checkThread();
+            if (!this.closed) {
+                this.closed = true;
+                this.pool.restore(this.value);
+            }
+        }
+
+        private void checkThread() {
+            if (Thread.currentThread() != this.pool.owner) {
+                throw new IllegalStateException("Cell fallback resource must be used and released on its borrowing thread");
+            }
         }
     }
 }

@@ -1,0 +1,108 @@
+[
+  {
+    "case": "RandomState context replacement",
+    "oldClosed": true,
+    "distinctContext": true,
+    "sameSample": true
+  },
+  {
+    "case": "capacity eviction without lazy get",
+    "firstClosed": true,
+    "readerUnchanged": true
+  },
+  {
+    "case": "identity conditional removal",
+    "wrongEntryRemoved": false,
+    "replacementPresent": true
+  },
+  {
+    "case": "explicit cache shutdown",
+    "closed": true,
+    "unregistered": true
+  },
+  {
+    "case": "closed cache rejects new work",
+    "error": "java.lang.IllegalStateException: ReTerraForged cache is closed; generation context has been disposed"
+  },
+  {
+    "case": "pending completion after shutdown",
+    "closed": true
+  },
+  {
+    "case": "failed and cancelled entry close",
+    "failedDone": true,
+    "cancelled": true
+  },
+  {
+    "case": "cancelled real tile workspaces",
+    "cancelled": 12,
+    "cells": {
+      "allocated": 12,
+      "borrowed": 15,
+      "returned": 15,
+      "live": 0,
+      "pooled": 12
+    },
+    "chunks": {
+      "allocated": 12,
+      "borrowed": 15,
+      "returned": 15,
+      "live": 0,
+      "pooled": 12
+    }
+  },
+  {
+    "case": "stale workspace close after pool reuse",
+    "unchanged": true,
+    "cells": {
+      "allocated": 12,
+      "borrowed": 17,
+      "returned": 17,
+      "live": 0,
+      "pooled": 12
+    },
+    "chunks": {
+      "allocated": 12,
+      "borrowed": 17,
+      "returned": 17,
+      "live": 0,
+      "pooled": 12
+    }
+  },
+  {
+    "case": "array handles and full pool",
+    "staleHandleSafe": true,
+    "allClosed": true,
+    "statistics": {
+      "allocated": 2,
+      "borrowed": 3,
+      "returned": 3,
+      "live": 0,
+      "pooled": 1
+    }
+  },
+  {
+    "case": "actual world unload",
+    "seed": 8675309,
+    "contexts": 3,
+    "allClosed": true,
+    "allUnregistered": true,
+    "livePooledBorrows": 0
+  },
+  {
+    "case": "actual world unload",
+    "seed": 4303642605,
+    "contexts": 3,
+    "allClosed": true,
+    "allUnregistered": true,
+    "livePooledBorrows": 0
+  },
+  {
+    "case": "actual world unload",
+    "seed": 42,
+    "contexts": 3,
+    "allClosed": true,
+    "allUnregistered": true,
+    "livePooledBorrows": 0
+  }
+]

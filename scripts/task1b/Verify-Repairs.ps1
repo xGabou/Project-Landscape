@@ -27,6 +27,15 @@ if ($ThroughFix -ge 2) {
 }
 
 # Compare valid independently generated terrain paths; never bless contaminated query values.
+if ($ThroughFix -ge 6) {
+    $resources=@(Table $Run 'cell_resources')
+    Check 'fallback double close cannot alias independent borrows' (@($resources | Where-Object {$_.case -eq 'isolated fallback pool double close' -and -not $_.subsequentBorrowAliases}).Count -eq 1)
+    Check 'stale fallback close cannot release new borrow' (@($resources | Where-Object {$_.case -eq 'stale fallback close after reborrow' -and $_.independentOpenBorrows}).Count -eq 1)
+    Check 'normal nested and exception paths remain safe' (@($resources | Where-Object {$_.depth}).Count -eq 4 -and @($resources | Where-Object {$_.depth -and (-not $_.unique -or -not $_.outerValuesPreserved -or -not $_.threadLocalClosed)}).Count -eq 0)
+    Check 'normal concurrent samples stay independent' (@($resources | Where-Object {$_.case -eq 'concurrent normal resources' -and $_.distinctCells -eq 4}).Count -eq 1)
+    Check 'concurrent nested fallback borrows stay independent' (@($resources | Where-Object {$_.case -eq 'concurrent nested fallback' -and $_.distinctCells -eq 4}).Count -eq 1)
+    Check 'foreign thread cannot release thread-local fallback' (@($resources | Where-Object {$_.case -eq 'foreign thread release' -and $_.stillOpen -and $_.error -match 'borrowing thread'}).Count -eq 1)
+}
 if ($ThroughFix -ge 3) {
     $bounds=@(Table $Run 'tile_bounds')
     Check 'independent tile axes reject all invalid coordinates' ($bounds.Count -ge 11 -and @($bounds | Where-Object {$_.axisInBounds -eq $_.absent}).Count -eq 0)

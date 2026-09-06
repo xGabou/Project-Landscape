@@ -248,3 +248,25 @@ Production changed: Cache, CacheEntry, CacheManager, LongMap, StampedBoundLongMa
 ArrayPool, TileCache, TileGenerator, RTFForge and MixinRandomState. Developer changes:
 new DisposalChecks, ReproductionSuite, ReproductionClient and Verify-Repairs.
 Evidence: `05-after`, `05-disposal/verification.json`, `logs/05-*.log`.
+
+## 06 — Fallback pool duplicate release
+
+Before (`05-after`): closing a fallback resource twice makes two subsequent borrows
+alias one Cell. Proper depths 1/2/8/64 and normal concurrent sampling already pass.
+
+The fallback pool retains values, not reusable lease wrappers. Every borrow has its
+own once-only close state, so a stale wrapper cannot return a newly borrowed value.
+Closed get fails explicitly; foreign-thread get/close fails rather than modifying
+another thread's free list. The originating thread can still release that live borrow.
+No synchronization is added: fallback ownership is thread-confined. One small wrapper
+is allocated per nested/fallback borrow. The normal Cell.LOCAL SimpleResource fast
+path, pool capacity and legacy spare-slot behavior are unchanged.
+
+Production file: ThreadLocalPool.java. Developer files: ReproductionSuite and
+Verify-Repairs, plus documentation and new evidence.
+After `06-after`: double/stale close cannot alias or release new borrows. All four
+nesting depths survive exception unwind; both fast and nested fallback concurrency
+hold four independent Cells. Foreign-thread release fails and leaves the borrow open
+for its proper owner. All 39 cumulative checks pass, with zero canonical differences.
+Build **PASS, 3s**; final full Forge run **PASS, 1m47s**. Evidence:
+`06-after`, `06-pool-release/verification.json`, `logs/06-*.log`.
