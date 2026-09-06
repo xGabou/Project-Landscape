@@ -17,6 +17,14 @@ $sequences = @($cross | Where-Object {$null -ne $_.bContaminationFields})
 Check 'cross-context sequences recompute for their owner' ($sequences.Count -ge 3 -and @($sequences | Where-Object {$_.bContaminationFields.Count -or (Different $_.a $_.aAgain).Count}).Count -eq 0)
 $same = @($cross | Where-Object {$_.sequence -like 'same seed*'})
 Check 'same seed distinct context identity is isolated' ($same.Count -eq 2 -and @($same | Where-Object {$_.bContaminationFields.Count -or $_.aToBFields.Count -eq 0}).Count -eq 0)
+if ($ThroughFix -ge 2) {
+    $mode=@($cross | Where-Object {$_.sequence -eq 'same context false-true climate'})
+    $warm=@($cross | Where-Object {$_.sequence -eq 'same context tile becomes warm'})
+    Check 'climate mode change refreshes cache' ($mode.Count -eq 1 -and $mode[0].differentFields.Count -eq 0)
+    Check 'new tile refreshes same-position cache' ($warm.Count -eq 1 -and $warm[0].staleVsRefreshed.Count -eq 0 -and $warm[0].beforeVsStale.Count -gt 0)
+    $semantics=@(Table $Run 'sampling_semantics')
+    Check 'eviction regeneration and reverse climate mode refresh' ($semantics.Count -eq 3 -and @($semantics | Where-Object {$_.differentFields.Count -or $_.coldVsEvicted.Count -or $_.warmVsRegenerated.Count}).Count -eq 0)
+}
 
 # Compare valid independently generated terrain paths; never bless contaminated query values.
 $comparisons = [Collections.Generic.List[object]]::new()

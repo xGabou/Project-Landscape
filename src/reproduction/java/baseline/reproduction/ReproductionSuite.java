@@ -181,6 +181,19 @@ public final class ReproductionSuite {
         density(warming,new Point("invalidate",4,4));var refreshed=density(warming,warmPoint);
         out.row("cross_world_cache","sequence","same context tile becomes warm","beforeTile",before,"afterTileSamePosition",stale,"afterPositionChange",refreshed,
             "beforeVsStale",Evidence.different(before,stale),"staleVsRefreshed",Evidence.different(stale,refreshed));
+        evict(warming,warmPoint); var afterEviction=density(warming,warmPoint);
+        warming.cache.provide(0,0); var regenerated=density(warming,warmPoint);
+        out.row("sampling_semantics","case","cold-warm-evicted-regenerated","cold",before,"warm",stale,
+            "evicted",afterEviction,"regenerated",regenerated,"coldVsEvicted",Evidence.different(before,afterEviction),
+            "warmVsRegenerated",Evidence.different(refreshed,regenerated));
+        var reverse=Evidence.cell(cache.getAndUpdate(a.lookup,p.x,p.z,false),a.generator.getHeightmap());
+        out.row("sampling_semantics","case","climate true-false","differentFields",Evidence.different(noClimate,reverse));
+        var sourceCache=new CellSampler.Cache2d(); var source=context(seeds[0]);
+        var oldTile=source.cache.provide(0,0); sourceCache.getAndUpdate(source.lookup,3,3,true);
+        evict(source,warmPoint); var replacement=source.cache.provide(0,0);
+        var replay=Evidence.cell(sourceCache.getAndUpdate(source.lookup,3,3,true),source.generator.getHeightmap());
+        out.row("sampling_semantics","case","replacement without intervening direct query",
+            "newTileIdentity",oldTile!=replacement,"differentFields",Evidence.different(lookup(source,warmPoint,true,true),replay));
     }
     private void noiseOwnership(ServerLevel level) {
         Noise n=Noises.simplex(0,100,3); Noise cache=Noises.cache2d(n);

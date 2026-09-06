@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen.densityfunction.tile;
 
 import java.util.Arrays;
@@ -9,6 +11,11 @@ import raccoonman.reterraforged.world.worldgen.cell.CellLookup;
 import raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Filterable;
 
 public class Tile implements SafeCloseable, Filterable, CellLookup {
+	private final Object samplingIdentity = new Object();
+
+	public Object samplingIdentity() {
+		return this.samplingIdentity;
+	}
 	private int x, z;
 	private int chunkX, chunkZ;
 	private int size;

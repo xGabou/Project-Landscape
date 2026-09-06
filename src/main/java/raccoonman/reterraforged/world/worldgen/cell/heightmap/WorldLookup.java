@@ -60,9 +60,7 @@ public class WorldLookup {
 	}
 
 	private boolean computeCached(Cell cell, int x, int z) {
-		int rx = this.cache.chunkToTile(x >> 4);
-		int rz = this.cache.chunkToTile(z >> 4);
-		Tile tile = this.cache.provideIfPresent(rx, rz);
+		Tile tile = this.cachedTile(x, z);
 		if (tile != null) {
 			Cell c = tile.lookup(x, z);
 			if (c != null) {
@@ -73,11 +71,23 @@ public class WorldLookup {
 		return false;
 	}
 
+	/** Current opportunistic source; may join an already queued tile, never queues one. */
+	public Tile cachedTile(int x, int z) {
+		int rx = this.cache.chunkToTile(x >> 4);
+		int rz = this.cache.chunkToTile(z >> 4);
+		return this.cache.provideIfPresent(rx, rz);
+	}
+
 	private boolean compute(Cell cell, int x, int z, boolean applyClimate) {
+		this.sampleDirectApproximate(cell, x, z, applyClimate);
+		return false;
+	}
+
+	/** Legacy unfiltered point path, including its point-only coast adjustment. */
+	public void sampleDirectApproximate(Cell cell, int x, int z, boolean applyClimate) {
 		this.heightmap.apply(cell, x, z, applyClimate);
 		if (cell.terrain == TerrainType.COAST && cell.height > this.waterLevel && cell.height <= this.beachLevel) {
 			cell.terrain = TerrainType.BEACH;
 		}
-		return false;
 	}
 }

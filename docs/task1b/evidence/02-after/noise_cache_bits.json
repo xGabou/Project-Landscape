@@ -1,0 +1,626 @@
+[
+  {
+    "key": "reterraforged:climate/biome_edge_shape",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:climate/biome_edge_shape",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:climate/biome_edge_shape",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:strata/depth",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:strata/depth",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:strata/depth",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:strata/selector",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:strata/selector",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:strata/selector",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/desert",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/desert",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/desert",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/forest",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/forest",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/forest",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/down",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/down",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/down",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/fade_down",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/fade_down",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/fade_down",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/fade_up",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/fade_up",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/fade_up",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/mask",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/mask",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/mask",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/shape",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/shape",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/shape",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/top",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/top",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/top",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/up",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/up",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/deep/up",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/down",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/down",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/down",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/fade_down",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/fade_down",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/fade_down",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/fade_up",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/fade_up",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/fade_up",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/mask",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/mask",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/mask",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/shape",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/shape",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/shape",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 1,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/top",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/top",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/top",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/up",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/up",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/iceberg/shallow/up",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 2,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/strata/depth",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/strata/depth",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/strata/depth",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/strata/selector",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/strata/selector",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/strata/selector",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/swamp",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/swamp",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:surface/swamp",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/erosion",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": false,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/erosion",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": false,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/erosion",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": false,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/ground",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/ground",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/ground",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/mountain_chain_alpha",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/mountain_chain_alpha",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/mountain_chain_alpha",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": true,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "x": 17,
+    "z": 29,
+    "cacheNodes": 0,
+    "finite": false,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "x": 100,
+    "z": 200,
+    "cacheNodes": 0,
+    "finite": false,
+    "differentBits": false
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "x": -2048,
+    "z": 3072,
+    "cacheNodes": 0,
+    "finite": false,
+    "differentBits": false
+  }
+]

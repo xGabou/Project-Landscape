@@ -51,3 +51,44 @@ or locks. No trustworthy isolated performance delta measured (Task 1C remains la
 Sampling mode and tile-warmth staleness deliberately remain for Fix 2.
 Evidence: `00-inherited`, `00-inherited-verification`, `01-after`,
 `01-cross-world-cache/verification.json`, `logs/01-{build,runtime}.log`.
+
+## 02 — Sampling contract/source identity
+
+Before-fix evidence is the immediately preceding full Forge run, `01-after`:
+climate false-to-true disagrees with fresh true mode in 11 cell/hint fields, and
+same-position direct-to-warm queries keep stale HEIGHT/GRADIENT/HEIGHT_EROSION/SEDIMENT.
+
+Actual contracts (no invented mode enum):
+
+| Caller | Contract |
+| --- | --- |
+| CellSampler.compute | Opportunistic cached tile, else direct with climate=true |
+| CacheChunk fallback (outside chunk / single column) | Opportunistic cached tile, else direct with climate=false |
+| CacheChunk in-chunk | Explicit chunk reader, not scratch Cache2d |
+| WorldLookup load=true | Force filtered tile, not scratch Cache2d |
+| Preview generateZoomed(false) | Deliberately skips optional filters, not scratch Cache2d |
+
+Scratch identity now includes `(lookup token, X/Z, sampleClimate, tile token or null)`.
+`cachedTile` observes the source once, retaining the inherited join of an already queued
+tile; direct fallback uses the newly named `sampleDirectApproximate` method. This avoids
+tagging a result with the identity of a different lookup performed after a publication
+race. New tile objects have unique lightweight tokens; eviction and replacement cannot
+reuse them. Cached tiles still contain climate regardless of the direct-mode flag.
+Neither mode is declared canonical over the other and no filter/climate math is changed.
+
+Cost: one cache-map read/join check per scratch evaluation instead of only on position
+changes. No extra tile generation or per-query allocation. The high-volume in-chunk
+reader path remains unchanged. This intentionally trades a small fallback lookup cost
+for source correctness; timing with observers is not an isolated benchmark result.
+Tile read-versus-release safety remains Fix 4, not a claim made by this identity fix.
+
+After `02-after`: both climate directions, cold/warm/evicted/regenerated sequence,
+and replacement without an intervening direct query pass. Zero stale fields; the
+six context-isolation sequences still pass. All 994 comparator rows (340 sample pairs,
+510 seed pairs, 120 tile hashes, 24 real chunk samples/biomes) are unchanged.
+The direct/filtered discrepancy remains **340/340**, with the same field counts as
+Task 1A: gradient 340, height 319, heightErosion 176, sediment 96, terrain 6.
+Build **PASS, 15s**; real Forge three-world run **PASS, 1m37s**.
+Evidence: `02-after`, `02-sampling-mode-cache/verification.json`, `logs/02-*.log`.
+Changed production: WorldLookup, CellSampler and Tile. Test changes: ReproductionSuite,
+Verify-Repairs; documentation/evidence updated separately from Task 1A.

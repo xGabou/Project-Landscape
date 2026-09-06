@@ -47,17 +47,31 @@ public record CellSampler(Supplier<WorldLookup> deferredLookup, Field field) imp
 
 	public static class Cache2d {
 		private Object lastIdentity;
+		private Object lastTileIdentity;
+		private boolean lastSampleClimate;
 		private long lastPos = Long.MAX_VALUE;
 		private Cell cell = new Cell();
 		
 		public Cell getAndUpdate(WorldLookup lookup, int blockX, int blockZ, boolean sampleClimate) {
 			long packedPos = PosUtil.pack(blockX, blockZ);
-			if(this.lastIdentity != lookup.samplingIdentity() || this.lastPos != packedPos) {
+			// Observe the source once. A second lookup could select a different contract
+			// during publication/eviction. Null denotes the legacy direct approximation.
+			Tile tile = lookup.cachedTile(blockX, blockZ);
+			Object tileIdentity = tile == null ? null : tile.samplingIdentity();
+			if(this.lastIdentity != lookup.samplingIdentity() || this.lastPos != packedPos
+					|| this.lastTileIdentity != tileIdentity || this.lastSampleClimate != sampleClimate) {
 				// Invalidate before sampling: a failed lookup must not leave a valid old key.
 				this.lastIdentity = null;
-				lookup.applyCell(this.cell.reset(), blockX, blockZ, false, sampleClimate);
+				this.cell.reset();
+				if (tile == null) {
+					lookup.sampleDirectApproximate(this.cell, blockX, blockZ, sampleClimate);
+				} else {
+					this.cell.copyFrom(tile.lookup(blockX, blockZ));
+				}
 				this.lastPos = packedPos;
 				this.lastIdentity = lookup.samplingIdentity();
+				this.lastTileIdentity = tileIdentity;
+				this.lastSampleClimate = sampleClimate;
 			}
 			return this.cell;
 		}
