@@ -1,0 +1,146 @@
+[
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "center_first",
+    "elapsedNs": 1220726700,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "reverse",
+    "elapsedNs": 940094800,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "north_first",
+    "elapsedNs": 934601400,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "south_first",
+    "elapsedNs": 921696000,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "east_first",
+    "elapsedNs": 895200200,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "west_first",
+    "elapsedNs": 874049400,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "clockwise",
+    "elapsedNs": 902448700,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "parallel",
+    "elapsedNs": 633528200,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "center_first",
+    "elapsedNs": 942348500,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "reverse",
+    "elapsedNs": 909012200,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "north_first",
+    "elapsedNs": 907495900,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "south_first",
+    "elapsedNs": 897889800,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "east_first",
+    "elapsedNs": 835196900,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "west_first",
+    "elapsedNs": 892892200,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "clockwise",
+    "elapsedNs": 836652700,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "parallel",
+    "elapsedNs": 593847700,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "center_first",
+    "elapsedNs": 833560800,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "reverse",
+    "elapsedNs": 857031300,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "north_first",
+    "elapsedNs": 850500200,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "south_first",
+    "elapsedNs": 824727300,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "east_first",
+    "elapsedNs": 855375700,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "west_first",
+    "elapsedNs": 848873800,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "clockwise",
+    "elapsedNs": 849008700,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  },
+  {
+    "operation": "five_filtered_tiles_with_hashing",
+    "order": "parallel",
+    "elapsedNs": 585556200,
+    "note": "measurement plumbing only; includes canonicalization/hashing, not benchmark baseline"
+  }
+]

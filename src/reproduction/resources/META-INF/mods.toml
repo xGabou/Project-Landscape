@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+modId="task1a_reproduction"
+version="1"
+displayName="Task 1A inherited behavior reproductions (development only)"
+[[dependencies.task1a_reproduction]]
+modId="reterraforged"
+mandatory=true
+versionRange="[0.0.6,)"
+ordering="AFTER"
+side="CLIENT"

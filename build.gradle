@@ -16,6 +16,10 @@ java {
 
 // Development-only smoke harness. Never packaged in the production mod jar.
 sourceSets {
+    reproduction {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
     smoke {
         compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
         runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
@@ -33,6 +37,23 @@ minecraft {
             mods { reterraforged { source sourceSets.main } }
         }
         client { }
+        reproductionClient {
+            parent runs.client
+            workingDirectory project.file('run/task1a')
+            mods { task1a_reproduction { source sourceSets.reproduction } }
+            jvmArgs '-Xmx6G'
+            if (providers.gradleProperty('reproProcessors').isPresent()) {
+                jvmArgs "-XX:ActiveProcessorCount=${providers.gradleProperty('reproProcessors').get()}"
+            }
+            property 'task1a.profile', providers.gradleProperty('reproProfile').getOrElse('full')
+            property 'task1a.seeds', providers.gradleProperty('reproSeeds').getOrElse('8675309,4303642605,42,-987654321')
+            property 'task1a.repeats', providers.gradleProperty('reproRepeats').getOrElse('3')
+            property 'task1a.points', providers.gradleProperty('reproPoints').getOrElse('')
+            if (providers.gradleProperty('reproPreset').isPresent()) {
+                property 'task1a.presetFile', file(providers.gradleProperty('reproPreset').get()).absolutePath
+            }
+            args '--mixin.config', 'task1a-observers.mixins.json'
+        }
         smokeClient {
             parent runs.client
             workingDirectory project.file('run/task0-smoke')
@@ -103,5 +124,13 @@ tasks.matching { it.name == 'runSmokeClient' }.configureEach {
     doFirst { marker.delete() }
     doLast {
         if (!marker.isFile()) throw new GradleException('Task 0 smoke did not reach PASS; inspect run/task0-smoke/logs/latest.log')
+    }
+}
+
+tasks.matching { it.name == 'runReproductionClient' }.configureEach {
+    def marker = file('run/task1a/task1a-pass.txt')
+    doFirst { marker.delete() }
+    doLast {
+        if (!marker.isFile()) throw new GradleException('Task 1A reproduction harness did not finish; inspect run/task1a/logs/latest.log')
     }
 }

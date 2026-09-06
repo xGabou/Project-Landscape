@@ -1,0 +1,21 @@
+[
+  {
+    "baseline": "e9dd8841a1b4a95e4bb2b23e084d40abbc1bea70",
+    "java": "17.0.17+10",
+    "processors": 2,
+    "worldgenWorkers": 2,
+    "repeats": 3,
+    "seedSuite": [
+      8675309,
+      4303642605,
+      42,
+      -987654321
+    ],
+    "dimension": "minecraft:overworld",
+    "preset": "loaded Legacy Default",
+    "tileSize": 3,
+    "tileBorderChunks": 1,
+    "batchCount": 6,
+    "fieldEncoding": "float raw IEEE754 signed int bits; stable terrain/enum names; no golden values"
+  }
+]
