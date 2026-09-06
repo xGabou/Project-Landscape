@@ -92,3 +92,37 @@ Build **PASS, 15s**; real Forge three-world run **PASS, 1m37s**.
 Evidence: `02-after`, `02-sampling-mode-cache/verification.json`, `logs/02-*.log`.
 Changed production: WorldLookup, CellSampler and Tile. Test changes: ReproductionSuite,
 Verify-Repairs; documentation/evidence updated separately from Task 1A.
+
+## 03 — Independent raw tile bounds
+
+Before: `03-before` reruns the inherited accessor after Fix 2, additionally recording
+every cell of the 160x160 generated tile in `tile_bounds_halo.json.gz`. The original
+five aliases remain: (-1,1)->(159,0), (160,0)->(0,1), (160,1)->(0,2),
+(320,0)->(0,2), (-160,1)->(0,0). These are raw array coordinates, not world coordinates.
+
+The accessor now checks each axis against `[0,total)` **before** multiplication/addition.
+It retains the existing `Cell.empty()` miss contract, with no clamping or new exception.
+All original alias fixtures are permanent correctness checks in Verify-Repairs.
+
+Caller audit: Filter.iterate supplies valid centers. Smoothing bounds centers by its
+radius and visits only in-range neighbors. NoiseCorrection visits full in-range quart
+groups. Steepness deliberately probes -1..2 neighbors beyond the outer halo and skips
+absent neighbors. BeachDetect probes +/-8 and already substitutes its center when a
+neighbor is absent. Those last two are actual consumers of the broken horizontal
+wrapping; neither requires it. Erosion accesses its separately bounded backing array.
+Other raw-access sites are in the older cell/filter family, not active tile generation.
+No consumer is changed, and no halo size/filter order/erosion parameter is changed.
+
+Only production change: Tile.getCellRaw's bounds check. Tests add the full-halo capture,
+Compare-TileHalo and the permanent no-alias assertion.
+
+After `03-after`: **all 11 original bounds cases pass**, including the five former
+aliases now returning absent. All 994 canonical comparator rows remain unchanged.
+Full tile comparison: **480/25,600 cells change, zero in the 128x128 core**. Exact raw
+and world coordinates, before/after fields and values are in
+`03-tile-bounds/halo_comparison.json`; these are corrected invalid-neighbor effects,
+not a new terrain golden. The original filter formulas remain untouched.
+Build **PASS, 5s**; Forge full run **PASS, 1m48s**. Before run **PASS, 1m44s**.
+No canonical chunk terrain or stored quart-biome difference observed. This does not
+claim all custom zero-halo geometries are equivalent: geometry is legacy semantics.
+The added cost is four integer comparisons before indexing, with no allocation/locking.

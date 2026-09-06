@@ -109,10 +109,11 @@ public class Tile implements SafeCloseable, Filterable, CellLookup {
 
 	@Override
 	public Cell getCellRaw(int x, int z) {
-		int index = Tile.this.blockSize.indexOf(x, z);
-        if (index < 0 || index >= Tile.this.blockSize.arraySize()) {
+		int total = this.blockSize.total();
+        if (x < 0 || x >= total || z < 0 || z >= total) {
             return Cell.empty();
         }
+		int index = this.blockSize.indexOf(x, z);
         return Tile.this.cache[index];
 	}
 

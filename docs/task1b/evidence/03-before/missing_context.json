@@ -1,0 +1,79 @@
+[
+  {
+    "case": "makeUncached public lookup",
+    "error": "java.lang.NullPointerException: Cannot invoke \"raccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache.chunkToTile(int)\" because \"this.cache\" is null"
+  },
+  {
+    "case": "RandomState before initialize",
+    "error": "java.lang.NullPointerException: Cannot read field \"lookup\" because \"this.this$0.generatorContext\" is null"
+  },
+  {
+    "case": "same state after initialize",
+    "contextPresent": true
+  },
+  {
+    "case": "initialized with empty preset registry",
+    "error": "java.lang.NullPointerException: Cannot read field \"lookup\" because \"this.this$0.generatorContext\" is null"
+  },
+  {
+    "case": "actual structure rule with missing context",
+    "result": true
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:overworld",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:the_nether",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:the_end",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "cache closed then query",
+    "result": {
+      "beachNoise": 1008597623,
+      "biome": "TEMPERATE_FOREST",
+      "biomeRegionEdge": 1063821509,
+      "biomeRegionId": 1046718256,
+      "continentEdge": 1061047480,
+      "continentId": 1039098952,
+      "continentX": 2298,
+      "continentZ": -6656,
+      "erosion": 1048576000,
+      "erosionMask": false,
+      "gradient": 1036286896,
+      "height": 1050063153,
+      "heightErosion": -1159812181,
+      "hint_biome_region": 1046718256,
+      "hint_continent": 1065353215,
+      "hint_erosion": 1048576000,
+      "hint_gradient": 1036286896,
+      "hint_height": 1050063153,
+      "hint_height_erosion": -1159812181,
+      "hint_moisture": 1045220557,
+      "hint_sediment": 883024345,
+      "hint_temperature": 1020054732,
+      "hint_weirdness": -1105059293,
+      "macroBiomeId": 1001140224,
+      "moisture": 1045220557,
+      "regionMoisture": 1056968611,
+      "regionTemperature": 1057958980,
+      "riverMask": 1065353216,
+      "sediment": 883024345,
+      "temperature": 1020054732,
+      "terrain": "flats-hills",
+      "terrainRegionEdge": 1038371260,
+      "terrainRegionId": 1060471870,
+      "weirdness": -1105059293
+    }
+  }
+]

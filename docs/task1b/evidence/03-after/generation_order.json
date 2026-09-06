@@ -1,0 +1,1322 @@
+[
+  {
+    "repeat": 0,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "center_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "center_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "reverse",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "reverse",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "north_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "north_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "south_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "south_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "east_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "east_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "west_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "west_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "clockwise",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "clockwise",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "parallel",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 0,
+    "order": "parallel",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "center_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "center_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "reverse",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "reverse",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "north_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "north_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "south_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "south_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "east_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "east_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "west_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "west_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "clockwise",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "clockwise",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "parallel",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 1,
+    "order": "parallel",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "center_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "center_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "center_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "reverse",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "reverse",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "reverse",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "north_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "north_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "north_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "south_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "south_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "south_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "east_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "east_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "east_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "west_first",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "west_first",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "west_first",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "clockwise",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "clockwise",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "clockwise",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "parallel",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "parallel",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+    }
+  },
+  {
+    "repeat": 2,
+    "order": "parallel",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 24,
+    "digest": {
+      "cells": 16384,
+      "hash": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+    }
+  }
+]

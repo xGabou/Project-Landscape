@@ -27,6 +27,10 @@ if ($ThroughFix -ge 2) {
 }
 
 # Compare valid independently generated terrain paths; never bless contaminated query values.
+if ($ThroughFix -ge 3) {
+    $bounds=@(Table $Run 'tile_bounds')
+    Check 'independent tile axes reject all invalid coordinates' ($bounds.Count -ge 11 -and @($bounds | Where-Object {$_.axisInBounds -eq $_.absent}).Count -eq 0)
+}
 $comparisons = [Collections.Generic.List[object]]::new()
 foreach ($name in @('cached_uncached','seed_collisions','generation_order','generated_chunks')) {
     $before = Table $Comparator $name; $after = Table $Run $name

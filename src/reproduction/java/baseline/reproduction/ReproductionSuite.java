@@ -220,6 +220,9 @@ public final class ReproductionSuite {
             int index=tile.getBlockSize().indexOf(q[0],q[1]);Cell got=tile.getCellRaw(q[0],q[1]);
             out.row("tile_bounds","x",q[0],"z",q[1],"total",total,"index",index,"axisInBounds",q[0]>=0&&q[0]<total&&q[1]>=0&&q[1]<total,"absent",got.isAbsent(),"aliasedX",got.isAbsent()?null:Math.floorMod(index,total),"aliasedZ",got.isAbsent()?null:index/total);
         }
+        List<Object> haloSnapshot=new ArrayList<>();
+        for(int z=0;z<total;z++)for(int x=0;x<total;x++)haloSnapshot.add(Evidence.cell(tile.getCellRaw(x,z),null));
+        out.snapshot("tile_bounds_halo.json.gz",haloSnapshot);
         Cell ref=tile.lookup(0,0);Tile.Chunk reader=tile.getChunkReader(0,0);var before=Evidence.cell(ref,null);
         Object entry=((Cache<?>)Evidence.field(c.cache,"cache")).get(PosUtil.pack(0,0));
         for(int i=0;i<63;i++)c.cache.drop(0,0);
