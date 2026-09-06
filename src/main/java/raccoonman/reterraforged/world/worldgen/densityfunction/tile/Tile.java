@@ -3,8 +3,10 @@
 package raccoonman.reterraforged.world.worldgen.densityfunction.tile;
 
 import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import raccoonman.reterraforged.concurrent.Resource;
+import raccoonman.reterraforged.concurrent.SimpleResource;
 import raccoonman.reterraforged.concurrent.cache.SafeCloseable;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.CellLookup;
@@ -12,6 +14,8 @@ import raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Filte
 
 public class Tile implements SafeCloseable, Filterable, CellLookup {
 	private final Object samplingIdentity = new Object();
+	private final AtomicBoolean closed = new AtomicBoolean();
+	private boolean pooled = true;
 
 	public Object samplingIdentity() {
 		return this.samplingIdentity;
@@ -119,12 +123,38 @@ public class Tile implements SafeCloseable, Filterable, CellLookup {
 
 	@Override
 	public void close() {
+        if (!this.closed.compareAndSet(false, true)) {
+            return;
+        }
+        // Published storage belongs to readers, not to the generation pool.
+        if (this.pooled) {
         for (Cell cell : this.cache) {
         	cell.reset();
         }
         Arrays.fill(this.chunks, null);
+        }
 		this.cacheResource.close();
 		this.chunkResource.close();
+	}
+
+	/** Detach finalized output before publication. Callers must treat it as read-only. */
+	public Tile snapshot() {
+		Cell[] cells = new Cell[this.cache.length];
+		for (int i = 0; i < cells.length; i++) {
+			cells[i] = new Cell();
+			cells[i].copyFrom(this.cache[i]);
+		}
+		Tile copy = new Tile(this.x, this.z, this.size, this.border, this.blockSize, this.chunkSize,
+				new SimpleResource<>(cells, ignored -> {}),
+				new SimpleResource<>(new Chunk[this.chunks.length], ignored -> {}));
+		copy.pooled = false;
+		// Preserve the populated writer layout; each new Chunk must reference the copy.
+		for (int z = 0; z < this.chunkSize.total(); z++) {
+			for (int x = 0; x < this.chunkSize.total(); x++) {
+				copy.getChunkWriter(x, z);
+			}
+		}
+		return copy;
 	}
 	
     private Chunk computeChunk(int index, int chunkX, int chunkZ) {

@@ -31,6 +31,15 @@ if ($ThroughFix -ge 3) {
     $bounds=@(Table $Run 'tile_bounds')
     Check 'independent tile axes reject all invalid coordinates' ($bounds.Count -ge 11 -and @($bounds | Where-Object {$_.axisInBounds -eq $_.absent}).Count -eq 0)
 }
+if ($ThroughFix -ge 4) {
+    $life=@(Table $Run 'lifecycle')
+    $reuse=@($life | Where-Object {$_.case -eq '64 drops then pool reuse'})
+    Check 'published storage is not recycled' ($reuse.Count -eq 1 -and -not $reuse[0].sameArray -and (Different $reuse[0].before $reuse[0].afterReuse).Count -eq 0 -and (Different $reuse[0].before $reuse[0].afterRelease).Count -eq 0)
+    Check 'retained worker sees original sample' (@($life | Where-Object {$_.case -eq 'worker retained reader across release' -and -not $_.changed}).Count -eq 1)
+    Check 'stale close cannot corrupt replacement' (@($life | Where-Object {$_.case -eq 'stale Tile.close after pool reborrow' -and -not $_.replacementChanged}).Count -eq 1)
+    Check 'published close is repeatable and retains readers' (@($life | Where-Object {$_.case -eq 'repeated published close' -and $_.unchanged}).Count -eq 1)
+    Check 'detached publication releases workspace pool storage' (@($life | Where-Object {$_.case -eq 'detached publication cost' -and $_.unchanged -and $_.workspacePoolItems -gt 0}).Count -eq 1)
+}
 $comparisons = [Collections.Generic.List[object]]::new()
 foreach ($name in @('cached_uncached','seed_collisions','generation_order','generated_chunks')) {
     $before = Table $Comparator $name; $after = Table $Run $name

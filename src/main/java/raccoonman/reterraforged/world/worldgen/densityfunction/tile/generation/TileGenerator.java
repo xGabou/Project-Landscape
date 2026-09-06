@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen.densityfunction.tile.generation;
 
 import java.util.concurrent.CompletableFuture;
@@ -81,7 +83,7 @@ public class TileGenerator {
 	    }
 		return CompletableFuture.allOf(futures).thenApply((v) -> {
 			this.filters.apply(tile, true);
-			return tile;
+			return this.publish(tile);
 		});
 	}
 	
@@ -121,10 +123,18 @@ public class TileGenerator {
 	    }
 		return CompletableFuture.allOf(futures).thenApply((v) -> {
 			this.filters.apply(tile, applyOptionalFilters);
-			return tile;
+			return this.publish(tile);
 		});
 	}
     
+	private Tile publish(Tile workspace) {
+		try {
+			return workspace.snapshot();
+		} finally {
+			workspace.close();
+		}
+	}
+
 	private Tile makeTile(int x, int z) {
 		return new Tile(x, z, this.tileChunks, this.tileBorder, this.tileSizeBlocks, this.tileSizeChunks, this.cellPool.get(this.tileSizeBlocks.arraySize()), this.chunkPool.get(this.tileSizeChunks.arraySize()));
 	}

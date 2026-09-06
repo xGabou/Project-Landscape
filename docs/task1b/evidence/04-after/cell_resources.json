@@ -1,0 +1,34 @@
+[
+  {
+    "depth": 1,
+    "unique": true,
+    "outerValuesPreserved": true,
+    "threadLocalClosed": true
+  },
+  {
+    "depth": 2,
+    "unique": true,
+    "outerValuesPreserved": true,
+    "threadLocalClosed": true
+  },
+  {
+    "depth": 8,
+    "unique": true,
+    "outerValuesPreserved": true,
+    "threadLocalClosed": true
+  },
+  {
+    "depth": 64,
+    "unique": true,
+    "outerValuesPreserved": true,
+    "threadLocalClosed": true
+  },
+  {
+    "case": "isolated fallback pool double close",
+    "subsequentBorrowAliases": true
+  },
+  {
+    "case": "concurrent normal resources",
+    "distinctCells": 4
+  }
+]

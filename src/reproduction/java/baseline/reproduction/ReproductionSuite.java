@@ -236,6 +236,15 @@ public final class ReproductionSuite {
         var replacementBefore=Evidence.cell(replacement.lookup(256,0),null);tile.close();
         out.row("lifecycle","case","stale Tile.close after pool reborrow","replacementChanged",!replacementBefore.equals(Evidence.cell(replacement.lookup(256,0),null)));
         replacement.close();
+        replacement.close();
+        out.row("lifecycle","case","repeated published close","unchanged",replacementBefore.equals(Evidence.cell(replacement.lookup(256,0),null)));
+        // Observe publication cost separately from terrain generation; not a final benchmark.
+        var timingTile=c.generator.generate(3,0).join(); long copyAllocated=allocated(), copyStart=System.nanoTime();
+        var detached=timingTile.snapshot(); long copyNs=System.nanoTime()-copyStart, copyBytes=delta(copyAllocated);
+        var detachedBefore=tileDigest(detached); timingTile.close();
+        out.row("lifecycle","case","detached publication cost","cells",25600,"elapsedNs",copyNs,"callerAllocatedBytes",copyBytes,
+            "unchanged",detachedBefore.equals(tileDigest(detached)),"workspacePoolItems",((List<?>)Evidence.field(Evidence.field(c.generator,"cellPool"),"pool")).size());
+        detached.close();
         var expiry=context(seeds[0]);var retained=expiry.cache.provide(0,0);Cache<?> cache=(Cache<?>)Evidence.field(expiry.cache,"cache");
         Object e=cache.get(0);Evidence.set(e,"timestamp",0L);cache.poll();
         out.row("lifecycle","case","TTL poll forced timestamp only","removed",expiry.cache.provideIfPresent(0,0)==null,"resourceStillOpen",((Resource<?>)Evidence.field(retained,"cacheResource")).isOpen(),"poolItems",((List<?>)Evidence.field(Evidence.field(expiry.generator,"cellPool"),"pool")).size());

@@ -126,3 +126,63 @@ Build **PASS, 5s**; Forge full run **PASS, 1m48s**. Before run **PASS, 1m44s**.
 No canonical chunk terrain or stored quart-biome difference observed. This does not
 claim all custom zero-halo geometries are equivalent: geometry is legacy semantics.
 The added cost is four integer comparisons before indexing, with no allocation/locking.
+
+## 04 — Published tile lifetime (design before implementation)
+
+Before, reproduced again in `03-after`:
+
+```text
+TileCache -> CacheEntry/future -> Entry -> Tile -> pooled Cell[] / Chunk[]
+                                         ^        |
+                               readers retain     +-> drop 64 -> reset/return pool
+                                         |                           |
+                                         +-> observe replacement <---+
+stale Tile.close -> resets replacement; expiry/failure have separate disposal gaps
+```
+
+The current interfaces publish raw mutable Cells and uncloseable chunk readers, and
+Minecraft NoiseChunk has no matching RTF reader-release hook. Adding only a refcount
+to Tile would not account for those readers. Changing all consumers into mandatory
+leases would expand this fix and still leave raw Cell references untracked.
+
+Chosen boundary: **detach storage once after filtering, before future publication**.
+Only the generation workspace is pooled. Published Tiles/Cells/chunk readers own
+non-recycled storage and remain readable while referenced, including after eviction.
+Published close relinquishes logical cache ownership, never resets or recycles their
+contents. Workspace close is guarded once per Tile, independent of a reusable pool
+wrapper. This uses the requested detached-snapshot approach, not a new geography API.
+
+```text
+generator -> pooled workspace -> batches -> filters -> detached Tile snapshot
+                   |                                      |
+                   +-> close once -> pool                  +-> cache/future/readers
+                                                                    |
+                                                         drop/expiry/unload
+                                                                    |
+                                             last ordinary reference dies -> GC
+```
+
+Tradeoff: one Cell copy per published tile cell plus detached arrays/chunk objects.
+Pooling still serves terrain/erosion workspaces; no per-density-call allocation or
+reader synchronization is added. This cost must be measured, not described as free.
+Mutation by consumers remains unsupported; existing Cell fields are not being redesigned.
+Failure/cancel/expiry/global-cache disposal gaps stay separately scoped to Fix 5.
+
+After `04-after`: retained Cell, chunk reader, lazy entry, and retained worker continue
+to observe their original sample after 64 drops and a replacement allocation. Published
+arrays are distinct. Stale close and repeated close leave the replacement unchanged.
+Successful generation has already returned the workspace arrays before publication;
+readers no longer keep the generation pool borrowed. All 994 canonical comparisons pass.
+
+Measured snapshot-only copy: **474,700 ns and 2,975,000 caller allocation bytes for
+25,600 cells** (one observation, not a benchmark). Mean five-tile workload including
+hashing: 747,376,958 ns before versus 740,422,121 ns after across the 24 order/repeat
+workloads; noise/GC/hash costs prevent interpreting this as a speedup. The allocation
+increase is real and is recorded for Task 1C; no catastrophic slowdown observed here.
+Build **PASS, 5s**; Forge three-world run **PASS, 1m38s**.
+
+Changed production: Tile and TileGenerator only. Development: ReproductionSuite,
+Verify-Repairs, this document and `04-after`, `04-tile-lifetime/verification.json`,
+`logs/04-*.log`. Filter failure still bypasses workspace return; TTL still does not
+logically close its snapshot, and Cache.close still only cancels polling. Those are
+explicitly unclaimed until Fix 5, where expiry/shutdown/failure tests are extended.
