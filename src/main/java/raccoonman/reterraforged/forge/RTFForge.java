@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.forge;
 
 import net.minecraft.data.DataGenerator;
@@ -29,6 +31,15 @@ public class RTFForge {
     	modBus.addListener(RTFForge::gatherData);
 
 		RegistryUtil.register(modBus);
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS.addListener(RTFForge::unloadLevel);
+    }
+
+    private static void unloadLevel(net.minecraftforge.event.level.LevelEvent.Unload event) {
+        if (event.getLevel() instanceof net.minecraft.server.level.ServerLevel level) {
+            var state = (raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState();
+            var context = state.generatorContext();
+            if (context != null && context.cache != null) context.cache.close();
+        }
     }
     
     private static void gatherData(GatherDataEvent event) {

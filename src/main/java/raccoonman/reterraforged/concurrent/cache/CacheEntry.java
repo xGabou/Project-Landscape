@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.concurrent.cache;
 
 import java.util.concurrent.ForkJoinTask;
@@ -8,6 +10,7 @@ import raccoonman.reterraforged.concurrent.task.LazyCallable;
 public class CacheEntry<T> extends LazyCallable<T> implements ExpiringEntry {
 	private volatile long timestamp;
 	private Future<T> task;
+	private final java.util.concurrent.atomic.AtomicBoolean closed = new java.util.concurrent.atomic.AtomicBoolean();
 
 	public CacheEntry(Future<T> task) {
 		this.task = task;
@@ -32,11 +35,27 @@ public class CacheEntry<T> extends LazyCallable<T> implements ExpiringEntry {
 
 	@Override
 	public void close() {
-		if (this.value instanceof SafeCloseable value) {
+		if (!this.closed.compareAndSet(false, true)) return;
+		// A queued future need not have been read through LazyCallable yet.
+		if (this.task instanceof java.util.concurrent.CompletableFuture<T> future) {
+			future.thenAccept(this::dispose);
+		} else {
+			Runnable release = () -> {
+				try { this.dispose(this.task.get()); }
+				catch (java.util.concurrent.CancellationException | java.util.concurrent.ExecutionException ignored) { }
+				catch (InterruptedException interrupted) { Thread.currentThread().interrupt(); }
+			};
+			if (this.task.isDone()) release.run();
+			else java.util.concurrent.CompletableFuture.runAsync(release);
+		}
+	}
+
+	private void dispose(T completed) {
+		if (completed instanceof SafeCloseable value) {
 			value.close();
 			return;
 		}
-		if (this.value instanceof AutoCloseable value) {
+		if (completed instanceof AutoCloseable value) {
 			try {
 				value.close();
 			} catch (Exception e) {

@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.concurrent.pool;
 
 import java.util.ArrayList;
@@ -12,6 +14,7 @@ public class ArrayPool<T> {
 	private IntFunction<T[]> constructor;
 	private List<Item<T>> pool;
 	private Object lock;
+	private long allocated, borrowed, returned;
 
 	public ArrayPool(int size, IntFunction<T[]> constructor) {
 		this.lock = new Object();
@@ -25,21 +28,34 @@ public class ArrayPool<T> {
 			if (this.pool.size() > 0) {
 				Item<T> resource = this.pool.remove(this.pool.size() - 1);
 				if (resource.get().length >= arraySize) {
-					return resource.retain();
+					this.borrowed++;
+					// A resource handle belongs to one borrow, never to a subsequent owner.
+					return new Item<>(resource.value, this);
 				}
 			}
 		}
-		return new Item<>(this.constructor.apply(arraySize), this);
+		Item<T> item = new Item<>(this.constructor.apply(arraySize), this);
+		synchronized (this.lock) { this.allocated++; this.borrowed++; }
+		return item;
 	}
 
 	private boolean restore(Item<T> item) {
 		synchronized (this.lock) {
+			this.returned++;
 			if (this.pool.size() < this.capacity) {
 				this.pool.add(item);
 				return true;
 			}
 		}
 		return false;
+	}
+
+	public record Statistics(long allocated, long borrowed, long returned, long live, int pooled) {}
+
+	public Statistics statistics() {
+		synchronized (this.lock) {
+			return new Statistics(this.allocated, this.borrowed, this.returned, this.borrowed - this.returned, this.pool.size());
+		}
 	}
 
 	public static <T> ArrayPool<T> of(int size, IntFunction<T[]> constructor) {
@@ -67,22 +83,18 @@ public class ArrayPool<T> {
 		}
 
 		@Override
-		public boolean isOpen() {
+		public synchronized boolean isOpen() {
 			return !this.released;
 		}
 
 		@Override
-		public void close() {
+		public synchronized void close() {
 			if (!this.released) {
 				this.released = true;
-				this.released = this.pool.restore(this);
+				this.pool.restore(this);
 			}
 		}
 
-		private Item<T> retain() {
-			this.released = false;
-			return this;
-		}
 	}
 
 	private static class ArrayConstructor<T> implements IntFunction<T[]> {

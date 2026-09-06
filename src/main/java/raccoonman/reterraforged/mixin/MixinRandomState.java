@@ -1,4 +1,6 @@
-package raccoonman.reterraforged.mixin; 
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
+package raccoonman.reterraforged.mixin;
 
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Final;
@@ -77,7 +79,7 @@ class MixinRandomState {
 				}
 				if(function instanceof CellSampler.Marker marker) {
 					MixinRandomState.this.hasContext |= true;
-					return new CellSampler(Suppliers.memoize(() -> MixinRandomState.this.generatorContext.lookup), marker.field());
+					return new CellSampler(() -> MixinRandomState.this.generatorContext.lookup, marker.field());
 				}
 				return visitor.apply(function);
 			}
@@ -112,7 +114,9 @@ class MixinRandomState {
 				PerformanceConfig config = PerformanceConfig.read(PerformanceConfig.DEFAULT_FILE_PATH)
 					.resultOrPartial(RTFCommon.LOGGER::error)
 					.orElseGet(PerformanceConfig::makeDefault);
-				this.generatorContext = GeneratorContext.makeCached(this.preset, noises, (int) this.seed, config.tileSize(), config.batchCount(), ThreadPools.availableProcessors() > 4);
+				GeneratorContext replacement = GeneratorContext.makeCached(this.preset, noises, (int) this.seed, config.tileSize(), config.batchCount(), ThreadPools.availableProcessors() > 4);
+				if (this.generatorContext != null && this.generatorContext.cache != null) this.generatorContext.cache.close();
+				this.generatorContext = replacement;
 			}
 		}, () -> {
 			if(this.hasContext) {

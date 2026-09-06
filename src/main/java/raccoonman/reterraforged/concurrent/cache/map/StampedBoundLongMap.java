@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.concurrent.cache.map;
 
 import java.util.function.LongFunction;
@@ -12,8 +14,14 @@ public class StampedBoundLongMap<T> implements LongMap<T> {
 	private int capacity;
 	private StampedLock lock;
 	private Long2ObjectLinkedOpenHashMap<T> map;
+	private final Consumer<T> disposer;
 
 	public StampedBoundLongMap(int size) {
+		this(size, ignored -> {});
+	}
+
+	public StampedBoundLongMap(int size, Consumer<T> disposer) {
+		this.disposer = disposer;
 		this.capacity = size;
 		this.lock = new StampedLock();
 		this.map = new Long2ObjectLinkedOpenHashMap<>(size);
@@ -31,12 +39,7 @@ public class StampedBoundLongMap<T> implements LongMap<T> {
 
 	@Override
 	public void clear() {
-		long stamp = this.lock.writeLock();
-		try {
-			this.map.clear();
-		} finally {
-			this.lock.unlockWrite(stamp);
-		}
+		this.removeIf(value -> true);
 	}
 
 	@Override
@@ -65,6 +68,7 @@ public class StampedBoundLongMap<T> implements LongMap<T> {
 
 	@Override
 	public int removeIf(Predicate<T> predicate) {
+		java.util.List<T> removed = new java.util.ArrayList<>();
 		long stamp = this.lock.writeLock();
 		try {
 			int startSize = this.map.size();
@@ -72,13 +76,27 @@ public class StampedBoundLongMap<T> implements LongMap<T> {
 			while (iterator.hasNext()) {
 				Long2ObjectMap.Entry<T> entry = (Long2ObjectMap.Entry<T>) iterator.next();
 				if (predicate.test((T) entry.getValue())) {
+					removed.add(entry.getValue());
 					iterator.remove();
 				}
 			}
 			return startSize - this.map.size();
 		} finally {
 			this.lock.unlockWrite(stamp);
+			removed.forEach(this.disposer);
 		}
+	}
+
+	@Override
+	public boolean remove(long key, T expected, Consumer<T> consumer) {
+		long stamp = this.lock.writeLock();
+		boolean removed;
+		try {
+			removed = this.map.get(key) == expected;
+			if (removed) this.map.remove(key);
+		} finally { this.lock.unlockWrite(stamp); }
+		if (removed) consumer.accept(expected);
+		return removed;
 	}
 
 	@Override
@@ -113,13 +131,17 @@ public class StampedBoundLongMap<T> implements LongMap<T> {
 			this.lock.unlockRead(readStamp);
 		}
 		long writeStamp = this.lock.writeLock();
+		T evicted = null;
 		try {
+			T existing = this.map.get(key);
+			if (existing != null) return existing;
 			if (this.map.size() >= this.capacity) {
-				this.map.removeFirst();
+				evicted = this.map.removeFirst();
 			}
 			return this.map.computeIfAbsent(key, func);
 		} finally {
 			this.lock.unlockWrite(writeStamp);
+			if (evicted != null) this.disposer.accept(evicted);
 		}
 	}
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "case": "makeUncached public lookup",
+    "error": "java.lang.NullPointerException: Cannot invoke \"raccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache.chunkToTile(int)\" because \"this.cache\" is null"
+  },
+  {
+    "case": "RandomState before initialize",
+    "error": "java.lang.NullPointerException: Cannot read field \"lookup\" because \"this.this$0.generatorContext\" is null"
+  },
+  {
+    "case": "same state after initialize",
+    "contextPresent": true
+  },
+  {
+    "case": "initialized with empty preset registry",
+    "error": "java.lang.NullPointerException: Cannot read field \"lookup\" because \"this.this$0.generatorContext\" is null"
+  },
+  {
+    "case": "actual structure rule with missing context",
+    "result": true
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:overworld",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:the_end",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:the_nether",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "cache closed then query",
+    "error": "java.lang.IllegalStateException: ReTerraForged cache is closed; generation context has been disposed"
+  }
+]

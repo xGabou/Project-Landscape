@@ -76,6 +76,7 @@ public final class ReproductionSuite {
         try {
             if(full) {
                 sampling(); crossWorld(); noiseOwnership(level); boundsAndLifetime(); resources(); missingContext(level);
+                DisposalChecks.run(out,()->context(seeds[0]));
             }
             scheduling();
         } finally {
@@ -278,6 +279,14 @@ public final class ReproductionSuite {
         try{uninitialized.sampler().sample(100,20,200);out.row("missing_context","case","RandomState before initialize","result","returned");}catch(Throwable ex){out.row("missing_context","case","RandomState before initialize","error",Evidence.failure(ex));}
         ((RTFRandomState)(Object)uninitialized).initialize(level.registryAccess());
         out.row("missing_context","case","same state after initialize","contextPresent",((RTFRandomState)(Object)uninitialized).generatorContext()!=null);
+        var ownedState=(RTFRandomState)(Object)uninitialized;
+        var priorContext=ownedState.generatorContext();
+        var firstSample=uninitialized.sampler().sample(100,20,200);
+        ownedState.initialize(level.registryAccess());
+        var nextSample=uninitialized.sampler().sample(100,20,200);
+        out.row("disposal","case","RandomState context replacement","oldClosed",priorContext.cache.isClosed(),
+            "distinctContext",priorContext!=ownedState.generatorContext(),"sameSample",firstSample.equals(nextSample));
+        ownedState.generatorContext().cache.close();
         var emptyPresets=new MappedRegistry<Preset>(RTFRegistries.PRESET,com.mojang.serialization.Lifecycle.stable()).freeze();
         List<Registry<?>> values=new ArrayList<>();level.registryAccess().registries().forEach(entry->values.add(entry.key().equals(RTFRegistries.PRESET)?emptyPresets:entry.value()));
         var missing=RandomState.create(settings,level.registryAccess().lookupOrThrow(Registries.NOISE),seeds[0]);
@@ -287,7 +296,8 @@ public final class ReproductionSuite {
         for(var rule:level.registryAccess().registryOrThrow(RTFRegistries.STRUCTURE_RULE))out.row("missing_context","case","actual structure rule with missing context","result",rule.test(missing,BlockPos.ZERO));
         for(var dimension:level.getServer().getAllLevels())out.row("missing_context","case","actual dimension","dimension",dimension.dimension().location().toString(),"presetPresent",((RTFRandomState)(Object)dimension.getChunkSource().randomState()).preset()!=null,"contextPresent",((RTFRandomState)(Object)dimension.getChunkSource().randomState()).generatorContext()!=null);
         var c=context(seeds[0]);((Cache<?>)Evidence.field(c.cache,"cache")).close();
-        out.row("missing_context","case","cache closed then query","result",lookup(c,new Point("after close",1,1),true,true));
+        try {out.row("missing_context","case","cache closed then query","result",lookup(c,new Point("after close",1,1),true,true));}
+        catch(IllegalStateException expected){out.row("missing_context","case","cache closed then query","error",Evidence.failure(expected));}
     }
     private Map<String,Object> tileDigest(Tile tile) {
         List<Object> cells=new ArrayList<>();tile.iterate((c,x,z)->cells.add(Evidence.cell(c,null)));

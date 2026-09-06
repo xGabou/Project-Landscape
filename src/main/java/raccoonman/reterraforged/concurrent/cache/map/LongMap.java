@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.concurrent.cache.map;
 
 import java.util.function.Function;
@@ -13,6 +15,10 @@ public interface LongMap<T> {
     void remove(long key);
     
     void remove(long key, Consumer<T> ifPreset);
+
+    default boolean remove(long key, T expected, Consumer<T> consumer) {
+        throw new UnsupportedOperationException("This map does not support identity-conditional removal");
+    }
     
     int removeIf(Predicate<T> predicate);
     

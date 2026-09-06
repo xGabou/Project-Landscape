@@ -40,6 +40,21 @@ if ($ThroughFix -ge 4) {
     Check 'published close is repeatable and retains readers' (@($life | Where-Object {$_.case -eq 'repeated published close' -and $_.unchanged}).Count -eq 1)
     Check 'detached publication releases workspace pool storage' (@($life | Where-Object {$_.case -eq 'detached publication cost' -and $_.unchanged -and $_.workspacePoolItems -gt 0}).Count -eq 1)
 }
+if ($ThroughFix -ge 5) {
+    $life=@(Table $Run 'lifecycle');$disposed=@(Table $Run 'disposal')
+    Check 'expiry closes the removed snapshot' (@($life | Where-Object {$_.case -eq 'TTL poll forced timestamp only' -and $_.removed -and -not $_.resourceStillOpen}).Count -eq 1)
+    Check 'filter failure returns workspace arrays' (@($life | Where-Object {$_.case -eq 'test-only forced filter failure after allocation' -and $_.returnedCellArrays -eq 1}).Count -eq 1)
+    Check 'closed test caches unregistered' (-not (Table $Run 'closed_cache_ownership')[0].globalManagerStillContainsFirstClosedCache)
+    Check 'capacity eviction disposes unread future and preserves reader' (@($disposed | Where-Object {$_.case -eq 'capacity eviction without lazy get' -and $_.firstClosed -and $_.readerUnchanged}).Count -eq 1)
+    Check 'stale entry cannot remove replacement' (@($disposed | Where-Object {$_.case -eq 'identity conditional removal' -and -not $_.wrongEntryRemoved -and $_.replacementPresent}).Count -eq 1)
+    Check 'pending future disposed on completion after close' (@($disposed | Where-Object {$_.case -eq 'pending completion after shutdown' -and $_.closed}).Count -eq 1)
+    Check 'context replacement retires old cache and refreshes sampler' (@($disposed | Where-Object {$_.case -eq 'RandomState context replacement' -and $_.oldClosed -and $_.distinctContext -and $_.sameSample}).Count -eq 1)
+    Check 'cancelled real generation drains both pools' (@($disposed | Where-Object {$_.case -eq 'cancelled real tile workspaces' -and $_.cancelled -gt 0 -and $_.cells.live -eq 0 -and $_.chunks.live -eq 0}).Count -eq 1)
+    Check 'stale workspace close cannot release replacement borrow' (@($disposed | Where-Object {$_.case -eq 'stale workspace close after pool reuse' -and $_.unchanged -and $_.cells.live -eq 0 -and $_.chunks.live -eq 0}).Count -eq 1)
+    Check 'array pool releases once even when full' (@($disposed | Where-Object {$_.case -eq 'array handles and full pool' -and $_.staleHandleSafe -and $_.allClosed -and $_.statistics.live -eq 0 -and $_.statistics.borrowed -eq 3 -and $_.statistics.returned -eq 3}).Count -eq 1)
+    $unloads=@($disposed | Where-Object {$_.case -eq 'actual world unload'})
+    Check 'real world/server shutdown unregisters caches and drains pools' ($unloads.Count -eq 3 -and @($unloads | Where-Object {-not $_.allClosed -or -not $_.allUnregistered -or $_.livePooledBorrows -ne 0}).Count -eq 0)
+}
 $comparisons = [Collections.Generic.List[object]]::new()
 foreach ($name in @('cached_uncached','seed_collisions','generation_order','generated_chunks')) {
     $before = Table $Comparator $name; $after = Table $Run $name

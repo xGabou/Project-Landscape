@@ -186,3 +186,65 @@ Verify-Repairs, this document and `04-after`, `04-tile-lifetime/verification.jso
 `logs/04-*.log`. Filter failure still bypasses workspace return; TTL still does not
 logically close its snapshot, and Cache.close still only cancels polling. Those are
 explicitly unclaimed until Fix 5, where expiry/shutdown/failure tests are extended.
+
+## 05 — Disposal and pool-return paths (verification in progress)
+
+Before (`04-after`): forced filter failure returns zero arrays, expiry removes its
+entry without logical close, Cache.close leaves its map/global registration alive.
+These are concrete missed-return/retention paths, not a claim of permanent heap leaks.
+
+The generation future now drains all accepted batches, including after partial
+submission failure or public-future cancellation, before closing its workspace.
+Both successful and exceptional paths release the workspace before publishing a
+completed result. A concurrently cancelled publication closes its detached result.
+Partial allocation closes an already borrowed cell array if chunk allocation fails.
+
+The production bounded cache's capacity/expiry/clear paths dispose entries outside
+its map lock. CacheEntry attaches disposal to its future even when never read through
+LazyCallable. TileCache.Entry implements SafeCloseable. Close is idempotent, excludes
+new insertions, clears entries, cancels/removes polling tasks, and unregisters the cache.
+Late futures dispose upon completion; no blocking join is imposed on cache maintenance.
+The unused generic Future fallback waits on an asynchronous common-pool task; actual
+tile generation uses CompletableFuture callbacks, not this fallback.
+
+Stale drop removal now compares the expected entry by reference, so it cannot remove
+a replacement under the same key. The bounded-map write-lock path rechecks presence
+before evicting capacity. Other internal LongMap implementations explicitly reject
+identity-conditional removal; the production tile cache uses StampedBoundLongMap.
+The old custom-map factory overload is not a certification of arbitrary external
+maps' disposal policies; only the production disposing bounded-map configuration is used.
+
+Array-pool handles represent individual borrows (not resettable shared wrappers).
+Close is once-only even when the pool is full. Counters under the existing pool lock
+record array allocations, borrows, returns, live borrows and retained pool items.
+ThreadLocalPool fallback behavior remains separate, pending Fix 6.
+
+Forge server-level unload closes only that level's tile cache. Actual integrated-server
+shutdown exercises the same unload events. RandomState reinitialization closes the old
+cache when replacing its context; samplers no longer memoize a disposed lookup. No global
+current-world state is introduced. Published snapshots survive these closures safely.
+Normal context shutdown rejects new cache work; descriptive missing-initialization and
+foreign-generator handling remain for Fix 7.
+
+After `05-after`: **all 33 cumulative correctness/comparator checks pass**.
+Filter failure returns its one workspace array pair. Expiry closes the snapshot.
+Capacity eviction closes an unread completed future; shutdown closes a subsequently
+completed pending future. A wrong/stale entry cannot remove the replacement.
+Twelve real tile generations cancel successfully, then both pools converge to
+**15 borrows / 15 returns / 0 live**; after the stale-workspace test each is 17/17/0.
+A capacity-one array pool closes all handles, including a rejected return, with 3/3/0.
+All three actual worlds unload all three dimension contexts: closed, unregistered,
+zero live pooled borrows. RandomState replacement retires its cache and samples the
+same expected climate through the new lookup. No old world lookup is memoized.
+
+All 994 canonical comparisons remain unchanged. Build **PASS, 3s**; final full Forge
+run **PASS, 1m45s**. One earlier exploratory full run also passed; archived evidence
+uses the final source with partial-allocation and cancelled-timer cleanup included.
+Counter/handle overhead is per tile borrow/return, not per density evaluation. No
+isolated speed claim is made. Rejected executor submission and catastrophic allocation
+failure cleanup are code-reviewed paths, not a forced shutdown/OOM of the live executor.
+
+Production changed: Cache, CacheEntry, CacheManager, LongMap, StampedBoundLongMap,
+ArrayPool, TileCache, TileGenerator, RTFForge and MixinRandomState. Developer changes:
+new DisposalChecks, ReproductionSuite, ReproductionClient and Verify-Repairs.
+Evidence: `05-after`, `05-disposal/verification.json`, `logs/05-*.log`.

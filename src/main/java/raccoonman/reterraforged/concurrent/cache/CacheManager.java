@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.concurrent.cache;
 
 import java.util.Collections;
@@ -18,7 +20,7 @@ public class CacheManager {
     }
 	
 	public static <V extends ExpiringEntry> Cache<V> createCache(int capacity, long expireTime, long pollInterval, TimeUnit unit) {
-		return createCache(capacity, expireTime, pollInterval, unit, StampedBoundLongMap::new);
+		return createCache(capacity, expireTime, pollInterval, unit, size -> new StampedBoundLongMap<>(size, ExpiringEntry::close));
 	}
 	
 	public static <V extends ExpiringEntry> Cache<V> createCache(int capacity, long expireTime, long pollInterval, TimeUnit unit, IntFunction<LongMap<V>> mapFunc) {
@@ -28,8 +30,14 @@ public class CacheManager {
 	}
 	
 	public static void clear() throws Exception {
-		for(Cache<?> cache : CACHES) {
+		List<Cache<?>> snapshot;
+		synchronized (CACHES) { snapshot = List.copyOf(CACHES); }
+		for(Cache<?> cache : snapshot) {
 			cache.close();
 		}
+	}
+
+	static void unregister(Cache<?> cache) {
+		CACHES.remove(cache);
 	}
 }

@@ -31,6 +31,7 @@ public final class ReproductionClient {
     private final String run="reproduction-"+System.currentTimeMillis();
     private int stage,worldIndex; private long start=System.nanoTime();
     private Evidence out; private CompletableFuture<Void> work;
+    private List<raccoonman.reterraforged.world.worldgen.GeneratorContext> worldContexts=List.of();
     public ReproductionClient(){MinecraftForge.EVENT_BUS.addListener(this::tick);}
     private void tick(TickEvent.ClientTickEvent event){
         if(event.phase!=TickEvent.Phase.END||stage==99)return;
@@ -75,8 +76,22 @@ public final class ReproductionClient {
                     }catch(Exception ex){throw new RuntimeException(ex);}
                 });
             }else if(stage==3&&work.isDone()){
+                worldContexts=new ArrayList<>();
+                for(var level:mc.getSingleplayerServer().getAllLevels()) {
+                    var context=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
+                    if(context!=null)worldContexts.add(context);
+                }
                 work.join();stage=4;mc.level.disconnect();mc.clearLevel();mc.setScreen(new TitleScreen());
             }else if(stage==4&&mc.getSingleplayerServer()==null){
+                boolean allClosed=true,allUnregistered=true;long live=0;
+                for(var context:worldContexts) {
+                    allClosed &= context.cache.isClosed();
+                    allUnregistered &= !((List<?>)Evidence.field(raccoonman.reterraforged.concurrent.cache.CacheManager.class,"CACHES")).contains(Evidence.field(context.cache,"cache"));
+                    DisposalChecks.awaitReturned(context);
+                    live += DisposalChecks.stats(context,"cellPool").live()+DisposalChecks.stats(context,"chunkPool").live();
+                }
+                out.row("disposal","case","actual world unload","seed",seeds[worldIndex],"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
+                worldContexts=List.of();
                 if((full||chunksOnly)&&++worldIndex<Math.min(3,seeds.length)){stage=0;}else{
                     out.row("completion","status","PASS","kind","reproduction observations, not correctness goldens","run",run);out.flush();
                     Files.writeString(mc.gameDirectory.toPath().resolve("task1a-pass.txt"),run+"\n");stage=99;RTFCommon.LOGGER.info("TASK1A PASS {}",run);mc.stop();

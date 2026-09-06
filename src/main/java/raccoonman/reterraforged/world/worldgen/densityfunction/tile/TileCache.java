@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen.densityfunction.tile;
 
 import java.util.concurrent.TimeUnit;
@@ -11,7 +13,7 @@ import raccoonman.reterraforged.concurrent.cache.CacheManager;
 import raccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator;
 import raccoonman.reterraforged.world.worldgen.util.PosUtil;
 
-public class TileCache implements TileFactory {
+public class TileCache implements TileFactory, AutoCloseable {
 	private int tileSize;
 	private boolean queue;
 	private Cache<CacheEntry<Entry>> cache;
@@ -27,6 +29,11 @@ public class TileCache implements TileFactory {
 	public TileGenerator getGenerator() {
 		return this.generator;
 	}
+
+	@Override
+	public void close() { this.cache.close(); }
+
+	public boolean isClosed() { return this.cache.isClosed(); }
 	
 	@Nullable
 	public Tile provideIfPresent(int tileX, int tileZ) {
@@ -54,11 +61,12 @@ public class TileCache implements TileFactory {
 
 	@Override
 	public void drop(int tileX, int tileZ) {
+		if (this.cache.isClosed()) return;
 		long packedTilePos = PosUtil.pack(tileX, tileZ);
 		//TODO i dont think get should be able to return null here
-		CacheEntry<Entry> entry = this.cache.get(packedTilePos);
+		CacheEntry<Entry> entry = this.cache.getIfOpen(packedTilePos);
 		if(entry != null && entry.get().drop()) {
-			this.cache.remove(packedTilePos);
+			this.cache.remove(packedTilePos, entry);
 		}
 	}
 
@@ -73,7 +81,7 @@ public class TileCache implements TileFactory {
 		});
 	}
 	
-	private class Entry {
+	private class Entry implements raccoonman.reterraforged.concurrent.cache.SafeCloseable {
 		private AtomicInteger refCount;
 		private int chunkCount;
 		private Tile tile;
@@ -86,12 +94,15 @@ public class TileCache implements TileFactory {
 		}
 		
 		public boolean drop() {
-			if(this.refCount.incrementAndGet() >= this.chunkCount) {
+			if(this.refCount.incrementAndGet() == this.chunkCount) {
 				this.tile.close();
 				return true;
 			} else {
 				return false;
 			}
 		}
+
+		@Override
+		public void close() { this.tile.close(); }
 	}
 }
