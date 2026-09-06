@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen.cell.heightmap;
 
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
@@ -7,6 +9,9 @@ import raccoonman.reterraforged.world.worldgen.densityfunction.tile.Tile;
 import raccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache;
 
 public class WorldLookup {
+	// Identity only: retaining this token cannot retain an entire world on a worker thread.
+	// A newly constructed lookup (including same-seed contexts) always gets a new token.
+	private final Object samplingIdentity = new Object();
 	private float waterLevel;
 	private float beachLevel;
 	private TileCache cache;
@@ -23,6 +28,10 @@ public class WorldLookup {
 	
 	public Heightmap getHeightmap() {
 		return this.heightmap;
+	}
+
+	public Object samplingIdentity() {
+		return this.samplingIdentity;
 	}
 
 	public boolean applyCell(Cell cell, int x, int z, boolean applyClimate) {

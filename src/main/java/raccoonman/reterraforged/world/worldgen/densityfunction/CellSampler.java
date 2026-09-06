@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen.densityfunction;
 
 import java.util.function.Supplier;
@@ -44,14 +46,18 @@ public record CellSampler(Supplier<WorldLookup> deferredLookup, Field field) imp
 	}
 
 	public static class Cache2d {
+		private Object lastIdentity;
 		private long lastPos = Long.MAX_VALUE;
 		private Cell cell = new Cell();
 		
 		public Cell getAndUpdate(WorldLookup lookup, int blockX, int blockZ, boolean sampleClimate) {
 			long packedPos = PosUtil.pack(blockX, blockZ);
-			if(this.lastPos != packedPos) {
+			if(this.lastIdentity != lookup.samplingIdentity() || this.lastPos != packedPos) {
+				// Invalidate before sampling: a failed lookup must not leave a valid old key.
+				this.lastIdentity = null;
 				lookup.applyCell(this.cell.reset(), blockX, blockZ, false, sampleClimate);
 				this.lastPos = packedPos;
+				this.lastIdentity = lookup.samplingIdentity();
 			}
 			return this.cell;
 		}

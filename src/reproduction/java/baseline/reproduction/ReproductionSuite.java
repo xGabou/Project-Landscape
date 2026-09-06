@@ -161,10 +161,15 @@ public final class ReproductionSuite {
         crossSequence("A-B-A",a,b);crossSequence("B-A-B",b,a);
         ExecutorService one=Executors.newSingleThreadExecutor();ExecutorService two=Executors.newSingleThreadExecutor();
         try {
-            one.submit(()->{crossSequence("worker1 A-B-A",a,b);}).get();
+            one.submit(()->{crossSequence("worker1 A-B-A",a,b);crossSequence("worker1 B-A-B",b,a);}).get();
             var fresh=two.submit(()->density(b,new Point("P",127,127))).get();
             out.row("cross_world_cache","sequence","fresh other worker B","values",fresh);
         }finally{one.shutdown();two.shutdown();}
+        // Same seed is not context identity. Make the distinction observable without
+        // modifying algorithms: one isolated context owns a tile, the other is cold.
+        var sameSeed=context(seeds[0]); sameSeed.cache.provide(0,0);
+        crossSequence("same seed cold-warm-cold contexts",a,sameSeed);
+        crossSequence("same seed warm-cold-warm contexts",sameSeed,a);
         var cache=new CellSampler.Cache2d();Point p=new Point("mode_key",125,-127);
         var noClimate=Evidence.cell(cache.getAndUpdate(a.lookup,p.x,p.z,false),a.generator.getHeightmap());
         var withClimate=Evidence.cell(cache.getAndUpdate(a.lookup,p.x,p.z,true),a.generator.getHeightmap());

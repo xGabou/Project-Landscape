@@ -1,0 +1,533 @@
+{
+    "throughFix":  1,
+    "run":  "01-after",
+    "comparator":  "docs/task1/evidence/full-24-a",
+    "checks":  [
+                   {
+                       "name":  "real Forge harness completed",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "cross-context sequences recompute for their owner",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "same seed distinct context identity is isolated",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "cached_uncached fixture count preserved",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "cached_uncached canonical comparator unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "seed_collisions fixture count preserved",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "seed_collisions canonical comparator unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "generation_order fixture count preserved",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "generation_order canonical comparator unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "generated_chunks fixture count preserved",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "generated_chunks canonical comparator unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "same warm path repeats",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "eviction and regeneration retain each path semantics",
+                       "pass":  true
+                   }
+               ],
+    "comparisons":  [
+                        {
+                            "table":  "cached_uncached",
+                            "count":  340,
+                            "changed":  0,
+                            "changes":  [
+
+                                        ]
+                        },
+                        {
+                            "table":  "seed_collisions",
+                            "count":  510,
+                            "changed":  0,
+                            "changes":  [
+
+                                        ]
+                        },
+                        {
+                            "table":  "generation_order",
+                            "count":  120,
+                            "changed":  0,
+                            "changes":  [
+
+                                        ]
+                        },
+                        {
+                            "table":  "generated_chunks",
+                            "count":  24,
+                            "changed":  0,
+                            "changes":  [
+
+                                        ]
+                        }
+                    ],
+    "crossWorld":  [
+                       {
+                           "sequence":  "A-B-A",
+                           "thread":  "Server thread",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4605817377798488064,
+                                     "CONTINENT":  4607182418263146496,
+                                     "EROSION":  4596233851377811456,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598883718961037312,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4604640778487070720,
+                                           "CONTINENT":  -4637446608424796160,
+                                           "EROSION":  4598175219545276416,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598572991498944512,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4605817377798488064,
+                                          "CONTINENT":  4607182418263146496,
+                                          "EROSION":  4596233851377811456,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598883718961037312,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4604640778487070720,
+                                                        "CONTINENT":  -4637446608424796160,
+                                                        "EROSION":  4598175219545276416,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598572991498944512,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "BIOME_REGION",
+                                              "CONTINENT",
+                                              "EROSION",
+                                              "HEIGHT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "B-A-B",
+                           "thread":  "Server thread",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4604640778487070720,
+                                     "CONTINENT":  -4637446608424796160,
+                                     "EROSION":  4598175219545276416,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598572991498944512,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4605817377798488064,
+                                           "CONTINENT":  4607182418263146496,
+                                           "EROSION":  4596233851377811456,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598883718961037312,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4604640778487070720,
+                                          "CONTINENT":  -4637446608424796160,
+                                          "EROSION":  4598175219545276416,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598572991498944512,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4605817377798488064,
+                                                        "CONTINENT":  4607182418263146496,
+                                                        "EROSION":  4596233851377811456,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598883718961037312,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "BIOME_REGION",
+                                              "CONTINENT",
+                                              "EROSION",
+                                              "HEIGHT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "worker1 A-B-A",
+                           "thread":  "pool-9-thread-1",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4605817377798488064,
+                                     "CONTINENT":  4607182418263146496,
+                                     "EROSION":  4596233851377811456,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598883718961037312,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4604640778487070720,
+                                           "CONTINENT":  -4637446608424796160,
+                                           "EROSION":  4598175219545276416,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598572991498944512,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4605817377798488064,
+                                          "CONTINENT":  4607182418263146496,
+                                          "EROSION":  4596233851377811456,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598883718961037312,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4604640778487070720,
+                                                        "CONTINENT":  -4637446608424796160,
+                                                        "EROSION":  4598175219545276416,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598572991498944512,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "BIOME_REGION",
+                                              "CONTINENT",
+                                              "EROSION",
+                                              "HEIGHT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "worker1 B-A-B",
+                           "thread":  "pool-9-thread-1",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4604640778487070720,
+                                     "CONTINENT":  -4637446608424796160,
+                                     "EROSION":  4598175219545276416,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598572991498944512,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4605817377798488064,
+                                           "CONTINENT":  4607182418263146496,
+                                           "EROSION":  4596233851377811456,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598883718961037312,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4604640778487070720,
+                                          "CONTINENT":  -4637446608424796160,
+                                          "EROSION":  4598175219545276416,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598572991498944512,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4605817377798488064,
+                                                        "CONTINENT":  4607182418263146496,
+                                                        "EROSION":  4596233851377811456,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598883718961037312,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "BIOME_REGION",
+                                              "CONTINENT",
+                                              "EROSION",
+                                              "HEIGHT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "same seed cold-warm-cold contexts",
+                           "thread":  "Server thread",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4605817377798488064,
+                                     "CONTINENT":  4607182418263146496,
+                                     "EROSION":  4596233851377811456,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598883718961037312,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4605817377798488064,
+                                           "CONTINENT":  4607182418263146496,
+                                           "EROSION":  4596233851377811456,
+                                           "GRADIENT":  4585079675281211392,
+                                           "HEIGHT":  4598880999172997120,
+                                           "HEIGHT_EROSION":  -4672264321303052288,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  4541555361466810368,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4605817377798488064,
+                                          "CONTINENT":  4607182418263146496,
+                                          "EROSION":  4596233851377811456,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598883718961037312,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4605817377798488064,
+                                                        "CONTINENT":  4607182418263146496,
+                                                        "EROSION":  4596233851377811456,
+                                                        "GRADIENT":  4585079675281211392,
+                                                        "HEIGHT":  4598880999172997120,
+                                                        "HEIGHT_EROSION":  -4672264321303052288,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  4541555361466810368,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "GRADIENT",
+                                              "HEIGHT",
+                                              "HEIGHT_EROSION",
+                                              "SEDIMENT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "same seed warm-cold-warm contexts",
+                           "thread":  "Server thread",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4605817377798488064,
+                                     "CONTINENT":  4607182418263146496,
+                                     "EROSION":  4596233851377811456,
+                                     "GRADIENT":  4585079675281211392,
+                                     "HEIGHT":  4598880999172997120,
+                                     "HEIGHT_EROSION":  -4672264321303052288,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  4541555361466810368,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4605817377798488064,
+                                           "CONTINENT":  4607182418263146496,
+                                           "EROSION":  4596233851377811456,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598883718961037312,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4605817377798488064,
+                                          "CONTINENT":  4607182418263146496,
+                                          "EROSION":  4596233851377811456,
+                                          "GRADIENT":  4585079675281211392,
+                                          "HEIGHT":  4598880999172997120,
+                                          "HEIGHT_EROSION":  -4672264321303052288,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  4541555361466810368,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4605817377798488064,
+                                                        "CONTINENT":  4607182418263146496,
+                                                        "EROSION":  4596233851377811456,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598883718961037312,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "GRADIENT",
+                                              "HEIGHT",
+                                              "HEIGHT_EROSION",
+                                              "SEDIMENT"
+                                          ]
+                       }
+                   ],
+    "cachedDirect":  {
+                         "count":  340,
+                         "different":  340,
+                         "fields":  [
+                                        {
+                                            "Name":  "gradient",
+                                            "Count":  340
+                                        },
+                                        {
+                                            "Name":  "height",
+                                            "Count":  319
+                                        },
+                                        {
+                                            "Name":  "heightErosion",
+                                            "Count":  176
+                                        },
+                                        {
+                                            "Name":  "hint_gradient",
+                                            "Count":  340
+                                        },
+                                        {
+                                            "Name":  "hint_height",
+                                            "Count":  319
+                                        },
+                                        {
+                                            "Name":  "hint_height_erosion",
+                                            "Count":  176
+                                        },
+                                        {
+                                            "Name":  "hint_sediment",
+                                            "Count":  96
+                                        },
+                                        {
+                                            "Name":  "sediment",
+                                            "Count":  96
+                                        },
+                                        {
+                                            "Name":  "terrain",
+                                            "Count":  6
+                                        }
+                                    ]
+                     }
+}
