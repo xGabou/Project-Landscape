@@ -1,0 +1,98 @@
+[
+  {
+    "key": "reterraforged:terrain/erosion",
+    "seed": 123,
+    "x": 17,
+    "z": 29,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/erosion at x\u003d17, z\u003d29, compute seed\u003d123"
+  },
+  {
+    "key": "reterraforged:terrain/erosion",
+    "seed": 456,
+    "x": 17,
+    "z": 29,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/erosion at x\u003d17, z\u003d29, compute seed\u003d456"
+  },
+  {
+    "key": "reterraforged:terrain/erosion",
+    "seed": 123,
+    "x": 100,
+    "z": 200,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/erosion at x\u003d100, z\u003d200, compute seed\u003d123"
+  },
+  {
+    "key": "reterraforged:terrain/erosion",
+    "seed": 456,
+    "x": 100,
+    "z": 200,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/erosion at x\u003d100, z\u003d200, compute seed\u003d456"
+  },
+  {
+    "key": "reterraforged:terrain/erosion",
+    "seed": 123,
+    "x": -2048,
+    "z": 3072,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/erosion at x\u003d-2048, z\u003d3072, compute seed\u003d123"
+  },
+  {
+    "key": "reterraforged:terrain/erosion",
+    "seed": 456,
+    "x": -2048,
+    "z": 3072,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/erosion at x\u003d-2048, z\u003d3072, compute seed\u003d456"
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "seed": 123,
+    "x": 17,
+    "z": 29,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/ridges at x\u003d17, z\u003d29, compute seed\u003d123"
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "seed": 456,
+    "x": 17,
+    "z": 29,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/ridges at x\u003d17, z\u003d29, compute seed\u003d456"
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "seed": 123,
+    "x": 100,
+    "z": 200,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/ridges at x\u003d100, z\u003d200, compute seed\u003d123"
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "seed": 456,
+    "x": 100,
+    "z": 200,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/ridges at x\u003d100, z\u003d200, compute seed\u003d456"
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "seed": 123,
+    "x": -2048,
+    "z": 3072,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/ridges at x\u003d-2048, z\u003d3072, compute seed\u003d123"
+  },
+  {
+    "key": "reterraforged:terrain/ridges",
+    "seed": 456,
+    "x": -2048,
+    "z": 3072,
+    "rejected": true,
+    "error": "java.lang.IllegalStateException: Non-finite ReTerraForged density noise reterraforged:terrain/ridges at x\u003d-2048, z\u003d3072, compute seed\u003d456"
+  }
+]

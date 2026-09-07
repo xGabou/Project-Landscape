@@ -1,9 +1,16 @@
-# Task 1B correctness repairs (in progress)
+# Task 1B correctness repairs
 
 Comparator: Task 0 `e9dd8841a1b4a95e4bb2b23e084d40abbc1bea70` and accepted
 Task 1A `c773b8b48b229e7150f54b00ef0a33973c491d0e`.
 Task 1A evidence is immutable. New runs and relational correctness checks live here.
 No terrain golden is being established and no geography/climate/biome redesign is in scope.
+
+Completed 2026-09-07. All nine required defect families are independently repaired,
+tested and committed, with separate dormant-noise validation and legacy-geometry
+safeguards. Final gate: **64 checks PASS, 994 canonical comparator rows unchanged,
+480 scheduling digests unchanged**, standalone/TerraBlender/vanilla save-reopen smoke
+PASS. The known direct/filtered discrepancy and unexplained FULL-block differences
+remain explicitly recorded below; this is not a claim of universal world determinism.
 
 ## Verification protocol
 
@@ -187,7 +194,7 @@ Verify-Repairs, this document and `04-after`, `04-tile-lifetime/verification.jso
 logically close its snapshot, and Cache.close still only cancels polling. Those are
 explicitly unclaimed until Fix 5, where expiry/shutdown/failure tests are extended.
 
-## 05 — Disposal and pool-return paths (verification in progress)
+## 05 — Disposal and pool-return paths
 
 Before (`04-after`): forced filter failure returns zero arrays, expiry removes its
 entry without logical close, Cache.close leaves its map/global registration alive.
@@ -394,3 +401,161 @@ hot-path overhead: constructor validation only. Production: PerformanceConfig.ja
 Tests: ReproductionSuite and Verify-Repairs. Evidence: `11-before`, `11-after`,
 `11-legacy-geometry/verification.json`, `logs/11-*.log`. Partition-dependent filtering
 remains an explicitly retained legacy behavior; no terrain golden is updated.
+
+## Remaining inherited semantics and investigation fixtures
+
+### Seed narrowing deliberately retained (Task 1A F01, high)
+
+Seed **8675309** and **4303642605** differ by 2^32 and still collide in all 34 recorded
+Cell fields/parameter hints at **85/85** fixtures. Continent IDs/edges, terrain,
+height, rivers, climate and biome-relevant fields are unchanged. The other 425 pair
+rows are also unchanged against Task 1A. MixinRandomState and GeneratorContext still
+use the existing int seed: Task 2 must supply versioned 64-bit named seed streams.
+Full Minecraft seeds remain independent for other subsystems. The eight live paired
+chunks retain equal exact RTF samples and stored quart-biome hashes, while full-seed
+Minecraft density/noise and fuzzy biome sampling are not required to collide.
+Do not treat the RTF collision as equivalence of entire Minecraft worlds.
+
+### Direct versus filtered output deliberately not merged (F02)
+
+After context, semantic identity, bounds and lifetime repairs, **340/340** direct/tile
+pairs still disagree. Field counts remain exactly: gradient 340, height 319,
+heightErosion 176, sediment 96, terrain 6, plus corresponding hints. No riverMask,
+climate/BiomeType or other recorded parameter changes appear in this comparison.
+The six terrain cases are direct coast versus filtered beach: seed 42 at
+(-3520,-4096), (126,126), (127,127), (128,128), (129,129), and seed -987654321 at
+(-2048,-4096). Warm repeats equal filtered, eviction returns direct, regeneration
+returns filtered; all 680 eviction/reload rows preserve these separate contracts.
+
+This is remaining legacy query ambiguity, not residual scratch-cache staleness.
+Tiles include erosion, smoothing, steepness, beach and quart filtering; direct
+Heightmap evaluation omits those and has its own point coast adjustment. Normal
+in-chunk CacheChunk reads use filtered tile readers. Transient density and
+single-column/outside-chunk fallbacks may still sample direct, as may locate/spawn
+height queries. CellTest uses riverMask and a terrain blacklist, not height/gradient;
+no changed structure-rule decision was demonstrated. No command-level locate/spawn
+or climate-selected-biome change is claimed. A later canonical GeographyProvider
+must define these contracts; Task 1B does not pick a universal winner.
+
+### Tile partition semantics deliberately retained (F06)
+
+Changing tile size/border still changes filtering output, and overlap probes still
+show partition-dependent height/gradient/erosion/sediment. Batch submission order
+and partition geometry are not interchangeable concepts. Bounds correction changes
+480 outer-halo gradient cells in the detailed 25,600-cell comparison (raw X 0/158/159,
+world X -16/142/143 in tile 0,0); zero core cells change. Those exact corrected invalid
+neighbor effects are recorded in `03-tile-bounds/halo_comparison.json`, not blessed
+as a new terrain baseline. Erosion and finite halos have not been normalized.
+
+### Unexplained FULL blocks retained as an issue, not fixed (F12)
+
+Final same-source pair `11-after` / `final-repeat`: **12/24** chunks differ in finished
+blocks, compared with **10/24** in Task 1A. The observed count increased by two;
+this does not establish a repair-induced regression or a cause. All 24 exact RTF
+samples, stored quart biomes and fuzzy block-biome hashes agree between these runs.
+Dripstone/decorations remain prominent; there is still no NOISE-stage isolation or
+proof assigning the discrepancy to a particular stage, cache or scheduler.
+
+| Seed | Fixture block X/Z | Differing blocks |
+| --- | --- | ---: |
+| 8675309 | -129,-129 | 2 |
+| 8675309 | 127,127 | 2 |
+| 8675309 | 128,128 | 24 |
+| 8675309 | 3392,-3072 | 12 |
+| 4303642605 | 0,0 | 1 |
+| 4303642605 | -129,-129 | 1675 |
+| 4303642605 | -4032,-4096 | 6 |
+| 4303642605 | -2688,-4096 | 114 |
+| 4303642605 | 3392,-3072 | 5 |
+| 42 | -129,-129 | 2 |
+| 42 | 128,128 | 6 |
+| 42 | -2688,-4096 | 62 |
+
+Exact block transitions, Y extents and example coordinates are in
+`final-chunk-repeats/chunk_repeats.json`; lossless snapshots are retained in both runs.
+Keep this high-priority investigation fixture. Do not turn these blocks into goldens.
+
+### Limits of the result
+
+Tests are finite, not proof over every seed and schedule. Production noise-registry
+sharing contamination was never reproduced; the unsafe shared-noise API is now safe.
+No normal nested Cell resource leak was reproduced; its duplicate-release misuse is
+now guarded. Published Cells remain internally read-only by contract, not immutable
+Java objects. Raw dormant Perlin definitions still produce NaN outside the guarded
+density boundary. Catastrophic OOM and deliberately shutting down the shared worldgen
+executor were not injected; accepted-task draining/partial-allocation paths were
+reviewed and ordinary failure/cancel/unload/expiry paths tested. Performance instrumentation
+works, but snapshot allocation cost still requires Task 1C measurement, not optimization here.
+
+## Final build, runtime and evidence gate
+
+Verified source head: `360c834497f5042d9ade3ca100e704781a5f72fb`. The last commit adds
+only the optional vanilla-world smoke mode and its run property; `src/main` is identical
+to repair head `408ba001568c44774a37d13cb4e924d4143ef4e5`. The final documentation-only
+commit records its own identity through Git history, not a circular self-embedded SHA.
+
+Toolchain unchanged: Minecraft 1.20.1, Forge 47.4.22, Java 17.0.17+10, Gradle 8.11,
+ForgeGradle 6.0.42, MixinGradle 0.7.38 / Mixin 0.8.5; optional TerraBlender 3.0.1.10.
+Dependencies, mapping versions and production source layout are unchanged. No PA,
+Dynamic Trees, temperature or TFC dependency/integration work was done.
+
+| Gate | Result |
+| --- | --- |
+| compileJava, classes, jar, build, reproductionClasses | PASS; final production build 2s |
+| Build plus optional vanilla smoke classes | PASS, 4s |
+| Final full regression, 4 worlds | PASS, 1m57s; 64 correctness/comparator checks |
+| Worker count 2 | PASS, 1m16s; 120 tile digests |
+| Worker count 48 | PASS, 59s; 120 tile digests |
+| Full runs + worker runs | 480/480 digests match Task 1A, all orders/repeats |
+| Standalone RTF save/reopen smoke | PASS, 57s; title, preset load, 14 FULL chunk observations |
+| TerraBlender RTF save/reopen smoke | PASS, 1m3s; optional Mixins enabled, 14 FULL chunks |
+| Vanilla world without RTF preset | PASS, 50s; 14 FULL chunks, save/reopen, all 3 dimensions unclaimed |
+| Enabled preset export | 175/175 files byte-identical to pre-Fix-8 export |
+| Production jar | One Forge mod; two required Mixin manifests, AT, mods.toml and MIT license; zero development classes |
+
+The vanilla test verifies context=false, required=false, preset=false for overworld,
+nether and end, both before and after reopen; zero RTF structure rules. This extends
+Fix 7 beyond its already-tested bootstrapped vanilla router. Normal RTF smoke also
+generates coast/river/mountain/plateau representatives before saving. These are actual
+client/server/registry/chunk tests, with objective logs and surface/block evidence;
+no new manual aesthetic terrain inspection is claimed.
+
+Artifact: `build/libs/reterraforged-forge-1.20.1-0.0.6.jar`, 1,075,208 bytes,
+SHA-256 `25cad0f81a03c2508a9ceb00637fc870534f00b016ff1d80e6190a81451916d4`.
+The sources jar is a source archive, not a second mod. Normal Gradle `test` is NO-SOURCE:
+the real correctness gate is the Forge development harness plus Verify-Repairs.ps1,
+not a claim of an unconfigured unit-test suite passing.
+
+### Warning categories
+
+No fatal generator, required-Mixin, registry or preset error remains in the successful
+smoke runs. Expected negative tests catch and record their descriptive failures.
+Remaining warnings are inherited deprecation/removal/unchecked compiler diagnostics
+(including three reproduction isAbsent warnings), Gradle 9 deprecations, development
+refmap warnings, optional Fernflower debug decompiler unavailability, Forge library
+mods.toml notices, shader/sound warnings, Netty IPv6 parsing and fresh Forge server
+config defaults. Realms development-account authentication messages are unrelated to
+world generation. The repeated-world missing reterraforged:clay tag diagnostic remains
+a known non-fatal issue. Bulk server-thread harness work logs Can't keep up warnings;
+those are not an isolated throughput benchmark. One final-run shell wrapper initially
+treated a compiler note on stderr as a terminating PowerShell error; it was rerun with
+proper native exit-code handling, with no production change.
+
+### Provenance and file inventory
+
+All repair SHAs and **exact per-commit file paths**, including reproduction changes,
+logs and JSON snapshots, are in `evidence/commit_files.json`. The numbered sections
+above describe the production boundary and before/after evidence for each family.
+`evidence/final_regression_summary.json` is the machine-readable final gate;
+`evidence/manifest.json` hashes every evidence file except itself (782 indexed files).
+`VERIFICATION.md` gives rerun commands and explains why finished blocks are not goldens.
+
+Task 1A evidence and the accepted Task 0 documents are untouched. Root MIT permission
+notice, inherited TerraForged notices and Forge LGPL-2.1-only LanguageProvider provenance
+are retained. New original harness/scripts/docs remain ARR; touched MIT-derived code
+retains or adds its derived-source notice. No blanket license-header rewrite occurred.
+
+**Stop at Task 1B.** No geography extraction, continent/ocean/climate/biome redesign,
+integration, runtime ecology or Task 1C benchmarking has started. Seed narrowing and
+legacy generation geometry remain intentionally unchanged, apart from guarding misuse
+of the performance configuration and correcting demonstrated invalid halo indexing.

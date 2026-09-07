@@ -1,0 +1,2396 @@
+{
+    "kind":  "Task 1B relational correctness checks; not new terrain goldens",
+    "verifiedSourceHead":  "360c834497f5042d9ade3ca100e704781a5f72fb",
+    "baseline":  "e9dd8841a1b4a95e4bb2b23e084d40abbc1bea70",
+    "task1A":  "c773b8b48b229e7150f54b00ef0a33973c491d0e",
+    "finalRun":  "docs/task1b/evidence/final-repeat",
+    "checks":  [
+                   {
+                       "name":  "real Forge harness completed",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "cross-context sequences recompute for their owner",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "same seed distinct context identity is isolated",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "climate mode change refreshes cache",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "new tile refreshes same-position cache",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "eviction regeneration and reverse climate mode refresh",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "legacy config defaults frozen at exponent 3 batch 6",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "nonlegacy performance tile sizes require version boundary",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "legacy tile size still accepted",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "persisted preset halo derivation unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "registered non-finite noises fail at density boundary",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "shared noise honors every compute seed",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "worker shared noise honors every compute seed",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "first noise query cannot alias sentinel",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "finite registry graph sharing stays uncontaminated",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "disabled vegetation bootstrap succeeds",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "disabled vegetation datapack actually loads",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "disabled vegetation requires no custom tree holders",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "ordinary biome tree features retained",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "disabled world generates eight FULL chunks",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "RandomState before initialize fails explicitly",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "structure before initialization fails explicitly",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "initialized with empty preset registry fails explicitly",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "actual structure rule with missing context fails explicitly",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "missing preset fails at initialization",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "uncached context supports explicit direct lookup",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "uncached exact request explains missing tile context",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "wrong dimension rebind fails",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "owned sampler rejects shutdown context with dimension",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "real vanilla router does not require RTF context",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "geography rule cannot pass without foreign geography",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "fallback double close cannot alias independent borrows",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "stale fallback close cannot release new borrow",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "normal nested and exception paths remain safe",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "normal concurrent samples stay independent",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "concurrent nested fallback borrows stay independent",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "foreign thread cannot release thread-local fallback",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "independent tile axes reject all invalid coordinates",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "published storage is not recycled",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "retained worker sees original sample",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "stale close cannot corrupt replacement",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "published close is repeatable and retains readers",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "detached publication releases workspace pool storage",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "expiry closes the removed snapshot",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "filter failure returns workspace arrays",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "closed test caches unregistered",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "capacity eviction disposes unread future and preserves reader",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "stale entry cannot remove replacement",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "pending future disposed on completion after close",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "context replacement retires old cache and refreshes sampler",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "cancelled real generation drains both pools",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "stale workspace close cannot release replacement borrow",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "array pool releases once even when full",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "real world/server shutdown unregisters caches and drains pools",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "cached_uncached fixture count preserved",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "cached_uncached canonical comparator unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "seed_collisions fixture count preserved",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "seed_collisions canonical comparator unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "generation_order fixture count preserved",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "generation_order canonical comparator unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "generated_chunks fixture count preserved",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "generated_chunks canonical comparator unchanged",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "same warm path repeats",
+                       "pass":  true
+                   },
+                   {
+                       "name":  "eviction and regeneration retain each path semantics",
+                       "pass":  true
+                   }
+               ],
+    "canonicalComparisons":  [
+                                 {
+                                     "table":  "cached_uncached",
+                                     "count":  340,
+                                     "changed":  0,
+                                     "changes":  [
+
+                                                 ]
+                                 },
+                                 {
+                                     "table":  "seed_collisions",
+                                     "count":  510,
+                                     "changed":  0,
+                                     "changes":  [
+
+                                                 ]
+                                 },
+                                 {
+                                     "table":  "generation_order",
+                                     "count":  120,
+                                     "changed":  0,
+                                     "changes":  [
+
+                                                 ]
+                                 },
+                                 {
+                                     "table":  "generated_chunks",
+                                     "count":  24,
+                                     "changed":  0,
+                                     "changes":  [
+
+                                                 ]
+                                 }
+                             ],
+    "cachedDirect":  {
+                         "count":  340,
+                         "different":  340,
+                         "fields":  [
+                                        {
+                                            "Name":  "gradient",
+                                            "Count":  340
+                                        },
+                                        {
+                                            "Name":  "height",
+                                            "Count":  319
+                                        },
+                                        {
+                                            "Name":  "heightErosion",
+                                            "Count":  176
+                                        },
+                                        {
+                                            "Name":  "hint_gradient",
+                                            "Count":  340
+                                        },
+                                        {
+                                            "Name":  "hint_height",
+                                            "Count":  319
+                                        },
+                                        {
+                                            "Name":  "hint_height_erosion",
+                                            "Count":  176
+                                        },
+                                        {
+                                            "Name":  "hint_sediment",
+                                            "Count":  96
+                                        },
+                                        {
+                                            "Name":  "sediment",
+                                            "Count":  96
+                                        },
+                                        {
+                                            "Name":  "terrain",
+                                            "Count":  6
+                                        }
+                                    ]
+                     },
+    "crossWorld":  [
+                       {
+                           "sequence":  "A-B-A",
+                           "thread":  "Server thread",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4605817377798488064,
+                                     "CONTINENT":  4607182418263146496,
+                                     "EROSION":  4596233851377811456,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598883718961037312,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4604640778487070720,
+                                           "CONTINENT":  -4637446608424796160,
+                                           "EROSION":  4598175219545276416,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598572991498944512,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4605817377798488064,
+                                          "CONTINENT":  4607182418263146496,
+                                          "EROSION":  4596233851377811456,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598883718961037312,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4604640778487070720,
+                                                        "CONTINENT":  -4637446608424796160,
+                                                        "EROSION":  4598175219545276416,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598572991498944512,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "BIOME_REGION",
+                                              "CONTINENT",
+                                              "EROSION",
+                                              "HEIGHT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "B-A-B",
+                           "thread":  "Server thread",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4604640778487070720,
+                                     "CONTINENT":  -4637446608424796160,
+                                     "EROSION":  4598175219545276416,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598572991498944512,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4605817377798488064,
+                                           "CONTINENT":  4607182418263146496,
+                                           "EROSION":  4596233851377811456,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598883718961037312,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4604640778487070720,
+                                          "CONTINENT":  -4637446608424796160,
+                                          "EROSION":  4598175219545276416,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598572991498944512,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4605817377798488064,
+                                                        "CONTINENT":  4607182418263146496,
+                                                        "EROSION":  4596233851377811456,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598883718961037312,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "BIOME_REGION",
+                                              "CONTINENT",
+                                              "EROSION",
+                                              "HEIGHT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "worker1 A-B-A",
+                           "thread":  "pool-9-thread-1",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4605817377798488064,
+                                     "CONTINENT":  4607182418263146496,
+                                     "EROSION":  4596233851377811456,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598883718961037312,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4604640778487070720,
+                                           "CONTINENT":  -4637446608424796160,
+                                           "EROSION":  4598175219545276416,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598572991498944512,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4605817377798488064,
+                                          "CONTINENT":  4607182418263146496,
+                                          "EROSION":  4596233851377811456,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598883718961037312,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4604640778487070720,
+                                                        "CONTINENT":  -4637446608424796160,
+                                                        "EROSION":  4598175219545276416,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598572991498944512,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "BIOME_REGION",
+                                              "CONTINENT",
+                                              "EROSION",
+                                              "HEIGHT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "worker1 B-A-B",
+                           "thread":  "pool-9-thread-1",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4604640778487070720,
+                                     "CONTINENT":  -4637446608424796160,
+                                     "EROSION":  4598175219545276416,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598572991498944512,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4605817377798488064,
+                                           "CONTINENT":  4607182418263146496,
+                                           "EROSION":  4596233851377811456,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598883718961037312,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4604640778487070720,
+                                          "CONTINENT":  -4637446608424796160,
+                                          "EROSION":  4598175219545276416,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598572991498944512,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4605817377798488064,
+                                                        "CONTINENT":  4607182418263146496,
+                                                        "EROSION":  4596233851377811456,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598883718961037312,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "BIOME_REGION",
+                                              "CONTINENT",
+                                              "EROSION",
+                                              "HEIGHT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "same seed cold-warm-cold contexts",
+                           "thread":  "Server thread",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4605817377798488064,
+                                     "CONTINENT":  4607182418263146496,
+                                     "EROSION":  4596233851377811456,
+                                     "GRADIENT":  0,
+                                     "HEIGHT":  4598883718961037312,
+                                     "HEIGHT_EROSION":  0,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  0,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4605817377798488064,
+                                           "CONTINENT":  4607182418263146496,
+                                           "EROSION":  4596233851377811456,
+                                           "GRADIENT":  4585079675281211392,
+                                           "HEIGHT":  4598880999172997120,
+                                           "HEIGHT_EROSION":  -4672264321303052288,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  4541555361466810368,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4605817377798488064,
+                                          "CONTINENT":  4607182418263146496,
+                                          "EROSION":  4596233851377811456,
+                                          "GRADIENT":  0,
+                                          "HEIGHT":  4598883718961037312,
+                                          "HEIGHT_EROSION":  0,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  0,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4605817377798488064,
+                                                        "CONTINENT":  4607182418263146496,
+                                                        "EROSION":  4596233851377811456,
+                                                        "GRADIENT":  4585079675281211392,
+                                                        "HEIGHT":  4598880999172997120,
+                                                        "HEIGHT_EROSION":  -4672264321303052288,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  4541555361466810368,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "GRADIENT",
+                                              "HEIGHT",
+                                              "HEIGHT_EROSION",
+                                              "SEDIMENT"
+                                          ]
+                       },
+                       {
+                           "sequence":  "same seed warm-cold-warm contexts",
+                           "thread":  "Server thread",
+                           "point":  {
+                                         "label":  "P",
+                                         "x":  127,
+                                         "z":  127
+                                     },
+                           "a":  {
+                                     "BIOME_REGION":  4605817377798488064,
+                                     "CONTINENT":  4607182418263146496,
+                                     "EROSION":  4596233851377811456,
+                                     "GRADIENT":  4585079675281211392,
+                                     "HEIGHT":  4598880999172997120,
+                                     "HEIGHT_EROSION":  -4672264321303052288,
+                                     "MOISTURE":  -4626097537449721856,
+                                     "SEDIMENT":  4541555361466810368,
+                                     "TEMPERATURE":  4582862980382720000,
+                                     "WEIRDNESS":  -4628499456570949632
+                                 },
+                           "bAfterA":  {
+                                           "BIOME_REGION":  4605817377798488064,
+                                           "CONTINENT":  4607182418263146496,
+                                           "EROSION":  4596233851377811456,
+                                           "GRADIENT":  0,
+                                           "HEIGHT":  4598883718961037312,
+                                           "HEIGHT_EROSION":  0,
+                                           "MOISTURE":  -4626097537449721856,
+                                           "SEDIMENT":  0,
+                                           "TEMPERATURE":  4582862980382720000,
+                                           "WEIRDNESS":  -4628499456570949632
+                                       },
+                           "aAgain":  {
+                                          "BIOME_REGION":  4605817377798488064,
+                                          "CONTINENT":  4607182418263146496,
+                                          "EROSION":  4596233851377811456,
+                                          "GRADIENT":  4585079675281211392,
+                                          "HEIGHT":  4598880999172997120,
+                                          "HEIGHT_EROSION":  -4672264321303052288,
+                                          "MOISTURE":  -4626097537449721856,
+                                          "SEDIMENT":  4541555361466810368,
+                                          "TEMPERATURE":  4582862980382720000,
+                                          "WEIRDNESS":  -4628499456570949632
+                                      },
+                           "bAfterPositionChange":  {
+                                                        "BIOME_REGION":  4605817377798488064,
+                                                        "CONTINENT":  4607182418263146496,
+                                                        "EROSION":  4596233851377811456,
+                                                        "GRADIENT":  0,
+                                                        "HEIGHT":  4598883718961037312,
+                                                        "HEIGHT_EROSION":  0,
+                                                        "MOISTURE":  -4626097537449721856,
+                                                        "SEDIMENT":  0,
+                                                        "TEMPERATURE":  4582862980382720000,
+                                                        "WEIRDNESS":  -4628499456570949632
+                                                    },
+                           "bContaminationFields":  [
+
+                                                    ],
+                           "aToBFields":  [
+                                              "GRADIENT",
+                                              "HEIGHT",
+                                              "HEIGHT_EROSION",
+                                              "SEDIMENT"
+                                          ]
+                       }
+                   ],
+    "seedNarrowing":  {
+                          "intentionallyUnchanged":  true,
+                          "seedA":  8675309,
+                          "seedB":  4303642605,
+                          "equalLow32Rows":  85,
+                          "differentFields":  0
+                      },
+    "scheduling":  [
+                       {
+                           "run":  "docs/task1b/evidence/11-after",
+                           "rows":  120,
+                           "workers":  [
+                                           24
+                                       ],
+                           "differentFromTask1A":  0
+                       },
+                       {
+                           "run":  "docs/task1b/evidence/final-repeat",
+                           "rows":  120,
+                           "workers":  [
+                                           24
+                                       ],
+                           "differentFromTask1A":  0
+                       },
+                       {
+                           "run":  "docs/task1b/evidence/final-workers-2",
+                           "rows":  120,
+                           "workers":  [
+                                           2
+                                       ],
+                           "differentFromTask1A":  0
+                       },
+                       {
+                           "run":  "docs/task1b/evidence/final-workers-48",
+                           "rows":  120,
+                           "workers":  [
+                                           48
+                                       ],
+                           "differentFromTask1A":  0
+                       }
+                   ],
+    "tileGeometry":  [
+                         {
+                             "case":  "defaults and config reader",
+                             "tileSize":  3,
+                             "batchCount":  6,
+                             "readTileSize":  3,
+                             "readBatchCount":  6
+                         },
+                         {
+                             "case":  "performance tile size",
+                             "requested":  2,
+                             "accepted":  false,
+                             "error":  "java.lang.IllegalArgumentException: Legacy tile exponent is fixed at 3; changing geometry requires a generation-version boundary, not performance tuning (requested 2)"
+                         },
+                         {
+                             "case":  "performance tile size",
+                             "requested":  3,
+                             "accepted":  true,
+                             "actual":  3
+                         },
+                         {
+                             "case":  "performance tile size",
+                             "requested":  4,
+                             "accepted":  false,
+                             "error":  "java.lang.IllegalArgumentException: Legacy tile exponent is fixed at 3; changing geometry requires a generation-version boundary, not performance tuning (requested 4)"
+                         },
+                         {
+                             "case":  "persisted preset controls legacy halo",
+                             "dropletLifetime":  12,
+                             "borderBlocks":  16
+                         },
+                         {
+                             "case":  "persisted preset controls legacy halo",
+                             "dropletLifetime":  31,
+                             "borderBlocks":  16
+                         },
+                         {
+                             "case":  "persisted preset controls legacy halo",
+                             "dropletLifetime":  32,
+                             "borderBlocks":  32
+                         }
+                     ],
+    "fullChunkRepeats":  {
+                             "total":  24,
+                             "different":  12,
+                             "task1AObservation":  10,
+                             "changeInObservedCount":  2,
+                             "cause":  "UNPROVEN",
+                             "changedFixtures":  [
+                                                     {
+                                                         "seed":  8675309,
+                                                         "x":  -129,
+                                                         "z":  -129,
+                                                         "differentBlocks":  2,
+                                                         "minChangedY":  39,
+                                                         "maxChangedY":  39,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:water}[level=1]",
+                                                                                 "blocks":  2
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  -134,
+                                                                              "y":  39,
+                                                                              "z":  -136,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:water}[level=1]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -133,
+                                                                              "y":  39,
+                                                                              "z":  -135,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:water}[level=1]"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  8675309,
+                                                         "x":  127,
+                                                         "z":  127,
+                                                         "differentBlocks":  2,
+                                                         "minChangedY":  64,
+                                                         "maxChangedY":  64,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:coal_ore} -\u003e Block{minecraft:stone}",
+                                                                                 "blocks":  2
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  112,
+                                                                              "y":  64,
+                                                                              "z":  124,
+                                                                              "a":  "Block{minecraft:coal_ore}",
+                                                                              "b":  "Block{minecraft:stone}"
+                                                                          },
+                                                                          {
+                                                                              "x":  112,
+                                                                              "y":  64,
+                                                                              "z":  125,
+                                                                              "a":  "Block{minecraft:coal_ore}",
+                                                                              "b":  "Block{minecraft:stone}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  8675309,
+                                                         "x":  128,
+                                                         "z":  128,
+                                                         "differentBlocks":  24,
+                                                         "minChangedY":  -11,
+                                                         "maxChangedY":  20,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:deepslate_copper_ore} -\u003e Block{minecraft:deepslate_iron_ore}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:copper_ore}",
+                                                                                 "blocks":  5
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:deepslate_iron_ore}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:diorite}",
+                                                                                 "blocks":  12
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:lapis_ore}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:stone}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  2
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  128,
+                                                                              "y":  1,
+                                                                              "z":  129,
+                                                                              "a":  "Block{minecraft:deepslate_copper_ore}",
+                                                                              "b":  "Block{minecraft:deepslate_iron_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  129,
+                                                                              "y":  -11,
+                                                                              "z":  131,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate_iron_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  128,
+                                                                              "y":  5,
+                                                                              "z":  132,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  128,
+                                                                              "y":  6,
+                                                                              "z":  132,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  128,
+                                                                              "y":  7,
+                                                                              "z":  132,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:lapis_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  140,
+                                                                              "y":  19,
+                                                                              "z":  141,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  15,
+                                                                              "z":  141,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  16,
+                                                                              "z":  141,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  17,
+                                                                              "z":  141,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:copper_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  18,
+                                                                              "z":  141,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  19,
+                                                                              "z":  141,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  17,
+                                                                              "z":  142,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:copper_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  18,
+                                                                              "z":  142,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  19,
+                                                                              "z":  142,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  20,
+                                                                              "z":  142,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:stone}"
+                                                                          },
+                                                                          {
+                                                                              "x":  142,
+                                                                              "y":  16,
+                                                                              "z":  143,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:copper_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  142,
+                                                                              "y":  17,
+                                                                              "z":  143,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  142,
+                                                                              "y":  18,
+                                                                              "z":  143,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  142,
+                                                                              "y":  19,
+                                                                              "z":  143,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:diorite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  143,
+                                                                              "y":  15,
+                                                                              "z":  143,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  8675309,
+                                                         "x":  3392,
+                                                         "z":  -3072,
+                                                         "differentBlocks":  12,
+                                                         "minChangedY":  39,
+                                                         "maxChangedY":  65,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:andesite} -\u003e Block{minecraft:coal_ore}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:brown_mushroom} -\u003e Block{minecraft:fern}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:stone} -\u003e Block{minecraft:coal_ore}",
+                                                                                 "blocks":  9
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  3406,
+                                                                              "y":  40,
+                                                                              "z":  -3071,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3406,
+                                                                              "y":  41,
+                                                                              "z":  -3071,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3407,
+                                                                              "y":  40,
+                                                                              "z":  -3071,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3407,
+                                                                              "y":  41,
+                                                                              "z":  -3071,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3406,
+                                                                              "y":  40,
+                                                                              "z":  -3070,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3406,
+                                                                              "y":  41,
+                                                                              "z":  -3070,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3407,
+                                                                              "y":  39,
+                                                                              "z":  -3070,
+                                                                              "a":  "Block{minecraft:andesite}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3407,
+                                                                              "y":  40,
+                                                                              "z":  -3070,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3407,
+                                                                              "y":  41,
+                                                                              "z":  -3070,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3407,
+                                                                              "y":  39,
+                                                                              "z":  -3069,
+                                                                              "a":  "Block{minecraft:andesite}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3407,
+                                                                              "y":  40,
+                                                                              "z":  -3069,
+                                                                              "a":  "Block{minecraft:stone}",
+                                                                              "b":  "Block{minecraft:coal_ore}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3406,
+                                                                              "y":  65,
+                                                                              "z":  -3067,
+                                                                              "a":  "Block{minecraft:brown_mushroom}",
+                                                                              "b":  "Block{minecraft:fern}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  4303642605,
+                                                         "x":  0,
+                                                         "z":  0,
+                                                         "differentBlocks":  1,
+                                                         "minChangedY":  18,
+                                                         "maxChangedY":  18,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=8] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  4,
+                                                                              "y":  18,
+                                                                              "z":  4,
+                                                                              "a":  "Block{minecraft:water}[level=8]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  4303642605,
+                                                         "x":  -129,
+                                                         "z":  -129,
+                                                         "differentBlocks":  1675,
+                                                         "minChangedY":  -56,
+                                                         "maxChangedY":  28,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:glow_lichen}[down=false,east=false,north=false,south=false,up=true,waterlogged=false,west=false]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  15
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  8
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  24
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  20
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  10
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  9
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  32
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  58
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip_merge,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip_merge,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:andesite} -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  4
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:cave_air} -\u003e Block{minecraft:glow_lichen}[down=false,east=false,north=false,south=false,up=false,waterlogged=false,west=true]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:cave_air} -\u003e Block{minecraft:glow_lichen}[down=false,east=false,north=false,south=false,up=true,waterlogged=false,west=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:cave_air} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:deepslate}[axis=y] -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  416
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:deepslate}[axis=y] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:diorite} -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  5
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  76
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:andesite}",
+                                                                                 "blocks":  22
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:deepslate}[axis=y]",
+                                                                                 "blocks":  222
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:diorite}",
+                                                                                 "blocks":  8
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:granite}",
+                                                                                 "blocks":  64
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  15
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=true]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:stone}",
+                                                                                 "blocks":  38
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:tuff}",
+                                                                                 "blocks":  7
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:glow_lichen}[down=false,east=false,north=false,south=true,up=false,waterlogged=false,west=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:glow_lichen}[down=false,east=false,north=true,south=false,up=false,waterlogged=true,west=false] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:glow_lichen}[down=true,east=false,north=false,south=false,up=false,waterlogged=false,west=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:glow_lichen}[down=true,east=false,north=false,south=false,up=false,waterlogged=true,west=false] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:granite} -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  7
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  11
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=down,waterlogged=true] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  5
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=true]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  19
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=true] -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=true] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  5
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  8
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  7
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  5
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  4
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=down,waterlogged=true] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  4
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  33
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=true] -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=true] -\u003e Block{minecraft:glow_lichen}[down=false,east=false,north=false,south=false,up=true,waterlogged=true,west=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=true] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  18
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  49
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  9
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:water}[level=0]",
+                                                                                 "blocks":  10
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip_merge,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip_merge,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:stone} -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  7
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:tuff} -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  11
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:deepslate}[axis=y]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  288
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=down,waterlogged=true]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=true]",
+                                                                                 "blocks":  8
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=true]",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=true]",
+                                                                                 "blocks":  15
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=down,waterlogged=true]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=up,waterlogged=true]",
+                                                                                 "blocks":  6
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=true]",
+                                                                                 "blocks":  6
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=true]",
+                                                                                 "blocks":  18
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  -144,
+                                                                              "y":  -14,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -144,
+                                                                              "y":  -11,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -144,
+                                                                              "y":  -10,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -144,
+                                                                              "y":  -9,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -144,
+                                                                              "y":  16,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:water}[level=0]",
+                                                                              "b":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=true]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -144,
+                                                                              "y":  17,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:water}[level=0]",
+                                                                              "b":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=true]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -144,
+                                                                              "y":  18,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:diorite}",
+                                                                              "b":  "Block{minecraft:dripstone_block}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -143,
+                                                                              "y":  -15,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -143,
+                                                                              "y":  -12,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -143,
+                                                                              "y":  -11,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -143,
+                                                                              "y":  -10,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -142,
+                                                                              "y":  -12,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -142,
+                                                                              "y":  -11,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -142,
+                                                                              "y":  -10,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -142,
+                                                                              "y":  -9,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -142,
+                                                                              "y":  -2,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -142,
+                                                                              "y":  0,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:deepslate}[axis=y]",
+                                                                              "b":  "Block{minecraft:dripstone_block}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -141,
+                                                                              "y":  -51,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:deepslate}[axis=y]",
+                                                                              "b":  "Block{minecraft:water}[level=0]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -141,
+                                                                              "y":  -16,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:deepslate}[axis=y]",
+                                                                              "b":  "Block{minecraft:dripstone_block}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -141,
+                                                                              "y":  -13,
+                                                                              "z":  -144,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  4303642605,
+                                                         "x":  -4032,
+                                                         "z":  -4096,
+                                                         "differentBlocks":  6,
+                                                         "minChangedY":  54,
+                                                         "maxChangedY":  56,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:clay} -\u003e Block{minecraft:sand}",
+                                                                                 "blocks":  6
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  -4017,
+                                                                              "y":  54,
+                                                                              "z":  -4084,
+                                                                              "a":  "Block{minecraft:clay}",
+                                                                              "b":  "Block{minecraft:sand}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -4017,
+                                                                              "y":  55,
+                                                                              "z":  -4084,
+                                                                              "a":  "Block{minecraft:clay}",
+                                                                              "b":  "Block{minecraft:sand}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -4017,
+                                                                              "y":  56,
+                                                                              "z":  -4084,
+                                                                              "a":  "Block{minecraft:clay}",
+                                                                              "b":  "Block{minecraft:sand}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -4017,
+                                                                              "y":  54,
+                                                                              "z":  -4083,
+                                                                              "a":  "Block{minecraft:clay}",
+                                                                              "b":  "Block{minecraft:sand}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -4017,
+                                                                              "y":  55,
+                                                                              "z":  -4083,
+                                                                              "a":  "Block{minecraft:clay}",
+                                                                              "b":  "Block{minecraft:sand}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -4017,
+                                                                              "y":  56,
+                                                                              "z":  -4083,
+                                                                              "a":  "Block{minecraft:clay}",
+                                                                              "b":  "Block{minecraft:sand}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  4303642605,
+                                                         "x":  -2688,
+                                                         "z":  -4096,
+                                                         "differentBlocks":  114,
+                                                         "minChangedY":  -27,
+                                                         "maxChangedY":  41,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:andesite}",
+                                                                                 "blocks":  35
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:deepslate}[axis=y]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:diorite}",
+                                                                                 "blocks":  22
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:granite}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:stone}",
+                                                                                 "blocks":  37
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  9
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=true] -\u003e Block{minecraft:andesite}",
+                                                                                 "blocks":  1
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  25,
+                                                                              "z":  -4089,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2676,
+                                                                              "y":  19,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2676,
+                                                                              "y":  20,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2676,
+                                                                              "y":  21,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -2,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2674,
+                                                                              "y":  32,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:stone}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2674,
+                                                                              "y":  33,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:stone}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  19,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  20,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  21,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  31,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:stone}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  32,
+                                                                              "z":  -4088,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:stone}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -3,
+                                                                              "z":  -4087,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -2,
+                                                                              "z":  -4087,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  18,
+                                                                              "z":  -4087,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:stone}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  19,
+                                                                              "z":  -4087,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  20,
+                                                                              "z":  -4087,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  21,
+                                                                              "z":  -4087,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2674,
+                                                                              "y":  -2,
+                                                                              "z":  -4087,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2674,
+                                                                              "y":  19,
+                                                                              "z":  -4087,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:andesite}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  4303642605,
+                                                         "x":  3392,
+                                                         "z":  -3072,
+                                                         "differentBlocks":  5,
+                                                         "minChangedY":  65,
+                                                         "maxChangedY":  65,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:fern}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:grass}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:fern} -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  2
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  3394,
+                                                                              "y":  65,
+                                                                              "z":  -3070,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:fern}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3399,
+                                                                              "y":  65,
+                                                                              "z":  -3070,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:grass}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3400,
+                                                                              "y":  65,
+                                                                              "z":  -3070,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:grass}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3407,
+                                                                              "y":  65,
+                                                                              "z":  -3063,
+                                                                              "a":  "Block{minecraft:fern}",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  3402,
+                                                                              "y":  65,
+                                                                              "z":  -3059,
+                                                                              "a":  "Block{minecraft:fern}",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  42,
+                                                         "x":  -129,
+                                                         "z":  -129,
+                                                         "differentBlocks":  2,
+                                                         "minChangedY":  23,
+                                                         "maxChangedY":  24,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:tall_seagrass}[half=lower]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:tall_seagrass}[half=upper]",
+                                                                                 "blocks":  1
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  -130,
+                                                                              "y":  23,
+                                                                              "z":  -132,
+                                                                              "a":  "Block{minecraft:water}[level=0]",
+                                                                              "b":  "Block{minecraft:tall_seagrass}[half=lower]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -130,
+                                                                              "y":  24,
+                                                                              "z":  -132,
+                                                                              "a":  "Block{minecraft:water}[level=0]",
+                                                                              "b":  "Block{minecraft:tall_seagrass}[half=upper]"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  42,
+                                                         "x":  128,
+                                                         "z":  128,
+                                                         "differentBlocks":  6,
+                                                         "minChangedY":  71,
+                                                         "maxChangedY":  72,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:dandelion}",
+                                                                                 "blocks":  4
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dandelion} -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:grass} -\u003e Block{minecraft:dandelion}",
+                                                                                 "blocks":  1
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  134,
+                                                                              "y":  71,
+                                                                              "z":  129,
+                                                                              "a":  "Block{minecraft:dandelion}",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  136,
+                                                                              "y":  71,
+                                                                              "z":  129,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:dandelion}"
+                                                                          },
+                                                                          {
+                                                                              "x":  137,
+                                                                              "y":  71,
+                                                                              "z":  129,
+                                                                              "a":  "Block{minecraft:grass}",
+                                                                              "b":  "Block{minecraft:dandelion}"
+                                                                          },
+                                                                          {
+                                                                              "x":  136,
+                                                                              "y":  71,
+                                                                              "z":  130,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:dandelion}"
+                                                                          },
+                                                                          {
+                                                                              "x":  141,
+                                                                              "y":  72,
+                                                                              "z":  130,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:dandelion}"
+                                                                          },
+                                                                          {
+                                                                              "x":  135,
+                                                                              "y":  71,
+                                                                              "z":  131,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:dandelion}"
+                                                                          }
+                                                                      ]
+                                                     },
+                                                     {
+                                                         "seed":  42,
+                                                         "x":  -2688,
+                                                         "z":  -4096,
+                                                         "differentBlocks":  62,
+                                                         "minChangedY":  -30,
+                                                         "maxChangedY":  -1,
+                                                         "equalStoredBiomes":  true,
+                                                         "equalBlockBiomes":  true,
+                                                         "differentExactCellFields":  [
+
+                                                                                      ],
+                                                         "transitions":  [
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:air} -\u003e Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:deepslate}[axis=y] -\u003e Block{minecraft:dripstone_block}",
+                                                                                 "blocks":  8
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:dripstone_block} -\u003e Block{minecraft:deepslate}[axis=y]",
+                                                                                 "blocks":  40
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  1
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  2
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false] -\u003e Block{minecraft:air}",
+                                                                                 "blocks":  3
+                                                                             },
+                                                                             {
+                                                                                 "transition":  "Block{minecraft:water}[level=0] -\u003e Block{minecraft:deepslate}[axis=y]",
+                                                                                 "blocks":  2
+                                                                             }
+                                                                         ],
+                                                         "examples":  [
+                                                                          {
+                                                                              "x":  -2677,
+                                                                              "y":  -1,
+                                                                              "z":  -4096,
+                                                                              "a":  "Block{minecraft:deepslate}[axis=y]",
+                                                                              "b":  "Block{minecraft:dripstone_block}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2678,
+                                                                              "y":  -3,
+                                                                              "z":  -4095,
+                                                                              "a":  "Block{minecraft:deepslate}[axis=y]",
+                                                                              "b":  "Block{minecraft:dripstone_block}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2677,
+                                                                              "y":  -4,
+                                                                              "z":  -4095,
+                                                                              "a":  "Block{minecraft:air}",
+                                                                              "b":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=down,waterlogged=false]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2676,
+                                                                              "y":  -22,
+                                                                              "z":  -4092,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2676,
+                                                                              "y":  -21,
+                                                                              "z":  -4092,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2676,
+                                                                              "y":  -20,
+                                                                              "z":  -4092,
+                                                                              "a":  "Block{minecraft:water}[level=0]",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -23,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -22,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -21,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -20,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -19,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=base,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -18,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -17,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=middle,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -16,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=frustum,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2675,
+                                                                              "y":  -15,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:pointed_dripstone}[thickness=tip,vertical_direction=up,waterlogged=false]",
+                                                                              "b":  "Block{minecraft:air}"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  -21,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  -20,
+                                                                              "z":  -4091,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  -23,
+                                                                              "z":  -4089,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  -22,
+                                                                              "z":  -4089,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          },
+                                                                          {
+                                                                              "x":  -2673,
+                                                                              "y":  -21,
+                                                                              "z":  -4089,
+                                                                              "a":  "Block{minecraft:dripstone_block}",
+                                                                              "b":  "Block{minecraft:deepslate}[axis=y]"
+                                                                          }
+                                                                      ]
+                                                     }
+                                                 ]
+                         },
+    "smoke":  [
+                  {
+                      "log":  "final-smoke-standalone.log",
+                      "pass":  true,
+                      "fullChunkObservations":  14,
+                      "reopened":  true
+                  },
+                  {
+                      "log":  "final-smoke-terrablender.log",
+                      "pass":  true,
+                      "fullChunkObservations":  14,
+                      "reopened":  true
+                  },
+                  {
+                      "log":  "final-smoke-vanilla.log",
+                      "pass":  true,
+                      "fullChunkObservations":  14,
+                      "reopened":  true
+                  }
+              ],
+    "artifact":  {
+                     "name":  "reterraforged-forge-1.20.1-0.0.6.jar",
+                     "bytes":  1075208,
+                     "sha256":  "25cad0f81a03c2508a9ceb00637fc870534f00b016ff1d80e6190a81451916d4",
+                     "developmentClasses":  0,
+                     "requiredMixinManifests":  2,
+                     "licensePresent":  true
+                 },
+    "productionRedesignStarted":  false,
+    "fixtureGoldenUpdated":  false,
+    "limitations":  [
+                        "Finite suite, not proof across every seed/schedule",
+                        "Published cells remain read-only by internal contract, not immutable Java types",
+                        "Snapshot copy has allocation cost; final benchmark belongs to Task 1C",
+                        "Raw dormant noise definitions remain NaN; density boundary fails fast",
+                        "Seed narrowing and partition-dependent erosion deliberately retained"
+                    ]
+}
