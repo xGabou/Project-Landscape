@@ -1,0 +1,47 @@
+[
+  {
+    "depth": 1,
+    "unique": true,
+    "outerValuesPreserved": true,
+    "threadLocalClosed": true
+  },
+  {
+    "depth": 2,
+    "unique": true,
+    "outerValuesPreserved": true,
+    "threadLocalClosed": true
+  },
+  {
+    "depth": 8,
+    "unique": true,
+    "outerValuesPreserved": true,
+    "threadLocalClosed": true
+  },
+  {
+    "depth": 64,
+    "unique": true,
+    "outerValuesPreserved": true,
+    "threadLocalClosed": true
+  },
+  {
+    "case": "isolated fallback pool double close",
+    "subsequentBorrowAliases": false
+  },
+  {
+    "case": "stale fallback close after reborrow",
+    "independentOpenBorrows": true
+  },
+  {
+    "case": "concurrent normal resources",
+    "distinctCells": 4
+  },
+  {
+    "case": "concurrent nested fallback",
+    "distinctCells": 4
+  },
+  {
+    "case": "foreign thread release",
+    "error": "java.lang.IllegalStateException: Cell fallback resource must be used and released on its borrowing thread",
+    "stillOpen": true
+  }
+]

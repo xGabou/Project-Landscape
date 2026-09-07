@@ -73,6 +73,7 @@ public final class ReproductionSuite {
             "seedSuite", seeds, "dimension", level.dimension().location().toString(), "preset", "loaded Legacy Default",
             "tileSize", 3, "tileBorderChunks", 1, "batchCount", 6, "fieldEncoding", "float raw IEEE754 signed int bits; stable terrain/enum names; no golden values");
         out.row("preset", "value", Preset.DIRECT_CODEC.encodeStart(com.mojang.serialization.JsonOps.INSTANCE,preset).getOrThrow(false,RTFCommon.LOGGER::error));
+        legacyGeometryConfiguration();
         try {
             if(full) {
                 sampling(); crossWorld(); noiseOwnership(level); boundsAndLifetime(); resources(); missingContext(level);
@@ -85,6 +86,22 @@ public final class ReproductionSuite {
             out.row("closed_cache_ownership", "closedTestContexts", owned.size(), "globalManagerStillContainsFirstClosedCache",
                 !owned.isEmpty() && ((List<?>)Evidence.field(CacheManager.class,"CACHES")).contains(Evidence.field(owned.get(0).cache,"cache")));
             out.flush();
+        }
+    }
+    private void legacyGeometryConfiguration() throws Exception {
+        var defaults=raccoonman.reterraforged.config.PerformanceConfig.makeDefault();
+        var read=raccoonman.reterraforged.config.PerformanceConfig.read(raccoonman.reterraforged.config.PerformanceConfig.DEFAULT_FILE_PATH).result().orElseThrow();
+        out.row("legacy_geometry_config","case","defaults and config reader","tileSize",defaults.tileSize(),"batchCount",defaults.batchCount(),"readTileSize",read.tileSize(),"readBatchCount",read.batchCount());
+        for(int size:new int[]{2,3,4}) {
+            try { var config=new raccoonman.reterraforged.config.PerformanceConfig(size,6,defaults.threadCount());
+                out.row("legacy_geometry_config","case","performance tile size","requested",size,"accepted",true,"actual",config.tileSize());
+            } catch(IllegalArgumentException expected) {out.row("legacy_geometry_config","case","performance tile size","requested",size,"accepted",false,"error",Evidence.failure(expected));}
+        }
+        for(int lifetime:new int[]{12,31,32}) {
+            var copy=preset.copy();copy.filters().erosion.dropletLifetime=lifetime;
+            var context=GeneratorContext.makeCached(copy,noises,(int)seeds[0],3,6,false);
+            try { out.row("legacy_geometry_config","case","persisted preset controls legacy halo","dropletLifetime",lifetime,"borderBlocks",((Size)Evidence.field(context.generator,"tileSizeBlocks")).border()); }
+            finally {context.cache.close();}
         }
     }
     private List<Point> suite(GeneratorContext c, long seed) {

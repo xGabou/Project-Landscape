@@ -367,3 +367,30 @@ Cost: one finite check per NoiseFunction.compute, no allocation on valid evaluat
 no isolated performance delta claimed. Production: NoiseFunction.java only. Tests:
 ReproductionSuite and Verify-Repairs. Evidence: `10-after`,
 `10-invalid-noise/verification.json`, `logs/10-*.log`.
+
+## 11 — Freeze legacy geometry, not partition independence
+
+Before (`11-before`, real Forge scheduling profile, PASS 1m), PerformanceConfig accepts
+tile exponents 2, 3 and 4. Its reader currently ignores file overrides and returns
+defaults, but its constructor and historical MAX_TILE_SIZE=8 misleadingly permit a
+future performance-only override. The constructor now rejects non-3 exponents with
+an explicit generation-version-boundary message; the maximum reflects that constraint.
+Both production initialization and preview scheduling use this config. Lower-level
+TileGenerator/test/preview geometry is deliberately not rewritten or normalized.
+
+Frozen Legacy Default: exponent **3**, 8x8 core chunks = **128x128** blocks, **one-chunk
+halo** = 16 blocks per side, total **160x160**, default batch count **6**. Existing
+custom presets retain the exact persisted erosion-lifetime rule: lifetime 12/31 gives
+16 border blocks, lifetime 32 gives 32 border blocks. That is preset generation
+semantics, not a runtime performance setting. Do not silently reinterpret this rule
+when Task 2 introduces explicit versioning. Batch/worker scheduling remains separate;
+no erosion, halo formula, tile partition or thread-count default is changed here.
+
+After `11-after`, exponents 2/4 are rejected; 3, the default reader, default batch and
+all three preset-halo probes are unchanged. All **64 checks pass**, zero differences
+in 994 canonical rows. Build PASS, 5s; four-world Forge run PASS, 2m2s. No generation
+hot-path overhead: constructor validation only. Production: PerformanceConfig.java
+(validation/documentation) and GeneratorContext.java (comment/provenance only).
+Tests: ReproductionSuite and Verify-Repairs. Evidence: `11-before`, `11-after`,
+`11-legacy-geometry/verification.json`, `logs/11-*.log`. Partition-dependent filtering
+remains an explicitly retained legacy behavior; no terrain golden is updated.

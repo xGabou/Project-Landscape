@@ -27,6 +27,13 @@ if ($ThroughFix -ge 2) {
 }
 
 # Compare valid independently generated terrain paths; never bless contaminated query values.
+if ($ThroughFix -ge 11) {
+    $geometry=@(Table $Run 'legacy_geometry_config')
+    Check 'legacy config defaults frozen at exponent 3 batch 6' (@($geometry | Where-Object {$_.case -eq 'defaults and config reader' -and $_.tileSize -eq 3 -and $_.readTileSize -eq 3 -and $_.batchCount -eq 6 -and $_.readBatchCount -eq 6}).Count -eq 1)
+    Check 'nonlegacy performance tile sizes require version boundary' (@($geometry | Where-Object {$_.case -eq 'performance tile size' -and $_.requested -ne 3 -and -not $_.accepted -and $_.error -match 'generation-version boundary'}).Count -eq 2)
+    Check 'legacy tile size still accepted' (@($geometry | Where-Object {$_.case -eq 'performance tile size' -and $_.requested -eq 3 -and $_.accepted}).Count -eq 1)
+    Check 'persisted preset halo derivation unchanged' (@($geometry | Where-Object {$_.case -eq 'persisted preset controls legacy halo' -and (($_.dropletLifetime -lt 32 -and $_.borderBlocks -eq 16) -or ($_.dropletLifetime -eq 32 -and $_.borderBlocks -eq 32))}).Count -eq 3)
+}
 if ($ThroughFix -ge 10) {
     $invalid=@(Table $Run 'invalid_noise_validation')
     Check 'registered non-finite noises fail at density boundary' ($invalid.Count -eq 12 -and @($invalid | Where-Object {-not $_.rejected -or $_.error -notmatch 'Non-finite ReTerraForged density noise reterraforged:terrain/(erosion|ridges).*compute seed='}).Count -eq 0)

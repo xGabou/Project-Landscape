@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen;
 
 import org.jetbrains.annotations.Nullable;
@@ -33,6 +34,9 @@ public class GeneratorContext {
     }
 
     public static GeneratorContext makeCached(Preset preset, HolderGetter<Noise> noiseLookup, int seed, int tileSize, int batchCount, boolean queue) {
+        // Frozen legacy semantics: halo is derived from the persisted erosion preset,
+        // one chunk below lifetime 32 and two at/above it. This changes filter output;
+        // never reinterpret it as runtime performance tuning or silently normalize it.
     	GeneratorContext ctx = makeUncached(preset, noiseLookup, seed, tileSize, Math.min(2, Math.max(1, preset.filters().erosion.dropletLifetime / 16)), batchCount);
     	ctx.cache = new TileCache(tileSize, queue, ctx.generator);
     	ctx.lookup = new WorldLookup(ctx);

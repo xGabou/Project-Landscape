@@ -1,0 +1,42 @@
+[
+  {
+    "case": "defaults and config reader",
+    "tileSize": 3,
+    "batchCount": 6,
+    "readTileSize": 3,
+    "readBatchCount": 6
+  },
+  {
+    "case": "performance tile size",
+    "requested": 2,
+    "accepted": true,
+    "actual": 2
+  },
+  {
+    "case": "performance tile size",
+    "requested": 3,
+    "accepted": true,
+    "actual": 3
+  },
+  {
+    "case": "performance tile size",
+    "requested": 4,
+    "accepted": true,
+    "actual": 4
+  },
+  {
+    "case": "persisted preset controls legacy halo",
+    "dropletLifetime": 12,
+    "borderBlocks": 16
+  },
+  {
+    "case": "persisted preset controls legacy halo",
+    "dropletLifetime": 31,
+    "borderBlocks": 16
+  },
+  {
+    "case": "persisted preset controls legacy halo",
+    "dropletLifetime": 32,
+    "borderBlocks": 32
+  }
+]
