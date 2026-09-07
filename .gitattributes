@@ -1,3 +1,4 @@
 # Preserve exact recorded evidence bytes/SHA-256 across Windows and Unix checkouts.
 docs/task1/evidence/** -text
 docs/task1b/evidence/** -text
+docs/task1c/evidence/** -text

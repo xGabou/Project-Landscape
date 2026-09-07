@@ -28,6 +28,8 @@ public final class ReproductionClient {
     private final long[] seeds=Arrays.stream(System.getProperty("task1a.seeds").split(",")).mapToLong(Long::parseLong).toArray();
     private final boolean full=System.getProperty("task1a.profile","full").equals("full");
     private final boolean chunksOnly=System.getProperty("task1a.profile","full").equals("chunks");
+    private final String task1c=System.getProperty("task1a.profile", "full");
+    private boolean task1cRepeat() { return task1c.equals("benchmark") || task1c.equals("variance"); }
     private final String run="reproduction-"+System.currentTimeMillis();
     private int stage,worldIndex; private long start=System.nanoTime();
     private Evidence out; private CompletableFuture<Void> work;
@@ -52,7 +54,7 @@ public final class ReproductionClient {
                     var json = com.google.gson.JsonParser.parseString(Files.readString(Path.of(System.getProperty("task1a.presetFile"))));
                     selected = raccoonman.reterraforged.data.worldgen.preset.settings.Preset.DIRECT_CODEC.parse(com.mojang.serialization.JsonOps.INSTANCE, json).getOrThrow(false, RTFCommon.LOGGER::error);
                 }
-                if(worldIndex==3)selected.miscellaneous().customBiomeFeatures=false;
+                if(worldIndex==3&&full)selected.miscellaneous().customBiomeFeatures=false;
                 Datapacks.makePreset(selected,screen.getUiState().getSettings().worldgenLoadContext(),root.resolve("export"),pack,"Task 1A selected preset").run();
                 if(worldIndex==0&&full){
                     var disabled=Presets.makeLegacyDefault();disabled.miscellaneous().customBiomeFeatures=false;
@@ -71,9 +73,11 @@ public final class ReproductionClient {
                 work=server.submit(()->{
                     try{
                         out.row("observer_counters", "phase", "before_suite", "seed", currentSeed(), "counters", Metrics.snapshot());
-                        if(worldIndex==0&&!chunksOnly)new ReproductionSuite(server.overworld(),out,seeds).run(server.overworld(),full);
+                        if(task1c.startsWith("golden") || task1cRepeat() || task1c.equals("allocation")) {
+                            new LegacyBaselineSuite(server.overworld(), out).run(task1c,worldIndex);
+                        } else if(worldIndex==0&&!chunksOnly)new ReproductionSuite(server.overworld(),out,seeds).run(server.overworld(),full);
                         out.row("observer_counters", "phase", "before_chunks", "seed", currentSeed(), "counters", Metrics.snapshot());
-                        if(worldIndex==3)disabledVegetation(server.overworld());
+                        if(worldIndex==3&&full)disabledVegetation(server.overworld());
                         else if(full||chunksOnly)chunks(server.overworld());
                         out.row("observer_counters", "phase", "after_chunks", "seed", currentSeed(), "counters", Metrics.snapshot());
                         out.flush();
@@ -96,14 +100,14 @@ public final class ReproductionClient {
                 }
                 out.row("disposal","case","actual world unload","seed",currentSeed(),"worldIndex",worldIndex,"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
                 worldContexts=List.of();
-                if((full||chunksOnly)&&++worldIndex<(full&&disabledBootstrapSucceeded?4:Math.min(3,seeds.length))){stage=0;}else{
+                if((full||chunksOnly||task1cRepeat())&&++worldIndex<(task1c.equals("variance")?6:task1cRepeat()?4:full&&disabledBootstrapSucceeded?4:Math.min(3,seeds.length))){stage=0;}else{
                     out.row("completion","status","PASS","kind","reproduction observations, not correctness goldens","run",run);out.flush();
                     Files.writeString(mc.gameDirectory.toPath().resolve("task1a-pass.txt"),run+"\n");stage=99;RTFCommon.LOGGER.info("TASK1A PASS {}",run);mc.stop();
                 }
             }
         }catch(Throwable ex){stage=99;RTFCommon.LOGGER.error("TASK1A FAIL",ex);try{out.row("completion","status","FAIL","error",Evidence.failure(ex));out.flush();}catch(Exception ignored){}mc.stop();}
     }
-    private long currentSeed(){return seeds[worldIndex<3?worldIndex:0];}
+    private long currentSeed(){return task1c.equals("variance")?seeds[worldIndex%3]:task1cRepeat()?8675309L:seeds[worldIndex<3?worldIndex:0];}
     private void disabledVegetation(ServerLevel level) {
         var context=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
         var placed=level.registryAccess().registryOrThrow(Registries.PLACED_FEATURE);

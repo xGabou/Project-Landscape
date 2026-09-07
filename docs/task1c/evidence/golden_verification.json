@@ -1,0 +1,39 @@
+{
+    "schemaVersion":  1,
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "backend":  "LEGACY_RTF_V0",
+    "configurationFingerprint":  "1b510addf57022ab0df6e9066854017e0a034ceaeee4ea222d2dad419cfdcf30",
+    "canonicalRows":  595,
+    "fieldsPerRow":  34,
+    "biomeHintRows":  595,
+    "acceptedCanonicalRowsCompared":  340,
+    "acceptedDirectRowsCompared":  340,
+    "canonicalDifferences":  0,
+    "legacyDiagnosticRows":  340,
+    "legacyDiagnosticDifferingRows":  340,
+    "legacyDiagnosticFields":  {
+                                   "gradient":  340,
+                                   "height":  319,
+                                   "heightErosion":  176,
+                                   "hint_gradient":  340,
+                                   "hint_height":  319,
+                                   "hint_height_erosion":  176,
+                                   "hint_sediment":  96,
+                                   "sediment":  96,
+                                   "terrain":  6
+                               },
+    "seedCollisionRows":  85,
+    "seedCollisionFields":  34,
+    "tileDigests":  420,
+    "distinctSeedTiles":  35,
+    "workerCounts":  [
+                         2,
+                         24,
+                         48
+                     ],
+    "candidateCompared":  "golden-repeat",
+    "failures":  [
+
+                 ],
+    "status":  "PASS"
+}

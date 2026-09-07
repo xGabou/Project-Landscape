@@ -49,6 +49,8 @@ minecraft {
             property 'task1a.seeds', providers.gradleProperty('reproSeeds').getOrElse('8675309,4303642605,42,-987654321')
             property 'task1a.repeats', providers.gradleProperty('reproRepeats').getOrElse('3')
             property 'task1a.points', providers.gradleProperty('reproPoints').getOrElse('')
+            // Task 1C test corpus only; no production generation-version mechanism.
+            property 'task1c.fixtureFile', file('docs/task1c/evidence/fixture_manifest.json').absolutePath
             if (providers.gradleProperty('reproPreset').isPresent()) {
                 property 'task1a.presetFile', file(providers.gradleProperty('reproPreset').get()).absolutePath
             }
