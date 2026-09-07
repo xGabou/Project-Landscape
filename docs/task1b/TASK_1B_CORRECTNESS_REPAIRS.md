@@ -297,3 +297,27 @@ Tests: ReproductionSuite and Verify-Repairs. All **50 cumulative checks pass**, 
 Forge run PASS, 1m38s. No isolated performance delta measured; density diagnostic
 operation strings are constructed once per mapped sampler, not per query.
 Evidence: `07-after`, `07-missing-context/verification.json`, `logs/07-*.log`.
+
+## 08 — Disabled custom vegetation holder resolution
+
+Before (`07-after`): disabled export fails registry creation with 17 unreferenced
+custom-tree placed-feature keys. PresetPlacedFeatures registers these only when
+customBiomeFeatures is true; PresetBiomeModifierData previously requested all 17
+holders before its matching condition. The holder requests now share that condition.
+No tree replacement policy, generic decoration, registration order or enabled feature
+definition changes. Production file: PresetBiomeModifierData.java only.
+
+After `08-after`: export succeeds and a fourth actual world loads the disabled pack.
+All placed/configured-feature holders are bound, zero RTF custom-tree placed keys are
+required, and eight representative chunks reach FULL without feature-order failures.
+Plains retains minecraft:trees_plains, forest minecraft:trees_birch_and_oak, and dark
+forest minecraft:dark_forest_vegetation. All four worlds dispose their caches cleanly.
+The enabled preset's **175 exported files are byte-identical** to the pre-fix export.
+All **55 cumulative checks pass**, including zero changes in 994 canonical rows.
+Build PASS, 8s; four-world Forge run PASS, 1m54s. The change removes disabled bootstrap
+work and adds no generation hot-path cost; no isolated performance delta measured.
+
+Developer changes: ReproductionClient, Verify-Repairs and new Compare-PresetPacks.
+Evidence: `08-after`, `08-vegetation-disabled/{verification,enabled_pack_comparison}.json`,
+`logs/08-*.log`. Disabled mode previously could not load, so its new chunk results are
+functional evidence, not an invented pre-fix terrain golden. Enabled output is unchanged.

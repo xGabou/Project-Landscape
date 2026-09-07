@@ -1,0 +1,182 @@
+[
+  {
+    "phase": "before_suite",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 625,
+      "entryGetCalls": 9224957,
+      "entryGetInclusiveNs": 1744644600,
+      "entryGetInitiallyPending": 8,
+      "presentHit": 9213638,
+      "presentMiss": 2695212,
+      "provideCalls": 10694,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 4
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 9777,
+      "entryGetCalls": 9235361,
+      "entryGetInclusiveNs": 10830233900,
+      "entryGetInitiallyPending": 155,
+      "presentHit": 9214741,
+      "presentMiss": 2696269,
+      "provideCalls": 10843,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 147
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 9813,
+      "entryGetCalls": 10608095,
+      "entryGetInclusiveNs": 12131767700,
+      "entryGetInitiallyPending": 175,
+      "presentHit": 10586800,
+      "presentMiss": 2699612,
+      "provideCalls": 11482,
+      "queueCalls": 4141,
+      "thresholdTileReleases": 147
+    }
+  },
+  {
+    "phase": "before_suite",
+    "seed": 4303642605,
+    "counters": {
+      "dropCalls": 10438,
+      "entryGetCalls": 16958494,
+      "entryGetInclusiveNs": 13649648600,
+      "entryGetInitiallyPending": 184,
+      "presentHit": 16926102,
+      "presentMiss": 5284903,
+      "provideCalls": 21954,
+      "queueCalls": 6166,
+      "thresholdTileReleases": 151
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 4303642605,
+    "counters": {
+      "dropCalls": 10438,
+      "entryGetCalls": 16958494,
+      "entryGetInclusiveNs": 13649648600,
+      "entryGetInitiallyPending": 184,
+      "presentHit": 16926102,
+      "presentMiss": 5284903,
+      "provideCalls": 21954,
+      "queueCalls": 6166,
+      "thresholdTileReleases": 151
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 4303642605,
+    "counters": {
+      "dropCalls": 10474,
+      "entryGetCalls": 18558410,
+      "entryGetInclusiveNs": 14865902700,
+      "entryGetInitiallyPending": 201,
+      "presentHit": 18525379,
+      "presentMiss": 5290019,
+      "provideCalls": 22557,
+      "queueCalls": 8282,
+      "thresholdTileReleases": 151
+    }
+  },
+  {
+    "phase": "before_suite",
+    "seed": 42,
+    "counters": {
+      "dropCalls": 11099,
+      "entryGetCalls": 25680694,
+      "entryGetInclusiveNs": 16105106200,
+      "entryGetInitiallyPending": 209,
+      "presentHit": 25644918,
+      "presentMiss": 8021500,
+      "provideCalls": 24677,
+      "queueCalls": 10307,
+      "thresholdTileReleases": 155
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 42,
+    "counters": {
+      "dropCalls": 11099,
+      "entryGetCalls": 25680694,
+      "entryGetInclusiveNs": 16105106200,
+      "entryGetInitiallyPending": 209,
+      "presentHit": 25644918,
+      "presentMiss": 8021500,
+      "provideCalls": 24677,
+      "queueCalls": 10307,
+      "thresholdTileReleases": 155
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 42,
+    "counters": {
+      "dropCalls": 11144,
+      "entryGetCalls": 28706960,
+      "entryGetInclusiveNs": 17585463600,
+      "entryGetInitiallyPending": 229,
+      "presentHit": 28670811,
+      "presentMiss": 8046676,
+      "provideCalls": 25005,
+      "queueCalls": 12552,
+      "thresholdTileReleases": 155
+    }
+  },
+  {
+    "phase": "before_suite",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 11769,
+      "entryGetCalls": 37925257,
+      "entryGetInclusiveNs": 19208421300,
+      "entryGetInitiallyPending": 237,
+      "presentHit": 37886392,
+      "presentMiss": 10739945,
+      "provideCalls": 27096,
+      "queueCalls": 14577,
+      "thresholdTileReleases": 159
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 11769,
+      "entryGetCalls": 37925257,
+      "entryGetInclusiveNs": 19208421300,
+      "entryGetInitiallyPending": 237,
+      "presentHit": 37886392,
+      "presentMiss": 10739945,
+      "provideCalls": 27096,
+      "queueCalls": 14577,
+      "thresholdTileReleases": 159
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 11805,
+      "entryGetCalls": 39297509,
+      "entryGetInclusiveNs": 20497482100,
+      "entryGetInitiallyPending": 258,
+      "presentHit": 39258340,
+      "presentMiss": 10743287,
+      "provideCalls": 27364,
+      "queueCalls": 16693,
+      "thresholdTileReleases": 159
+    }
+  }
+]

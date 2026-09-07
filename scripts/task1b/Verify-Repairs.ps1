@@ -27,6 +27,15 @@ if ($ThroughFix -ge 2) {
 }
 
 # Compare valid independently generated terrain paths; never bless contaminated query values.
+if ($ThroughFix -ge 8) {
+    $vegetation=@(Table $Run 'vegetation_disabled')
+    Check 'disabled vegetation bootstrap succeeds' (@($vegetation | Where-Object {$_.bootstrap -eq 'success'}).Count -eq 1)
+    $loaded=@($vegetation | Where-Object {$_.case -eq 'actual disabled datapack world'})
+    Check 'disabled vegetation datapack actually loads' ($loaded.Count -eq 1 -and $loaded[0].loaded -and $loaded[0].contextPresent)
+    Check 'disabled vegetation requires no custom tree holders' ($loaded.Count -eq 1 -and $loaded[0].customTreeKeys.Count -eq 0 -and $loaded[0].allPlacedHoldersBound)
+    Check 'ordinary biome tree features retained' ($loaded.Count -eq 1 -and $loaded[0].ordinaryTreeFeatures.'minecraft:plains' -contains 'minecraft:trees_plains' -and $loaded[0].ordinaryTreeFeatures.'minecraft:forest' -contains 'minecraft:trees_birch_and_oak' -and $loaded[0].ordinaryTreeFeatures.'minecraft:dark_forest' -contains 'minecraft:dark_forest_vegetation')
+    Check 'disabled world generates eight FULL chunks' ($loaded.Count -eq 1 -and $loaded[0].chunkStatuses.Count -eq 8 -and @($loaded[0].chunkStatuses | Where-Object {$_ -notmatch 'full'}).Count -eq 0)
+}
 if ($ThroughFix -ge 7) {
     $missing=@(Table $Run 'missing_context')
     foreach($case in @('RandomState before initialize','structure before initialization','initialized with empty preset registry','actual structure rule with missing context')) {
@@ -75,7 +84,8 @@ if ($ThroughFix -ge 5) {
     Check 'stale workspace close cannot release replacement borrow' (@($disposed | Where-Object {$_.case -eq 'stale workspace close after pool reuse' -and $_.unchanged -and $_.cells.live -eq 0 -and $_.chunks.live -eq 0}).Count -eq 1)
     Check 'array pool releases once even when full' (@($disposed | Where-Object {$_.case -eq 'array handles and full pool' -and $_.staleHandleSafe -and $_.allClosed -and $_.statistics.live -eq 0 -and $_.statistics.borrowed -eq 3 -and $_.statistics.returned -eq 3}).Count -eq 1)
     $unloads=@($disposed | Where-Object {$_.case -eq 'actual world unload'})
-    Check 'real world/server shutdown unregisters caches and drains pools' ($unloads.Count -eq 3 -and @($unloads | Where-Object {-not $_.allClosed -or -not $_.allUnregistered -or $_.livePooledBorrows -ne 0}).Count -eq 0)
+    $expectedUnloads=if($ThroughFix -ge 8){4}else{3}
+    Check 'real world/server shutdown unregisters caches and drains pools' ($unloads.Count -eq $expectedUnloads -and @($unloads | Where-Object {-not $_.allClosed -or -not $_.allUnregistered -or $_.livePooledBorrows -ne 0}).Count -eq 0)
 }
 $comparisons = [Collections.Generic.List[object]]::new()
 foreach ($name in @('cached_uncached','seed_collisions','generation_order','generated_chunks')) {

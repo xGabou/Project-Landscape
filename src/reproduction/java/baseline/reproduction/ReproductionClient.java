@@ -31,6 +31,7 @@ public final class ReproductionClient {
     private final String run="reproduction-"+System.currentTimeMillis();
     private int stage,worldIndex; private long start=System.nanoTime();
     private Evidence out; private CompletableFuture<Void> work;
+    private boolean disabledBootstrapSucceeded;
     private List<raccoonman.reterraforged.world.worldgen.GeneratorContext> worldContexts=List.of();
     public ReproductionClient(){MinecraftForge.EVENT_BUS.addListener(this::tick);}
     private void tick(TickEvent.ClientTickEvent event){
@@ -51,27 +52,30 @@ public final class ReproductionClient {
                     var json = com.google.gson.JsonParser.parseString(Files.readString(Path.of(System.getProperty("task1a.presetFile"))));
                     selected = raccoonman.reterraforged.data.worldgen.preset.settings.Preset.DIRECT_CODEC.parse(com.mojang.serialization.JsonOps.INSTANCE, json).getOrThrow(false, RTFCommon.LOGGER::error);
                 }
+                if(worldIndex==3)selected.miscellaneous().customBiomeFeatures=false;
                 Datapacks.makePreset(selected,screen.getUiState().getSettings().worldgenLoadContext(),root.resolve("export"),pack,"Task 1A selected preset").run();
                 if(worldIndex==0&&full){
                     var disabled=Presets.makeLegacyDefault();disabled.miscellaneous().customBiomeFeatures=false;
                     try{Datapacks.makePreset(disabled,screen.getUiState().getSettings().worldgenLoadContext(),root.resolve("disabled-work"),root.resolve("disabled-pack"),"Disabled custom features reproduction").run();
-                        out.row("vegetation_disabled","bootstrap","success","loadAttempted",false,"note","Further loading required if bootstrap unexpectedly succeeds");
+                        disabledBootstrapSucceeded=true;
+                        out.row("vegetation_disabled","bootstrap","success","loadAttempted",false,"note","Separate disabled-preset world follows the three comparator worlds");
                     }catch(Throwable ex){out.row("vegetation_disabled","bootstrap","failed","error",Evidence.failure(ex),"exceptionTree",Evidence.trace(ex),"loadAttempted",false,"reason","No complete pack available after bootstrap failure");}
                 }
                 var config=screen.getUiState().getSettings().dataConfiguration();var enabled=new ArrayList<>(config.dataPacks().getEnabled());enabled.add("file/reproduction-preset");
                 var data=new WorldDataConfiguration(new DataPackConfig(enabled,List.of()),config.enabledFeatures());
                 var settings=new LevelSettings(name,GameType.CREATIVE,false,Difficulty.PEACEFUL,true,new GameRules(),data);
-                mc.createWorldOpenFlows().createFreshLevel(name,settings,new WorldOptions(seeds[worldIndex],true,false),
+                mc.createWorldOpenFlows().createFreshLevel(name,settings,new WorldOptions(currentSeed(),true,false),
                     registry->registry.registryOrThrow(Registries.WORLD_PRESET).getHolderOrThrow(WorldPresets.NORMAL).value().createWorldDimensions());
             }else if(stage==2&&mc.player!=null&&mc.level!=null&&mc.getSingleplayerServer()!=null){
                 stage=3;var server=mc.getSingleplayerServer();
                 work=server.submit(()->{
                     try{
-                        out.row("observer_counters", "phase", "before_suite", "seed", seeds[worldIndex], "counters", Metrics.snapshot());
+                        out.row("observer_counters", "phase", "before_suite", "seed", currentSeed(), "counters", Metrics.snapshot());
                         if(worldIndex==0&&!chunksOnly)new ReproductionSuite(server.overworld(),out,seeds).run(server.overworld(),full);
-                        out.row("observer_counters", "phase", "before_chunks", "seed", seeds[worldIndex], "counters", Metrics.snapshot());
-                        if(full||chunksOnly)chunks(server.overworld());
-                        out.row("observer_counters", "phase", "after_chunks", "seed", seeds[worldIndex], "counters", Metrics.snapshot());
+                        out.row("observer_counters", "phase", "before_chunks", "seed", currentSeed(), "counters", Metrics.snapshot());
+                        if(worldIndex==3)disabledVegetation(server.overworld());
+                        else if(full||chunksOnly)chunks(server.overworld());
+                        out.row("observer_counters", "phase", "after_chunks", "seed", currentSeed(), "counters", Metrics.snapshot());
                         out.flush();
                     }catch(Exception ex){throw new RuntimeException(ex);}
                 });
@@ -90,14 +94,33 @@ public final class ReproductionClient {
                     DisposalChecks.awaitReturned(context);
                     live += DisposalChecks.stats(context,"cellPool").live()+DisposalChecks.stats(context,"chunkPool").live();
                 }
-                out.row("disposal","case","actual world unload","seed",seeds[worldIndex],"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
+                out.row("disposal","case","actual world unload","seed",currentSeed(),"worldIndex",worldIndex,"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
                 worldContexts=List.of();
-                if((full||chunksOnly)&&++worldIndex<Math.min(3,seeds.length)){stage=0;}else{
+                if((full||chunksOnly)&&++worldIndex<(full&&disabledBootstrapSucceeded?4:Math.min(3,seeds.length))){stage=0;}else{
                     out.row("completion","status","PASS","kind","reproduction observations, not correctness goldens","run",run);out.flush();
                     Files.writeString(mc.gameDirectory.toPath().resolve("task1a-pass.txt"),run+"\n");stage=99;RTFCommon.LOGGER.info("TASK1A PASS {}",run);mc.stop();
                 }
             }
         }catch(Throwable ex){stage=99;RTFCommon.LOGGER.error("TASK1A FAIL",ex);try{out.row("completion","status","FAIL","error",Evidence.failure(ex));out.flush();}catch(Exception ignored){}mc.stop();}
+    }
+    private long currentSeed(){return seeds[worldIndex<3?worldIndex:0];}
+    private void disabledVegetation(ServerLevel level) {
+        var context=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
+        var placed=level.registryAccess().registryOrThrow(Registries.PLACED_FEATURE);
+        var custom=placed.keySet().stream().filter(k->k.getNamespace().equals("reterraforged")&&k.getPath().endsWith("_trees")).map(Object::toString).sorted().toList();
+        boolean bound=placed.holders().allMatch(h->h.isBound()&&h.value().feature().isBound());
+        var biomes=level.registryAccess().registryOrThrow(Registries.BIOME);
+        var ordinary=new LinkedHashMap<String,List<String>>();
+        for(var key:List.of(net.minecraft.world.level.biome.Biomes.PLAINS,net.minecraft.world.level.biome.Biomes.FOREST,net.minecraft.world.level.biome.Biomes.DARK_FOREST)) {
+            var features=biomes.getHolderOrThrow(key).value().getGenerationSettings().features().stream().flatMap(set->set.stream())
+                .map(h->h.unwrapKey().orElseThrow().location().toString()).filter(k->k.contains("trees")||k.contains("dark_forest_vegetation")).toList();
+            ordinary.put(key.location().toString(),features);
+        }
+        List<String> statuses=new ArrayList<>();
+        for(int[] p:new int[][]{{0,0},{-129,-129},{127,127},{128,128},{-4032,-4096},{-2688,-4096},{-64,-4096},{3392,-3072}})
+            statuses.add(level.getChunk(p[0]>>4,p[1]>>4).getStatus().toString());
+        out.row("vegetation_disabled","case","actual disabled datapack world","loadAttempted",true,"loaded",true,
+            "contextPresent",context!=null,"customTreeKeys",custom,"allPlacedHoldersBound",bound,"ordinaryTreeFeatures",ordinary,"chunkStatuses",statuses);
     }
     private void chunks(ServerLevel level) throws Exception {
         int[][] positions={{0,0},{-129,-129},{127,127},{128,128},{-4032,-4096},{-2688,-4096},{-64,-4096},{3392,-3072}};
