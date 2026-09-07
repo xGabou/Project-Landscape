@@ -1,0 +1,29 @@
+[
+  {
+    "evictedAfter64Drops": true,
+    "before": {
+      "dropCalls": 625,
+      "entryGetCalls": 10790708,
+      "entryGetInclusiveNs": 3138204972,
+      "entryGetInitiallyPending": 50,
+      "presentHit": 9730693,
+      "presentMiss": 2702432,
+      "provideCalls": 1059390,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 4,
+      "tileGenerationCalls": 98
+    },
+    "after": {
+      "dropCalls": 689,
+      "entryGetCalls": 10790773,
+      "entryGetInclusiveNs": 3169543872,
+      "entryGetInitiallyPending": 51,
+      "presentHit": 9730693,
+      "presentMiss": 2702433,
+      "provideCalls": 1059391,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 5,
+      "tileGenerationCalls": 99
+    }
+  }
+]

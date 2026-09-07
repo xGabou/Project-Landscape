@@ -1,0 +1,38 @@
+[
+  {
+    "case": "actual world unload",
+    "seed": 8675309,
+    "worldIndex": 0,
+    "contexts": 3,
+    "allClosed": true,
+    "allUnregistered": true,
+    "livePooledBorrows": 0
+  },
+  {
+    "case": "actual world unload",
+    "seed": 8675309,
+    "worldIndex": 1,
+    "contexts": 3,
+    "allClosed": true,
+    "allUnregistered": true,
+    "livePooledBorrows": 0
+  },
+  {
+    "case": "actual world unload",
+    "seed": 8675309,
+    "worldIndex": 2,
+    "contexts": 3,
+    "allClosed": true,
+    "allUnregistered": true,
+    "livePooledBorrows": 0
+  },
+  {
+    "case": "actual world unload",
+    "seed": 8675309,
+    "worldIndex": 3,
+    "contexts": 3,
+    "allClosed": true,
+    "allUnregistered": true,
+    "livePooledBorrows": 0
+  }
+]

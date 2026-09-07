@@ -1,0 +1,21 @@
+{
+    "schemaVersion":  1,
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "cpu":  "13th Gen Intel(R) Core(TM) i7-13700K",
+    "physicalCores":  16,
+    "logicalProcessors":  24,
+    "physicalMemoryBytes":  68388204544,
+    "os":  "Microsoft Windows 11 Professionnel",
+    "osBuild":  "26200",
+    "powerPlan":  "GUID du mode de gestion de l’alimentation : 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (Performances élevées)",
+    "minecraft":  "1.20.1",
+    "forge":  "47.4.22",
+    "gradle":  "8.11",
+    "forgeGradle":  "6.0.42",
+    "mixinGradle":  "0.7.38",
+    "terraBlender":  "3.0.1.10",
+    "benchmarkTerraBlenderEnabled":  false,
+    "developmentMods":  false,
+    "execution":  "Live client/integrated server, mapped development build; not a dedicated/headless server",
+    "instrumentation":  "Test-only cache counters and nanoTime; no sampling profiler"
+}
