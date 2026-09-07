@@ -27,6 +27,10 @@ if ($ThroughFix -ge 2) {
 }
 
 # Compare valid independently generated terrain paths; never bless contaminated query values.
+if ($ThroughFix -ge 10) {
+    $invalid=@(Table $Run 'invalid_noise_validation')
+    Check 'registered non-finite noises fail at density boundary' ($invalid.Count -eq 12 -and @($invalid | Where-Object {-not $_.rejected -or $_.error -notmatch 'Non-finite ReTerraForged density noise reterraforged:terrain/(erosion|ridges).*compute seed='}).Count -eq 0)
+}
 if ($ThroughFix -ge 9) {
     $noise=@(Table $Run 'noise_cache')
     $shared=@($noise | Where-Object {$_.case -eq 'same instance P changing compute seed'})

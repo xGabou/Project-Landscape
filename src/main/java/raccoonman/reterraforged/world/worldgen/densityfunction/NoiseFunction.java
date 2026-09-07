@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.densityfunction;
 
 import com.mojang.serialization.Codec;
@@ -12,7 +13,13 @@ public record NoiseFunction(Holder<Noise> noise, int seed) implements MarkerFunc
 
 	@Override
 	public double compute(FunctionContext ctx) {
-		return this.noise.value().compute(ctx.blockX(), ctx.blockZ(), this.seed);
+		float value = this.noise.value().compute(ctx.blockX(), ctx.blockZ(), this.seed);
+		if (!Float.isFinite(value)) {
+			throw new IllegalStateException("Non-finite ReTerraForged density noise "
+				+ this.noise.unwrapKey().map(key -> key.location().toString()).orElse("<direct graph>")
+				+ " at x=" + ctx.blockX() + ", z=" + ctx.blockZ() + ", compute seed=" + this.seed);
+		}
+		return value;
 	}
 
 	@Override

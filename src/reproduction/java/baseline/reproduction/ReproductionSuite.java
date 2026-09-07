@@ -209,9 +209,17 @@ public final class ReproductionSuite {
             Noise shared=holder.value().mapAll(node->{if(node instanceof raccoonman.reterraforged.world.worldgen.noise.module.Cache2d)cacheNodes.incrementAndGet();return node;});
             Holder<Noise> copiedHolder=Holder.direct(shared);
             for(int[] pos:new int[][]{{17,29},{100,200},{-2048,3072}}) {
-            double a=new NoiseFunction(copiedHolder,123).compute(new DensityFunction.SinglePointContext(pos[0],80,pos[1]));
-            double b=new NoiseFunction(copiedHolder,456).compute(new DensityFunction.SinglePointContext(pos[0],80,pos[1]));
             double fresh=shared.mapAll(node->node).compute(pos[0],pos[1],456);
+            if(!Double.isFinite(fresh))for(int computeSeed:new int[]{123,456}) {
+                try { double value=new NoiseFunction(holder,computeSeed).compute(new DensityFunction.SinglePointContext(pos[0],80,pos[1]));
+                    out.row("invalid_noise_validation","key",holder.key().location().toString(),"seed",computeSeed,"x",pos[0],"z",pos[1],"rejected",false,"bits",Double.doubleToRawLongBits(value));
+                } catch(IllegalStateException expected) {
+                    out.row("invalid_noise_validation","key",holder.key().location().toString(),"seed",computeSeed,"x",pos[0],"z",pos[1],"rejected",true,"error",Evidence.failure(expected));
+                }
+            }
+            // Preserve raw invalid-definition observations, but require the density boundary to reject them.
+            double a=Double.isFinite(fresh)?new NoiseFunction(copiedHolder,123).compute(new DensityFunction.SinglePointContext(pos[0],80,pos[1])):shared.compute(pos[0],pos[1],123);
+            double b=Double.isFinite(fresh)?new NoiseFunction(copiedHolder,456).compute(new DensityFunction.SinglePointContext(pos[0],80,pos[1])):shared.compute(pos[0],pos[1],456);
             out.row("noise_cache","case","registered graph copied then shared across NoiseFunctions","key",holder.key().location().toString(),"x",pos[0],"z",pos[1],"cacheNodes",cacheNodes.get(),"a",Double.doubleToRawLongBits(a),"bAfterA",Double.doubleToRawLongBits(b),"bFreshGraph",Double.doubleToRawLongBits(fresh),"contaminated",Double.isFinite(b)&&Double.isFinite(fresh)&&Double.doubleToRawLongBits(b)!=Double.doubleToRawLongBits(fresh));
             // Non-finite registry noise results are not evidence of seed-cache contamination.
             out.row("noise_cache_bits", "key", holder.key().location().toString(),"x",pos[0],"z",pos[1],"cacheNodes",cacheNodes.get(),"finite",Double.isFinite(b)&&Double.isFinite(fresh),"differentBits",Double.doubleToRawLongBits(b)!=Double.doubleToRawLongBits(fresh));

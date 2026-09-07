@@ -345,3 +345,25 @@ Build PASS, 5s; four-world Forge run PASS, 2m1s. No isolated performance delta c
 Evidence: `09-after`, `09-noise-cache-seed/verification.json`, `logs/09-*.log`.
 Minecraft long seeds are still narrowed exactly as before; this fix honors an already
 supplied compute int and does not implement the deferred 64-bit seed-stream redesign.
+
+## 10 — Requested validation of dormant registered NaN definitions
+
+This is separate from cache seed safety. Before (`09-after`), registered
+reterraforged:terrain/erosion and terrain/ridges yield NaN through NoiseFunction at
+(17,29), (100,200), (-2048,3072), for seeds 123 and 456. Their 200-octave Perlin
+definitions remain registered/serialized and unmodified; removing their keys or
+changing noise math could break compatibility. No active legacy router references them.
+
+NoiseFunction now rejects non-finite output at the Minecraft density boundary with
+key (or direct graph label), coordinate and compute seed. It does not normalize NaN,
+modify the graph or fail datapack bootstrap for an unused definition. Raw Noise API
+calls still expose the inherited invalid definition for diagnosis; this is a targeted
+serialized-density safety guard, not a blanket mathematical-library redesign.
+
+After `10-after`, all 12 explicit density invocations fail descriptively; finite
+registry graphs and active generation remain unchanged. All **60 checks pass**, zero
+differences in 994 canonical rows. Build PASS, 5s; four-world Forge run PASS, 1m51s.
+Cost: one finite check per NoiseFunction.compute, no allocation on valid evaluations;
+no isolated performance delta claimed. Production: NoiseFunction.java only. Tests:
+ReproductionSuite and Verify-Repairs. Evidence: `10-after`,
+`10-invalid-noise/verification.json`, `logs/10-*.log`.
