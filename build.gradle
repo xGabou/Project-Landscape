@@ -59,6 +59,7 @@ minecraft {
             workingDirectory project.file('run/task0-smoke')
             mods { baseline_smoke { source sourceSets.smoke } }
             property 'mixin.debug.export', 'true'
+            property 'task1b.smokeVanilla', providers.gradleProperty('smokeVanilla').getOrElse('false')
             jvmArgs '-Xmx6G'
         }
         server { args '--nogui' }

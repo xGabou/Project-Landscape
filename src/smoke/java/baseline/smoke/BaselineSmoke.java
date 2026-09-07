@@ -37,6 +37,7 @@ import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
 
 @Mod("baseline_smoke")
 public final class BaselineSmoke {
+    private final boolean vanilla = Boolean.getBoolean("task1b.smokeVanilla");
     private final String world = "task0-" + System.currentTimeMillis();
     private int stage;
     private int ticks;
@@ -71,13 +72,15 @@ public final class BaselineSmoke {
                 stage = 2;
                 Path root = mc.gameDirectory.toPath().resolve("saves").resolve(world);
                 Path pack = root.resolve("datapacks/task0-preset");
-                Files.createDirectories(pack);
-                Datapacks.makePreset(Presets.makeLegacyDefault(), create.getUiState().getSettings().worldgenLoadContext(),
-                    root.resolve("export-work"), pack, "Task 0 Legacy Default").run();
-                RTFCommon.LOGGER.info("TASK0 PRESET_EXPORTED {}", pack);
+                if (!vanilla) {
+                    Files.createDirectories(pack);
+                    Datapacks.makePreset(Presets.makeLegacyDefault(), create.getUiState().getSettings().worldgenLoadContext(),
+                        root.resolve("export-work"), pack, "Task 0 Legacy Default").run();
+                    RTFCommon.LOGGER.info("TASK0 PRESET_EXPORTED {}", pack);
+                }
                 var config = create.getUiState().getSettings().dataConfiguration();
                 var enabled = new ArrayList<>(config.dataPacks().getEnabled());
-                enabled.add("file/task0-preset");
+                if (!vanilla) enabled.add("file/task0-preset");
                 var data = new WorldDataConfiguration(new DataPackConfig(enabled, List.of()), config.enabledFeatures());
                 var settings = new LevelSettings(world, GameType.CREATIVE, false, Difficulty.PEACEFUL, true, new GameRules(), data);
                 mc.createWorldOpenFlows().createFreshLevel(world, settings, new WorldOptions(8675309L, true, false),
@@ -89,7 +92,17 @@ public final class BaselineSmoke {
                 generation = server.submit(() -> {
                     ServerLevel level = server.overworld();
                     var state = (RTFRandomState) (Object) level.getChunkSource().randomState();
-                    if (state.generatorContext() == null || state.preset() == null) throw new IllegalStateException("ReTerraForged context/preset missing");
+                    if (vanilla) {
+                        for (var dimension : server.getAllLevels()) {
+                            var foreign = (RTFRandomState)(Object)dimension.getChunkSource().randomState();
+                            if (foreign.generatorContext() != null || foreign.requiresGeneratorContext() || foreign.preset() != null)
+                                throw new IllegalStateException("RTF unexpectedly claimed vanilla dimension " + dimension.dimension());
+                            RTFCommon.LOGGER.info("TASK1B VANILLA_CONTEXT reopened={} dimension={} required=false context=false preset=false", reopened, dimension.dimension().location());
+                        }
+                        int rules = level.registryAccess().registry(raccoonman.reterraforged.registries.RTFRegistries.STRUCTURE_RULE).map(r -> r.size()).orElse(0);
+                        if (rules != 0) throw new IllegalStateException("Unexpected RTF rules in vanilla world: " + rules);
+                        RTFCommon.LOGGER.info("TASK1B VANILLA_RULES count={}", rules);
+                    } else if (state.generatorContext() == null || state.preset() == null) throw new IllegalStateException("ReTerraForged context/preset missing");
                     RTFCommon.LOGGER.info("TASK0 WORLD_LOADED reopened={} seed={} packs={}", reopened, level.getSeed(), server.getPackRepository().getSelectedIds());
                     int offset = reopened ? 2048 : 0;
                     int[][] positions = {{0, 0}, {-129, -129}, {127, 127}, {128, 128}, {1024, -1024}, {-2048, 2048}, {4096, 0}};
@@ -102,7 +115,7 @@ public final class BaselineSmoke {
                         RTFCommon.LOGGER.info("TASK0 CHUNK reopened={} x={} z={} status={} height={} surface={} biome={}",
                             reopened, x, z, chunk.getStatus(), y, block, level.getBiome(new BlockPos(x, y, z)).unwrapKey());
                     }
-                    if (!reopened) {
+                    if (!reopened && !vanilla) {
                         // Conversion comparator coverage, not a cached/uncached determinism test.
                         var found = new java.util.HashSet<String>();
                         var heightmap = state.generatorContext().generator.getHeightmap();
@@ -139,7 +152,8 @@ public final class BaselineSmoke {
                 mc.createWorldOpenFlows().loadLevel(mc.screen, world);
             } else if (stage == 7 && mc.getSingleplayerServer() == null) {
                 stage = 99;
-                RTFCommon.LOGGER.info("TASK0 PASS: title, preset export/load, full chunks, save, reopen, additional full chunks; world={}", world);
+                if (vanilla) RTFCommon.LOGGER.info("TASK0 PASS: title, vanilla world without RTF preset, full chunks, save, reopen, additional full chunks; world={}", world);
+                else RTFCommon.LOGGER.info("TASK0 PASS: title, preset export/load, full chunks, save, reopen, additional full chunks; world={}", world);
                 Files.writeString(mc.gameDirectory.toPath().resolve("task0-pass.txt"), world + "\n");
                 mc.stop();
             }
