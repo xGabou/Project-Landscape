@@ -27,6 +27,19 @@ if ($ThroughFix -ge 2) {
 }
 
 # Compare valid independently generated terrain paths; never bless contaminated query values.
+if ($ThroughFix -ge 7) {
+    $missing=@(Table $Run 'missing_context')
+    foreach($case in @('RandomState before initialize','structure before initialization','initialized with empty preset registry','actual structure rule with missing context')) {
+        Check "$case fails explicitly" (@($missing | Where-Object {$_.case -eq $case -and $_.error -match 'IllegalStateException.*missing generation context' -and $_.error -match 'seed='}).Count -eq 1)
+    }
+    Check 'missing preset fails at initialization' (@($missing | Where-Object {$_.case -eq 'missing preset initialization' -and $_.error -match 'IllegalStateException.*preset is missing'}).Count -eq 1)
+    Check 'uncached context supports explicit direct lookup' (@($missing | Where-Object {$_.case -eq 'makeUncached public lookup' -and $_.result -eq 'direct' -and -not $_.cached}).Count -eq 1)
+    Check 'uncached exact request explains missing tile context' (@($missing | Where-Object {$_.case -eq 'uncached context exact request' -and $_.error -match 'direct-only'}).Count -eq 1)
+    Check 'wrong dimension rebind fails' (@($missing | Where-Object {$_.case -eq 'wrong dimension rebind' -and $_.error -match 'Cannot rebind.*minecraft:overworld.*minecraft:the_nether'}).Count -eq 1)
+    Check 'owned sampler rejects shutdown context with dimension' (@($missing | Where-Object {$_.case -eq 'owned sampler after shutdown' -and $_.error -match 'minecraft:overworld.*shut down'}).Count -eq 1)
+    Check 'real vanilla router does not require RTF context' (@($missing | Where-Object {$_.case -eq 'bootstrapped vanilla overworld router' -and -not $_.required -and -not $_.contextPresent -and $_.sample}).Count -eq 1)
+    Check 'geography rule cannot pass without foreign geography' (@($missing | Where-Object {$_.case -eq 'RTF geography rule explicitly applied to foreign router' -and $_.result -eq $false}).Count -eq 1)
+}
 if ($ThroughFix -ge 6) {
     $resources=@(Table $Run 'cell_resources')
     Check 'fallback double close cannot alias independent borrows' (@($resources | Where-Object {$_.case -eq 'isolated fallback pool double close' -and -not $_.subsequentBorrowAliases}).Count -eq 1)

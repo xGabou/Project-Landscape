@@ -270,3 +270,30 @@ hold four independent Cells. Foreign-thread release fails and leaves the borrow 
 for its proper owner. All 39 cumulative checks pass, with zero canonical differences.
 Build **PASS, 3s**; final full Forge run **PASS, 1m47s**. Evidence:
 `06-after`, `06-pool-release/verification.json`, `logs/06-*.log`.
+
+## 07 — Explicit context requirements
+
+Before (`06-after`): missing initialization/preset produces deferred NPEs and the
+structure geography rule silently passes. After `07-after`, owned density/structure
+queries fail with a descriptive IllegalStateException including operation, dimension
+(explicitly unbound before ChunkMap initialization), seed and missing initialization.
+An RTF router with no preset fails during initialization. Rebinding one RandomState
+to another dimension and sampling a shut-down context fail explicitly.
+
+Ownership is determined by RTF CellSampler markers actually visited in the router,
+not by the mere presence of the mod. A proper bootstrapped vanilla overworld router
+samples without an RTF context; unused additional RTF registry tags are not wrapped
+when no preset exists. An explicitly applied RTF geography structure rule cannot be
+satisfied without geography and returns false for a foreign router. This does not
+install any new rule into vanilla worlds. Owned missing context throws instead.
+
+A deliberately uncached context now supports direct approximate lookup (previously
+an unrelated null-cache NPE); a forced exact request explains that tiles are required.
+This does not unify direct and filtered semantics or change either calculation.
+
+Production: RTFRandomState, MixinRandomState, MixinChunkMap, WorldLookup and CellTest.
+Tests: ReproductionSuite and Verify-Repairs. All **50 cumulative checks pass**, with
+**zero changes in 994 canonical comparator rows**. Build PASS, 11s; real three-world
+Forge run PASS, 1m38s. No isolated performance delta measured; density diagnostic
+operation strings are constructed once per mapped sampler, not per query.
+Evidence: `07-after`, `07-missing-context/verification.json`, `logs/07-*.log`.

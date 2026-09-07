@@ -59,6 +59,7 @@ class MixinRandomState {
 	private Preset preset;
 	
 	private long seed;
+	private String rtfDimension;
 	
 	@Redirect(
 		at = @At(
@@ -79,7 +80,8 @@ class MixinRandomState {
 				}
 				if(function instanceof CellSampler.Marker marker) {
 					MixinRandomState.this.hasContext |= true;
-					return new CellSampler(() -> MixinRandomState.this.generatorContext.lookup, marker.field());
+					String operation = "sample density field " + marker.field();
+					return new CellSampler(() -> ((RTFRandomState)(Object)MixinRandomState.this).requireGeneratorContext(operation).lookup, marker.field());
 				}
 				return visitor.apply(function);
 			}
@@ -93,7 +95,15 @@ class MixinRandomState {
 	}
 
 	public void reterraforged$RTFRandomState$initialize(RegistryAccess registries) {
-		RegistryLookup<Preset> presets = registries.lookupOrThrow(RTFRegistries.PRESET);
+		RegistryLookup<Preset> presets = registries.lookup(RTFRegistries.PRESET).orElse(null);
+		if (presets == null || presets.get(Preset.KEY).isEmpty()) {
+			if (this.hasContext) {
+				throw new IllegalStateException("Cannot initialize ReTerraForged " + this.reterraforged$RTFRandomState$contextDescription()
+						+ ": density router requires generation context but the RTF preset is missing");
+			}
+			// Do not claim a vanilla/foreign router merely by wrapping unused RTF tags.
+			return;
+		}
 		RegistryLookup<Noise> noises = registries.lookupOrThrow(RTFRegistries.NOISE);
 		RegistryLookup<DensityFunction> functions = registries.lookupOrThrow(Registries.DENSITY_FUNCTION);
 
@@ -118,11 +128,21 @@ class MixinRandomState {
 				if (this.generatorContext != null && this.generatorContext.cache != null) this.generatorContext.cache.close();
 				this.generatorContext = replacement;
 			}
-		}, () -> {
-			if(this.hasContext) {
-//				throw new IllegalStateException("Missing preset!");
-			}
-		});
+		}, () -> { throw new IllegalStateException("Required RTF preset disappeared during initialization"); });
+	}
+
+	public void reterraforged$RTFRandomState$initialize(RegistryAccess registries, String dimension) {
+		if (this.rtfDimension != null && !this.rtfDimension.equals(dimension)) {
+			throw new IllegalStateException("Cannot rebind ReTerraForged RandomState from dimension " + this.rtfDimension + " to " + dimension);
+		}
+		this.rtfDimension = dimension;
+		this.reterraforged$RTFRandomState$initialize(registries);
+	}
+
+	public boolean reterraforged$RTFRandomState$requiresGeneratorContext() { return this.hasContext; }
+
+	public String reterraforged$RTFRandomState$contextDescription() {
+		return "dimension=" + (this.rtfDimension == null ? "<unbound; ChunkMap initialization not completed>" : this.rtfDimension) + ", seed=" + this.seed;
 	}
 	
 	@Nullable

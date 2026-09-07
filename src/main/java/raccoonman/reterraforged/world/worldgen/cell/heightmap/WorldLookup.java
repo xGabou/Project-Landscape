@@ -49,6 +49,10 @@ public class WorldLookup {
 	}
 
 	private boolean computeAccurate(Cell cell, int x, int z) {
+		if (this.cache == null) {
+			throw new IllegalStateException("RTF filtered tile query at " + x + "," + z
+					+ " requires a cached generation context; this lookup is direct-only");
+		}
 		int rx = this.cache.chunkToTile(x >> 4);
 		int rz = this.cache.chunkToTile(z >> 4);
 		Tile tile = this.cache.provide(rx, rz);
@@ -73,6 +77,7 @@ public class WorldLookup {
 
 	/** Current opportunistic source; may join an already queued tile, never queues one. */
 	public Tile cachedTile(int x, int z) {
+		if (this.cache == null) return null;
 		int rx = this.cache.chunkToTile(x >> 4);
 		int rz = this.cache.chunkToTile(z >> 4);
 		return this.cache.provideIfPresent(rx, rz);
@@ -85,6 +90,9 @@ public class WorldLookup {
 
 	/** Legacy unfiltered point path, including its point-only coast adjustment. */
 	public void sampleDirectApproximate(Cell cell, int x, int z, boolean applyClimate) {
+		if (this.cache != null && this.cache.isClosed()) {
+			throw new IllegalStateException("Cannot sample RTF direct approximation at " + x + "," + z + ": generation context is closed");
+		}
 		this.heightmap.apply(cell, x, z, applyClimate);
 		if (cell.terrain == TerrainType.COAST && cell.height > this.waterLevel && cell.height <= this.beachLevel) {
 			cell.terrain = TerrainType.BEACH;

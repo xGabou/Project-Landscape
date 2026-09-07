@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen;
 
 import org.jetbrains.annotations.Nullable;
@@ -9,6 +11,23 @@ import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
 
 public interface RTFRandomState {
 	void initialize(RegistryAccess registries);
+	void initialize(RegistryAccess registries, String dimension);
+
+	boolean requiresGeneratorContext();
+	String contextDescription();
+
+	default GeneratorContext requireGeneratorContext(String operation) {
+		GeneratorContext context = this.generatorContext();
+		if (context == null) {
+			throw new IllegalStateException("Cannot " + operation + " for ReTerraForged " + this.contextDescription()
+					+ ": missing generation context; initialize RandomState with the required RTF preset before sampling");
+		}
+		if (context.cache != null && context.cache.isClosed()) {
+			throw new IllegalStateException("Cannot " + operation + " for ReTerraForged " + this.contextDescription()
+					+ ": generation context has been shut down");
+		}
+		return context;
+	}
 	
 	@Nullable
 	Preset preset();

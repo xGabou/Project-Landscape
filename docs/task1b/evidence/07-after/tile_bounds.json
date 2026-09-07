@@ -1,0 +1,112 @@
+[
+  {
+    "x": -1,
+    "z": 1,
+    "total": 160,
+    "index": 159,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  },
+  {
+    "x": 160,
+    "z": 0,
+    "total": 160,
+    "index": 160,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  },
+  {
+    "x": 160,
+    "z": 1,
+    "total": 160,
+    "index": 320,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  },
+  {
+    "x": 0,
+    "z": -1,
+    "total": 160,
+    "index": -160,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  },
+  {
+    "x": 1,
+    "z": 160,
+    "total": 160,
+    "index": 25601,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  },
+  {
+    "x": -1,
+    "z": -1,
+    "total": 160,
+    "index": -161,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  },
+  {
+    "x": 160,
+    "z": 160,
+    "total": 160,
+    "index": 25760,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  },
+  {
+    "x": 0,
+    "z": 0,
+    "total": 160,
+    "index": 0,
+    "axisInBounds": true,
+    "absent": false,
+    "aliasedX": 0,
+    "aliasedZ": 0
+  },
+  {
+    "x": 159,
+    "z": 159,
+    "total": 160,
+    "index": 25599,
+    "axisInBounds": true,
+    "absent": false,
+    "aliasedX": 159,
+    "aliasedZ": 159
+  },
+  {
+    "x": 320,
+    "z": 0,
+    "total": 160,
+    "index": 320,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  },
+  {
+    "x": -160,
+    "z": 1,
+    "total": 160,
+    "index": 0,
+    "axisInBounds": false,
+    "absent": true,
+    "aliasedX": null,
+    "aliasedZ": null
+  }
+]

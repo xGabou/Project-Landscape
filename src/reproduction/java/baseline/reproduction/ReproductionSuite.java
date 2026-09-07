@@ -284,11 +284,18 @@ public final class ReproductionSuite {
     }
     private void missingContext(ServerLevel level) throws Exception {
         var uncached=GeneratorContext.makeUncached(preset,noises,(int)seeds[0],3,1,6);
-        try{uncached.lookup.applyCell(new Cell(),0,0,true);}catch(Throwable ex){out.row("missing_context","case","makeUncached public lookup","error",Evidence.failure(ex));}
+        try{boolean cached=uncached.lookup.applyCell(new Cell(),0,0,true);out.row("missing_context","case","makeUncached public lookup","result","direct","cached",cached);}
+        catch(Throwable ex){out.row("missing_context","case","makeUncached public lookup","error",Evidence.failure(ex));}
+        try{uncached.lookup.applyCell(new Cell(),0,0,true,true);out.row("missing_context","case","uncached context exact request","result","returned");}
+        catch(Throwable ex){out.row("missing_context","case","uncached context exact request","error",Evidence.failure(ex));}
         var settings=level.registryAccess().registryOrThrow(Registries.NOISE_SETTINGS).getOrThrow(NoiseGeneratorSettings.OVERWORLD);
         RandomState uninitialized=RandomState.create(settings,level.registryAccess().lookupOrThrow(Registries.NOISE),seeds[0]);
         try{uninitialized.sampler().sample(100,20,200);out.row("missing_context","case","RandomState before initialize","result","returned");}catch(Throwable ex){out.row("missing_context","case","RandomState before initialize","error",Evidence.failure(ex));}
-        ((RTFRandomState)(Object)uninitialized).initialize(level.registryAccess());
+        for(var rule:level.registryAccess().registryOrThrow(RTFRegistries.STRUCTURE_RULE)) {
+            try{out.row("missing_context","case","structure before initialization","result",rule.test(uninitialized,BlockPos.ZERO));}
+            catch(Throwable ex){out.row("missing_context","case","structure before initialization","error",Evidence.failure(ex));}
+        }
+        ((RTFRandomState)(Object)uninitialized).initialize(level.registryAccess(),"minecraft:overworld");
         out.row("missing_context","case","same state after initialize","contextPresent",((RTFRandomState)(Object)uninitialized).generatorContext()!=null);
         var ownedState=(RTFRandomState)(Object)uninitialized;
         var priorContext=ownedState.generatorContext();
@@ -297,14 +304,28 @@ public final class ReproductionSuite {
         var nextSample=uninitialized.sampler().sample(100,20,200);
         out.row("disposal","case","RandomState context replacement","oldClosed",priorContext.cache.isClosed(),
             "distinctContext",priorContext!=ownedState.generatorContext(),"sameSample",firstSample.equals(nextSample));
+        try{ownedState.initialize(level.registryAccess(),"minecraft:the_nether");out.row("missing_context","case","wrong dimension rebind","result","returned");}
+        catch(Throwable ex){out.row("missing_context","case","wrong dimension rebind","error",Evidence.failure(ex));}
         ownedState.generatorContext().cache.close();
+        try{uninitialized.sampler().sample(100,20,200);out.row("missing_context","case","owned sampler after shutdown","result","returned");}
+        catch(Throwable ex){out.row("missing_context","case","owned sampler after shutdown","error",Evidence.failure(ex));}
         var emptyPresets=new MappedRegistry<Preset>(RTFRegistries.PRESET,com.mojang.serialization.Lifecycle.stable()).freeze();
         List<Registry<?>> values=new ArrayList<>();level.registryAccess().registries().forEach(entry->values.add(entry.key().equals(RTFRegistries.PRESET)?emptyPresets:entry.value()));
         var missing=RandomState.create(settings,level.registryAccess().lookupOrThrow(Registries.NOISE),seeds[0]);
-        ((RTFRandomState)(Object)missing).initialize(new RegistryAccess.ImmutableRegistryAccess(values));
+        var noPreset=new RegistryAccess.ImmutableRegistryAccess(values);
+        try{((RTFRandomState)(Object)missing).initialize(noPreset,"minecraft:overworld");out.row("missing_context","case","missing preset initialization","result","returned");}
+        catch(Throwable ex){out.row("missing_context","case","missing preset initialization","error",Evidence.failure(ex));}
         try{missing.sampler().sample(137,20,249);out.row("missing_context","case","initialized with empty preset registry","result","returned");}
         catch(Throwable ex){out.row("missing_context","case","initialized with empty preset registry","error",Evidence.failure(ex));}
-        for(var rule:level.registryAccess().registryOrThrow(RTFRegistries.STRUCTURE_RULE))out.row("missing_context","case","actual structure rule with missing context","result",rule.test(missing,BlockPos.ZERO));
+        for(var rule:level.registryAccess().registryOrThrow(RTFRegistries.STRUCTURE_RULE)) {
+            try{out.row("missing_context","case","actual structure rule with missing context","result",rule.test(missing,BlockPos.ZERO));}
+            catch(Throwable ex){out.row("missing_context","case","actual structure rule with missing context","error",Evidence.failure(ex));}
+        }
+        var vanilla=net.minecraft.data.registries.VanillaRegistries.createLookup();
+        var vanillaState=RandomState.create(vanilla.lookupOrThrow(Registries.NOISE_SETTINGS).getOrThrow(NoiseGeneratorSettings.OVERWORLD).value(),vanilla.lookupOrThrow(Registries.NOISE),seeds[0]);
+        var foreign=(RTFRandomState)(Object)vanillaState;foreign.initialize(noPreset,"minecraft:overworld");
+        out.row("missing_context","case","bootstrapped vanilla overworld router","required",foreign.requiresGeneratorContext(),"contextPresent",foreign.generatorContext()!=null,"sample",vanillaState.sampler().sample(137,20,249).toString());
+        for(var rule:level.registryAccess().registryOrThrow(RTFRegistries.STRUCTURE_RULE))out.row("missing_context","case","RTF geography rule explicitly applied to foreign router","result",rule.test(vanillaState,BlockPos.ZERO));
         for(var dimension:level.getServer().getAllLevels())out.row("missing_context","case","actual dimension","dimension",dimension.dimension().location().toString(),"presetPresent",((RTFRandomState)(Object)dimension.getChunkSource().randomState()).preset()!=null,"contextPresent",((RTFRandomState)(Object)dimension.getChunkSource().randomState()).generatorContext()!=null);
         var c=context(seeds[0]);((Cache<?>)Evidence.field(c.cache,"cache")).close();
         try {out.row("missing_context","case","cache closed then query","result",lookup(c,new Point("after close",1,1),true,true));}

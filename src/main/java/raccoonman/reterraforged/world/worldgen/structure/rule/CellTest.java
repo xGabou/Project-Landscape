@@ -1,3 +1,5 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License.
+ * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen.structure.rule;
 
 import java.util.List;
@@ -33,6 +35,12 @@ record CellTest(float cutoff, Set<Terrain> terrainTypeBlacklist) implements Stru
 		if((Object) randomState instanceof RTFRandomState rtfRandomState) {
 			@Nullable
 			GeneratorContext generatorContext = rtfRandomState.generatorContext();
+			if (generatorContext == null && !rtfRandomState.requiresGeneratorContext()) {
+				// This geography rule is not satisfiable in a foreign generator. Its
+				// absence cannot be interpreted as permission to place a structure.
+				return false;
+			}
+			generatorContext = rtfRandomState.requireGeneratorContext("test structure geography at " + pos);
 			if(generatorContext != null) {
 				WorldLookup worldLookup = generatorContext.lookup;
 				Cell cell = new Cell();
@@ -43,7 +51,7 @@ record CellTest(float cutoff, Set<Terrain> terrainTypeBlacklist) implements Stru
 			}
 			return true;
 		} else {
-			throw new IllegalStateException();
+			return false;
 		}
 	}
 
