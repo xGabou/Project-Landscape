@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.noise.module;
 
 import com.mojang.serialization.Codec;
@@ -47,6 +48,8 @@ public record Cache2d(Noise noise, ThreadLocal<Cached> cache) implements Noise {
 	public static class Cached implements Noise {
 		public Noise noise;
 		public long lastPos = Long.MIN_VALUE;
+		private int lastSeed;
+		private boolean initialized;
 		public float value;
 		
 		public Cached(Noise noise) {
@@ -56,9 +59,13 @@ public record Cache2d(Noise noise, ThreadLocal<Cached> cache) implements Noise {
 		@Override
 		public float compute(float x, float z, int seed) {
 			long newPos = PosUtil.packf(x, z);
-			if(this.lastPos != newPos) {
+			// Noise.compute explicitly accepts a seed; shared graphs must honor it.
+			// An explicit valid bit also permits every packed float position, including -0.0, 0.0.
+			if(!this.initialized || this.lastPos != newPos || this.lastSeed != seed) {
 				this.value = this.noise.compute(x, z, seed);
 				this.lastPos = newPos;
+				this.lastSeed = seed;
+				this.initialized = true;
 			}
 			return this.value;
 		}

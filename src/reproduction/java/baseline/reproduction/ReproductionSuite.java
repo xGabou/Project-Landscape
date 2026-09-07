@@ -199,6 +199,10 @@ public final class ReproductionSuite {
     private void noiseOwnership(ServerLevel level) {
         Noise n=Noises.simplex(0,100,3); Noise cache=Noises.cache2d(n);
         for(int seed:new int[]{123,456,123}) out.row("noise_cache","case","same instance P changing compute seed","seed",seed,"cached",Float.floatToRawIntBits(cache.compute(17,29,seed)),"uncached",Float.floatToRawIntBits(n.compute(17,29,seed)),"newGraph",Float.floatToRawIntBits(Noises.cache2d(n).compute(17,29,seed)));
+        out.row("noise_cache","case","first query at former sentinel position","cached",Float.floatToRawIntBits(Noises.cache2d(n).compute(-0.0F,0.0F,123)),"uncached",Float.floatToRawIntBits(n.compute(-0.0F,0.0F,123)));
+        CompletableFuture.runAsync(()->{
+            for(int seed:new int[]{456,123,456})out.row("noise_cache","case","shared cache worker changing seed","seed",seed,"cached",Float.floatToRawIntBits(cache.compute(17,29,seed)),"uncached",Float.floatToRawIntBits(n.compute(17,29,seed)));
+        }).join();
         var registry=level.registryAccess().registryOrThrow(RTFRegistries.NOISE);
         registry.holders().forEach(holder->{
             AtomicInteger cacheNodes=new AtomicInteger();

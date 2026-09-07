@@ -321,3 +321,27 @@ Developer changes: ReproductionClient, Verify-Repairs and new Compare-PresetPack
 Evidence: `08-after`, `08-vegetation-disabled/{verification,enabled_pack_comparison}.json`,
 `logs/08-*.log`. Disabled mode previously could not load, so its new chunk results are
 functional evidence, not an invented pre-fix terrain golden. Enabled output is unchanged.
+
+## 09 — Noise cache compute-seed identity
+
+Before (`08-after`), one simplex cache at (17,29), seeds 123 -> 456 -> 123, returns
+float bits 1054603234 for seed 456 instead of uncached/new-graph 1051087284.
+After `09-after`, each result equals uncached and freshly cached evaluation. The
+reverse sequence on another worker also passes. Production registry graph sharing
+still shows no finite-result contamination (it was not reproduced in Task 1A either).
+
+Chosen invariant B: Cache2d supports Noise.compute's explicit compute-seed argument.
+NoiseFunction wraps holders with an int seed; mapAll normally copies cache nodes,
+while the public Noise API does not enforce exclusive ownership of a seeded graph.
+Imposing invariant A would constrain valid API calls without a proven performance
+benefit. One int comparison and one valid bit per thread-local Cached are sufficient;
+there is no world map, object equality, lock or per-query allocation.
+The valid bit also permits the packed Long.MIN_VALUE position (-0.0,0.0): its first
+query computes 1056964608 rather than accepting an uninitialized zero cache value.
+
+Production file: noise/module/Cache2d.java. Tests: ReproductionSuite and Verify-Repairs.
+All **59 cumulative checks pass**, zero differences in all 994 canonical rows.
+Build PASS, 5s; four-world Forge run PASS, 2m1s. No isolated performance delta claimed.
+Evidence: `09-after`, `09-noise-cache-seed/verification.json`, `logs/09-*.log`.
+Minecraft long seeds are still narrowed exactly as before; this fix honors an already
+supplied compute int and does not implement the deferred 64-bit seed-stream redesign.

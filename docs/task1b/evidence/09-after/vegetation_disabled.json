@@ -1,0 +1,36 @@
+[
+  {
+    "bootstrap": "success",
+    "loadAttempted": false,
+    "note": "Separate disabled-preset world follows the three comparator worlds"
+  },
+  {
+    "case": "actual disabled datapack world",
+    "loadAttempted": true,
+    "loaded": true,
+    "contextPresent": true,
+    "customTreeKeys": [],
+    "allPlacedHoldersBound": true,
+    "ordinaryTreeFeatures": {
+      "minecraft:plains": [
+        "minecraft:trees_plains"
+      ],
+      "minecraft:forest": [
+        "minecraft:trees_birch_and_oak"
+      ],
+      "minecraft:dark_forest": [
+        "minecraft:dark_forest_vegetation"
+      ]
+    },
+    "chunkStatuses": [
+      "minecraft:full",
+      "minecraft:full",
+      "minecraft:full",
+      "minecraft:full",
+      "minecraft:full",
+      "minecraft:full",
+      "minecraft:full",
+      "minecraft:full"
+    ]
+  }
+]

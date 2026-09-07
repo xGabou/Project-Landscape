@@ -27,6 +27,15 @@ if ($ThroughFix -ge 2) {
 }
 
 # Compare valid independently generated terrain paths; never bless contaminated query values.
+if ($ThroughFix -ge 9) {
+    $noise=@(Table $Run 'noise_cache')
+    $shared=@($noise | Where-Object {$_.case -eq 'same instance P changing compute seed'})
+    Check 'shared noise honors every compute seed' ($shared.Count -eq 3 -and @($shared | Where-Object {$_.cached -ne $_.uncached -or $_.cached -ne $_.newGraph}).Count -eq 0)
+    $worker=@($noise | Where-Object {$_.case -eq 'shared cache worker changing seed'})
+    Check 'worker shared noise honors every compute seed' ($worker.Count -eq 3 -and @($worker | Where-Object {$_.cached -ne $_.uncached}).Count -eq 0)
+    Check 'first noise query cannot alias sentinel' (@($noise | Where-Object {$_.case -eq 'first query at former sentinel position' -and $_.cached -eq $_.uncached}).Count -eq 1)
+    Check 'finite registry graph sharing stays uncontaminated' (@($noise | Where-Object {$_.contaminated}).Count -eq 0)
+}
 if ($ThroughFix -ge 8) {
     $vegetation=@(Table $Run 'vegetation_disabled')
     Check 'disabled vegetation bootstrap succeeds' (@($vegetation | Where-Object {$_.bootstrap -eq 'success'}).Count -eq 1)
