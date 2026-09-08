@@ -1,5 +1,7 @@
 # Task 4 continent/ocean model — implementation in progress
 
+Status: accepted implementation. Final HEAD and evidence manifest are recorded below.
+
 Starting HEAD: `a9b2f288d990f466da9fd79ed8e0a8550dec190d`. The isolated checkout was clean.
 The original workspace's uncommitted namespace migration is outside this worktree.
 Comparator: `LEGACY_RTF_V0`. No acceptance result is inferred from the Task 3 archives.
