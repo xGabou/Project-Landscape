@@ -14,7 +14,7 @@ public final class TopologyMeasurements {
             double landFraction, double oceanFraction, double inlandSeaFraction,
             double marchingSquaresCoastlineBlocks, List<Component> components) {}
     public record Width(long corridorId, long firstSiteId, long secondSiteId, double x, double z,
-            double angleRadians, double widthBlocks, double crossingUncertaintyBlocks,
+            double angleRadians, Double widthBlocks, double crossingUncertaintyBlocks,
             boolean opposingMajorLandFound, boolean obstructed, boolean violation) {}
 
     public static Window window(MacroGeographyProvider provider, int ox, int oz, int extent, int step) {
@@ -74,7 +74,7 @@ public final class TopologyMeasurements {
             double nz=corridor.normalX()*Math.sin(angle)+corridor.normalZ()*Math.cos(angle);
             Crossing a=cross(provider,x,z,-nx,-nz,maxSearch,corridor.firstSiteId());
             Crossing b=cross(provider,x,z,nx,nz,maxSearch,corridor.secondSiteId());
-            boolean found=a.found&&b.found;double width=found?a.distance+b.distance:Double.NaN;
+            boolean found=a.found&&b.found;Double width=found?a.distance+b.distance:null;
             result.add(new Width(corridor.id(),corridor.firstSiteId(),corridor.secondSiteId(),x,z,angle,width,2,
                 found,a.obstructed||b.obstructed,found&&width+2<corridor.requiredWidthBlocks()));
         }

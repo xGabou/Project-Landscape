@@ -125,6 +125,15 @@ tasks.named('jar', Jar) {
 }
 tasks.named('sourcesJar', Jar) { from('LICENSE') { into 'META-INF' } }
 
+// Offline production macro provider survey; no Minecraft client, chunks or terrain erosion.
+tasks.register('task4Survey', JavaExec) {
+    dependsOn tasks.named('reproductionClasses')
+    classpath = sourceSets.reproduction.runtimeClasspath
+    mainClass = 'baseline.reproduction.geography.GeographySurvey'
+    maxHeapSize = '2G'
+    args file(providers.gradleProperty('task4Output').getOrElse('build/task4-survey')).absolutePath
+}
+
 tasks.matching { it.name == 'runSmokeClient' }.configureEach {
     def marker = file('run/task0-smoke/task0-pass.txt')
     doFirst { marker.delete() }
