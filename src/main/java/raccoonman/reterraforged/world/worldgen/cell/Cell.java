@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell;
 
 import raccoonman.reterraforged.concurrent.Resource;
@@ -7,7 +8,7 @@ import raccoonman.reterraforged.world.worldgen.cell.biome.type.BiomeType;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.Terrain;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
 
-public class Cell {
+public class Cell implements com.gabou.atmospheregen.geography.GeographyWorkspace {
     private static final Cell DEFAULTS = new Cell();
     private static final Cell EMPTY = new Cell() {
 
@@ -24,6 +25,7 @@ public class Cell {
     public float heightErosion;
     public float sediment;
     public float gradient;
+    // Legacy classification scratch, intentionally excluded from GeographyWorkspace.
     public float regionMoisture;
     public float regionTemperature;
     public float continentId;
@@ -39,6 +41,7 @@ public class Cell {
     public boolean erosionMask;
     public Terrain terrain;
     public BiomeType biome;
+    // Minecraft parameter hints, NOT physical erosion. Physical removal is heightErosion.
     public float erosion;
     public float weirdness;
     public float temperature;
@@ -88,6 +91,12 @@ public class Cell {
         this.copyFrom(Cell.DEFAULTS);
         return this;
     }
+
+    @Override public float normalizedElevation() { return this.height; }
+    @Override public float continentLandValue() { return this.continentEdge; }
+    @Override public float terrainRegionSelector() { return this.terrainRegionId; }
+    @Override public float normalizedErosionDelta() { return this.heightErosion; }
+    @Override public float normalizedSediment() { return this.sediment; }
 
     @Deprecated(forRemoval = true)
     public boolean isAbsent() {
