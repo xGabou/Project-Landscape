@@ -139,7 +139,14 @@ public final class LegacyBaselineSuite {
             for(int i=0;i<positions.size();i++) {
                 Tile t=futures.get(i).join();int[] p=positions.get(i);
                 out.row("tile_digests","seed",Long.toString(seed),"tileX",p[0],"tileZ",p[1],"workers",ThreadPools.availableProcessors(),"order",order,
-                    "semantics",CANONICAL,"coreCells",16384,"sha256",digest(t));t.close();
+                    "semantics",CANONICAL,"coreCells",16384,"sha256",digest(t));
+                // New Task 3 capture has its own digest; NEVER change the frozen legacy field digest.
+                List<Object> mountains=new ArrayList<>();
+                t.iterate((cell,x,z)->mountains.add(new int[]{Float.floatToRawIntBits(cell.mountainChainSelector()),
+                    Float.floatToRawIntBits(cell.mountainChainContribution()),Float.floatToRawIntBits(cell.regionalMountainContribution())}));
+                out.row("mountain_tile_digests","seed",Long.toString(seed),"tileX",p[0],"tileZ",p[1],"workers",ThreadPools.availableProcessors(),
+                    "order",order,"semantics","captured pre-carving population weights transported with finalized tile","sha256",Evidence.hash(mountains));
+                t.close();
             }
             c.cache.close();
         }

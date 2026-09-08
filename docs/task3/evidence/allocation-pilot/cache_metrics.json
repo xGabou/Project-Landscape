@@ -1,0 +1,23 @@
+[
+  {
+    "phase": "allocation probe completed",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 4,
+      "returned": 4,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 4,
+      "returned": 4,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 2074641888,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  }
+]

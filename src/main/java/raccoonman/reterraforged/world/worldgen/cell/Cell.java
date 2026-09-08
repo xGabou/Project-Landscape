@@ -46,6 +46,12 @@ public class Cell implements com.gabou.atmospheregen.geography.GeographyWorkspac
     public float weirdness;
     public float temperature;
     public float moisture;
+
+    // Geography-only capture, private to keep the frozen 24-field legacy encoding unchanged.
+    // No extra object per cell; copy/reset/publication must transport these with the height.
+    private float mountainChainSelector = Float.NaN;
+    private float mountainChainContribution;
+    private float regionalMountainContribution;
     
     @Deprecated(forRemoval = true)
     public float beachNoise;
@@ -85,6 +91,9 @@ public class Cell implements com.gabou.atmospheregen.geography.GeographyWorkspac
         this.temperature = other.temperature;
         this.moisture = other.moisture;
         this.beachNoise = other.beachNoise;
+        this.mountainChainSelector = other.mountainChainSelector;
+        this.mountainChainContribution = other.mountainChainContribution;
+        this.regionalMountainContribution = other.regionalMountainContribution;
     }
 
     public Cell reset() {
@@ -97,6 +106,18 @@ public class Cell implements com.gabou.atmospheregen.geography.GeographyWorkspac
     @Override public float terrainRegionSelector() { return this.terrainRegionId; }
     @Override public float normalizedErosionDelta() { return this.heightErosion; }
     @Override public float normalizedSediment() { return this.sediment; }
+
+    public float mountainChainSelector() { return this.mountainChainSelector; }
+    public float mountainChainContribution() { return this.mountainChainContribution; }
+    public float regionalMountainContribution() { return this.regionalMountainContribution; }
+    public void mountainChainSelector(float value) { this.mountainChainSelector=value; }
+    public void mountainChainContribution(float value) { this.mountainChainContribution=value; }
+    public void regionalMountainContribution(float value) { this.regionalMountainContribution=value; }
+    public void resetMountainContributions() {
+        this.mountainChainSelector=Float.NaN;
+        this.mountainChainContribution=0.0F;
+        this.regionalMountainContribution=0.0F;
+    }
 
     @Deprecated(forRemoval = true)
     public boolean isAbsent() {

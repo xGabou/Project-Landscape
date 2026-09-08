@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.terrain.region;
 
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
@@ -29,6 +30,7 @@ public class RegionLerper implements CellPopulator {
         float lowerHeight = cell.height;
         float lowerErosion = cell.erosion;
         float lowerWeirdness = cell.weirdness;
+        float lowerMountain = cell.regionalMountainContribution();
         
         this.upper.apply(cell, x, y);
         float upperHeight = cell.height;
@@ -38,5 +40,6 @@ public class RegionLerper implements CellPopulator {
         cell.height = NoiseUtil.lerp(lowerHeight, upperHeight, alpha);
         cell.erosion = NoiseUtil.lerp(lowerErosion, upperErosion, alpha);
         cell.weirdness = NoiseUtil.lerp(lowerWeirdness, upperWeirdness, alpha);
+        cell.regionalMountainContribution(NoiseUtil.lerp(lowerMountain, cell.regionalMountainContribution(), alpha));
     }
 }

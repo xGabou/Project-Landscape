@@ -1,0 +1,15 @@
+{
+    "schemaVersion":  1,
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "reference":  "../stage-baseline/stage_samples.json",
+    "exactness":  "All 34 legacy fields/reads, raw float bits and stable identifiers; no epsilon",
+    "counts":  {
+                   "continent":  595,
+                   "terrain":  595,
+                   "hydrology":  595,
+                   "legacy_compatibility":  595,
+                   "finalized":  595
+               },
+    "changed":  0,
+    "status":  "PASS"
+}

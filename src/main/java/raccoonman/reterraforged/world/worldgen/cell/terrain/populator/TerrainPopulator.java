@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.terrain.populator;
 
 import raccoonman.reterraforged.data.worldgen.preset.settings.TerrainSettings;
@@ -21,6 +22,9 @@ public record TerrainPopulator(Terrain type, Noise base, Noise height, Noise ero
         cell.height = Math.max(base + height, 0.0F);
         cell.erosion = this.erosion.compute(x, z, 0);
         cell.weirdness = this.weirdness.compute(x, z, 0);
+        // Capture membership of the existing regional mountain populations; chains are weighted by Blender.
+        cell.regionalMountainContribution(this.type.isMountain()
+            && this.type != raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType.MOUNTAIN_CHAIN ? 1.0F : 0.0F);
     }
     
     public static TerrainPopulator make(Terrain type, Noise base, Noise height, Noise erosion, Noise weirdness, TerrainSettings.Terrain settings) {

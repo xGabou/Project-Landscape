@@ -54,5 +54,9 @@ public final class StageBaseline {
     private static void capture(Evidence out,long seed,int ordinal,ReproductionSuite.Point point,String stage,Cell cell,
             raccoonman.reterraforged.world.worldgen.cell.heightmap.Heightmap h) {
         out.row("stage_samples","seed",Long.toString(seed),"ordinal",ordinal,"point",point,"stage",stage,"fields",Evidence.cell(cell,h));
+        out.row("geography_capture","seed",Long.toString(seed),"ordinal",ordinal,"point",point,"stage",stage,
+            "chainSelectorBits",Float.floatToRawIntBits(cell.mountainChainSelector()),
+            "chainContributionBits",Float.floatToRawIntBits(cell.mountainChainContribution()),
+            "regionalContributionBits",Float.floatToRawIntBits(cell.regionalMountainContribution()));
     }
 }

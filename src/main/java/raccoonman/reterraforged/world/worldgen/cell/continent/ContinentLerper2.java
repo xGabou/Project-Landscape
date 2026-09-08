@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.continent;
 
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
@@ -42,5 +43,8 @@ public class ContinentLerper2 implements CellPopulator {
         this.upper.apply(cell, x, y);
         float upperVal = cell.height;
         cell.height = NoiseUtil.lerp(lowerVal, upperVal, alpha);
+        // Ocean side has no mountain population. Retain only its land blend's contribution.
+        cell.mountainChainContribution(cell.mountainChainContribution() * alpha);
+        cell.regionalMountainContribution(cell.regionalMountainContribution() * alpha);
     }
 }
