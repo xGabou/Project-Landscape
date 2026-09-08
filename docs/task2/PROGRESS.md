@@ -83,3 +83,18 @@ Task 2 freeze policy rejects live server datapack reload while a manifest-bound 
 before new tags/templates can be applied. Initial loading and vanilla-only reload are unaffected.
 Safe change-aware live reload is not implemented; restart with matching generation data instead.
 Comprehensive golden/TB/vanilla/performance gates remain pending.
+
+## Resource/codec validation audit
+
+The first world-binding evidence above predates complete resource enumeration. The runtime log
+showed Minecraft rejects empty resource-listing paths; explicit generation directories now replace
+that call. Structure templates and explicitly referenced legacy NBT paths are fingerprinted as
+canonical typed NBT, excluding gzip header metadata. Empty default-world resource capture is a
+regression assertion. Early prototype manifest fingerprints are superseded, not migrated.
+
+Integer config codecs now reject fractions and overflow instead of numeric truncation; geography
+config selects exactly one backend section. The real loaded effective preset is checked against
+Task 1C. Planned manifests round-trip as metadata but cannot start generation. Final standalone
+foundation run passed create/reopen and all expanded assertions. The primary terrain corpus also
+passed exactly: 595 geography + 595 hints + 85 biome keys + 105 tile digests; all 340 direct diagnostic
+rows retain the accepted disagreement counts. Additional worker/TB/performance gates are pending.

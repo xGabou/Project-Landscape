@@ -33,6 +33,9 @@ public final class FoundationTests {
         reject(out,"unknown schema",GenerationVersions.CODEC,"{\"schemaVersion\":2,\"geography\":\"LEGACY_RTF_V0\",\"baselineClimate\":\"LEGACY_RTF_HINTS_V0\",\"biomeResolver\":\"LEGACY_MULTINOISE_V0\"}");
         reject(out,"bad planned climate",BaselineClimateConfig.CODEC,"{\"planned\":{\"latitudeScaleBlocks\":0,\"lapseCelsiusPerBlock\":0.0065,\"oceanInfluence\":0.5,\"rainShadowStrength\":0.5}}");
         reject(out,"bad planned resolver",BiomeResolverConfig.CODEC,"{\"planned\":{\"spatialResolutionBlocks\":0,\"fallbackWeight\":-1}}");
+        reject(out,"fractional integer config",ConfigCodecs.integer("resolution",1,100),"1.5");
+        reject(out,"overflowing integer config",ConfigCodecs.integer("resolution",1,100),"4294967297");
+        reject(out,"no geography config section",WorldGeographyConfig.CODEC,"{}");
         for(double value:new double[]{Double.NaN,Double.POSITIVE_INFINITY,-1}) {
             var result=ConfigCodecs.finite("test",0,1).parse(JsonOps.INSTANCE,new com.google.gson.JsonPrimitive(value));
             if(result.error().isEmpty())throw new AssertionError("Accepted nonfinite/out of range");
@@ -50,6 +53,8 @@ public final class FoundationTests {
         var legacy=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
         var context=legacy.generationContext();
         if(context==null||context.runtimeToken()!=legacy.lookup.samplingIdentity())throw new AssertionError("World context not bound to cache token");
+        var emptyObjectHash=GenerationFingerprint.of(new CanonicalJson("{}"));
+        for(String key:List.of("nbt_resources","worldgen_json_resources"))if(emptyObjectHash.equals(context.manifest().content().data().get(key)))throw new AssertionError("Default world resource capture is empty: "+key);
         for(var dim:List.of(net.minecraft.world.level.Level.NETHER,net.minecraft.world.level.Level.END)) {
             var other=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getServer().getLevel(dim).getChunkSource().randomState()).generatorContext();
             if(other!=null&&other.generationContext()!=null)throw new AssertionError("Companion forced into foreign dimension");
@@ -91,9 +96,17 @@ public final class FoundationTests {
         var legacy=LegacyPresetSnapshot.capture(preset);
         var config=new WorldGeographyConfig(Optional.of(legacy),Optional.empty());
         var checksum=GenerationFingerprint.of(legacy.effectivePreset());
+        var fixtureRoot=java.nio.file.Path.of(System.getProperty("task1c.fixtureFile")).getParent();
+        var identity=com.google.gson.JsonParser.parseString(java.nio.file.Files.readString(fixtureRoot.resolve("golden-24/identity.json"))).getAsJsonArray().get(0).getAsJsonObject();
+        if(!legacy.effectivePreset().equals(CanonicalJson.of(identity.get("effectivePreset"))))throw new AssertionError("Effective legacy manifest settings changed from Task 1C");
         var content=new ManifestContent(GenerationVersions.legacy(),level.getSeed(),level.dimension().location(),config,
             new BaselineClimateConfig(Optional.empty()),new BiomeResolverConfig(Optional.empty()),Map.of("test:effective_preset",checksum),Optional.empty());
         var manifest=GenerationManifest.create(content);
+        var planned=GenerationManifest.create(new ManifestContent(GenerationVersions.planned(),level.getSeed(),level.dimension().location(),
+            new WorldGeographyConfig(Optional.empty(),Optional.of(new PlannedGeographySettings(3000,1000,1200,2000,.5))),
+            new BaselineClimateConfig(Optional.of(new BaselineClimateConfig.Planned(100000,.0065,.5,.5))),
+            new BiomeResolverConfig(Optional.of(new BiomeResolverConfig.Planned(64,1))),content.data(),Optional.empty()));
+        roundtrip(out,"planned unavailable manifest",GenerationManifest.CODEC,planned);
         roundtrip(out,"world geography config",WorldGeographyConfig.CODEC,config);
         roundtrip(out,"fingerprint",GenerationFingerprint.CODEC,checksum);
         roundtrip(out,"manifest",GenerationManifest.CODEC,manifest);
@@ -111,6 +124,8 @@ public final class FoundationTests {
         reject(out,"malformed geography config",WorldGeographyConfig.CODEC,"{\"legacy\":{\"effectivePreset\":{},\"tileExponent\":4,\"borderChunks\":1}}");
         var directory=java.nio.file.Files.createTempDirectory(java.nio.file.Path.of("."),"foundation-manifest-");
         var path=GenerationManifestStore.path(directory);
+        try{GenerationManifestStore.resolve(directory.resolve("unimplemented.json"),Optional.of(planned));throw new AssertionError("PA manifest was made functional");}
+        catch(UnsupportedOperationException expected){out.row("foundation_invalid","case","planned world refuses generation","error",expected.getMessage());}
         if(GenerationManifestStore.resolve(path,Optional.empty()).isPresent()||java.nio.file.Files.exists(path))throw new AssertionError("Foreign world assigned defaults");
         var first=GenerationManifestStore.resolve(path,Optional.of(manifest)).orElseThrow();
         var reopen=GenerationManifestStore.resolve(path,Optional.of(manifest)).orElseThrow();
@@ -122,7 +137,7 @@ public final class FoundationTests {
         try{GenerationManifestStore.resolve(path,Optional.of(changed));throw new AssertionError("Changed world seed accepted");}
         catch(IllegalStateException expected){out.row("foundation_invalid","case","world seed mismatch","error",expected.getMessage());}
         if(!GenerationManifestStore.read(path).equals(manifest))throw new AssertionError("Mismatch overwrote manifest");
-        out.row("manifest_roundtrip","fixtureVersion",1,"manifest",GenerationManifestStore.encode(manifest),"roundtrip",true,"contextId",a.contextId(),"separateRuntimeTokens",true,"canonicalOrdering",true);
+        out.row("manifest_roundtrip","fixtureVersion",1,"manifest",GenerationManifestStore.encode(manifest),"roundtrip",true,"contextId",a.contextId(),"separateRuntimeTokens",true,"canonicalOrdering",true,"effectivePresetMatchesTask1C",true);
         out.row("existing_world_resolution","recognition","test calls store after reading real active legacy preset; automatic world hook not yet bound","foreignWithoutManifest","untouched","first",first.kind().name(),"reopen",reopen.kind().name(),"mismatch","rejected without overwrite");
     }
     private static void seeds(Evidence out) throws Exception {

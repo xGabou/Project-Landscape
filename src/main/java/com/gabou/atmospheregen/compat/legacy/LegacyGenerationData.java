@@ -7,6 +7,7 @@ import com.mojang.serialization.*;
 import java.io.*;
 import java.util.*;
 import net.minecraft.core.*;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.*;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.chunk.ChunkGenerator;
@@ -41,19 +42,29 @@ public final class LegacyGenerationData {
         });
         result.put("resolved_tags", GenerationFingerprint.of(CanonicalJson.of(tags)));
         JsonObject resourceDefinitions = new JsonObject();
-        level.getServer().getResourceManager().listResources("", id -> id.getPath().endsWith(".json")
-            && (id.getPath().startsWith("worldgen/") || id.getPath().startsWith("dimension/") || id.getPath().startsWith("dimension_type/")
-                || id.getPath().startsWith("tags/") || id.getPath().startsWith("biome_modifier/") || id.getPath().startsWith("structure_modifier/")))
+        // Empty paths are rejected by 1.20.1 PathPackResources; enumerate actual generation directories.
+        for (String directory : List.of("worldgen", "dimension", "dimension_type", "tags", "biome_modifier", "structure_modifier"))
+        level.getServer().getResourceManager().listResources(directory, id -> id.getPath().endsWith(".json"))
             .forEach((id, resource) -> {
                 try (Reader reader = resource.openAsReader()) { resourceDefinitions.addProperty(id.toString(), GenerationFingerprint.of(CanonicalJson.of(JsonParser.parseReader(reader))).sha256()); }
                 catch (IOException failure) { throw new UncheckedIOException("Cannot fingerprint generation resource " + id, failure); }
             });
         result.put("worldgen_json_resources", GenerationFingerprint.of(CanonicalJson.of(resourceDefinitions)));
         JsonObject templates = new JsonObject();
-        level.getServer().getResourceManager().listResources("", id -> id.getPath().endsWith(".nbt")).forEach((id, resource) -> {
-            try (InputStream stream = resource.open()) { templates.addProperty(id.toString(), GenerationFingerprint.bytes(stream.readAllBytes()).sha256()); }
+        level.getServer().getResourceManager().listResources("structures", id -> id.getPath().endsWith(".nbt")).forEach((id, resource) -> {
+            try (InputStream stream = resource.open()) { templates.addProperty(id.toString(), nbtFingerprint(stream).sha256()); }
             catch (IOException failure) { throw new UncheckedIOException("Cannot fingerprint generation template " + id, failure); }
         });
+        // Legacy template features allow explicit resource paths outside structures/ as well.
+        Set<ResourceLocation> references = new TreeSet<>();
+        for (var feature : access.registryOrThrow(Registries.CONFIGURED_FEATURE))
+            nbtReferences(net.minecraft.world.level.levelgen.feature.ConfiguredFeature.DIRECT_CODEC.encodeStart(ops, feature).getOrThrow(false, s -> {}), references);
+        for (ResourceLocation id : references) if (!templates.has(id.toString())) {
+            var resource = level.getServer().getResourceManager().getResource(id);
+            if (resource.isEmpty()) { templates.addProperty(id.toString(), "missing_legacy_template"); continue; }
+            try (InputStream stream = resource.get().open()) { templates.addProperty(id.toString(), nbtFingerprint(stream).sha256()); }
+            catch (IOException failure) { throw new UncheckedIOException("Cannot fingerprint referenced generation template " + id, failure); }
+        }
         result.put("nbt_resources", GenerationFingerprint.of(CanonicalJson.of(templates)));
         try (InputStream stream = LegacyGenerationData.class.getResourceAsStream("/biomes.png")) {
             if (stream == null) throw new IllegalStateException("Missing legacy biome classification table biomes.png");
@@ -68,6 +79,19 @@ public final class LegacyGenerationData {
         if (raccoonman.reterraforged.world.worldgen.terrablender.TBCompat.isEnabled())
             result.put("terrablender_effective_config_regions", LegacyTerraBlenderData.capture());
         return Collections.unmodifiableSortedMap(new TreeMap<>(result));
+    }
+    private static GenerationFingerprint nbtFingerprint(InputStream stream) throws IOException {
+        // StringTagVisitor sorts compound keys, preserves typed values/list order and ignores gzip metadata.
+        String canonical = new net.minecraft.nbt.StringTagVisitor().visit(net.minecraft.nbt.NbtIo.readCompressed(stream));
+        return GenerationFingerprint.bytes(canonical.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+    }
+    private static void nbtReferences(JsonElement value, Set<ResourceLocation> references) {
+        if (value.isJsonObject()) value.getAsJsonObject().entrySet().forEach(entry -> nbtReferences(entry.getValue(), references));
+        else if (value.isJsonArray()) value.getAsJsonArray().forEach(entry -> nbtReferences(entry, references));
+        else if (value.isJsonPrimitive() && value.getAsJsonPrimitive().isString() && value.getAsString().endsWith(".nbt")) {
+            ResourceLocation id = ResourceLocation.tryParse(value.getAsString());
+            if (id != null) references.add(id);
+        }
     }
     private static <T> void registry(Map<String, GenerationFingerprint> result, RegistryAccess access, RegistryOps<JsonElement> ops,
             RegistryDataLoader.RegistryData<T> entry) {

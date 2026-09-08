@@ -7,7 +7,14 @@ public final class ConfigCodecs {
     private ConfigCodecs(){}
     /** Unlike Codec.intRange, invalid input has no partial value to invoke a record constructor with. */
     public static Codec<Integer> integer(String field,int min,int max) {
-        return Codec.INT.comapFlatMap(v->v>=min&&v<=max?DataResult.success(v):DataResult.error(()->field+" must be in ["+min+", "+max+"]; got "+v),v->v);
+        return Codec.PASSTHROUGH.comapFlatMap(dynamic->dynamic.asNumber().flatMap(number->{
+            try {
+                int v=new java.math.BigDecimal(number.toString()).intValueExact();
+                return v>=min&&v<=max?DataResult.success(v):DataResult.error(()->field+" must be in ["+min+", "+max+"]; got "+v);
+            } catch(NumberFormatException|ArithmeticException invalid) {
+                return DataResult.error(()->field+" must be an exact finite integer in ["+min+", "+max+"]; got "+number);
+            }
+        }),v->new Dynamic<>(JsonOps.INSTANCE,new com.google.gson.JsonPrimitive(v)));
     }
     /** DFU's optionalFieldOf treats malformed present fields as absent. Generation config must not. */
     public static <A> MapCodec<Optional<A>> optional(String name,Codec<A> codec) {
