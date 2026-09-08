@@ -34,6 +34,9 @@ public final class ReproductionClient {
     private int stage,worldIndex; private long start=System.nanoTime();
     private Evidence out; private CompletableFuture<Void> work;
     private boolean disabledBootstrapSucceeded;
+    private boolean foundationReopened;
+    private com.gabou.atmospheregen.generation.context.WorldGenerationContext previousFoundationContext;
+    private com.gabou.atmospheregen.api.geography.GeographyProvider previousFoundationProvider;
     private List<raccoonman.reterraforged.world.worldgen.GeneratorContext> worldContexts=List.of();
     public ReproductionClient(){MinecraftForge.EVENT_BUS.addListener(this::tick);}
     private void tick(TickEvent.ClientTickEvent event){
@@ -75,6 +78,14 @@ public final class ReproductionClient {
                         out.row("observer_counters", "phase", "before_suite", "seed", currentSeed(), "counters", Metrics.snapshot());
                         if(task1c.equals("foundation")) {
                             FoundationTests.run(server.overworld(),out);
+                            var metadata=((RTFRandomState)(Object)server.overworld().getChunkSource().randomState()).generatorContext().generationContext();
+                            if(metadata==null)throw new AssertionError("Missing automatic world manifest binding");
+                            if(foundationReopened && (!metadata.contextId().equals(previousFoundationContext.contextId()) || metadata.runtimeToken()==previousFoundationContext.runtimeToken()))throw new AssertionError("Reopened context persistence/isolation");
+                            previousFoundationContext=metadata;
+                            previousFoundationProvider=com.gabou.atmospheregen.compat.legacy.LegacyRtfGeographyAdapter.forLevel(server.overworld());
+                            out.row("world_binding","phase",foundationReopened?"reopened":"created","metadata",com.gabou.atmospheregen.generation.context.GenerationDiagnostics.describe(metadata),"persistedContextStable",true);
+                            ((net.minecraft.world.level.storage.PrimaryLevelData)server.getWorldData()).withConfirmedWarning(true);
+                            server.saveEverything(false,true,true);
                         } else if(task1c.startsWith("golden") || task1cRepeat() || task1c.equals("allocation")) {
                             new LegacyBaselineSuite(server.overworld(), out).run(task1c,worldIndex);
                         } else if(worldIndex==0&&!chunksOnly)new ReproductionSuite(server.overworld(),out,seeds).run(server.overworld(),full);
@@ -102,6 +113,10 @@ public final class ReproductionClient {
                 }
                 out.row("disposal","case","actual world unload","seed",currentSeed(),"worldIndex",worldIndex,"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
                 worldContexts=List.of();
+                if(task1c.equals("foundation")) {
+                    try{previousFoundationProvider.sample(0,0);throw new AssertionError("Provider sampled after shutdown");}catch(IllegalStateException expected){out.row("api_shutdown","reopened",foundationReopened,"rejected",true);}
+                    if(!foundationReopened){foundationReopened=true;stage=2;mc.createWorldOpenFlows().loadLevel(mc.screen,run+"-seed0");return;}
+                }
                 if((full||chunksOnly||task1cRepeat())&&++worldIndex<(task1c.equals("variance")?6:task1cRepeat()?4:full&&disabledBootstrapSucceeded?4:Math.min(3,seeds.length))){stage=0;}else{
                     out.row("completion","status","PASS","kind","reproduction observations, not correctness goldens","run",run);out.flush();
                     Files.writeString(mc.gameDirectory.toPath().resolve("task1a-pass.txt"),run+"\n");stage=99;RTFCommon.LOGGER.info("TASK1A PASS {}",run);mc.stop();

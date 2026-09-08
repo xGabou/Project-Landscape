@@ -59,3 +59,27 @@ Baseline climate has documented physical units and ecological (not relative) hum
 the coordinate contract allows future bounded neighboring geography. Biome resolution is a
 distinct unimplemented contract; Minecraft's source remains unchanged. Planned geography and
 physical climate fail explicitly rather than supplying legacy approximations/hints.
+
+## World ownership and canonical adapter binding
+
+Real Forge run `reproduction-1788834616159` passed create/save/reopen, identical persisted
+fingerprint/context ID, distinct reopen cache token, canonical warm/evicted queries and rejected
+post-shutdown provider reads. Actual noise-router CellSampler markers plus active preset identify
+legacy Overworld ownership; availability of additional RTF tags alone is insufficient. Nether/End
+are not bound to the new companion context. Existing legacy seed/cache algorithms are unchanged.
+
+Binding occurs after RandomState initialization in ChunkMap construction, before publication or
+chunk scheduling. Metadata shares the existing lookup token; no hashing/codecs enter hot loops.
+Fingerprints cover effective preset, active generator, worldgen registries, resolved tags, relevant
+JSON and NBT resources, the legacy biome table and conservative external mod versions (excluding
+the two known developer harness mods). Optional TerraBlender config/region metadata is read behind
+the existing optional-mod gate; no new biome candidates or selection logic are implemented.
+
+The thin canonical adapter always provides the owning filtered tile, never direct fallback. It
+returns detached immutable elevations/classifications and honest unknown metrics. Legacy climate
+hints stay dimensionless and separate. This does not extract or split Heightmap.
+
+Task 2 freeze policy rejects live server datapack reload while a manifest-bound world is open,
+before new tags/templates can be applied. Initial loading and vanilla-only reload are unaffected.
+Safe change-aware live reload is not implemented; restart with matching generation data instead.
+Comprehensive golden/TB/vanilla/performance gates remain pending.

@@ -1,0 +1,28 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "task":  "Task 2",
+    "run":  "reproduction-1788834616159",
+    "sourceHead":  "73129f3f9bfd6031d64dbb6423eb9051689a1f5c",
+    "sourceDirty":  [
+                        " M docs/task2/PROGRESS.md",
+                        " M src/main/java/raccoonman/reterraforged/mixin/MixinChunkMap.java",
+                        " M src/main/java/raccoonman/reterraforged/mixin/MixinMinecraftServer.java",
+                        " M src/main/java/raccoonman/reterraforged/world/worldgen/GeneratorContext.java",
+                        " M src/reproduction/java/baseline/reproduction/FoundationTests.java",
+                        " M src/reproduction/java/baseline/reproduction/ReproductionClient.java",
+                        "?? docs/task2/evidence/foundation-bound/",
+                        "?? scripts/task2/",
+                        "?? src/main/java/com/gabou/atmospheregen/compat/legacy/LegacyGenerationData.java",
+                        "?? src/main/java/com/gabou/atmospheregen/compat/legacy/LegacyRtfGeographyAdapter.java",
+                        "?? src/main/java/com/gabou/atmospheregen/compat/legacy/LegacyTerraBlenderData.java",
+                        "?? src/main/java/com/gabou/atmospheregen/compat/legacy/LegacyWorldBinding.java",
+                        "?? src/main/java/com/gabou/atmospheregen/generation/context/GenerationDiagnostics.java"
+                    ],
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "acceptedTask1C":  "d2164f25cd06aafcae15cc15f9f4babe977d4bdb",
+    "fixtureManifest":  "../../../task1c/evidence/fixture_manifest.json",
+    "fixtureManifestSha256":  "5ab8460c9cee4bfc7b311a1984e0987dcadb36e453c1ca817dc170d8015ef8d5",
+    "settingsReference":  "../../../task1c/evidence/golden-24/identity.json",
+    "backend":  "LEGACY_RTF_V0"
+}

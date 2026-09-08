@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,6 +16,23 @@ import raccoonman.reterraforged.registries.RTFRegistries;
 
 @Mixin(MinecraftServer.class)
 class MixinMinecraftServer {
+
+	// Task 2 freeze policy: changing live tags/templates could bypass the persisted generation manifest.
+	// Initial/new-world resource loading is unaffected; vanilla-only servers retain normal /reload.
+	@Inject(method = "reloadResources", at = @At("HEAD"), cancellable = true)
+	private void atmospheregen$guardFrozenGenerationReload(java.util.Collection<String> packs,
+			org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.util.concurrent.CompletableFuture<Void>> callback) {
+		for (ServerLevel level : ((MinecraftServer)(Object)this).getAllLevels()) {
+			var state = (raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState();
+			var context = state.generatorContext();
+			if (context != null && context.generationContext() != null) {
+				callback.setReturnValue(java.util.concurrent.CompletableFuture.failedFuture(new IllegalStateException(
+					"Cannot reload datapacks while a manifest-bound LEGACY_RTF_V0 world is open (" + level.dimension().location()
+					+ "). Restart with unchanged generation data; changed data requires explicit versioned migration, not /reload.")));
+				return;
+			}
+		}
+	}
 
 	@Inject(
 		at = @At(

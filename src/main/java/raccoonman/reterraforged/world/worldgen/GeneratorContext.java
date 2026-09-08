@@ -22,6 +22,19 @@ public class GeneratorContext {
     @Nullable
     public TileCache cache;
     public WorldLookup lookup;
+    // Task 2 metadata only. Sampling continues using the existing cheap WorldLookup token.
+    private volatile com.gabou.atmospheregen.generation.context.WorldGenerationContext generationContext;
+
+    public synchronized void bindGenerationContext(com.gabou.atmospheregen.generation.context.WorldGenerationContext context) {
+        if (this.generationContext != null) throw new IllegalStateException("RTF generation metadata is already bound");
+        if (context.runtimeToken() != this.lookup.samplingIdentity()) throw new IllegalArgumentException("Generation metadata must share the owning lookup's cache identity");
+        this.generationContext = java.util.Objects.requireNonNull(context);
+    }
+
+    @Nullable
+    public com.gabou.atmospheregen.generation.context.WorldGenerationContext generationContext() {
+        return this.generationContext;
+    }
     
     public GeneratorContext(Preset preset, HolderGetter<Noise> noiseLookup, int seed, int tileSize, int tileBorder, int batchCount, @Nullable TileCache cache) {
         this.preset = preset;

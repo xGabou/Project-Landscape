@@ -44,6 +44,32 @@ public final class FoundationTests {
         seeds(out);
         manifests(level,out);
         api(out);
+        binding(level,out);
+    }
+    private static void binding(ServerLevel level,Evidence out) throws Exception {
+        var legacy=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
+        var context=legacy.generationContext();
+        if(context==null||context.runtimeToken()!=legacy.lookup.samplingIdentity())throw new AssertionError("World context not bound to cache token");
+        for(var dim:List.of(net.minecraft.world.level.Level.NETHER,net.minecraft.world.level.Level.END)) {
+            var other=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getServer().getLevel(dim).getChunkSource().randomState()).generatorContext();
+            if(other!=null&&other.generationContext()!=null)throw new AssertionError("Companion forced into foreign dimension");
+        }
+        var provider=com.gabou.atmospheregen.compat.legacy.LegacyRtfGeographyAdapter.forLevel(level);
+        int[][] points={{0,0},{-1,-1},{127,128},{-129,-128},{128,128},{80000,-80000}};
+        for(int[] point:points) {
+            int x=point[0],z=point[1];var a=provider.sample(x,z);var b=provider.sample(x,z);
+            var expected=new raccoonman.reterraforged.world.worldgen.cell.Cell();legacy.lookup.applyCell(expected,x,z,true,true);
+            if(!a.equals(b)||a.elevationBlockY()!=(double)(expected.height*legacy.levels.worldHeight))throw new AssertionError("Canonical provider used noncanonical height");
+            if(!provider.hydrology().sample(x,z).equals(a.hydrology()))throw new AssertionError("Hydrology semantics");
+            out.row("canonical_provider","x",x,"z",z,"elevationBlockY",a.elevationBlockY(),"seaRelativeElevationBlocks",a.seaRelativeElevationBlocks(),"water",a.water().name(),"landform",a.landform().name(),"mountainInfluenceKnown",a.metrics().mountainInfluence().isPresent(),"cacheWarmEqual",true,"filteredHeightEqual",true);
+        }
+        int x=80000,z=-80000;var before=provider.sample(x,z);
+        for(int i=0;i<64;i++)legacy.cache.drop(x>>7,z>>7);
+        if(legacy.cache.provideIfPresent(x>>7,z>>7)!=null)throw new AssertionError("Test did not evict tile");
+        if(!before.equals(provider.sample(x,z)))throw new AssertionError("Provider changed on eviction/reload");
+        var reload=level.getServer().reloadResources(level.getServer().getPackRepository().getSelectedIds());
+        if(!reload.isCompletedExceptionally())throw new AssertionError("Live reload bypasses frozen generation manifest");
+        out.row("world_binding_checks","canonicalEvictionEqual",true,"netherEndUnbound",true,"reloadRejectedBeforeApplication",true,"runtimeTokenBoundToLegacyLookup",true,"manifest",GenerationManifestStore.encode(context.manifest()));
     }
     private static void api(Evidence out) {
         var metrics=com.gabou.atmospheregen.api.geography.GeographyMetrics.unknown();
