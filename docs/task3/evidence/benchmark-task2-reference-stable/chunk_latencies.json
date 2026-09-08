@@ -1,0 +1,242 @@
+[
+  {
+    "operation": "FULL_cold_exploration",
+    "repeat": -1,
+    "warmup": true,
+    "nanoseconds": [
+      842513300,
+      136664800,
+      127765600,
+      128666900,
+      138933500,
+      334865200,
+      115940400,
+      115956500
+    ]
+  },
+  {
+    "operation": "FULL_sequential_adjacent",
+    "repeat": -1,
+    "warmup": true,
+    "nanoseconds": [
+      746717800,
+      64178500,
+      59918600,
+      66985700,
+      56409500,
+      67661500,
+      86898600,
+      55978000
+    ]
+  },
+  {
+    "operation": "FULL_scattered",
+    "repeat": -1,
+    "warmup": true,
+    "nanoseconds": [
+      621955500,
+      608005300,
+      511611200,
+      682333700,
+      505287600,
+      589721900,
+      593633700,
+      662522400
+    ]
+  },
+  {
+    "operation": "FULL_warmed_neighbor_terrain",
+    "repeat": -1,
+    "warmup": true,
+    "nanoseconds": [
+      1884458700,
+      70064100,
+      77549800,
+      76557700,
+      131402900,
+      157639500,
+      93536800,
+      74846700
+    ]
+  },
+  {
+    "operation": "FULL_cold_exploration",
+    "repeat": 0,
+    "warmup": false,
+    "nanoseconds": [
+      771237800,
+      124508500,
+      115753100,
+      116617800,
+      126430800,
+      333483700,
+      118496900,
+      137528300
+    ]
+  },
+  {
+    "operation": "FULL_sequential_adjacent",
+    "repeat": 0,
+    "warmup": false,
+    "nanoseconds": [
+      676522700,
+      57749600,
+      58954300,
+      65445400,
+      56475000,
+      67111300,
+      66662300,
+      54803600
+    ]
+  },
+  {
+    "operation": "FULL_scattered",
+    "repeat": 0,
+    "warmup": false,
+    "nanoseconds": [
+      633695500,
+      574249800,
+      488395900,
+      696121800,
+      507175400,
+      547342700,
+      507204600,
+      601613600
+    ]
+  },
+  {
+    "operation": "FULL_warmed_neighbor_terrain",
+    "repeat": 0,
+    "warmup": false,
+    "nanoseconds": [
+      1774649400,
+      64112800,
+      64328300,
+      77358100,
+      75220300,
+      144913700,
+      83918000,
+      73872600
+    ]
+  },
+  {
+    "operation": "FULL_cold_exploration",
+    "repeat": 1,
+    "warmup": false,
+    "nanoseconds": [
+      802242300,
+      134220500,
+      129055600,
+      124295000,
+      127287100,
+      304311300,
+      114767400,
+      110634400
+    ]
+  },
+  {
+    "operation": "FULL_sequential_adjacent",
+    "repeat": 1,
+    "warmup": false,
+    "nanoseconds": [
+      633650400,
+      57810200,
+      56047100,
+      63279200,
+      65011400,
+      64805800,
+      76994600,
+      52755200
+    ]
+  },
+  {
+    "operation": "FULL_scattered",
+    "repeat": 1,
+    "warmup": false,
+    "nanoseconds": [
+      583207500,
+      578120700,
+      561653400,
+      690191400,
+      538994600,
+      578298700,
+      579790300,
+      641311300
+    ]
+  },
+  {
+    "operation": "FULL_warmed_neighbor_terrain",
+    "repeat": 1,
+    "warmup": false,
+    "nanoseconds": [
+      1762532700,
+      65931100,
+      81879200,
+      73642800,
+      78404400,
+      161279200,
+      81597699,
+      69765100
+    ]
+  },
+  {
+    "operation": "FULL_cold_exploration",
+    "repeat": 2,
+    "warmup": false,
+    "nanoseconds": [
+      752165700,
+      132043400,
+      124776500,
+      123828199,
+      135483900,
+      308251400,
+      117737300,
+      111041901
+    ]
+  },
+  {
+    "operation": "FULL_sequential_adjacent",
+    "repeat": 2,
+    "warmup": false,
+    "nanoseconds": [
+      596595600,
+      61646700,
+      55462700,
+      60582300,
+      54283001,
+      61797100,
+      70053600,
+      53530601
+    ]
+  },
+  {
+    "operation": "FULL_scattered",
+    "repeat": 2,
+    "warmup": false,
+    "nanoseconds": [
+      554388801,
+      522702599,
+      495444900,
+      699436600,
+      596240100,
+      510391500,
+      536962200,
+      524482201
+    ]
+  },
+  {
+    "operation": "FULL_warmed_neighbor_terrain",
+    "repeat": 2,
+    "warmup": false,
+    "nanoseconds": [
+      1738416001,
+      63091800,
+      65275800,
+      71316800,
+      72989600,
+      144092200,
+      81475700,
+      71719201
+    ]
+  }
+]

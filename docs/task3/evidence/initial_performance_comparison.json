@@ -1,0 +1,163 @@
+{
+    "schemaVersion":  1,
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "backend":  "LEGACY_RTF_V0",
+    "reference":  "../../task2/evidence/benchmark_repeat_current_summary.json",
+    "candidate":  "benchmark_summary.json",
+    "comparisons":  [
+                        {
+                            "operation":  "raw_heightmap_point",
+                            "beforeThroughput":  379213.17432487948,
+                            "afterThroughput":  360365.31417866173,
+                            "timeChangePercent":  5.2302092916948626184475712700,
+                            "throughputChangePercent":  -4.9702545750877348954598178900,
+                            "beforeRepeatCV":  2.4310446559154992,
+                            "afterRepeatCV":  4.9886527207643043,
+                            "medianNs":  2700,
+                            "p95Ns":  3400,
+                            "investigateOverTenPercent":  false
+                        },
+                        {
+                            "operation":  "direct_approximate_point",
+                            "beforeThroughput":  376088.62322732888,
+                            "afterThroughput":  367166.14918141713,
+                            "timeChangePercent":  2.430091680783771658741154800,
+                            "throughputChangePercent":  -2.3724392323663857453036801400,
+                            "beforeRepeatCV":  0.52454199805572888,
+                            "afterRepeatCV":  3.3759193020219787,
+                            "medianNs":  2700,
+                            "p95Ns":  3300,
+                            "investigateOverTenPercent":  false
+                        },
+                        {
+                            "operation":  "canonical_warm_point",
+                            "beforeThroughput":  6595016.7049068147,
+                            "afterThroughput":  5074016.72344379,
+                            "timeChangePercent":  29.976250855371749162619890610,
+                            "throughputChangePercent":  -23.062867760916701158099849130,
+                            "beforeRepeatCV":  2.3022636419447844,
+                            "afterRepeatCV":  3.5589020485881759,
+                            "medianNs":  200,
+                            "p95Ns":  200,
+                            "investigateOverTenPercent":  true
+                        },
+                        {
+                            "operation":  "cached_opportunistic_point",
+                            "beforeThroughput":  7010322.5116328821,
+                            "afterThroughput":  5684398.60873789,
+                            "timeChangePercent":  23.325667219339983593128277590,
+                            "throughputChangePercent":  -18.913878793661245675879890220,
+                            "beforeRepeatCV":  1.4316902657709627,
+                            "afterRepeatCV":  3.8370932118494183,
+                            "medianNs":  200,
+                            "p95Ns":  200,
+                            "investigateOverTenPercent":  true
+                        },
+                        {
+                            "operation":  "warm_tile_lookup",
+                            "beforeThroughput":  6624147.1673320867,
+                            "afterThroughput":  5400354.3323307652,
+                            "timeChangePercent":  22.661343306211146266883957670,
+                            "throughputChangePercent":  -18.474722920357626805721611600,
+                            "beforeRepeatCV":  23.623191923083763,
+                            "afterRepeatCV":  1.6882851128687533,
+                            "medianNs":  200,
+                            "p95Ns":  200,
+                            "investigateOverTenPercent":  true
+                        },
+                        {
+                            "operation":  "filtered_tile",
+                            "beforeThroughput":  36.595853689776945,
+                            "afterThroughput":  33.4809844748675,
+                            "timeChangePercent":  9.303397925015082765873911730,
+                            "throughputChangePercent":  -8.511535873200804695702585900,
+                            "beforeRepeatCV":  7.62695342202032,
+                            "afterRepeatCV":  1.9522487855643704,
+                            "medianNs":  29867700,
+                            "p95Ns":  34553600,
+                            "investigateOverTenPercent":  false
+                        },
+                        {
+                            "operation":  "cold_cache_tile",
+                            "beforeThroughput":  38.975566217538223,
+                            "afterThroughput":  35.007264007281513,
+                            "timeChangePercent":  11.335653678708804274878037270,
+                            "throughputChangePercent":  -10.18151266387774401141574900,
+                            "beforeRepeatCV":  2.0523202867964097,
+                            "afterRepeatCV":  4.6839129776601958,
+                            "medianNs":  28565500,
+                            "p95Ns":  31726000,
+                            "investigateOverTenPercent":  true
+                        },
+                        {
+                            "operation":  "cold_exact_point",
+                            "beforeThroughput":  38.641369450133311,
+                            "afterThroughput":  33.250539490003227,
+                            "timeChangePercent":  16.212759380192422899706765600,
+                            "throughputChangePercent":  -13.950928853820645006243905670,
+                            "beforeRepeatCV":  7.8440981764491511,
+                            "afterRepeatCV":  3.0551995239365013,
+                            "medianNs":  30074700,
+                            "p95Ns":  37653300,
+                            "investigateOverTenPercent":  true
+                        },
+                        {
+                            "operation":  "FULL_cold_exploration",
+                            "beforeThroughput":  4.5597989995003028,
+                            "afterThroughput":  4.168339429963952,
+                            "timeChangePercent":  9.391259423893321499423214310,
+                            "throughputChangePercent":  -8.585018102316569109225407330,
+                            "beforeRepeatCV":  4.6815037624578428,
+                            "afterRepeatCV":  1.1508212353098108,
+                            "medianNs":  130614500,
+                            "p95Ns":  825373300,
+                            "investigateOverTenPercent":  false
+                        },
+                        {
+                            "operation":  "FULL_sequential_adjacent",
+                            "beforeThroughput":  7.7048087444956366,
+                            "afterThroughput":  6.9391876483847694,
+                            "timeChangePercent":  11.033295753128687465211219890,
+                            "throughputChangePercent":  -9.936925386471554976082291770,
+                            "beforeRepeatCV":  1.5753716118225245,
+                            "afterRepeatCV":  9.6433167798766259,
+                            "medianNs":  63265100,
+                            "p95Ns":  694810900,
+                            "investigateOverTenPercent":  true
+                        },
+                        {
+                            "operation":  "FULL_scattered",
+                            "beforeThroughput":  1.9357236665422721,
+                            "afterThroughput":  1.7111934532647506,
+                            "timeChangePercent":  13.121264159183460504449278840,
+                            "throughputChangePercent":  -11.599290599086046576403923270,
+                            "beforeRepeatCV":  2.2676122173647535,
+                            "afterRepeatCV":  3.1955490868908729,
+                            "medianNs":  573518300,
+                            "p95Ns":  728777400,
+                            "investigateOverTenPercent":  true
+                        },
+                        {
+                            "operation":  "FULL_warmed_neighbor_terrain",
+                            "beforeThroughput":  3.3970072620796623,
+                            "afterThroughput":  3.2347184923559356,
+                            "timeChangePercent":  5.0170909804743864281869820800,
+                            "throughputChangePercent":  -4.7774042621378685143500568900,
+                            "beforeRepeatCV":  0.92183316903391377,
+                            "afterRepeatCV":  0.84464022875693345,
+                            "medianNs":  83963500,
+                            "p95Ns":  1842250700,
+                            "investigateOverTenPercent":  false
+                        }
+                    ],
+    "allocation":  {
+                       "beforeBytesPerTile":  2996880,
+                       "afterBytesPerTile":  3201752,
+                       "changePercent":  6.8361762900082779,
+                       "scope":  "24 RTF workers plus caller; warmed workspace reuse, no renderer",
+                       "publishedCellCaptureOverheadBytes":  204800,
+                       "exactRetainedHeapMeasured":  false
+                   },
+    "policy":  "Investigate \u003e10% extraction regression outside measured variance. FULL includes downstream Minecraft, not isolated geography.",
+    "status":  "MEASURED_REQUIRES_REVIEW"
+}
