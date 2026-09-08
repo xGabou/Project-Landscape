@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  1,
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "sourceHead":  "3f1451662377328267c33cc3154d777d8dfb022d",
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "results":  [
+                    {
+                        "case":  "smoke-standalone",
+                        "world":  "task0-1788897007815",
+                        "status":  "PASS",
+                        "chunkChecks":  14,
+                        "createOrOpenSaveReopen":  true
+                    },
+                    {
+                        "case":  "smoke-tb",
+                        "world":  "task0-1788897059250",
+                        "status":  "PASS",
+                        "chunkChecks":  14,
+                        "createOrOpenSaveReopen":  true
+                    },
+                    {
+                        "case":  "smoke-vanilla",
+                        "world":  "task0-1788897116240",
+                        "status":  "PASS",
+                        "chunkChecks":  14,
+                        "createOrOpenSaveReopen":  true
+                    },
+                    {
+                        "case":  "smoke-existing-legacy",
+                        "world":  "task3-existing-legacy-67f92055ad9b43ff94975b16e4528068",
+                        "status":  "PASS",
+                        "chunkChecks":  14,
+                        "createOrOpenSaveReopen":  true
+                    }
+                ],
+    "oldWorld":  {
+                     "source":  "task0-1788877331112",
+                     "copiedTo":  "task3-existing-legacy-67f92055ad9b43ff94975b16e4528068",
+                     "sourceHadManifest":  true,
+                     "manifestSha256":  "8450793950c0c78d2e0eb7bbfb7a45b1190d8de2f99c1037859931b0f9cbac69",
+                     "manifestUnchanged":  true,
+                     "sourceLevelDatSha256":  "6f7f34b6ba7ff77456db9b25152da6141adccc3753f2126c8bf4d4fccfbdd582",
+                     "sourceUnchanged":  true,
+                     "copyManifestCreated":  true
+                 },
+    "status":  "PASS"
+}
