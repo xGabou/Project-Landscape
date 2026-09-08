@@ -114,3 +114,19 @@ Performance remains under investigation: the first Task 2 run is slower than the
 Task 1C timing, beyond the 5% investigation threshold. A detached exact Task 1C source worktree
 is being measured under the current environment before attributing that difference to code.
 Per-tile worker/caller allocations remain approximately 2.997 MB (not process-retained memory).
+
+## Final fingerprint precision check
+
+Canonical JSON now rejects nonfinite numeric trees before Gson can reinterpret bare NaN as a
+string, and preserves signed floating zero (which can matter to mathematical definitions).
+Constructor/codec tests pass. This completes schema 1 before Task 2 acceptance; prototype Task 2
+fingerprints are not migration targets. Task 1C worlds still have no manifest and receive explicit
+legacy assignment. Build, jar/reobfuscation, datagen and the expanded foundation profile pass.
+The smoke matrix is being repeated with this final fingerprint encoding.
+
+Timing investigation: a contemporary run of exact Task 1C source followed by a Task 2 repeat
+finds no >5% median hot-path regression; the largest is filtered tiles +3.37%, with candidate
+repeat CV 7.63%. Historical filtered timing is +7.03%, investigated rather than hidden. Both
+original slow run and contemporary runs are retained. No specific JIT/background-process cause
+is claimed. RTF worker/caller allocations are 2,996,848–2,996,880 bytes/tile versus approximately
+2,996,952–2,996,984 historically.

@@ -1,0 +1,50 @@
+[
+  {
+    "phase": "created",
+    "metadata": {
+      "baselineClimateVersion": "LEGACY_RTF_HINTS_V0",
+      "biomeResolverVersion": "LEGACY_MULTINOISE_V0",
+      "contextId": "atmospheregen:140bcce750c052f037e1607599a5459d403d76086dcea39b2f1e7c6c081a8acd",
+      "dimension": "minecraft:overworld",
+      "fingerprint": "140bcce750c052f037e1607599a5459d403d76086dcea39b2f1e7c6c081a8acd",
+      "geographyVersion": "LEGACY_RTF_V0",
+      "manifestSchema": "1",
+      "seedServiceUsage": "new architecture infrastructure only; legacy generation does not consume these streams",
+      "stageSeed/atmospheregen:baseline_precipitation": "4629167059216572495",
+      "stageSeed/atmospheregen:baseline_temperature": "3653283621020586307",
+      "stageSeed/atmospheregen:biome_spatial_selection": "-4967736174976163592",
+      "stageSeed/atmospheregen:continent": "5239652647942506972",
+      "stageSeed/atmospheregen:hydrology": "-1565530334296042885",
+      "stageSeed/atmospheregen:mountain_chains": "-2517338120034848642",
+      "stageSeed/atmospheregen:ocean": "2337424783971863222",
+      "stageSeed/atmospheregen:surface": "-5027431235848322668",
+      "stageSeed/atmospheregen:terrain_regions": "972237299574718017",
+      "worldSeed": "8675309"
+    },
+    "persistedContextStable": true
+  },
+  {
+    "phase": "reopened",
+    "metadata": {
+      "baselineClimateVersion": "LEGACY_RTF_HINTS_V0",
+      "biomeResolverVersion": "LEGACY_MULTINOISE_V0",
+      "contextId": "atmospheregen:140bcce750c052f037e1607599a5459d403d76086dcea39b2f1e7c6c081a8acd",
+      "dimension": "minecraft:overworld",
+      "fingerprint": "140bcce750c052f037e1607599a5459d403d76086dcea39b2f1e7c6c081a8acd",
+      "geographyVersion": "LEGACY_RTF_V0",
+      "manifestSchema": "1",
+      "seedServiceUsage": "new architecture infrastructure only; legacy generation does not consume these streams",
+      "stageSeed/atmospheregen:baseline_precipitation": "4629167059216572495",
+      "stageSeed/atmospheregen:baseline_temperature": "3653283621020586307",
+      "stageSeed/atmospheregen:biome_spatial_selection": "-4967736174976163592",
+      "stageSeed/atmospheregen:continent": "5239652647942506972",
+      "stageSeed/atmospheregen:hydrology": "-1565530334296042885",
+      "stageSeed/atmospheregen:mountain_chains": "-2517338120034848642",
+      "stageSeed/atmospheregen:ocean": "2337424783971863222",
+      "stageSeed/atmospheregen:surface": "-5027431235848322668",
+      "stageSeed/atmospheregen:terrain_regions": "972237299574718017",
+      "worldSeed": "8675309"
+    },
+    "persistedContextStable": true
+  }
+]

@@ -14,7 +14,7 @@ public record CanonicalJson(String text) {
     }, value -> new Dynamic<>(JsonOps.INSTANCE, value.tree()));
 
     public CanonicalJson { text = sorted(JsonParser.parseString(text)).toString(); }
-    public static CanonicalJson of(JsonElement value) { return new CanonicalJson(value.toString()); }
+    public static CanonicalJson of(JsonElement value) { return new CanonicalJson(sorted(value).toString()); }
     public JsonElement tree() { return JsonParser.parseString(text); }
 
     private static JsonElement sorted(JsonElement value) {
@@ -31,6 +31,8 @@ public record CanonicalJson(String text) {
         if (value.isJsonPrimitive() && value.getAsJsonPrimitive().isNumber()) {
             // Reject NaN/infinity and normalize equivalent finite numeric spellings, without long->double loss.
             BigDecimal number = new BigDecimal(value.getAsString()).stripTrailingZeros();
+            // A signed floating zero can change a noise calculation (e.g. reciprocal); do not hash it away.
+            if (number.signum() == 0 && value.getAsString().startsWith("-")) return new JsonPrimitive(-0.0D);
             return new JsonPrimitive(number.signum() == 0 ? BigDecimal.ZERO : number);
         }
         return value.deepCopy();

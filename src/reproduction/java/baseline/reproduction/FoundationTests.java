@@ -119,6 +119,12 @@ public final class FoundationTests {
         var ordered=com.google.gson.JsonParser.parseString("{\"b\":2,\"a\":1.0}");
         var reversed=com.google.gson.JsonParser.parseString("{\"a\":1,\"b\":2.0}");
         if(!GenerationFingerprint.of(CanonicalJson.of(ordered)).equals(GenerationFingerprint.of(CanonicalJson.of(reversed))))throw new AssertionError("Unordered fingerprint");
+        if(GenerationFingerprint.of(new CanonicalJson("-0.0")).equals(GenerationFingerprint.of(new CanonicalJson("0.0"))))throw new AssertionError("Signed zero fingerprint collision");
+        for(double nonfinite:new double[]{Double.NaN,Double.POSITIVE_INFINITY,Double.NEGATIVE_INFINITY}) {
+            var invalid=CanonicalJson.CODEC.parse(JsonOps.INSTANCE,new com.google.gson.JsonPrimitive(nonfinite));
+            if(invalid.error().isEmpty())throw new AssertionError("Nonfinite fingerprint value accepted");
+            out.row("foundation_invalid","case","nonfinite fingerprint number "+nonfinite,"error",invalid.error().get().message());
+        }
         var encoded=com.google.gson.JsonParser.parseString(GenerationManifestStore.encode(manifest)).getAsJsonObject();
         encoded.addProperty("fingerprint","0".repeat(64));reject(out,"changed fingerprint",GenerationManifest.CODEC,encoded.toString());
         reject(out,"malformed geography config",WorldGeographyConfig.CODEC,"{\"legacy\":{\"effectivePreset\":{},\"tileExponent\":4,\"borderChunks\":1}}");

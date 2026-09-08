@@ -1,0 +1,170 @@
+[
+  {
+    "case": "unknown geography",
+    "error": "Unsupported GeographyAlgorithmVersion \u0027FUTURE_UNKNOWN\u0027; restore a supported manifest, do not auto-upgrade"
+  },
+  {
+    "case": "missing version fields",
+    "error": "No key biomeResolver in MapLike[{}]; No key baselineClimate in MapLike[{}]; No key geography in MapLike[{}]; No key schemaVersion in MapLike[{}]"
+  },
+  {
+    "case": "unknown schema",
+    "error": "schemaVersion must be in [1, 1]; got 2"
+  },
+  {
+    "case": "bad planned climate",
+    "error": "latitudeScaleBlocks must be finite in [1.0, 3.0E7]; got 0.0"
+  },
+  {
+    "case": "bad planned resolver",
+    "error": "fallbackWeight must be in [1, 1000000]; got -1; spatialResolutionBlocks must be in [1, 30000000]; got 0"
+  },
+  {
+    "case": "fractional integer config",
+    "error": "resolution must be an exact finite integer in [1, 100]; got 1.5"
+  },
+  {
+    "case": "overflowing integer config",
+    "error": "resolution must be an exact finite integer in [1, 100]; got 4294967297"
+  },
+  {
+    "case": "no geography config section",
+    "error": "Select exactly one geography config section: legacy or planned"
+  },
+  {
+    "case": "finite range NaN",
+    "error": "test must be finite in [0.0, 1.0]; got NaN"
+  },
+  {
+    "case": "finite range Infinity",
+    "error": "test must be finite in [0.0, 1.0]; got Infinity"
+  },
+  {
+    "case": "finite range -1.0",
+    "error": "test must be finite in [0.0, 1.0]; got -1.0"
+  },
+  {
+    "case": "unimplemented backend",
+    "error": "Generation backend tuple GenerationVersions[schemaVersion\u003d1, geography\u003dPA_GEOGRAPHY_V1, baselineClimate\u003dPA_BASELINE_V1, biomeResolver\u003dPA_RESOLVER_V1] is not implemented; only LEGACY_RTF_V0 is functional. No legacy fallback."
+  },
+  {
+    "case": "context dimension mismatch",
+    "error": "Generation context dimension does not match manifest"
+  },
+  {
+    "case": "nonfinite fingerprint number NaN",
+    "error": "Invalid canonical JSON: Character N is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "nonfinite fingerprint number Infinity",
+    "error": "Invalid canonical JSON: Character I is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "nonfinite fingerprint number -Infinity",
+    "error": "Invalid canonical JSON: Character I is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "changed fingerprint",
+    "error": "Manifest fingerprint mismatch: content was changed or corrupted; restore matching world generation data, do not regenerate with defaults"
+  },
+  {
+    "case": "malformed geography config",
+    "error": "legacy tileExponent must be in [3, 3]; got 4"
+  },
+  {
+    "case": "planned world refuses generation",
+    "error": "Generation backend tuple GenerationVersions[schemaVersion\u003d1, geography\u003dPA_GEOGRAPHY_V1, baselineClimate\u003dPA_BASELINE_V1, biomeResolver\u003dPA_RESOLVER_V1] is not implemented; only LEGACY_RTF_V0 is functional. No legacy fallback."
+  },
+  {
+    "case": "foreign generator with manifest",
+    "error": "Manifest exists for minecraft:overworld but this dimension does not own a recognizable RTF preset/router. Restore the matching generator; no newest-version fallback."
+  },
+  {
+    "case": "world seed mismatch",
+    "error": "Generation manifest mismatch in minecraft:overworld; changed fields: [content.worldSeed]. Restore matching preset/datapacks/seed. No automatic migration; existing manifest was not overwritten."
+  },
+  {
+    "case": "unknown geography",
+    "error": "Unsupported GeographyAlgorithmVersion \u0027FUTURE_UNKNOWN\u0027; restore a supported manifest, do not auto-upgrade"
+  },
+  {
+    "case": "missing version fields",
+    "error": "No key biomeResolver in MapLike[{}]; No key baselineClimate in MapLike[{}]; No key geography in MapLike[{}]; No key schemaVersion in MapLike[{}]"
+  },
+  {
+    "case": "unknown schema",
+    "error": "schemaVersion must be in [1, 1]; got 2"
+  },
+  {
+    "case": "bad planned climate",
+    "error": "latitudeScaleBlocks must be finite in [1.0, 3.0E7]; got 0.0"
+  },
+  {
+    "case": "bad planned resolver",
+    "error": "fallbackWeight must be in [1, 1000000]; got -1; spatialResolutionBlocks must be in [1, 30000000]; got 0"
+  },
+  {
+    "case": "fractional integer config",
+    "error": "resolution must be an exact finite integer in [1, 100]; got 1.5"
+  },
+  {
+    "case": "overflowing integer config",
+    "error": "resolution must be an exact finite integer in [1, 100]; got 4294967297"
+  },
+  {
+    "case": "no geography config section",
+    "error": "Select exactly one geography config section: legacy or planned"
+  },
+  {
+    "case": "finite range NaN",
+    "error": "test must be finite in [0.0, 1.0]; got NaN"
+  },
+  {
+    "case": "finite range Infinity",
+    "error": "test must be finite in [0.0, 1.0]; got Infinity"
+  },
+  {
+    "case": "finite range -1.0",
+    "error": "test must be finite in [0.0, 1.0]; got -1.0"
+  },
+  {
+    "case": "unimplemented backend",
+    "error": "Generation backend tuple GenerationVersions[schemaVersion\u003d1, geography\u003dPA_GEOGRAPHY_V1, baselineClimate\u003dPA_BASELINE_V1, biomeResolver\u003dPA_RESOLVER_V1] is not implemented; only LEGACY_RTF_V0 is functional. No legacy fallback."
+  },
+  {
+    "case": "context dimension mismatch",
+    "error": "Generation context dimension does not match manifest"
+  },
+  {
+    "case": "nonfinite fingerprint number NaN",
+    "error": "Invalid canonical JSON: Character N is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "nonfinite fingerprint number Infinity",
+    "error": "Invalid canonical JSON: Character I is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "nonfinite fingerprint number -Infinity",
+    "error": "Invalid canonical JSON: Character I is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "changed fingerprint",
+    "error": "Manifest fingerprint mismatch: content was changed or corrupted; restore matching world generation data, do not regenerate with defaults"
+  },
+  {
+    "case": "malformed geography config",
+    "error": "legacy tileExponent must be in [3, 3]; got 4"
+  },
+  {
+    "case": "planned world refuses generation",
+    "error": "Generation backend tuple GenerationVersions[schemaVersion\u003d1, geography\u003dPA_GEOGRAPHY_V1, baselineClimate\u003dPA_BASELINE_V1, biomeResolver\u003dPA_RESOLVER_V1] is not implemented; only LEGACY_RTF_V0 is functional. No legacy fallback."
+  },
+  {
+    "case": "foreign generator with manifest",
+    "error": "Manifest exists for minecraft:overworld but this dimension does not own a recognizable RTF preset/router. Restore the matching generator; no newest-version fallback."
+  },
+  {
+    "case": "world seed mismatch",
+    "error": "Generation manifest mismatch in minecraft:overworld; changed fields: [content.worldSeed]. Restore matching preset/datapacks/seed. No automatic migration; existing manifest was not overwritten."
+  }
+]
