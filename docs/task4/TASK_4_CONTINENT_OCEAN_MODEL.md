@@ -28,5 +28,17 @@ marine boundary strips. Coast detail and islands must obey the same strip exclus
 minimum concerns this marine separation network; bays, straits, inland seas and freshwater have no such
 minimum. Width measurement must identify actual opposing continental land, not just report strip size.
 
-Task 5 climate, biome resolution and runtime ecology are outside scope. V1 remains unavailable for
-world generation until terrain/hydrology/persistence integration and acceptance are complete.
+## Acceptance result
+
+The final 16-seed survey uses a 65,536 × 65,536 block window at 128-block resolution, translated-window
+checks, 64-block coastline refinements, and an 8,192-block distance halo. Land fraction is 43.11–44.60%
+(mean 43.78%), inland sea is 0.213% mean, and all primary windows contain 16 major sampled components.
+Measured declared corridor widths are 2,990–5,039 blocks (p10 3,810, median 4,414, p90 5,039), with
+zero invalid sections or reserved-strip intrusions. Mean land beyond 500/1000/2000 sampled marine
+blocks is 84.91/68.41/40.87%; maximum sampled interior distance is 5,862–6,000 blocks. Evidence is
+under `docs/task4/evidence/`.
+
+Task 5 climate, biome resolution and runtime ecology are outside scope. The regular macro-cell lattice
+is a documented limitation, distance values are coarse estimates, sub-grid islands can be missed by
+surveys, freshwater remains a terrain/hydrology classification, and the retained river backend is not
+a drainage solver.

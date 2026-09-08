@@ -1,0 +1,23 @@
+{
+  "task": "Phase 1 Task 4",
+  "status": "PASS_WITH_PERFORMANCE_REVIEW_ITEM",
+  "version": "PA_GEOGRAPHY_V1",
+  "comparator": "LEGACY_RTF_V0",
+  "survey": "survey-final",
+  "seedCount": 16,
+  "extentBlocks": 65536,
+  "sampleStepBlocks": 128,
+  "landFraction": {"min": 0.43109560776535233, "mean": 0.4378, "max": 0.4459643803031512},
+  "inlandSeaMeanFraction": 0.00213,
+  "majorComponentsPerPrimaryWindow": 16,
+  "majorOceanWidthBlocks": {"configuredMinimum": 1000, "sampledMinimum": 2990, "p10": 3810, "median": 4414, "p90": 5039, "violations": 0},
+  "continentalInteriorMeanFractionBeyondBlocks": {"500": 0.8491, "1000": 0.6841, "2000": 0.4087},
+  "islands": {"coastal": 75, "oceanic": 306, "archipelagoMembers": 177, "clusters": 34},
+  "seedCollision": {"legacy": "unchanged", "v1": "diverged", "seedA": 8675309, "seedB": 4303642605},
+  "determinism": "PASS",
+  "hydrology": "PASS",
+  "legacyComparator": "PASS",
+  "runtimeSmoke": "PASS",
+  "saveReopen": "PASS",
+  "task5ClimateStarted": false
+}

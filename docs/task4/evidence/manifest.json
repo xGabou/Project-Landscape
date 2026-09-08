@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "task": "TASK_4_CONTINENT_OCEAN_MODEL",
+  "headAtCapture": "aaaf212030bee0050a973e5e4c49c3038ae41097",
+  "comparator": "LEGACY_RTF_V0",
+  "authoritativeSurvey": "survey-final",
+  "requiredEvidence": [
+    "survey-final/config_schema.json",
+    "survey-final/land_ocean_samples.json",
+    "survey-final/continent_components.json",
+    "survey-final/major_ocean_widths.json",
+    "survey-final/continental_interior.json",
+    "survey-final/island_metrics.json",
+    "survey-final/shelf_metrics.json",
+    "survey-final/determinism_digests.json",
+    "survey-final/seed_divergence.json",
+    "v1-terrain/hydrology_validation.json",
+    "v1-terrain/task4_performance.json",
+    "legacy_golden_comparison.json"
+  ]
+}

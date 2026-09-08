@@ -1,0 +1,16 @@
+{
+  "extentBlocks": 65536,
+  "invalidTopologyCount": 0,
+  "version": {
+    "schemaVersion": 1,
+    "geography": "PA_GEOGRAPHY_V1",
+    "baselineClimate": "LEGACY_RTF_HINTS_V0",
+    "biomeResolver": "LEGACY_MULTINOISE_V0"
+  },
+  "widthP10": 3810.0,
+  "minimumSampledMajorOceanWidthBlocks": 2990.0,
+  "seedCount": 16,
+  "stepBlocks": 128,
+  "widthP90": 5039.0,
+  "widthMedian": 4414.0
+}

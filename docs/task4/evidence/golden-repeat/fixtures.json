@@ -1,0 +1,3019 @@
+[
+  {
+    "seed": "8675309",
+    "points": [
+      {
+        "label": "diagonal_boundary",
+        "x": -129,
+        "z": -129
+      },
+      {
+        "label": "x_boundary",
+        "x": -129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -129
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -128,
+        "z": -128
+      },
+      {
+        "label": "x_boundary",
+        "x": -128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -127,
+        "z": -127
+      },
+      {
+        "label": "x_boundary",
+        "x": -127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -17,
+        "z": -17
+      },
+      {
+        "label": "x_boundary",
+        "x": -17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -16,
+        "z": -16
+      },
+      {
+        "label": "x_boundary",
+        "x": -16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -15,
+        "z": -15
+      },
+      {
+        "label": "x_boundary",
+        "x": -15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -5,
+        "z": -5
+      },
+      {
+        "label": "x_boundary",
+        "x": -5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -4,
+        "z": -4
+      },
+      {
+        "label": "x_boundary",
+        "x": -4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -3,
+        "z": -3
+      },
+      {
+        "label": "x_boundary",
+        "x": -3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -1,
+        "z": -1
+      },
+      {
+        "label": "x_boundary",
+        "x": -1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "x_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 1,
+        "z": 1
+      },
+      {
+        "label": "x_boundary",
+        "x": 1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 3,
+        "z": 3
+      },
+      {
+        "label": "x_boundary",
+        "x": 3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 4,
+        "z": 4
+      },
+      {
+        "label": "x_boundary",
+        "x": 4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 5,
+        "z": 5
+      },
+      {
+        "label": "x_boundary",
+        "x": 5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 15,
+        "z": 15
+      },
+      {
+        "label": "x_boundary",
+        "x": 15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 16,
+        "z": 16
+      },
+      {
+        "label": "x_boundary",
+        "x": 16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 17,
+        "z": 17
+      },
+      {
+        "label": "x_boundary",
+        "x": 17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 63,
+        "z": 63
+      },
+      {
+        "label": "x_boundary",
+        "x": 63,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 63
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 64,
+        "z": 64
+      },
+      {
+        "label": "x_boundary",
+        "x": 64,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 64
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 65,
+        "z": 65
+      },
+      {
+        "label": "x_boundary",
+        "x": 65,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 65
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 126,
+        "z": 126
+      },
+      {
+        "label": "x_boundary",
+        "x": 126,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 126
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 127,
+        "z": 127
+      },
+      {
+        "label": "x_boundary",
+        "x": 127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 128,
+        "z": 128
+      },
+      {
+        "label": "x_boundary",
+        "x": 128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 129,
+        "z": 129
+      },
+      {
+        "label": "x_boundary",
+        "x": 129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 129
+      },
+      {
+        "label": "coast",
+        "x": -4032,
+        "z": -4096
+      },
+      {
+        "label": "deep_ocean",
+        "x": -4096,
+        "z": -1728
+      },
+      {
+        "label": "mountain",
+        "x": -2688,
+        "z": -4096
+      },
+      {
+        "label": "mountain_edge",
+        "x": -2688,
+        "z": -4096
+      },
+      {
+        "label": "plains",
+        "x": 1280,
+        "z": -4096
+      },
+      {
+        "label": "plateau",
+        "x": 3392,
+        "z": -3072
+      },
+      {
+        "label": "region_transition",
+        "x": -2688,
+        "z": -4096
+      },
+      {
+        "label": "river",
+        "x": -64,
+        "z": -4096
+      },
+      {
+        "label": "river_mouth_proxy",
+        "x": -2752,
+        "z": -2432
+      },
+      {
+        "label": "shallow_ocean",
+        "x": -4096,
+        "z": -4096
+      }
+    ],
+    "discovery": "Frozen fixture_manifest.json v1; no rediscovery"
+  },
+  {
+    "seed": "4303642605",
+    "points": [
+      {
+        "label": "diagonal_boundary",
+        "x": -129,
+        "z": -129
+      },
+      {
+        "label": "x_boundary",
+        "x": -129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -129
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -128,
+        "z": -128
+      },
+      {
+        "label": "x_boundary",
+        "x": -128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -127,
+        "z": -127
+      },
+      {
+        "label": "x_boundary",
+        "x": -127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -17,
+        "z": -17
+      },
+      {
+        "label": "x_boundary",
+        "x": -17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -16,
+        "z": -16
+      },
+      {
+        "label": "x_boundary",
+        "x": -16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -15,
+        "z": -15
+      },
+      {
+        "label": "x_boundary",
+        "x": -15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -5,
+        "z": -5
+      },
+      {
+        "label": "x_boundary",
+        "x": -5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -4,
+        "z": -4
+      },
+      {
+        "label": "x_boundary",
+        "x": -4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -3,
+        "z": -3
+      },
+      {
+        "label": "x_boundary",
+        "x": -3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -1,
+        "z": -1
+      },
+      {
+        "label": "x_boundary",
+        "x": -1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "x_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 1,
+        "z": 1
+      },
+      {
+        "label": "x_boundary",
+        "x": 1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 3,
+        "z": 3
+      },
+      {
+        "label": "x_boundary",
+        "x": 3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 4,
+        "z": 4
+      },
+      {
+        "label": "x_boundary",
+        "x": 4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 5,
+        "z": 5
+      },
+      {
+        "label": "x_boundary",
+        "x": 5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 15,
+        "z": 15
+      },
+      {
+        "label": "x_boundary",
+        "x": 15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 16,
+        "z": 16
+      },
+      {
+        "label": "x_boundary",
+        "x": 16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 17,
+        "z": 17
+      },
+      {
+        "label": "x_boundary",
+        "x": 17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 63,
+        "z": 63
+      },
+      {
+        "label": "x_boundary",
+        "x": 63,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 63
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 64,
+        "z": 64
+      },
+      {
+        "label": "x_boundary",
+        "x": 64,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 64
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 65,
+        "z": 65
+      },
+      {
+        "label": "x_boundary",
+        "x": 65,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 65
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 126,
+        "z": 126
+      },
+      {
+        "label": "x_boundary",
+        "x": 126,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 126
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 127,
+        "z": 127
+      },
+      {
+        "label": "x_boundary",
+        "x": 127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 128,
+        "z": 128
+      },
+      {
+        "label": "x_boundary",
+        "x": 128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 129,
+        "z": 129
+      },
+      {
+        "label": "x_boundary",
+        "x": 129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 129
+      },
+      {
+        "label": "coast",
+        "x": -4032,
+        "z": -4096
+      },
+      {
+        "label": "deep_ocean",
+        "x": -4096,
+        "z": -1728
+      },
+      {
+        "label": "mountain",
+        "x": -2688,
+        "z": -4096
+      },
+      {
+        "label": "mountain_edge",
+        "x": -2688,
+        "z": -4096
+      },
+      {
+        "label": "plains",
+        "x": 1280,
+        "z": -4096
+      },
+      {
+        "label": "plateau",
+        "x": 3392,
+        "z": -3072
+      },
+      {
+        "label": "region_transition",
+        "x": -2688,
+        "z": -4096
+      },
+      {
+        "label": "river",
+        "x": -64,
+        "z": -4096
+      },
+      {
+        "label": "river_mouth_proxy",
+        "x": -2752,
+        "z": -2432
+      },
+      {
+        "label": "shallow_ocean",
+        "x": -4096,
+        "z": -4096
+      }
+    ],
+    "discovery": "Frozen fixture_manifest.json v1; no rediscovery"
+  },
+  {
+    "seed": "42",
+    "points": [
+      {
+        "label": "diagonal_boundary",
+        "x": -129,
+        "z": -129
+      },
+      {
+        "label": "x_boundary",
+        "x": -129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -129
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -128,
+        "z": -128
+      },
+      {
+        "label": "x_boundary",
+        "x": -128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -127,
+        "z": -127
+      },
+      {
+        "label": "x_boundary",
+        "x": -127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -17,
+        "z": -17
+      },
+      {
+        "label": "x_boundary",
+        "x": -17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -16,
+        "z": -16
+      },
+      {
+        "label": "x_boundary",
+        "x": -16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -15,
+        "z": -15
+      },
+      {
+        "label": "x_boundary",
+        "x": -15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -5,
+        "z": -5
+      },
+      {
+        "label": "x_boundary",
+        "x": -5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -4,
+        "z": -4
+      },
+      {
+        "label": "x_boundary",
+        "x": -4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -3,
+        "z": -3
+      },
+      {
+        "label": "x_boundary",
+        "x": -3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -1,
+        "z": -1
+      },
+      {
+        "label": "x_boundary",
+        "x": -1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "x_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 1,
+        "z": 1
+      },
+      {
+        "label": "x_boundary",
+        "x": 1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 3,
+        "z": 3
+      },
+      {
+        "label": "x_boundary",
+        "x": 3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 4,
+        "z": 4
+      },
+      {
+        "label": "x_boundary",
+        "x": 4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 5,
+        "z": 5
+      },
+      {
+        "label": "x_boundary",
+        "x": 5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 15,
+        "z": 15
+      },
+      {
+        "label": "x_boundary",
+        "x": 15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 16,
+        "z": 16
+      },
+      {
+        "label": "x_boundary",
+        "x": 16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 17,
+        "z": 17
+      },
+      {
+        "label": "x_boundary",
+        "x": 17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 63,
+        "z": 63
+      },
+      {
+        "label": "x_boundary",
+        "x": 63,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 63
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 64,
+        "z": 64
+      },
+      {
+        "label": "x_boundary",
+        "x": 64,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 64
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 65,
+        "z": 65
+      },
+      {
+        "label": "x_boundary",
+        "x": 65,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 65
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 126,
+        "z": 126
+      },
+      {
+        "label": "x_boundary",
+        "x": 126,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 126
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 127,
+        "z": 127
+      },
+      {
+        "label": "x_boundary",
+        "x": 127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 128,
+        "z": 128
+      },
+      {
+        "label": "x_boundary",
+        "x": 128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 129,
+        "z": 129
+      },
+      {
+        "label": "x_boundary",
+        "x": 129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 129
+      },
+      {
+        "label": "coast",
+        "x": -3520,
+        "z": -4096
+      },
+      {
+        "label": "deep_ocean",
+        "x": -4096,
+        "z": -4096
+      },
+      {
+        "label": "mountain",
+        "x": -1344,
+        "z": -4096
+      },
+      {
+        "label": "mountain_edge",
+        "x": -1344,
+        "z": -4096
+      },
+      {
+        "label": "plains",
+        "x": -3136,
+        "z": -4096
+      },
+      {
+        "label": "plateau",
+        "x": -128,
+        "z": -3392
+      },
+      {
+        "label": "region_transition",
+        "x": -3584,
+        "z": -4096
+      },
+      {
+        "label": "river",
+        "x": -2304,
+        "z": 256
+      },
+      {
+        "label": "river_mouth_proxy",
+        "x": -2304,
+        "z": 256
+      },
+      {
+        "label": "shallow_ocean",
+        "x": -3904,
+        "z": -4096
+      }
+    ],
+    "discovery": "Frozen fixture_manifest.json v1; no rediscovery"
+  },
+  {
+    "seed": "-987654321",
+    "points": [
+      {
+        "label": "diagonal_boundary",
+        "x": -129,
+        "z": -129
+      },
+      {
+        "label": "x_boundary",
+        "x": -129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -129
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -128,
+        "z": -128
+      },
+      {
+        "label": "x_boundary",
+        "x": -128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -127,
+        "z": -127
+      },
+      {
+        "label": "x_boundary",
+        "x": -127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -17,
+        "z": -17
+      },
+      {
+        "label": "x_boundary",
+        "x": -17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -16,
+        "z": -16
+      },
+      {
+        "label": "x_boundary",
+        "x": -16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -15,
+        "z": -15
+      },
+      {
+        "label": "x_boundary",
+        "x": -15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -5,
+        "z": -5
+      },
+      {
+        "label": "x_boundary",
+        "x": -5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -4,
+        "z": -4
+      },
+      {
+        "label": "x_boundary",
+        "x": -4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -3,
+        "z": -3
+      },
+      {
+        "label": "x_boundary",
+        "x": -3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -1,
+        "z": -1
+      },
+      {
+        "label": "x_boundary",
+        "x": -1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "x_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 1,
+        "z": 1
+      },
+      {
+        "label": "x_boundary",
+        "x": 1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 3,
+        "z": 3
+      },
+      {
+        "label": "x_boundary",
+        "x": 3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 4,
+        "z": 4
+      },
+      {
+        "label": "x_boundary",
+        "x": 4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 5,
+        "z": 5
+      },
+      {
+        "label": "x_boundary",
+        "x": 5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 15,
+        "z": 15
+      },
+      {
+        "label": "x_boundary",
+        "x": 15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 16,
+        "z": 16
+      },
+      {
+        "label": "x_boundary",
+        "x": 16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 17,
+        "z": 17
+      },
+      {
+        "label": "x_boundary",
+        "x": 17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 63,
+        "z": 63
+      },
+      {
+        "label": "x_boundary",
+        "x": 63,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 63
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 64,
+        "z": 64
+      },
+      {
+        "label": "x_boundary",
+        "x": 64,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 64
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 65,
+        "z": 65
+      },
+      {
+        "label": "x_boundary",
+        "x": 65,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 65
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 126,
+        "z": 126
+      },
+      {
+        "label": "x_boundary",
+        "x": 126,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 126
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 127,
+        "z": 127
+      },
+      {
+        "label": "x_boundary",
+        "x": 127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 128,
+        "z": 128
+      },
+      {
+        "label": "x_boundary",
+        "x": 128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 129,
+        "z": 129
+      },
+      {
+        "label": "x_boundary",
+        "x": 129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 129
+      },
+      {
+        "label": "coast",
+        "x": -2048,
+        "z": -4096
+      },
+      {
+        "label": "deep_ocean",
+        "x": -4096,
+        "z": -4096
+      },
+      {
+        "label": "mountain",
+        "x": -512,
+        "z": -4096
+      },
+      {
+        "label": "mountain_edge",
+        "x": -512,
+        "z": -4096
+      },
+      {
+        "label": "plains",
+        "x": 1472,
+        "z": -3648
+      },
+      {
+        "label": "plateau",
+        "x": -1024,
+        "z": -4096
+      },
+      {
+        "label": "region_transition",
+        "x": -3968,
+        "z": -4096
+      },
+      {
+        "label": "river",
+        "x": 64,
+        "z": -4096
+      },
+      {
+        "label": "river_mouth_proxy",
+        "x": -448,
+        "z": -3520
+      },
+      {
+        "label": "shallow_ocean",
+        "x": -2432,
+        "z": -4096
+      }
+    ],
+    "discovery": "Frozen fixture_manifest.json v1; no rediscovery"
+  },
+  {
+    "seed": "0",
+    "points": [
+      {
+        "label": "diagonal_boundary",
+        "x": -129,
+        "z": -129
+      },
+      {
+        "label": "x_boundary",
+        "x": -129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -129
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -128,
+        "z": -128
+      },
+      {
+        "label": "x_boundary",
+        "x": -128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -127,
+        "z": -127
+      },
+      {
+        "label": "x_boundary",
+        "x": -127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -17,
+        "z": -17
+      },
+      {
+        "label": "x_boundary",
+        "x": -17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -16,
+        "z": -16
+      },
+      {
+        "label": "x_boundary",
+        "x": -16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -15,
+        "z": -15
+      },
+      {
+        "label": "x_boundary",
+        "x": -15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -5,
+        "z": -5
+      },
+      {
+        "label": "x_boundary",
+        "x": -5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -4,
+        "z": -4
+      },
+      {
+        "label": "x_boundary",
+        "x": -4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -3,
+        "z": -3
+      },
+      {
+        "label": "x_boundary",
+        "x": -3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -1,
+        "z": -1
+      },
+      {
+        "label": "x_boundary",
+        "x": -1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "x_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 1,
+        "z": 1
+      },
+      {
+        "label": "x_boundary",
+        "x": 1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 3,
+        "z": 3
+      },
+      {
+        "label": "x_boundary",
+        "x": 3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 4,
+        "z": 4
+      },
+      {
+        "label": "x_boundary",
+        "x": 4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 5,
+        "z": 5
+      },
+      {
+        "label": "x_boundary",
+        "x": 5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 15,
+        "z": 15
+      },
+      {
+        "label": "x_boundary",
+        "x": 15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 16,
+        "z": 16
+      },
+      {
+        "label": "x_boundary",
+        "x": 16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 17,
+        "z": 17
+      },
+      {
+        "label": "x_boundary",
+        "x": 17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 63,
+        "z": 63
+      },
+      {
+        "label": "x_boundary",
+        "x": 63,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 63
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 64,
+        "z": 64
+      },
+      {
+        "label": "x_boundary",
+        "x": 64,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 64
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 65,
+        "z": 65
+      },
+      {
+        "label": "x_boundary",
+        "x": 65,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 65
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 126,
+        "z": 126
+      },
+      {
+        "label": "x_boundary",
+        "x": 126,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 126
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 127,
+        "z": 127
+      },
+      {
+        "label": "x_boundary",
+        "x": 127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 128,
+        "z": 128
+      },
+      {
+        "label": "x_boundary",
+        "x": 128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 129,
+        "z": 129
+      },
+      {
+        "label": "x_boundary",
+        "x": 129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 129
+      },
+      {
+        "label": "coast",
+        "x": 3584,
+        "z": -4096
+      },
+      {
+        "label": "deep_ocean",
+        "x": -4096,
+        "z": -4096
+      },
+      {
+        "label": "mountain",
+        "x": -320,
+        "z": -2752
+      },
+      {
+        "label": "mountain_edge",
+        "x": -320,
+        "z": -2752
+      },
+      {
+        "label": "plains",
+        "x": 3584,
+        "z": -2944
+      },
+      {
+        "label": "plateau",
+        "x": 3840,
+        "z": -3648
+      },
+      {
+        "label": "region_transition",
+        "x": -2496,
+        "z": -4096
+      },
+      {
+        "label": "river",
+        "x": 2304,
+        "z": -3712
+      },
+      {
+        "label": "river_mouth_proxy",
+        "x": 2304,
+        "z": -3712
+      },
+      {
+        "label": "shallow_ocean",
+        "x": -3008,
+        "z": -4096
+      }
+    ],
+    "discovery": "Frozen fixture_manifest.json v1; no rediscovery"
+  },
+  {
+    "seed": "9223372036854775807",
+    "points": [
+      {
+        "label": "diagonal_boundary",
+        "x": -129,
+        "z": -129
+      },
+      {
+        "label": "x_boundary",
+        "x": -129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -129
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -128,
+        "z": -128
+      },
+      {
+        "label": "x_boundary",
+        "x": -128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -127,
+        "z": -127
+      },
+      {
+        "label": "x_boundary",
+        "x": -127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -17,
+        "z": -17
+      },
+      {
+        "label": "x_boundary",
+        "x": -17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -16,
+        "z": -16
+      },
+      {
+        "label": "x_boundary",
+        "x": -16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -15,
+        "z": -15
+      },
+      {
+        "label": "x_boundary",
+        "x": -15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -5,
+        "z": -5
+      },
+      {
+        "label": "x_boundary",
+        "x": -5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -4,
+        "z": -4
+      },
+      {
+        "label": "x_boundary",
+        "x": -4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -3,
+        "z": -3
+      },
+      {
+        "label": "x_boundary",
+        "x": -3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -1,
+        "z": -1
+      },
+      {
+        "label": "x_boundary",
+        "x": -1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "x_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 1,
+        "z": 1
+      },
+      {
+        "label": "x_boundary",
+        "x": 1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 3,
+        "z": 3
+      },
+      {
+        "label": "x_boundary",
+        "x": 3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 4,
+        "z": 4
+      },
+      {
+        "label": "x_boundary",
+        "x": 4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 5,
+        "z": 5
+      },
+      {
+        "label": "x_boundary",
+        "x": 5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 15,
+        "z": 15
+      },
+      {
+        "label": "x_boundary",
+        "x": 15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 16,
+        "z": 16
+      },
+      {
+        "label": "x_boundary",
+        "x": 16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 17,
+        "z": 17
+      },
+      {
+        "label": "x_boundary",
+        "x": 17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 63,
+        "z": 63
+      },
+      {
+        "label": "x_boundary",
+        "x": 63,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 63
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 64,
+        "z": 64
+      },
+      {
+        "label": "x_boundary",
+        "x": 64,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 64
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 65,
+        "z": 65
+      },
+      {
+        "label": "x_boundary",
+        "x": 65,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 65
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 126,
+        "z": 126
+      },
+      {
+        "label": "x_boundary",
+        "x": 126,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 126
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 127,
+        "z": 127
+      },
+      {
+        "label": "x_boundary",
+        "x": 127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 128,
+        "z": 128
+      },
+      {
+        "label": "x_boundary",
+        "x": 128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 129,
+        "z": 129
+      },
+      {
+        "label": "x_boundary",
+        "x": 129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 129
+      },
+      {
+        "label": "coast",
+        "x": -2944,
+        "z": -4096
+      },
+      {
+        "label": "deep_ocean",
+        "x": -4096,
+        "z": -4096
+      },
+      {
+        "label": "mountain",
+        "x": -832,
+        "z": -4096
+      },
+      {
+        "label": "mountain_edge",
+        "x": -832,
+        "z": -4096
+      },
+      {
+        "label": "plains",
+        "x": 0,
+        "z": -4096
+      },
+      {
+        "label": "plateau",
+        "x": -1152,
+        "z": -4096
+      },
+      {
+        "label": "region_transition",
+        "x": -3968,
+        "z": -4096
+      },
+      {
+        "label": "river",
+        "x": 320,
+        "z": -4096
+      },
+      {
+        "label": "river_mouth_proxy",
+        "x": 3392,
+        "z": -2752
+      },
+      {
+        "label": "shallow_ocean",
+        "x": -3200,
+        "z": -4096
+      }
+    ],
+    "discovery": "Frozen fixture_manifest.json v1; no rediscovery"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "points": [
+      {
+        "label": "diagonal_boundary",
+        "x": -129,
+        "z": -129
+      },
+      {
+        "label": "x_boundary",
+        "x": -129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -129
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -128,
+        "z": -128
+      },
+      {
+        "label": "x_boundary",
+        "x": -128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -127,
+        "z": -127
+      },
+      {
+        "label": "x_boundary",
+        "x": -127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -17,
+        "z": -17
+      },
+      {
+        "label": "x_boundary",
+        "x": -17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -16,
+        "z": -16
+      },
+      {
+        "label": "x_boundary",
+        "x": -16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -15,
+        "z": -15
+      },
+      {
+        "label": "x_boundary",
+        "x": -15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -5,
+        "z": -5
+      },
+      {
+        "label": "x_boundary",
+        "x": -5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -4,
+        "z": -4
+      },
+      {
+        "label": "x_boundary",
+        "x": -4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -3,
+        "z": -3
+      },
+      {
+        "label": "x_boundary",
+        "x": -3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": -1,
+        "z": -1
+      },
+      {
+        "label": "x_boundary",
+        "x": -1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": -1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "x_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 0
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 1,
+        "z": 1
+      },
+      {
+        "label": "x_boundary",
+        "x": 1,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 1
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 3,
+        "z": 3
+      },
+      {
+        "label": "x_boundary",
+        "x": 3,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 3
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 4,
+        "z": 4
+      },
+      {
+        "label": "x_boundary",
+        "x": 4,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 4
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 5,
+        "z": 5
+      },
+      {
+        "label": "x_boundary",
+        "x": 5,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 5
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 15,
+        "z": 15
+      },
+      {
+        "label": "x_boundary",
+        "x": 15,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 15
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 16,
+        "z": 16
+      },
+      {
+        "label": "x_boundary",
+        "x": 16,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 16
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 17,
+        "z": 17
+      },
+      {
+        "label": "x_boundary",
+        "x": 17,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 17
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 63,
+        "z": 63
+      },
+      {
+        "label": "x_boundary",
+        "x": 63,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 63
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 64,
+        "z": 64
+      },
+      {
+        "label": "x_boundary",
+        "x": 64,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 64
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 65,
+        "z": 65
+      },
+      {
+        "label": "x_boundary",
+        "x": 65,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 65
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 126,
+        "z": 126
+      },
+      {
+        "label": "x_boundary",
+        "x": 126,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 126
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 127,
+        "z": 127
+      },
+      {
+        "label": "x_boundary",
+        "x": 127,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 127
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 128,
+        "z": 128
+      },
+      {
+        "label": "x_boundary",
+        "x": 128,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 128
+      },
+      {
+        "label": "diagonal_boundary",
+        "x": 129,
+        "z": 129
+      },
+      {
+        "label": "x_boundary",
+        "x": 129,
+        "z": 0
+      },
+      {
+        "label": "z_boundary",
+        "x": 0,
+        "z": 129
+      },
+      {
+        "label": "coast",
+        "x": -4096,
+        "z": -4096
+      },
+      {
+        "label": "deep_ocean",
+        "x": -320,
+        "z": -4096
+      },
+      {
+        "label": "mountain",
+        "x": -1984,
+        "z": -3072
+      },
+      {
+        "label": "mountain_edge",
+        "x": -1984,
+        "z": -3072
+      },
+      {
+        "label": "plains",
+        "x": -3648,
+        "z": -3968
+      },
+      {
+        "label": "plateau",
+        "x": -1024,
+        "z": -4096
+      },
+      {
+        "label": "region_transition",
+        "x": -3520,
+        "z": -4096
+      },
+      {
+        "label": "river",
+        "x": 3904,
+        "z": -4096
+      },
+      {
+        "label": "river_mouth_proxy",
+        "x": 3904,
+        "z": -4096
+      },
+      {
+        "label": "shallow_ocean",
+        "x": -576,
+        "z": -4096
+      }
+    ],
+    "discovery": "Frozen fixture_manifest.json v1; no rediscovery"
+  }
+]
