@@ -1,0 +1,50 @@
+[
+  {
+    "repeat": -1,
+    "warmup": true,
+    "seed": "8675309",
+    "tileX": 80,
+    "tileZ": -80,
+    "elapsedNs": 76273500,
+    "rtfWorkerCount": 24,
+    "rtfWorkersAndCallerAllocatedBytes": 16230248,
+    "processThreadAllocatedBytes": 29254744,
+    "scope": "ThreadMXBean worker+caller deltas; includes observer/measurement allocations and any other RTF tasks on that executor; excludes renderer and Minecraft chunk workers"
+  },
+  {
+    "repeat": 0,
+    "warmup": false,
+    "seed": "8675309",
+    "tileX": 80,
+    "tileZ": -80,
+    "elapsedNs": 118742000,
+    "rtfWorkerCount": 24,
+    "rtfWorkersAndCallerAllocatedBytes": 2996848,
+    "processThreadAllocatedBytes": 90831928,
+    "scope": "ThreadMXBean worker+caller deltas; includes observer/measurement allocations and any other RTF tasks on that executor; excludes renderer and Minecraft chunk workers"
+  },
+  {
+    "repeat": 1,
+    "warmup": false,
+    "seed": "8675309",
+    "tileX": 80,
+    "tileZ": -80,
+    "elapsedNs": 39233900,
+    "rtfWorkerCount": 24,
+    "rtfWorkersAndCallerAllocatedBytes": 2996880,
+    "processThreadAllocatedBytes": 34534064,
+    "scope": "ThreadMXBean worker+caller deltas; includes observer/measurement allocations and any other RTF tasks on that executor; excludes renderer and Minecraft chunk workers"
+  },
+  {
+    "repeat": 2,
+    "warmup": false,
+    "seed": "8675309",
+    "tileX": 80,
+    "tileZ": -80,
+    "elapsedNs": 40752100,
+    "rtfWorkerCount": 24,
+    "rtfWorkersAndCallerAllocatedBytes": 2996880,
+    "processThreadAllocatedBytes": 38880800,
+    "scope": "ThreadMXBean worker+caller deltas; includes observer/measurement allocations and any other RTF tasks on that executor; excludes renderer and Minecraft chunk workers"
+  }
+]

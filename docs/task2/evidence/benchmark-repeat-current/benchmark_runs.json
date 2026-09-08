@@ -1,0 +1,3446 @@
+[
+  {
+    "operation": "raw_heightmap_point",
+    "repeat": -3,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 252707000,
+    "processThreadAllocatedBytes": 156498480,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "direct_approximate_point",
+    "repeat": -3,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 210407600,
+    "processThreadAllocatedBytes": 158672048,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "canonical_warm_point",
+    "repeat": -3,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 17861300,
+    "processThreadAllocatedBytes": 8243544,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 3422500,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "cached_opportunistic_point",
+    "repeat": -3,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 31242200,
+    "processThreadAllocatedBytes": 6025808,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 3401900,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 65536,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "warm_tile_lookup",
+    "repeat": -3,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 15432300,
+    "processThreadAllocatedBytes": 5219560,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2735100,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "raw_heightmap_point",
+    "repeat": -2,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 195371500,
+    "processThreadAllocatedBytes": 4660888,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "direct_approximate_point",
+    "repeat": -2,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 182845100,
+    "processThreadAllocatedBytes": 4214696,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "canonical_warm_point",
+    "repeat": -2,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 10081300,
+    "processThreadAllocatedBytes": 3344776,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2620700,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "cached_opportunistic_point",
+    "repeat": -2,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 9444800,
+    "processThreadAllocatedBytes": 1892456,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2528300,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 65536,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "warm_tile_lookup",
+    "repeat": -2,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 10653900,
+    "processThreadAllocatedBytes": 3290096,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2680200,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "raw_heightmap_point",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 174176200,
+    "processThreadAllocatedBytes": 4782672,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "direct_approximate_point",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 174969200,
+    "processThreadAllocatedBytes": 4181104,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "canonical_warm_point",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 9741300,
+    "processThreadAllocatedBytes": 3282416,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2527300,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "cached_opportunistic_point",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 9308300,
+    "processThreadAllocatedBytes": 1806328,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2556500,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 65536,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "warm_tile_lookup",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 10127600,
+    "processThreadAllocatedBytes": 3401456,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2605200,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "raw_heightmap_point",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 170684400,
+    "processThreadAllocatedBytes": 3639976,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "direct_approximate_point",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 174256800,
+    "processThreadAllocatedBytes": 3594816,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "canonical_warm_point",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 10285600,
+    "processThreadAllocatedBytes": 3478496,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2684000,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "cached_opportunistic_point",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9378900,
+    "processThreadAllocatedBytes": 1692880,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2531400,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 65536,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "warm_tile_lookup",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9893500,
+    "processThreadAllocatedBytes": 3265800,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2609900,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "raw_heightmap_point",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 181499500,
+    "processThreadAllocatedBytes": 3831944,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "direct_approximate_point",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 175256300,
+    "processThreadAllocatedBytes": 3427608,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "canonical_warm_point",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9693000,
+    "processThreadAllocatedBytes": 3256168,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2517900,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "cached_opportunistic_point",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9331700,
+    "processThreadAllocatedBytes": 1683360,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2522400,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 65536,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "warm_tile_lookup",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 15833100,
+    "processThreadAllocatedBytes": 3450800,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2601300,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "raw_heightmap_point",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 172821000,
+    "processThreadAllocatedBytes": 3486272,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "direct_approximate_point",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 173728300,
+    "processThreadAllocatedBytes": 3463392,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "canonical_warm_point",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9870200,
+    "processThreadAllocatedBytes": 3346176,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2530200,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "cached_opportunistic_point",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9296500,
+    "processThreadAllocatedBytes": 1688712,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2524600,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 65536,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "warm_tile_lookup",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9680000,
+    "processThreadAllocatedBytes": 3254952,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2529400,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "raw_heightmap_point",
+    "repeat": 3,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 172609900,
+    "processThreadAllocatedBytes": 3450064,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "direct_approximate_point",
+    "repeat": 3,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 173928400,
+    "processThreadAllocatedBytes": 3454744,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "canonical_warm_point",
+    "repeat": 3,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9937200,
+    "processThreadAllocatedBytes": 3346416,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2544200,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "cached_opportunistic_point",
+    "repeat": 3,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9348500,
+    "processThreadAllocatedBytes": 1681608,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2524600,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 65536,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "warm_tile_lookup",
+    "repeat": 3,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9802900,
+    "processThreadAllocatedBytes": 3254416,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2522700,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "raw_heightmap_point",
+    "repeat": 4,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 172922800,
+    "processThreadAllocatedBytes": 3397904,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "direct_approximate_point",
+    "repeat": 4,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 175863400,
+    "processThreadAllocatedBytes": 3439904,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "canonical_warm_point",
+    "repeat": 4,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 10127200,
+    "processThreadAllocatedBytes": 3353272,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2617700,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "cached_opportunistic_point",
+    "repeat": 4,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 9632300,
+    "processThreadAllocatedBytes": 1680592,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2611200,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 65536,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "warm_tile_lookup",
+    "repeat": 4,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 10589100,
+    "processThreadAllocatedBytes": 3253928,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 65536,
+      "entryGetInclusiveNs": 2831700,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 65536,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 0
+    },
+    "details": [
+      "queries",
+      65536,
+      "latencySampling",
+      "every 16th query",
+      "xFormula",
+      "i*37 \u0026 127",
+      "zFormula",
+      "i*71 \u0026 127"
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 50541800,
+    "processThreadAllocatedBytes": 16919656,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": -1,
+    "index": 1,
+    "warmup": true,
+    "elapsedNs": 25996600,
+    "processThreadAllocatedBytes": 3387976,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": -1,
+    "index": 2,
+    "warmup": true,
+    "elapsedNs": 26030200,
+    "processThreadAllocatedBytes": 3298304,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": -1,
+    "index": 3,
+    "warmup": true,
+    "elapsedNs": 26049300,
+    "processThreadAllocatedBytes": 3487552,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": -1,
+    "index": 4,
+    "warmup": true,
+    "elapsedNs": 25651000,
+    "processThreadAllocatedBytes": 3385216,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 26497900,
+    "processThreadAllocatedBytes": 16627704,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 0,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 25766400,
+    "processThreadAllocatedBytes": 3385536,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 0,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 26303600,
+    "processThreadAllocatedBytes": 3295224,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 0,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 28609900,
+    "processThreadAllocatedBytes": 3384552,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 0,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 26338600,
+    "processThreadAllocatedBytes": 3294712,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 27333800,
+    "processThreadAllocatedBytes": 16716832,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 1,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 29476400,
+    "processThreadAllocatedBytes": 3386800,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 1,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 39981000,
+    "processThreadAllocatedBytes": 3492192,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 1,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 28040900,
+    "processThreadAllocatedBytes": 3383456,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 1,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 27287400,
+    "processThreadAllocatedBytes": 3454392,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 27965700,
+    "processThreadAllocatedBytes": 16525488,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 2,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 27325500,
+    "processThreadAllocatedBytes": 3378592,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 2,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 27728400,
+    "processThreadAllocatedBytes": 3375744,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 2,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 25576800,
+    "processThreadAllocatedBytes": 3366800,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "filtered_tile",
+    "repeat": 2,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 25191200,
+    "processThreadAllocatedBytes": 3281112,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 0,
+      "entryGetInclusiveNs": 0,
+      "entryGetInitiallyPending": 0,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 0,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 25842000,
+    "processThreadAllocatedBytes": 16601592,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25552300,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": -1,
+    "index": 1,
+    "warmup": true,
+    "elapsedNs": 25445900,
+    "processThreadAllocatedBytes": 3281448,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25401500,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": -1,
+    "index": 2,
+    "warmup": true,
+    "elapsedNs": 26959500,
+    "processThreadAllocatedBytes": 3367160,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 26911800,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": -1,
+    "index": 3,
+    "warmup": true,
+    "elapsedNs": 25243300,
+    "processThreadAllocatedBytes": 3281504,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25197300,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": -1,
+    "index": 4,
+    "warmup": true,
+    "elapsedNs": 26093400,
+    "processThreadAllocatedBytes": 3366576,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 26045200,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 26781800,
+    "processThreadAllocatedBytes": 16514416,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 26511400,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 0,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 25492600,
+    "processThreadAllocatedBytes": 3366968,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25443400,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 0,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 27867200,
+    "processThreadAllocatedBytes": 3281160,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 27821800,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 0,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 25705500,
+    "processThreadAllocatedBytes": 3380040,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25659500,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 0,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 25658900,
+    "processThreadAllocatedBytes": 3281072,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25583800,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 26108700,
+    "processThreadAllocatedBytes": 16692408,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25873000,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 1,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 24413100,
+    "processThreadAllocatedBytes": 3187936,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 24366500,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 1,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 27119200,
+    "processThreadAllocatedBytes": 3456592,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 27071800,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 1,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 24286400,
+    "processThreadAllocatedBytes": 3194072,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 24243000,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 1,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 24791000,
+    "processThreadAllocatedBytes": 3419536,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 24747700,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 26980200,
+    "processThreadAllocatedBytes": 16594768,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 26760300,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 2,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 24250100,
+    "processThreadAllocatedBytes": 3275200,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 24206000,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 2,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 25249000,
+    "processThreadAllocatedBytes": 3361688,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25204000,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 2,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 25061200,
+    "processThreadAllocatedBytes": 3277120,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25015200,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_cache_tile",
+    "repeat": 2,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 25657100,
+    "processThreadAllocatedBytes": 3362328,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25612300,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 26593700,
+    "processThreadAllocatedBytes": 16510120,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 26328700,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": -1,
+    "index": 1,
+    "warmup": true,
+    "elapsedNs": 25332200,
+    "processThreadAllocatedBytes": 3361936,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25287100,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": -1,
+    "index": 2,
+    "warmup": true,
+    "elapsedNs": 25383400,
+    "processThreadAllocatedBytes": 3276648,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25327300,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": -1,
+    "index": 3,
+    "warmup": true,
+    "elapsedNs": 24786200,
+    "processThreadAllocatedBytes": 3360336,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 24741800,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": -1,
+    "index": 4,
+    "warmup": true,
+    "elapsedNs": 24669000,
+    "processThreadAllocatedBytes": 3276704,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 24624200,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 26118700,
+    "processThreadAllocatedBytes": 16594576,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25907800,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 0,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 24233800,
+    "processThreadAllocatedBytes": 3254528,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 24184900,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 0,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 25546200,
+    "processThreadAllocatedBytes": 3357496,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25502000,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 0,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 25879000,
+    "processThreadAllocatedBytes": 3285816,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25828000,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 0,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 29414100,
+    "processThreadAllocatedBytes": 3367920,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 29367200,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 26101300,
+    "processThreadAllocatedBytes": 16509728,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25833900,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 1,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 25129800,
+    "processThreadAllocatedBytes": 3756576,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25083300,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 1,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 25180300,
+    "processThreadAllocatedBytes": 3299720,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25132600,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 1,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 25008400,
+    "processThreadAllocatedBytes": 3382688,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 24963000,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 1,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 25821500,
+    "processThreadAllocatedBytes": 3299720,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25772700,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 25435500,
+    "processThreadAllocatedBytes": 16617176,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 25216400,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      80,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 2,
+    "index": 1,
+    "warmup": false,
+    "elapsedNs": 26062600,
+    "processThreadAllocatedBytes": 3299720,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 26010800,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      81,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 2,
+    "index": 2,
+    "warmup": false,
+    "elapsedNs": 28600000,
+    "processThreadAllocatedBytes": 3484272,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 28552500,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      82,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 2,
+    "index": 3,
+    "warmup": false,
+    "elapsedNs": 38912100,
+    "processThreadAllocatedBytes": 3373856,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 38861700,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      83,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "cold_exact_point",
+    "repeat": 2,
+    "index": 4,
+    "warmup": false,
+    "elapsedNs": 28258400,
+    "processThreadAllocatedBytes": 3407176,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 0,
+      "entryGetCalls": 1,
+      "entryGetInclusiveNs": 28214100,
+      "entryGetInitiallyPending": 1,
+      "presentHit": 0,
+      "presentMiss": 0,
+      "provideCalls": 1,
+      "queueCalls": 0,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 1
+    },
+    "details": [
+      "tileX",
+      84,
+      "tileZ",
+      -80,
+      "queue",
+      false
+    ]
+  },
+  {
+    "operation": "FULL_cold_exploration",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 1871553400,
+    "processThreadAllocatedBytes": 1599097640,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 44,
+      "entryGetCalls": 733558,
+      "entryGetInclusiveNs": 577009900,
+      "entryGetInitiallyPending": 6,
+      "presentHit": 733158,
+      "presentMiss": 546,
+      "provideCalls": 356,
+      "queueCalls": 844,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 23
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      1024,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_sequential_adjacent",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 1062571200,
+    "processThreadAllocatedBytes": 1028416920,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 30,
+      "entryGetCalls": 638430,
+      "entryGetInclusiveNs": 307460700,
+      "entryGetInitiallyPending": 8,
+      "presentHit": 638242,
+      "presentMiss": 0,
+      "provideCalls": 158,
+      "queueCalls": 690,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 20
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      2048,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_scattered",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 4319539600,
+    "processThreadAllocatedBytes": 3797622432,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 72,
+      "entryGetCalls": 2615726,
+      "entryGetInclusiveNs": 1890393900,
+      "entryGetInitiallyPending": 39,
+      "presentHit": 2615118,
+      "presentMiss": 18822,
+      "provideCalls": 536,
+      "queueCalls": 4232,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 128
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      3072,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_warmed_neighbor_terrain",
+    "repeat": -1,
+    "index": 0,
+    "warmup": true,
+    "elapsedNs": 2614869600,
+    "processThreadAllocatedBytes": 1344714096,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 30,
+      "entryGetCalls": 2143548,
+      "entryGetInclusiveNs": 459423700,
+      "entryGetInitiallyPending": 5,
+      "presentHit": 2143358,
+      "presentMiss": 559659,
+      "provideCalls": 160,
+      "queueCalls": 690,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 19
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      4096,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_cold_exploration",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 1890548500,
+    "processThreadAllocatedBytes": 1937657056,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 44,
+      "entryGetCalls": 733558,
+      "entryGetInclusiveNs": 616335500,
+      "entryGetInitiallyPending": 9,
+      "presentHit": 733158,
+      "presentMiss": 546,
+      "provideCalls": 356,
+      "queueCalls": 844,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 23
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      1024,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_sequential_adjacent",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 1038653700,
+    "processThreadAllocatedBytes": 1028470312,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 30,
+      "entryGetCalls": 638430,
+      "entryGetInclusiveNs": 320742100,
+      "entryGetInitiallyPending": 9,
+      "presentHit": 638242,
+      "presentMiss": 0,
+      "provideCalls": 158,
+      "queueCalls": 690,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 20
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      2048,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_scattered",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 4132821300,
+    "processThreadAllocatedBytes": 3788645328,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 72,
+      "entryGetCalls": 2615926,
+      "entryGetInclusiveNs": 1795033400,
+      "entryGetInitiallyPending": 37,
+      "presentHit": 2615318,
+      "presentMiss": 18622,
+      "provideCalls": 536,
+      "queueCalls": 4232,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 128
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      3072,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_warmed_neighbor_terrain",
+    "repeat": 0,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 2355014100,
+    "processThreadAllocatedBytes": 1324042552,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 30,
+      "entryGetCalls": 2143548,
+      "entryGetInclusiveNs": 421409800,
+      "entryGetInitiallyPending": 6,
+      "presentHit": 2143358,
+      "presentMiss": 559659,
+      "provideCalls": 160,
+      "queueCalls": 690,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 19
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      4096,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_cold_exploration",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 1754463300,
+    "processThreadAllocatedBytes": 1951095416,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 44,
+      "entryGetCalls": 733558,
+      "entryGetInclusiveNs": 573751800,
+      "entryGetInitiallyPending": 5,
+      "presentHit": 733158,
+      "presentMiss": 546,
+      "provideCalls": 356,
+      "queueCalls": 844,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 23
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      1024,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_sequential_adjacent",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 1010403800,
+    "processThreadAllocatedBytes": 1025323712,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 30,
+      "entryGetCalls": 638430,
+      "entryGetInclusiveNs": 311761400,
+      "entryGetInitiallyPending": 7,
+      "presentHit": 638242,
+      "presentMiss": 0,
+      "provideCalls": 158,
+      "queueCalls": 690,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 20
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      2048,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_scattered",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 4293046200,
+    "processThreadAllocatedBytes": 3788075000,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 72,
+      "entryGetCalls": 2615721,
+      "entryGetInclusiveNs": 1923766300,
+      "entryGetInitiallyPending": 38,
+      "presentHit": 2615113,
+      "presentMiss": 18827,
+      "provideCalls": 536,
+      "queueCalls": 4232,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 128
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      3072,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_warmed_neighbor_terrain",
+    "repeat": 1,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 2390281600,
+    "processThreadAllocatedBytes": 1322629032,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 30,
+      "entryGetCalls": 2143548,
+      "entryGetInclusiveNs": 413431200,
+      "entryGetInitiallyPending": 5,
+      "presentHit": 2143358,
+      "presentMiss": 559659,
+      "provideCalls": 160,
+      "queueCalls": 690,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 19
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      4096,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_cold_exploration",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 1737221200,
+    "processThreadAllocatedBytes": 1913953920,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 44,
+      "entryGetCalls": 733558,
+      "entryGetInclusiveNs": 557704800,
+      "entryGetInitiallyPending": 7,
+      "presentHit": 733158,
+      "presentMiss": 546,
+      "provideCalls": 356,
+      "queueCalls": 844,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 23
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      1024,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_sequential_adjacent",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 1038312600,
+    "processThreadAllocatedBytes": 1025826432,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 30,
+      "entryGetCalls": 638430,
+      "entryGetInclusiveNs": 345005200,
+      "entryGetInitiallyPending": 9,
+      "presentHit": 638242,
+      "presentMiss": 0,
+      "provideCalls": 158,
+      "queueCalls": 690,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 20
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      2048,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_scattered",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 4124924300,
+    "processThreadAllocatedBytes": 3782537424,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 72,
+      "entryGetCalls": 2615721,
+      "entryGetInclusiveNs": 1835617500,
+      "entryGetInitiallyPending": 35,
+      "presentHit": 2615113,
+      "presentMiss": 18827,
+      "provideCalls": 536,
+      "queueCalls": 4232,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 128
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      3072,
+      "preexistingFull",
+      0
+    ]
+  },
+  {
+    "operation": "FULL_warmed_neighbor_terrain",
+    "repeat": 2,
+    "index": 0,
+    "warmup": false,
+    "elapsedNs": 2350436500,
+    "processThreadAllocatedBytes": 1323572944,
+    "allocationScope": "all live JVM threads, includes client/background work; not retained memory",
+    "cacheObserverDelta": {
+      "dropCalls": 30,
+      "entryGetCalls": 2143548,
+      "entryGetInclusiveNs": 452565500,
+      "entryGetInitiallyPending": 5,
+      "presentHit": 2143358,
+      "presentMiss": 559659,
+      "provideCalls": 160,
+      "queueCalls": 690,
+      "thresholdTileReleases": 0,
+      "tileGenerationCalls": 19
+    },
+    "details": [
+      "chunks",
+      8,
+      "baseChunk",
+      4096,
+      "preexistingFull",
+      0
+    ]
+  }
+]

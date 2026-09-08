@@ -1,0 +1,842 @@
+[
+  {
+    "phase": "filtered_tile repeat -1 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1061530624,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "filtered_tile repeat -1 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1061530624,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "filtered_tile repeat 0 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1086696448,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "filtered_tile repeat 0 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1086696448,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "filtered_tile repeat 1 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1116056576,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "filtered_tile repeat 1 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1116056576,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "filtered_tile repeat 2 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1145416704,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "filtered_tile repeat 2 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1145416704,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_cache_tile repeat -1 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1178971136,
+    "cachedEntries": 5,
+    "publishedCellCountUpperBound": 128000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_cache_tile repeat -1 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1178971136,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_cache_tile repeat 0 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1208331264,
+    "cachedEntries": 5,
+    "publishedCellCountUpperBound": 128000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_cache_tile repeat 0 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1208331264,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_cache_tile repeat 1 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1237691392,
+    "cachedEntries": 5,
+    "publishedCellCountUpperBound": 128000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_cache_tile repeat 1 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1237691392,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_cache_tile repeat 2 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1271245824,
+    "cachedEntries": 5,
+    "publishedCellCountUpperBound": 128000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_cache_tile repeat 2 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1271245824,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_exact_point repeat -1 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1300605952,
+    "cachedEntries": 5,
+    "publishedCellCountUpperBound": 128000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_exact_point repeat -1 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1300605952,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_exact_point repeat 0 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1329966080,
+    "cachedEntries": 5,
+    "publishedCellCountUpperBound": 128000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_exact_point repeat 0 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1329966080,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_exact_point repeat 1 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1363520512,
+    "cachedEntries": 5,
+    "publishedCellCountUpperBound": 128000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_exact_point repeat 1 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1363520512,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_exact_point repeat 2 before shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1392880640,
+    "cachedEntries": 5,
+    "publishedCellCountUpperBound": 128000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "cold_exact_point repeat 2 after shutdown",
+    "cellPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "chunkPool": {
+      "allocated": 1,
+      "borrowed": 5,
+      "returned": 5,
+      "live": 0,
+      "pooled": 1
+    },
+    "heapUsedBytes": 1392880640,
+    "cachedEntries": 0,
+    "publishedCellCountUpperBound": 0,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_cold_exploration repeat -1",
+    "cellPool": {
+      "allocated": 10,
+      "borrowed": 59,
+      "returned": 59,
+      "live": 0,
+      "pooled": 10
+    },
+    "chunkPool": {
+      "allocated": 10,
+      "borrowed": 59,
+      "returned": 59,
+      "live": 0,
+      "pooled": 10
+    },
+    "heapUsedBytes": 1697610192,
+    "cachedEntries": 55,
+    "publishedCellCountUpperBound": 1408000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_sequential_adjacent repeat -1",
+    "cellPool": {
+      "allocated": 10,
+      "borrowed": 79,
+      "returned": 79,
+      "live": 0,
+      "pooled": 10
+    },
+    "chunkPool": {
+      "allocated": 10,
+      "borrowed": 79,
+      "returned": 79,
+      "live": 0,
+      "pooled": 10
+    },
+    "heapUsedBytes": 1236392448,
+    "cachedEntries": 75,
+    "publishedCellCountUpperBound": 1920000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_scattered repeat -1",
+    "cellPool": {
+      "allocated": 10,
+      "borrowed": 207,
+      "returned": 207,
+      "live": 0,
+      "pooled": 10
+    },
+    "chunkPool": {
+      "allocated": 10,
+      "borrowed": 207,
+      "returned": 207,
+      "live": 0,
+      "pooled": 10
+    },
+    "heapUsedBytes": 1735861128,
+    "cachedEntries": 203,
+    "publishedCellCountUpperBound": 5196800,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_warmed_neighbor_terrain repeat -1",
+    "cellPool": {
+      "allocated": 10,
+      "borrowed": 227,
+      "returned": 227,
+      "live": 0,
+      "pooled": 10
+    },
+    "chunkPool": {
+      "allocated": 10,
+      "borrowed": 227,
+      "returned": 227,
+      "live": 0,
+      "pooled": 10
+    },
+    "heapUsedBytes": 1921955840,
+    "cachedEntries": 223,
+    "publishedCellCountUpperBound": 5708800,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_cold_exploration repeat 0",
+    "cellPool": {
+      "allocated": 8,
+      "borrowed": 59,
+      "returned": 59,
+      "live": 0,
+      "pooled": 8
+    },
+    "chunkPool": {
+      "allocated": 8,
+      "borrowed": 59,
+      "returned": 59,
+      "live": 0,
+      "pooled": 8
+    },
+    "heapUsedBytes": 2441841320,
+    "cachedEntries": 55,
+    "publishedCellCountUpperBound": 1408000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_sequential_adjacent repeat 0",
+    "cellPool": {
+      "allocated": 8,
+      "borrowed": 79,
+      "returned": 79,
+      "live": 0,
+      "pooled": 8
+    },
+    "chunkPool": {
+      "allocated": 8,
+      "borrowed": 79,
+      "returned": 79,
+      "live": 0,
+      "pooled": 8
+    },
+    "heapUsedBytes": 1895944192,
+    "cachedEntries": 75,
+    "publishedCellCountUpperBound": 1920000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_scattered repeat 0",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 207,
+      "returned": 207,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 207,
+      "returned": 207,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 1910317568,
+    "cachedEntries": 203,
+    "publishedCellCountUpperBound": 5196800,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_warmed_neighbor_terrain repeat 0",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 227,
+      "returned": 227,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 227,
+      "returned": 227,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 2274212864,
+    "cachedEntries": 223,
+    "publishedCellCountUpperBound": 5708800,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_cold_exploration repeat 1",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 59,
+      "returned": 59,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 59,
+      "returned": 59,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 2991442880,
+    "cachedEntries": 55,
+    "publishedCellCountUpperBound": 1408000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_sequential_adjacent repeat 1",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 79,
+      "returned": 79,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 79,
+      "returned": 79,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 1708228656,
+    "cachedEntries": 75,
+    "publishedCellCountUpperBound": 1920000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_scattered repeat 1",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 207,
+      "returned": 207,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 207,
+      "returned": 207,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 3137569792,
+    "cachedEntries": 203,
+    "publishedCellCountUpperBound": 5196800,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_warmed_neighbor_terrain repeat 1",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 227,
+      "returned": 227,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 227,
+      "returned": 227,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 2910846976,
+    "cachedEntries": 223,
+    "publishedCellCountUpperBound": 5708800,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_cold_exploration repeat 2",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 59,
+      "returned": 59,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 59,
+      "returned": 59,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 2535782912,
+    "cachedEntries": 55,
+    "publishedCellCountUpperBound": 1408000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_sequential_adjacent repeat 2",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 79,
+      "returned": 79,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 79,
+      "returned": 79,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 3374643712,
+    "cachedEntries": 75,
+    "publishedCellCountUpperBound": 1920000,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_scattered repeat 2",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 207,
+      "returned": 207,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 207,
+      "returned": 207,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 2603292160,
+    "cachedEntries": 203,
+    "publishedCellCountUpperBound": 5196800,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  },
+  {
+    "phase": "FULL_warmed_neighbor_terrain repeat 2",
+    "cellPool": {
+      "allocated": 9,
+      "borrowed": 227,
+      "returned": 227,
+      "live": 0,
+      "pooled": 9
+    },
+    "chunkPool": {
+      "allocated": 9,
+      "borrowed": 227,
+      "returned": 227,
+      "live": 0,
+      "pooled": 9
+    },
+    "heapUsedBytes": 2207102976,
+    "cachedEntries": 223,
+    "publishedCellCountUpperBound": 5708800,
+    "memoryScope": "whole JVM instantaneous used heap, not retained cache bytes; pending entries may not yet own published cells"
+  }
+]

@@ -1,0 +1,24 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "task":  "Task 2",
+    "run":  "reproduction-1788876884944",
+    "sourceHead":  "a0eccff4256d5627286f5de3587bf75947bbd0fc",
+    "sourceDirty":  [
+                        " M scripts/task2/Collect-Run.ps1",
+                        "?? docs/task2/TASK_2_VERSIONED_GENERATION_FOUNDATION.md",
+                        "?? docs/task2/evidence/allocation/",
+                        "?? docs/task2/evidence/benchmark-final/",
+                        "?? docs/task2/evidence/benchmark-reference-current/",
+                        "?? docs/task2/evidence/benchmark-repeat-current/",
+                        "?? docs/task2/evidence/benchmark_reference_current_summary.json",
+                        "?? docs/task2/evidence/benchmark_summary.json",
+                        "?? docs/task2/evidence/performance_comparison.json"
+                    ],
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "acceptedTask1C":  "d2164f25cd06aafcae15cc15f9f4babe977d4bdb",
+    "fixtureManifest":  "../../../task1c/evidence/fixture_manifest.json",
+    "fixtureManifestSha256":  "5ab8460c9cee4bfc7b311a1984e0987dcadb36e453c1ca817dc170d8015ef8d5",
+    "settingsReference":  "../../../task1c/evidence/golden-24/identity.json",
+    "backend":  "LEGACY_RTF_V0"
+}

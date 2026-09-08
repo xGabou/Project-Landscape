@@ -1,0 +1,8 @@
+{
+    "cpu":  "13th Gen Intel(R) Core(TM) i7-13700K",
+    "physicalCores":  16,
+    "logicalProcessors":  24,
+    "ramBytes":  68388204544,
+    "os":  "Microsoft Windows 11 Professionnel",
+    "osBuild":  "26200"
+}
