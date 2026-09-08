@@ -1,0 +1,9 @@
+[
+  {
+    "recognition": "test calls store after reading real active legacy preset; automatic world hook not yet bound",
+    "foreignWithoutManifest": "untouched",
+    "first": "EXPLICIT_LEGACY_ASSIGNMENT",
+    "reopen": "EXISTING_MANIFEST",
+    "mismatch": "rejected without overwrite"
+  }
+]

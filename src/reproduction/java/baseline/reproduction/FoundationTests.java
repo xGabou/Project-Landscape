@@ -3,6 +3,9 @@ package baseline.reproduction;
 import com.gabou.atmospheregen.config.*;
 import com.gabou.atmospheregen.generation.version.*;
 import com.gabou.atmospheregen.generation.seed.*;
+import com.gabou.atmospheregen.generation.context.*;
+import com.gabou.atmospheregen.persistence.*;
+import com.gabou.atmospheregen.compat.legacy.LegacyPresetSnapshot;
 import com.mojang.serialization.*;
 import java.util.*;
 import net.minecraft.server.level.ServerLevel;
@@ -39,6 +42,46 @@ public final class FoundationTests {
         try{GenerationVersions.planned().requireFunctionalBackend();throw new AssertionError("PA geography fallback");}
         catch(UnsupportedOperationException expected){out.row("foundation_invalid","case","unimplemented backend","error",expected.getMessage());}
         seeds(out);
+        manifests(level,out);
+    }
+    private static void manifests(ServerLevel level,Evidence out) throws Exception {
+        var preset=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState()).preset();
+        var legacy=LegacyPresetSnapshot.capture(preset);
+        var config=new WorldGeographyConfig(Optional.of(legacy),Optional.empty());
+        var checksum=GenerationFingerprint.of(legacy.effectivePreset());
+        var content=new ManifestContent(GenerationVersions.legacy(),level.getSeed(),level.dimension().location(),config,
+            new BaselineClimateConfig(Optional.empty()),new BiomeResolverConfig(Optional.empty()),Map.of("test:effective_preset",checksum),Optional.empty());
+        var manifest=GenerationManifest.create(content);
+        roundtrip(out,"world geography config",WorldGeographyConfig.CODEC,config);
+        roundtrip(out,"fingerprint",GenerationFingerprint.CODEC,checksum);
+        roundtrip(out,"manifest",GenerationManifest.CODEC,manifest);
+        roundtrip(out,"large seed",ManifestContent.SEED_CODEC,Long.MIN_VALUE);
+        roundtrip(out,"dimension",net.minecraft.resources.ResourceLocation.CODEC,level.dimension().location());
+        var a=new WorldGenerationContext(manifest,level.dimension());var b=new WorldGenerationContext(manifest,level.dimension());
+        if(!a.contextId().equals(b.contextId())||a.runtimeToken()==b.runtimeToken())throw new AssertionError("Persistent/runtime context identity");
+        try{new WorldGenerationContext(manifest,net.minecraft.world.level.Level.NETHER);throw new AssertionError("Wrong dimension accepted");}
+        catch(IllegalArgumentException expected){out.row("foundation_invalid","case","context dimension mismatch","error",expected.getMessage());}
+        var ordered=com.google.gson.JsonParser.parseString("{\"b\":2,\"a\":1.0}");
+        var reversed=com.google.gson.JsonParser.parseString("{\"a\":1,\"b\":2.0}");
+        if(!GenerationFingerprint.of(CanonicalJson.of(ordered)).equals(GenerationFingerprint.of(CanonicalJson.of(reversed))))throw new AssertionError("Unordered fingerprint");
+        var encoded=com.google.gson.JsonParser.parseString(GenerationManifestStore.encode(manifest)).getAsJsonObject();
+        encoded.addProperty("fingerprint","0".repeat(64));reject(out,"changed fingerprint",GenerationManifest.CODEC,encoded.toString());
+        reject(out,"malformed geography config",WorldGeographyConfig.CODEC,"{\"legacy\":{\"effectivePreset\":{},\"tileExponent\":4,\"borderChunks\":1}}");
+        var directory=java.nio.file.Files.createTempDirectory(java.nio.file.Path.of("."),"foundation-manifest-");
+        var path=GenerationManifestStore.path(directory);
+        if(GenerationManifestStore.resolve(path,Optional.empty()).isPresent()||java.nio.file.Files.exists(path))throw new AssertionError("Foreign world assigned defaults");
+        var first=GenerationManifestStore.resolve(path,Optional.of(manifest)).orElseThrow();
+        var reopen=GenerationManifestStore.resolve(path,Optional.of(manifest)).orElseThrow();
+        if(first.kind()!=GenerationManifestStore.ResolutionKind.EXPLICIT_LEGACY_ASSIGNMENT||reopen.kind()!=GenerationManifestStore.ResolutionKind.EXISTING_MANIFEST)throw new AssertionError("Explicit legacy ownership");
+        if(!reopen.manifest().equals(manifest))throw new AssertionError("Persistence changed manifest");
+        try{GenerationManifestStore.resolve(path,Optional.empty());throw new AssertionError("Manifest on foreign generator accepted");}
+        catch(IllegalStateException expected){out.row("foundation_invalid","case","foreign generator with manifest","error",expected.getMessage());}
+        var changed=GenerationManifest.create(new ManifestContent(content.versions(),42L,content.dimension(),config,content.baselineClimate(),content.biomeResolver(),content.data(),Optional.empty()));
+        try{GenerationManifestStore.resolve(path,Optional.of(changed));throw new AssertionError("Changed world seed accepted");}
+        catch(IllegalStateException expected){out.row("foundation_invalid","case","world seed mismatch","error",expected.getMessage());}
+        if(!GenerationManifestStore.read(path).equals(manifest))throw new AssertionError("Mismatch overwrote manifest");
+        out.row("manifest_roundtrip","fixtureVersion",1,"manifest",GenerationManifestStore.encode(manifest),"roundtrip",true,"contextId",a.contextId(),"separateRuntimeTokens",true,"canonicalOrdering",true);
+        out.row("existing_world_resolution","recognition","test calls store after reading real active legacy preset; automatic world hook not yet bound","foreignWithoutManifest","untouched","first",first.kind().name(),"reopen",reopen.kind().name(),"mismatch","rejected without overwrite");
     }
     private static void seeds(Evidence out) throws Exception {
         var dimensions=List.of(new net.minecraft.resources.ResourceLocation("minecraft:overworld"),new net.minecraft.resources.ResourceLocation("minecraft:the_nether"),new net.minecraft.resources.ResourceLocation("minecraft:the_end"));

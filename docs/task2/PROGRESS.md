@@ -34,3 +34,18 @@ Real Forge run `reproduction-1788833477027` passed: 189 stream cases (seven fixe
 seeds, three dimensions, nine domains), salt/order/worker checks, nine high-bit
 collision-divergence checks and nine dimension-separation checks. Legacy production
 does not call this service. Legacy terrain equality still awaits the final corpus gate.
+
+## Manifest, fingerprint and context primitives
+
+Real Forge run `reproduction-1788833763477` passed the expanded foundation suite.
+The manifest codec round-trips full-long seed strings, dimension, separate versions,
+immutable configuration sections, sorted data checksums and optional future catalog identity.
+SHA-256 covers canonical JSON: sorted object keys, preserved array order, normalized finite
+numbers, no paths/timestamps/runtime tokens/workers. A changed content checksum is rejected.
+Legacy snapshots capture effective fields omitted by the old preset codec; geometry is explicit.
+
+The store writes a forced temporary file then renames without replacement under the caller's
+world storage lock. No manifest + no recognized owner leaves the world untouched. Explicit legacy
+assignment, existing-manifest reopen, foreign ownership and changed seed were tested. Rejected
+mismatches leave the existing file unchanged. Automatic production world binding is still pending.
+Context IDs identify immutable content; separate load instances get distinct cheap cache tokens.

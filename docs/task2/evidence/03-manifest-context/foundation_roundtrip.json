@@ -1,0 +1,529 @@
+[
+  {
+    "case": "legacy versions",
+    "json": {
+      "schemaVersion": 1,
+      "geography": "LEGACY_RTF_V0",
+      "baselineClimate": "LEGACY_RTF_HINTS_V0",
+      "biomeResolver": "LEGACY_MULTINOISE_V0"
+    },
+    "equal": true
+  },
+  {
+    "case": "planned versions",
+    "json": {
+      "schemaVersion": 1,
+      "geography": "PA_GEOGRAPHY_V1",
+      "baselineClimate": "PA_BASELINE_V1",
+      "biomeResolver": "PA_RESOLVER_V1"
+    },
+    "equal": true
+  },
+  {
+    "case": "planned geography controls",
+    "json": {
+      "terrainScaleBlocks": 1200.0,
+      "mountainScaleBlocks": 2000.0,
+      "riverFrequency": 0.5,
+      "continentScaleBlocks": 3000.0,
+      "minimumMajorOceanWidthBlocks": 1000.0
+    },
+    "equal": true
+  },
+  {
+    "case": "legacy climate config",
+    "json": {},
+    "equal": true
+  },
+  {
+    "case": "planned climate config",
+    "json": {
+      "planned": {
+        "latitudeScaleBlocks": 100000.0,
+        "lapseCelsiusPerBlock": 0.0065,
+        "oceanInfluence": 0.5,
+        "rainShadowStrength": 0.5
+      }
+    },
+    "equal": true
+  },
+  {
+    "case": "planned resolver config",
+    "json": {
+      "planned": {
+        "spatialResolutionBlocks": 64,
+        "fallbackWeight": 1
+      }
+    },
+    "equal": true
+  },
+  {
+    "case": "world geography config",
+    "json": {
+      "legacy": {
+        "effectivePreset": {
+          "caves": {
+            "caveCarverProbability": 0.14285715,
+            "cheeseCaveDepthOffset": 1.5625,
+            "cheeseCaveProbability": 1,
+            "deepCaveCarverProbability": 0.07,
+            "entranceCaveProbability": 0,
+            "largeOreVeins": true,
+            "legacyCarverDistribution": false,
+            "minCaveBiomeDepth": false,
+            "noodleCaveProbability": 1,
+            "ravineCarverProbability": 0.02,
+            "spaghettiCaveProbability": 1
+          },
+          "climate": {
+            "biomeEdgeShape": {
+              "gain": 0.5,
+              "lacunarity": 2.65,
+              "octaves": 2,
+              "scale": 24,
+              "strength": 14,
+              "type": "SIMPLEX"
+            },
+            "biomeShape": {
+              "biomeSize": 225,
+              "biomeWarpScale": 1.5E+2,
+              "biomeWarpStrength": 8E+1,
+              "macroNoiseSize": 8
+            },
+            "moisture": {
+              "bias": 0,
+              "falloff": 1,
+              "max": 1,
+              "min": 0,
+              "scale": 6,
+              "seedOffset": 0
+            },
+            "temperature": {
+              "bias": 0.05,
+              "falloff": 2,
+              "max": 0.98,
+              "min": 0,
+              "scale": 6,
+              "seedOffset": 0
+            }
+          },
+          "filters": {
+            "erosion": {
+              "depositeRate": 0.5,
+              "dropletLifetime": 12,
+              "dropletVelocity": 0.7,
+              "dropletVolume": 0.7,
+              "dropletsPerChunk": 135,
+              "erosionRate": 0.5
+            },
+            "smoothing": {
+              "iterations": 1,
+              "smoothingRadius": 1.8,
+              "smoothingRate": 0.9
+            }
+          },
+          "miscellaneous": {
+            "customBiomeFeatures": true,
+            "erosionDecorator": true,
+            "mountainBiomeUsage": 0.4,
+            "naturalSnowDecorator": true,
+            "oreCompatibleStoneOnly": true,
+            "plainStoneErosion": false,
+            "smoothLayerDecorator": true,
+            "strataDecorator": true,
+            "strataRegionSize": 6E+2,
+            "vanillaLavaLakes": true,
+            "vanillaLavaSprings": true,
+            "vanillaSprings": true,
+            "volcanoBiomeUsage": 0.4
+          },
+          "rivers": {
+            "branchRivers": {
+              "bankWidth": 14,
+              "bedDepth": 4,
+              "bedWidth": 5,
+              "fade": 0.975,
+              "maxBankHeight": 4,
+              "minBankHeight": 1
+            },
+            "lakes": {
+              "chance": 0.3,
+              "depth": 1E+1,
+              "maxBankHeight": 1E+1,
+              "maxStartDistance": 0.03,
+              "minBankHeight": 2,
+              "minStartDistance": 0,
+              "sizeMax": 1.5E+2,
+              "sizeMin": 75
+            },
+            "mainRivers": {
+              "bankWidth": 2E+1,
+              "bedDepth": 5,
+              "bedWidth": 8,
+              "fade": 0.75,
+              "maxBankHeight": 6,
+              "minBankHeight": 2
+            },
+            "riverCount": 8,
+            "seedOffset": 0,
+            "wetlands": {
+              "chance": 0.6,
+              "sizeMax": 225,
+              "sizeMin": 175
+            }
+          },
+          "structures": {
+            "entries": {}
+          },
+          "terrain": {
+            "badlands": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 1
+            },
+            "dales": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 1.5
+            },
+            "general": {
+              "fancyMountains": true,
+              "globalHorizontalScale": 1,
+              "globalVerticalScale": 0.98,
+              "legacyMountainScaling": false,
+              "terrainRegionSize": 1.2E+3,
+              "terrainSeedOffset": 0
+            },
+            "hills": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 2
+            },
+            "mountains": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 2.5
+            },
+            "plains": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 2
+            },
+            "plateau": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 1.5
+            },
+            "steppe": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 1
+            },
+            "torridonian": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 2
+            },
+            "volcano": {
+              "baseScale": 1,
+              "horizontalScale": 1,
+              "verticalScale": 1,
+              "weight": 5
+            }
+          },
+          "world": {
+            "continent": {
+              "continentJitter": 0.7,
+              "continentNoiseGain": 0.26,
+              "continentNoiseLacunarity": 4.33,
+              "continentNoiseOctaves": 5,
+              "continentScale": 3E+3,
+              "continentShape": "EUCLIDEAN",
+              "continentSizeVariance": 0.25,
+              "continentSkipping": 0.25,
+              "continentType": "MULTI_IMPROVED"
+            },
+            "controlPoints": {
+              "beach": 0.327,
+              "coast": 0.448,
+              "deepOcean": 0.1,
+              "inland": 0.502,
+              "mushroomFieldsCoast": 0.1,
+              "mushroomFieldsInland": 0,
+              "shallowOcean": 0.25
+            },
+            "properties": {
+              "lavaLevel": -54,
+              "seaLevel": 63,
+              "spawnType": "CONTINENT_CENTER",
+              "worldDepth": 64,
+              "worldHeight": 3.2E+2
+            }
+          }
+        },
+        "tileExponent": 3,
+        "borderChunks": 1
+      }
+    },
+    "equal": true
+  },
+  {
+    "case": "fingerprint",
+    "json": "13972d2842d1d48bfce72189f9c3725b1e6d5c9120d85e42b7985c599ea9175a",
+    "equal": true
+  },
+  {
+    "case": "manifest",
+    "json": {
+      "content": {
+        "baselineClimate": {},
+        "biomeResolver": {},
+        "data": {
+          "test:effective_preset": "13972d2842d1d48bfce72189f9c3725b1e6d5c9120d85e42b7985c599ea9175a"
+        },
+        "versions": {
+          "schemaVersion": 1,
+          "geography": "LEGACY_RTF_V0",
+          "baselineClimate": "LEGACY_RTF_HINTS_V0",
+          "biomeResolver": "LEGACY_MULTINOISE_V0"
+        },
+        "worldSeed": "8675309",
+        "dimension": "minecraft:overworld",
+        "geography": {
+          "legacy": {
+            "effectivePreset": {
+              "caves": {
+                "caveCarverProbability": 0.14285715,
+                "cheeseCaveDepthOffset": 1.5625,
+                "cheeseCaveProbability": 1,
+                "deepCaveCarverProbability": 0.07,
+                "entranceCaveProbability": 0,
+                "largeOreVeins": true,
+                "legacyCarverDistribution": false,
+                "minCaveBiomeDepth": false,
+                "noodleCaveProbability": 1,
+                "ravineCarverProbability": 0.02,
+                "spaghettiCaveProbability": 1
+              },
+              "climate": {
+                "biomeEdgeShape": {
+                  "gain": 0.5,
+                  "lacunarity": 2.65,
+                  "octaves": 2,
+                  "scale": 24,
+                  "strength": 14,
+                  "type": "SIMPLEX"
+                },
+                "biomeShape": {
+                  "biomeSize": 225,
+                  "biomeWarpScale": 1.5E+2,
+                  "biomeWarpStrength": 8E+1,
+                  "macroNoiseSize": 8
+                },
+                "moisture": {
+                  "bias": 0,
+                  "falloff": 1,
+                  "max": 1,
+                  "min": 0,
+                  "scale": 6,
+                  "seedOffset": 0
+                },
+                "temperature": {
+                  "bias": 0.05,
+                  "falloff": 2,
+                  "max": 0.98,
+                  "min": 0,
+                  "scale": 6,
+                  "seedOffset": 0
+                }
+              },
+              "filters": {
+                "erosion": {
+                  "depositeRate": 0.5,
+                  "dropletLifetime": 12,
+                  "dropletVelocity": 0.7,
+                  "dropletVolume": 0.7,
+                  "dropletsPerChunk": 135,
+                  "erosionRate": 0.5
+                },
+                "smoothing": {
+                  "iterations": 1,
+                  "smoothingRadius": 1.8,
+                  "smoothingRate": 0.9
+                }
+              },
+              "miscellaneous": {
+                "customBiomeFeatures": true,
+                "erosionDecorator": true,
+                "mountainBiomeUsage": 0.4,
+                "naturalSnowDecorator": true,
+                "oreCompatibleStoneOnly": true,
+                "plainStoneErosion": false,
+                "smoothLayerDecorator": true,
+                "strataDecorator": true,
+                "strataRegionSize": 6E+2,
+                "vanillaLavaLakes": true,
+                "vanillaLavaSprings": true,
+                "vanillaSprings": true,
+                "volcanoBiomeUsage": 0.4
+              },
+              "rivers": {
+                "branchRivers": {
+                  "bankWidth": 14,
+                  "bedDepth": 4,
+                  "bedWidth": 5,
+                  "fade": 0.975,
+                  "maxBankHeight": 4,
+                  "minBankHeight": 1
+                },
+                "lakes": {
+                  "chance": 0.3,
+                  "depth": 1E+1,
+                  "maxBankHeight": 1E+1,
+                  "maxStartDistance": 0.03,
+                  "minBankHeight": 2,
+                  "minStartDistance": 0,
+                  "sizeMax": 1.5E+2,
+                  "sizeMin": 75
+                },
+                "mainRivers": {
+                  "bankWidth": 2E+1,
+                  "bedDepth": 5,
+                  "bedWidth": 8,
+                  "fade": 0.75,
+                  "maxBankHeight": 6,
+                  "minBankHeight": 2
+                },
+                "riverCount": 8,
+                "seedOffset": 0,
+                "wetlands": {
+                  "chance": 0.6,
+                  "sizeMax": 225,
+                  "sizeMin": 175
+                }
+              },
+              "structures": {
+                "entries": {}
+              },
+              "terrain": {
+                "badlands": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 1
+                },
+                "dales": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 1.5
+                },
+                "general": {
+                  "fancyMountains": true,
+                  "globalHorizontalScale": 1,
+                  "globalVerticalScale": 0.98,
+                  "legacyMountainScaling": false,
+                  "terrainRegionSize": 1.2E+3,
+                  "terrainSeedOffset": 0
+                },
+                "hills": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 2
+                },
+                "mountains": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 2.5
+                },
+                "plains": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 2
+                },
+                "plateau": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 1.5
+                },
+                "steppe": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 1
+                },
+                "torridonian": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 2
+                },
+                "volcano": {
+                  "baseScale": 1,
+                  "horizontalScale": 1,
+                  "verticalScale": 1,
+                  "weight": 5
+                }
+              },
+              "world": {
+                "continent": {
+                  "continentJitter": 0.7,
+                  "continentNoiseGain": 0.26,
+                  "continentNoiseLacunarity": 4.33,
+                  "continentNoiseOctaves": 5,
+                  "continentScale": 3E+3,
+                  "continentShape": "EUCLIDEAN",
+                  "continentSizeVariance": 0.25,
+                  "continentSkipping": 0.25,
+                  "continentType": "MULTI_IMPROVED"
+                },
+                "controlPoints": {
+                  "beach": 0.327,
+                  "coast": 0.448,
+                  "deepOcean": 0.1,
+                  "inland": 0.502,
+                  "mushroomFieldsCoast": 0.1,
+                  "mushroomFieldsInland": 0,
+                  "shallowOcean": 0.25
+                },
+                "properties": {
+                  "lavaLevel": -54,
+                  "seaLevel": 63,
+                  "spawnType": "CONTINENT_CENTER",
+                  "worldDepth": 64,
+                  "worldHeight": 3.2E+2
+                }
+              }
+            },
+            "tileExponent": 3,
+            "borderChunks": 1
+          }
+        }
+      },
+      "fingerprint": "078f8d634555d8e2d969f9685eace000d7f674d290b63ed6aba4f3f206ecbb66"
+    },
+    "equal": true
+  },
+  {
+    "case": "large seed",
+    "json": "-9223372036854775808",
+    "equal": true
+  },
+  {
+    "case": "dimension",
+    "json": "minecraft:overworld",
+    "equal": true
+  }
+]
