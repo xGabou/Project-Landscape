@@ -1,0 +1,937 @@
+[
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "chainSelector": 0.1296120584011078,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "chainSelector": 0.04650217667222023,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "chainSelector": 0.10767264664173126,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "chainSelector": 0.12938949465751648,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "chainSelector": 0.04630638659000397,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "chainSelector": 0.10697226971387863,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "chainSelector": 0.12916740775108337,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "chainSelector": 0.04611309990286827,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "chainSelector": 0.10626957565546036,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "chainSelector": 0.04011688008904457,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "chainSelector": 0.03342689573764801,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "chainSelector": 0.0381823405623436,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "chainSelector": 0.039575397968292236,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "chainSelector": 0.0333421565592289,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "chainSelector": 0.03777429834008217,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "chainSelector": 0.039041727781295776,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "chainSelector": 0.03325687721371651,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "chainSelector": 0.03737099841237068,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "chainSelector": 0.03410687297582626,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "chainSelector": 0.0323668010532856,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "chainSelector": 0.03359813988208771,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "chainSelector": 0.033650800585746765,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "chainSelector": 0.032273195683956146,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "chainSelector": 0.03324679657816887,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "chainSelector": 0.03320104628801346,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "chainSelector": 0.03217856585979462,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "chainSelector": 0.03290015086531639,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "chainSelector": 0.032319918274879456,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "chainSelector": 0.03198618069291115,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "chainSelector": 0.032220907509326935,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "chainSelector": 0.03188830614089966,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "chainSelector": 0.03188830614089966,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "chainSelector": 0.03188830614089966,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "chainSelector": 0.031460780650377274,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "chainSelector": 0.03178934007883072,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "chainSelector": 0.031558599323034286,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "chainSelector": 0.03061327151954174,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "chainSelector": 0.031588487327098846,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "chainSelector": 0.030902555212378502,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "chainSelector": 0.030193714424967766,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "chainSelector": 0.031486861407756805,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "chainSelector": 0.03057626076042652,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "chainSelector": 0.02977723628282547,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "chainSelector": 0.03138464316725731,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "chainSelector": 0.030251169577240944,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "chainSelector": 0.025818411260843277,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "chainSelector": 0.03035535104572773,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "chainSelector": 0.02707204781472683,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "chainSelector": 0.02544623799622059,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "chainSelector": 0.03025427833199501,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "chainSelector": 0.02676187828183174,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "chainSelector": 0.025078821927309036,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "chainSelector": 0.030153963714838028,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "chainSelector": 0.026453213766217232,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "chainSelector": 0.01364867016673088,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "chainSelector": 0.027740666642785072,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "chainSelector": 0.014121473766863346,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "chainSelector": 0.013507763855159283,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "chainSelector": 0.027758589014410973,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "chainSelector": 0.013897176831960678,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "chainSelector": 0.01337052695453167,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "chainSelector": 0.02778024412691593,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "chainSelector": 0.01367483101785183,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "chainSelector": 0.009708799421787262,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "chainSelector": 0.03738807514309883,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "chainSelector": 0.003965330775827169,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "chainSelector": 0.009694049134850502,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "chainSelector": 0.03769376873970032,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "chainSelector": 0.0038698960561305285,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "chainSelector": 0.009679850190877914,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "chainSelector": 0.03800417110323906,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "chainSelector": 0.003776399651542306,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "chainSelector": 0.00966615043580532,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "chainSelector": 0.0383191853761673,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "chainSelector": 0.0036848345771431923,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "coast",
+      "x": -4032,
+      "z": -4096
+    },
+    "chainSelector": 0.3833006024360657,
+    "chain": 0.037001464515924454,
+    "regional": 0.0,
+    "combined": 0.037001464515924454
+  },
+  {
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -1728
+    },
+    "chainSelector": null,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "mountain",
+      "x": -2688,
+      "z": -4096
+    },
+    "chainSelector": 0.11488483846187592,
+    "chain": 0.0,
+    "regional": 0.26700302958488464,
+    "combined": 0.26700302958488464
+  },
+  {
+    "point": {
+      "label": "mountain_edge",
+      "x": -2688,
+      "z": -4096
+    },
+    "chainSelector": 0.11488483846187592,
+    "chain": 0.0,
+    "regional": 0.26700302958488464,
+    "combined": 0.26700302958488464
+  },
+  {
+    "point": {
+      "label": "plains",
+      "x": 1280,
+      "z": -4096
+    },
+    "chainSelector": 0.024525834247469902,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "plateau",
+      "x": 3392,
+      "z": -3072
+    },
+    "chainSelector": 0.10543210804462433,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "region_transition",
+      "x": -2688,
+      "z": -4096
+    },
+    "chainSelector": 0.11488483846187592,
+    "chain": 0.0,
+    "regional": 0.26700302958488464,
+    "combined": 0.26700302958488464
+  },
+  {
+    "point": {
+      "label": "river",
+      "x": -64,
+      "z": -4096
+    },
+    "chainSelector": 0.17003022134304047,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": -2752,
+      "z": -2432
+    },
+    "chainSelector": 0.05043676123023033,
+    "chain": 0.0,
+    "regional": 0.0,
+    "combined": 0.0
+  },
+  {
+    "point": {
+      "label": "shallow_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "chainSelector": 0.4126163125038147,
+    "chain": 0.03648214042186737,
+    "regional": 0.0,
+    "combined": 0.03648214042186737
+  }
+]

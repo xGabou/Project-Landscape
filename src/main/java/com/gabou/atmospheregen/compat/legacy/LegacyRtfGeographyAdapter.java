@@ -9,16 +9,24 @@ import raccoonman.reterraforged.world.worldgen.GeneratorContext;
 import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.Terrain;
+import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
+import raccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache;
+import com.gabou.atmospheregen.generation.context.WorldGenerationContext;
 
-/** Thin read adapter only: no Heightmap extraction, climate model or new geographic calculations. */
+/** Canonical public boundary over the extracted pipeline's finalized tiles; never direct Heightmap sampling. */
 public final class LegacyRtfGeographyAdapter implements GeographyProvider {
-    private final GeneratorContext legacy;
+    private final WorldGenerationContext context;
+    private final TileCache tiles;
     private final int heightScale;
     private final int seaLevel;
     private LegacyRtfGeographyAdapter(GeneratorContext legacy) {
         if (legacy.generationContext() == null || legacy.cache == null) throw new IllegalStateException("Canonical legacy provider requires persisted world metadata and a tile cache");
         legacy.generationContext().manifest().content().versions().requireFunctionalBackend();
-        this.legacy = legacy;
+        this.context = legacy.generationContext();
+        this.tiles = legacy.cache;
+        if(context.runtimeToken()!=legacy.lookup.samplingIdentity())throw new IllegalStateException("Provider/cache generation context mismatch");
+        // TileGenerator publishes only after geographyPipeline.finalizeTile; no separate query algorithm.
+        java.util.Objects.requireNonNull(legacy.generator.geographyPipeline());
         this.heightScale = legacy.levels.worldHeight;
         this.seaLevel = legacy.levels.waterLevel;
     }
@@ -30,8 +38,18 @@ public final class LegacyRtfGeographyAdapter implements GeographyProvider {
         WaterCategory water = water(cell.terrain);
         // Same float multiplication as legacy density height scaling, then widened (not a new height algorithm).
         double elevation = cell.height * heightScale;
+        double mountain = (double)cell.mountainChainContribution() + cell.regionalMountainContribution();
+        // Tiny float interpolation rounding can exceed one; this new diagnostic is bounded, not used by terrain.
+        var mountainMetric=Optional.of(new Metric(Math.min(1.0,mountain),Metric.Quality.LEGACY_HEURISTIC,1));
+        var metrics=new GeographyMetrics(Optional.empty(),Optional.empty(),Optional.empty(),Optional.empty(),
+            Optional.empty(),mountainMetric,Optional.empty());
+        var selector=Float.isFinite(cell.mountainChainSelector())
+            ? Optional.of(new Metric(cell.mountainChainSelector(),Metric.Quality.LEGACY_HEURISTIC,1)) : Optional.<Metric>empty();
+        var signals=new LegacyTerrainSignals(cell.continentEdge,new BlockPosition(cell.continentX,cell.continentZ),
+            cell.terrainRegionId,cell.terrainRegionEdge,selector,cell.mountainChainContribution(),cell.regionalMountainContribution(),
+            cell.heightErosion*heightScale,cell.sediment*heightScale);
         return new GeoSample(new BlockPosition(x, z), elevation, elevation - seaLevel, water, landform(cell.terrain),
-            GeographyMetrics.unknown(), hydrology(cell, water));
+            metrics, hydrology(cell, water),Optional.of(signals));
     }
     public HydrologyProvider hydrology() { return (x, z) -> sample(x, z).hydrology(); }
     /** Dimensionless legacy hints only; not an implementation of BaselineClimateProvider. */
@@ -42,11 +60,14 @@ public final class LegacyRtfGeographyAdapter implements GeographyProvider {
     public record LegacyClimateHints(float temperatureParameter, float moistureParameter, float biomeRegion, String legacyBiomeType) {}
 
     private Cell canonical(int x, int z) {
-        if (legacy.cache.isClosed()) throw new IllegalStateException("Cannot sample canonical geography after context shutdown: " + legacy.generationContext().contextId());
-        var tile = legacy.cache.provide(legacy.cache.chunkToTile(x >> 4), legacy.cache.chunkToTile(z >> 4));
+        if (tiles.isClosed()) throw new IllegalStateException("Cannot sample canonical geography after context shutdown: " + context.contextId());
+        var tile = tiles.provide(tiles.chunkToTile(x >> 4), tiles.chunkToTile(z >> 4));
         var source = tile.lookup(x, z);
         if (source == null) throw new IllegalStateException("Owning canonical tile has no cell at " + x + "," + z + "; no direct fallback permitted");
-        Cell detached = new Cell(); detached.copyFrom(source); return detached;
+        // Task 1B publication detached this tile from pooled workspaces. A retained tile reader
+        // survives eviction safely. Read it only inside this adapter; returned records contain
+        // values, never Cell/Tile references. Avoid an extra mutable Cell allocation per API query.
+        return source;
     }
     private static WaterCategory water(Terrain terrain) {
         if (terrain.isDeepOcean()) return WaterCategory.DEEP_OCEAN;
@@ -58,6 +79,8 @@ public final class LegacyRtfGeographyAdapter implements GeographyProvider {
         return terrain.isOverground() ? WaterCategory.LAND : WaterCategory.UNKNOWN;
     }
     private static Landform landform(Terrain terrain) {
+        if (terrain == TerrainType.PLATEAU) return Landform.PLATEAU;
+        if (terrain == TerrainType.HILLS) return Landform.HILLS;
         if (terrain.isMountain()) return Landform.MOUNTAIN;
         if (terrain.isDeepOcean() || terrain.isShallowOcean()) return Landform.OCEAN;
         if (terrain.isCoast()) return Landform.COAST;

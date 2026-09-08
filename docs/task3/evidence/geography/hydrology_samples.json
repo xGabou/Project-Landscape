@@ -1,0 +1,1022 @@
+[
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "coast",
+      "x": -4032,
+      "z": -4096
+    },
+    "water": "COAST",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -1728
+    },
+    "water": "DEEP_OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "mountain",
+      "x": -2688,
+      "z": -4096
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "mountain_edge",
+      "x": -2688,
+      "z": -4096
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "plains",
+      "x": 1280,
+      "z": -4096
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "plateau",
+      "x": 3392,
+      "z": -3072
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.983197033405304
+  },
+  {
+    "point": {
+      "label": "region_transition",
+      "x": -2688,
+      "z": -4096
+    },
+    "water": "LAND",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  },
+  {
+    "point": {
+      "label": "river",
+      "x": -64,
+      "z": -4096
+    },
+    "water": "RIVER",
+    "river": true,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.9988248348236084
+  },
+  {
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": -2752,
+      "z": -2432
+    },
+    "water": "RIVER",
+    "river": true,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.9984928369522095
+  },
+  {
+    "point": {
+      "label": "shallow_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "water": "SHALLOW_OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false,
+    "valleyInfluence": 0.0
+  }
+]

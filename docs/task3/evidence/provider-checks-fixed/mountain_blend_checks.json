@@ -1,0 +1,23 @@
+[
+  {
+    "selector": 0.2,
+    "chain": 0.0,
+    "regional": 1.0,
+    "lowerCalls": 1,
+    "upperCalls": 0
+  },
+  {
+    "selector": 0.55,
+    "chain": 0.5,
+    "regional": 0.5,
+    "lowerCalls": 1,
+    "upperCalls": 1
+  },
+  {
+    "selector": 0.9,
+    "chain": 1.0,
+    "regional": 0.0,
+    "lowerCalls": 0,
+    "upperCalls": 1
+  }
+]

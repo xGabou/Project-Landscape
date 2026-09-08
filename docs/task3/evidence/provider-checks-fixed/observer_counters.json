@@ -1,0 +1,50 @@
+[
+  {
+    "phase": "before_suite",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 625,
+      "entryGetCalls": 9227616,
+      "entryGetInclusiveNs": 2054495000,
+      "entryGetInitiallyPending": 9,
+      "presentHit": 9216297,
+      "presentMiss": 2692549,
+      "provideCalls": 10694,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 4,
+      "tileGenerationCalls": 36
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 689,
+      "entryGetCalls": 9227991,
+      "entryGetInclusiveNs": 2978466800,
+      "entryGetInitiallyPending": 21,
+      "presentHit": 9216297,
+      "presentMiss": 2692549,
+      "provideCalls": 11037,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 5,
+      "tileGenerationCalls": 48
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 689,
+      "entryGetCalls": 9227991,
+      "entryGetInclusiveNs": 2978466800,
+      "entryGetInitiallyPending": 21,
+      "presentHit": 9216297,
+      "presentMiss": 2692549,
+      "provideCalls": 11037,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 5,
+      "tileGenerationCalls": 48
+    }
+  }
+]

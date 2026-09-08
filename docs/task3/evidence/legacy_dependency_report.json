@@ -1,0 +1,44 @@
+{
+    "schemaVersion":  1,
+    "status":  "PASS",
+    "originalGeographyFiles":  6,
+    "forbiddenDependencies":  0,
+    "publicApiInheritedImports":  0,
+    "deliberateLegacyCompatibilityImports":  [
+                                                 {
+                                                     "file":  "LegacyGeographyFactory.java",
+                                                     "import":  "import raccoonman.reterraforged.world.worldgen.biome.Erosion;"
+                                                 },
+                                                 {
+                                                     "file":  "LegacyGeographyFactory.java",
+                                                     "import":  "import raccoonman.reterraforged.world.worldgen.biome.Weirdness;"
+                                                 },
+                                                 {
+                                                     "file":  "LegacyGeographyFactory.java",
+                                                     "import":  "import raccoonman.reterraforged.world.worldgen.cell.climate.Climate;"
+                                                 },
+                                                 {
+                                                     "file":  "LegacyMinecraftParameterAdapter.java",
+                                                     "import":  "import raccoonman.reterraforged.world.worldgen.biome.Continentalness;"
+                                                 },
+                                                 {
+                                                     "file":  "LegacyMinecraftParameterAdapter.java",
+                                                     "import":  "import raccoonman.reterraforged.world.worldgen.cell.climate.Climate;"
+                                                 },
+                                                 {
+                                                     "file":  "LegacyMinecraftParameterAdapter.java",
+                                                     "import":  "import raccoonman.reterraforged.world.worldgen.biome.Erosion;"
+                                                 },
+                                                 {
+                                                     "file":  "LegacyMinecraftParameterAdapter.java",
+                                                     "import":  "import raccoonman.reterraforged.world.worldgen.biome.Weirdness;"
+                                                 }
+                                             ],
+    "remainingDependencies":  [
+                                  "LegacyGeographyFactory constructs Climate at original seed position",
+                                  "LegacyMinecraftParameterAdapter invokes old Climate before filters",
+                                  "ClimateModule passes biome-center land value to LegacyCoastCompatibility",
+                                  "Terrain graph still writes legacy parameter scratch until future router replacement",
+                                  "Legacy hydrology calls existing continent-owned cache through RiverMapSource, never reenters GeographyPipeline"
+                              ]
+}

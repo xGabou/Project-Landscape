@@ -1,0 +1,10 @@
+[
+  {
+    "status": "PASS",
+    "publicRows": 85,
+    "detachedEvictionRegeneration": true,
+    "copyReset": true,
+    "slopeRelief": "explicitly unavailable; legacy gradient is not slope",
+    "pipeline": "com.gabou.atmospheregen.geography.GeographyPipeline"
+  }
+]
