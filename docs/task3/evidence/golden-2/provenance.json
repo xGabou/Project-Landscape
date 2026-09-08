@@ -1,0 +1,18 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "run":  "reproduction-1788882215285",
+    "sourceHead":  "7f97f8eb0728f2b48bcd5436970bb7e6b4880700",
+    "sourceDirty":  [
+                        " M scripts/task3/Collect-Run.ps1",
+                        "?? docs/task3/evidence/golden-2/",
+                        "?? docs/task3/evidence/golden-24/",
+                        "?? docs/task3/evidence/legacy_golden_comparison.json",
+                        "?? docs/task3/evidence/tile_digest_comparison.json",
+                        "?? scripts/task3/Run-Smokes.ps1"
+                    ],
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "backend":  "LEGACY_RTF_V0",
+    "fixtureReference":  "../../../task1c/evidence/fixture_manifest.json",
+    "fixtureSha256":  "5ab8460c9cee4bfc7b311a1984e0987dcadb36e453c1ca817dc170d8015ef8d5"
+}

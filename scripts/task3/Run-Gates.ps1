@@ -7,7 +7,7 @@ $profiles=@{
     'golden-24'=@('-PreproProfile=golden'); 'golden-2'=@('-PreproProfile=golden-scheduling','-PreproProcessors=2');
     'golden-48'=@('-PreproProfile=golden-scheduling','-PreproProcessors=48'); 'golden-repeat'=@('-PreproProfile=golden');
     'golden-tb'=@('-PreproProfile=golden','-PwithTerraBlender=true'); 'full'=@('-PreproProfile=full');
-    'foundation'=@('-PreproProfile=foundation'); 'geography'=@('-PreproProfile=geography');
+    'foundation'=@('-PreproProfile=foundation'); 'geography'=@('-PreproProfile=geography'); 'geography-final'=@('-PreproProfile=geography');
     'stage-final'=@('-PreproProfile=stage-extraction'); 'benchmark'=@('-PreproProfile=benchmark'); 'allocation'=@('-PreproProfile=allocation');
     'public-provider-benchmark'=@('-PreproProfile=public-provider-benchmark')
 }

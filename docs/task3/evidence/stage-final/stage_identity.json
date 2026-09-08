@@ -1,0 +1,13 @@
+[
+  {
+    "schemaVersion": 1,
+    "source": "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "backend": "LEGACY_RTF_V0",
+    "fixtureVersion": 1,
+    "staged": true,
+    "configurationFingerprint": "1b510addf57022ab0df6e9066854017e0a034ceaeee4ea222d2dad419cfdcf30",
+    "semantics": "Point stages are unfiltered; finalized is owning filtered tile; exact raw float bits",
+    "java": "17.0.17+10",
+    "dimension": "minecraft:overworld"
+  }
+]

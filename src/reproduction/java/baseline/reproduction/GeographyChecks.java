@@ -34,7 +34,9 @@ public final class GeographyChecks {
                     "geography",Map.of("elevationBlockY",a.elevationBlockY(),"seaRelativeElevationBlocks",a.seaRelativeElevationBlocks(),
                         "water",a.water().name(),"landform",a.landform().name(),"landValue",signals.landValue(),
                         "terrainRegionSelector",signals.terrainRegionSelector(),"slopeAvailable",false,"reliefAvailable",false),
-                    "legacyMinecraftHints",Evidence.cell(c,context.generator.getHeightmap()));
+                    "legacyCellStateAndRouterReads",Evidence.cell(c,context.generator.getHeightmap()),
+                    "legacyMinecraftParameters",Map.of("erosion",c.erosion,"weirdness",c.weirdness,"temperature",c.temperature,
+                        "moisture",c.moisture,"biomeRegion",c.biomeRegionId,"biomeType",c.biome.name()));
                 out.row("mountain_samples","point",point,"chainSelector",signals.mountainChainSelector().map(m->m.value()).orElse(null),
                     "chain",signals.mountainChainContribution(),"regional",signals.regionalMountainContribution(),
                     "combined",a.metrics().mountainInfluence().orElseThrow().value());

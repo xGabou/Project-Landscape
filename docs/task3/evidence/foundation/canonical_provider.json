@@ -1,0 +1,134 @@
+[
+  {
+    "x": 0,
+    "z": 0,
+    "elevationBlockY": 75.54733276367188,
+    "seaRelativeElevationBlocks": 12.547332763671875,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": -1,
+    "z": -1,
+    "elevationBlockY": 75.75618743896484,
+    "seaRelativeElevationBlocks": 12.756187438964844,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": 127,
+    "z": 128,
+    "elevationBlockY": 73.95315551757812,
+    "seaRelativeElevationBlocks": 10.953155517578125,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": -129,
+    "z": -128,
+    "elevationBlockY": 88.9056167602539,
+    "seaRelativeElevationBlocks": 25.905616760253906,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": 128,
+    "z": 128,
+    "elevationBlockY": 73.96956634521484,
+    "seaRelativeElevationBlocks": 10.969566345214844,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": 80000,
+    "z": -80000,
+    "elevationBlockY": 74.53841400146484,
+    "seaRelativeElevationBlocks": 11.538414001464844,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": 0,
+    "z": 0,
+    "elevationBlockY": 75.54733276367188,
+    "seaRelativeElevationBlocks": 12.547332763671875,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": -1,
+    "z": -1,
+    "elevationBlockY": 75.75618743896484,
+    "seaRelativeElevationBlocks": 12.756187438964844,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": 127,
+    "z": 128,
+    "elevationBlockY": 73.95315551757812,
+    "seaRelativeElevationBlocks": 10.953155517578125,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": -129,
+    "z": -128,
+    "elevationBlockY": 88.9056167602539,
+    "seaRelativeElevationBlocks": 25.905616760253906,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": 128,
+    "z": 128,
+    "elevationBlockY": 73.96956634521484,
+    "seaRelativeElevationBlocks": 10.969566345214844,
+    "water": "LAND",
+    "landform": "OTHER",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  },
+  {
+    "x": 80000,
+    "z": -80000,
+    "elevationBlockY": 74.53841400146484,
+    "seaRelativeElevationBlocks": 11.538414001464844,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "mountainInfluenceKnown": true,
+    "cacheWarmEqual": true,
+    "filteredHeightEqual": true
+  }
+]

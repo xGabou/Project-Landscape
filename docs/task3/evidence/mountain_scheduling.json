@@ -1,0 +1,49 @@
+{
+    "schemaVersion":  1,
+    "status":  "PASS",
+    "newFieldObservations":  525,
+    "distinctSeedTiles":  35,
+    "semantics":  "Three captured mountain values as raw float bits, core traversal; separate from unchanged 24-field legacy goldens",
+    "suites":  [
+                   {
+                       "suite":  "golden-24",
+                       "count":  105,
+                       "changed":  0,
+                       "workers":  [
+                                       24
+                                   ]
+                   },
+                   {
+                       "suite":  "golden-2",
+                       "count":  105,
+                       "changed":  0,
+                       "workers":  [
+                                       2
+                                   ]
+                   },
+                   {
+                       "suite":  "golden-48",
+                       "count":  105,
+                       "changed":  0,
+                       "workers":  [
+                                       48
+                                   ]
+                   },
+                   {
+                       "suite":  "golden-repeat",
+                       "count":  105,
+                       "changed":  0,
+                       "workers":  [
+                                       24
+                                   ]
+                   },
+                   {
+                       "suite":  "golden-tb",
+                       "count":  105,
+                       "changed":  0,
+                       "workers":  [
+                                       24
+                                   ]
+                   }
+               ]
+}

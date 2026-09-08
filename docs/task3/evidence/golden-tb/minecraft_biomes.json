@@ -1,0 +1,937 @@
+[
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "coast",
+      "x": -4032,
+      "z": -4096
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -1728
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:deep_frozen_ocean"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "mountain",
+      "x": -2688,
+      "z": -4096
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "mountain_edge",
+      "x": -2688,
+      "z": -4096
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "plains",
+      "x": 1280,
+      "z": -4096
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "plateau",
+      "x": 3392,
+      "z": -3072
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:old_growth_pine_taiga"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "region_transition",
+      "x": -2688,
+      "z": -4096
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:plains"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "river",
+      "x": -64,
+      "z": -4096
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:river"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": -2752,
+      "z": -2432
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:frozen_river"
+  },
+  {
+    "seed": "8675309",
+    "point": {
+      "label": "shallow_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "quartY": 20,
+    "semantics": "legacy MultiNoiseBiomeSource query; not a filtered-geography resolver",
+    "biome": "minecraft:ocean"
+  }
+]
