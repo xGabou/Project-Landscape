@@ -1,0 +1,1340 @@
+{
+    "schemaVersion":  1,
+    "sourceHead":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "methodMap":  "../TASK_3_GEOGRAPHY_EXTRACTION.md",
+    "scope":  "Explicit Cell writes in point generation and both filter families; reset/copy are marked transport, inactive cell/filter duplicates are marked separately. Noise/member fields of non-Cell owners are excluded.",
+    "fieldCount":  24,
+    "writes":  [
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  51,
+                       "field":  "regionMoisture",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.regionMoisture = 0.5F;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  52,
+                       "field":  "regionTemperature",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.regionTemperature = 0.5F;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  53,
+                       "field":  "biomeRegionEdge",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.biomeRegionEdge = 1.0F;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  54,
+                       "field":  "riverMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "this.riverMask = 1.0F;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  55,
+                       "field":  "erosionMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "this.erosionMask = false;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  56,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.terrain = TerrainType.NONE;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  57,
+                       "field":  "biome",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.biome = BiomeType.GRASSLAND;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  61,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.height = other.height;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  62,
+                       "field":  "heightErosion",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "this.heightErosion = other.heightErosion;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  63,
+                       "field":  "sediment",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "this.sediment = other.sediment;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  64,
+                       "field":  "gradient",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "this.gradient = other.gradient;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  65,
+                       "field":  "regionMoisture",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.regionMoisture = other.regionMoisture;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  66,
+                       "field":  "regionTemperature",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.regionTemperature = other.regionTemperature;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  67,
+                       "field":  "continentId",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.continentId = other.continentId;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  68,
+                       "field":  "continentEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.continentEdge = other.continentEdge;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  69,
+                       "field":  "terrainRegionId",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.terrainRegionId = other.terrainRegionId;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  70,
+                       "field":  "terrainRegionEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.terrainRegionEdge = other.terrainRegionEdge;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  71,
+                       "field":  "biomeRegionId",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.biomeRegionId = other.biomeRegionId;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  72,
+                       "field":  "biomeRegionEdge",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.biomeRegionEdge = other.biomeRegionEdge;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  73,
+                       "field":  "macroBiomeId",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.macroBiomeId = other.macroBiomeId;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  74,
+                       "field":  "riverMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "this.riverMask = other.riverMask;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  75,
+                       "field":  "continentX",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.continentX = other.continentX;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  76,
+                       "field":  "continentZ",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.continentZ = other.continentZ;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  77,
+                       "field":  "erosionMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "this.erosionMask = other.erosionMask;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  78,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.terrain = other.terrain;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  79,
+                       "field":  "biome",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.biome = other.biome;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  80,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "this.erosion = other.erosion;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  81,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "this.weirdness = other.weirdness;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  82,
+                       "field":  "temperature",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.temperature = other.temperature;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  83,
+                       "field":  "moisture",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "this.moisture = other.moisture;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/Cell.java",
+                       "line":  84,
+                       "field":  "beachNoise",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "this.beachNoise = other.beachNoise;",
+                       "transportOnly":  true,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/Climate.java",
+                       "line":  26,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = TerrainType.SHALLOW_OCEAN;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  true
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  126,
+                       "field":  "biomeRegionId",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.biomeRegionId = this.cellValue(this.seed , cellX, cellZ);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  127,
+                       "field":  "regionMoisture",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.regionMoisture = this.moisture.compute(centerX, centerZ, 0);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  128,
+                       "field":  "regionTemperature",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.regionTemperature = this.temperature.compute(centerX, centerZ, 0);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  129,
+                       "field":  "macroBiomeId",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.macroBiomeId = this.macroBiomeNoise.compute(centerX, centerZ, 0);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  134,
+                       "field":  "biomeRegionEdge",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.biomeRegionEdge = this.edgeValue(edgeDistance, edgeDistance2);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  137,
+                       "field":  "regionMoisture",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.regionMoisture = this.modifyMoisture(cell.regionMoisture, continentEdge);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  139,
+                       "field":  "biome",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.biome = BiomeType.get(cell.regionTemperature, cell.regionMoisture);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  140,
+                       "field":  "regionTemperature",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.regionTemperature = this.modifyTemp(cell.height, cell.regionTemperature, originalX, originalZ);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  142,
+                       "field":  "temperature",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.temperature = cell.biome.getTemperature(cell.biomeRegionId);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  143,
+                       "field":  "moisture",
+                       "classification":  "LEGACY CLIMATE/BIOME CLASSIFICATION",
+                       "statement":  "cell.moisture = cell.biome.getMoisture(cell.biomeRegionId);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/climate/ClimateModule.java",
+                       "line":  178,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = TerrainType.COAST;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  true
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/ContinentLerper2.java",
+                       "line":  44,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = NoiseUtil.lerp(lowerVal, upperVal, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/ContinentLerper3.java",
+                       "line":  51,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = NoiseUtil.lerp(lowerVal, cell.height, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/ContinentLerper3.java",
+                       "line":  57,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = NoiseUtil.lerp(lowerVal, cell.height, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/MushroomIslandPopulator.java",
+                       "line":  25,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = NoiseUtil.lerp(landHeight, coastHeight, NoiseUtil.map(cell.continentEdge, 0.0F, 1.0F, this.inlandPoint, this.coastPoint));",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/advanced/AdvancedContinentGenerator.java",
+                       "line":  101,
+                       "field":  "continentId",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentId = AbstractContinent.getCellValue(this.seed, cellX, cellY);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/advanced/AdvancedContinentGenerator.java",
+                       "line":  102,
+                       "field":  "continentEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentEdge = this.getDistanceValue(x, y, cellX, cellY, nearest);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/advanced/AdvancedContinentGenerator.java",
+                       "line":  103,
+                       "field":  "continentX",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentX = this.getCorrectedContinentCenter(cellPointX, sumX / 8.0F);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/advanced/AdvancedContinentGenerator.java",
+                       "line":  104,
+                       "field":  "continentZ",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentZ = this.getCorrectedContinentCenter(cellPointY, sumY / 8.0F);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/fancy/FancyContinentGenerator.java",
+                       "line":  78,
+                       "field":  "continentX",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentX = 0;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/fancy/FancyContinentGenerator.java",
+                       "line":  79,
+                       "field":  "continentZ",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentZ = 0;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/fancy/FancyContinentGenerator.java",
+                       "line":  80,
+                       "field":  "continentId",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentId = 0.0F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/fancy/FancyContinentGenerator.java",
+                       "line":  81,
+                       "field":  "continentEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentEdge = this.getEdgeValue(x, y);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/infinite/InfiniteContinentGenerator.java",
+                       "line":  20,
+                       "field":  "continentId",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentId = 0.0F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/infinite/InfiniteContinentGenerator.java",
+                       "line":  21,
+                       "field":  "continentEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentEdge = 0.0F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/infinite/InfiniteContinentGenerator.java",
+                       "line":  22,
+                       "field":  "continentX",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentX = 0;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/infinite/InfiniteContinentGenerator.java",
+                       "line":  23,
+                       "field":  "continentZ",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentZ = 0;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/ContinentGenerator.java",
+                       "line":  103,
+                       "field":  "continentId",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentId = this.cellIdentity(this.seed, cellX, cellY);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/ContinentGenerator.java",
+                       "line":  104,
+                       "field":  "continentEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentEdge = this.cellEdgeValue(edgeDistance, edgeDistance2);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/ContinentGenerator.java",
+                       "line":  105,
+                       "field":  "continentX",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentX = (int) (centerX / this.frequency);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/ContinentGenerator.java",
+                       "line":  106,
+                       "field":  "continentZ",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentZ = (int) (centerY / this.frequency);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/ContinentGenerator.java",
+                       "line":  107,
+                       "field":  "continentEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentEdge *= this.getShape(x, y, cell.continentEdge);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/SingleContinentGenerator.java",
+                       "line":  24,
+                       "field":  "continentId",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentId = 0.0F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/SingleContinentGenerator.java",
+                       "line":  25,
+                       "field":  "continentEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentEdge = 0.0F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/SingleContinentGenerator.java",
+                       "line":  26,
+                       "field":  "continentX",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentX = 0;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/continent/simple/SingleContinentGenerator.java",
+                       "line":  27,
+                       "field":  "continentZ",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.continentZ = 0;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/filter/BeachDetect.java",
+                       "line":  31,
+                       "field":  "terrain",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "map.getCellRaw(x, z).terrain = TerrainType.BEACH;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  false,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/filter/NoiseCorrection.java",
+                       "line":  43,
+                       "field":  "terrain",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "map.getCellRaw(x, z).terrain = TerrainType.BEACH;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  false,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  43,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = TerrainType.FLATS;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  44,
+                       "field":  "beachNoise",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.beachNoise = this.beachNoise.compute(x, z, 0);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  59,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = 0.445F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  60,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = 0.34F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  64,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = -0.05F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  65,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = -0.03F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  69,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = Erosion.LEVEL_4.mid();",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  70,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = -0.03F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  73,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = Erosion.LEVEL_6.mid();",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  74,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = Weirdness.VALLEY.mid();",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                       "line":  80,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = -cell.weirdness;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/WorldLookup.java",
+                       "line":  98,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = TerrainType.BEACH;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/lake/Lake.java",
+                       "line":  45,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = Math.min(bankHeight, cell.height);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/lake/Lake.java",
+                       "line":  54,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = NoiseUtil.lerp(cell.height, lakeDepth, depthAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/lake/Lake.java",
+                       "line":  55,
+                       "field":  "terrain",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.terrain = TerrainType.LAKE;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/lake/Lake.java",
+                       "line":  56,
+                       "field":  "riverMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.riverMask = Math.min(cell.riverMask, 1.0F - depthAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/lake/Lake.java",
+                       "line":  69,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = NoiseUtil.lerp(cell.height, bankHeight, valleyAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/lake/Lake.java",
+                       "line":  70,
+                       "field":  "riverMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.riverMask *= 1.0F - valleyAlpha;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/lake/Lake.java",
+                       "line":  71,
+                       "field":  "riverMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.riverMask = Math.min(cell.riverMask, 1.0F - valleyAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/river/RiverCarver.java",
+                       "line":  60,
+                       "field":  "riverMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.riverMask = Math.min(cell.riverMask, 1.0F - valleyAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/river/RiverCarver.java",
+                       "line":  61,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = Math.min(NoiseUtil.lerp(cell.height, bankHeight, valleyAlpha), cell.height);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/river/RiverCarver.java",
+                       "line":  72,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = Math.min(NoiseUtil.lerp(cell.height, bedHeight, banksAlpha), cell.height);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/river/RiverCarver.java",
+                       "line":  77,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = NoiseUtil.lerp(cell.height, bedHeight, bedAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/river/RiverCarver.java",
+                       "line":  131,
+                       "field":  "erosionMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.erosionMask = true;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/river/RiverCarver.java",
+                       "line":  133,
+                       "field":  "terrain",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.terrain = TerrainType.RIVER;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/wetland/Wetland.java",
+                       "line":  69,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = NoiseUtil.lerp(cell.height, this.banks, valleyAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/wetland/Wetland.java",
+                       "line":  73,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = NoiseUtil.lerp(cell.height, this.bed, poolsAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/wetland/Wetland.java",
+                       "line":  76,
+                       "field":  "erosionMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.erosionMask = true;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/wetland/Wetland.java",
+                       "line":  79,
+                       "field":  "terrain",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.terrain = TerrainType.WETLAND;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/wetland/Wetland.java",
+                       "line":  84,
+                       "field":  "height",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.height = NoiseUtil.lerp(cell.height, mounds, shapeAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/rivermap/wetland/Wetland.java",
+                       "line":  86,
+                       "field":  "riverMask",
+                       "classification":  "HYDROLOGY",
+                       "statement":  "cell.riverMask = Math.min(cell.riverMask, 1.0F - valleyAlpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/Blender.java",
+                       "line":  49,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = NoiseUtil.lerp(lowerHeight, upperHeight, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/Blender.java",
+                       "line":  50,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = NoiseUtil.lerp(lowerErosion, upperErosion, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/Blender.java",
+                       "line":  51,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = NoiseUtil.lerp(lowerWeirdness, upperWeirdness, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/Blender.java",
+                       "line":  53,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = lowerType;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/OceanPopulator.java",
+                       "line":  12,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = this.terrainType;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/OceanPopulator.java",
+                       "line":  13,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = Math.max(this.height.compute(x, z, 0), 0.0F);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/OceanPopulator.java",
+                       "line":  14,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = -1.1F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/OceanPopulator.java",
+                       "line":  15,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = -1.1F;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/TerrainPopulator.java",
+                       "line":  20,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = this.type;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/TerrainPopulator.java",
+                       "line":  21,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = Math.max(base + height, 0.0F);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/TerrainPopulator.java",
+                       "line":  22,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = this.erosion.compute(x, z, 0);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/TerrainPopulator.java",
+                       "line":  23,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = this.weirdness.compute(x, z, 0);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/VolcanoPopulator.java",
+                       "line":  80,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = Weirdness.LOW_SLICE_NORMAL_DESCENDING.mid();",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/VolcanoPopulator.java",
+                       "line":  81,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = Erosion.LEVEL_4.mid();",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/VolcanoPopulator.java",
+                       "line":  88,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = this.inner;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/VolcanoPopulator.java",
+                       "line":  93,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = this.outer;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/VolcanoPopulator.java",
+                       "line":  97,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = this.outer;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/VolcanoPopulator.java",
+                       "line":  99,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = this.bias + value;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/populator/VolcanoPopulator.java",
+                       "line":  104,
+                       "field":  "terrain",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrain = TerrainType.VOLCANO;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/region/RegionLerper.java",
+                       "line":  38,
+                       "field":  "height",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.height = NoiseUtil.lerp(lowerHeight, upperHeight, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/region/RegionLerper.java",
+                       "line":  39,
+                       "field":  "erosion",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.erosion = NoiseUtil.lerp(lowerErosion, upperErosion, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/region/RegionLerper.java",
+                       "line":  40,
+                       "field":  "weirdness",
+                       "classification":  "LEGACY MINECRAFT PARAMETER HINT",
+                       "statement":  "cell.weirdness = NoiseUtil.lerp(lowerWeirdness, upperWeirdness, alpha);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/region/RegionModule.java",
+                       "line":  65,
+                       "field":  "terrainRegionId",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrainRegionId = this.cellValue(this.seed, cellX, cellY);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/cell/terrain/region/RegionModule.java",
+                       "line":  66,
+                       "field":  "terrainRegionEdge",
+                       "classification":  "PHYSICAL GEOGRAPHY",
+                       "statement":  "cell.terrainRegionEdge = this.edgeValue(edgeDistance, edgeDistance2);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/BeachDetect.java",
+                       "line":  29,
+                       "field":  "terrain",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "map.getCellRaw(x, z).terrain = TerrainType.BEACH;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Erosion.java",
+                       "line":  180,
+                       "field":  "height",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "cell.height += change;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Erosion.java",
+                       "line":  181,
+                       "field":  "sediment",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "cell.sediment += change;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Erosion.java",
+                       "line":  188,
+                       "field":  "height",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "cell.height -= change;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Erosion.java",
+                       "line":  189,
+                       "field":  "heightErosion",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "cell.heightErosion -= change;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/NoiseCorrection.java",
+                       "line":  41,
+                       "field":  "terrain",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "map.getCellRaw(x, z).terrain = TerrainType.BEACH;",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Smoothing.java",
+                       "line":  48,
+                       "field":  "height",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "cell2.height -= this.modifier.modify(cell, dif * this.smoothingRate);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   },
+                   {
+                       "file":  "src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Steepness.java",
+                       "line":  30,
+                       "field":  "gradient",
+                       "classification":  "GEOGRAPHY FINALIZATION",
+                       "statement":  "cell.gradient = Math.min(1.0F, totalHeightDif * this.scaler);",
+                       "transportOnly":  false,
+                       "activeFilterFamily":  true,
+                       "legacyCoastCompatibility":  false
+                   }
+               ]
+}

@@ -1,0 +1,17 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "run":  "reproduction-1788880596805",
+    "sourceHead":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "sourceDirty":  [
+                        " M .gitattributes",
+                        " M src/reproduction/java/baseline/reproduction/ReproductionClient.java",
+                        "?? docs/task3/",
+                        "?? scripts/task3/",
+                        "?? src/reproduction/java/baseline/reproduction/StageBaseline.java"
+                    ],
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "backend":  "LEGACY_RTF_V0",
+    "fixtureReference":  "../../../task1c/evidence/fixture_manifest.json",
+    "fixtureSha256":  "5ab8460c9cee4bfc7b311a1984e0987dcadb36e453c1ca817dc170d8015ef8d5"
+}

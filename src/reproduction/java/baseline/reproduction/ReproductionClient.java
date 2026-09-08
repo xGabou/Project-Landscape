@@ -76,7 +76,9 @@ public final class ReproductionClient {
                 work=server.submit(()->{
                     try{
                         out.row("observer_counters", "phase", "before_suite", "seed", currentSeed(), "counters", Metrics.snapshot());
-                        if(task1c.equals("foundation")) {
+                        if(task1c.equals("stage-baseline")) {
+                            StageBaseline.run(server.overworld(),out);
+                        } else if(task1c.equals("foundation")) {
                             FoundationTests.run(server.overworld(),out);
                             var metadata=((RTFRandomState)(Object)server.overworld().getChunkSource().randomState()).generatorContext().generationContext();
                             if(metadata==null)throw new AssertionError("Missing automatic world manifest binding");
