@@ -76,8 +76,8 @@ public final class ReproductionClient {
                 work=server.submit(()->{
                     try{
                         out.row("observer_counters", "phase", "before_suite", "seed", currentSeed(), "counters", Metrics.snapshot());
-                        if(task1c.equals("stage-baseline")) {
-                            StageBaseline.run(server.overworld(),out);
+                        if(task1c.equals("stage-baseline") || task1c.equals("stage-extraction")) {
+                            StageBaseline.run(server.overworld(),out,task1c.equals("stage-extraction"));
                         } else if(task1c.equals("foundation")) {
                             FoundationTests.run(server.overworld(),out);
                             var metadata=((RTFRandomState)(Object)server.overworld().getChunkSource().randomState()).generatorContext().generationContext();

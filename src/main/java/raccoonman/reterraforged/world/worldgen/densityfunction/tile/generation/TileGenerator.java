@@ -3,6 +3,7 @@
 package raccoonman.reterraforged.world.worldgen.densityfunction.tile.generation;
 
 import java.util.concurrent.CompletableFuture;
+import com.gabou.atmospheregen.geography.GeographyPipeline;
 
 import raccoonman.reterraforged.concurrent.ThreadPools;
 import raccoonman.reterraforged.concurrent.pool.ArrayPool;
@@ -17,6 +18,7 @@ import raccoonman.reterraforged.world.worldgen.densityfunction.tile.Tile.Chunk;
 public class TileGenerator {
 	private Heightmap heightmap;
 	private WorldFilters filters;
+	private final GeographyPipeline<Cell, Rivermap, Tile> geography;
 	private ArrayPool<Cell> cellPool;
 	private ArrayPool<Chunk> chunkPool;
 	private int tileChunks;
@@ -29,6 +31,9 @@ public class TileGenerator {
 	public TileGenerator(Heightmap heightmap, WorldFilters filters, int tileChunks, int tileBorder, int batchCount) {
 		this.heightmap = heightmap;
 		this.filters = filters;
+		// Retain the real filter slot for failure-injection/lifecycle tests. No per-cell lambda.
+		this.geography = new GeographyPipeline<>(heightmap.continentStage(), heightmap.terrainStage(),
+			heightmap.hydrologyStage(), heightmap.legacyParameters(), (tile, optional) -> this.filters.apply(tile, optional));
 		this.cellPool = ArrayPool.of(100, (length) -> {
 			Cell[] cells = new Cell[length];
 			for(int i = 0; i < cells.length; i++) {
@@ -49,6 +54,8 @@ public class TileGenerator {
 		return this.heightmap;
 	}
 	
+	public GeographyPipeline<Cell, Rivermap, Tile> geographyPipeline() { return this.geography; }
+
 	public CompletableFuture<Tile> generate(int tileX, int tileZ) {
 		Tile tile = this.makeTile(tileX, tileZ);
 		CompletableFuture<?>[] futures = new CompletableFuture<?>[this.batchCount * this.batchCount];
@@ -71,10 +78,7 @@ public class TileGenerator {
 		                    		int worldZ = chunk.getBlockZ() + dz;
 		                    		Cell cell = chunk.getCell(dx, dz);
 		                    		
-			                        this.heightmap.applyTerrain(cell, worldX, worldZ);
-			                        rivers = Rivermap.get(cell, rivers, this.heightmap);
-			                        this.heightmap.applyRivers(cell, worldX, worldZ, rivers);
-			                        this.heightmap.applyClimate(cell, worldX, worldZ, true);
+			                        rivers = this.geography.generatePoint(cell, worldX, worldZ, rivers, true);
 			                    }
 			                }
 			            }
@@ -110,10 +114,7 @@ public class TileGenerator {
 		                    		float worldZ = (chunk.getBlockZ() + dz) * zoom + translateZ;
 		                    		Cell cell = chunk.getCell(dx, dz);
 		                    		
-			                        this.heightmap.applyTerrain(cell, worldX, worldZ);
-			                        rivers = Rivermap.get(cell, rivers, this.heightmap);
-			                        this.heightmap.applyRivers(cell, worldX, worldZ, rivers);
-			                        this.heightmap.applyClimate(cell, worldX, worldZ, true);
+			                        rivers = this.geography.generatePoint(cell, worldX, worldZ, rivers, true);
 			                    }
 			                }
 			            }
@@ -136,7 +137,7 @@ public class TileGenerator {
 			Tile snapshot = null;
 			try {
 				if (failure == null && !result.isCancelled()) {
-					this.filters.apply(workspace, optionalFilters);
+					this.geography.finalizeTile(workspace, optionalFilters);
 					snapshot = workspace.snapshot();
 				}
 			} catch (Throwable thrown) { failure = thrown; }
