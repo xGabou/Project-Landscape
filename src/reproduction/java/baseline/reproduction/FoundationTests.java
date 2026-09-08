@@ -144,7 +144,7 @@ public final class FoundationTests {
         catch(IllegalStateException expected){out.row("foundation_invalid","case","world seed mismatch","error",expected.getMessage());}
         if(!GenerationManifestStore.read(path).equals(manifest))throw new AssertionError("Mismatch overwrote manifest");
         out.row("manifest_roundtrip","fixtureVersion",1,"manifest",GenerationManifestStore.encode(manifest),"roundtrip",true,"contextId",a.contextId(),"separateRuntimeTokens",true,"canonicalOrdering",true,"effectivePresetMatchesTask1C",true);
-        out.row("existing_world_resolution","recognition","test calls store after reading real active legacy preset; automatic world hook not yet bound","foreignWithoutManifest","untouched","first",first.kind().name(),"reopen",reopen.kind().name(),"mismatch","rejected without overwrite");
+        out.row("existing_world_resolution","recognition","isolated store test with real active legacy preset; automatic binding is tested separately in world_binding_checks and runtime smoke","foreignWithoutManifest","untouched","first",first.kind().name(),"reopen",reopen.kind().name(),"mismatch","rejected without overwrite");
     }
     private static void seeds(Evidence out) throws Exception {
         var dimensions=List.of(new net.minecraft.resources.ResourceLocation("minecraft:overworld"),new net.minecraft.resources.ResourceLocation("minecraft:the_nether"),new net.minecraft.resources.ResourceLocation("minecraft:the_end"));
@@ -166,7 +166,7 @@ public final class FoundationTests {
             if(a.seed(domain)==b.seed(domain))throw new AssertionError("High seed bits lost");
             Set<Long> values=new HashSet<>();for(var dim:dimensions)values.add(new NamedSeedService(8675309L,dim,GenerationVersions.planned()).seed(domain));
             if(values.size()!=3)throw new AssertionError("Dimension seed collision");
-            out.row("seed_collision_legacy_vs_new","domain",domain.id(),"legacyIntA",(int)8675309L,"legacyIntB",(int)4303642605L,"newA",Long.toString(a.seed(domain)),"newB",Long.toString(b.seed(domain)),"newDiverges",true,"legacyTerrainProof","Task 1C canonical collision corpus; final Task 2 comparator rerun still required");
+            out.row("seed_collision_legacy_vs_new","domain",domain.id(),"legacyIntA",(int)8675309L,"legacyIntB",(int)4303642605L,"newA",Long.toString(a.seed(domain)),"newB",Long.toString(b.seed(domain)),"newDiverges",true,"legacyTerrainProof","separate golden profile and Verify-Goldens.ps1 check all 85 legacy collision fixtures");
             out.row("dimension_seed_separation","domain",domain.id(),"distinctDimensions",3,"distinctValues",values.size());
         }
         var onlyClimateChanged=new GenerationVersions(1,GeographyAlgorithmVersion.PA_GEOGRAPHY_V1,BaselineClimateAlgorithmVersion.LEGACY_RTF_HINTS_V0,BiomeResolverAlgorithmVersion.PA_RESOLVER_V1);

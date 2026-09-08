@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  1,
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "results":  [
+                    {
+                        "case":  "smoke-standalone-final",
+                        "world":  "task0-1788877331112",
+                        "status":  "PASS",
+                        "chunkChecks":  14,
+                        "createOrOpenSaveReopen":  true
+                    },
+                    {
+                        "case":  "smoke-tb-final",
+                        "world":  "task0-1788877388683",
+                        "status":  "PASS",
+                        "chunkChecks":  14,
+                        "createOrOpenSaveReopen":  true
+                    },
+                    {
+                        "case":  "smoke-vanilla-final",
+                        "world":  "task0-1788877453029",
+                        "status":  "PASS",
+                        "chunkChecks":  14,
+                        "createOrOpenSaveReopen":  true
+                    },
+                    {
+                        "case":  "smoke-existing-legacy-final",
+                        "world":  "task2-existing-legacy-fec7d21b9a9d40c6a4d11a3f41502400",
+                        "status":  "PASS",
+                        "chunkChecks":  14,
+                        "createOrOpenSaveReopen":  true
+                    }
+                ],
+    "oldWorld":  {
+                     "source":  "task0-1788821918280",
+                     "copiedTo":  "task2-existing-legacy-fec7d21b9a9d40c6a4d11a3f41502400",
+                     "sourceHadManifest":  false,
+                     "sourceLevelDatSha256":  "37dcdde6f51f3a2893cc05ff81f1d6b83f2b8cabae27be005187d3ac21a0a722",
+                     "sourceUnchanged":  true,
+                     "copyManifestCreated":  true
+                 },
+    "status":  "PASS"
+}

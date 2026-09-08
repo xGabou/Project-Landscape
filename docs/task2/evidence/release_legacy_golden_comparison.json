@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "backend":  "LEGACY_RTF_V0",
+    "canonicalSemantics":  "LEGACY_FILTERED_CANONICAL",
+    "directSemantics":  "LEGACY_DIRECT_APPROXIMATE",
+    "exactness":  "signed raw float32 bits and exact identifiers; no epsilon",
+    "counts":  {
+                   "canonical_geography":  595,
+                   "legacy_direct_samples":  595,
+                   "biome_hints":  595,
+                   "minecraft_biomes":  85,
+                   "seed_collision":  85,
+                   "cached_direct_comparison":  595
+               },
+    "tileResults":  [
+                        {
+                            "name":  "golden-release",
+                            "count":  105,
+                            "changed":  0,
+                            "workers":  [
+                                            24
+                                        ]
+                        }
+                    ],
+    "diagnosticRows":  340,
+    "diagnosticDifferingRows":  340,
+    "diagnosticFields":  {
+                             "gradient":  340,
+                             "height":  319,
+                             "heightErosion":  176,
+                             "hint_gradient":  340,
+                             "hint_height":  319,
+                             "hint_height_erosion":  176,
+                             "hint_sediment":  96,
+                             "sediment":  96,
+                             "terrain":  6
+                         },
+    "primaryOnly":  true,
+    "failures":  [
+
+                 ],
+    "status":  "PASS"
+}

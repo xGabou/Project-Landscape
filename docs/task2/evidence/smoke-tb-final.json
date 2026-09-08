@@ -1,0 +1,166 @@
+[
+  {
+    "phase": "initial",
+    "vanilla": false,
+    "metadata": {
+      "baselineClimateVersion": "LEGACY_RTF_HINTS_V0",
+      "biomeResolverVersion": "LEGACY_MULTINOISE_V0",
+      "contextId": "atmospheregen:450ee0c4a4a5a5fc9c0fccd49973131a24e950576e9c4dc87cb48ec044308f3c",
+      "dimension": "minecraft:overworld",
+      "fingerprint": "450ee0c4a4a5a5fc9c0fccd49973131a24e950576e9c4dc87cb48ec044308f3c",
+      "geographyVersion": "LEGACY_RTF_V0",
+      "manifestSchema": "1",
+      "seedServiceUsage": "new architecture infrastructure only; legacy generation does not consume these streams",
+      "stageSeed/atmospheregen:baseline_precipitation": "4629167059216572495",
+      "stageSeed/atmospheregen:baseline_temperature": "3653283621020586307",
+      "stageSeed/atmospheregen:biome_spatial_selection": "-4967736174976163592",
+      "stageSeed/atmospheregen:continent": "5239652647942506972",
+      "stageSeed/atmospheregen:hydrology": "-1565530334296042885",
+      "stageSeed/atmospheregen:mountain_chains": "-2517338120034848642",
+      "stageSeed/atmospheregen:ocean": "2337424783971863222",
+      "stageSeed/atmospheregen:surface": "-5027431235848322668",
+      "stageSeed/atmospheregen:terrain_regions": "972237299574718017",
+      "worldSeed": "8675309"
+    },
+    "terraBlender": true,
+    "existingTask1CWorld": false
+  },
+  {
+    "height": 76,
+    "x": 0,
+    "z": 0,
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "height": 89,
+    "x": -129,
+    "z": -129,
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:birch_forest"
+  },
+  {
+    "height": 75,
+    "x": 127,
+    "z": 127,
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:plains"
+  },
+  {
+    "height": 74,
+    "x": 128,
+    "z": 128,
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:plains"
+  },
+  {
+    "height": 69,
+    "x": 1024,
+    "z": -1024,
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:snowy_taiga"
+  },
+  {
+    "height": 63,
+    "x": -2048,
+    "z": 2048,
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:warm_ocean"
+  },
+  {
+    "height": 63,
+    "x": 4096,
+    "z": 0,
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:ocean"
+  },
+  {
+    "phase": "reopened",
+    "vanilla": false,
+    "metadata": {
+      "baselineClimateVersion": "LEGACY_RTF_HINTS_V0",
+      "biomeResolverVersion": "LEGACY_MULTINOISE_V0",
+      "contextId": "atmospheregen:450ee0c4a4a5a5fc9c0fccd49973131a24e950576e9c4dc87cb48ec044308f3c",
+      "dimension": "minecraft:overworld",
+      "fingerprint": "450ee0c4a4a5a5fc9c0fccd49973131a24e950576e9c4dc87cb48ec044308f3c",
+      "geographyVersion": "LEGACY_RTF_V0",
+      "manifestSchema": "1",
+      "seedServiceUsage": "new architecture infrastructure only; legacy generation does not consume these streams",
+      "stageSeed/atmospheregen:baseline_precipitation": "4629167059216572495",
+      "stageSeed/atmospheregen:baseline_temperature": "3653283621020586307",
+      "stageSeed/atmospheregen:biome_spatial_selection": "-4967736174976163592",
+      "stageSeed/atmospheregen:continent": "5239652647942506972",
+      "stageSeed/atmospheregen:hydrology": "-1565530334296042885",
+      "stageSeed/atmospheregen:mountain_chains": "-2517338120034848642",
+      "stageSeed/atmospheregen:ocean": "2337424783971863222",
+      "stageSeed/atmospheregen:surface": "-5027431235848322668",
+      "stageSeed/atmospheregen:terrain_regions": "972237299574718017",
+      "worldSeed": "8675309"
+    },
+    "terraBlender": true,
+    "existingTask1CWorld": false
+  },
+  {
+    "height": 63,
+    "x": 2048,
+    "z": 2048,
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:deep_lukewarm_ocean"
+  },
+  {
+    "height": 63,
+    "x": 1919,
+    "z": 1919,
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:deep_lukewarm_ocean"
+  },
+  {
+    "height": 63,
+    "x": 2175,
+    "z": 2175,
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:deep_lukewarm_ocean"
+  },
+  {
+    "height": 63,
+    "x": 2176,
+    "z": 2176,
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:deep_lukewarm_ocean"
+  },
+  {
+    "height": 63,
+    "x": 3072,
+    "z": 1024,
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:deep_lukewarm_ocean"
+  },
+  {
+    "height": 63,
+    "x": 0,
+    "z": 4096,
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:deep_cold_ocean"
+  },
+  {
+    "height": 66,
+    "x": 6144,
+    "z": 2048,
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:desert"
+  }
+]

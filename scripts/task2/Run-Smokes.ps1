@@ -1,5 +1,7 @@
 # Original Task 2 smoke/old-save verification. All Rights Reserved.
+param([string]$Suffix='')
 $ErrorActionPreference='Stop'
+if($Suffix -notmatch '^[a-zA-Z0-9_-]*$'){throw 'Invalid evidence suffix'}
 $root=(Resolve-Path "$PSScriptRoot/../..").Path
 Set-Location $root
 $oldName=(Get-Content 'docs/task1c/evidence/smoke-standalone-pass.txt' -Raw).Trim()
@@ -19,7 +21,7 @@ $cases=@(
 )
 $results=@()
 foreach($case in $cases){
-    $name=$case.name
+    $name=$case.name+$Suffix
     if(Test-Path "docs/task2/evidence/$name.json"){throw "Refusing to overwrite $name evidence"}
     Write-Output "Starting $name"
     $arguments=@('runSmokeClient')+$case.arguments+@('--console=plain')
@@ -39,4 +41,4 @@ if(!$unchanged -or (Test-Path "$oldPath/data/atmospheregen/generation_manifest.j
 $report=[ordered]@{schemaVersion=1;comparator='cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee';results=$results;
     oldWorld=[ordered]@{source=$oldName;copiedTo=$copyName;sourceHadManifest=$false;sourceLevelDatSha256=$beforeHash.ToLowerInvariant();sourceUnchanged=$unchanged;
         copyManifestCreated=(Test-Path "$copyPath/data/atmospheregen/generation_manifest.json")};status='PASS'}
-[IO.File]::WriteAllText("$root/docs/task2/evidence/runtime_smoke.json",($report|ConvertTo-Json -Depth 20)+"`n",[Text.UTF8Encoding]::new($false))
+[IO.File]::WriteAllText("$root/docs/task2/evidence/runtime_smoke$Suffix.json",($report|ConvertTo-Json -Depth 20)+"`n",[Text.UTF8Encoding]::new($false))

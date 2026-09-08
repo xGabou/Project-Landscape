@@ -1,5 +1,6 @@
 # Original Task 2 comparator gate. All Rights Reserved. Accepted Task 1C data is read-only.
-param([string]$CandidateRoot="$PSScriptRoot/../../docs/task2/evidence",[switch]$PrimaryOnly)
+param([string]$CandidateRoot="$PSScriptRoot/../../docs/task2/evidence",[switch]$PrimaryOnly,
+    [string]$PrimarySuite='golden-24',[string]$OutputPrefix='')
 $ErrorActionPreference='Stop'
 $reference=(Resolve-Path "$PSScriptRoot/../../docs/task1c/evidence").Path
 function Rows($path){return @(Get-Content -LiteralPath $path -Raw | ConvertFrom-Json)}
@@ -12,7 +13,7 @@ function FieldsEqual($a,$b){
 $failures=[Collections.Generic.List[string]]::new()
 $counts=[ordered]@{}
 foreach($table in @('canonical_geography','legacy_direct_samples','biome_hints','minecraft_biomes','seed_collision','cached_direct_comparison')){
-    $expected=Rows "$reference/golden-24/$table.json";$actual=Rows "$CandidateRoot/golden-24/$table.json"
+    $expected=Rows "$reference/golden-24/$table.json";$actual=Rows "$CandidateRoot/$PrimarySuite/$table.json"
     $counts[$table]=$actual.Count
     if($expected.Count -ne $actual.Count){$failures.Add("$table row count changed")}
     for($i=0;$i -lt [Math]::Min($expected.Count,$actual.Count);$i++){
@@ -25,10 +26,11 @@ foreach($table in @('canonical_geography','legacy_direct_samples','biome_hints',
         elseif(!(FieldsEqual $e.fields $a.fields)){$failures.Add("$table fields changed row $i")}
     }
 }
-$tileResults=@();$names=@('golden-24');if(!$PrimaryOnly){$names+=@('golden-2','golden-48','golden-repeat','golden-tb')}
+$tileResults=@();$names=@($PrimarySuite);if(!$PrimaryOnly){$names+=@('golden-2','golden-48','golden-repeat','golden-tb')}
 foreach($name in $names){
     $actual=Rows "$CandidateRoot/$name/tile_digests.json"
-    $expected=Rows "$reference/$name/tile_digests.json"
+    $referenceName=if($name -eq $PrimarySuite){'golden-24'}else{$name}
+    $expected=Rows "$reference/$referenceName/tile_digests.json"
     if($actual.Count -ne $expected.Count){$failures.Add("$name tile count changed")}
     $lookup=@{};foreach($r in $expected){$lookup["$($r.seed):$($r.tileX):$($r.tileZ):$($r.order)"]=$r.sha256}
     $changed=0;foreach($r in $actual){if($lookup["$($r.seed):$($r.tileX):$($r.tileZ):$($r.order)"] -cne $r.sha256){$changed++}}
@@ -46,7 +48,7 @@ if(!$PrimaryOnly){
         }
     }}
 }
-$diagnostic=Rows "$CandidateRoot/golden-24/cached_direct_comparison.json"
+$diagnostic=Rows "$CandidateRoot/$PrimarySuite/cached_direct_comparison.json"
 $diagnostic=@($diagnostic | Where-Object {$_.seed -in @('8675309','4303642605','42','-987654321')})
 $fieldCounts=[ordered]@{};foreach($r in $diagnostic){foreach($field in $r.differentFields){if(!$fieldCounts.Contains($field)){$fieldCounts[$field]=0};$fieldCounts[$field]++}}
 if($diagnostic.Count -ne 340 -or @($diagnostic|Where-Object {$_.differentFields.Count}).Count -ne 340){$failures.Add('Legacy 340-row direct diagnostic count changed')}
@@ -56,7 +58,7 @@ $summary=[ordered]@{schemaVersion=1;fixtureVersion=1;comparator='cd1a0f8415030ba
     exactness='signed raw float32 bits and exact identifiers; no epsilon';counts=$counts;tileResults=$tileResults;
     diagnosticRows=@($diagnostic).Count;diagnosticDifferingRows=@($diagnostic|Where-Object {$_.differentFields.Count}).Count;diagnosticFields=$fieldCounts;
     primaryOnly=[bool]$PrimaryOnly;failures=$failures.ToArray();status=$(if($failures.Count){'FAIL'}else{'PASS'})}
-WriteJson "$CandidateRoot/legacy_golden_comparison.json" $summary
-WriteJson "$CandidateRoot/tile_digest_comparison.json" $tileResults
+WriteJson "$CandidateRoot/${OutputPrefix}legacy_golden_comparison.json" $summary
+WriteJson "$CandidateRoot/${OutputPrefix}tile_digest_comparison.json" $tileResults
 $summary|ConvertTo-Json -Depth 15
 if($failures.Count){throw "$($failures.Count) legacy comparator failures; stop before proceeding"}

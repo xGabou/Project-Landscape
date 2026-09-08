@@ -1,0 +1,135 @@
+[
+  {
+    "vanilla": true,
+    "metadata": {
+      "ownership": "foreign_untouched"
+    },
+    "terraBlender": false,
+    "existingTask1CWorld": false,
+    "phase": "initial"
+  },
+  {
+    "vanillaLiveReload": "PASS"
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:forest",
+    "height": 66,
+    "x": 0,
+    "z": 0
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:meadow",
+    "height": 100,
+    "x": -129,
+    "z": -129
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:old_growth_birch_forest",
+    "height": 75,
+    "x": 127,
+    "z": 127
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:old_growth_birch_forest",
+    "height": 76,
+    "x": 128,
+    "z": 128
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:forest",
+    "height": 69,
+    "x": 1024,
+    "z": -1024
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:lukewarm_ocean",
+    "height": 63,
+    "x": -2048,
+    "z": 2048
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": false,
+    "biome": "minecraft:plains",
+    "height": 81,
+    "x": 4096,
+    "z": 0
+  },
+  {
+    "vanilla": true,
+    "metadata": {
+      "ownership": "foreign_untouched"
+    },
+    "terraBlender": false,
+    "existingTask1CWorld": false,
+    "phase": "reopened"
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:savanna",
+    "height": 91,
+    "x": 2048,
+    "z": 2048
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:forest",
+    "height": 65,
+    "x": 1919,
+    "z": 1919
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:savanna",
+    "height": 79,
+    "x": 2175,
+    "z": 2175
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:savanna",
+    "height": 73,
+    "x": 2176,
+    "z": 2176
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:forest",
+    "height": 69,
+    "x": 3072,
+    "z": 1024
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:river",
+    "height": 63,
+    "x": 0,
+    "z": 4096
+  },
+  {
+    "status": "minecraft:full",
+    "reopened": true,
+    "biome": "minecraft:snowy_taiga",
+    "height": 67,
+    "x": 6144,
+    "z": 2048
+  }
+]

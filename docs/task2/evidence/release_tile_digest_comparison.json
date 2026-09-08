@@ -1,0 +1,8 @@
+{
+    "name":  "golden-release",
+    "count":  105,
+    "changed":  0,
+    "workers":  [
+                    24
+                ]
+}
