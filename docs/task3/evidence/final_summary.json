@@ -1,0 +1,52 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "backend":  "LEGACY_RTF_V0",
+    "status":  "PASS",
+    "sourceHead":  "984c6d1a8289679832981a4b46e3a8ff4e006eaa",
+    "preservedEvidence":  {
+                              "task1c":  362,
+                              "task2":  342
+                          },
+    "stageRows":  2975,
+    "stageDifferences":  0,
+    "canonicalRows":  595,
+    "biomeHintRows":  595,
+    "biomeKeys":  85,
+    "standaloneTileDigests":  420,
+    "terraBlenderTileDigests":  105,
+    "newMountainSchedulingDigests":  525,
+    "legacyCollisionRows":  85,
+    "task1bPassingChecks":  64,
+    "filteredDirectDifferingRows":  340,
+    "filteredDirectCounts":  {
+                                 "gradient":  340,
+                                 "height":  319,
+                                 "heightErosion":  176,
+                                 "hint_gradient":  340,
+                                 "hint_height":  319,
+                                 "hint_height_erosion":  176,
+                                 "hint_sediment":  96,
+                                 "sediment":  96,
+                                 "terrain":  6
+                             },
+    "physicalSlopeAvailable":  false,
+    "localReliefAvailable":  false,
+    "canonicalProvider":  "geography-final/provider_samples.json",
+    "performance":  "performance_comparison.json",
+    "runtime":  "runtime_smoke.json",
+    "build":  "build_verification.json",
+    "limitations":  [
+                        "Biome-center coast behavior remains explicitly V0 compatibility before filters",
+                        "Inherited Cell retains legacy parameter/classification storage",
+                        "Legacy private continent-owned river cache retained behind HydrologyStage",
+                        "Structure V0 opportunistic eligibility retained, not silently changed to exact",
+                        "Unknown distances, slope, relief, basin and ridge data remain unavailable",
+                        "Legacy int narrowing and FULL decoration variance retained"
+                    ],
+    "legacyTerrainIntentionallyChanged":  false,
+    "newGeographyApiFieldsAdded":  true,
+    "newContinentsOrOceans":  false,
+    "task4Started":  false
+}

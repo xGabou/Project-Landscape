@@ -1,0 +1,1657 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "legacyComparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "fixtureReference":  "../../task1c/evidence/fixture_manifest.json",
+    "settingsReference":  "../../task1c/evidence/golden-24/identity.json",
+    "semantics":  "LEGACY_FILTERED_CANONICAL vs separate LEGACY_DIRECT_APPROXIMATE. New mountain capture is separately encoded; no legacy golden replaced.",
+    "provenance":  "Each run provenance.json records source/fixture hash. Logs are archive integrity only. stage-baseline predates production edits.",
+    "files":  [
+                  {
+                      "path":  "allocation/allocation_probe.json",
+                      "bytes":  1737,
+                      "sha256":  "113d997d9d43389025d75e3bb5dc61065e1e6bc756dffec4e68b99514d708246"
+                  },
+                  {
+                      "path":  "allocation/cache_metrics.json",
+                      "bytes":  530,
+                      "sha256":  "965f2f3ca2b08920c65b8265bd701abd0669802df71d818887877a96e07a14c0"
+                  },
+                  {
+                      "path":  "allocation/completion.json",
+                      "bytes":  140,
+                      "sha256":  "c73f6d539349699f8e36dae5cc19b51f937447e80e9b3e4f3a7ca6ddbb6c7530"
+                  },
+                  {
+                      "path":  "allocation/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "allocation/environment.json",
+                      "bytes":  3441,
+                      "sha256":  "2e6b5fdfc440dd5708b6f6103333d4c0c28d5bd2f5a3931ca5a68505b998d9e2"
+                  },
+                  {
+                      "path":  "allocation/identity.json",
+                      "bytes":  11308,
+                      "sha256":  "1029caa553a81c3d13893f7bfa6b8ea0c98c8d9d2a27cd3e7b3411aa1d357972"
+                  },
+                  {
+                      "path":  "allocation/observer_counters.json",
+                      "bytes":  1195,
+                      "sha256":  "c2449a1ddbafc6b0cbeb70d537b7b9ed6347fcfac3085459a15d3271f732db82"
+                  },
+                  {
+                      "path":  "allocation/provenance.json",
+                      "bytes":  2037,
+                      "sha256":  "82a599110e006726d54ea0d0329fb95c1e4c99ca222d999aa9b68d10e337487e"
+                  },
+                  {
+                      "path":  "allocation-pilot/allocation_probe.json",
+                      "bytes":  1737,
+                      "sha256":  "16972b77ed30397af96609207402662ec21792e0aae4f576a756550698449ed1"
+                  },
+                  {
+                      "path":  "allocation-pilot/cache_metrics.json",
+                      "bytes":  530,
+                      "sha256":  "0267e1cdd58bf0426e33bb8dd62507d7d147d5e67d8df166ce6d780bd858f1c8"
+                  },
+                  {
+                      "path":  "allocation-pilot/completion.json",
+                      "bytes":  140,
+                      "sha256":  "864e40837b2e02ca7b5233c804381f6d7ff2c21c8cf3c76580130b2f70f02059"
+                  },
+                  {
+                      "path":  "allocation-pilot/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "allocation-pilot/environment.json",
+                      "bytes":  3441,
+                      "sha256":  "2e6b5fdfc440dd5708b6f6103333d4c0c28d5bd2f5a3931ca5a68505b998d9e2"
+                  },
+                  {
+                      "path":  "allocation-pilot/identity.json",
+                      "bytes":  11308,
+                      "sha256":  "1029caa553a81c3d13893f7bfa6b8ea0c98c8d9d2a27cd3e7b3411aa1d357972"
+                  },
+                  {
+                      "path":  "allocation-pilot/observer_counters.json",
+                      "bytes":  1195,
+                      "sha256":  "a449ebc1b4fc7e63b99371b62144636c26f502e6f872ea40a9fa4bd64938c4df"
+                  },
+                  {
+                      "path":  "allocation-pilot/provenance.json",
+                      "bytes":  2252,
+                      "sha256":  "48951c191d5c70f6a782f1e47ee375748bc57ea2646c97a8f631cab77a224d06"
+                  },
+                  {
+                      "path":  "benchmark/benchmark_runs.json",
+                      "bytes":  84556,
+                      "sha256":  "9b038286c39170286553cb92aeaa0477a055c1722fed2f2963e8701d126a6cc0"
+                  },
+                  {
+                      "path":  "benchmark/cache_lifecycle.json",
+                      "bytes":  725,
+                      "sha256":  "367b8f338a77ebf2c225c9ef1ab8878d44f55ab4a36a03bac822824fb159e2d7"
+                  },
+                  {
+                      "path":  "benchmark/cache_metrics.json",
+                      "bytes":  21773,
+                      "sha256":  "b6105062f2214363f88eaddad69b687d91e7a5371fc9cd653630e4c90a706b6f"
+                  },
+                  {
+                      "path":  "benchmark/chunk_latencies.json",
+                      "bytes":  3985,
+                      "sha256":  "71aabc8b913ecce575c26d6fa9159833d3d5b8e51bd89f5cadcfc8f79cccb5a1"
+                  },
+                  {
+                      "path":  "benchmark/completion.json",
+                      "bytes":  140,
+                      "sha256":  "ee3314c0821b072213af971ce748b8f5ee3ba740a675e1da5c890ae3325b39c6"
+                  },
+                  {
+                      "path":  "benchmark/disposal.json",
+                      "bytes":  739,
+                      "sha256":  "37d222b3c0280e28c4bb2fa9ec89ba411c57a4d41ebf1d024c480eef37bcf2c9"
+                  },
+                  {
+                      "path":  "benchmark/environment.json",
+                      "bytes":  13751,
+                      "sha256":  "e17a331e3e9d7b702ee5f7d6f81cefdb91cbd17ece84d51fce722c1fd3b966a4"
+                  },
+                  {
+                      "path":  "benchmark/identity.json",
+                      "bytes":  45219,
+                      "sha256":  "4034b8a3aa5ce83d8b2d1a73f94c1bf8c06fce9cc1b523a9af33b2e008979039"
+                  },
+                  {
+                      "path":  "benchmark/observer_counters.json",
+                      "bytes":  4883,
+                      "sha256":  "397ce52374bbdf1f8d8c83676c5c7447ca22a4e395eb1352a3def55c921abbd4"
+                  },
+                  {
+                      "path":  "benchmark/provenance.json",
+                      "bytes":  1974,
+                      "sha256":  "c0085aaf740dce0eed5d5cd689fd85b598624791d62e14575954ab8a077a4476"
+                  },
+                  {
+                      "path":  "benchmark/query_latencies.json",
+                      "bytes":  1873126,
+                      "sha256":  "2f301f8427ee6270fb5552f73344a9cb4c7ae1143ecf00c23acfbb0b46a1173e"
+                  },
+                  {
+                      "path":  "benchmark_summary.json",
+                      "bytes":  72480,
+                      "sha256":  "cd09fc7a5ea3ddfc04d5286ebf7da0a529fe0989c2454cd108a3974aba9c62e8"
+                  },
+                  {
+                      "path":  "benchmark-resumed/benchmark_runs.json",
+                      "bytes":  84550,
+                      "sha256":  "27ee98f3fb92504302c0ba54de276a1aae5ebc22047339ad2142f729955771b1"
+                  },
+                  {
+                      "path":  "benchmark-resumed/cache_lifecycle.json",
+                      "bytes":  725,
+                      "sha256":  "e3de0c1e823fcfbaabd1159a47852228368ebbdf4602e7920089b523b2ae8d6d"
+                  },
+                  {
+                      "path":  "benchmark-resumed/cache_metrics.json",
+                      "bytes":  21789,
+                      "sha256":  "2aea62821745e742c5cb03d60dec72e617d445763f8b772d91cd00c32b751017"
+                  },
+                  {
+                      "path":  "benchmark-resumed/chunk_latencies.json",
+                      "bytes":  3984,
+                      "sha256":  "8186558a85f366bd054db8bcb0285c162e5b33664d7f118e08a6b31e0f2f678e"
+                  },
+                  {
+                      "path":  "benchmark-resumed/completion.json",
+                      "bytes":  140,
+                      "sha256":  "5657518af36705f4d1cac0d049d73071a7e3d6b77e4183f5358e368c3dc67392"
+                  },
+                  {
+                      "path":  "benchmark-resumed/disposal.json",
+                      "bytes":  739,
+                      "sha256":  "37d222b3c0280e28c4bb2fa9ec89ba411c57a4d41ebf1d024c480eef37bcf2c9"
+                  },
+                  {
+                      "path":  "benchmark-resumed/environment.json",
+                      "bytes":  14151,
+                      "sha256":  "c5baed49668254ba8657bbdabd137e970acad40f8011bbb8fe11c75fbe80f9d5"
+                  },
+                  {
+                      "path":  "benchmark-resumed/identity.json",
+                      "bytes":  45219,
+                      "sha256":  "4034b8a3aa5ce83d8b2d1a73f94c1bf8c06fce9cc1b523a9af33b2e008979039"
+                  },
+                  {
+                      "path":  "benchmark-resumed/observer_counters.json",
+                      "bytes":  4883,
+                      "sha256":  "a2722735b2f80b0e6f87e8c5e4396045e3bfe4911f292bd933f2c26e8c5d9b6f"
+                  },
+                  {
+                      "path":  "benchmark-resumed/provenance.json",
+                      "bytes":  1711,
+                      "sha256":  "e4e88936115e4c377cfb3f459f12e975f340be2f7b7e343b5c88af7cca79ddda"
+                  },
+                  {
+                      "path":  "benchmark-resumed/query_latencies.json",
+                      "bytes":  1872772,
+                      "sha256":  "964e120910afd8aaa4307be1947c560939ca7ac5ad8fed030de51abef286b651"
+                  },
+                  {
+                      "path":  "benchmark-resumed-summary.json",
+                      "bytes":  72430,
+                      "sha256":  "1a53c00976b537a14e75332d7c8fefe1255a0c5d5b7aef313f4e403dc0e3a1a6"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/benchmark_runs.json",
+                      "bytes":  84554,
+                      "sha256":  "e5e1d7a18269e1f3320739bdea52728d82025467a3bf7ecf13430f3f33804648"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/cache_lifecycle.json",
+                      "bytes":  725,
+                      "sha256":  "1d5979eec5e005d319ec333d52b2a924b18b214af9da6fe66b2edd2c24436db2"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/cache_metrics.json",
+                      "bytes":  21789,
+                      "sha256":  "46f6276e6afafca9282fb5e8f96752f6fa11ce9658e5670724f0a7b8fe15b10f"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/chunk_latencies.json",
+                      "bytes":  3984,
+                      "sha256":  "3b834bd9630e7595b3098999d65451abb46219f38b057d556336c6e2fd590f39"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/completion.json",
+                      "bytes":  140,
+                      "sha256":  "3afe09d5d07de21d8c84e09b5519d8aaaec39d9feb0b8a37b0e681b4ac8981eb"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/disposal.json",
+                      "bytes":  739,
+                      "sha256":  "37d222b3c0280e28c4bb2fa9ec89ba411c57a4d41ebf1d024c480eef37bcf2c9"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/environment.json",
+                      "bytes":  14231,
+                      "sha256":  "4ff0dab853e12870f1b07c2f6d3fe44a43c110a2a5de9334a8aa95793c803bf3"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/identity.json",
+                      "bytes":  45219,
+                      "sha256":  "4034b8a3aa5ce83d8b2d1a73f94c1bf8c06fce9cc1b523a9af33b2e008979039"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/observer_counters.json",
+                      "bytes":  4883,
+                      "sha256":  "a86d8e31f598d905908497fa4a00fa51d01e2d00b1b0e98d974c5d04341f07eb"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/provenance.json",
+                      "bytes":  681,
+                      "sha256":  "c2ff9fe8a88603093ac32cf5044e7d569d7c05b76ac03b632e03b4c09d3b7de7"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference/query_latencies.json",
+                      "bytes":  1872756,
+                      "sha256":  "c96aa086eaac2f53ab9b52212bf1cd1ed438c135bbb63187840d6bc2a261e112"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/benchmark_runs.json",
+                      "bytes":  84552,
+                      "sha256":  "5804e6b72dcc90313e517abfddc1bf002969ab1ddab275b7167874b6739431c8"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/cache_lifecycle.json",
+                      "bytes":  725,
+                      "sha256":  "043e238b0cfdaeefac1ccc9dba16a88a6b35ecf7e07959876d0c07fc65ca8de6"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/cache_metrics.json",
+                      "bytes":  21789,
+                      "sha256":  "712b6947a79597779414ba415eaa104711c679728b5757a8bf5fe60f5ece9b3f"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/chunk_latencies.json",
+                      "bytes":  3984,
+                      "sha256":  "f0c6a6f3ad32f8553ec476e9371958554c1c60161cabc7f030bca63ee2561b4a"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/completion.json",
+                      "bytes":  140,
+                      "sha256":  "73a1fb1bf9810795f91e95ca167be354befb5efc921bb5d46e9a22098a9dae59"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/disposal.json",
+                      "bytes":  739,
+                      "sha256":  "37d222b3c0280e28c4bb2fa9ec89ba411c57a4d41ebf1d024c480eef37bcf2c9"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/environment.json",
+                      "bytes":  14231,
+                      "sha256":  "4ff0dab853e12870f1b07c2f6d3fe44a43c110a2a5de9334a8aa95793c803bf3"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/identity.json",
+                      "bytes":  45219,
+                      "sha256":  "4034b8a3aa5ce83d8b2d1a73f94c1bf8c06fce9cc1b523a9af33b2e008979039"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/observer_counters.json",
+                      "bytes":  4883,
+                      "sha256":  "13398c20d12710f67fdf5440b534416e7c4a44fde9f00c0910a67669987f160e"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/provenance.json",
+                      "bytes":  681,
+                      "sha256":  "53be60eee3f9d002c44e810e72c1a027b1702814c01176028059565b1a48796a"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable/query_latencies.json",
+                      "bytes":  1873043,
+                      "sha256":  "7f011f2d1da733c7c541f4f16d1c912038916558d95c5127638feddad0223fae"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-stable-summary.json",
+                      "bytes":  70841,
+                      "sha256":  "33085cff81b16d8c0704f9462272a2d4d8748778c481cca4b23e298910bf42d5"
+                  },
+                  {
+                      "path":  "benchmark-task2-reference-summary.json",
+                      "bytes":  70844,
+                      "sha256":  "d01ccd103cf4911aa01570f4693cdede9d6ec8a91524f1292bae5c6877ac5ee4"
+                  },
+                  {
+                      "path":  "build_verification.json",
+                      "bytes":  1275,
+                      "sha256":  "600454e8b1ef998a8b4102af2700cedee1868226b7cab3236e4fea1259bbeea4"
+                  },
+                  {
+                      "path":  "field_ownership.json",
+                      "bytes":  76245,
+                      "sha256":  "54c944da3319323d89832ae33295c894c8764027117da9bdec80c59bb81f083f"
+                  },
+                  {
+                      "path":  "field_ownership_after.json",
+                      "bytes":  76519,
+                      "sha256":  "cec40e44d92a4a31994e70d004722046650f4e6bf796da151e00210fd9254b11"
+                  },
+                  {
+                      "path":  "files_and_commits.json",
+                      "bytes":  73473,
+                      "sha256":  "1ddd33f285077ba6442e5905540148566d7a4079720f0bd5da50fd4a8530df20"
+                  },
+                  {
+                      "path":  "final_summary.json",
+                      "bytes":  2387,
+                      "sha256":  "2eb4279059a189e29ebe050d681e37804a0c7e98054979d142c50bcaed6902b9"
+                  },
+                  {
+                      "path":  "foundation/api_contracts.json",
+                      "bytes":  315,
+                      "sha256":  "6e6ce4b5b4f7431ce33c357d2061394f304b79c11ba4ed6ed45ad69518898eb1"
+                  },
+                  {
+                      "path":  "foundation/api_shutdown.json",
+                      "bytes":  108,
+                      "sha256":  "7c5d7172ee22240f54593aaab557ddfa527cbcd20998fecf4484ea5d2459f5d3"
+                  },
+                  {
+                      "path":  "foundation/canonical_provider.json",
+                      "bytes":  3309,
+                      "sha256":  "70cc671c4024ff5b25358fd0442c232100c3804165f60bd3f8b3f6acb4d80a5c"
+                  },
+                  {
+                      "path":  "foundation/completion.json",
+                      "bytes":  140,
+                      "sha256":  "8b7cd679dcbe17bf08f9e70a3c4ea17e0b8405e052cfcc6c789de3dfcaab877c"
+                  },
+                  {
+                      "path":  "foundation/dimension_seed_separation.json",
+                      "bytes":  1945,
+                      "sha256":  "4bf576177b1ecd04a5a774833dc44e44103b660f5a53b7792959d859c37f6eb1"
+                  },
+                  {
+                      "path":  "foundation/disposal.json",
+                      "bytes":  371,
+                      "sha256":  "a1e8f9bac3a4b7014da64ffffd8a7aa6bcf40a983971c0f5117d79afaa5c20f8"
+                  },
+                  {
+                      "path":  "foundation/existing_world_resolution.json",
+                      "bytes":  663,
+                      "sha256":  "f97eade2dd0e5ce534aabc00dd1c95bc23f605fc5d0c42b16efc95231f8e1cb0"
+                  },
+                  {
+                      "path":  "foundation/foundation_invalid.json",
+                      "bytes":  7189,
+                      "sha256":  "b26248c18589365eaa336e3f27e671edff8c131c3e92629be30779133e6a87a9"
+                  },
+                  {
+                      "path":  "foundation/foundation_roundtrip.json",
+                      "bytes":  34213,
+                      "sha256":  "7fc8bd549d5f5a150fb5a4e9d86bd471323c2adb3dc93cf518682cb0411b8c48"
+                  },
+                  {
+                      "path":  "foundation/manifest_roundtrip.json",
+                      "bytes":  8685,
+                      "sha256":  "df074fdb22bdf33bc3f892a39f6ed358306a005898dd600ba7080fb2263d65f6"
+                  },
+                  {
+                      "path":  "foundation/observer_counters.json",
+                      "bytes":  2392,
+                      "sha256":  "9d102514f9bec585144bbc0ed2f31d2506a43f3d0697db6ededa48f71dad085b"
+                  },
+                  {
+                      "path":  "foundation/provenance.json",
+                      "bytes":  1848,
+                      "sha256":  "17ce8f426577a577dd1142953721bda7e92a9358b40ba0bf8f870723171fc171"
+                  },
+                  {
+                      "path":  "foundation/seed_collision_legacy_vs_new.json",
+                      "bytes":  5739,
+                      "sha256":  "c4a9a94230496a1490de329d7e9d917a5da958adaf03163189fe85337a63f792"
+                  },
+                  {
+                      "path":  "foundation/seed_domains.json",
+                      "bytes":  115593,
+                      "sha256":  "04601797d6abd59b2a404e6db405e0558ff0944e8b48e21b9a3f0a184651913c"
+                  },
+                  {
+                      "path":  "foundation/world_binding.json",
+                      "bytes":  2588,
+                      "sha256":  "90c7334130dbce06b0d28538998f694af83d88f71b0d4858971fb6f851404951"
+                  },
+                  {
+                      "path":  "foundation/world_binding_checks.json",
+                      "bytes":  13369,
+                      "sha256":  "e73573743705d44111d221a475690cc6adb9bf1661879dc3b8d636eee611a0d1"
+                  },
+                  {
+                      "path":  "full/cached_uncached.json",
+                      "bytes":  863607,
+                      "sha256":  "fb07cf1f9dad01baad59f90ce45cdadf22f492800f91b8b24cd80a64c51ebd02"
+                  },
+                  {
+                      "path":  "full/cell_resources.json",
+                      "bytes":  972,
+                      "sha256":  "43bb5a970160af4524f75f77a24d6efd2048eeeba82d32e5464cdc6bab8868b3"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/42_0_0.json.gz",
+                      "bytes":  17699,
+                      "sha256":  "6e5c9d3101a5b3f73fd468ab6d26b20cabc011322221a6922793a1a542badad8"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/42_-168_-256.json.gz",
+                      "bytes":  24749,
+                      "sha256":  "e8f33bcadf7e2dc704812a70e01df9b819d7ee6e7a6d1dce55d30ad625fb5ab3"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/42_212_-192.json.gz",
+                      "bytes":  16896,
+                      "sha256":  "1c576aace0d2409bee906a97c271e10eede065a6030c42a27e4ec49798f6f970"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/42_-252_-256.json.gz",
+                      "bytes":  18032,
+                      "sha256":  "bd910673d0a529314cc2742238ed090dc39284e0b13cd1f1994d4675faba21bd"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/42_-4_-256.json.gz",
+                      "bytes":  22861,
+                      "sha256":  "ca5c361a4aa0205907c27ff73ca4600630c68e82562c9ee274a310af5fe3a2b8"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/42_7_7.json.gz",
+                      "bytes":  19629,
+                      "sha256":  "2b0c8a82cd42165781cb35b4fa4e823266ded32ce6a22b049ef6c71d52580483"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/42_8_8.json.gz",
+                      "bytes":  19756,
+                      "sha256":  "4c5d289458b0ade37dfdc07c93cf635b19e05f6c7f9d9ff29ce1d305308f7e67"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/42_-9_-9.json.gz",
+                      "bytes":  16864,
+                      "sha256":  "b5d84263b24676fe44f608087d7698ac97c40b6812f6c93f87b475ffec3134b1"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/4303642605_0_0.json.gz",
+                      "bytes":  25532,
+                      "sha256":  "ac30cef18b98e7152e9f6473e4a98765e0e24066cb869d65e6841b7720e356a9"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/4303642605_-168_-256.json.gz",
+                      "bytes":  23053,
+                      "sha256":  "a41c5a683c3ff7d250bc394c74648635c3594b9396e0cf85a445b349241ea63e"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/4303642605_212_-192.json.gz",
+                      "bytes":  24077,
+                      "sha256":  "afe32ef90dd5aa707f96fbbb35e6c5f806eb6beb20af50c8aed22d1967b55eb0"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/4303642605_-252_-256.json.gz",
+                      "bytes":  19311,
+                      "sha256":  "fc97e2445483506bb101be0d6e9a430bf0b9fe503c2b1e27c917c61bc8487ec3"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/4303642605_-4_-256.json.gz",
+                      "bytes":  22704,
+                      "sha256":  "6638e8e42d056fef7b65b1c73f9fd2cf71a8066f2f815488612dbd48ecb21d25"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/4303642605_7_7.json.gz",
+                      "bytes":  20119,
+                      "sha256":  "6d473bdd23dde60b040c54eb6a3598b97332bd9359d18f46340a9fb6aed1614a"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/4303642605_8_8.json.gz",
+                      "bytes":  21417,
+                      "sha256":  "69280d91caabe0dc641a409412450887993ceb0d86e09e355274893acc2ff65c"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/4303642605_-9_-9.json.gz",
+                      "bytes":  29507,
+                      "sha256":  "3a5ce62c4a2d8bb5c7fa525ede9cf4201f213659856a5fa0720d90889aafdec6"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/8675309_0_0.json.gz",
+                      "bytes":  25720,
+                      "sha256":  "84e448b7e06c01f82dc707f521f11167a1eea644eefed7a8bdfacf52a33fb61b"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/8675309_-168_-256.json.gz",
+                      "bytes":  21530,
+                      "sha256":  "9d0ac10f8b3356354f1db85e0c26d93f48e7f326d55729f341196b30c722bece"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/8675309_212_-192.json.gz",
+                      "bytes":  25756,
+                      "sha256":  "fbea4937c2213dfff34b4e1c977a6a08a2eb55722a9a39c19548abebffafeb00"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/8675309_-252_-256.json.gz",
+                      "bytes":  19966,
+                      "sha256":  "8c88ada0e6e1ab747557e918e232858ad998128843b23fcbad2dd2627ca78cbb"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/8675309_-4_-256.json.gz",
+                      "bytes":  21506,
+                      "sha256":  "af845692a112ebaad28e0ce1a2d98f05220b8a2b82ae905e6d6b87e215231f6f"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/8675309_7_7.json.gz",
+                      "bytes":  23316,
+                      "sha256":  "85adea8aa2a78d0f9be479380456d0127fb1ac90eabb75396ac6476b83bc529e"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/8675309_8_8.json.gz",
+                      "bytes":  22554,
+                      "sha256":  "e3ab62ef902822223fd6aa968139c87704ca8dcff961d821c793b112627fb448"
+                  },
+                  {
+                      "path":  "full/chunk_blocks/8675309_-9_-9.json.gz",
+                      "bytes":  27524,
+                      "sha256":  "9c08cb563fa0d886a8485373a65d24ccf1bf52a36ad166255685cad20780a9c5"
+                  },
+                  {
+                      "path":  "full/closed_cache_ownership.json",
+                      "bytes":  98,
+                      "sha256":  "5fb17e51c5f17f11dd75f2aceeab82b90617b29667467f8e33adf19ad73c3281"
+                  },
+                  {
+                      "path":  "full/completion.json",
+                      "bytes":  140,
+                      "sha256":  "6470bf5cdcc2f2fe477082cde136fc77e64bd4c27b8828c0b2dd361dc13535c3"
+                  },
+                  {
+                      "path":  "full/contexts.json",
+                      "bytes":  10230,
+                      "sha256":  "0c57bd814098431d9f4801b143ef2dab570a2fbc974df0b8300e3c28a92880da"
+                  },
+                  {
+                      "path":  "full/cross_world_cache.json",
+                      "bytes":  16161,
+                      "sha256":  "4a3afcb05d1aca65d3148de8c8760a8cd3feb5487535c017abdc0caa3c08f481"
+                  },
+                  {
+                      "path":  "full/disposal.json",
+                      "bytes":  2430,
+                      "sha256":  "bfed1997e0366f83c22a143a4f2435b226f45b054bb42ff1dc2c8e109bf24708"
+                  },
+                  {
+                      "path":  "full/environment.json",
+                      "bytes":  499,
+                      "sha256":  "bd02e2aa8531a9cd108144e00dfaab6b55bda1cc1a076092395d4f0260077ff2"
+                  },
+                  {
+                      "path":  "full/eviction_reload.json",
+                      "bytes":  475646,
+                      "sha256":  "c830d43c9c7bd34c06d8bc79ded13927d14973b9f02c7082de7402ec1b4f04ea"
+                  },
+                  {
+                      "path":  "full/fixtures.json",
+                      "bytes":  30268,
+                      "sha256":  "a45bc8be2da2ccccb3e13ae8b1f79b133645f06c256c402377d8fe527da10d6c"
+                  },
+                  {
+                      "path":  "full/generated_chunks.json",
+                      "bytes":  164783,
+                      "sha256":  "562b1db2aa745fb47f478be94c4802e209a7076d8c6152ec5059682812ecac4d"
+                  },
+                  {
+                      "path":  "full/generation_order.json",
+                      "bytes":  27501,
+                      "sha256":  "026ac49ea9193c05eac82224841b24b45124e271dcb0255418a75141d384ff78"
+                  },
+                  {
+                      "path":  "full/invalid_noise_validation.json",
+                      "bytes":  3431,
+                      "sha256":  "f838b28c474ffcf201d6b5b0e76d037e72e8be1a8d3a647d4730a2397b6a4edf"
+                  },
+                  {
+                      "path":  "full/legacy_geometry_config.json",
+                      "bytes":  1123,
+                      "sha256":  "89ca999aa9072f55204f732cb06d19be0d94d2eefad3401231fd89589374a45e"
+                  },
+                  {
+                      "path":  "full/lifecycle.json",
+                      "bytes":  4453,
+                      "sha256":  "427138e984ddaa151c3ce9c4d4268334aff018a15627e38188caa7510f1f9275"
+                  },
+                  {
+                      "path":  "full/measurements.json",
+                      "bytes":  384149,
+                      "sha256":  "63eee6e8606b593dac98cdc55d2b61adbd43b0f31bf4819396c32830d0df3bb2"
+                  },
+                  {
+                      "path":  "full/missing_context.json",
+                      "bytes":  3440,
+                      "sha256":  "c938477003755611f7d35efdb78a41de1715cdb2e7b187a625c5f17151987ee9"
+                  },
+                  {
+                      "path":  "full/noise_cache.json",
+                      "bytes":  24170,
+                      "sha256":  "5912e2c83d5ed422b15e931e336c4e4accac5c97f843ed5b402ac28f588f43d9"
+                  },
+                  {
+                      "path":  "full/noise_cache_bits.json",
+                      "bytes":  12254,
+                      "sha256":  "f0a031d93aad87f005e3036f1986715298070ebe77c632dc782e3816487eeac0"
+                  },
+                  {
+                      "path":  "full/observer_counters.json",
+                      "bytes":  4880,
+                      "sha256":  "f3ca56d3a6d5a41187fd346a92efd44090c4ac8135e42b13f8a15dc4d220cc39"
+                  },
+                  {
+                      "path":  "full/preset.json",
+                      "bytes":  5027,
+                      "sha256":  "74043032645cac9d1888035e7db7196dd1a28fc5096a7c5eaf7705091dceee19"
+                  },
+                  {
+                      "path":  "full/provenance.json",
+                      "bytes":  1713,
+                      "sha256":  "8ff4d2efc418e0bf6a7cebd07796d034d076af58c8339bb4d4cb6daef06ce540"
+                  },
+                  {
+                      "path":  "full/sampling_semantics.json",
+                      "bytes":  1899,
+                      "sha256":  "e30c37646a1d1868bdd5bc043e24807f0c0ee90850f92c1a21ecf650cd5332ca"
+                  },
+                  {
+                      "path":  "full/seed_collisions.json",
+                      "bytes":  1430839,
+                      "sha256":  "5cf3da0b02349cf07287da755d0fb8753f0abd0b13f492ab89bb8090e57976b3"
+                  },
+                  {
+                      "path":  "full/tile_bounds.json",
+                      "bytes":  1771,
+                      "sha256":  "96634defde3f18bf4e3fbc585a3c5e8ea82155a8fc119ab79011589112843a68"
+                  },
+                  {
+                      "path":  "full/tile_bounds_halo.json.gz",
+                      "bytes":  1489534,
+                      "sha256":  "585a3db254589a570d21fb18d7aa54da0a1256cf0785c82175693f5d9e07d476"
+                  },
+                  {
+                      "path":  "full/tile_geometry.json",
+                      "bytes":  45063,
+                      "sha256":  "c6cddc8ac1c7047593fe96a4ad9968f3b5b7e23a332a6b311d9c9280874887c6"
+                  },
+                  {
+                      "path":  "full/tile_overlap.json",
+                      "bytes":  205433,
+                      "sha256":  "972d73a86acc6263124891c6950adc28224adac39a70b1ea5f5b425f66aac0df"
+                  },
+                  {
+                      "path":  "full/vegetation_disabled.json",
+                      "bytes":  828,
+                      "sha256":  "fade1cc4fda21a352529826aadad1ec7a9367e4d059594dd02a71b99f16fbe42"
+                  },
+                  {
+                      "path":  "geography/completion.json",
+                      "bytes":  140,
+                      "sha256":  "b4ad53059e0bc2e41d90fff9d39bc56be6bb548af8858e6fce61372757ff6880"
+                  },
+                  {
+                      "path":  "geography/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "geography/geography_checks.json",
+                      "bytes":  266,
+                      "sha256":  "e9cb181e086822e9b29f9a2151b8f86ecb3b6216e19941b822f9955d903a9dbd"
+                  },
+                  {
+                      "path":  "geography/hydrology_samples.json",
+                      "bytes":  17107,
+                      "sha256":  "5157834612e13ef2cdd2b9a0a47ab3112c7ba8415ad9ee66f75f212801d35af1"
+                  },
+                  {
+                      "path":  "geography/mountain_blend_checks.json",
+                      "bytes":  334,
+                      "sha256":  "acfd5a1c4cd6992a53ec742c45fed48bca32da96e6be786825a87ed1dbfbfb76"
+                  },
+                  {
+                      "path":  "geography/mountain_samples.json",
+                      "bytes":  16539,
+                      "sha256":  "12a635fd4073a2b70879aa4364cace85382cd1af8e608c5e3cd5b46b2af3aac1"
+                  },
+                  {
+                      "path":  "geography/observer_counters.json",
+                      "bytes":  1197,
+                      "sha256":  "2df05f86be527436bdd32fd1555d5f81f54116ccfef8d65579592ed5171d9c4a"
+                  },
+                  {
+                      "path":  "geography/provenance.json",
+                      "bytes":  1339,
+                      "sha256":  "3eedb4a3b726954b9db70122c7c4f7ecb8c2f31b68e45390c2a8de67a8643bbc"
+                  },
+                  {
+                      "path":  "geography/provider_samples.json",
+                      "bytes":  145468,
+                      "sha256":  "de69968dc0602cdb40c48d1a73d5e19243c8dc1312436e0674ec375778eeaa20"
+                  },
+                  {
+                      "path":  "geography-final/completion.json",
+                      "bytes":  140,
+                      "sha256":  "6e9faf9fab4459afbb8c2473334455c47c4feef4390ef29fdd734dc7565f8094"
+                  },
+                  {
+                      "path":  "geography-final/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "geography-final/geography_checks.json",
+                      "bytes":  266,
+                      "sha256":  "e9cb181e086822e9b29f9a2151b8f86ecb3b6216e19941b822f9955d903a9dbd"
+                  },
+                  {
+                      "path":  "geography-final/hydrology_samples.json",
+                      "bytes":  17107,
+                      "sha256":  "5157834612e13ef2cdd2b9a0a47ab3112c7ba8415ad9ee66f75f212801d35af1"
+                  },
+                  {
+                      "path":  "geography-final/mountain_blend_checks.json",
+                      "bytes":  334,
+                      "sha256":  "acfd5a1c4cd6992a53ec742c45fed48bca32da96e6be786825a87ed1dbfbfb76"
+                  },
+                  {
+                      "path":  "geography-final/mountain_samples.json",
+                      "bytes":  16539,
+                      "sha256":  "12a635fd4073a2b70879aa4364cace85382cd1af8e608c5e3cd5b46b2af3aac1"
+                  },
+                  {
+                      "path":  "geography-final/observer_counters.json",
+                      "bytes":  1197,
+                      "sha256":  "2530b4cd19aeee9a0ea3bd6e6a95ea029a050ea816798953f494a884a53a2d7c"
+                  },
+                  {
+                      "path":  "geography-final/provenance.json",
+                      "bytes":  2258,
+                      "sha256":  "5dd7610bff43ac48eb562b53f408db412d94b0d6b3861cd0736243b929124df2"
+                  },
+                  {
+                      "path":  "geography-final/provider_samples.json",
+                      "bytes":  165379,
+                      "sha256":  "686d5392cfc4de31533e53496e4f8cff783e328bc6f6de9540893a921472afec"
+                  },
+                  {
+                      "path":  "golden-2/completion.json",
+                      "bytes":  140,
+                      "sha256":  "3727f459ba50833bc52d0009acdc563d232b4f30b5a927ae5969010980670d68"
+                  },
+                  {
+                      "path":  "golden-2/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "golden-2/environment.json",
+                      "bytes":  3488,
+                      "sha256":  "69e1fa9e03e719937cf9b7ee2d18162471137643aacfdb427908be3d5da5d8b1"
+                  },
+                  {
+                      "path":  "golden-2/identity.json",
+                      "bytes":  11314,
+                      "sha256":  "8a9ee86b5f4d46e10e15d94ca7289dc607cb8728bac93a5528a77b935f432a79"
+                  },
+                  {
+                      "path":  "golden-2/mountain_tile_digests.json",
+                      "bytes":  29850,
+                      "sha256":  "0f39d1b65123f437c4aea3ceade774ceb6d03afd41157955de5c3bf6577bff4a"
+                  },
+                  {
+                      "path":  "golden-2/observer_counters.json",
+                      "bytes":  1200,
+                      "sha256":  "3eda3793aad94994be7506a9b67e467121a929217cd9fe528a2e18153b7059ea"
+                  },
+                  {
+                      "path":  "golden-2/provenance.json",
+                      "bytes":  882,
+                      "sha256":  "926c7105dcf9dab520a93141636f9001fac2cada53214de256f7d34cccb60504"
+                  },
+                  {
+                      "path":  "golden-2/tile_digests.json",
+                      "bytes":  27540,
+                      "sha256":  "713c295a43418dcb12640fe49d5077e45e1640e0f6e9b8f28bb99139b9c074f2"
+                  },
+                  {
+                      "path":  "golden-24/biome_hints.json",
+                      "bytes":  416138,
+                      "sha256":  "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2"
+                  },
+                  {
+                      "path":  "golden-24/cached_direct_comparison.json",
+                      "bytes":  170129,
+                      "sha256":  "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee"
+                  },
+                  {
+                      "path":  "golden-24/canonical_geography.json",
+                      "bytes":  787947,
+                      "sha256":  "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa"
+                  },
+                  {
+                      "path":  "golden-24/completion.json",
+                      "bytes":  140,
+                      "sha256":  "a3c6a04e670242786b3e5556ceef262b7abefe44ddabc4c4f6c95b9e52cbbfd1"
+                  },
+                  {
+                      "path":  "golden-24/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "golden-24/environment.json",
+                      "bytes":  3437,
+                      "sha256":  "e8f5fd6f4b064f9d02cf20ce7d62c14e4cc3d4ea286e73f95db75bc27ffbf85a"
+                  },
+                  {
+                      "path":  "golden-24/fixtures.json",
+                      "bytes":  50551,
+                      "sha256":  "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a"
+                  },
+                  {
+                      "path":  "golden-24/identity.json",
+                      "bytes":  11304,
+                      "sha256":  "b9a5a87450262a28173630a707a5a4fe3fe7f40eec7dcafc26de0af7e6d6c211"
+                  },
+                  {
+                      "path":  "golden-24/legacy_direct_samples.json",
+                      "bytes":  767425,
+                      "sha256":  "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e"
+                  },
+                  {
+                      "path":  "golden-24/minecraft_biomes.json",
+                      "bytes":  22075,
+                      "sha256":  "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992"
+                  },
+                  {
+                      "path":  "golden-24/mountain_tile_digests.json",
+                      "bytes":  29955,
+                      "sha256":  "afc87aa79d994e6a80fa04d82066dc15ed5ae245c60c5f2829ca7ed8f2ecbdf5"
+                  },
+                  {
+                      "path":  "golden-24/observer_counters.json",
+                      "bytes":  1201,
+                      "sha256":  "786b5b1b94af4930680657d91adc866becfce18afdd97338931c0d0ef83b86cd"
+                  },
+                  {
+                      "path":  "golden-24/provenance.json",
+                      "bytes":  540,
+                      "sha256":  "7351c1b2f39ab9173543f0c3f9308e06ee11d6a28082a2e75ef8cf94302396aa"
+                  },
+                  {
+                      "path":  "golden-24/seed_collision.json",
+                      "bytes":  223441,
+                      "sha256":  "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa"
+                  },
+                  {
+                      "path":  "golden-24/terrain_traits.json",
+                      "bytes":  209864,
+                      "sha256":  "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a"
+                  },
+                  {
+                      "path":  "golden-24/tile_digests.json",
+                      "bytes":  27645,
+                      "sha256":  "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e"
+                  },
+                  {
+                      "path":  "golden-48/completion.json",
+                      "bytes":  140,
+                      "sha256":  "c3c8b3f7a94d97182a1a638e68d6864a61e65c606833f4f9def52d235c7c8b11"
+                  },
+                  {
+                      "path":  "golden-48/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "golden-48/environment.json",
+                      "bytes":  3490,
+                      "sha256":  "9ed15840d64e2fe716bb0d319de7e64f9c014c6f4f978d1a77f5c056ce998e28"
+                  },
+                  {
+                      "path":  "golden-48/identity.json",
+                      "bytes":  11315,
+                      "sha256":  "7c5595e7522a34c1eed75df2aeedc93cfa6a6fed8347743e47bea34e830dfe4a"
+                  },
+                  {
+                      "path":  "golden-48/mountain_tile_digests.json",
+                      "bytes":  29955,
+                      "sha256":  "835e6e53c1f9da6cd1128baf45823cbf32ba2228ee3d755a8d68deecd94a94f7"
+                  },
+                  {
+                      "path":  "golden-48/observer_counters.json",
+                      "bytes":  1197,
+                      "sha256":  "e453341d2fdfe3168f6ca02bb7cb64fb3c32200ddf636575efd6ad6d5ba3911e"
+                  },
+                  {
+                      "path":  "golden-48/provenance.json",
+                      "bytes":  1017,
+                      "sha256":  "960b75f8a4df34470ce997da37b3ecccd13a6fb6efde126c47dbc9c426c97c1d"
+                  },
+                  {
+                      "path":  "golden-48/tile_digests.json",
+                      "bytes":  27645,
+                      "sha256":  "eae9bf2daa209b2e7c21cf248373da2bd381abeb796c5a5199d4b3908cecadbb"
+                  },
+                  {
+                      "path":  "golden-repeat/biome_hints.json",
+                      "bytes":  416138,
+                      "sha256":  "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2"
+                  },
+                  {
+                      "path":  "golden-repeat/cached_direct_comparison.json",
+                      "bytes":  170129,
+                      "sha256":  "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee"
+                  },
+                  {
+                      "path":  "golden-repeat/canonical_geography.json",
+                      "bytes":  787947,
+                      "sha256":  "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa"
+                  },
+                  {
+                      "path":  "golden-repeat/completion.json",
+                      "bytes":  140,
+                      "sha256":  "37c03929f62f781d209dfaa509480a04dec2cb3fedb9b330868fff1425a22de5"
+                  },
+                  {
+                      "path":  "golden-repeat/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "golden-repeat/environment.json",
+                      "bytes":  3437,
+                      "sha256":  "e8f5fd6f4b064f9d02cf20ce7d62c14e4cc3d4ea286e73f95db75bc27ffbf85a"
+                  },
+                  {
+                      "path":  "golden-repeat/fixtures.json",
+                      "bytes":  50551,
+                      "sha256":  "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a"
+                  },
+                  {
+                      "path":  "golden-repeat/identity.json",
+                      "bytes":  11304,
+                      "sha256":  "b9a5a87450262a28173630a707a5a4fe3fe7f40eec7dcafc26de0af7e6d6c211"
+                  },
+                  {
+                      "path":  "golden-repeat/legacy_direct_samples.json",
+                      "bytes":  767425,
+                      "sha256":  "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e"
+                  },
+                  {
+                      "path":  "golden-repeat/minecraft_biomes.json",
+                      "bytes":  22075,
+                      "sha256":  "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992"
+                  },
+                  {
+                      "path":  "golden-repeat/mountain_tile_digests.json",
+                      "bytes":  29955,
+                      "sha256":  "afc87aa79d994e6a80fa04d82066dc15ed5ae245c60c5f2829ca7ed8f2ecbdf5"
+                  },
+                  {
+                      "path":  "golden-repeat/observer_counters.json",
+                      "bytes":  1203,
+                      "sha256":  "300abd263268d6177e880a214f9bcf4cb1cf9efcecbe23e7886a2f17d109f892"
+                  },
+                  {
+                      "path":  "golden-repeat/provenance.json",
+                      "bytes":  1218,
+                      "sha256":  "a2eb54c5a85164fbeb6dd7df6bb4821241e235a622330841846dddaaea3629b1"
+                  },
+                  {
+                      "path":  "golden-repeat/seed_collision.json",
+                      "bytes":  223441,
+                      "sha256":  "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa"
+                  },
+                  {
+                      "path":  "golden-repeat/terrain_traits.json",
+                      "bytes":  209864,
+                      "sha256":  "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a"
+                  },
+                  {
+                      "path":  "golden-repeat/tile_digests.json",
+                      "bytes":  27645,
+                      "sha256":  "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e"
+                  },
+                  {
+                      "path":  "golden-tb/biome_hints.json",
+                      "bytes":  416138,
+                      "sha256":  "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2"
+                  },
+                  {
+                      "path":  "golden-tb/cached_direct_comparison.json",
+                      "bytes":  170129,
+                      "sha256":  "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee"
+                  },
+                  {
+                      "path":  "golden-tb/canonical_geography.json",
+                      "bytes":  787947,
+                      "sha256":  "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa"
+                  },
+                  {
+                      "path":  "golden-tb/completion.json",
+                      "bytes":  140,
+                      "sha256":  "b4eda19402cdb54691cbb6e9b81458f5070f32542300500130c196349a33e543"
+                  },
+                  {
+                      "path":  "golden-tb/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "golden-tb/environment.json",
+                      "bytes":  3437,
+                      "sha256":  "e8f5fd6f4b064f9d02cf20ce7d62c14e4cc3d4ea286e73f95db75bc27ffbf85a"
+                  },
+                  {
+                      "path":  "golden-tb/fixtures.json",
+                      "bytes":  50551,
+                      "sha256":  "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a"
+                  },
+                  {
+                      "path":  "golden-tb/identity.json",
+                      "bytes":  11303,
+                      "sha256":  "cedfcfd7e9f90321e2d8642507c8bdeb32e8eff8d1c917b0ea635193c1da7e8a"
+                  },
+                  {
+                      "path":  "golden-tb/legacy_direct_samples.json",
+                      "bytes":  767425,
+                      "sha256":  "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e"
+                  },
+                  {
+                      "path":  "golden-tb/minecraft_biomes.json",
+                      "bytes":  22075,
+                      "sha256":  "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992"
+                  },
+                  {
+                      "path":  "golden-tb/mountain_tile_digests.json",
+                      "bytes":  29955,
+                      "sha256":  "afc87aa79d994e6a80fa04d82066dc15ed5ae245c60c5f2829ca7ed8f2ecbdf5"
+                  },
+                  {
+                      "path":  "golden-tb/observer_counters.json",
+                      "bytes":  1203,
+                      "sha256":  "1bc1db2865eb7ba4143a4562fe1e1dad8aa4278669bb4fe6e464edcc965d5608"
+                  },
+                  {
+                      "path":  "golden-tb/provenance.json",
+                      "bytes":  1435,
+                      "sha256":  "1554c310fe2f804ee9b75b1c8950a114983ecc6baa4789d428f69d299ed5d505"
+                  },
+                  {
+                      "path":  "golden-tb/seed_collision.json",
+                      "bytes":  223441,
+                      "sha256":  "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa"
+                  },
+                  {
+                      "path":  "golden-tb/terrain_traits.json",
+                      "bytes":  209864,
+                      "sha256":  "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a"
+                  },
+                  {
+                      "path":  "golden-tb/tile_digests.json",
+                      "bytes":  27645,
+                      "sha256":  "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e"
+                  },
+                  {
+                      "path":  "initial_performance_comparison.json",
+                      "bytes":  9703,
+                      "sha256":  "4a3da2d71af836ab80df833e336fef2a60e6a5387e7bc7cfc806bddaa9bde15f"
+                  },
+                  {
+                      "path":  "legacy_dependency_report.json",
+                      "bytes":  3274,
+                      "sha256":  "cf4b8b990ce3c26b215e794c80f815a3cb5e7de9d9652974ffc9f4e5fa80e86e"
+                  },
+                  {
+                      "path":  "legacy_golden_comparison.json",
+                      "bytes":  3025,
+                      "sha256":  "7183774688939a3407c2345c126d461eeaea536450749ec2c1e3fb6a6b6e11bd"
+                  },
+                  {
+                      "path":  "legacy-compatibility/completion.json",
+                      "bytes":  140,
+                      "sha256":  "4d3f2b92ea1766290c3acd704808b66505908d551647d7cc40171f0fd7fa910f"
+                  },
+                  {
+                      "path":  "legacy-compatibility/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "legacy-compatibility/observer_counters.json",
+                      "bytes":  1201,
+                      "sha256":  "f2d35ec0e7b70a2d97dded49e967024090197b7e40dd6451c9c32bdcbf2d8e72"
+                  },
+                  {
+                      "path":  "legacy-compatibility/provenance.json",
+                      "bytes":  1164,
+                      "sha256":  "9483e0405c10cb5f3d0adfc3bfa7f8165bd526b66447bf9ff33650bf154669de"
+                  },
+                  {
+                      "path":  "legacy-compatibility/stage_comparison.json",
+                      "bytes":  540,
+                      "sha256":  "e87794d0bf0f3a9841a6f7b60701553dd91fcb37cf6324acc662de79b3995e42"
+                  },
+                  {
+                      "path":  "legacy-compatibility/stage_identity.json",
+                      "bytes":  441,
+                      "sha256":  "17346a07682e1ea527aebdbedeb81c5db47ed91328020346ead76abaede1c6dd"
+                  },
+                  {
+                      "path":  "legacy-compatibility/stage_samples.json",
+                      "bytes":  3636102,
+                      "sha256":  "ae893832afd5942c043fbfa7123b7afd728d0f0824ca3e39f1b1535b391d1ca3"
+                  },
+                  {
+                      "path":  "machine.json",
+                      "bytes":  1019,
+                      "sha256":  "c1a0ff7e1280db877518e9bc5a5606fb855b5ef68aefe568f435cbcde78bf2b3"
+                  },
+                  {
+                      "path":  "mountain_scheduling.json",
+                      "bytes":  1739,
+                      "sha256":  "8b6c9bcec64a86ce2068a1bcd59e19b81834606319de74f53ed9aa0ea78c2b3c"
+                  },
+                  {
+                      "path":  "mountain-capture/completion.json",
+                      "bytes":  140,
+                      "sha256":  "4c336c10d40329bf10b30caef61276a043560c5a5cb25e5a5dd0a149d7160a34"
+                  },
+                  {
+                      "path":  "mountain-capture/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "mountain-capture/observer_counters.json",
+                      "bytes":  1201,
+                      "sha256":  "8c0f85b82adb3965283333fb483e384d98f09306e0ab0d54f9ad36c5919ed6d1"
+                  },
+                  {
+                      "path":  "mountain-capture/provenance.json",
+                      "bytes":  1580,
+                      "sha256":  "4aefe0eecd83d1dab0e60f28250cf803f3ebb9f82df579957a82a1c185d7131c"
+                  },
+                  {
+                      "path":  "mountain-capture/stage_comparison.json",
+                      "bytes":  540,
+                      "sha256":  "e87794d0bf0f3a9841a6f7b60701553dd91fcb37cf6324acc662de79b3995e42"
+                  },
+                  {
+                      "path":  "mountain-capture/stage_identity.json",
+                      "bytes":  441,
+                      "sha256":  "17346a07682e1ea527aebdbedeb81c5db47ed91328020346ead76abaede1c6dd"
+                  },
+                  {
+                      "path":  "mountain-capture/stage_samples.json",
+                      "bytes":  3636102,
+                      "sha256":  "ae893832afd5942c043fbfa7123b7afd728d0f0824ca3e39f1b1535b391d1ca3"
+                  },
+                  {
+                      "path":  "performance_comparison.json",
+                      "bytes":  11074,
+                      "sha256":  "2c87f3589f1b20af95022ae1c2b4c44f495d09778d5d8a6393a7264de60e3d23"
+                  },
+                  {
+                      "path":  "point-stage-extraction/completion.json",
+                      "bytes":  140,
+                      "sha256":  "13ba395983e8e0d660d150ee545cd7e0bb25b5e429326ba1d7fd46d15bbcbc36"
+                  },
+                  {
+                      "path":  "point-stage-extraction/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "point-stage-extraction/observer_counters.json",
+                      "bytes":  1203,
+                      "sha256":  "3d8a722f798f3aa80b961a6abc2de48b4eabb9eb359def2b77972860a048c1e2"
+                  },
+                  {
+                      "path":  "point-stage-extraction/provenance.json",
+                      "bytes":  832,
+                      "sha256":  "0928c7a42a10240d14a9c0ce07283f3bbadfe717c682e78cc2334d13ae6cba12"
+                  },
+                  {
+                      "path":  "point-stage-extraction/stage_comparison.json",
+                      "bytes":  540,
+                      "sha256":  "e87794d0bf0f3a9841a6f7b60701553dd91fcb37cf6324acc662de79b3995e42"
+                  },
+                  {
+                      "path":  "point-stage-extraction/stage_identity.json",
+                      "bytes":  421,
+                      "sha256":  "fb8dd98560ec02c349a678cd43e2226920a6620d2d102968ce47d5fd8c630e4a"
+                  },
+                  {
+                      "path":  "point-stage-extraction/stage_samples.json",
+                      "bytes":  3636102,
+                      "sha256":  "ae893832afd5942c043fbfa7123b7afd728d0f0824ca3e39f1b1535b391d1ca3"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/completion.json",
+                      "bytes":  140,
+                      "sha256":  "3dd95543ff35232a45bcc03701889b4a3d1efab351e867a37144c291183f2be0"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/geography_checks.json",
+                      "bytes":  266,
+                      "sha256":  "e9cb181e086822e9b29f9a2151b8f86ecb3b6216e19941b822f9955d903a9dbd"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/hydrology_samples.json",
+                      "bytes":  17107,
+                      "sha256":  "5157834612e13ef2cdd2b9a0a47ab3112c7ba8415ad9ee66f75f212801d35af1"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/mountain_blend_checks.json",
+                      "bytes":  334,
+                      "sha256":  "acfd5a1c4cd6992a53ec742c45fed48bca32da96e6be786825a87ed1dbfbfb76"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/mountain_samples.json",
+                      "bytes":  16539,
+                      "sha256":  "12a635fd4073a2b70879aa4364cace85382cd1af8e608c5e3cd5b46b2af3aac1"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/observer_counters.json",
+                      "bytes":  1197,
+                      "sha256":  "f80f338d5bf3536001bc1b835a0d6b5be667a3c245428797e8848679ae1d651a"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/provenance.json",
+                      "bytes":  2924,
+                      "sha256":  "2128448c8492f96b28adc592ddf4d0c1d2e16602d9a93b7fb6ba5f599f4a6d6a"
+                  },
+                  {
+                      "path":  "provider-checks-fixed/provider_samples.json",
+                      "bytes":  145468,
+                      "sha256":  "ae36aa1b46b3cf5729069ac203c1d8b7ea97976a48d57abdba85af29a2810fa5"
+                  },
+                  {
+                      "path":  "public-provider-benchmark/completion.json",
+                      "bytes":  140,
+                      "sha256":  "e8b76d18184d17249f1dddbfd45b5ae4a2073a194bccc7438c7b9eea838bcd46"
+                  },
+                  {
+                      "path":  "public-provider-benchmark/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "public-provider-benchmark/observer_counters.json",
+                      "bytes":  1197,
+                      "sha256":  "84529a89cc57d70bfd68af9ec500c97c50c4e23366360ca8cc422bfa1f4a0330"
+                  },
+                  {
+                      "path":  "public-provider-benchmark/provenance.json",
+                      "bytes":  2528,
+                      "sha256":  "e9b4e60417065028c3c14bb5b8a367d5192ff83fa9f15294d958e9d0b4c046d6"
+                  },
+                  {
+                      "path":  "public-provider-benchmark/public_provider_benchmark.json",
+                      "bytes":  3323,
+                      "sha256":  "c27b9c932efb19c2825bd06516430a7e9384b298ff431f11029c1f1fb079b24a"
+                  },
+                  {
+                      "path":  "public-provider-reference/completion.json",
+                      "bytes":  140,
+                      "sha256":  "9a8cc7ed4df63f74768c0c6608ee1aa05f3b6af5b7a2f743ee019aa0ca9bd2e3"
+                  },
+                  {
+                      "path":  "public-provider-reference/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "public-provider-reference/observer_counters.json",
+                      "bytes":  1197,
+                      "sha256":  "3636e96957e1fd6370debf8f06f362ddb917eb237b019f4fb8ae5830e969c36a"
+                  },
+                  {
+                      "path":  "public-provider-reference/provenance.json",
+                      "bytes":  681,
+                      "sha256":  "5999595dbb0553cde74f1424e3b600f195a60f158f91787a6c2e605d071c27c6"
+                  },
+                  {
+                      "path":  "public-provider-reference/public_provider_benchmark.json",
+                      "bytes":  3319,
+                      "sha256":  "c1b13d5df07a016540d044145e025e6a1450933de047a662e988af9c0f8798d3"
+                  },
+                  {
+                      "path":  "public-provider-reference-stable/completion.json",
+                      "bytes":  140,
+                      "sha256":  "f2251b52fdb88db95a280748c6c9310f0c44d3beae4f90ec1b1e382c63eb048f"
+                  },
+                  {
+                      "path":  "public-provider-reference-stable/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "public-provider-reference-stable/observer_counters.json",
+                      "bytes":  1201,
+                      "sha256":  "d9c88999de5dc374fbec55881e09bc731126ce6f3285b9121bd86f3fc06805c3"
+                  },
+                  {
+                      "path":  "public-provider-reference-stable/protocol.java",
+                      "bytes":  2389,
+                      "sha256":  "0a301616b6e65d1640c0cf6bd340b9aa2353d4a7f5cc7d9fb0d934a90479f926"
+                  },
+                  {
+                      "path":  "public-provider-reference-stable/provenance.json",
+                      "bytes":  681,
+                      "sha256":  "0a04fa98f2564a0ffa0a5ac5b74146aac42f258d3dbe15dcb438f1fc1e5c3610"
+                  },
+                  {
+                      "path":  "public-provider-reference-stable/public_provider_benchmark.json",
+                      "bytes":  13035,
+                      "sha256":  "b140c674bff4438572c579ac5b124184a9244d22903642cf193ede9a6e929686"
+                  },
+                  {
+                      "path":  "public-provider-stable/completion.json",
+                      "bytes":  140,
+                      "sha256":  "249434443bf705ba965cfc33432848c82b32ce360eb107a2880698e1d8e33518"
+                  },
+                  {
+                      "path":  "public-provider-stable/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "public-provider-stable/observer_counters.json",
+                      "bytes":  1201,
+                      "sha256":  "675fb234c7839a2e176983391f946bfaa65d163835898d5efc41908002590287"
+                  },
+                  {
+                      "path":  "public-provider-stable/protocol.java",
+                      "bytes":  2389,
+                      "sha256":  "0a301616b6e65d1640c0cf6bd340b9aa2353d4a7f5cc7d9fb0d934a90479f926"
+                  },
+                  {
+                      "path":  "public-provider-stable/provenance.json",
+                      "bytes":  1942,
+                      "sha256":  "980ed3ca97794eebd2ed3704987ac84461907147eef89363280e4593b69a6c54"
+                  },
+                  {
+                      "path":  "public-provider-stable/public_provider_benchmark.json",
+                      "bytes":  13043,
+                      "sha256":  "fd1006651897d40dc48c49b9bcf9a56e9980e46f367b409ffcfafce76241a8ca"
+                  },
+                  {
+                      "path":  "runtime_smoke.json",
+                      "bytes":  2149,
+                      "sha256":  "bb088dddf9ec992d2666907e82c3f505ceeeca95ec6e23d16d85a28b6e705c8e"
+                  },
+                  {
+                      "path":  "smoke-existing-legacy.json",
+                      "bytes":  4768,
+                      "sha256":  "bf3e0fb31d13c8d53227b745ba0fb1acd019de512d3e40dd4431f6d6c6610bf7"
+                  },
+                  {
+                      "path":  "smoke-standalone.json",
+                      "bytes":  4770,
+                      "sha256":  "593e480a0c0efc8418d5ea9567f785a689de3598941e4db245c98152459af41a"
+                  },
+                  {
+                      "path":  "smoke-tb.json",
+                      "bytes":  4768,
+                      "sha256":  "cc8e2732e6e5b89531663d50d8792182c6c090db8c68e1515d42dec162a78453"
+                  },
+                  {
+                      "path":  "smoke-vanilla.json",
+                      "bytes":  2445,
+                      "sha256":  "f5d31c50c355a8965b7e49e7bbad18c8d9a5eee28c09747bde6fad4ccaea4eb2"
+                  },
+                  {
+                      "path":  "stage_equivalence.csv",
+                      "bytes":  148707,
+                      "sha256":  "67f49bfc0ff5ca27110d5b905da41f8687b5a67cf4c8307ecb7ce828ceca0fbd"
+                  },
+                  {
+                      "path":  "stage-baseline/completion.json",
+                      "bytes":  140,
+                      "sha256":  "21e0e05eb4eaad82606ba99f9114bc2ce33bd9d7cf22b0e11ee167de2644915e"
+                  },
+                  {
+                      "path":  "stage-baseline/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "stage-baseline/observer_counters.json",
+                      "bytes":  1201,
+                      "sha256":  "087379c89c57baed4600305d90dd908372d60b155de4812d49a849ae5de23ce4"
+                  },
+                  {
+                      "path":  "stage-baseline/provenance.json",
+                      "bytes":  806,
+                      "sha256":  "467a3b797cd25da15a57214520312230a3d9d6901c39694c0d8821e0f1a02f3e"
+                  },
+                  {
+                      "path":  "stage-baseline/stage_identity.json",
+                      "bytes":  421,
+                      "sha256":  "fb8dd98560ec02c349a678cd43e2226920a6620d2d102968ce47d5fd8c630e4a"
+                  },
+                  {
+                      "path":  "stage-baseline/stage_samples.json",
+                      "bytes":  3636102,
+                      "sha256":  "ae893832afd5942c043fbfa7123b7afd728d0f0824ca3e39f1b1535b391d1ca3"
+                  },
+                  {
+                      "path":  "stage-final/completion.json",
+                      "bytes":  140,
+                      "sha256":  "c41a9b399fa93875e9d78a5615c151ef2c8f952b7b4a671c562307f0c233b015"
+                  },
+                  {
+                      "path":  "stage-final/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "stage-final/geography_capture.json",
+                      "bytes":  795342,
+                      "sha256":  "229739e997dcc77411246d6a8850d56db6bdfbdc267ba3865d9122094fc8d45d"
+                  },
+                  {
+                      "path":  "stage-final/observer_counters.json",
+                      "bytes":  1201,
+                      "sha256":  "bcaa0a77282deedb872fdda359a00167448ee4030adfaa94ce005fbfc159fc21"
+                  },
+                  {
+                      "path":  "stage-final/provenance.json",
+                      "bytes":  1912,
+                      "sha256":  "59599294ab36fe7ad4820112f78a3caca291cd7fba615f54333e3df9016f42c2"
+                  },
+                  {
+                      "path":  "stage-final/stage_comparison.json",
+                      "bytes":  540,
+                      "sha256":  "e87794d0bf0f3a9841a6f7b60701553dd91fcb37cf6324acc662de79b3995e42"
+                  },
+                  {
+                      "path":  "stage-final/stage_identity.json",
+                      "bytes":  441,
+                      "sha256":  "17346a07682e1ea527aebdbedeb81c5db47ed91328020346ead76abaede1c6dd"
+                  },
+                  {
+                      "path":  "stage-final/stage_samples.json",
+                      "bytes":  3636102,
+                      "sha256":  "ae893832afd5942c043fbfa7123b7afd728d0f0824ca3e39f1b1535b391d1ca3"
+                  },
+                  {
+                      "path":  "task1b-verification/verification.json",
+                      "bytes":  38910,
+                      "sha256":  "2a536817bc0ae5e792a69862954e725da77b508cc558065e086c6bc82a30e868"
+                  },
+                  {
+                      "path":  "tile_digest_comparison.json",
+                      "bytes":  846,
+                      "sha256":  "1210190bcefe1e0f5679ab9e3636385a48c331e8366ce90aff241ed0e8cc76cc"
+                  },
+                  {
+                      "path":  "tile-pipeline/completion.json",
+                      "bytes":  140,
+                      "sha256":  "939628331ebfd168f6aadc17ce23458c13ed37edfa45d423be64c8615821c5c7"
+                  },
+                  {
+                      "path":  "tile-pipeline/disposal.json",
+                      "bytes":  187,
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+                  },
+                  {
+                      "path":  "tile-pipeline/observer_counters.json",
+                      "bytes":  1201,
+                      "sha256":  "679cefccd05f69490e843eb741bd2806e65241c017b9db2bc7e678e65ca17148"
+                  },
+                  {
+                      "path":  "tile-pipeline/provenance.json",
+                      "bytes":  1114,
+                      "sha256":  "5dfa993de777d817cdf43993c3d2115e8d47e0256f60e1590d95e3daf3e5d30d"
+                  },
+                  {
+                      "path":  "tile-pipeline/stage_comparison.json",
+                      "bytes":  540,
+                      "sha256":  "e87794d0bf0f3a9841a6f7b60701553dd91fcb37cf6324acc662de79b3995e42"
+                  },
+                  {
+                      "path":  "tile-pipeline/stage_identity.json",
+                      "bytes":  441,
+                      "sha256":  "17346a07682e1ea527aebdbedeb81c5db47ed91328020346ead76abaede1c6dd"
+                  },
+                  {
+                      "path":  "tile-pipeline/stage_samples.json",
+                      "bytes":  3636102,
+                      "sha256":  "ae893832afd5942c043fbfa7123b7afd728d0f0824ca3e39f1b1535b391d1ca3"
+                  },
+                  {
+                      "path":  "verified-logs/allocation.txt",
+                      "bytes":  35418,
+                      "sha256":  "05425475fc8e54db4ad75fc559fdf11f6822af94577727804739c4b07c19d15f"
+                  },
+                  {
+                      "path":  "verified-logs/benchmark.txt",
+                      "bytes":  87280,
+                      "sha256":  "53ddfd9f9ac8a1139a6ff3e48e03a914059216d8c3edca568ba3ee992e07dc37"
+                  },
+                  {
+                      "path":  "verified-logs/benchmark-resumed.txt",
+                      "bytes":  92008,
+                      "sha256":  "5d3c8acaa6dcdadfe66a43c4bba6a29ef7602e9f015beb1661d56e5b750880ef"
+                  },
+                  {
+                      "path":  "verified-logs/benchmark-task2-reference-stable.txt",
+                      "bytes":  86984,
+                      "sha256":  "5678cb8d24f7faddcca628eae9894e76547177d9157e6c8931626cb9aa0c8140"
+                  },
+                  {
+                      "path":  "verified-logs/final-build.txt",
+                      "bytes":  13810,
+                      "sha256":  "7016b92e1cfacecbd0d0f92cb80ca309f218158fb64c218672aea7a678f16076"
+                  },
+                  {
+                      "path":  "verified-logs/foundation.txt",
+                      "bytes":  45812,
+                      "sha256":  "f980f448d57e56b20fa8f07342996b9ec0ff19ccf12d27284e618051b436aa0b"
+                  },
+                  {
+                      "path":  "verified-logs/full.txt",
+                      "bytes":  89314,
+                      "sha256":  "af0a16cbbefccc17092d6eaaeb7a982b49825769f75de89ca42634041e32907f"
+                  },
+                  {
+                      "path":  "verified-logs/geography-final.txt",
+                      "bytes":  35584,
+                      "sha256":  "32d2696c3791a18746cd62d9fbfddf67b559aea0d537a75ca7e8fd49fe098d06"
+                  },
+                  {
+                      "path":  "verified-logs/golden-2.txt",
+                      "bytes":  48348,
+                      "sha256":  "abb119d5fb3cf23eed352c3c0b56a557820c7e9406b3cbdb480414387afdc26c"
+                  },
+                  {
+                      "path":  "verified-logs/golden-24.txt",
+                      "bytes":  35666,
+                      "sha256":  "64029336795d026ccb88f32cf47cdd915bdb77dccaeab6c769de69ea0d03f0a8"
+                  },
+                  {
+                      "path":  "verified-logs/golden-48.txt",
+                      "bytes":  35894,
+                      "sha256":  "87af0081b0dfc3fbf21ab06754786965f9f2fc4b907aef06152026bd0ca274f4"
+                  },
+                  {
+                      "path":  "verified-logs/golden-repeat.txt",
+                      "bytes":  36070,
+                      "sha256":  "474d7fc823d861769efca8bcf6355aa199c76f6da5dd87412c561dd915efd0aa"
+                  },
+                  {
+                      "path":  "verified-logs/golden-tb.txt",
+                      "bytes":  39194,
+                      "sha256":  "cc81f3a2b36af552b0181f572a6d310f55b08f779893d2d780ee65f12f013fcb"
+                  },
+                  {
+                      "path":  "verified-logs/public-provider-benchmark.txt",
+                      "bytes":  35420,
+                      "sha256":  "01c68111c4bad676fe43ea01abb9a862ef289be7309a538e7b97f5841cad9aa5"
+                  },
+                  {
+                      "path":  "verified-logs/public-provider-reference-stable.txt",
+                      "bytes":  37048,
+                      "sha256":  "f5fc048353e39c4c66ad8293ef1e15edabb2af9b10b3591e4f1fecdccc77b946"
+                  },
+                  {
+                      "path":  "verified-logs/public-provider-stable.txt",
+                      "bytes":  36868,
+                      "sha256":  "4225c0448c68724ba325968c05d81b457c729743a93d8ccb8d3ff14abe93eefe"
+                  },
+                  {
+                      "path":  "verified-logs/smoke-existing-legacy.txt",
+                      "bytes":  69724,
+                      "sha256":  "879326f4a269c60623a5e129fa9e50819c9b1bc3133cd5dc1547df77b9b90446"
+                  },
+                  {
+                      "path":  "verified-logs/smoke-standalone.txt",
+                      "bytes":  85726,
+                      "sha256":  "776f4dfcbea00f2abf205f85011ef44d98263507df6112392e5d14a6e0740688"
+                  },
+                  {
+                      "path":  "verified-logs/smoke-tb.txt",
+                      "bytes":  83584,
+                      "sha256":  "47fb09d86e009e79c56d1538f8cb126b6c2ff379e5f6c096f72b1fbb4518c9fd"
+                  },
+                  {
+                      "path":  "verified-logs/smoke-vanilla.txt",
+                      "bytes":  76506,
+                      "sha256":  "fac008285190efd098125dc4c559eb8e3761b1c1d3f649f4b84f2e04cfef8526"
+                  },
+                  {
+                      "path":  "verified-logs/stage-baseline.txt",
+                      "bytes":  37424,
+                      "sha256":  "c88192edf7eb032ad140ebacd6246180a277c52473d5683e67391a796ce6753c"
+                  },
+                  {
+                      "path":  "verified-logs/stage-final.txt",
+                      "bytes":  35494,
+                      "sha256":  "7035c2e1f97c88766061439ceb808456082829e65f9d113a15128aefc38f4fe9"
+                  }
+              ]
+}
