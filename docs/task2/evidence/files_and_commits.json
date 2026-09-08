@@ -501,6 +501,19 @@
                                                                "M\tscripts/task2/Verify-Goldens.ps1",
                                                                "M\tsrc/reproduction/java/baseline/reproduction/FoundationTests.java"
                                                            ]
+                                             },
+                                             {
+                                                 "sha":  "544fdf4bee32aca4e2579735927ca655cebf22fd",
+                                                 "subject":  "docs: finalize Task 2 versioned generation foundation",
+                                                 "files":  [
+                                                               "M\tdocs/task2/PROGRESS.md",
+                                                               "A\tdocs/task2/TASK_2_VERSIONED_GENERATION_FOUNDATION.md",
+                                                               "A\tdocs/task2/evidence/build_verification.json",
+                                                               "A\tdocs/task2/evidence/files_and_commits.json",
+                                                               "A\tdocs/task2/evidence/final_summary.json",
+                                                               "A\tdocs/task2/evidence/manifest.json",
+                                                               "A\tscripts/task2/Finalize-Evidence.ps1"
+                                                           ]
                                              }
                                          ],
     "note":  "Final documentation/index commit is the containing Git commit, not recursively embedded here. Paths include pending final artifacts.",

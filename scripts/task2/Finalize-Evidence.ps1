@@ -64,7 +64,10 @@ $commits=@(git log --reverse --format='%H%x09%s' "$accepted..HEAD" | ForEach-Obj
 $paths=@(@(git diff --name-only $accepted)+@(git ls-files --others --exclude-standard))|Sort-Object -Unique
 WriteJson "$evidence/files_and_commits.json" ([ordered]@{acceptedHead=$accepted;implementationAndEvidenceCommits=$commits;
     note='Final documentation/index commit is the containing Git commit, not recursively embedded here. Paths include pending final artifacts.';paths=$paths})
-$files=@(Get-ChildItem $evidence -Recurse -File | Where-Object {$_.FullName -ne "$evidence/manifest.json" -and $_.DirectoryName -ne "$evidence/logs"} | Sort-Object FullName | ForEach-Object {
+$files=@(Get-ChildItem $evidence -Recurse -File | Where-Object {
+    $relative=$_.FullName.Substring($evidence.Length+1).Replace('\','/')
+    $relative -ne 'manifest.json' -and !$relative.StartsWith('logs/')
+} | Sort-Object FullName | ForEach-Object {
     [ordered]@{path=$_.FullName.Substring($evidence.Length+1).Replace('\','/');sha256=(Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant();bytes=$_.Length}
 })
 WriteJson "$evidence/manifest.json" ([ordered]@{schemaVersion=1;fixtureVersion=1;comparator=$comparator;acceptedTask1C=$accepted;
