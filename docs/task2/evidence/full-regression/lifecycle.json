@@ -1,0 +1,153 @@
+[
+  {
+    "case": "63 drops",
+    "stillPublished": true,
+    "referenceUnchanged": true
+  },
+  {
+    "case": "worker retained reader across release",
+    "changed": false,
+    "observed": {
+      "beachNoise": 1008730112,
+      "biome": "TEMPERATE_FOREST",
+      "biomeRegionEdge": 1063902447,
+      "biomeRegionId": 1046718256,
+      "continentEdge": 1061046809,
+      "continentId": 1039098952,
+      "continentX": 2298,
+      "continentZ": -6656,
+      "erosion": 1048576000,
+      "erosionMask": false,
+      "gradient": 1036209576,
+      "height": 1050089532,
+      "heightErosion": -1160606188,
+      "macroBiomeId": 1001140224,
+      "moisture": 1045220557,
+      "regionMoisture": 1056968611,
+      "regionTemperature": 1057956108,
+      "riverMask": 1065353216,
+      "sediment": 0,
+      "temperature": 1020054732,
+      "terrain": "flats-hills",
+      "terrainRegionEdge": 1038750371,
+      "terrainRegionId": 1060471870,
+      "weirdness": -1105059293
+    }
+  },
+  {
+    "case": "64 drops then pool reuse",
+    "before": {
+      "beachNoise": 1008730112,
+      "biome": "TEMPERATE_FOREST",
+      "biomeRegionEdge": 1063902447,
+      "biomeRegionId": 1046718256,
+      "continentEdge": 1061046809,
+      "continentId": 1039098952,
+      "continentX": 2298,
+      "continentZ": -6656,
+      "erosion": 1048576000,
+      "erosionMask": false,
+      "gradient": 1036209576,
+      "height": 1050089532,
+      "heightErosion": -1160606188,
+      "macroBiomeId": 1001140224,
+      "moisture": 1045220557,
+      "regionMoisture": 1056968611,
+      "regionTemperature": 1057956108,
+      "riverMask": 1065353216,
+      "sediment": 0,
+      "temperature": 1020054732,
+      "terrain": "flats-hills",
+      "terrainRegionEdge": 1038750371,
+      "terrainRegionId": 1060471870,
+      "weirdness": -1105059293
+    },
+    "afterRelease": {
+      "beachNoise": 1008730112,
+      "biome": "TEMPERATE_FOREST",
+      "biomeRegionEdge": 1063902447,
+      "biomeRegionId": 1046718256,
+      "continentEdge": 1061046809,
+      "continentId": 1039098952,
+      "continentX": 2298,
+      "continentZ": -6656,
+      "erosion": 1048576000,
+      "erosionMask": false,
+      "gradient": 1036209576,
+      "height": 1050089532,
+      "heightErosion": -1160606188,
+      "macroBiomeId": 1001140224,
+      "moisture": 1045220557,
+      "regionMoisture": 1056968611,
+      "regionTemperature": 1057956108,
+      "riverMask": 1065353216,
+      "sediment": 0,
+      "temperature": 1020054732,
+      "terrain": "flats-hills",
+      "terrainRegionEdge": 1038750371,
+      "terrainRegionId": 1060471870,
+      "weirdness": -1105059293
+    },
+    "afterReuse": {
+      "beachNoise": 1008730112,
+      "biome": "TEMPERATE_FOREST",
+      "biomeRegionEdge": 1063902447,
+      "biomeRegionId": 1046718256,
+      "continentEdge": 1061046809,
+      "continentId": 1039098952,
+      "continentX": 2298,
+      "continentZ": -6656,
+      "erosion": 1048576000,
+      "erosionMask": false,
+      "gradient": 1036209576,
+      "height": 1050089532,
+      "heightErosion": -1160606188,
+      "macroBiomeId": 1001140224,
+      "moisture": 1045220557,
+      "regionMoisture": 1056968611,
+      "regionTemperature": 1057956108,
+      "riverMask": 1065353216,
+      "sediment": 0,
+      "temperature": 1020054732,
+      "terrain": "flats-hills",
+      "terrainRegionEdge": 1038750371,
+      "terrainRegionId": 1060471870,
+      "weirdness": -1105059293
+    },
+    "sameArray": false,
+    "readerStillReferencesRecycledCell": true,
+    "lazyEntryStillReturns": true
+  },
+  {
+    "case": "stale Tile.close after pool reborrow",
+    "replacementChanged": false
+  },
+  {
+    "case": "repeated published close",
+    "unchanged": true
+  },
+  {
+    "case": "detached publication cost",
+    "cells": 25600,
+    "elapsedNs": 542400,
+    "callerAllocatedBytes": 2975000,
+    "unchanged": true,
+    "workspacePoolItems": 1
+  },
+  {
+    "case": "TTL poll forced timestamp only",
+    "removed": true,
+    "resourceStillOpen": false,
+    "poolItems": 1
+  },
+  {
+    "case": "test-only forced filter failure after allocation",
+    "error": "java.lang.NullPointerException: Cannot invoke \"raccoonman.reterraforged.world.worldgen.WorldFilters.apply(raccoonman.reterraforged.world.worldgen.densityfunction.tile.Tile, boolean)\" because \"this.filters\" is null",
+    "returnedCellArrays": 1
+  },
+  {
+    "case": "global cache manager ownership",
+    "registeredCaches": 15,
+    "retainsTestCache": true
+  }
+]

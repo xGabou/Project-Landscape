@@ -36,17 +36,21 @@ foreach($name in $names){
     $tileResults += [ordered]@{name=$name;count=$actual.Count;changed=$changed;workers=@($actual.workers|Sort-Object -Unique)}
 }
 if(!$PrimaryOnly){
-    foreach($table in @('canonical_geography','biome_hints','minecraft_biomes')){
-        $expected=Rows "$reference/golden-tb/$table.json";$actual=Rows "$CandidateRoot/golden-tb/$table.json"
-        if($actual.Count -ne $expected.Count){$failures.Add("TB $table row count changed")}
+    foreach($suite in @('golden-repeat','golden-tb')){foreach($table in @('canonical_geography','legacy_direct_samples','biome_hints','minecraft_biomes')){
+        $referenceSuite=if($suite -eq 'golden-repeat'){'golden-24'}else{$suite}
+        $expected=Rows "$reference/$referenceSuite/$table.json";$actual=Rows "$CandidateRoot/$suite/$table.json"
+        if($actual.Count -ne $expected.Count){$failures.Add("$suite $table row count changed")}
         for($i=0;$i -lt [Math]::Min($actual.Count,$expected.Count);$i++){
             if($table -eq 'minecraft_biomes'){$equal=$actual[$i].biome -ceq $expected[$i].biome}else{$equal=FieldsEqual $actual[$i].fields $expected[$i].fields}
-            if(!$equal){$failures.Add("TB $table changed row $i")}
+            if(!$equal -or $actual[$i].seed -ne $expected[$i].seed -or $actual[$i].point.x -ne $expected[$i].point.x -or $actual[$i].point.z -ne $expected[$i].point.z){$failures.Add("$suite $table changed row $i")}
         }
-    }
+    }}
 }
-$diagnostic=Rows "$CandidateRoot/golden-24/cached_direct_comparison.json" | Where-Object {$_.seed -in @('8675309','4303642605','42','-987654321')}
+$diagnostic=Rows "$CandidateRoot/golden-24/cached_direct_comparison.json"
+$diagnostic=@($diagnostic | Where-Object {$_.seed -in @('8675309','4303642605','42','-987654321')})
 $fieldCounts=[ordered]@{};foreach($r in $diagnostic){foreach($field in $r.differentFields){if(!$fieldCounts.Contains($field)){$fieldCounts[$field]=0};$fieldCounts[$field]++}}
+if($diagnostic.Count -ne 340 -or @($diagnostic|Where-Object {$_.differentFields.Count}).Count -ne 340){$failures.Add('Legacy 340-row direct diagnostic count changed')}
+foreach($pair in @(@('gradient',340),@('height',319),@('heightErosion',176),@('sediment',96),@('terrain',6))){if($fieldCounts[$pair[0]] -ne $pair[1]){$failures.Add("Legacy direct field count changed: $($pair[0])")}}
 $summary=[ordered]@{schemaVersion=1;fixtureVersion=1;comparator='cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee';backend='LEGACY_RTF_V0';
     canonicalSemantics='LEGACY_FILTERED_CANONICAL';directSemantics='LEGACY_DIRECT_APPROXIMATE';
     exactness='signed raw float32 bits and exact identifiers; no epsilon';counts=$counts;tileResults=$tileResults;

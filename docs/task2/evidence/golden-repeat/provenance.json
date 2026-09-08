@@ -1,0 +1,26 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "task":  "Task 2",
+    "run":  "reproduction-1788875917318",
+    "sourceHead":  "16630a2273f63549dc4648934f22ef27b6d053c0",
+    "sourceDirty":  [
+                        " M build.gradle",
+                        " M scripts/task2/Verify-Goldens.ps1",
+                        " M src/smoke/java/baseline/smoke/BaselineSmoke.java",
+                        "?? docs/task2/evidence/golden-2/",
+                        "?? docs/task2/evidence/golden-24/",
+                        "?? docs/task2/evidence/golden-48/",
+                        "?? docs/task2/evidence/golden-repeat/",
+                        "?? docs/task2/evidence/legacy_golden_comparison.json",
+                        "?? docs/task2/evidence/tile_digest_comparison.json",
+                        "?? scripts/task2/Compare-Performance.ps1",
+                        "?? scripts/task2/Run-Measurements.ps1"
+                    ],
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "acceptedTask1C":  "d2164f25cd06aafcae15cc15f9f4babe977d4bdb",
+    "fixtureManifest":  "../../../task1c/evidence/fixture_manifest.json",
+    "fixtureManifestSha256":  "5ab8460c9cee4bfc7b311a1984e0987dcadb36e453c1ca817dc170d8015ef8d5",
+    "settingsReference":  "../../../task1c/evidence/golden-24/identity.json",
+    "backend":  "LEGACY_RTF_V0"
+}

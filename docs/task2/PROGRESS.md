@@ -98,3 +98,19 @@ Task 1C. Planned manifests round-trip as metadata but cannot start generation. F
 foundation run passed create/reopen and all expanded assertions. The primary terrain corpus also
 passed exactly: 595 geography + 595 hints + 85 biome keys + 105 tile digests; all 340 direct diagnostic
 rows retain the accepted disagreement counts. Additional worker/TB/performance gates are pending.
+
+## Correctness, comparator and smoke gates
+
+All 64 Task 1B checks pass. The complete Task 1C comparison passes: 595 canonical geography,
+595 biome/hint and 85 Minecraft biome-key fixtures; 420 standalone tile digests across workers
+2/24/48 and the tested orders; 105 TB digests plus TB geography/hints/biome keys. A final standalone
+repeat also compares the complete geography corpus, not only tiles. No canonical differences.
+
+Standalone, TerraBlender, vanilla and copied Task 1C existing-world smoke tests pass, each with
+14 FULL chunk checks across initial load and reopen. Vanilla live reload succeeds. The original
+Task 1C save was not modified; only its test copy received an explicit legacy manifest.
+
+Performance remains under investigation: the first Task 2 run is slower than the historical
+Task 1C timing, beyond the 5% investigation threshold. A detached exact Task 1C source worktree
+is being measured under the current environment before attributing that difference to code.
+Per-tile worker/caller allocations remain approximately 2.997 MB (not process-retained memory).

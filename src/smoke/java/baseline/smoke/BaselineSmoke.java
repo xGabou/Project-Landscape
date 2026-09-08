@@ -38,13 +38,16 @@ import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
 @Mod("baseline_smoke")
 public final class BaselineSmoke {
     private final boolean vanilla = Boolean.getBoolean("task1b.smokeVanilla");
-    private final String world = "task0-" + System.currentTimeMillis();
+    private final boolean existingWorld = System.getProperty("task2.existingWorld") != null;
+    private final String world = System.getProperty("task2.existingWorld", "task0-" + System.currentTimeMillis());
     private int stage;
     private int ticks;
     private CompletableFuture<Void> generation;
     private String lastScreen = "";
+    private final List<Object> task2Evidence = new ArrayList<>();
 
     public BaselineSmoke() {
+        if (!world.matches("[a-zA-Z0-9_-]+")) throw new IllegalArgumentException("Smoke world name must be a simple directory label");
         MinecraftForge.EVENT_BUS.addListener(this::tick);
     }
 
@@ -67,6 +70,12 @@ public final class BaselineSmoke {
                 mc.options.pauseOnLostFocus = false;
                 mc.options.renderDistance().set(4);
                 mc.options.simulationDistance().set(5);
+                if (existingWorld) {
+                    if (!Files.isRegularFile(mc.gameDirectory.toPath().resolve("saves").resolve(world).resolve("level.dat"))) throw new IllegalStateException("Existing smoke world missing");
+                    stage = 2;
+                    mc.createWorldOpenFlows().loadLevel(mc.screen, world);
+                    return;
+                }
                 CreateWorldScreen.openFresh(mc, mc.screen);
             } else if (stage == 1 && mc.screen instanceof CreateWorldScreen create) {
                 stage = 2;
@@ -103,6 +112,17 @@ public final class BaselineSmoke {
                         if (rules != 0) throw new IllegalStateException("Unexpected RTF rules in vanilla world: " + rules);
                         RTFCommon.LOGGER.info("TASK1B VANILLA_RULES count={}", rules);
                     } else if (state.generatorContext() == null || state.preset() == null) throw new IllegalStateException("ReTerraForged context/preset missing");
+                    if (!vanilla && state.generatorContext().generationContext() == null) throw new IllegalStateException("Task 2 world metadata missing");
+                    task2Evidence.add(java.util.Map.of("phase", reopened ? "reopened" : "initial", "vanilla", vanilla,
+                        "existingTask1CWorld", existingWorld, "terraBlender", ModList.get().isLoaded("terrablender"),
+                        "metadata", vanilla ? java.util.Map.of("ownership", "foreign_untouched") :
+                            com.gabou.atmospheregen.generation.context.GenerationDiagnostics.describe(state.generatorContext().generationContext())));
+                    if (vanilla && !reopened) {
+                        var reload = server.reloadResources(server.getPackRepository().getSelectedIds());
+                        server.managedBlock(reload::isDone);
+                        reload.join();
+                        task2Evidence.add(java.util.Map.of("vanillaLiveReload", "PASS"));
+                    }
                     RTFCommon.LOGGER.info("TASK0 WORLD_LOADED reopened={} seed={} packs={}", reopened, level.getSeed(), server.getPackRepository().getSelectedIds());
                     int offset = reopened ? 2048 : 0;
                     int[][] positions = {{0, 0}, {-129, -129}, {127, 127}, {128, 128}, {1024, -1024}, {-2048, 2048}, {4096, 0}};
@@ -112,6 +132,8 @@ public final class BaselineSmoke {
                         int y = level.getHeight(Heightmap.Types.WORLD_SURFACE, x, z);
                         var block = level.getBlockState(new BlockPos(x, y - 1, z));
                         if (block.isAir()) throw new IllegalStateException("Empty generated surface at " + x + "," + z);
+                        task2Evidence.add(java.util.Map.of("reopened", reopened, "x", x, "z", z, "height", y,
+                            "status", chunk.getStatus().toString(), "biome", level.getBiome(new BlockPos(x,y,z)).unwrapKey().orElseThrow().location().toString()));
                         RTFCommon.LOGGER.info("TASK0 CHUNK reopened={} x={} z={} status={} height={} surface={} biome={}",
                             reopened, x, z, chunk.getStatus(), y, block, level.getBiome(new BlockPos(x, y, z)).unwrapKey());
                     }
@@ -155,6 +177,8 @@ public final class BaselineSmoke {
                 if (vanilla) RTFCommon.LOGGER.info("TASK0 PASS: title, vanilla world without RTF preset, full chunks, save, reopen, additional full chunks; world={}", world);
                 else RTFCommon.LOGGER.info("TASK0 PASS: title, preset export/load, full chunks, save, reopen, additional full chunks; world={}", world);
                 Files.writeString(mc.gameDirectory.toPath().resolve("task0-pass.txt"), world + "\n");
+                Files.writeString(mc.gameDirectory.toPath().resolve("task2-smoke-evidence.json"),
+                    new com.google.gson.GsonBuilder().setPrettyPrinting().create().toJson(task2Evidence));
                 mc.stop();
             }
         } catch (Throwable failure) {

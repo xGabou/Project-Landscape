@@ -1,0 +1,9946 @@
+[
+  {
+    "seed": "8675309",
+    "ordinal": 0,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 1,
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 2,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 3,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 4,
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 5,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 6,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 7,
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 8,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 9,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 10,
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 11,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 12,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 13,
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 14,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 15,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 16,
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 17,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 18,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 19,
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 20,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 21,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 22,
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 23,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 24,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 25,
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 26,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 27,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 28,
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 29,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 30,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 31,
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 32,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 33,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 34,
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 35,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 36,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 37,
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 38,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 39,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 40,
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 41,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 42,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 43,
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 44,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 45,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 46,
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 47,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 48,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 49,
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 50,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 51,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 52,
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 53,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 54,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 55,
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 56,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 57,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 58,
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 59,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 60,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 61,
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 62,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 63,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 64,
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 65,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 66,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 67,
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 68,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 69,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 70,
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 71,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 72,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 73,
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 74,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 75,
+    "point": {
+      "label": "coast",
+      "x": -4032,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 76,
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -1728
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 77,
+    "point": {
+      "label": "mountain",
+      "x": -2688,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 78,
+    "point": {
+      "label": "mountain_edge",
+      "x": -2688,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 79,
+    "point": {
+      "label": "plains",
+      "x": 1280,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 80,
+    "point": {
+      "label": "plateau",
+      "x": 3392,
+      "z": -3072
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 81,
+    "point": {
+      "label": "region_transition",
+      "x": -2688,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 82,
+    "point": {
+      "label": "river",
+      "x": -64,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 83,
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": -2752,
+      "z": -2432
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "8675309",
+    "ordinal": 84,
+    "point": {
+      "label": "shallow_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 0,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 1,
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 2,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 3,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 4,
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 5,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 6,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 7,
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 8,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 9,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 10,
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 11,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 12,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 13,
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 14,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 15,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 16,
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 17,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 18,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 19,
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 20,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 21,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 22,
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 23,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 24,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 25,
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 26,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 27,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 28,
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 29,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 30,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 31,
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 32,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 33,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 34,
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 35,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 36,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 37,
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 38,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 39,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 40,
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 41,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 42,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 43,
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 44,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 45,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 46,
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 47,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 48,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 49,
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 50,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 51,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 52,
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 53,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 54,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 55,
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 56,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 57,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 58,
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 59,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 60,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 61,
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 62,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 63,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 64,
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 65,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 66,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 67,
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 68,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 69,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 70,
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 71,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 72,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 73,
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 74,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 75,
+    "point": {
+      "label": "coast",
+      "x": -4032,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 76,
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -1728
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 77,
+    "point": {
+      "label": "mountain",
+      "x": -2688,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 78,
+    "point": {
+      "label": "mountain_edge",
+      "x": -2688,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 79,
+    "point": {
+      "label": "plains",
+      "x": 1280,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 80,
+    "point": {
+      "label": "plateau",
+      "x": 3392,
+      "z": -3072
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 81,
+    "point": {
+      "label": "region_transition",
+      "x": -2688,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 82,
+    "point": {
+      "label": "river",
+      "x": -64,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 83,
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": -2752,
+      "z": -2432
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "ordinal": 84,
+    "point": {
+      "label": "shallow_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 0,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 1,
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 2,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 3,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 4,
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 5,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 6,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 7,
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 8,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 9,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 10,
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 11,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 12,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 13,
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 14,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 15,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 16,
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 17,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 18,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 19,
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 20,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 21,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 22,
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 23,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 24,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 25,
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 26,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 27,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 28,
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 29,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 30,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 31,
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 32,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 33,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 34,
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 35,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 36,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 37,
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 38,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 39,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 40,
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 41,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 42,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 43,
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 44,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 45,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 46,
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 47,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 48,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 49,
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 50,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 51,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 52,
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 53,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 54,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 55,
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 56,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 57,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 58,
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 59,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 60,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 61,
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 62,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 63,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 64,
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 65,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 66,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 67,
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 68,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 69,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 70,
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 71,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 72,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 73,
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 74,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 75,
+    "point": {
+      "label": "coast",
+      "x": -3520,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 76,
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 77,
+    "point": {
+      "label": "mountain",
+      "x": -1344,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 78,
+    "point": {
+      "label": "mountain_edge",
+      "x": -1344,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 79,
+    "point": {
+      "label": "plains",
+      "x": -3136,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 80,
+    "point": {
+      "label": "plateau",
+      "x": -128,
+      "z": -3392
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 81,
+    "point": {
+      "label": "region_transition",
+      "x": -3584,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 82,
+    "point": {
+      "label": "river",
+      "x": -2304,
+      "z": 256
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 83,
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": -2304,
+      "z": 256
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "42",
+    "ordinal": 84,
+    "point": {
+      "label": "shallow_ocean",
+      "x": -3904,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 0,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 1,
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 2,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 3,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 4,
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 5,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 6,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 7,
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 8,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 9,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 10,
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 11,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 12,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 13,
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 14,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 15,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 16,
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 17,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 18,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 19,
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 20,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 21,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 22,
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 23,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 24,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 25,
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 26,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 27,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 28,
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 29,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 30,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 31,
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 32,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 33,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 34,
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 35,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 36,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 37,
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 38,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 39,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 40,
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 41,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 42,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 43,
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 44,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 45,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 46,
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 47,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 48,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 49,
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 50,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 51,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 52,
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 53,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 54,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 55,
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 56,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 57,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 58,
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 59,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 60,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 61,
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 62,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 63,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 64,
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 65,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 66,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 67,
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 68,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 69,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 70,
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 71,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 72,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 73,
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 74,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 75,
+    "point": {
+      "label": "coast",
+      "x": -2048,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 76,
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 77,
+    "point": {
+      "label": "mountain",
+      "x": -512,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 78,
+    "point": {
+      "label": "mountain_edge",
+      "x": -512,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 79,
+    "point": {
+      "label": "plains",
+      "x": 1472,
+      "z": -3648
+    },
+    "differentFields": [
+      "gradient",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 80,
+    "point": {
+      "label": "plateau",
+      "x": -1024,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 81,
+    "point": {
+      "label": "region_transition",
+      "x": -3968,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 82,
+    "point": {
+      "label": "river",
+      "x": 64,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 83,
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": -448,
+      "z": -3520
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-987654321",
+    "ordinal": 84,
+    "point": {
+      "label": "shallow_ocean",
+      "x": -2432,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 0,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 1,
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 2,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 3,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 4,
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 5,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 6,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 7,
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 8,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 9,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 10,
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 11,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 12,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 13,
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 14,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 15,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 16,
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 17,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 18,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 19,
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 20,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 21,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 22,
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 23,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 24,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 25,
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 26,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 27,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 28,
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 29,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 30,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 31,
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 32,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 33,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 34,
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 35,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 36,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 37,
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 38,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 39,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 40,
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 41,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 42,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 43,
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 44,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 45,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 46,
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 47,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 48,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 49,
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 50,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 51,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 52,
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 53,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 54,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 55,
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 56,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 57,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 58,
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 59,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 60,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 61,
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 62,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 63,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 64,
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 65,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 66,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 67,
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 68,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 69,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 70,
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 71,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 72,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 73,
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 74,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 75,
+    "point": {
+      "label": "coast",
+      "x": 3584,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 76,
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 77,
+    "point": {
+      "label": "mountain",
+      "x": -320,
+      "z": -2752
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 78,
+    "point": {
+      "label": "mountain_edge",
+      "x": -320,
+      "z": -2752
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 79,
+    "point": {
+      "label": "plains",
+      "x": 3584,
+      "z": -2944
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 80,
+    "point": {
+      "label": "plateau",
+      "x": 3840,
+      "z": -3648
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 81,
+    "point": {
+      "label": "region_transition",
+      "x": -2496,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 82,
+    "point": {
+      "label": "river",
+      "x": 2304,
+      "z": -3712
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 83,
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": 2304,
+      "z": -3712
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "0",
+    "ordinal": 84,
+    "point": {
+      "label": "shallow_ocean",
+      "x": -3008,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 0,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 1,
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 2,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 3,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 4,
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 5,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 6,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 7,
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 8,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 9,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 10,
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 11,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 12,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 13,
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 14,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 15,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 16,
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 17,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 18,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 19,
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 20,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 21,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 22,
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 23,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 24,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 25,
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 26,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 27,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 28,
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 29,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 30,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 31,
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 32,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 33,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 34,
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 35,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 36,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 37,
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 38,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 39,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 40,
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 41,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 42,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 43,
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 44,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 45,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 46,
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 47,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 48,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 49,
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 50,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 51,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 52,
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 53,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 54,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 55,
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 56,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_continent",
+      "hint_gradient",
+      "hint_height",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 57,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 58,
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 59,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_continent",
+      "hint_gradient",
+      "hint_height",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 60,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 61,
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 62,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_continent",
+      "hint_gradient",
+      "hint_height",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 63,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 64,
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 65,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_continent",
+      "hint_gradient",
+      "hint_height",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 66,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 67,
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 68,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_continent",
+      "hint_gradient",
+      "hint_height",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 69,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 70,
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 71,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_continent",
+      "hint_gradient",
+      "hint_height",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 72,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 73,
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 74,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 75,
+    "point": {
+      "label": "coast",
+      "x": -2944,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "terrain"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 76,
+    "point": {
+      "label": "deep_ocean",
+      "x": -4096,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 77,
+    "point": {
+      "label": "mountain",
+      "x": -832,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 78,
+    "point": {
+      "label": "mountain_edge",
+      "x": -832,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 79,
+    "point": {
+      "label": "plains",
+      "x": 0,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 80,
+    "point": {
+      "label": "plateau",
+      "x": -1152,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 81,
+    "point": {
+      "label": "region_transition",
+      "x": -3968,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 82,
+    "point": {
+      "label": "river",
+      "x": 320,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 83,
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": 3392,
+      "z": -2752
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "9223372036854775807",
+    "ordinal": 84,
+    "point": {
+      "label": "shallow_ocean",
+      "x": -3200,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 0,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -129,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 1,
+    "point": {
+      "label": "x_boundary",
+      "x": -129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 2,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 3,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -128,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 4,
+    "point": {
+      "label": "x_boundary",
+      "x": -128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 5,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 6,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -127,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 7,
+    "point": {
+      "label": "x_boundary",
+      "x": -127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 8,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 9,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -17,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 10,
+    "point": {
+      "label": "x_boundary",
+      "x": -17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 11,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 12,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -16,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 13,
+    "point": {
+      "label": "x_boundary",
+      "x": -16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 14,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 15,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -15,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 16,
+    "point": {
+      "label": "x_boundary",
+      "x": -15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 17,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 18,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -5,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 19,
+    "point": {
+      "label": "x_boundary",
+      "x": -5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 20,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 21,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -4,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 22,
+    "point": {
+      "label": "x_boundary",
+      "x": -4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 23,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 24,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -3,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 25,
+    "point": {
+      "label": "x_boundary",
+      "x": -3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 26,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 27,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": -1,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 28,
+    "point": {
+      "label": "x_boundary",
+      "x": -1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 29,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": -1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 30,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 31,
+    "point": {
+      "label": "x_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 32,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 33,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 1,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 34,
+    "point": {
+      "label": "x_boundary",
+      "x": 1,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 35,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 1
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 36,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 3,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 37,
+    "point": {
+      "label": "x_boundary",
+      "x": 3,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 38,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 3
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 39,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 4,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 40,
+    "point": {
+      "label": "x_boundary",
+      "x": 4,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 41,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 4
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 42,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 5,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 43,
+    "point": {
+      "label": "x_boundary",
+      "x": 5,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 44,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 5
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 45,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 15,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 46,
+    "point": {
+      "label": "x_boundary",
+      "x": 15,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 47,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 15
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 48,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 16,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 49,
+    "point": {
+      "label": "x_boundary",
+      "x": 16,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 50,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 16
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 51,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 17,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 52,
+    "point": {
+      "label": "x_boundary",
+      "x": 17,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 53,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 17
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 54,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 63,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 55,
+    "point": {
+      "label": "x_boundary",
+      "x": 63,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 56,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 63
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 57,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 64,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 58,
+    "point": {
+      "label": "x_boundary",
+      "x": 64,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 59,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 64
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 60,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 65,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 61,
+    "point": {
+      "label": "x_boundary",
+      "x": 65,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 62,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 65
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 63,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 126,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 64,
+    "point": {
+      "label": "x_boundary",
+      "x": 126,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 65,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 126
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 66,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 127,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 67,
+    "point": {
+      "label": "x_boundary",
+      "x": 127,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 68,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 127
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 69,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 128,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 70,
+    "point": {
+      "label": "x_boundary",
+      "x": 128,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 71,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 128
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 72,
+    "point": {
+      "label": "diagonal_boundary",
+      "x": 129,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 73,
+    "point": {
+      "label": "x_boundary",
+      "x": 129,
+      "z": 0
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 74,
+    "point": {
+      "label": "z_boundary",
+      "x": 0,
+      "z": 129
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 75,
+    "point": {
+      "label": "coast",
+      "x": -4096,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 76,
+    "point": {
+      "label": "deep_ocean",
+      "x": -320,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 77,
+    "point": {
+      "label": "mountain",
+      "x": -1984,
+      "z": -3072
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 78,
+    "point": {
+      "label": "mountain_edge",
+      "x": -1984,
+      "z": -3072
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 79,
+    "point": {
+      "label": "plains",
+      "x": -3648,
+      "z": -3968
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 80,
+    "point": {
+      "label": "plateau",
+      "x": -1024,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion",
+      "hint_sediment",
+      "sediment"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 81,
+    "point": {
+      "label": "region_transition",
+      "x": -3520,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "heightErosion",
+      "hint_gradient",
+      "hint_height",
+      "hint_height_erosion"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 82,
+    "point": {
+      "label": "river",
+      "x": 3904,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 83,
+    "point": {
+      "label": "river_mouth_proxy",
+      "x": 3904,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "hint_gradient"
+    ]
+  },
+  {
+    "seed": "-9223372036854775807",
+    "ordinal": 84,
+    "point": {
+      "label": "shallow_ocean",
+      "x": -576,
+      "z": -4096
+    },
+    "differentFields": [
+      "gradient",
+      "height",
+      "hint_gradient",
+      "hint_height"
+    ]
+  }
+]
