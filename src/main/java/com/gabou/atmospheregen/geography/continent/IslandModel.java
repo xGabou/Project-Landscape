@@ -54,7 +54,8 @@ public final class IslandModel {
     }
     private void add(List<Island> result,MacroSiteField.Site site,double x,double z,double r,IslandClass kind,long cluster) {
         // Full disc plus clearance is excluded from every reserved marine strip.
-        if(continent.clearance(x,z,site)<=r+64)return;
+        double shelfClearance=Math.max(64,2*settings.shelfWidthBlocks()-settings.minimumMajorOceanWidthBlocks()/2);
+        if(continent.clearance(x,z,site)<=r+shelfClearance)return;
         // Validate the full bounding ring against the real mainland predicate, with a gap.
         for(int i=0;i<32;i++) {
             double a=i*Math.PI/16;

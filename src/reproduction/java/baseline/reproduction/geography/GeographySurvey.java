@@ -28,14 +28,22 @@ public final class GeographySurvey {
     public static void main(String[] args)throws Exception {
         Path out=Path.of(args[0]);if(Files.exists(out))throw new IllegalArgumentException("Refusing existing survey directory: "+out);
         Files.createDirectories(out);var settings=MacroGeographySettings.defaults();
-        write(out,"config_schema.json",MacroGeographySettings.CODEC.encodeStart(JsonOps.INSTANCE,settings).getOrThrow(false,s->{}));
-        List<Object> fractions=new ArrayList<>(),components=new ArrayList<>(),widths=new ArrayList<>(),interiors=new ArrayList<>(),islands=new ArrayList<>(),shelves=new ArrayList<>(),identity=new ArrayList<>();
+        var configuration=MacroGeographySettings.CODEC.encodeStart(JsonOps.INSTANCE,settings).getOrThrow(false,s->{});
+        write(out,"configuration.json",configuration);write(out,"config_schema.json",configuration);
+        List<Object> fractions=new ArrayList<>(),components=new ArrayList<>(),widths=new ArrayList<>(),interiors=new ArrayList<>(),islands=new ArrayList<>(),shelves=new ArrayList<>(),identity=new ArrayList<>(),translated=new ArrayList<>(),coastRefinement=new ArrayList<>();
         int invalid=0;double minWidth=Double.POSITIVE_INFINITY;List<Double> validWidths=new ArrayList<>();
         for(long seed:SEEDS) {
             long start=System.nanoTime();var p=provider(seed,settings);
             var window=TopologyMeasurements.window(p,-32768,-32768,65536,128);
             fractions.add(Map.of("seed",Long.toString(seed),"land",window.landFraction(),"ocean",window.oceanFraction(),"inlandSea",window.inlandSeaFraction(),"coastlineBlocks",window.marchingSquaresCoastlineBlocks()));
             for(var c:window.components())components.add(Map.of("seed",Long.toString(seed),"component",c));
+            var shifted=TopologyMeasurements.window(p,-20423,-56224,65536,128);
+            translated.add(Map.of("seed",Long.toString(seed),"window",shifted));
+            if(seed==8675309 || seed==42) {
+                var fine=TopologyMeasurements.window(p,-32768,-32768,65536,64);
+                coastRefinement.add(Map.of("seed",Long.toString(seed),"step64CoastlineBlocks",fine.marchingSquaresCoastlineBlocks(),"step128CoastlineBlocks",window.marchingSquaresCoastlineBlocks()));
+                map(out,p,seed);
+            }
             for(int gz=-2;gz<2;gz++)for(int gx=-2;gx<2;gx++) {
                 var site=p.sites().site(gx,gz);identity.add(Map.of("seed",Long.toString(seed),"site",site));
                 for(var island:p.islands().islands(site))islands.add(Map.of("seed",Long.toString(seed),"siteId",Long.toString(site.id()),"island",island));
@@ -66,12 +74,24 @@ public final class GeographySurvey {
         write(out,"land_ocean_samples.json",fractions);write(out,"continent_components.json",components);
         write(out,"major_ocean_widths.json",widths);write(out,"continental_interior.json",interiors);
         write(out,"island_metrics.json",islands);write(out,"shelf_metrics.json",shelves);write(out,"site_identity.json",identity);
+        write(out,"translated_windows.json",translated);write(out,"coastline_refinement.json",coastRefinement);
         validWidths.sort(Double::compare);write(out,"survey_summary.json",Map.of("version",VERSION,"extentBlocks",65536,"stepBlocks",128,"seedCount",SEEDS.length,
             "minimumSampledMajorOceanWidthBlocks",minWidth,"widthP10",quantile(validWidths,0.1),"widthMedian",quantile(validWidths,0.5),"widthP90",quantile(validWidths,0.9),"invalidTopologyCount",invalid));
         determinism(out,settings);adversarial(out);distanceChecks(out,settings);
         if(invalid!=0)throw new AssertionError("Invalid topology sections: "+invalid);
     }
     private static double quantile(List<Double> v,double q){return v.get(Math.max(0,(int)Math.ceil(q*v.size())-1));}
+    private static void map(Path out,PaMacroGeography p,long seed)throws Exception {
+        var image=new java.awt.image.BufferedImage(1024,1024,java.awt.image.BufferedImage.TYPE_INT_RGB);
+        for(int z=0;z<1024;z++)for(int x=0;x<1024;x++) {
+            var s=p.sampleMacro(-32768+x*64,-32768+z*64);
+            int color=s.land()?0x678e50:s.waterBody()==MacroGeographyProvider.MarineClass.INLAND_SEA?0x486f9e:
+                s.shelfFraction()>0.5?0x5da9b6:s.inReservedCorridor()?0x173451:0x28526f;
+            if(s.land()&&s.islandClass()!=MacroGeographyProvider.IslandClass.NONE)color=s.islandClass()==MacroGeographyProvider.IslandClass.ARCHIPELAGO?0xeab95b:0xa2bb68;
+            image.setRGB(x,z,color);
+        }
+        javax.imageio.ImageIO.write(image,"png",out.resolve("macro-map-"+seed+".png").toFile());
+    }
     private static void write(Path out,String name,Object value)throws Exception{Files.writeString(out.resolve(name),JSON.toJson(value),StandardCharsets.UTF_8,StandardOpenOption.CREATE_NEW);}
     private static String digest(PaMacroGeography p,List<Integer> order,boolean parallel)throws Exception {
         String[] rows=new String[order.size()];
@@ -94,7 +114,7 @@ public final class GeographySurvey {
     private static void adversarial(Path out)throws Exception {
         List<Object> results=new ArrayList<>();
         double[][] cases={{16384,.15,1000,128,0.3,.16,384},{65536,.56,1000,128,.3,.16,384},{16384,.44,256,128,.3,.16,128},
-            {32768,.25,8000,128,.3,.16,384},{16384,.44,1000,512,.3,.16,384},{16384,.44,1000,128,1,1,384},
+            {32768,.25,8000,128,.3,.16,384},{16384,.44,1000,512,.3,.16,256},{16384,.44,1000,128,1,1,384},
             {131072,.44,1000,128,.3,.16,384},{8192,.30,1000,128,.3,.16,384},
             {8192,.60,8000,512,1,1,384},{0,.44,1000,128,.3,.16,384},{16384,Double.NaN,1000,128,.3,.16,384},{16384,.44,1000,128,.3,.16,1000}};
         for(int i=0;i<cases.length;i++) {

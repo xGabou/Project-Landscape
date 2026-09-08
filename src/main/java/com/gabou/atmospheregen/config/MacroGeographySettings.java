@@ -38,6 +38,9 @@ public record MacroGeographySettings(double continentScaleBlocks, double landCov
             throw new IllegalArgumentException("continentScaleBlocks/landCoverageTarget/coastlineDetailBlocks leave insufficient clearance for minimumMajorOceanWidthBlocks; increase scale or reduce coverage/detail/width");
         if(shelfWidthBlocks*2>minimumMajorOceanWidthBlocks)
             throw new IllegalArgumentException("shelfWidthBlocks must be <= half minimumMajorOceanWidthBlocks to retain a deep marine corridor");
+        double shorelineMargin=continentScaleBlocks/2-(radius*1.10+continentScaleBlocks*0.02+coastlineDetailBlocks);
+        if(shelfWidthBlocks*2>shorelineMargin)
+            throw new IllegalArgumentException("shelfWidthBlocks leaves insufficient space for a complete shelf break before macro-cell boundaries; reduce shelf width, coverage or coastline detail");
     }
     public static MacroGeographySettings defaults() {return new MacroGeographySettings(16384,0.44,1000,128,0.30,0.16,0.20,384,18,1);}
 }
