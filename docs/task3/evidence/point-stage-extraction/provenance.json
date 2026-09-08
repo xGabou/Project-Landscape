@@ -1,0 +1,16 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "run":  "reproduction-1788880901989",
+    "sourceHead":  "28905cc9e7ee35d2a1c8df028c0cd17193f6a87c",
+    "sourceDirty":  [
+                        " M src/main/java/raccoonman/reterraforged/world/worldgen/cell/heightmap/Heightmap.java",
+                        "?? docs/task3/evidence/point-stage-extraction/",
+                        "?? scripts/task3/Verify-Stages.ps1",
+                        "?? src/main/java/raccoonman/reterraforged/world/worldgen/cell/geography/"
+                    ],
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "backend":  "LEGACY_RTF_V0",
+    "fixtureReference":  "../../../task1c/evidence/fixture_manifest.json",
+    "fixtureSha256":  "5ab8460c9cee4bfc7b311a1984e0987dcadb36e453c1ca817dc170d8015ef8d5"
+}
