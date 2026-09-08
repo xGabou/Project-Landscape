@@ -1,0 +1,60 @@
+[
+  {
+    "case": "legacy versions",
+    "json": {
+      "schemaVersion": 1,
+      "geography": "LEGACY_RTF_V0",
+      "baselineClimate": "LEGACY_RTF_HINTS_V0",
+      "biomeResolver": "LEGACY_MULTINOISE_V0"
+    },
+    "equal": true
+  },
+  {
+    "case": "planned versions",
+    "json": {
+      "schemaVersion": 1,
+      "geography": "PA_GEOGRAPHY_V1",
+      "baselineClimate": "PA_BASELINE_V1",
+      "biomeResolver": "PA_RESOLVER_V1"
+    },
+    "equal": true
+  },
+  {
+    "case": "planned geography controls",
+    "json": {
+      "terrainScaleBlocks": 1200.0,
+      "mountainScaleBlocks": 2000.0,
+      "riverFrequency": 0.5,
+      "continentScaleBlocks": 3000.0,
+      "minimumMajorOceanWidthBlocks": 1000.0
+    },
+    "equal": true
+  },
+  {
+    "case": "legacy climate config",
+    "json": {},
+    "equal": true
+  },
+  {
+    "case": "planned climate config",
+    "json": {
+      "planned": {
+        "latitudeScaleBlocks": 100000.0,
+        "lapseCelsiusPerBlock": 0.0065,
+        "oceanInfluence": 0.5,
+        "rainShadowStrength": 0.5
+      }
+    },
+    "equal": true
+  },
+  {
+    "case": "planned resolver config",
+    "json": {
+      "planned": {
+        "spatialResolutionBlocks": 64,
+        "fallbackWeight": 1
+      }
+    },
+    "equal": true
+  }
+]

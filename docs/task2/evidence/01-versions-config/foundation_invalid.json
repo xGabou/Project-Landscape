@@ -1,0 +1,38 @@
+[
+  {
+    "case": "unknown geography",
+    "error": "Unsupported GeographyAlgorithmVersion \u0027FUTURE_UNKNOWN\u0027; restore a supported manifest, do not auto-upgrade"
+  },
+  {
+    "case": "missing version fields",
+    "error": "No key biomeResolver in MapLike[{}]; No key baselineClimate in MapLike[{}]; No key geography in MapLike[{}]; No key schemaVersion in MapLike[{}]"
+  },
+  {
+    "case": "unknown schema",
+    "error": "schemaVersion must be in [1, 1]; got 2"
+  },
+  {
+    "case": "bad planned climate",
+    "error": "latitudeScaleBlocks must be finite in [1.0, 3.0E7]; got 0.0"
+  },
+  {
+    "case": "bad planned resolver",
+    "error": "fallbackWeight must be in [1, 1000000]; got -1; spatialResolutionBlocks must be in [1, 30000000]; got 0"
+  },
+  {
+    "case": "finite range NaN",
+    "error": "test must be finite in [0.0, 1.0]; got NaN"
+  },
+  {
+    "case": "finite range Infinity",
+    "error": "test must be finite in [0.0, 1.0]; got Infinity"
+  },
+  {
+    "case": "finite range -1.0",
+    "error": "test must be finite in [0.0, 1.0]; got -1.0"
+  },
+  {
+    "case": "unimplemented backend",
+    "error": "Generation backend tuple GenerationVersions[schemaVersion\u003d1, geography\u003dPA_GEOGRAPHY_V1, baselineClimate\u003dPA_BASELINE_V1, biomeResolver\u003dPA_RESOLVER_V1] is not implemented; only LEGACY_RTF_V0 is functional. No legacy fallback."
+  }
+]

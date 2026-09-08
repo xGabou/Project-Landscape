@@ -73,7 +73,9 @@ public final class ReproductionClient {
                 work=server.submit(()->{
                     try{
                         out.row("observer_counters", "phase", "before_suite", "seed", currentSeed(), "counters", Metrics.snapshot());
-                        if(task1c.startsWith("golden") || task1cRepeat() || task1c.equals("allocation")) {
+                        if(task1c.equals("foundation")) {
+                            FoundationTests.run(server.overworld(),out);
+                        } else if(task1c.startsWith("golden") || task1cRepeat() || task1c.equals("allocation")) {
                             new LegacyBaselineSuite(server.overworld(), out).run(task1c,worldIndex);
                         } else if(worldIndex==0&&!chunksOnly)new ReproductionSuite(server.overworld(),out,seeds).run(server.overworld(),full);
                         out.row("observer_counters", "phase", "before_chunks", "seed", currentSeed(), "counters", Metrics.snapshot());
