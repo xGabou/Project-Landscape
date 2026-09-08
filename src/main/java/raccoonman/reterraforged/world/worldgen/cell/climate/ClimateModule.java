@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.climate;
 
 import raccoonman.reterraforged.data.worldgen.preset.settings.ClimateSettings;
@@ -18,6 +19,7 @@ import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
 import raccoonman.reterraforged.world.worldgen.noise.module.Noises;
 import raccoonman.reterraforged.world.worldgen.util.Seed;
 
+/** Frozen legacy BiomeType/parameter machinery, not a physical baseline climate model. */
 public class ClimateModule {
 	private int seed;
 	private float biomeFreq;
@@ -132,7 +134,7 @@ public class ClimateModule {
 		float continentEdge = this.continent.getLandValue(posX, posZ);
 		if (mask) {
 			cell.biomeRegionEdge = this.edgeValue(edgeDistance, edgeDistance2);
-			this.modifyTerrain(cell, continentEdge);
+			raccoonman.reterraforged.world.worldgen.cell.geography.LegacyCoastCompatibility.applyBiomeCenterCoast(cell, continentEdge, this.controlPoints);
 		}
 		cell.regionMoisture = this.modifyMoisture(cell.regionMoisture, continentEdge);
 
@@ -170,12 +172,6 @@ public class ClimateModule {
 			float alpha = (continentEdge - limit) / range;
 			float multiplier = 1.0F - alpha * range;
 			return moisture *= multiplier;
-		}
-	}
-
-	private void modifyTerrain(Cell cell, float continentEdge) {
-		if (cell.terrain.isOverground() && !cell.terrain.overridesCoast() && continentEdge <= this.controlPoints.coastMarker()) {
-			cell.terrain = TerrainType.COAST;
 		}
 	}
 

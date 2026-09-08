@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.climate;
 
 import net.minecraft.core.HolderGetter;
@@ -15,6 +16,7 @@ import raccoonman.reterraforged.world.worldgen.noise.NoiseUtil;
 import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
 import raccoonman.reterraforged.world.worldgen.noise.module.Noises;
 
+/** Legacy biome/parameter classification only; V0 coast side effects are explicit compatibility calls. */
 public record Climate(int randomSeed, Noise offsetX, Noise offsetZ, int offsetDistance, Levels levels, ClimateModule biomeNoise) {
 
 	public void apply(Cell cell, float x, float z, boolean applyClimate) {
@@ -22,9 +24,7 @@ public record Climate(int randomSeed, Noise offsetX, Noise offsetZ, int offsetDi
 			this.biomeNoise.apply(cell, x, z, x, z, true);
 		float edgeBlend = 0.4F;
 		if (cell.height <= this.levels.water) {
-			if (cell.terrain == TerrainType.COAST) {
-				cell.terrain = TerrainType.SHALLOW_OCEAN;
-			}
+			raccoonman.reterraforged.world.worldgen.cell.geography.LegacyCoastCompatibility.applySubmergedCoast(cell);
 		} else if (applyClimate && (cell.biomeRegionEdge < edgeBlend || cell.terrain == TerrainType.MOUNTAIN_CHAIN)) {
 			float modifier = 1.0F - NoiseUtil.map(cell.biomeRegionEdge, 0.0F, edgeBlend, edgeBlend);
 			float distance = this.offsetDistance * modifier;
