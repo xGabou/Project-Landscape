@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.client.gui.screen.presetconfig;
 
 import java.awt.Color;
@@ -180,7 +181,7 @@ public abstract class PresetEditorPage extends BisectedPage<PresetConfigScreen, 
 	        	this.centerZ = 0;
 	        }
 
-	        this.tile = generatorContext.generator.generateZoomed(this.centerX, this.centerZ, this.getZoom(), false).join();
+	        this.tile = generatorContext.generator.generatePreviewApproximate(this.centerX, this.centerZ, this.getZoom(), false).join();
 	        RenderMode renderMode = PresetEditorPage.this.renderMode.getValue();
 	        Levels levels = new Levels(properties.terrainScaler(), properties.seaLevel);
 
@@ -217,6 +218,7 @@ public abstract class PresetEditorPage extends BisectedPage<PresetConfigScreen, 
 	        RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 	        RenderSystem.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
 	    	guiGraphics.blit(this.textureId, x, y, 0, 0, this.width, this.height, this.width, this.height);
+	    	guiGraphics.drawString(Minecraft.getInstance().font, "Legacy preview approximation", x + 3, y + 3, 0xFFFFFF);
 
 	    	this.updateLegend(mx, my);
 

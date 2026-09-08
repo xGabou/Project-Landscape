@@ -44,7 +44,9 @@ record CellTest(float cutoff, Set<Terrain> terrainTypeBlacklist) implements Stru
 			if(generatorContext != null) {
 				WorldLookup worldLookup = generatorContext.lookup;
 				Cell cell = new Cell();
-				worldLookup.applyCell(cell.reset(), pos.getX(), pos.getZ(), false);
+				// Frozen V0 eligibility used opportunistic climate-disabled queries. Forcing exact
+				// here would change structure policy; retain the dependency explicitly until versioned migration.
+				worldLookup.sampleLegacyOpportunistic(cell.reset(), pos.getX(), pos.getZ(), false);
 				if(cell.riverMask < this.cutoff || this.terrainTypeBlacklist.contains(cell.terrain)) {
 					return false;
 				}

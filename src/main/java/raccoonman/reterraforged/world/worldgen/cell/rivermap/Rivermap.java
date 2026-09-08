@@ -1,3 +1,4 @@
+/* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.rivermap;
 
 import raccoonman.reterraforged.concurrent.cache.ExpiringEntry;
@@ -54,9 +55,6 @@ public class Rivermap implements ExpiringEntry {
     }
     
     public static Rivermap get(int x, int z, Rivermap instance, Heightmap heightmap) {
-        if (instance != null && x == instance.getX() && z == instance.getZ()) {
-            return instance;
-        }
-        return heightmap.continent().getRivermap(x, z);
+        return heightmap.hydrologyStage().resolve(x,z,instance);
     }
 }

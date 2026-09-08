@@ -90,7 +90,14 @@ public class TileGenerator {
 		return this.finish(tile, futures, true, null);
 	}
 	
+	/** Compatibility name; this is transformed preview geometry, never owning-tile canonical geography. */
+	@Deprecated
 	public CompletableFuture<Tile> generateZoomed(float centerX, float centerZ, float zoom, boolean applyOptionalFilters) {
+		return this.generatePreviewApproximate(centerX,centerZ,zoom,applyOptionalFilters);
+	}
+
+	/** Legacy transformed preview grid; optional filtering does not make it canonical world geography. */
+	public CompletableFuture<Tile> generatePreviewApproximate(float centerX, float centerZ, float zoom, boolean applyOptionalFilters) {
 		Tile tile = this.makeTile(0, 0);
 		CompletableFuture<?>[] futures = new CompletableFuture<?>[this.batchCount * this.batchCount];
 		try {

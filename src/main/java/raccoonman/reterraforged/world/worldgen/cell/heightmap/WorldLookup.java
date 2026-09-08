@@ -34,21 +34,31 @@ public class WorldLookup {
 		return this.samplingIdentity;
 	}
 
+	/** Compatibility shim. New callers must select explicit filtered, direct, or V0 opportunistic semantics. */
+	@Deprecated
 	public boolean applyCell(Cell cell, int x, int z, boolean applyClimate) {
 		return this.applyCell(cell, x, z, false, applyClimate);
 	}
 
+	/** Compatibility shim for frozen developer fixtures and external inherited callers. */
+	@Deprecated
 	public boolean applyCell(Cell cell, int x, int z, boolean load, boolean applyClimate) {
-		if (load && this.computeAccurate(cell, x, z)) {
+		if (load && this.sampleFilteredTile(cell, x, z)) {
 			return true;
 		}
+		return this.sampleLegacyOpportunistic(cell,x,z,applyClimate);
+	}
+
+	/** V0 compatibility ONLY: cached filtered if present, otherwise direct approximation. Never a GeographyProvider. */
+	public boolean sampleLegacyOpportunistic(Cell cell,int x,int z,boolean applyClimate) {
 		if (this.computeCached(cell, x, z)) {
 			return true;
 		}
 		return this.compute(cell, x, z, applyClimate);
 	}
 
-	private boolean computeAccurate(Cell cell, int x, int z) {
+	/** Owning finalized tile, generating/joining it if needed. Climate flag is intentionally absent. */
+	public boolean sampleFilteredTile(Cell cell, int x, int z) {
 		if (this.cache == null) {
 			throw new IllegalStateException("RTF filtered tile query at " + x + "," + z
 					+ " requires a cached generation context; this lookup is direct-only");
