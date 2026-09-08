@@ -7,6 +7,10 @@ import com.gabou.atmospheregen.generation.version.GenerationVersions;
 public enum SeedDomain {
     CONTINENT("continent", Kind.GEOGRAPHY),
     OCEAN("ocean", Kind.GEOGRAPHY),
+    COASTLINE_DETAIL("coastline_detail", Kind.GEOGRAPHY),
+    ISLANDS("islands", Kind.GEOGRAPHY),
+    ARCHIPELAGOS("archipelagos", Kind.GEOGRAPHY),
+    SHELF_BATHYMETRY("shelf_bathymetry", Kind.GEOGRAPHY),
     TERRAIN_REGIONS("terrain_regions", Kind.GEOGRAPHY),
     MOUNTAIN_CHAINS("mountain_chains", Kind.GEOGRAPHY),
     HYDROLOGY("hydrology", Kind.GEOGRAPHY),
