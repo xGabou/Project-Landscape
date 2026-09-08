@@ -32,7 +32,7 @@ public class TileGenerator {
 		this.heightmap = heightmap;
 		this.filters = filters;
 		// Retain the real filter slot for failure-injection/lifecycle tests. No per-cell lambda.
-		this.geography = new GeographyPipeline<>(heightmap.continentStage(), heightmap.terrainStage(),
+        this.geography = heightmap.paBridge()!=null ? heightmap.paBridge().pipeline(filters) : new GeographyPipeline<>(heightmap.continentStage(), heightmap.terrainStage(),
 			heightmap.hydrologyStage(), heightmap.legacyParameters(), (tile, optional) -> this.filters.apply(tile, optional));
 		this.cellPool = ArrayPool.of(100, (length) -> {
 			Cell[] cells = new Cell[length];

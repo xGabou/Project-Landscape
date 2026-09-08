@@ -62,6 +62,7 @@ minecraft {
             mods { baseline_smoke { source sourceSets.smoke } }
             property 'mixin.debug.export', 'true'
             property 'task1b.smokeVanilla', providers.gradleProperty('smokeVanilla').getOrElse('false')
+            property 'task4.smokeV1', providers.gradleProperty('smokeV1').getOrElse('false')
             if (providers.gradleProperty('smokeExistingWorld').isPresent()) {
                 property 'task2.existingWorld', providers.gradleProperty('smokeExistingWorld').get()
             }

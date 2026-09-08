@@ -43,6 +43,14 @@ public record ManifestContent(GenerationVersions versions, long worldSeed, Resou
         } else if (geography.legacy().isPresent() || geography.planned().isEmpty()) {
             throw new IllegalArgumentException("PA_GEOGRAPHY_V1 metadata requires planned settings, never a legacy fallback");
         }
+        if(versions.equals(GenerationVersions.geographyV1())) {
+            var settings=geography.planned().orElseThrow();
+            var macro=settings.macro().orElseThrow(()->new IllegalArgumentException("Functional PA_GEOGRAPHY_V1 requires frozen Task 4 macro settings"));
+            if(settings.continentScaleBlocks()!=macro.continentScaleBlocks() || settings.minimumMajorOceanWidthBlocks()!=macro.minimumMajorOceanWidthBlocks())
+                throw new IllegalArgumentException("V1 macro scale/width disagree with outer settings");
+            if(baselineClimate.planned().isPresent()||biomeResolver.planned().isPresent()||biomeCatalog.isPresent())
+                throw new IllegalArgumentException("Task 4 V1 requires legacy hints/resolver and no planned climate/catalog");
+        }
         if (data.isEmpty()) throw new IllegalArgumentException("Generation data fingerprints are required; an untracked world is not a valid manifest");
     }
 }

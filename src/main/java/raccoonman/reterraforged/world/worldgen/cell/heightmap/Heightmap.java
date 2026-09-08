@@ -16,18 +16,24 @@ import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
  */
 public record Heightmap(LegacyContinentStage continentStage, LegacyTerrainStage terrainStage,
         LegacyHydrologyStage hydrologyStage, LegacyMinecraftParameterAdapter legacyParameters,
-        Levels levels, ControlPoints controlPoints) {
+        Levels levels, ControlPoints controlPoints, com.gabou.atmospheregen.geography.terrain.PaTerrainBridge paBridge) {
+    public Heightmap(LegacyContinentStage continent, LegacyTerrainStage terrain, LegacyHydrologyStage hydrology,
+            LegacyMinecraftParameterAdapter parameters, Levels levels, ControlPoints controls) {
+        this(continent,terrain,hydrology,parameters,levels,controls,null);
+    }
     public Heightmap(CellPopulator terrain, CellPopulator region, Continent continent, Climate climate,
             Levels levels, ControlPoints controlPoints, float terrainFrequency, Noise beachNoise) {
         this(new LegacyContinentStage(continent,beachNoise),new LegacyTerrainStage(region,terrain,terrainFrequency),
             new LegacyHydrologyStage(continent::getRivermap,levels),new LegacyMinecraftParameterAdapter(climate,levels),levels,controlPoints);
     }
     public void apply(Cell cell,float x,float z,boolean applyClimate) {
+        if(paBridge!=null){paBridge.applyComplete(cell,x,z,applyClimate);return;}
         applyTerrain(cell,x,z);
         hydrologyStage.apply(cell,x,z,null);
         applyClimate(cell,x,z,applyClimate);
     }
     public void applyTerrain(Cell cell,float x,float z) {
+        if(paBridge!=null){paBridge.apply(cell,x,z);return;}
         continentStage.apply(cell,x,z);
         terrainStage.apply(cell,x,z);
     }
@@ -36,7 +42,7 @@ public record Heightmap(LegacyContinentStage continentStage, LegacyTerrainStage 
     public static Heightmap make(GeneratorContext context) { return LegacyGeographyFactory.make(context); }
 
     // Compatibility accessors: old feature seeds, spawn/preview topology and frozen test orchestration.
-    public Continent continent() { return continentStage.backend(); }
+    public Continent continent() { return paBridge==null?continentStage.backend():paBridge; }
     public Climate climate() { return legacyParameters.climate(); }
     public CellPopulator region() { return terrainStage.region(); }
     public CellPopulator terrain() { return terrainStage.terrain(); }

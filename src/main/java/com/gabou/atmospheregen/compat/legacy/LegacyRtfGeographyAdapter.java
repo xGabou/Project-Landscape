@@ -22,6 +22,8 @@ public final class LegacyRtfGeographyAdapter implements GeographyProvider {
     private LegacyRtfGeographyAdapter(GeneratorContext legacy) {
         if (legacy.generationContext() == null || legacy.cache == null) throw new IllegalStateException("Canonical legacy provider requires persisted world metadata and a tile cache");
         legacy.generationContext().manifest().content().versions().requireFunctionalBackend();
+        if(!legacy.generationContext().manifest().content().versions().equals(com.gabou.atmospheregen.generation.version.GenerationVersions.legacy()))
+            throw new IllegalArgumentException("Legacy provider cannot interpret V1 geography; use PaGeographyProvider");
         this.context = legacy.generationContext();
         this.tiles = legacy.cache;
         if(context.runtimeToken()!=legacy.lookup.samplingIdentity())throw new IllegalStateException("Provider/cache generation context mismatch");

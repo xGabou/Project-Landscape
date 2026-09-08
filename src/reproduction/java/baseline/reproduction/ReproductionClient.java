@@ -78,6 +78,8 @@ public final class ReproductionClient {
                         out.row("observer_counters", "phase", "before_suite", "seed", currentSeed(), "counters", Metrics.snapshot());
                         if(task1c.equals("stage-baseline") || task1c.equals("stage-extraction")) {
                             StageBaseline.run(server.overworld(),out,task1c.equals("stage-extraction"));
+                        } else if(task1c.equals("task4-terrain")) {
+                            baseline.reproduction.geography.Task4TerrainChecks.run(server.overworld(),out);
                         } else if(task1c.equals("public-provider-benchmark")) {
                             PublicProviderBenchmark.run(server.overworld(),out);
                         } else if(task1c.equals("geography")) {

@@ -17,8 +17,9 @@ public record GenerationVersions(int schemaVersion, GeographyAlgorithmVersion ge
     }
     public static GenerationVersions legacy(){return new GenerationVersions(1,GeographyAlgorithmVersion.LEGACY_RTF_V0,BaselineClimateAlgorithmVersion.LEGACY_RTF_HINTS_V0,BiomeResolverAlgorithmVersion.LEGACY_MULTINOISE_V0);}
     public static GenerationVersions planned(){return new GenerationVersions(1,GeographyAlgorithmVersion.PA_GEOGRAPHY_V1,BaselineClimateAlgorithmVersion.PA_BASELINE_V1,BiomeResolverAlgorithmVersion.PA_RESOLVER_V1);}
+    public static GenerationVersions geographyV1(){return new GenerationVersions(1,GeographyAlgorithmVersion.PA_GEOGRAPHY_V1,BaselineClimateAlgorithmVersion.LEGACY_RTF_HINTS_V0,BiomeResolverAlgorithmVersion.LEGACY_MULTINOISE_V0);}
     /** No misleading functional dispatch to an unfinished new generator. */
     public void requireFunctionalBackend() {
-        if(!equals(legacy()))throw new UnsupportedOperationException("Generation backend tuple "+this+" is not implemented; only LEGACY_RTF_V0 is functional. No legacy fallback.");
+        if(!equals(legacy())&&!equals(geographyV1()))throw new UnsupportedOperationException("Generation backend tuple "+this+" is not implemented; climate and resolver V1 remain unavailable. No legacy fallback.");
     }
 }

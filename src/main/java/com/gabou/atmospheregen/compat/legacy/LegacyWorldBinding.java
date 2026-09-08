@@ -32,10 +32,20 @@ public final class LegacyWorldBinding {
                 level.dimension().location(), new WorldGeographyConfig(Optional.of(LegacyPresetSnapshot.capture(legacy.preset)), Optional.empty()),
                 new BaselineClimateConfig(Optional.empty()), new BiomeResolverConfig(Optional.empty()),
                 LegacyGenerationData.capture(level, generator), Optional.empty())));
+            var developer=DevelopmentGeographySelection.requested(dimensionDirectory,level,generator,legacy);
+            if(developer.isPresent())recognized=developer;
         }
         try {
             GenerationManifestStore.resolve(file, recognized).ifPresent(resolution -> {
                 var legacy = state.requireGeneratorContext("bind persisted generation metadata");
+                if(resolution.manifest().content().versions().equals(GenerationVersions.geographyV1())) {
+                    var config=raccoonman.reterraforged.config.PerformanceConfig.read(raccoonman.reterraforged.config.PerformanceConfig.DEFAULT_FILE_PATH)
+                        .getOrThrow(false,s->{});
+                    com.gabou.atmospheregen.geography.terrain.PaGeographyInstallation.install(legacy,
+                        new com.gabou.atmospheregen.generation.seed.NamedSeedService(level.getSeed(),level.dimension().location(),GenerationVersions.geographyV1()),
+                        resolution.manifest().content().geography().planned().orElseThrow().macro().orElseThrow(),config.batchCount(),
+                        raccoonman.reterraforged.concurrent.ThreadPools.availableProcessors()>4);
+                }
                 legacy.bindGenerationContext(new WorldGenerationContext(resolution.manifest(), level.dimension(), legacy.lookup.samplingIdentity()));
                 raccoonman.reterraforged.RTFCommon.LOGGER.info("AtmosphereGen {}: {} dimension={} fingerprint={}", resolution.kind(),
                     resolution.manifest().content().versions().geography(), level.dimension().location(), resolution.manifest().fingerprint().sha256());
