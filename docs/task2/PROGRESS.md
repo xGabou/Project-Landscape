@@ -49,3 +49,13 @@ world storage lock. No manifest + no recognized owner leaves the world untouched
 assignment, existing-manifest reopen, foreign ownership and changed seed were tested. Rejected
 mismatches leave the existing file unchanged. Automatic production world binding is still pending.
 Context IDs identify immutable content; separate load instances get distinct cheap cache tokens.
+
+## Public contracts
+
+Real Forge run `reproduction-1788833975729` passed API validation/unavailable-service checks.
+Geography/hydrology expose immutable values, optional quality/resolution-bearing metrics and
+explicit canonical block-coordinate semantics. No inherited type appears in `api`.
+Baseline climate has documented physical units and ecological (not relative) humidity semantics;
+the coordinate contract allows future bounded neighboring geography. Biome resolution is a
+distinct unimplemented contract; Minecraft's source remains unchanged. Planned geography and
+physical climate fail explicitly rather than supplying legacy approximations/hints.

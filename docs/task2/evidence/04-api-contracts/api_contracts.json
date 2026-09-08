@@ -1,0 +1,8 @@
+[
+  {
+    "unknownMetricsAbsent": true,
+    "invalidValuesRejected": 4,
+    "unavailableGeographyAndClimateFail": true,
+    "negativeSpatialKey": "-129"
+  }
+]

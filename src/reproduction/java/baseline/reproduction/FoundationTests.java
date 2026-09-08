@@ -43,6 +43,22 @@ public final class FoundationTests {
         catch(UnsupportedOperationException expected){out.row("foundation_invalid","case","unimplemented backend","error",expected.getMessage());}
         seeds(out);
         manifests(level,out);
+        api(out);
+    }
+    private static void api(Evidence out) {
+        var metrics=com.gabou.atmospheregen.api.geography.GeographyMetrics.unknown();
+        var hydrology=new com.gabou.atmospheregen.api.geography.HydrologySample(com.gabou.atmospheregen.api.geography.WaterCategory.LAND,false,false,false,Optional.empty(),Optional.empty());
+        var sample=new com.gabou.atmospheregen.api.geography.GeoSample(new com.gabou.atmospheregen.api.geography.BlockPosition(-1,-129),64,1,hydrology.water(),com.gabou.atmospheregen.api.geography.Landform.PLAINS,metrics,hydrology);
+        if(sample.metrics().mountainInfluence().isPresent()||sample.hydrology().segmentIdentity().isPresent())throw new AssertionError("Unknown geography fabricated");
+        List<Runnable> invalid=List.of(
+            ()->new com.gabou.atmospheregen.api.geography.Metric(Double.NaN,com.gabou.atmospheregen.api.geography.Metric.Quality.MODELLED,1),
+            ()->new com.gabou.atmospheregen.api.geography.Metric(1,com.gabou.atmospheregen.api.geography.Metric.Quality.MODELLED,0),
+            ()->new com.gabou.atmospheregen.api.climate.WindDirection(0,0),
+            ()->new com.gabou.atmospheregen.api.climate.ClimateBaseline(10,-1,.5,1,.5,Optional.empty()));
+        for(Runnable check:invalid)try{check.run();throw new AssertionError("Invalid API value accepted");}catch(IllegalArgumentException expected){}
+        try{UnavailableGenerationServices.plannedGeography().sample(0,0);throw new AssertionError("Unimplemented geography fallback");}catch(UnsupportedOperationException expected){}
+        try{UnavailableGenerationServices.baselineClimate().sample(0,0);throw new AssertionError("RTF hints used as physical climate");}catch(UnsupportedOperationException expected){}
+        out.row("api_contracts","unknownMetricsAbsent",true,"invalidValuesRejected",invalid.size(),"unavailableGeographyAndClimateFail",true,"negativeSpatialKey",Long.toString(sample.position().spatialKey()));
     }
     private static void manifests(ServerLevel level,Evidence out) throws Exception {
         var preset=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState()).preset();
