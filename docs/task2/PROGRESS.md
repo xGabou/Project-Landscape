@@ -2,7 +2,8 @@
 
 Comparator: Task 1C `d2164f25cd06aafcae15cc15f9f4babe977d4bdb`, corrected legacy
 production `cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee` (`LEGACY_RTF_V0`).
-This is a progress ledger, **not a completion report**.
+This is a historical implementation ledger. Final results supersede intermediate pending notes:
+see `TASK_2_VERSIONED_GENERATION_FOUNDATION.md` and `evidence/final_summary.json`.
 
 ## Versions and planned configuration codecs
 
@@ -130,3 +131,11 @@ repeat CV 7.63%. Historical filtered timing is +7.03%, investigated rather than 
 original slow run and contemporary runs are retained. No specific JIT/background-process cause
 is claimed. RTF worker/caller allocations are 2,996,848–2,996,880 bytes/tile versus approximately
 2,996,952–2,996,984 historically.
+
+## Completion
+
+Final numeric-fingerprint smoke reruns passed all four cases. The final production-code golden
+rerun passed another 595 geography/hint rows, 85 biome keys and 105 tile digests. The Task 1B rerun
+passed all 64 checks, including the disabled-vegetation datapack and 994 valid comparator samples.
+Final build/datagen and TerraBlender foundation tests pass. Accepted legacy evidence is preserved.
+Task 2 ends at metadata/context/seed infrastructure and honest public contracts; Task 3 was not started.

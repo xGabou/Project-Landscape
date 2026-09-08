@@ -1,0 +1,1924 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "comparator":  "cd1a0f8415030ba9f5e865d9abd4520e3c3a18ee",
+    "acceptedTask1C":  "d2164f25cd06aafcae15cc15f9f4babe977d4bdb",
+    "fixtureReference":  "../../task1c/evidence/fixture_manifest.json",
+    "settingsReference":  "../../task1c/evidence/golden-24/identity.json",
+    "productionSourceCommit":  "276a54ca4b5960ef9ede111a91befd233d980604",
+    "semantics":  "LEGACY_FILTERED_CANONICAL comparator; LEGACY_DIRECT_APPROXIMATE diagnostic. Domain seed rows are infrastructure, not PA terrain.",
+    "provenance":  "Each run directory has provenance.json; foundation tables record versions/dimensions/seeds/manifests. Prototype evidence is superseded by release suites. Log hashes are archive integrity only.",
+    "note":  "Excludes itself and unarchived working .log files; archive bytes, not output goldens. Final source/evidence commit is the containing Git commit.",
+    "files":  [
+                  {
+                      "path":  "01-versions-config/foundation_invalid.json",
+                      "sha256":  "04b5fdae81a022dff28411ef045d2df2da00b77a8fbfd6355e76568523919507",
+                      "bytes":  1373
+                  },
+                  {
+                      "path":  "01-versions-config/foundation_roundtrip.json",
+                      "sha256":  "50a1e5bf4e005f5e46d82f1371f2961ebc1706d7ce326a7e789d8f7ceee4678e",
+                      "bytes":  1260
+                  },
+                  {
+                      "path":  "02-seed-streams/dimension_seed_separation.json",
+                      "sha256":  "d72ba09a15557535738b45bee75d90c60424aaf846fbac328eb56ce053e3f71f",
+                      "bytes":  974
+                  },
+                  {
+                      "path":  "02-seed-streams/seed_collision_legacy_vs_new.json",
+                      "sha256":  "4e81611c2a78ffeb45405956d6f0c3b007bfc627f4358f1a7841bdf63bb528e4",
+                      "bytes":  2826
+                  },
+                  {
+                      "path":  "02-seed-streams/seed_domains.json",
+                      "sha256":  "cf022e086befd0333a71644fb80a62edbebd0dc12d1cfd7af5bf692216e32d89",
+                      "bytes":  57798
+                  },
+                  {
+                      "path":  "03-manifest-context/existing_world_resolution.json",
+                      "sha256":  "90ff4ebbb04c69265e9eed9b4c851a0b72adc733be8eeb25bcce25a6509d25b9",
+                      "bytes":  293
+                  },
+                  {
+                      "path":  "03-manifest-context/foundation_invalid.json",
+                      "sha256":  "9ebe859c95009ce6b09b949a95544b33b64bc6ea84cc4ec191bda2502c802b7c",
+                      "bytes":  2288
+                  },
+                  {
+                      "path":  "03-manifest-context/foundation_roundtrip.json",
+                      "sha256":  "d5abdea229a188e6eb4e3f063ec604a73673808cbc9b8bf40ee8fc178506cca8",
+                      "bytes":  15829
+                  },
+                  {
+                      "path":  "03-manifest-context/manifest_roundtrip.json",
+                      "sha256":  "f2bcfb8b22c861aa1e42fac21c69764016e0e8744afa6cef54e5b140da7b7257",
+                      "bytes":  4302
+                  },
+                  {
+                      "path":  "04-api-contracts/api_contracts.json",
+                      "sha256":  "95e6d7d800a8219d6edb1ba2fce6c27f176b7a8c276499a37cbbbc1cab73b095",
+                      "bytes":  159
+                  },
+                  {
+                      "path":  "allocation/allocation_probe.json",
+                      "sha256":  "52d7c29a57123bb49f63e8a1c6d3f4c4b5bb2a6cb554ef3ae1c11e6b927bb996",
+                      "bytes":  1737
+                  },
+                  {
+                      "path":  "allocation/cache_metrics.json",
+                      "sha256":  "9df13cd6ad99b324218af08b625b74fa63a7df72b37a55539ef65cdfed32c7cc",
+                      "bytes":  530
+                  },
+                  {
+                      "path":  "allocation/completion.json",
+                      "sha256":  "bec0736e92e581559052c19a2b23f54ace5b857e9c1a0fc10733226b319637f4",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "allocation/disposal.json",
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8",
+                      "bytes":  187
+                  },
+                  {
+                      "path":  "allocation/environment.json",
+                      "sha256":  "2e6b5fdfc440dd5708b6f6103333d4c0c28d5bd2f5a3931ca5a68505b998d9e2",
+                      "bytes":  3441
+                  },
+                  {
+                      "path":  "allocation/identity.json",
+                      "sha256":  "1029caa553a81c3d13893f7bfa6b8ea0c98c8d9d2a27cd3e7b3411aa1d357972",
+                      "bytes":  11308
+                  },
+                  {
+                      "path":  "allocation/observer_counters.json",
+                      "sha256":  "a755165e094e50842fcb468efdc772e86fc030dfe77413551fbce35672f549b2",
+                      "bytes":  1195
+                  },
+                  {
+                      "path":  "allocation/provenance.json",
+                      "sha256":  "f4436aea06e71d330d096bcdda551b32638f6491f21c934af1ddee56ec3b1351",
+                      "bytes":  1936
+                  },
+                  {
+                      "path":  "benchmark_reference_current_summary.json",
+                      "sha256":  "507ebf7adfc85ee3737d25538b22dd6ecef516bc91ec4329e5becb0f15eb8f86",
+                      "bytes":  72435
+                  },
+                  {
+                      "path":  "benchmark_repeat_current_summary.json",
+                      "sha256":  "3ab211fea36a13bfcb0e1fc490609e479b3efde8c34c2c454baa7186c62a5f88",
+                      "bytes":  72422
+                  },
+                  {
+                      "path":  "benchmark_summary.json",
+                      "sha256":  "4cea7dd038f04936de2f822d709f6304ebe86dd6a35a9779b35160307affe58d",
+                      "bytes":  72440
+                  },
+                  {
+                      "path":  "benchmark-final/benchmark_runs.json",
+                      "sha256":  "abc4531384a0139c65b71fab7b8c1fa73ac08d16c2ce90e4e6170972f1d745c4",
+                      "bytes":  84549
+                  },
+                  {
+                      "path":  "benchmark-final/cache_lifecycle.json",
+                      "sha256":  "b9f3de07dd33fbe250b3afc83cd361492104f4af6586484a40b28741bd3e9c30",
+                      "bytes":  725
+                  },
+                  {
+                      "path":  "benchmark-final/cache_metrics.json",
+                      "sha256":  "fe6fc306c48d4ebcf316fff99fd318a06bac874cb09b42f1cc757fbd77fa4a59",
+                      "bytes":  21757
+                  },
+                  {
+                      "path":  "benchmark-final/chunk_latencies.json",
+                      "sha256":  "e20667631fcd9cc45afcd08b7350568d22fd9bc6989d10610922b76b561561c6",
+                      "bytes":  3986
+                  },
+                  {
+                      "path":  "benchmark-final/completion.json",
+                      "sha256":  "d34b8ca2e5320b66d501f0d9bf070bde9d6b791036dc631d1e54bec5c707f33e",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "benchmark-final/disposal.json",
+                      "sha256":  "37d222b3c0280e28c4bb2fa9ec89ba411c57a4d41ebf1d024c480eef37bcf2c9",
+                      "bytes":  739
+                  },
+                  {
+                      "path":  "benchmark-final/environment.json",
+                      "sha256":  "e17a331e3e9d7b702ee5f7d6f81cefdb91cbd17ece84d51fce722c1fd3b966a4",
+                      "bytes":  13751
+                  },
+                  {
+                      "path":  "benchmark-final/identity.json",
+                      "sha256":  "4034b8a3aa5ce83d8b2d1a73f94c1bf8c06fce9cc1b523a9af33b2e008979039",
+                      "bytes":  45219
+                  },
+                  {
+                      "path":  "benchmark-final/observer_counters.json",
+                      "sha256":  "a798a757df23350c8caade5783497ca023eccb3e81b9ed68c91f3664a3581989",
+                      "bytes":  4884
+                  },
+                  {
+                      "path":  "benchmark-final/provenance.json",
+                      "sha256":  "51d48094d5236c3dc9e474dd16ef2c31fdb75f6e0931eb10bd8bb0cc2c65eb50",
+                      "bytes":  1873
+                  },
+                  {
+                      "path":  "benchmark-final/query_latencies.json",
+                      "sha256":  "78161e7203a55e6e979b9444bc0dacf0ddef408ee7158018394cc9c29cef7af8",
+                      "bytes":  1873208
+                  },
+                  {
+                      "path":  "benchmark-reference-current/benchmark_runs.json",
+                      "sha256":  "8a217e41c1c11444b646fc352f8fd6167075f881c932807e17ad67b5e746ed5f",
+                      "bytes":  84536
+                  },
+                  {
+                      "path":  "benchmark-reference-current/cache_lifecycle.json",
+                      "sha256":  "c3acc72878dc3d261ffae927d03975cb35611861ce685ade3d4dab28af806965",
+                      "bytes":  725
+                  },
+                  {
+                      "path":  "benchmark-reference-current/cache_metrics.json",
+                      "sha256":  "79a8cc8610a4d61b895aa0f276046656f2c0a1932407c8801f6ba775f363967a",
+                      "bytes":  21757
+                  },
+                  {
+                      "path":  "benchmark-reference-current/chunk_latencies.json",
+                      "sha256":  "b58e8a4c743c37da24795cdf04bf12e05a5ebc79467c7d7be2583e44549f30a1",
+                      "bytes":  3984
+                  },
+                  {
+                      "path":  "benchmark-reference-current/completion.json",
+                      "sha256":  "d48f4663a5c84aa79ef474212b213fe311919ca0c9ec5428faae627f8a92d506",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "benchmark-reference-current/disposal.json",
+                      "sha256":  "37d222b3c0280e28c4bb2fa9ec89ba411c57a4d41ebf1d024c480eef37bcf2c9",
+                      "bytes":  739
+                  },
+                  {
+                      "path":  "benchmark-reference-current/environment.json",
+                      "sha256":  "856cae755be6858172cfd1e7f29adf7e128bb22571f6e1653e62c8039bcda934",
+                      "bytes":  14151
+                  },
+                  {
+                      "path":  "benchmark-reference-current/identity.json",
+                      "sha256":  "4034b8a3aa5ce83d8b2d1a73f94c1bf8c06fce9cc1b523a9af33b2e008979039",
+                      "bytes":  45219
+                  },
+                  {
+                      "path":  "benchmark-reference-current/observer_counters.json",
+                      "sha256":  "a4700ac510fde7f43657db5e3d6f7c10f61643998a0183664b79affba2c9d02c",
+                      "bytes":  4883
+                  },
+                  {
+                      "path":  "benchmark-reference-current/provenance.json",
+                      "sha256":  "de7928efca71da7de1b6270be73a13dfeec97654f40e01793c0869e7444a7fd4",
+                      "bytes":  656
+                  },
+                  {
+                      "path":  "benchmark-reference-current/query_latencies.json",
+                      "sha256":  "47c8177bb6efb1ca5ee2f784f657eabe6e0db2d3aae74425026697469af9735b",
+                      "bytes":  1872707
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/benchmark_runs.json",
+                      "sha256":  "36eb8c476487fc0da73d01095ddc53054e9db73d332f9b9a1203e34df0256323",
+                      "bytes":  84545
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/cache_lifecycle.json",
+                      "sha256":  "d76178caf8c1ba5463483aa62d89a0a9bc07b4b11996746c4ef323a01c2c609a",
+                      "bytes":  725
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/cache_metrics.json",
+                      "sha256":  "afbbe774bfefbf45e87ee77009076356939cc262f2fb88549488144712a0605e",
+                      "bytes":  21789
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/chunk_latencies.json",
+                      "sha256":  "c905dbe727f196e1420c62c0f7901b0fdee01b17170ad9c812904fc186c008a6",
+                      "bytes":  3984
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/completion.json",
+                      "sha256":  "c1944b947871dbf093230dc4a34070c6c3cfc3e84cb5a6d62bc2111a3e4186ec",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/disposal.json",
+                      "sha256":  "37d222b3c0280e28c4bb2fa9ec89ba411c57a4d41ebf1d024c480eef37bcf2c9",
+                      "bytes":  739
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/environment.json",
+                      "sha256":  "e17a331e3e9d7b702ee5f7d6f81cefdb91cbd17ece84d51fce722c1fd3b966a4",
+                      "bytes":  13751
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/identity.json",
+                      "sha256":  "4034b8a3aa5ce83d8b2d1a73f94c1bf8c06fce9cc1b523a9af33b2e008979039",
+                      "bytes":  45219
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/observer_counters.json",
+                      "sha256":  "3f7e919df8c3fb6bbe0a00b1ede86ef56047e0006bbfcb361f3a30c613af25f3",
+                      "bytes":  4884
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/provenance.json",
+                      "sha256":  "c902487bd953949b67aa75b2c1da85e5e4264c643bc9e33560176a3edc8b2c90",
+                      "bytes":  1331
+                  },
+                  {
+                      "path":  "benchmark-repeat-current/query_latencies.json",
+                      "sha256":  "4a45d8dc566f6bb4d48132723cd42ed482b9e372f0c3326042075bf6a0bb0f9d",
+                      "bytes":  1872771
+                  },
+                  {
+                      "path":  "build_verification.json",
+                      "sha256":  "ebc6ae5f92e561a1c2b56d2ce8bbfd798b38dafe8c83a05864339e2c9a45fc33",
+                      "bytes":  1670
+                  },
+                  {
+                      "path":  "files_and_commits.json",
+                      "sha256":  "347b02e0559cac30925d7103168bbd1c3e622e856bf50cc1882b457a0f0d5f8f",
+                      "bytes":  94009
+                  },
+                  {
+                      "path":  "final_summary.json",
+                      "sha256":  "9e7ee958c74efd6b04415c52f04a21f9e9efd9fac58b88084492b17869acfcf7",
+                      "bytes":  2392
+                  },
+                  {
+                      "path":  "foundation-bound/api_contracts.json",
+                      "sha256":  "6e6ce4b5b4f7431ce33c357d2061394f304b79c11ba4ed6ed45ad69518898eb1",
+                      "bytes":  315
+                  },
+                  {
+                      "path":  "foundation-bound/api_shutdown.json",
+                      "sha256":  "7c5d7172ee22240f54593aaab557ddfa527cbcd20998fecf4484ea5d2459f5d3",
+                      "bytes":  108
+                  },
+                  {
+                      "path":  "foundation-bound/canonical_provider.json",
+                      "sha256":  "759fbf5ee95fec1ee038505c4dca2d00b8992f6dc4b1856ef3bff8ffc11f99ae",
+                      "bytes":  3321
+                  },
+                  {
+                      "path":  "foundation-bound/completion.json",
+                      "sha256":  "0cdbbd8599c60cdf66643d0208fca89a118dd5573516adb4dc7d5435cee55aca",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "foundation-bound/dimension_seed_separation.json",
+                      "sha256":  "4bf576177b1ecd04a5a774833dc44e44103b660f5a53b7792959d859c37f6eb1",
+                      "bytes":  1945
+                  },
+                  {
+                      "path":  "foundation-bound/disposal.json",
+                      "sha256":  "a1e8f9bac3a4b7014da64ffffd8a7aa6bcf40a983971c0f5117d79afaa5c20f8",
+                      "bytes":  371
+                  },
+                  {
+                      "path":  "foundation-bound/existing_world_resolution.json",
+                      "sha256":  "243a035843b0162e3ab1e6d2132f1160fdc760a37d2f53043b4b7733a63527a1",
+                      "bytes":  583
+                  },
+                  {
+                      "path":  "foundation-bound/foundation_invalid.json",
+                      "sha256":  "104a672589c596b41b7b87eebdb0ed45b5ab0ec981a4e69a51e66cf4d98871da",
+                      "bytes":  4573
+                  },
+                  {
+                      "path":  "foundation-bound/foundation_roundtrip.json",
+                      "sha256":  "e4fe4c350fabe3e79d5cfb790bc297e2401283106b970ee54c93fd9908af96ce",
+                      "bytes":  31655
+                  },
+                  {
+                      "path":  "foundation-bound/manifest_roundtrip.json",
+                      "sha256":  "ba8af8ca1701a591cc329a02a44ba12dbdaf85a121b093d94d628b98992eee68",
+                      "bytes":  8601
+                  },
+                  {
+                      "path":  "foundation-bound/observer_counters.json",
+                      "sha256":  "d1e2317950bcbc94d8727f4fbbcd7c8e6031049915331aff844881e312406c09",
+                      "bytes":  2392
+                  },
+                  {
+                      "path":  "foundation-bound/provenance.json",
+                      "sha256":  "127d8d566e0b50b15dab092ee1c4f04b6a1cd184ac08c85c9c4acb977e8bf836",
+                      "bytes":  1877
+                  },
+                  {
+                      "path":  "foundation-bound/seed_collision_legacy_vs_new.json",
+                      "sha256":  "b3bd4736d09ec74a429f4c0302ecc8d1442fcecb2b820b75880646344fb6797b",
+                      "bytes":  5649
+                  },
+                  {
+                      "path":  "foundation-bound/seed_domains.json",
+                      "sha256":  "04601797d6abd59b2a404e6db405e0558ff0944e8b48e21b9a3f0a184651913c",
+                      "bytes":  115593
+                  },
+                  {
+                      "path":  "foundation-bound/world_binding.json",
+                      "sha256":  "d4f2feaf7e649339048de0a96bd60e5468bd8eb0224c6f8ebdf8cc92b73a1b10",
+                      "bytes":  2588
+                  },
+                  {
+                      "path":  "foundation-bound/world_binding_checks.json",
+                      "sha256":  "783ace9ce21c58ebf5adfb4b2ff04d74bea061cbcffa668f497a7eb2518d0142",
+                      "bytes":  13369
+                  },
+                  {
+                      "path":  "foundation-final/api_contracts.json",
+                      "sha256":  "6e6ce4b5b4f7431ce33c357d2061394f304b79c11ba4ed6ed45ad69518898eb1",
+                      "bytes":  315
+                  },
+                  {
+                      "path":  "foundation-final/api_shutdown.json",
+                      "sha256":  "7c5d7172ee22240f54593aaab557ddfa527cbcd20998fecf4484ea5d2459f5d3",
+                      "bytes":  108
+                  },
+                  {
+                      "path":  "foundation-final/canonical_provider.json",
+                      "sha256":  "759fbf5ee95fec1ee038505c4dca2d00b8992f6dc4b1856ef3bff8ffc11f99ae",
+                      "bytes":  3321
+                  },
+                  {
+                      "path":  "foundation-final/completion.json",
+                      "sha256":  "277f91b6e557d1918eb854d778ae663e41ee27251121cf49f5f459f8eef20b12",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "foundation-final/dimension_seed_separation.json",
+                      "sha256":  "4bf576177b1ecd04a5a774833dc44e44103b660f5a53b7792959d859c37f6eb1",
+                      "bytes":  1945
+                  },
+                  {
+                      "path":  "foundation-final/disposal.json",
+                      "sha256":  "a1e8f9bac3a4b7014da64ffffd8a7aa6bcf40a983971c0f5117d79afaa5c20f8",
+                      "bytes":  371
+                  },
+                  {
+                      "path":  "foundation-final/existing_world_resolution.json",
+                      "sha256":  "243a035843b0162e3ab1e6d2132f1160fdc760a37d2f53043b4b7733a63527a1",
+                      "bytes":  583
+                  },
+                  {
+                      "path":  "foundation-final/foundation_invalid.json",
+                      "sha256":  "45f26a917d88cc0e7318e4e789ef7664d9008580a2008aed7585da8a747a4cf5",
+                      "bytes":  5997
+                  },
+                  {
+                      "path":  "foundation-final/foundation_roundtrip.json",
+                      "sha256":  "7fc8bd549d5f5a150fb5a4e9d86bd471323c2adb3dc93cf518682cb0411b8c48",
+                      "bytes":  34213
+                  },
+                  {
+                      "path":  "foundation-final/manifest_roundtrip.json",
+                      "sha256":  "df074fdb22bdf33bc3f892a39f6ed358306a005898dd600ba7080fb2263d65f6",
+                      "bytes":  8685
+                  },
+                  {
+                      "path":  "foundation-final/observer_counters.json",
+                      "sha256":  "bb70c0e466b5da58efd11cb92a0d49715e769a1bf257d4a297341a6c00745229",
+                      "bytes":  2392
+                  },
+                  {
+                      "path":  "foundation-final/provenance.json",
+                      "sha256":  "d6f655725e3d6815ed2eb8854d36b9efd81154398cac070a641dc2ea4140641c",
+                      "bytes":  1783
+                  },
+                  {
+                      "path":  "foundation-final/seed_collision_legacy_vs_new.json",
+                      "sha256":  "b3bd4736d09ec74a429f4c0302ecc8d1442fcecb2b820b75880646344fb6797b",
+                      "bytes":  5649
+                  },
+                  {
+                      "path":  "foundation-final/seed_domains.json",
+                      "sha256":  "04601797d6abd59b2a404e6db405e0558ff0944e8b48e21b9a3f0a184651913c",
+                      "bytes":  115593
+                  },
+                  {
+                      "path":  "foundation-final/world_binding.json",
+                      "sha256":  "67d01c34188ce241f57d44ab55dc493e268ed0a183ae7a33492509e04ba8e615",
+                      "bytes":  2588
+                  },
+                  {
+                      "path":  "foundation-final/world_binding_checks.json",
+                      "sha256":  "99dbdcbf6422d1b7b32a7b8283ccdadc44412901addcfa6732f59033a97fdc1d",
+                      "bytes":  13369
+                  },
+                  {
+                      "path":  "foundation-release/api_contracts.json",
+                      "sha256":  "6e6ce4b5b4f7431ce33c357d2061394f304b79c11ba4ed6ed45ad69518898eb1",
+                      "bytes":  315
+                  },
+                  {
+                      "path":  "foundation-release/api_shutdown.json",
+                      "sha256":  "7c5d7172ee22240f54593aaab557ddfa527cbcd20998fecf4484ea5d2459f5d3",
+                      "bytes":  108
+                  },
+                  {
+                      "path":  "foundation-release/canonical_provider.json",
+                      "sha256":  "759fbf5ee95fec1ee038505c4dca2d00b8992f6dc4b1856ef3bff8ffc11f99ae",
+                      "bytes":  3321
+                  },
+                  {
+                      "path":  "foundation-release/completion.json",
+                      "sha256":  "3ac20f0fb0274a505e2c7867e84b580c2ce67d3f25fb4e5cea9a3719d1587ed6",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "foundation-release/dimension_seed_separation.json",
+                      "sha256":  "4bf576177b1ecd04a5a774833dc44e44103b660f5a53b7792959d859c37f6eb1",
+                      "bytes":  1945
+                  },
+                  {
+                      "path":  "foundation-release/disposal.json",
+                      "sha256":  "a1e8f9bac3a4b7014da64ffffd8a7aa6bcf40a983971c0f5117d79afaa5c20f8",
+                      "bytes":  371
+                  },
+                  {
+                      "path":  "foundation-release/existing_world_resolution.json",
+                      "sha256":  "243a035843b0162e3ab1e6d2132f1160fdc760a37d2f53043b4b7733a63527a1",
+                      "bytes":  583
+                  },
+                  {
+                      "path":  "foundation-release/foundation_invalid.json",
+                      "sha256":  "b26248c18589365eaa336e3f27e671edff8c131c3e92629be30779133e6a87a9",
+                      "bytes":  7189
+                  },
+                  {
+                      "path":  "foundation-release/foundation_roundtrip.json",
+                      "sha256":  "7fc8bd549d5f5a150fb5a4e9d86bd471323c2adb3dc93cf518682cb0411b8c48",
+                      "bytes":  34213
+                  },
+                  {
+                      "path":  "foundation-release/manifest_roundtrip.json",
+                      "sha256":  "df074fdb22bdf33bc3f892a39f6ed358306a005898dd600ba7080fb2263d65f6",
+                      "bytes":  8685
+                  },
+                  {
+                      "path":  "foundation-release/observer_counters.json",
+                      "sha256":  "354bf815315fae3515d2305ccf5922869d64aa03f8356324ccc2518523ea2c90",
+                      "bytes":  2392
+                  },
+                  {
+                      "path":  "foundation-release/provenance.json",
+                      "sha256":  "33dcfd57cb27a04dfae9e5ad8b68f4090e37a74aebce87bf6d2e24cd9646851b",
+                      "bytes":  1935
+                  },
+                  {
+                      "path":  "foundation-release/seed_collision_legacy_vs_new.json",
+                      "sha256":  "b3bd4736d09ec74a429f4c0302ecc8d1442fcecb2b820b75880646344fb6797b",
+                      "bytes":  5649
+                  },
+                  {
+                      "path":  "foundation-release/seed_domains.json",
+                      "sha256":  "04601797d6abd59b2a404e6db405e0558ff0944e8b48e21b9a3f0a184651913c",
+                      "bytes":  115593
+                  },
+                  {
+                      "path":  "foundation-release/world_binding.json",
+                      "sha256":  "90c7334130dbce06b0d28538998f694af83d88f71b0d4858971fb6f851404951",
+                      "bytes":  2588
+                  },
+                  {
+                      "path":  "foundation-release/world_binding_checks.json",
+                      "sha256":  "e73573743705d44111d221a475690cc6adb9bf1661879dc3b8d636eee611a0d1",
+                      "bytes":  13369
+                  },
+                  {
+                      "path":  "foundation-tb-final/api_contracts.json",
+                      "sha256":  "6e6ce4b5b4f7431ce33c357d2061394f304b79c11ba4ed6ed45ad69518898eb1",
+                      "bytes":  315
+                  },
+                  {
+                      "path":  "foundation-tb-final/api_shutdown.json",
+                      "sha256":  "7c5d7172ee22240f54593aaab557ddfa527cbcd20998fecf4484ea5d2459f5d3",
+                      "bytes":  108
+                  },
+                  {
+                      "path":  "foundation-tb-final/canonical_provider.json",
+                      "sha256":  "759fbf5ee95fec1ee038505c4dca2d00b8992f6dc4b1856ef3bff8ffc11f99ae",
+                      "bytes":  3321
+                  },
+                  {
+                      "path":  "foundation-tb-final/completion.json",
+                      "sha256":  "4f226925b1ae1d8697c7343173504341379a4551bd5afc967fd2a54734dffbd5",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "foundation-tb-final/dimension_seed_separation.json",
+                      "sha256":  "4bf576177b1ecd04a5a774833dc44e44103b660f5a53b7792959d859c37f6eb1",
+                      "bytes":  1945
+                  },
+                  {
+                      "path":  "foundation-tb-final/disposal.json",
+                      "sha256":  "a1e8f9bac3a4b7014da64ffffd8a7aa6bcf40a983971c0f5117d79afaa5c20f8",
+                      "bytes":  371
+                  },
+                  {
+                      "path":  "foundation-tb-final/existing_world_resolution.json",
+                      "sha256":  "243a035843b0162e3ab1e6d2132f1160fdc760a37d2f53043b4b7733a63527a1",
+                      "bytes":  583
+                  },
+                  {
+                      "path":  "foundation-tb-final/foundation_invalid.json",
+                      "sha256":  "45f26a917d88cc0e7318e4e789ef7664d9008580a2008aed7585da8a747a4cf5",
+                      "bytes":  5997
+                  },
+                  {
+                      "path":  "foundation-tb-final/foundation_roundtrip.json",
+                      "sha256":  "7fc8bd549d5f5a150fb5a4e9d86bd471323c2adb3dc93cf518682cb0411b8c48",
+                      "bytes":  34213
+                  },
+                  {
+                      "path":  "foundation-tb-final/manifest_roundtrip.json",
+                      "sha256":  "df074fdb22bdf33bc3f892a39f6ed358306a005898dd600ba7080fb2263d65f6",
+                      "bytes":  8685
+                  },
+                  {
+                      "path":  "foundation-tb-final/observer_counters.json",
+                      "sha256":  "dd1e8a47b160f112546ce51ae4c78d367acf90efebe6e1eff081385786a611b8",
+                      "bytes":  2392
+                  },
+                  {
+                      "path":  "foundation-tb-final/provenance.json",
+                      "sha256":  "6970a29089beae7011360dbc34e53f14ac33b185816d700c9df088d2f26134ab",
+                      "bytes":  1605
+                  },
+                  {
+                      "path":  "foundation-tb-final/seed_collision_legacy_vs_new.json",
+                      "sha256":  "b3bd4736d09ec74a429f4c0302ecc8d1442fcecb2b820b75880646344fb6797b",
+                      "bytes":  5649
+                  },
+                  {
+                      "path":  "foundation-tb-final/seed_domains.json",
+                      "sha256":  "04601797d6abd59b2a404e6db405e0558ff0944e8b48e21b9a3f0a184651913c",
+                      "bytes":  115593
+                  },
+                  {
+                      "path":  "foundation-tb-final/world_binding.json",
+                      "sha256":  "981e7f2655abc1833be2f965169f454167b954909f9500b3885bf3a5792797ba",
+                      "bytes":  2588
+                  },
+                  {
+                      "path":  "foundation-tb-final/world_binding_checks.json",
+                      "sha256":  "fe3794ce67fecdcc0b17a926a0118ff3b7793eb09c563615d8c1d298f64b4f8a",
+                      "bytes":  13591
+                  },
+                  {
+                      "path":  "foundation-tb-release/api_contracts.json",
+                      "sha256":  "6e6ce4b5b4f7431ce33c357d2061394f304b79c11ba4ed6ed45ad69518898eb1",
+                      "bytes":  315
+                  },
+                  {
+                      "path":  "foundation-tb-release/api_shutdown.json",
+                      "sha256":  "7c5d7172ee22240f54593aaab557ddfa527cbcd20998fecf4484ea5d2459f5d3",
+                      "bytes":  108
+                  },
+                  {
+                      "path":  "foundation-tb-release/canonical_provider.json",
+                      "sha256":  "759fbf5ee95fec1ee038505c4dca2d00b8992f6dc4b1856ef3bff8ffc11f99ae",
+                      "bytes":  3321
+                  },
+                  {
+                      "path":  "foundation-tb-release/completion.json",
+                      "sha256":  "dbcd3e3dc21abe42a16dfd37c6cf1e677b24bd4042f68b73e381f47131f92714",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "foundation-tb-release/dimension_seed_separation.json",
+                      "sha256":  "4bf576177b1ecd04a5a774833dc44e44103b660f5a53b7792959d859c37f6eb1",
+                      "bytes":  1945
+                  },
+                  {
+                      "path":  "foundation-tb-release/disposal.json",
+                      "sha256":  "a1e8f9bac3a4b7014da64ffffd8a7aa6bcf40a983971c0f5117d79afaa5c20f8",
+                      "bytes":  371
+                  },
+                  {
+                      "path":  "foundation-tb-release/existing_world_resolution.json",
+                      "sha256":  "f97eade2dd0e5ce534aabc00dd1c95bc23f605fc5d0c42b16efc95231f8e1cb0",
+                      "bytes":  663
+                  },
+                  {
+                      "path":  "foundation-tb-release/foundation_invalid.json",
+                      "sha256":  "b26248c18589365eaa336e3f27e671edff8c131c3e92629be30779133e6a87a9",
+                      "bytes":  7189
+                  },
+                  {
+                      "path":  "foundation-tb-release/foundation_roundtrip.json",
+                      "sha256":  "7fc8bd549d5f5a150fb5a4e9d86bd471323c2adb3dc93cf518682cb0411b8c48",
+                      "bytes":  34213
+                  },
+                  {
+                      "path":  "foundation-tb-release/manifest_roundtrip.json",
+                      "sha256":  "df074fdb22bdf33bc3f892a39f6ed358306a005898dd600ba7080fb2263d65f6",
+                      "bytes":  8685
+                  },
+                  {
+                      "path":  "foundation-tb-release/observer_counters.json",
+                      "sha256":  "19a348c29d08d126fc2e5acee31437499210cb6de997d1b7c6e83e1926b830d1",
+                      "bytes":  2392
+                  },
+                  {
+                      "path":  "foundation-tb-release/provenance.json",
+                      "sha256":  "58f94526a68b65671c0e3aef3f0b97cd64f9a9177d12cb2a4ca94a4e0bf74a05",
+                      "bytes":  1872
+                  },
+                  {
+                      "path":  "foundation-tb-release/seed_collision_legacy_vs_new.json",
+                      "sha256":  "c4a9a94230496a1490de329d7e9d917a5da958adaf03163189fe85337a63f792",
+                      "bytes":  5739
+                  },
+                  {
+                      "path":  "foundation-tb-release/seed_domains.json",
+                      "sha256":  "04601797d6abd59b2a404e6db405e0558ff0944e8b48e21b9a3f0a184651913c",
+                      "bytes":  115593
+                  },
+                  {
+                      "path":  "foundation-tb-release/world_binding.json",
+                      "sha256":  "e46eb63bac6e3fc6878f1220311ecb49d5f9726bb22544e98b060d18f2191552",
+                      "bytes":  2588
+                  },
+                  {
+                      "path":  "foundation-tb-release/world_binding_checks.json",
+                      "sha256":  "d571d3b7712cb1e9d6aad412115d4a218bfba858ab76b4642a3b2a666ed77f0e",
+                      "bytes":  13591
+                  },
+                  {
+                      "path":  "full-regression/cached_uncached.json",
+                      "sha256":  "fb07cf1f9dad01baad59f90ce45cdadf22f492800f91b8b24cd80a64c51ebd02",
+                      "bytes":  863607
+                  },
+                  {
+                      "path":  "full-regression/cell_resources.json",
+                      "sha256":  "43bb5a970160af4524f75f77a24d6efd2048eeeba82d32e5464cdc6bab8868b3",
+                      "bytes":  972
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/42_0_0.json.gz",
+                      "sha256":  "0a09b44e9c1962b7dfec03e4806cc6d5c795725f70a2dce6fc0559c4b24ab3ac",
+                      "bytes":  17708
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/42_-168_-256.json.gz",
+                      "sha256":  "807d107bd108b42bc44cc2e694e952d4e435a7cb6d58414a34a7a39fd2ad4021",
+                      "bytes":  24630
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/42_212_-192.json.gz",
+                      "sha256":  "1c576aace0d2409bee906a97c271e10eede065a6030c42a27e4ec49798f6f970",
+                      "bytes":  16896
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/42_-252_-256.json.gz",
+                      "sha256":  "bd910673d0a529314cc2742238ed090dc39284e0b13cd1f1994d4675faba21bd",
+                      "bytes":  18032
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/42_-4_-256.json.gz",
+                      "sha256":  "ca5c361a4aa0205907c27ff73ca4600630c68e82562c9ee274a310af5fe3a2b8",
+                      "bytes":  22861
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/42_7_7.json.gz",
+                      "sha256":  "2b0c8a82cd42165781cb35b4fa4e823266ded32ce6a22b049ef6c71d52580483",
+                      "bytes":  19629
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/42_8_8.json.gz",
+                      "sha256":  "4c5d289458b0ade37dfdc07c93cf635b19e05f6c7f9d9ff29ce1d305308f7e67",
+                      "bytes":  19756
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/42_-9_-9.json.gz",
+                      "sha256":  "7a3fab5da3b0b6ad6f163b151bc7ffd6dbbeb7bced6007414108c965491d4e3b",
+                      "bytes":  16868
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/4303642605_0_0.json.gz",
+                      "sha256":  "ac30cef18b98e7152e9f6473e4a98765e0e24066cb869d65e6841b7720e356a9",
+                      "bytes":  25532
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/4303642605_-168_-256.json.gz",
+                      "sha256":  "0fb782d2d587296852685b55c93394c43a3b86eaba861f4988a111b2e725ed36",
+                      "bytes":  23308
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/4303642605_212_-192.json.gz",
+                      "sha256":  "afe32ef90dd5aa707f96fbbb35e6c5f806eb6beb20af50c8aed22d1967b55eb0",
+                      "bytes":  24077
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/4303642605_-252_-256.json.gz",
+                      "sha256":  "fc97e2445483506bb101be0d6e9a430bf0b9fe503c2b1e27c917c61bc8487ec3",
+                      "bytes":  19311
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/4303642605_-4_-256.json.gz",
+                      "sha256":  "728965fa20144d2d6af2ee7a86f0e9018411c454b08965d1122fa180aaefb37e",
+                      "bytes":  22702
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/4303642605_7_7.json.gz",
+                      "sha256":  "6d473bdd23dde60b040c54eb6a3598b97332bd9359d18f46340a9fb6aed1614a",
+                      "bytes":  20119
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/4303642605_8_8.json.gz",
+                      "sha256":  "69280d91caabe0dc641a409412450887993ceb0d86e09e355274893acc2ff65c",
+                      "bytes":  21417
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/4303642605_-9_-9.json.gz",
+                      "sha256":  "64bc2198f9d5497dbf8ed5908d1cfaac5e884ced609f8dbcb7a997e75cee8a18",
+                      "bytes":  29750
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/8675309_0_0.json.gz",
+                      "sha256":  "84e448b7e06c01f82dc707f521f11167a1eea644eefed7a8bdfacf52a33fb61b",
+                      "bytes":  25720
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/8675309_-168_-256.json.gz",
+                      "sha256":  "9d0ac10f8b3356354f1db85e0c26d93f48e7f326d55729f341196b30c722bece",
+                      "bytes":  21530
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/8675309_212_-192.json.gz",
+                      "sha256":  "bef805a9fce2b2df788502e744c9ffe19849d190dfd23289fa47c794d8f633d3",
+                      "bytes":  25795
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/8675309_-252_-256.json.gz",
+                      "sha256":  "8c88ada0e6e1ab747557e918e232858ad998128843b23fcbad2dd2627ca78cbb",
+                      "bytes":  19966
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/8675309_-4_-256.json.gz",
+                      "sha256":  "af845692a112ebaad28e0ce1a2d98f05220b8a2b82ae905e6d6b87e215231f6f",
+                      "bytes":  21506
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/8675309_7_7.json.gz",
+                      "sha256":  "85adea8aa2a78d0f9be479380456d0127fb1ac90eabb75396ac6476b83bc529e",
+                      "bytes":  23316
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/8675309_8_8.json.gz",
+                      "sha256":  "c205dcaa5f5f048b049da16f2abd120b488e84396445272bef8bc12f12a63119",
+                      "bytes":  22612
+                  },
+                  {
+                      "path":  "full-regression/chunk_blocks/8675309_-9_-9.json.gz",
+                      "sha256":  "aa628830f003e9e81ddcc816073d86da5fb84e27ff7f1a4185d294f537b55ebb",
+                      "bytes":  27507
+                  },
+                  {
+                      "path":  "full-regression/closed_cache_ownership.json",
+                      "sha256":  "5fb17e51c5f17f11dd75f2aceeab82b90617b29667467f8e33adf19ad73c3281",
+                      "bytes":  98
+                  },
+                  {
+                      "path":  "full-regression/completion.json",
+                      "sha256":  "0df848453d1edf463061dd5844b6bcdc08db125002137d218b35fda775412134",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "full-regression/contexts.json",
+                      "sha256":  "0c57bd814098431d9f4801b143ef2dab570a2fbc974df0b8300e3c28a92880da",
+                      "bytes":  10230
+                  },
+                  {
+                      "path":  "full-regression/cross_world_cache.json",
+                      "sha256":  "4a3afcb05d1aca65d3148de8c8760a8cd3feb5487535c017abdc0caa3c08f481",
+                      "bytes":  16161
+                  },
+                  {
+                      "path":  "full-regression/disposal.json",
+                      "sha256":  "bfed1997e0366f83c22a143a4f2435b226f45b054bb42ff1dc2c8e109bf24708",
+                      "bytes":  2430
+                  },
+                  {
+                      "path":  "full-regression/environment.json",
+                      "sha256":  "bd02e2aa8531a9cd108144e00dfaab6b55bda1cc1a076092395d4f0260077ff2",
+                      "bytes":  499
+                  },
+                  {
+                      "path":  "full-regression/eviction_reload.json",
+                      "sha256":  "c830d43c9c7bd34c06d8bc79ded13927d14973b9f02c7082de7402ec1b4f04ea",
+                      "bytes":  475646
+                  },
+                  {
+                      "path":  "full-regression/fixtures.json",
+                      "sha256":  "a45bc8be2da2ccccb3e13ae8b1f79b133645f06c256c402377d8fe527da10d6c",
+                      "bytes":  30268
+                  },
+                  {
+                      "path":  "full-regression/generated_chunks.json",
+                      "sha256":  "688bad22b6f721f42172ce1a9f929dc4e4352355fa498a67697cad873c836abd",
+                      "bytes":  164784
+                  },
+                  {
+                      "path":  "full-regression/generation_order.json",
+                      "sha256":  "026ac49ea9193c05eac82224841b24b45124e271dcb0255418a75141d384ff78",
+                      "bytes":  27501
+                  },
+                  {
+                      "path":  "full-regression/invalid_noise_validation.json",
+                      "sha256":  "f838b28c474ffcf201d6b5b0e76d037e72e8be1a8d3a647d4730a2397b6a4edf",
+                      "bytes":  3431
+                  },
+                  {
+                      "path":  "full-regression/legacy_geometry_config.json",
+                      "sha256":  "89ca999aa9072f55204f732cb06d19be0d94d2eefad3401231fd89589374a45e",
+                      "bytes":  1123
+                  },
+                  {
+                      "path":  "full-regression/lifecycle.json",
+                      "sha256":  "d19108a9f5b34c4f9d0d391169b5f44f4fe548ff13398f1fab0dc5ccb83f00d0",
+                      "bytes":  4453
+                  },
+                  {
+                      "path":  "full-regression/measurements.json",
+                      "sha256":  "151f490a9c9749be9706e115b223355ab169f5f99032c3e7c9a4ceb15f95f0b8",
+                      "bytes":  384058
+                  },
+                  {
+                      "path":  "full-regression/missing_context.json",
+                      "sha256":  "c938477003755611f7d35efdb78a41de1715cdb2e7b187a625c5f17151987ee9",
+                      "bytes":  3440
+                  },
+                  {
+                      "path":  "full-regression/noise_cache.json",
+                      "sha256":  "5912e2c83d5ed422b15e931e336c4e4accac5c97f843ed5b402ac28f588f43d9",
+                      "bytes":  24170
+                  },
+                  {
+                      "path":  "full-regression/noise_cache_bits.json",
+                      "sha256":  "f0a031d93aad87f005e3036f1986715298070ebe77c632dc782e3816487eeac0",
+                      "bytes":  12254
+                  },
+                  {
+                      "path":  "full-regression/observer_counters.json",
+                      "sha256":  "ced7dbc45dfbd1dc390300436053b7a9536af73b855418da41d8c0cd58fad2e3",
+                      "bytes":  4880
+                  },
+                  {
+                      "path":  "full-regression/preset.json",
+                      "sha256":  "74043032645cac9d1888035e7db7196dd1a28fc5096a7c5eaf7705091dceee19",
+                      "bytes":  5027
+                  },
+                  {
+                      "path":  "full-regression/provenance.json",
+                      "sha256":  "aa225a4ec25aeed05ec33997841a0cbbaf7e76de39d364cc4aa390583eb30ac7",
+                      "bytes":  1733
+                  },
+                  {
+                      "path":  "full-regression/sampling_semantics.json",
+                      "sha256":  "e30c37646a1d1868bdd5bc043e24807f0c0ee90850f92c1a21ecf650cd5332ca",
+                      "bytes":  1899
+                  },
+                  {
+                      "path":  "full-regression/seed_collisions.json",
+                      "sha256":  "5cf3da0b02349cf07287da755d0fb8753f0abd0b13f492ab89bb8090e57976b3",
+                      "bytes":  1430839
+                  },
+                  {
+                      "path":  "full-regression/tile_bounds.json",
+                      "sha256":  "96634defde3f18bf4e3fbc585a3c5e8ea82155a8fc119ab79011589112843a68",
+                      "bytes":  1771
+                  },
+                  {
+                      "path":  "full-regression/tile_bounds_halo.json.gz",
+                      "sha256":  "585a3db254589a570d21fb18d7aa54da0a1256cf0785c82175693f5d9e07d476",
+                      "bytes":  1489534
+                  },
+                  {
+                      "path":  "full-regression/tile_geometry.json",
+                      "sha256":  "c6cddc8ac1c7047593fe96a4ad9968f3b5b7e23a332a6b311d9c9280874887c6",
+                      "bytes":  45063
+                  },
+                  {
+                      "path":  "full-regression/tile_overlap.json",
+                      "sha256":  "972d73a86acc6263124891c6950adc28224adac39a70b1ea5f5b425f66aac0df",
+                      "bytes":  205433
+                  },
+                  {
+                      "path":  "full-regression/vegetation_disabled.json",
+                      "sha256":  "fade1cc4fda21a352529826aadad1ec7a9367e4d059594dd02a71b99f16fbe42",
+                      "bytes":  828
+                  },
+                  {
+                      "path":  "full-release/cached_uncached.json",
+                      "sha256":  "fb07cf1f9dad01baad59f90ce45cdadf22f492800f91b8b24cd80a64c51ebd02",
+                      "bytes":  863607
+                  },
+                  {
+                      "path":  "full-release/cell_resources.json",
+                      "sha256":  "43bb5a970160af4524f75f77a24d6efd2048eeeba82d32e5464cdc6bab8868b3",
+                      "bytes":  972
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/42_0_0.json.gz",
+                      "sha256":  "0a09b44e9c1962b7dfec03e4806cc6d5c795725f70a2dce6fc0559c4b24ab3ac",
+                      "bytes":  17708
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/42_-168_-256.json.gz",
+                      "sha256":  "eef0b22645d0fe4795c6b226058eda5f5c1838704295fcd9a2d7acb76c802610",
+                      "bytes":  24634
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/42_212_-192.json.gz",
+                      "sha256":  "1c576aace0d2409bee906a97c271e10eede065a6030c42a27e4ec49798f6f970",
+                      "bytes":  16896
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/42_-252_-256.json.gz",
+                      "sha256":  "bd910673d0a529314cc2742238ed090dc39284e0b13cd1f1994d4675faba21bd",
+                      "bytes":  18032
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/42_-4_-256.json.gz",
+                      "sha256":  "ca5c361a4aa0205907c27ff73ca4600630c68e82562c9ee274a310af5fe3a2b8",
+                      "bytes":  22861
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/42_7_7.json.gz",
+                      "sha256":  "2b0c8a82cd42165781cb35b4fa4e823266ded32ce6a22b049ef6c71d52580483",
+                      "bytes":  19629
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/42_8_8.json.gz",
+                      "sha256":  "7773847d033c754e14672381a92770f0728f02fd13057fa7b150236c65716d91",
+                      "bytes":  19723
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/42_-9_-9.json.gz",
+                      "sha256":  "7a3fab5da3b0b6ad6f163b151bc7ffd6dbbeb7bced6007414108c965491d4e3b",
+                      "bytes":  16868
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/4303642605_0_0.json.gz",
+                      "sha256":  "c6912cb10d27819cb85f4a6614ca1b505c943c93850e9eeeeb1a79ba79a0d0e8",
+                      "bytes":  25539
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/4303642605_-168_-256.json.gz",
+                      "sha256":  "0fb782d2d587296852685b55c93394c43a3b86eaba861f4988a111b2e725ed36",
+                      "bytes":  23308
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/4303642605_212_-192.json.gz",
+                      "sha256":  "021401f95496253f51913669bff1a804d1c2a19cca5de001e8e1bf8ae0afa1aa",
+                      "bytes":  24063
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/4303642605_-252_-256.json.gz",
+                      "sha256":  "fc97e2445483506bb101be0d6e9a430bf0b9fe503c2b1e27c917c61bc8487ec3",
+                      "bytes":  19311
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/4303642605_-4_-256.json.gz",
+                      "sha256":  "01c2f1721acef80caa58561c01caa6f7b3d1214c9ddc74c42eb4b770e2a0af15",
+                      "bytes":  22703
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/4303642605_7_7.json.gz",
+                      "sha256":  "6d473bdd23dde60b040c54eb6a3598b97332bd9359d18f46340a9fb6aed1614a",
+                      "bytes":  20119
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/4303642605_8_8.json.gz",
+                      "sha256":  "69280d91caabe0dc641a409412450887993ceb0d86e09e355274893acc2ff65c",
+                      "bytes":  21417
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/4303642605_-9_-9.json.gz",
+                      "sha256":  "6310debf92d12bba2ce211000c6f9087887ff598bc9420c18234d1789e0e6777",
+                      "bytes":  29522
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/8675309_0_0.json.gz",
+                      "sha256":  "84e448b7e06c01f82dc707f521f11167a1eea644eefed7a8bdfacf52a33fb61b",
+                      "bytes":  25720
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/8675309_-168_-256.json.gz",
+                      "sha256":  "9d0ac10f8b3356354f1db85e0c26d93f48e7f326d55729f341196b30c722bece",
+                      "bytes":  21530
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/8675309_212_-192.json.gz",
+                      "sha256":  "5a2b8dfba66087e2ab0aef157a59c6e9e5f59c9a5838a57c68b1e82d35000c75",
+                      "bytes":  25770
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/8675309_-252_-256.json.gz",
+                      "sha256":  "8c88ada0e6e1ab747557e918e232858ad998128843b23fcbad2dd2627ca78cbb",
+                      "bytes":  19966
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/8675309_-4_-256.json.gz",
+                      "sha256":  "af845692a112ebaad28e0ce1a2d98f05220b8a2b82ae905e6d6b87e215231f6f",
+                      "bytes":  21506
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/8675309_7_7.json.gz",
+                      "sha256":  "7d1690e3fe1c55eeecdae15e1b0cf18776a7fd4519038354e9e8b3b4ef9c38a1",
+                      "bytes":  23636
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/8675309_8_8.json.gz",
+                      "sha256":  "c205dcaa5f5f048b049da16f2abd120b488e84396445272bef8bc12f12a63119",
+                      "bytes":  22612
+                  },
+                  {
+                      "path":  "full-release/chunk_blocks/8675309_-9_-9.json.gz",
+                      "sha256":  "cf100091ea92a1cd4974edeedf43a378c83abf81a00f35d1c14bd080863f8ba5",
+                      "bytes":  27654
+                  },
+                  {
+                      "path":  "full-release/closed_cache_ownership.json",
+                      "sha256":  "5fb17e51c5f17f11dd75f2aceeab82b90617b29667467f8e33adf19ad73c3281",
+                      "bytes":  98
+                  },
+                  {
+                      "path":  "full-release/completion.json",
+                      "sha256":  "af57033e9321db966af8fabf7129847362b1880d946865818a5a3232dc39b9e2",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "full-release/contexts.json",
+                      "sha256":  "0c57bd814098431d9f4801b143ef2dab570a2fbc974df0b8300e3c28a92880da",
+                      "bytes":  10230
+                  },
+                  {
+                      "path":  "full-release/cross_world_cache.json",
+                      "sha256":  "4a3afcb05d1aca65d3148de8c8760a8cd3feb5487535c017abdc0caa3c08f481",
+                      "bytes":  16161
+                  },
+                  {
+                      "path":  "full-release/disposal.json",
+                      "sha256":  "bfed1997e0366f83c22a143a4f2435b226f45b054bb42ff1dc2c8e109bf24708",
+                      "bytes":  2430
+                  },
+                  {
+                      "path":  "full-release/environment.json",
+                      "sha256":  "bd02e2aa8531a9cd108144e00dfaab6b55bda1cc1a076092395d4f0260077ff2",
+                      "bytes":  499
+                  },
+                  {
+                      "path":  "full-release/eviction_reload.json",
+                      "sha256":  "c830d43c9c7bd34c06d8bc79ded13927d14973b9f02c7082de7402ec1b4f04ea",
+                      "bytes":  475646
+                  },
+                  {
+                      "path":  "full-release/fixtures.json",
+                      "sha256":  "a45bc8be2da2ccccb3e13ae8b1f79b133645f06c256c402377d8fe527da10d6c",
+                      "bytes":  30268
+                  },
+                  {
+                      "path":  "full-release/generated_chunks.json",
+                      "sha256":  "33ba11fc5d505dca9cf130761685934c24b048622d69ad56dc39c73543938493",
+                      "bytes":  164783
+                  },
+                  {
+                      "path":  "full-release/generation_order.json",
+                      "sha256":  "026ac49ea9193c05eac82224841b24b45124e271dcb0255418a75141d384ff78",
+                      "bytes":  27501
+                  },
+                  {
+                      "path":  "full-release/invalid_noise_validation.json",
+                      "sha256":  "f838b28c474ffcf201d6b5b0e76d037e72e8be1a8d3a647d4730a2397b6a4edf",
+                      "bytes":  3431
+                  },
+                  {
+                      "path":  "full-release/legacy_geometry_config.json",
+                      "sha256":  "89ca999aa9072f55204f732cb06d19be0d94d2eefad3401231fd89589374a45e",
+                      "bytes":  1123
+                  },
+                  {
+                      "path":  "full-release/lifecycle.json",
+                      "sha256":  "85cf52557d71e3b619fef148058cd8e06aa798feb886683f4bf23996b80c6b35",
+                      "bytes":  4453
+                  },
+                  {
+                      "path":  "full-release/measurements.json",
+                      "sha256":  "8e3565ab689a0c12de8dceeaea4b3b128656ad94d66f1815e924c49e2eb36ec0",
+                      "bytes":  384042
+                  },
+                  {
+                      "path":  "full-release/missing_context.json",
+                      "sha256":  "d3cfc5748e9c6d33aa4bccd803eb16d195a875a118a367eb9f54691c71a27bc4",
+                      "bytes":  3440
+                  },
+                  {
+                      "path":  "full-release/noise_cache.json",
+                      "sha256":  "5912e2c83d5ed422b15e931e336c4e4accac5c97f843ed5b402ac28f588f43d9",
+                      "bytes":  24170
+                  },
+                  {
+                      "path":  "full-release/noise_cache_bits.json",
+                      "sha256":  "f0a031d93aad87f005e3036f1986715298070ebe77c632dc782e3816487eeac0",
+                      "bytes":  12254
+                  },
+                  {
+                      "path":  "full-release/observer_counters.json",
+                      "sha256":  "11ae57adbc6be13ef0cbb7cea0b9754b6ef67886d88e9e3f354305382f6daa09",
+                      "bytes":  4880
+                  },
+                  {
+                      "path":  "full-release/preset.json",
+                      "sha256":  "74043032645cac9d1888035e7db7196dd1a28fc5096a7c5eaf7705091dceee19",
+                      "bytes":  5027
+                  },
+                  {
+                      "path":  "full-release/provenance.json",
+                      "sha256":  "3796a697f82d08e0a1ea9feca356dd1f9f2e397e0915e6bf1d737e48838db629",
+                      "bytes":  2536
+                  },
+                  {
+                      "path":  "full-release/sampling_semantics.json",
+                      "sha256":  "e30c37646a1d1868bdd5bc043e24807f0c0ee90850f92c1a21ecf650cd5332ca",
+                      "bytes":  1899
+                  },
+                  {
+                      "path":  "full-release/seed_collisions.json",
+                      "sha256":  "5cf3da0b02349cf07287da755d0fb8753f0abd0b13f492ab89bb8090e57976b3",
+                      "bytes":  1430839
+                  },
+                  {
+                      "path":  "full-release/tile_bounds.json",
+                      "sha256":  "96634defde3f18bf4e3fbc585a3c5e8ea82155a8fc119ab79011589112843a68",
+                      "bytes":  1771
+                  },
+                  {
+                      "path":  "full-release/tile_bounds_halo.json.gz",
+                      "sha256":  "585a3db254589a570d21fb18d7aa54da0a1256cf0785c82175693f5d9e07d476",
+                      "bytes":  1489534
+                  },
+                  {
+                      "path":  "full-release/tile_geometry.json",
+                      "sha256":  "c6cddc8ac1c7047593fe96a4ad9968f3b5b7e23a332a6b311d9c9280874887c6",
+                      "bytes":  45063
+                  },
+                  {
+                      "path":  "full-release/tile_overlap.json",
+                      "sha256":  "972d73a86acc6263124891c6950adc28224adac39a70b1ea5f5b425f66aac0df",
+                      "bytes":  205433
+                  },
+                  {
+                      "path":  "full-release/vegetation_disabled.json",
+                      "sha256":  "fade1cc4fda21a352529826aadad1ec7a9367e4d059594dd02a71b99f16fbe42",
+                      "bytes":  828
+                  },
+                  {
+                      "path":  "golden-2/completion.json",
+                      "sha256":  "941d1113ef3740ca44a712068aa8f69cc08bbba4f7e12afa9e019d4f97c3be58",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "golden-2/disposal.json",
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8",
+                      "bytes":  187
+                  },
+                  {
+                      "path":  "golden-2/environment.json",
+                      "sha256":  "69e1fa9e03e719937cf9b7ee2d18162471137643aacfdb427908be3d5da5d8b1",
+                      "bytes":  3488
+                  },
+                  {
+                      "path":  "golden-2/identity.json",
+                      "sha256":  "8a9ee86b5f4d46e10e15d94ca7289dc607cb8728bac93a5528a77b935f432a79",
+                      "bytes":  11314
+                  },
+                  {
+                      "path":  "golden-2/observer_counters.json",
+                      "sha256":  "c59ed170ff1af07a130a176f3f582829433c93352e034376a232f63b4492faa1",
+                      "bytes":  1200
+                  },
+                  {
+                      "path":  "golden-2/provenance.json",
+                      "sha256":  "6c76c3f01507cfe8b548cfd0ad14fb2e953a4939c7b61314b97f96a31748c086",
+                      "bytes":  1292
+                  },
+                  {
+                      "path":  "golden-2/tile_digests.json",
+                      "sha256":  "713c295a43418dcb12640fe49d5077e45e1640e0f6e9b8f28bb99139b9c074f2",
+                      "bytes":  27540
+                  },
+                  {
+                      "path":  "golden-24/biome_hints.json",
+                      "sha256":  "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2",
+                      "bytes":  416138
+                  },
+                  {
+                      "path":  "golden-24/cached_direct_comparison.json",
+                      "sha256":  "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee",
+                      "bytes":  170129
+                  },
+                  {
+                      "path":  "golden-24/canonical_geography.json",
+                      "sha256":  "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa",
+                      "bytes":  787947
+                  },
+                  {
+                      "path":  "golden-24/completion.json",
+                      "sha256":  "392ddee4a5a9b9c50eb13776e1b6a82ec065ada8b538d40b171e1683b0935e51",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "golden-24/disposal.json",
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8",
+                      "bytes":  187
+                  },
+                  {
+                      "path":  "golden-24/environment.json",
+                      "sha256":  "e8f5fd6f4b064f9d02cf20ce7d62c14e4cc3d4ea286e73f95db75bc27ffbf85a",
+                      "bytes":  3437
+                  },
+                  {
+                      "path":  "golden-24/fixtures.json",
+                      "sha256":  "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a",
+                      "bytes":  50551
+                  },
+                  {
+                      "path":  "golden-24/identity.json",
+                      "sha256":  "b9a5a87450262a28173630a707a5a4fe3fe7f40eec7dcafc26de0af7e6d6c211",
+                      "bytes":  11304
+                  },
+                  {
+                      "path":  "golden-24/legacy_direct_samples.json",
+                      "sha256":  "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e",
+                      "bytes":  767425
+                  },
+                  {
+                      "path":  "golden-24/minecraft_biomes.json",
+                      "sha256":  "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992",
+                      "bytes":  22075
+                  },
+                  {
+                      "path":  "golden-24/observer_counters.json",
+                      "sha256":  "43c6aa24e98d57bb47d837883c579bc2dbd2862b1c1c14f9fb1f4e6e6b415029",
+                      "bytes":  1201
+                  },
+                  {
+                      "path":  "golden-24/provenance.json",
+                      "sha256":  "17396c69aed26c816bfe3f2f667725dbd67d113ec26cdc3fff594e497a35f787",
+                      "bytes":  715
+                  },
+                  {
+                      "path":  "golden-24/seed_collision.json",
+                      "sha256":  "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa",
+                      "bytes":  223441
+                  },
+                  {
+                      "path":  "golden-24/terrain_traits.json",
+                      "sha256":  "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a",
+                      "bytes":  209864
+                  },
+                  {
+                      "path":  "golden-24/tile_digests.json",
+                      "sha256":  "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e",
+                      "bytes":  27645
+                  },
+                  {
+                      "path":  "golden-48/completion.json",
+                      "sha256":  "a8324e6fab0fa92a35986ee3c1e8c04a412753df64ed6d19ec1ac72c2238c13e",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "golden-48/disposal.json",
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8",
+                      "bytes":  187
+                  },
+                  {
+                      "path":  "golden-48/environment.json",
+                      "sha256":  "9ed15840d64e2fe716bb0d319de7e64f9c014c6f4f978d1a77f5c056ce998e28",
+                      "bytes":  3490
+                  },
+                  {
+                      "path":  "golden-48/identity.json",
+                      "sha256":  "7c5595e7522a34c1eed75df2aeedc93cfa6a6fed8347743e47bea34e830dfe4a",
+                      "bytes":  11315
+                  },
+                  {
+                      "path":  "golden-48/observer_counters.json",
+                      "sha256":  "278cc129d17a94d82634831ad2f401d7651445d7a8caf59b48a870698c15a601",
+                      "bytes":  1197
+                  },
+                  {
+                      "path":  "golden-48/provenance.json",
+                      "sha256":  "7897a4ffdc78965a00c009ccd9a9cb408b31046cfa7dae9d4f95de6b6b79ed56",
+                      "bytes":  1321
+                  },
+                  {
+                      "path":  "golden-48/tile_digests.json",
+                      "sha256":  "eae9bf2daa209b2e7c21cf248373da2bd381abeb796c5a5199d4b3908cecadbb",
+                      "bytes":  27645
+                  },
+                  {
+                      "path":  "golden-release/biome_hints.json",
+                      "sha256":  "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2",
+                      "bytes":  416138
+                  },
+                  {
+                      "path":  "golden-release/cached_direct_comparison.json",
+                      "sha256":  "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee",
+                      "bytes":  170129
+                  },
+                  {
+                      "path":  "golden-release/canonical_geography.json",
+                      "sha256":  "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa",
+                      "bytes":  787947
+                  },
+                  {
+                      "path":  "golden-release/completion.json",
+                      "sha256":  "dad9222e5f78637119d4564b4f405cf98deae2735ba2ce01c81a0e91b3758bd8",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "golden-release/disposal.json",
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8",
+                      "bytes":  187
+                  },
+                  {
+                      "path":  "golden-release/environment.json",
+                      "sha256":  "e8f5fd6f4b064f9d02cf20ce7d62c14e4cc3d4ea286e73f95db75bc27ffbf85a",
+                      "bytes":  3437
+                  },
+                  {
+                      "path":  "golden-release/fixtures.json",
+                      "sha256":  "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a",
+                      "bytes":  50551
+                  },
+                  {
+                      "path":  "golden-release/identity.json",
+                      "sha256":  "b9a5a87450262a28173630a707a5a4fe3fe7f40eec7dcafc26de0af7e6d6c211",
+                      "bytes":  11304
+                  },
+                  {
+                      "path":  "golden-release/legacy_direct_samples.json",
+                      "sha256":  "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e",
+                      "bytes":  767425
+                  },
+                  {
+                      "path":  "golden-release/minecraft_biomes.json",
+                      "sha256":  "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992",
+                      "bytes":  22075
+                  },
+                  {
+                      "path":  "golden-release/observer_counters.json",
+                      "sha256":  "0e60e380296246898a9b90f7a8cd9fb62a1877ba6a0e06724ff57ce72d461732",
+                      "bytes":  1201
+                  },
+                  {
+                      "path":  "golden-release/provenance.json",
+                      "sha256":  "9833e5527db457595ac71a5ad55faf2184f7710103e884c9637cc8b261c20676",
+                      "bytes":  2199
+                  },
+                  {
+                      "path":  "golden-release/seed_collision.json",
+                      "sha256":  "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa",
+                      "bytes":  223441
+                  },
+                  {
+                      "path":  "golden-release/terrain_traits.json",
+                      "sha256":  "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a",
+                      "bytes":  209864
+                  },
+                  {
+                      "path":  "golden-release/tile_digests.json",
+                      "sha256":  "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e",
+                      "bytes":  27645
+                  },
+                  {
+                      "path":  "golden-repeat/biome_hints.json",
+                      "sha256":  "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2",
+                      "bytes":  416138
+                  },
+                  {
+                      "path":  "golden-repeat/cached_direct_comparison.json",
+                      "sha256":  "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee",
+                      "bytes":  170129
+                  },
+                  {
+                      "path":  "golden-repeat/canonical_geography.json",
+                      "sha256":  "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa",
+                      "bytes":  787947
+                  },
+                  {
+                      "path":  "golden-repeat/completion.json",
+                      "sha256":  "789a9061a7838811f1f53a2e79a8e0c0d936b7ace777a64b4cf46465c9ca1638",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "golden-repeat/disposal.json",
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8",
+                      "bytes":  187
+                  },
+                  {
+                      "path":  "golden-repeat/environment.json",
+                      "sha256":  "e8f5fd6f4b064f9d02cf20ce7d62c14e4cc3d4ea286e73f95db75bc27ffbf85a",
+                      "bytes":  3437
+                  },
+                  {
+                      "path":  "golden-repeat/fixtures.json",
+                      "sha256":  "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a",
+                      "bytes":  50551
+                  },
+                  {
+                      "path":  "golden-repeat/identity.json",
+                      "sha256":  "b9a5a87450262a28173630a707a5a4fe3fe7f40eec7dcafc26de0af7e6d6c211",
+                      "bytes":  11304
+                  },
+                  {
+                      "path":  "golden-repeat/legacy_direct_samples.json",
+                      "sha256":  "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e",
+                      "bytes":  767425
+                  },
+                  {
+                      "path":  "golden-repeat/minecraft_biomes.json",
+                      "sha256":  "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992",
+                      "bytes":  22075
+                  },
+                  {
+                      "path":  "golden-repeat/observer_counters.json",
+                      "sha256":  "a0c98db5a4f169a8d42838820ccc69fad763936b2dd80f4788a03c789b7c5d17",
+                      "bytes":  1201
+                  },
+                  {
+                      "path":  "golden-repeat/provenance.json",
+                      "sha256":  "6c2c12c08c0e2d40562810156e404cec0cd339c63d2e5a5f5e0af5787f7aa68c",
+                      "bytes":  1387
+                  },
+                  {
+                      "path":  "golden-repeat/seed_collision.json",
+                      "sha256":  "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa",
+                      "bytes":  223441
+                  },
+                  {
+                      "path":  "golden-repeat/terrain_traits.json",
+                      "sha256":  "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a",
+                      "bytes":  209864
+                  },
+                  {
+                      "path":  "golden-repeat/tile_digests.json",
+                      "sha256":  "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e",
+                      "bytes":  27645
+                  },
+                  {
+                      "path":  "golden-tb/biome_hints.json",
+                      "sha256":  "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2",
+                      "bytes":  416138
+                  },
+                  {
+                      "path":  "golden-tb/cached_direct_comparison.json",
+                      "sha256":  "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee",
+                      "bytes":  170129
+                  },
+                  {
+                      "path":  "golden-tb/canonical_geography.json",
+                      "sha256":  "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa",
+                      "bytes":  787947
+                  },
+                  {
+                      "path":  "golden-tb/completion.json",
+                      "sha256":  "7c45744eb27613277773cfed7ba4d821eb44c734641d2d0b084b7236b541ef83",
+                      "bytes":  140
+                  },
+                  {
+                      "path":  "golden-tb/disposal.json",
+                      "sha256":  "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8",
+                      "bytes":  187
+                  },
+                  {
+                      "path":  "golden-tb/environment.json",
+                      "sha256":  "e8f5fd6f4b064f9d02cf20ce7d62c14e4cc3d4ea286e73f95db75bc27ffbf85a",
+                      "bytes":  3437
+                  },
+                  {
+                      "path":  "golden-tb/fixtures.json",
+                      "sha256":  "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a",
+                      "bytes":  50551
+                  },
+                  {
+                      "path":  "golden-tb/identity.json",
+                      "sha256":  "cedfcfd7e9f90321e2d8642507c8bdeb32e8eff8d1c917b0ea635193c1da7e8a",
+                      "bytes":  11303
+                  },
+                  {
+                      "path":  "golden-tb/legacy_direct_samples.json",
+                      "sha256":  "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e",
+                      "bytes":  767425
+                  },
+                  {
+                      "path":  "golden-tb/minecraft_biomes.json",
+                      "sha256":  "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992",
+                      "bytes":  22075
+                  },
+                  {
+                      "path":  "golden-tb/observer_counters.json",
+                      "sha256":  "eb31221818ecf51257fbd32ed8f6ea61d502a7429644f6f291a994dd81729dab",
+                      "bytes":  1201
+                  },
+                  {
+                      "path":  "golden-tb/provenance.json",
+                      "sha256":  "3638f122bb6dec756c383d85e72e96c2953e6e17792920e821b59d7c2e5dbbce",
+                      "bytes":  1449
+                  },
+                  {
+                      "path":  "golden-tb/seed_collision.json",
+                      "sha256":  "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa",
+                      "bytes":  223441
+                  },
+                  {
+                      "path":  "golden-tb/terrain_traits.json",
+                      "sha256":  "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a",
+                      "bytes":  209864
+                  },
+                  {
+                      "path":  "golden-tb/tile_digests.json",
+                      "sha256":  "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e",
+                      "bytes":  27645
+                  },
+                  {
+                      "path":  "legacy_golden_comparison.json",
+                      "sha256":  "7183774688939a3407c2345c126d461eeaea536450749ec2c1e3fb6a6b6e11bd",
+                      "bytes":  3025
+                  },
+                  {
+                      "path":  "logs/01-versions-config.log",
+                      "sha256":  "ae5b8eb977dd8a54ec0d6322399b2f282bb3a226e13373aee9d2b90cc5b832d6",
+                      "bytes":  53990
+                  },
+                  {
+                      "path":  "logs/01-versions-config-fixed.log",
+                      "sha256":  "f1fdee01c9987be839865201cea8906428174e2fef0274c1b8a4b67e9b92e491",
+                      "bytes":  114398
+                  },
+                  {
+                      "path":  "logs/02-seed-streams.log",
+                      "sha256":  "676e61afe49b87472af73e47f209645e521d6718ea06e3d941cadeb3d87777e3",
+                      "bytes":  118092
+                  },
+                  {
+                      "path":  "logs/03-manifest-compile.log",
+                      "sha256":  "1e9c9f2b401fb8b0255319108659fd546eeef0f9c6a608480d397348f5b1bad9",
+                      "bytes":  80992
+                  },
+                  {
+                      "path":  "logs/03-manifest-context.log",
+                      "sha256":  "6798fb76d9a0b2ca45e7aeb5ee3bcc9ef224705eb4d7809c27e1fa0198713b72",
+                      "bytes":  118276
+                  },
+                  {
+                      "path":  "logs/04-api-contracts.log",
+                      "sha256":  "7c0fa8b5f7800ae3f2b0aa2e17b49b1511d57a20822bc6c37eb228c2aabb1341",
+                      "bytes":  118210
+                  },
+                  {
+                      "path":  "logs/05-binding-compile.log",
+                      "sha256":  "001a8ac25e943885ccd0e988e66bbd0b831d0bbd955d923008dc83998aca9425",
+                      "bytes":  166684
+                  },
+                  {
+                      "path":  "logs/05-binding-reopen-adapter.log",
+                      "sha256":  "95ac851786eb0db9294d3f0c62735aa4ea341be1b97eead817d04f6bfb0a873c",
+                      "bytes":  143524
+                  },
+                  {
+                      "path":  "logs/05-binding-reopen-adapter-fixed.log",
+                      "sha256":  "45da74dae815cba2937d2ca43bf91e2cac0e22df2d3fca90068e9fadf0f0c8a3",
+                      "bytes":  49420
+                  },
+                  {
+                      "path":  "logs/05-binding-reopen-final.log",
+                      "sha256":  "5be4a79ad35a4dd2ffe63eefe1ac364c2f2a367d98be7c240f14ee4c0e1ab300",
+                      "bytes":  132438
+                  },
+                  {
+                      "path":  "logs/05-world-binding.log",
+                      "sha256":  "257c5fb7cfcac6b33669be3dec3668517e3969a20d586ac0f3e18cfd4ea97abf",
+                      "bytes":  123542
+                  },
+                  {
+                      "path":  "logs/allocation.log",
+                      "sha256":  "ee94a84093e8249fa01b08fee92bd53ae14eb61b6dcdf0bf06b1103bb524ff96",
+                      "bytes":  35414
+                  },
+                  {
+                      "path":  "logs/benchmark-final.log",
+                      "sha256":  "6f5bfc28907e395d79f33f062bbb22bd73a1ceeaf1387b1853b2217c6c3e1424",
+                      "bytes":  87076
+                  },
+                  {
+                      "path":  "logs/benchmark-reference-current.log",
+                      "sha256":  "79afb339ceb09ba485020e92c4ae78e8f0465a647d6b507949fd5d8d1430ebff",
+                      "bytes":  196254
+                  },
+                  {
+                      "path":  "logs/benchmark-repeat-current.log",
+                      "sha256":  "8406beafae637483814bc2e4fb86e094805a925f0ca5732f9857131734c62770",
+                      "bytes":  86440
+                  },
+                  {
+                      "path":  "logs/build-release.log",
+                      "sha256":  "ee71c579ea189ba96aeb06f03d48096f8569761ead576f47fdeac4418ec4a984",
+                      "bytes":  65434
+                  },
+                  {
+                      "path":  "logs/commit-final-verification.log",
+                      "sha256":  "08c6b5aea20cccf0d18953b85e7ba1da781db5aead69af0c5a9fee269fb4214b",
+                      "bytes":  16118
+                  },
+                  {
+                      "path":  "logs/commit-fingerprint.log",
+                      "sha256":  "88f33b845dba6032daa78a7b1c491c1e4905610fbb36aefe801665cf840c8a1e",
+                      "bytes":  2918
+                  },
+                  {
+                      "path":  "logs/final-build-datagen-foundation.log",
+                      "sha256":  "796f18788a2d690bb52d7ea4a34df51d94555c2a66419ae8792cbf41d8cce883",
+                      "bytes":  144136
+                  },
+                  {
+                      "path":  "logs/foundation-final.log",
+                      "sha256":  "37109dd6ec03871229c6f29d6bae9ddb73f46bfb6d176e71a457b8c0bc2b2901",
+                      "bytes":  125534
+                  },
+                  {
+                      "path":  "logs/foundation-tb.log",
+                      "sha256":  "ca4c303787a3b219335b45224fae0381036630d2ae042e0b9fc73699f7452c26",
+                      "bytes":  162976
+                  },
+                  {
+                      "path":  "logs/foundation-tb-final.log",
+                      "sha256":  "b0b3f10a2184eea40641ddcb6b7dbdafe16a320f89e19d625d6563d2c05d79bf",
+                      "bytes":  49480
+                  },
+                  {
+                      "path":  "logs/foundation-tb-fixed.log",
+                      "sha256":  "19e66126772217195be6f03b4271bd34ee5452e3ee18d04015c94c5877b76bde",
+                      "bytes":  142228
+                  },
+                  {
+                      "path":  "logs/full-regression.log",
+                      "sha256":  "c68cc5555df9b12e75f8e78e1a118a3037624cced1830d42c300de065192ed53",
+                      "bytes":  87980
+                  },
+                  {
+                      "path":  "logs/full-release.log",
+                      "sha256":  "1c4c1c7eb660310878f67fafa86cc1b5d2c6e97b8912feccacd9b2a49ac6eb65",
+                      "bytes":  88144
+                  },
+                  {
+                      "path":  "logs/golden-2.log",
+                      "sha256":  "b194b09b943354288839346afd74a453e11a8fe47fabf22d28d92a3124a94973",
+                      "bytes":  46344
+                  },
+                  {
+                      "path":  "logs/golden-24.log",
+                      "sha256":  "16f6727cb35f79c4bd62a1505f947a0880e4ba4805f6d0e21f82e255af58e33e",
+                      "bytes":  38168
+                  },
+                  {
+                      "path":  "logs/golden-48.log",
+                      "sha256":  "ee08e3b526924e9fc5fd297d8be5f50d4a806b02b13029cebeb44eafedfb6b5e",
+                      "bytes":  35290
+                  },
+                  {
+                      "path":  "logs/golden-release.log",
+                      "sha256":  "c46e8902cbea88d236f624f08db5baf3e78fe6346213cffafbbf14a6219f8975",
+                      "bytes":  35666
+                  },
+                  {
+                      "path":  "logs/golden-repeat.log",
+                      "sha256":  "50b18ad28d5f5fb6a20c4e477f1b4588e3cc808a43a4a915a46b288be7faf50d",
+                      "bytes":  35464
+                  },
+                  {
+                      "path":  "logs/golden-tb.log",
+                      "sha256":  "528feba43bfd9128144fc3bd59b62ff1dbf44b68cb2917f5166a513cfe5dae87",
+                      "bytes":  38766
+                  },
+                  {
+                      "path":  "logs/smoke-existing-legacy.log",
+                      "sha256":  "a57479b64087cc41fa9f6875360cfa22a2e89dbd3c1baf2a48bbec5cb99e6a28",
+                      "bytes":  69422
+                  },
+                  {
+                      "path":  "logs/smoke-existing-legacy-final.log",
+                      "sha256":  "5346af5ae1762c3bdb1489be4e5366e0b3eb340e0ca34d65eac9a00e559d7272",
+                      "bytes":  69254
+                  },
+                  {
+                      "path":  "logs/smoke-standalone.log",
+                      "sha256":  "f46b2e302366491a649e845e644af34a9937be4624588551e87263d493a84a14",
+                      "bytes":  79626
+                  },
+                  {
+                      "path":  "logs/smoke-standalone-final.log",
+                      "sha256":  "95cf4bc19b38863929e9644a1de87eabf47cb5ed3f1cea35900fffb02f3e566b",
+                      "bytes":  79664
+                  },
+                  {
+                      "path":  "logs/smoke-tb.log",
+                      "sha256":  "66c018d7328d76e822ec3384d03eb8902f3d31e72777960b8b7b8514ddacdb4a",
+                      "bytes":  83514
+                  },
+                  {
+                      "path":  "logs/smoke-tb-final.log",
+                      "sha256":  "396aa50f2eaf1dc8b3c3c72951432b6088c030ddba8ef3fd16f6f6dbcede69ef",
+                      "bytes":  83344
+                  },
+                  {
+                      "path":  "logs/smoke-vanilla.log",
+                      "sha256":  "ebd245d5290cb56adcdbf101f3a74d04a780899de85545463eadff47390ad16c",
+                      "bytes":  76580
+                  },
+                  {
+                      "path":  "logs/smoke-vanilla-final.log",
+                      "sha256":  "53009ac270ae9d66b6c9362c7fa3a549a5e60237fd5f3bff78a809044466ac6c",
+                      "bytes":  76552
+                  },
+                  {
+                      "path":  "machine.json",
+                      "sha256":  "c54f2ee54d7d6ef8c5559d4ab54ea22b6e1af539e2ce346eefe592b3e3796233",
+                      "bytes":  222
+                  },
+                  {
+                      "path":  "manifest.json",
+                      "sha256":  "022e73e5bd4f98709a73bfb985c26780c58fe5ba880cf10601596760f6cf686a",
+                      "bytes":  98004
+                  },
+                  {
+                      "path":  "performance_comparison.json",
+                      "sha256":  "b83e2b2a53d44cf28a89969a406de350bef2ffdf4f31155d362d09f703df85a8",
+                      "bytes":  27535
+                  },
+                  {
+                      "path":  "release_legacy_golden_comparison.json",
+                      "sha256":  "8ce83e731ea72291364f5b3dbc326683011338c199c3107c4c6b50b1451b7abf",
+                      "bytes":  1715
+                  },
+                  {
+                      "path":  "release_tile_digest_comparison.json",
+                      "sha256":  "66df82cbd7e5992a101d742301ce06aace41fcdeddca06c6d745859505b082cc",
+                      "bytes":  139
+                  },
+                  {
+                      "path":  "runtime_smoke.json",
+                      "sha256":  "9c07b9060b785e0a48d7fc202e3742e949ef68de70db6f5720d8e1d0b03119a5",
+                      "bytes":  1860
+                  },
+                  {
+                      "path":  "runtime_smoke-final.json",
+                      "sha256":  "fdfefb1ce52f371c10574cdcb38703b1c3f6f255f0cf6d08fc4b7125d92a41a8",
+                      "bytes":  1884
+                  },
+                  {
+                      "path":  "smoke-existing-legacy.json",
+                      "sha256":  "cb9ac804888e96a81b37491273785da55cc60a46d2dbc965422c5b3ad8550b0d",
+                      "bytes":  4768
+                  },
+                  {
+                      "path":  "smoke-existing-legacy-final.json",
+                      "sha256":  "efbf836c9033d945ab0273de1fdf75787a010eb1a8e11bc5666136f9a24ff88c",
+                      "bytes":  4768
+                  },
+                  {
+                      "path":  "smoke-standalone.json",
+                      "sha256":  "fdeee11ee114e4443c19abb9eec31701a97ff31002eaf2f7d0ce14d1a3556df0",
+                      "bytes":  4770
+                  },
+                  {
+                      "path":  "smoke-standalone-final.json",
+                      "sha256":  "e44bc7fdd77cf07ff0ccdbc0cc88b07cc4a0460b47d6fca4559949f032b81dfa",
+                      "bytes":  4770
+                  },
+                  {
+                      "path":  "smoke-tb.json",
+                      "sha256":  "895e4531786330a327f55557146e0be0fd6d7dce6328dc07d63d9bdc6ba040fb",
+                      "bytes":  4768
+                  },
+                  {
+                      "path":  "smoke-tb-final.json",
+                      "sha256":  "406122ebdb5a2030d03b5e4029ea2ecc7758106a72e6a0f355163421b8471f14",
+                      "bytes":  4768
+                  },
+                  {
+                      "path":  "smoke-vanilla.json",
+                      "sha256":  "e309afb39d04255c4cf58be62d637eb24ae573ee4395e357d2c7f83a76de4be5",
+                      "bytes":  2445
+                  },
+                  {
+                      "path":  "smoke-vanilla-final.json",
+                      "sha256":  "032a5e402b758f09ef9f80f1762d7448af4168b1f07d6b8816faf6b02bbfc80e",
+                      "bytes":  2445
+                  },
+                  {
+                      "path":  "task1b-release-verification/verification.json",
+                      "sha256":  "2b38e54a19fcc8176972f5e336c2eb42ea94c7421da72ea2b4be1e57f7d4e0f8",
+                      "bytes":  38918
+                  },
+                  {
+                      "path":  "task1b-verification/verification.json",
+                      "sha256":  "581d60c1af80f1f1e1b672a1946a7f58ac11f3113d57704cdbb8fa9dd89bf18b",
+                      "bytes":  38921
+                  },
+                  {
+                      "path":  "tile_digest_comparison.json",
+                      "sha256":  "1210190bcefe1e0f5679ab9e3636385a48c331e8366ce90aff241ed0e8cc76cc",
+                      "bytes":  846
+                  },
+                  {
+                      "path":  "verified-logs/build-release.txt",
+                      "sha256":  "ee71c579ea189ba96aeb06f03d48096f8569761ead576f47fdeac4418ec4a984",
+                      "bytes":  65434
+                  },
+                  {
+                      "path":  "verified-logs/full-release.txt",
+                      "sha256":  "1c4c1c7eb660310878f67fafa86cc1b5d2c6e97b8912feccacd9b2a49ac6eb65",
+                      "bytes":  88144
+                  },
+                  {
+                      "path":  "verified-logs/golden-release.txt",
+                      "sha256":  "c46e8902cbea88d236f624f08db5baf3e78fe6346213cffafbbf14a6219f8975",
+                      "bytes":  35666
+                  },
+                  {
+                      "path":  "verified-logs/smoke-existing-legacy-final.txt",
+                      "sha256":  "5346af5ae1762c3bdb1489be4e5366e0b3eb340e0ca34d65eac9a00e559d7272",
+                      "bytes":  69254
+                  },
+                  {
+                      "path":  "verified-logs/smoke-standalone-final.txt",
+                      "sha256":  "95cf4bc19b38863929e9644a1de87eabf47cb5ed3f1cea35900fffb02f3e566b",
+                      "bytes":  79664
+                  },
+                  {
+                      "path":  "verified-logs/smoke-tb-final.txt",
+                      "sha256":  "396aa50f2eaf1dc8b3c3c72951432b6088c030ddba8ef3fd16f6f6dbcede69ef",
+                      "bytes":  83344
+                  },
+                  {
+                      "path":  "verified-logs/smoke-vanilla-final.txt",
+                      "sha256":  "53009ac270ae9d66b6c9362c7fa3a549a5e60237fd5f3bff78a809044466ac6c",
+                      "bytes":  76552
+                  }
+              ]
+}

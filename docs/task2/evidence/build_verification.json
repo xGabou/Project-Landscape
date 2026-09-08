@@ -1,0 +1,33 @@
+{
+    "status":  "PASS",
+    "commands":  "compileJava classes jar build reproductionClasses smokeClasses runData runReproductionClient -PreproProfile=foundation -PwithTerraBlender=true",
+    "log":  "verified-logs/build-release.txt",
+    "minecraft":  "1.20.1",
+    "forge":  "47.4.22",
+    "java":  "17.0.17+10",
+    "gradle":  "8.11",
+    "forgeGradle":  "6.0.42",
+    "mixinGradle":  "0.7.38",
+    "terraBlender":  "3.0.1.10",
+    "artifact":  "build/libs/reterraforged-forge-1.20.1-0.0.6.jar",
+    "artifactSha256":  "315f20029c7dd472022b2c341afc6a1baa92bb1c4f35909cab7c8b8bfe72af2e",
+    "developerClassesPackaged":  false,
+    "removedLoaderClassesPackaged":  false,
+    "publicApiInheritedImports":  0,
+    "mixins":  [
+                   "reterraforged-common.mixins.json",
+                   "reterraforged-forge.mixins.json"
+               ],
+    "noticeEntries":  [
+                          "META-INF/LICENSE"
+                      ],
+    "warningCategories":  [
+                              "Inherited Java deprecation/removal and unchecked warnings",
+                              "Gradle deprecated features before Gradle 9",
+                              "Mapped development refmap warnings",
+                              "Forge new-world default server config creation",
+                              "Offline development Realms authorization",
+                              "IPv6 property/shader warning and integrated-server loading ticks"
+                          ],
+    "note":  "Gradle test is NO-SOURCE; assertions execute in real Forge reproduction and smoke source sets. No manual aesthetic terrain claim."
+}
