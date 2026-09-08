@@ -1,0 +1,83 @@
+[
+  {
+    "domain": "atmospheregen:continent",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "9046651019689194314",
+    "newB": "249920126168250857",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  },
+  {
+    "domain": "atmospheregen:ocean",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "-1335836446602097687",
+    "newB": "3252751353403786709",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  },
+  {
+    "domain": "atmospheregen:terrain_regions",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "375921751221135802",
+    "newB": "-5556412894079369838",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  },
+  {
+    "domain": "atmospheregen:mountain_chains",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "6657761353910500902",
+    "newB": "-4949365348999600313",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  },
+  {
+    "domain": "atmospheregen:hydrology",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "-4607509438207367887",
+    "newB": "-714834549471556231",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  },
+  {
+    "domain": "atmospheregen:surface",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "-2215420371577448620",
+    "newB": "1515928162582704106",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  },
+  {
+    "domain": "atmospheregen:baseline_temperature",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "4471435107060197303",
+    "newB": "-2591194880374158447",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  },
+  {
+    "domain": "atmospheregen:baseline_precipitation",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "-3362273450212328762",
+    "newB": "-1191826919240176747",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  },
+  {
+    "domain": "atmospheregen:biome_spatial_selection",
+    "legacyIntA": 8675309,
+    "legacyIntB": 8675309,
+    "newA": "7009874942324033679",
+    "newB": "-5249896882752894151",
+    "newDiverges": true,
+    "legacyTerrainProof": "Task 1C canonical collision corpus; final Task 2 comparator rerun still required"
+  }
+]

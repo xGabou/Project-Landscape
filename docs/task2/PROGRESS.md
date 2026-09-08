@@ -21,3 +21,16 @@ Verification: `runReproductionClient -PreproProfile=foundation` succeeded, Java 
 Minecraft 1.20.1 / Forge 47.4.22. Run `reproduction-1788833318178`; six round trips,
 nine rejection/unsupported-backend cases. No production caller uses these types yet.
 Full comparator/build/persistence gates remain pending.
+
+## Named seed streams
+
+`atmospheregen:named-seed-v1` hashes length-prefixed UTF-8 scheme/dimension/domain/
+domain-algorithm-version and big-endian full signed 64-bit seed/salt using SHA-256.
+The first eight digest bytes form the output long. No enum ordinals, construction
+order or sequential allocation participate. Only the domain's own algorithm version
+participates; changing climate version leaves geography/biome streams alone.
+
+Real Forge run `reproduction-1788833477027` passed: 189 stream cases (seven fixed
+seeds, three dimensions, nine domains), salt/order/worker checks, nine high-bit
+collision-divergence checks and nine dimension-separation checks. Legacy production
+does not call this service. Legacy terrain equality still awaits the final corpus gate.

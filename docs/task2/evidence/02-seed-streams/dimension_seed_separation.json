@@ -1,0 +1,47 @@
+[
+  {
+    "domain": "atmospheregen:continent",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  },
+  {
+    "domain": "atmospheregen:ocean",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  },
+  {
+    "domain": "atmospheregen:terrain_regions",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  },
+  {
+    "domain": "atmospheregen:mountain_chains",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  },
+  {
+    "domain": "atmospheregen:hydrology",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  },
+  {
+    "domain": "atmospheregen:surface",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  },
+  {
+    "domain": "atmospheregen:baseline_temperature",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  },
+  {
+    "domain": "atmospheregen:baseline_precipitation",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  },
+  {
+    "domain": "atmospheregen:biome_spatial_selection",
+    "distinctDimensions": 3,
+    "distinctValues": 3
+  }
+]
