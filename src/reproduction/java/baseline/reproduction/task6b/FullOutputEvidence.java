@@ -15,7 +15,7 @@ public final class FullOutputEvidence {
         var context=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
         var geography=new PaGeographyProvider(context);
         int[][] points={{8192,0},{8208,0},{8224,0},{8240,0},{6128,6240},{6144,6240},
-            {-28672,-12288},{-28656,-12288},{-8192,-150000},{8192,60000},{-8192,-500000},{0,-2000000}};
+            {-28672,-12288},{-28656,-12288},{-8192,-150000},{8192,60000},{-8192,-500000},{0,-2000000},{-7969,-8369},{-1734,-8369}};
         for(var p:points){
             var g=geography.sample(p[0],p[1]);var climate=source.sampleClimate(p[0],p[1]);
             var tile=context.cache.provide(p[0]>>7,p[1]>>7);var values=new ArrayList<Object>();
@@ -30,7 +30,8 @@ public final class FullOutputEvidence {
                 Double.doubleToRawLongBits(climate.annualRainfallMm()),Double.doubleToRawLongBits(climate.ecologicalMoistureIndex()),
                 Double.doubleToRawLongBits(climate.potentialEvaporationMm()),Double.doubleToRawLongBits(climate.rainShadow()),
                 Double.doubleToRawLongBits(climate.prevailingWind().orElseThrow().x()),Double.doubleToRawLongBits(climate.prevailingWind().orElseThrow().z())),
-                "surfaceBiome",source.getNoiseBiome(p[0]>>2,80,p[1]>>2,level.getChunkSource().randomState().sampler()).unwrapKey().orElseThrow().location().toString(),
+                "macroShorelineProfileBlocks",geography.macroProvider().sampleMacro(p[0],p[1]).shorelineProfileBlocks(),
+                "surfaceBiome",source.getNoiseBiome(p[0]>>2,level.getMaxBuildHeight()>>2,p[1]>>2,level.getChunkSource().randomState().sampler()).unwrapKey().orElseThrow().location().toString(),
                 "alreadyLoadedWallNanos",nanos);
             out.flush();
         }

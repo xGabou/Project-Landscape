@@ -21,7 +21,7 @@ public final class FullChunkPerformance {
             recording.start();
             // Global block coordinates fixed before either version is measured. Categories are observed below.
             int[][] points={{8192,0},{8208,0},{8224,0},{8240,0},{6128,6240},{6144,6240},
-                    {-28672,-12288},{-28656,-12288},{-8192,-150000},{8192,60000},{-8192,-500000},{0,-2000000}};
+                    {-28672,-12288},{-28656,-12288},{-8192,-150000},{8192,60000},{-8192,-500000},{0,-2000000},{-7969,-8369},{-1734,-8369}};
             int index=0;
             for(int[] p:points){
                 int cx=p[0]>>4,cz=p[1]>>4;

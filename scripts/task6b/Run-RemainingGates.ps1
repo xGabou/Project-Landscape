@@ -1,4 +1,4 @@
-﻿param([switch]$Resume)
+param([switch]$Resume)
 $ErrorActionPreference='Stop'
 $root=(Resolve-Path "$PSScriptRoot/../..").Path
 $cases=@(
@@ -8,6 +8,7 @@ $cases=@(
  @{name='full-optimized-02';root=$root;task='runReproductionClient';args=@('-PreproProfile=task6b','-PreproProcessors=8','-PwithTerraBlender=true')},
  @{name='full-workers-24';root=$root;task='runReproductionClient';args=@('-PreproProfile=task6b','-PreproProcessors=24','-PwithTerraBlender=true')},
  @{name='full-workers-48';root=$root;task='runReproductionClient';args=@('-PreproProfile=task6b','-PreproProcessors=48','-PwithTerraBlender=true')},
+ @{name='full-baseline-04';root="$root/build/task6b-frozen";task='runReproductionClient';args=@('-PreproProfile=task6b','-PreproProcessors=8','-PwithTerraBlender=true')},
  @{name='legacy-runtime-24';root=$root;task='runReproductionClient';args=@('-PreproProfile=golden','-PreproProcessors=24','-PreproSeeds=8675309','-PwithTerraBlender=false')},
  @{name='legacy-runtime-tb';root=$root;task='runReproductionClient';args=@('-PreproProfile=golden','-PreproProcessors=24','-PreproSeeds=8675309','-PwithTerraBlender=true')},
  @{name='task1b-final';root=$root;task='runReproductionClient';args=@('-PreproProfile=full','-PreproProcessors=24','-PwithTerraBlender=false')}
