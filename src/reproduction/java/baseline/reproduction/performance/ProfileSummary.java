@@ -11,6 +11,7 @@ public final class ProfileSummary {
     }
     static Map<String,Object> read(Path path)throws Exception {
         var groups=new TreeMap<String,Long>();var stacks=new HashMap<String,Long>();long samples=0,allocationWeight=0,monitorEvents=0;
+        var parkCounts=new TreeMap<String,Long>();var parkNanos=new TreeMap<String,Long>();
         var monitorCounts=new TreeMap<String,Long>();var monitorNanos=new TreeMap<String,Long>();var monitorMaxNanos=new TreeMap<String,Long>();
         try(var file=new RecordingFile(path)){
             while(file.hasMoreEvents()){
@@ -19,6 +20,15 @@ public final class ProfileSummary {
                 if(type.equals("jdk.JavaMonitorEnter")){
                     monitorEvents++;String monitor=event.getClass("monitorClass").getName();long nanos=event.getDuration().toNanos();
                     monitorCounts.merge(monitor,1L,Long::sum);monitorNanos.merge(monitor,nanos,Long::sum);monitorMaxNanos.merge(monitor,nanos,Math::max);
+                }
+                if(type.equals("jdk.ThreadPark")&&event.getStackTrace()!=null){
+                    String group="other";
+                    for(var frame:event.getStackTrace().getFrames()){
+                        String owner=frame.getMethod().getType().getName();
+                        if(owner.contains("generation.cache.ExactCache")){group="ExactCache single-flight";break;}
+                        if(owner.contains("TileCache")||owner.contains("CacheEntry"))group="terrain cache";
+                    }
+                    parkCounts.merge(group,1L,Long::sum);parkNanos.merge(group,event.getDuration().toNanos(),Long::sum);
                 }
                 if(!type.equals("jdk.ExecutionSample")||event.getStackTrace()==null)continue;
                 samples++;String group="other";var stack=new StringBuilder();
@@ -34,6 +44,7 @@ public final class ProfileSummary {
                 .map(e->Map.of("stack",e.getKey(),"samples",e.getValue())).toList();
         return Map.of("executionSamples",samples,"subsystemSamples",groups,"topStacks",top,
                 "sampledAllocationWeightBytes",allocationWeight,"monitorEnterEvents",monitorEvents,"monitorCounts",monitorCounts,"monitorBlockedThreadNanos",monitorNanos,"monitorMaxNanos",monitorMaxNanos,
+                "threadParks",Map.of("counts",parkCounts,"blockedThreadNanos",parkNanos),
                 "methodology","JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates");
     }
     static String classify(String n){
