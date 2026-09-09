@@ -19,6 +19,20 @@ public final class BaselineClimateModel {
     }
     public ClimateBaseline sample(ClimateGeography geography,int x,int z) { return breakdown(geography,x,z).baseline(); }
     public ClimateBaseline sampleWithWind(ClimateGeography geography,int x,int z,WindDirection wind) { return breakdownWithWind(geography,x,z,wind).baseline(); }
+    /** Exact temperature projection for consumers whose decision does not depend on precipitation. */
+    public double temperatureOnly(ClimateGeography geography,int x,int z) {
+        var here=geography.sample(x,z);double abs=Math.abs(latitude.degrees(z));
+        double latitudeTemperature=28.0-42.0*Math.pow(abs/90.0,1.15);
+        double altitude=Math.max(0,here.elevationBlocks())*config.lapseCelsiusPerBlock();
+        double oceanTarget=17.0-0.20*abs;
+        double oceanModeration=(oceanTarget-latitudeTemperature)*config.oceanInfluence()*oceanExposure(here);
+        double continentality=here.marineClass()==MacroGeographyProvider.MarineClass.LAND
+            ? 1.0-Math.exp(-here.coastDistanceBlocks()/6000.0*config.continentalityStrength()) : 0;
+        double continentalityContribution=-3.0*continentality;
+        long regionalKey=temperatureSeed^((long)Math.floor(x/4096.0)*0x9e3779b97f4a7c15L^((long)Math.floor(z/4096.0)*0xc2b2ae3d27d4eb4fL));
+        double regional=(MacroHash.unit(regionalKey)*2.0-1.0)*config.regionalVariationStrength()*2.0;
+        return latitudeTemperature-altitude+oceanModeration+continentalityContribution+regional;
+    }
     /** Applies the same documented evaporation/index equation to controlled audit inputs. */
     public ClimateBaseline deriveEvaporationMoisture(double temperature,double rainfall,double continentality,WindDirection wind) {
         if(!Double.isFinite(temperature)||!Double.isFinite(rainfall)||rainfall<0||!Double.isFinite(continentality)||continentality<0||continentality>1)

@@ -40,4 +40,44 @@ public final class PaGeographyProvider implements GeographyProvider {
     public DetailedSample sampleDetailed(int x,int z){return new DetailedSample(sample(x,z),bridge.macro().sampleMacro(x,z),distances.sample(x,z));}
     public com.gabou.atmospheregen.api.geography.MacroGeographyProvider macroProvider(){return bridge.macro();}
     public Map<String,Long> distanceCacheStats(){return distances.cacheStats();}
+    /** Detached world-aligned surface field, copied from the same canonical filtered tile as sample(). */
+    public SurfaceTile snapshotSurfaceTile(int x,int z){
+        if(context.cache.isClosed())throw new IllegalStateException("V1 geography context is closed");
+        int tx=context.cache.chunkToTile(x>>4),tz=context.cache.chunkToTile(z>>4);
+        var tile=context.cache.provide(tx,tz);
+        int side=tile.getChunksSize().size()*16,originX=tx*side,originZ=tz*side;
+        float[] elevation=new float[side*side],mountains=new float[side*side];
+        for(int dz=0;dz<side;dz++)for(int dx=0;dx<side;dx++){
+            Cell cell=tile.lookup(originX+dx,originZ+dz);int i=dz*side+dx;
+            elevation[i]=cell.height*context.levels.worldHeight;
+            mountains[i]=Math.max(0,Math.min(1,cell.mountainChainContribution()+cell.regionalMountainContribution()));
+        }
+        return new SurfaceTile(originX,originZ,side,context.levels.waterLevel,elevation,mountains);
+    }
+    public int surfaceTileCoordinate(int blockCoordinate){return context.cache.chunkToTile(blockCoordinate>>4);}
+    /** Additional physical terrain label; existing Task 4 samples retain their original classification. */
+    public Landform detailedLandform(int x,int z){
+        var sample=sample(x,z);
+        if(sample.water()!=WaterCategory.LAND)return sample.landform();
+        Cell cell=context.cache.provide(context.cache.chunkToTile(x>>4),context.cache.chunkToTile(z>>4)).lookup(x,z);
+        var terrain=cell.terrain;
+        // Retained terrain identity is geographic evidence, never the legacy BiomeType hint.
+        for(int depth=0;depth<32;depth++){
+            String name=terrain.getName();
+            if(name.equals("plateau")||name.equals("badlands"))return Landform.PLATEAU;
+            if(name.equals("hills"))return Landform.HILLS;
+            if(!(terrain.getDelegate() instanceof raccoonman.reterraforged.world.worldgen.cell.terrain.Terrain parent)||parent==terrain)break;
+            terrain=parent;
+        }
+        return sample.landform();
+    }
+    public static final class SurfaceTile {
+        private final int x,z,side,seaLevel;
+        private final float[] elevation,mountains;
+        private SurfaceTile(int x,int z,int side,int seaLevel,float[] elevation,float[] mountains){this.x=x;this.z=z;this.side=side;this.seaLevel=seaLevel;this.elevation=elevation;this.mountains=mountains;}
+        public double seaRelativeElevation(int blockX,int blockZ){return (double)elevation[index(blockX,blockZ)]-seaLevel;}
+        public double mountainInfluence(int blockX,int blockZ){return mountains[index(blockX,blockZ)];}
+        public long retainedArrayBytes(){return (long)elevation.length*Float.BYTES*2;}
+        private int index(int blockX,int blockZ){int dx=blockX-x,dz=blockZ-z;if(dx<0||dz<0||dx>=side||dz>=side)throw new IllegalArgumentException("Point outside canonical surface tile");return dz*side+dx;}
+    }
 }

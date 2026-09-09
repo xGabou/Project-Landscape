@@ -5,6 +5,10 @@ import net.minecraft.resources.ResourceLocation;
 
 /** Stable catalog identifiers, independent of registry bootstrap or numeric IDs. */
 final class BiomeIds {
+    static final ResourceLocation WINDSWEPT_HILLS=new ResourceLocation("minecraft","windswept_hills");
+    static final ResourceLocation WINDSWEPT_FOREST=new ResourceLocation("minecraft","windswept_forest");
+    static final ResourceLocation WINDSWEPT_GRAVELLY_HILLS=new ResourceLocation("minecraft","windswept_gravelly_hills");
+    static final ResourceLocation OLD_GROWTH_PINE_TAIGA=new ResourceLocation("minecraft","old_growth_pine_taiga");
     private BiomeIds() {}
     static final ResourceLocation BADLANDS = new ResourceLocation("minecraft","badlands");
     static final ResourceLocation BAMBOO_JUNGLE = new ResourceLocation("minecraft","bamboo_jungle");

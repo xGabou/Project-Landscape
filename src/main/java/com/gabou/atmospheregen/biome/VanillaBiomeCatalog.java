@@ -12,6 +12,10 @@ import java.util.*;
 public final class VanillaBiomeCatalog implements BiomeCatalog {
     private final List<BiomeDescriptor> descriptors; private final GenerationFingerprint fingerprint;
     public VanillaBiomeCatalog(){List<BiomeDescriptor> d=new ArrayList<>();
+        add(d,BiomeIds.WINDSWEPT_HILLS,-8,24,200,1300,.2,1.8,0,2000,BiomeTrait.HIGHLAND,BiomeTrait.GRASSLAND);
+        add(d,BiomeIds.WINDSWEPT_FOREST,-5,24,650,2300,.6,3,0,2000,BiomeTrait.HIGHLAND,BiomeTrait.FOREST);
+        add(d,BiomeIds.WINDSWEPT_GRAVELLY_HILLS,-12,18,100,900,.1,1.2,0,2200,BiomeTrait.HIGHLAND);
+        add(d,BiomeIds.OLD_GROWTH_PINE_TAIGA,-6,18,450,1600,.5,3,0,1600,BiomeTrait.BOREAL_FOREST);
         add(d,BiomeIds.DESERT,20,40,0,260,0,0.35,0,1800,BiomeTrait.DRYLAND);add(d,BiomeIds.BADLANDS,18,40,0,420,0,0.45,0,2200,BiomeTrait.DRYLAND);add(d,BiomeIds.WOODED_BADLANDS,16,34,180,700,0,0.7,0,2200,BiomeTrait.DRYLAND,BiomeTrait.FOREST);
         add(d,BiomeIds.SAVANNA,18,50,180,1200,.2,1.1,0,1800,BiomeTrait.GRASSLAND);add(d,BiomeIds.PLAINS,-5,32,0,1400,0,1.8,0,1600,BiomeTrait.GRASSLAND);add(d,BiomeIds.FOREST,5,28,650,2200,.6,2.4,0,1700,BiomeTrait.FOREST);add(d,BiomeIds.BIRCH_FOREST,2,22,700,2200,.65,2.4,0,1700,BiomeTrait.FOREST);add(d,BiomeIds.DARK_FOREST,4,25,1000,2600,.8,2.8,0,1700,BiomeTrait.FOREST);
         add(d,BiomeIds.JUNGLE,20,38,1200,3500,1,4,0,1400,BiomeTrait.TROPICAL_FOREST);add(d,BiomeIds.SPARSE_JUNGLE,18,35,800,2400,.8,3,0,1500,BiomeTrait.TROPICAL_FOREST);add(d,BiomeIds.BAMBOO_JUNGLE,20,38,1500,4000,1.2,4,0,1300,BiomeTrait.TROPICAL_FOREST);

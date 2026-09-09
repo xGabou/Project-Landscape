@@ -40,6 +40,7 @@ public class MixinChunkMap {
 			rtfRandomState.initialize(serverLevel.registryAccess(), serverLevel.dimension().location().toString());
 			com.gabou.atmospheregen.compat.legacy.LegacyWorldBinding.bind(serverLevel,
 				storageAccess.getDimensionPath(serverLevel.dimension()), chunkGenerator, rtfRandomState);
+			com.gabou.atmospheregen.biome.ClimateBiomeInstallation.install(serverLevel, chunkGenerator, rtfRandomState.generatorContext());
 		}
 	}
 }

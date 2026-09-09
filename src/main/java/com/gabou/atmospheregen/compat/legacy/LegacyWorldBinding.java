@@ -32,14 +32,15 @@ public final class LegacyWorldBinding {
                 level.dimension().location(), new WorldGeographyConfig(Optional.of(LegacyPresetSnapshot.capture(legacy.preset)), Optional.empty()),
                 new BaselineClimateConfig(Optional.empty()), new BiomeResolverConfig(Optional.empty()),
                 LegacyGenerationData.capture(level, generator), Optional.empty())));
-            var developer=DevelopmentClimateSelection.requested(dimensionDirectory,level,generator,legacy)
+            var developer=DevelopmentBiomeSelection.requested(dimensionDirectory,level,generator,legacy)
+                .or(()->DevelopmentClimateSelection.requested(dimensionDirectory,level,generator,legacy))
                 .or(()->DevelopmentGeographySelection.requested(dimensionDirectory,level,generator,legacy));
             if(developer.isPresent())recognized=developer;
         }
         try {
             GenerationManifestStore.resolve(file, recognized).ifPresent(resolution -> {
                 var legacy = state.requireGeneratorContext("bind persisted generation metadata");
-                if(resolution.manifest().content().versions().equals(GenerationVersions.geographyV1()) || resolution.manifest().content().versions().equals(GenerationVersions.climateV1())) {
+                if(resolution.manifest().content().versions().equals(GenerationVersions.geographyV1()) || resolution.manifest().content().versions().equals(GenerationVersions.climateV1()) || resolution.manifest().content().versions().equals(GenerationVersions.planned())) {
                     var config=raccoonman.reterraforged.config.PerformanceConfig.read(raccoonman.reterraforged.config.PerformanceConfig.DEFAULT_FILE_PATH)
                         .getOrThrow(false,s->{});
                     com.gabou.atmospheregen.geography.terrain.PaGeographyInstallation.install(legacy,
