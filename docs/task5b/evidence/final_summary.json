@@ -1,0 +1,6 @@
+{
+  "decision": "validate existing index; Task 6 should use Model B",
+  "biomeResolverImplemented": false,
+  "formula": "rainfall/(rainfall+evaporation+1)",
+  "status": "PASS"
+}

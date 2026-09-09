@@ -1,0 +1,12 @@
+{
+  "correlations": {
+    "rainfall_vs_moistureIndex": 0.9856409500316649,
+    "evaporation_vs_moistureIndex": -0.3195210002446972,
+    "rainfallOverEvaporation_vs_moistureIndex": 0.990762723889932,
+    "temperature_vs_evaporation": 0.8766031246593733,
+    "temperature_vs_moistureIndex": 0.005981171183339441,
+    "rainShadow_vs_moistureIndex": -0.6512737379075109
+  },
+  "interpretation": "ratio-driven index; evaporation is temperature/continentality-driven",
+  "method": "Pearson over 4624 survey rows"
+}

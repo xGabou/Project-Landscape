@@ -143,6 +143,13 @@ tasks.register('task5ClimateSurvey', JavaExec) {
     maxHeapSize = '2G'
     args file(providers.gradleProperty('task5Output').getOrElse('build/task5-climate-survey')).absolutePath
 }
+tasks.register('task5bClimateAudit', JavaExec) {
+    dependsOn tasks.named('reproductionClasses')
+    classpath = sourceSets.reproduction.runtimeClasspath
+    mainClass = 'baseline.reproduction.climate.ClimateCalibrationAudit'
+    maxHeapSize = '2G'
+    args file(providers.gradleProperty('task5bOutput').getOrElse('build/task5b-climate-audit')).absolutePath
+}
 
 tasks.matching { it.name == 'runSmokeClient' }.configureEach {
     def marker = file('run/task0-smoke/task0-pass.txt')

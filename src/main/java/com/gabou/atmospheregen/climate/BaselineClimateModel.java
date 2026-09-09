@@ -19,6 +19,14 @@ public final class BaselineClimateModel {
     }
     public ClimateBaseline sample(ClimateGeography geography,int x,int z) { return breakdown(geography,x,z).baseline(); }
     public ClimateBaseline sampleWithWind(ClimateGeography geography,int x,int z,WindDirection wind) { return breakdownWithWind(geography,x,z,wind).baseline(); }
+    /** Applies the same documented evaporation/index equation to controlled audit inputs. */
+    public ClimateBaseline deriveEvaporationMoisture(double temperature,double rainfall,double continentality,WindDirection wind) {
+        if(!Double.isFinite(temperature)||!Double.isFinite(rainfall)||rainfall<0||!Double.isFinite(continentality)||continentality<0||continentality>1)
+            throw new IllegalArgumentException("Invalid controlled climate inputs");
+        double evaporation=Math.max(0,520.0+Math.max(-5,temperature)*18.0*config.evaporationStrength()+continentality*120.0*config.evaporationStrength());
+        double index=rainfall/(rainfall+evaporation+1.0);
+        return new ClimateBaseline(temperature,rainfall,index,evaporation,0,java.util.Optional.of(wind));
+    }
     public Result breakdown(ClimateGeography geography,int x,int z) {
         return breakdownWithWind(geography,x,z,winds.sample(x,z));
     }
