@@ -1,0 +1,53 @@
+
+> Configure project :
+MixinGradle did not locate the diffplug APT plugin, skipping eclipse task configuration
+
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createMcpToSrg UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compilePerformanceJava UP-TO-DATE
+> Task :processPerformanceResources UP-TO-DATE
+> Task :performanceClasses UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunData
+> Task :prepareRunDataCompile UP-TO-DATE
+
+> Task :runData
+2026-09-09 18:20:15,763 main WARN Advanced terminal features are not available in this environment
+[18:20:15] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\matga\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.22, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, task6b_performance, --all, --output, G:\mods\Undisclosed-PA-Addon-task6b\build\task6b-datagen-unused, --existing, G:\mods\Undisclosed-PA-Addon-task6b\src\main\resources, --mixin.config, reterraforged-common.mixins.json, --mixin.config, reterraforged-forge.mixins.json]
+[18:20:15] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.17 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[18:20:15] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[18:20:15] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/matga/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[18:20:16] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\matga\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.22\c3fe3323c9f8651aff7b34a665730c312b9e203f\javafmllanguage-1.20.1-47.4.22.jar is missing mods.toml file
+[18:20:16] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\matga\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.22\c719255918fe74052292279a1242a26fbe92452a\lowcodelanguage-1.20.1-47.4.22.jar is missing mods.toml file
+[18:20:16] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\matga\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.22\78b273bf6a3b42e430cd60ca1636656ae5993d6c\mclanguage-1.20.1-47.4.22.jar is missing mods.toml file
+[18:20:16] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\matga\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.22\1367fc72fd188372dd79e824c611e248dcd000e\fmlcore-1.20.1-47.4.22.jar is missing mods.toml file
+[18:20:16] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[18:20:17] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[18:20:17] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\matga\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, task6b_performance, --all, --output, G:\mods\Undisclosed-PA-Addon-task6b\build\task6b-datagen-unused, --existing, G:\mods\Undisclosed-PA-Addon-task6b\src\main\resources]
+[18:20:17] [main/INFO] [ReTerraForged/]: Disabling Terrablender compat
+[18:20:17] [main/WARN] [mixin/]: Reference map 'reterraforged-refmap.json' for reterraforged-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[18:20:17] [main/WARN] [mixin/]: Reference map 'reterraforged-refmap.json' for reterraforged-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[18:20:17] [main/INFO] [ne.mi.da.lo.DatagenModLoader/]: Initializing Data Gatherer for mods [task6b_performance]
+[18:20:20] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.22, for MC 1.20.1 with MCP 20230612.114412
+[18:20:20] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v47.4.22 Initialized
+[18:20:20] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/G:/mods/Undisclosed-PA-Addon-task6b/build/fg_cache/net/minecraftforge/forge/1.20.1-47.4.22_mapped_official_1.20.1/forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[18:20:20] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/G:/mods/Undisclosed-PA-Addon-task6b/build/fg_cache/net/minecraftforge/forge/1.20.1-47.4.22_mapped_official_1.20.1/forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[Incubating] Problems report is available at: file:///G:/mods/Undisclosed-PA-Addon-task6b/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.11/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 30s
+13 actionable tasks: 3 executed, 10 up-to-date
