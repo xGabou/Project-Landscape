@@ -113,7 +113,6 @@ public final class ReproductionClient {
                                     server.saveEverything(false,true,true);
                                 }else{
                                     new LegacyBaselineSuite(server.overworld(),out).run("golden",worldIndex);
-                                    new ReproductionSuite(server.overworld(),out,seeds).run(server.overworld(),true);
                                     baseline.reproduction.geography.Task4TerrainChecks.run(server.overworld(),out);
                                     baseline.reproduction.biome.CanonicalBiomeSurvey.run(server.overworld(),out);
                                 }

@@ -55,7 +55,7 @@ public final class FullChunkPerformance {
         if(source instanceof ClimateBiomeSource climateSource){
             out.row("task6b_cache_metrics","phase","after paired corpus","surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());
             LocalityTrace.enabled=true;
-            try{level.getChunk((6128>>4)+3,(6240>>4)+3);}finally{LocalityTrace.flush(out);}
+            try{level.getChunk((6128>>4)+64,(6240>>4)+64);}finally{LocalityTrace.flush(out);}
             out.row("task6b_cache_metrics","phase","after locality chunk","surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());out.flush();
         }
     }
