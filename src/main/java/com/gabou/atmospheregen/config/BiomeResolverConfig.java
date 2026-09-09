@@ -7,6 +7,9 @@ import java.util.Optional;
 public record BiomeResolverConfig(Optional<Planned> planned) {
     public static final Codec<BiomeResolverConfig> CODEC=ConfigCodecs.optional("planned",Planned.CODEC).codec().xmap(BiomeResolverConfig::new,BiomeResolverConfig::planned);
     public BiomeResolverConfig {java.util.Objects.requireNonNull(planned);}
+    /** Regional scale/strength are active. Spatial resolution, fallback weight and transition
+     * softness remain reserved serialized fields, not hot-path approximation/fallback controls.
+     * Exact canonical queries and fail-closed coverage deliberately do not read those fields. */
     public record Planned(int spatialResolutionBlocks,int fallbackWeight,double regionalVariationScaleBlocks,
             double regionalVariationStrength,double transitionSoftness) {
         public Planned(int spatialResolutionBlocks,int fallbackWeight) { this(spatialResolutionBlocks,fallbackWeight,4096,0.18,0.12); }

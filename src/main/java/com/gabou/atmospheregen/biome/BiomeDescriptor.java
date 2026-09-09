@@ -18,10 +18,12 @@ public record BiomeDescriptor(net.minecraft.resources.ResourceLocation key, Rang
         Range.CODEC.fieldOf("rainfallMmPerYear").forGetter(BiomeDescriptor::rainfall),
         Range.CODEC.fieldOf("rainfallEvaporationRatio").forGetter(BiomeDescriptor::aridity),
         Range.CODEC.fieldOf("seaRelativeElevationBlocks").forGetter(BiomeDescriptor::elevation),
-        TRAIT_CODEC.listOf().xmap(Set::copyOf,s->s.stream().sorted().toList()).fieldOf("traits").forGetter(BiomeDescriptor::traits),
+        TRAIT_CODEC.listOf().comapFlatMap(values->values.isEmpty()
+                ?com.mojang.serialization.DataResult.<Set<BiomeTrait>>error(()->"Biome descriptor traits must not be empty")
+                :com.mojang.serialization.DataResult.success(Set.copyOf(values)),s->s.stream().sorted().toList()).fieldOf("traits").forGetter(BiomeDescriptor::traits),
         com.gabou.atmospheregen.config.ConfigCodecs.integer("priority",0,1000000).fieldOf("priority").forGetter(BiomeDescriptor::priority)
     ).apply(i,BiomeDescriptor::new));
-    public BiomeDescriptor { Objects.requireNonNull(key);Objects.requireNonNull(temperature);Objects.requireNonNull(rainfall);Objects.requireNonNull(aridity);Objects.requireNonNull(elevation);traits=Set.copyOf(traits);if(priority<0)throw new IllegalArgumentException("Negative biome priority"); }
+    public BiomeDescriptor { Objects.requireNonNull(key);Objects.requireNonNull(temperature);Objects.requireNonNull(rainfall);Objects.requireNonNull(aridity);Objects.requireNonNull(elevation);traits=Set.copyOf(traits);if(traits.isEmpty())throw new IllegalArgumentException(key+": descriptor traits must not be empty");if(priority<0)throw new IllegalArgumentException(key+": negative biome priority"); }
     public double score(double value,Range range){return range.score(value);}
     public record Range(double minimum,double preferredMinimum,double preferredMaximum,double maximum) {
         public static final com.mojang.serialization.Codec<Range> CODEC=com.mojang.serialization.Codec.DOUBLE.listOf().comapFlatMap(values->{

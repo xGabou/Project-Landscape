@@ -42,8 +42,8 @@ public final class FoundationTests {
             out.row("foundation_invalid","case","finite range "+value,"error",result.error().get().message());
         }
         GenerationVersions.legacy().requireFunctionalBackend();
-        try{GenerationVersions.planned().requireFunctionalBackend();throw new AssertionError("PA geography fallback");}
-        catch(UnsupportedOperationException expected){out.row("foundation_invalid","case","unimplemented backend","error",expected.getMessage());}
+        GenerationVersions.planned().requireFunctionalBackend();
+        out.row("foundation_functional","case","V1 geography climate biome tuple","status","accepted");
         seeds(out);
         manifests(level,out);
         api(out);
@@ -102,11 +102,12 @@ public final class FoundationTests {
         var content=new ManifestContent(GenerationVersions.legacy(),level.getSeed(),level.dimension().location(),config,
             new BaselineClimateConfig(Optional.empty()),new BiomeResolverConfig(Optional.empty()),Map.of("test:effective_preset",checksum),Optional.empty());
         var manifest=GenerationManifest.create(content);
+        var catalog=new com.gabou.atmospheregen.biome.VanillaBiomeCatalog();
         var planned=GenerationManifest.create(new ManifestContent(GenerationVersions.planned(),level.getSeed(),level.dimension().location(),
             new WorldGeographyConfig(Optional.empty(),Optional.of(new PlannedGeographySettings(3000,1000,1200,2000,.5))),
             new BaselineClimateConfig(Optional.of(new BaselineClimateConfig.Planned(100000,.0065,.5,.5))),
-            new BiomeResolverConfig(Optional.of(new BiomeResolverConfig.Planned(64,1))),content.data(),Optional.empty()));
-        roundtrip(out,"planned unavailable manifest",GenerationManifest.CODEC,planned);
+            new BiomeResolverConfig(Optional.of(new BiomeResolverConfig.Planned(64,1))),content.data(),Optional.of(catalog.fingerprint())));
+        roundtrip(out,"planned V1 manifest",GenerationManifest.CODEC,planned);
         roundtrip(out,"world geography config",WorldGeographyConfig.CODEC,config);
         roundtrip(out,"fingerprint",GenerationFingerprint.CODEC,checksum);
         roundtrip(out,"manifest",GenerationManifest.CODEC,manifest);
@@ -130,8 +131,9 @@ public final class FoundationTests {
         reject(out,"malformed geography config",WorldGeographyConfig.CODEC,"{\"legacy\":{\"effectivePreset\":{},\"tileExponent\":4,\"borderChunks\":1}}");
         var directory=java.nio.file.Files.createTempDirectory(java.nio.file.Path.of("."),"foundation-manifest-");
         var path=GenerationManifestStore.path(directory);
-        try{GenerationManifestStore.resolve(directory.resolve("unimplemented.json"),Optional.of(planned));throw new AssertionError("PA manifest was made functional");}
-        catch(UnsupportedOperationException expected){out.row("foundation_invalid","case","planned world refuses generation","error",expected.getMessage());}
+        var plannedResolution=GenerationManifestStore.resolve(directory.resolve("planned.json"),Optional.of(planned)).orElseThrow();
+        if(plannedResolution.kind()!=GenerationManifestStore.ResolutionKind.EXPLICIT_V1_BIOME_ASSIGNMENT)
+            throw new AssertionError("V1 manifest resolution kind");
         if(GenerationManifestStore.resolve(path,Optional.empty()).isPresent()||java.nio.file.Files.exists(path))throw new AssertionError("Foreign world assigned defaults");
         var first=GenerationManifestStore.resolve(path,Optional.of(manifest)).orElseThrow();
         var reopen=GenerationManifestStore.resolve(path,Optional.of(manifest)).orElseThrow();

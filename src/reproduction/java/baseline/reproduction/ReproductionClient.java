@@ -35,6 +35,8 @@ public final class ReproductionClient {
     private Evidence out; private CompletableFuture<Void> work;
     private boolean disabledBootstrapSucceeded;
     private boolean foundationReopened;
+    private boolean task6Reopened;
+    private String task6Digest;
     private com.gabou.atmospheregen.generation.context.WorldGenerationContext previousFoundationContext;
     private com.gabou.atmospheregen.api.geography.GeographyProvider previousFoundationProvider;
     private List<raccoonman.reterraforged.world.worldgen.GeneratorContext> worldContexts=List.of();
@@ -52,6 +54,10 @@ public final class ReproductionClient {
             }else if(stage==1&&mc.screen instanceof CreateWorldScreen screen){
                 stage=2;String name=run+"-seed"+worldIndex;
                 Path root=mc.gameDirectory.toPath().resolve("saves").resolve(name), pack=root.resolve("datapacks/reproduction-preset");Files.createDirectories(pack);
+                if(task1c.equals("task6-biomes") && worldIndex==0) {
+                    Files.createDirectories(root.resolve("data/atmospheregen"));
+                    Files.writeString(root.resolve("data/atmospheregen/development_biomes_v1.json"),"{\"climate\":{\"latitudeScaleBlocks\":100000,\"equatorZ\":0,\"lapseCelsiusPerBlock\":0.0065,\"oceanInfluence\":0.5,\"continentalityStrength\":1,\"windBandScaleBlocks\":4096,\"orographicStrength\":0.85,\"rainShadowRecoveryDistance\":12000,\"climateProfileDistance\":24000,\"climateProfileStep\":256,\"evaporationStrength\":1,\"regionalVariationStrength\":0.1},\"resolver\":{\"spatialResolutionBlocks\":64,\"fallbackWeight\":1,\"regionalVariationScaleBlocks\":4096,\"regionalVariationStrength\":0.18,\"transitionSoftness\":0.12}}");
+                }
                 var selected = Presets.makeLegacyDefault();
                 if (System.getProperty("task1a.presetFile") != null) {
                     var json = com.google.gson.JsonParser.parseString(Files.readString(Path.of(System.getProperty("task1a.presetFile"))));
@@ -80,6 +86,8 @@ public final class ReproductionClient {
                             StageBaseline.run(server.overworld(),out,task1c.equals("stage-extraction"));
                         } else if(task1c.equals("task4-terrain")) {
                             baseline.reproduction.geography.Task4TerrainChecks.run(server.overworld(),out);
+                        } else if(task1c.equals("task6-canonical")) {
+                            baseline.reproduction.biome.CanonicalBiomeSurvey.run(server.overworld(),out);
                         } else if(task1c.equals("public-provider-benchmark")) {
                             PublicProviderBenchmark.run(server.overworld(),out);
                         } else if(task1c.equals("geography")) {
@@ -92,6 +100,12 @@ public final class ReproductionClient {
                             previousFoundationContext=metadata;
                             previousFoundationProvider=com.gabou.atmospheregen.compat.legacy.LegacyRtfGeographyAdapter.forLevel(server.overworld());
                             out.row("world_binding","phase",foundationReopened?"reopened":"created","metadata",com.gabou.atmospheregen.generation.context.GenerationDiagnostics.describe(metadata),"persistedContextStable",true);
+                            ((net.minecraft.world.level.storage.PrimaryLevelData)server.getWorldData()).withConfirmedWarning(true);
+                            server.saveEverything(false,true,true);
+                        } else if(task1c.equals("task6-biomes")) {
+                            String digest=baseline.reproduction.biome.Task6RuntimeChecks.run(server.overworld(),out,task6Reopened);
+                            if(task6Reopened&&!digest.equals(task6Digest))throw new AssertionError("Task 6 save/reopen biome mismatch");
+                            task6Digest=digest;
                             ((net.minecraft.world.level.storage.PrimaryLevelData)server.getWorldData()).withConfirmedWarning(true);
                             server.saveEverything(false,true,true);
                         } else if(task1c.startsWith("golden") || task1cRepeat() || task1c.equals("allocation")) {
@@ -121,6 +135,9 @@ public final class ReproductionClient {
                 }
                 out.row("disposal","case","actual world unload","seed",currentSeed(),"worldIndex",worldIndex,"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
                 worldContexts=List.of();
+                if(task1c.equals("task6-biomes")&&!task6Reopened){
+                    task6Reopened=true;stage=2;mc.createWorldOpenFlows().loadLevel(mc.screen,run+"-seed0");return;
+                }
                 if(task1c.equals("foundation")) {
                     try{previousFoundationProvider.sample(0,0);throw new AssertionError("Provider sampled after shutdown");}catch(IllegalStateException expected){out.row("api_shutdown","reopened",foundationReopened,"rejected",true);}
                     if(!foundationReopened){foundationReopened=true;stage=2;mc.createWorldOpenFlows().loadLevel(mc.screen,run+"-seed0");return;}
