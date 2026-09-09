@@ -35,9 +35,19 @@ public final class WorldgenBenchmark {
             var preset=Presets.makeLegacyDefault();
             var registries=new RegistrySetBuilder().add(RTFRegistries.NOISE,c->PresetNoiseData.bootstrap(preset,c))
                     .build(RegistryAccess.EMPTY);
+            if(System.getProperty("task6b.mode","acquisition").startsWith("legacy")) {
+                var evidence=new baseline.reproduction.Evidence(out);
+                new baseline.reproduction.LegacyBaselineSuite(preset,registries.lookupOrThrow(RTFRegistries.NOISE),evidence)
+                        .run(System.getProperty("task6b.mode").equals("legacy")?"golden":"golden-scheduling",0);
+                evidence.row("completion","status","PASS","scope","offline legacy comparator; Minecraft holder checks are runtime-only");evidence.flush();return;
+            }
             var context=GeneratorContext.makeCached(preset,registries.lookupOrThrow(RTFRegistries.NOISE),8675309,3,6,false);
             var seeds=new NamedSeedService(8675309,new ResourceLocation("minecraft","overworld"),GenerationVersions.planned());
             PaGeographyInstallation.install(context,seeds,MacroGeographySettings.defaults(),6,false);
+            if(System.getProperty("task6b.mode","acquisition").equals("determinism")) {
+                try {CanonicalDeterminism.run(context,out);} finally {context.cache.close();}
+                return;
+            }
             if(System.getProperty("task6b.mode","acquisition").equals("ownership")) {
                 try {OwnershipChecks.run(context,out);} finally {context.cache.close();}
                 return;

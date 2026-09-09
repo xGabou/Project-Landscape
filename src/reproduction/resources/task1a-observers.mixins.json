@@ -3,6 +3,6 @@
   "minVersion": "0.8",
   "package": "baseline.reproduction.observer",
   "compatibilityLevel": "JAVA_17",
-  "mixins": ["TileCacheObserver", "EntryObserver", "TileReleaseObserver", "TileTaskObserver"],
+  "mixins": ["TileCacheObserver", "EntryObserver", "TileReleaseObserver", "TileTaskObserver", "ClimateLocalityObserver", "SurfaceLocalityObserver", "BiomeLocalityObserver"],
   "injectors": {"defaultRequire": 1}
 }

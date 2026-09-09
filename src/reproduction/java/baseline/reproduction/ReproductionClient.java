@@ -37,6 +37,7 @@ public final class ReproductionClient {
     private boolean foundationReopened;
     private boolean task6Reopened;
     private String task6Digest;
+    private com.gabou.atmospheregen.biome.ClimateBiomeSource task6bDisposedSource;
     private com.gabou.atmospheregen.generation.context.WorldGenerationContext previousFoundationContext;
     private com.gabou.atmospheregen.api.geography.GeographyProvider previousFoundationProvider;
     private List<raccoonman.reterraforged.world.worldgen.GeneratorContext> worldContexts=List.of();
@@ -103,7 +104,20 @@ public final class ReproductionClient {
                             ((net.minecraft.world.level.storage.PrimaryLevelData)server.getWorldData()).withConfirmedWarning(true);
                             server.saveEverything(false,true,true);
                         } else if(task1c.equals("task6b")) {
-                            baseline.reproduction.task6b.FullChunkPerformance.run(server.overworld(),out,worldIndex);
+                            if(!task6Reopened||worldIndex!=0)baseline.reproduction.task6b.FullChunkPerformance.run(server.overworld(),out,worldIndex);
+                            if(Boolean.getBoolean("task6b.final")){
+                                if(worldIndex==0){
+                                    String digest=baseline.reproduction.biome.Task6RuntimeChecks.run(server.overworld(),out,task6Reopened);
+                                    if(task6Reopened&&!digest.equals(task6Digest))throw new AssertionError("Task 6B reopen biome mismatch");task6Digest=digest;
+                                    ((net.minecraft.world.level.storage.PrimaryLevelData)server.getWorldData()).withConfirmedWarning(true);
+                                    server.saveEverything(false,true,true);
+                                }else{
+                                    new LegacyBaselineSuite(server.overworld(),out).run("golden",worldIndex);
+                                    new ReproductionSuite(server.overworld(),out,seeds).run(server.overworld(),true);
+                                    baseline.reproduction.geography.Task4TerrainChecks.run(server.overworld(),out);
+                                    baseline.reproduction.biome.CanonicalBiomeSurvey.run(server.overworld(),out);
+                                }
+                            }
                         } else if(task1c.equals("task6-biomes")) {
                             String digest=baseline.reproduction.biome.Task6RuntimeChecks.run(server.overworld(),out,task6Reopened);
                             if(task6Reopened&&!digest.equals(task6Digest))throw new AssertionError("Task 6 save/reopen biome mismatch");
@@ -126,7 +140,9 @@ public final class ReproductionClient {
                     var context=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
                     if(context!=null)worldContexts.add(context);
                 }
-                work.join();stage=4;mc.level.disconnect();mc.clearLevel();mc.setScreen(new TitleScreen());
+                work.join();
+                if(task1c.equals("task6b") && mc.getSingleplayerServer().overworld().getChunkSource().getGenerator().getBiomeSource() instanceof com.gabou.atmospheregen.biome.ClimateBiomeSource source)task6bDisposedSource=source;
+                stage=4;mc.level.disconnect();mc.clearLevel();mc.setScreen(new TitleScreen());
             }else if(stage==4&&mc.getSingleplayerServer()==null){
                 boolean allClosed=true,allUnregistered=true;long live=0;
                 for(var context:worldContexts) {
@@ -136,7 +152,16 @@ public final class ReproductionClient {
                     live += DisposalChecks.stats(context,"cellPool").live()+DisposalChecks.stats(context,"chunkPool").live();
                 }
                 out.row("disposal","case","actual world unload","seed",currentSeed(),"worldIndex",worldIndex,"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
+                if(task6bDisposedSource!=null){
+                    var source=task6bDisposedSource;
+                    if(source.surfaceCacheStats().get("entries")!=0 || source.climateCacheStats().get("entries")!=0 || source.surfaceWinnerCacheStats().get("entries")!=0 || source.surfaceGeographyCacheStats().get("entries")!=0)throw new AssertionError("V1 caches retained after actual world unload");
+                    out.row("task6b_cache_disposal","worldIndex",worldIndex,"reopened",task6Reopened,"surface",source.surfaceCacheStats(),"climate",source.climateCacheStats(),"winners",source.surfaceWinnerCacheStats(),"geography",source.surfaceGeographyCacheStats(),"allEmpty",true);
+                    task6bDisposedSource=null;
+                }
                 worldContexts=List.of();
+                if(task1c.equals("task6b")&&Boolean.getBoolean("task6b.final")&&worldIndex==0&&!task6Reopened){
+                    task6Reopened=true;stage=2;mc.createWorldOpenFlows().loadLevel(mc.screen,run+"-seed0");return;
+                }
                 if(task1c.equals("task6-biomes")&&!task6Reopened){
                     task6Reopened=true;stage=2;mc.createWorldOpenFlows().loadLevel(mc.screen,run+"-seed0");return;
                 }

@@ -52,6 +52,12 @@ public final class FullChunkPerformance {
             java.nio.file.Files.createDirectories(path.getParent());recording.dump(path);
             out.row("task6b_profiles","version",version,"path",path.toAbsolutePath().toString());out.flush();
         }
+        if(source instanceof ClimateBiomeSource climateSource){
+            out.row("task6b_cache_metrics","phase","after paired corpus","surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());
+            LocalityTrace.enabled=true;
+            try{level.getChunk((6128>>4)+3,(6240>>4)+3);}finally{LocalityTrace.flush(out);}
+            out.row("task6b_cache_metrics","phase","after locality chunk","surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());out.flush();
+        }
     }
     private static long allocated(com.sun.management.ThreadMXBean bean){long sum=0;for(long value:bean.getThreadAllocatedBytes(bean.getAllThreadIds()))if(value>0)sum+=value;return sum;}
 }

@@ -40,8 +40,8 @@ final class CacheReplay {
             Point p=trace.get(i).point;long key=p.tile();
             if(sampleCapacity>0&&samples.get(p)!=null){sampleHits++;continue;}
             if(sampleCapacity>0){if(samples.size()>=sampleCapacity)samples.remove(samples.keySet().iterator().next());samples.put(p,true);}
-            Integer prev=last.put(key,i);
-            if(prev!=null){reused.add(key);reuseDistances.add(new HashSet<>(previousKeys.subList(prev,previousKeys.size())).size());}
+            Integer prev=last.get(key);
+            if(prev!=null){reused.add(key);reuseDistances.add(new HashSet<>(previousKeys.subList(prev+1,previousKeys.size())).size());}
             // Index in the tile-access stream (sample-cache hits do not touch tile LRU).
             last.put(key,previousKeys.size());previousKeys.add(key);
             if(tiles.get(key)!=null){hits++;hitCounts.merge(key,1,Integer::sum);continue;}
@@ -54,6 +54,7 @@ final class CacheReplay {
         var r=new LinkedHashMap<String,Object>();r.put("requests",trace.size());r.put("tileHits",hits);r.put("tileMisses",misses);
         r.put("evictions",evictions);r.put("sampleHits",sampleHits);r.put("uniqueTilesReused",reused.size());r.put("evictedBeforeReuse",evictedUnused);
         r.put("medianReuseDistance",quantile(reuseDistances,.5));r.put("p95ReuseDistance",quantile(reuseDistances,.95));
+        r.put("reuseDistanceConvention","distinct intervening tile keys, excluding the previous access itself");
         r.put("averageEvictedLifetimeRequests",lifetimes.stream().mapToInt(i->i).average().orElse(0));
         r.put("tileCapacity",tileCapacity);r.put("sampleCapacity",sampleCapacity);r.put("maximumSurfaceArrayBytes",tileCapacity*131072L);
         return r;
