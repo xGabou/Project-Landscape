@@ -17,6 +17,8 @@ public enum SeedDomain {
     SURFACE("surface", Kind.GEOGRAPHY),
     BASELINE_TEMPERATURE("baseline_temperature", Kind.CLIMATE),
     BASELINE_PRECIPITATION("baseline_precipitation", Kind.CLIMATE),
+    BASELINE_WIND("baseline_wind", Kind.CLIMATE),
+    BASELINE_REGIONAL_VARIATION("baseline_regional_variation", Kind.CLIMATE),
     BIOME_SPATIAL_SELECTION("biome_spatial_selection", Kind.BIOME);
 
     private enum Kind { GEOGRAPHY, CLIMATE, BIOME }
