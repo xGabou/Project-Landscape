@@ -22,6 +22,8 @@ The debug command `/geo climate <x> <z>` reports the final values and the explai
 
 `GenerationVersions.climateV1()` is `(PA_GEOGRAPHY_V1, PA_BASELINE_V1, LEGACY_MULTINOISE_V0)`. The manifest requires planned baseline settings for this tuple and fingerprints them. Legacy worlds continue to use `LEGACY_RTF_HINTS_V0`; they do not instantiate this provider. Active controls are latitude scale/equator, lapse, ocean and continentality strength, wind band scale, orographic strength, shadow recovery, profile distance/step, evaporation strength, and regional variation. Nonfinite, nonpositive, out-of-range, and step-greater-than-distance values are rejected.
 
+Developer testing can request the climate tuple with `data/atmospheregen/development_climate_v1.json`; the existing world-binding path persists and validates the manifest and installs the same V1 geography backend. Normal preset selection is unchanged.
+
 ## Seed domains
 
 The model uses named 64-bit domains `BASELINE_TEMPERATURE`, `BASELINE_PRECIPITATION`, and `BASELINE_WIND`; no sequential allocation or global seed truncation is used. Narrowing is confined to inherited noise boundaries. The collision pair `8675309` and `4303642605` produces distinct V1 climate digests.
