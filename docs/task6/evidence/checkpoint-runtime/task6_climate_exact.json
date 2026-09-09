@@ -1,0 +1,22 @@
+[
+  {
+    "reopened": false,
+    "referenceNs": 8374142200,
+    "cachedNs": 54578500,
+    "temperatureC": 22.328908850399568,
+    "rainfallMm": 1235.008125139968,
+    "evaporationMm": 921.9203593071923,
+    "rainShadow": 0.05004060721487597,
+    "exact": true
+  },
+  {
+    "reopened": true,
+    "referenceNs": 6757814800,
+    "cachedNs": 69739200,
+    "temperatureC": 22.328908850399568,
+    "rainfallMm": 1235.008125139968,
+    "evaporationMm": 921.9203593071923,
+    "rainShadow": 0.05004060721487597,
+    "exact": true
+  }
+]

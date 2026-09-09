@@ -1,0 +1,42 @@
+[
+    {
+        "name":  "golden-24",
+        "count":  105,
+        "changed":  0,
+        "workers":  [
+                        24
+                    ]
+    },
+    {
+        "name":  "golden-2",
+        "count":  105,
+        "changed":  0,
+        "workers":  [
+                        2
+                    ]
+    },
+    {
+        "name":  "golden-48",
+        "count":  105,
+        "changed":  0,
+        "workers":  [
+                        48
+                    ]
+    },
+    {
+        "name":  "golden-repeat",
+        "count":  105,
+        "changed":  0,
+        "workers":  [
+                        24
+                    ]
+    },
+    {
+        "name":  "golden-tb",
+        "count":  105,
+        "changed":  0,
+        "workers":  [
+                        24
+                    ]
+    }
+]

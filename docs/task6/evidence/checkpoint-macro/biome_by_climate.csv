@@ -1,0 +1,15 @@
+temperatureBand,aridityBand,biome,count
+temperate,intermediate,minecraft:plains,14
+temperate,wet,minecraft:plains,5
+warm,intermediate,minecraft:lukewarm_ocean,24
+warm,intermediate,minecraft:ocean,23
+warm,intermediate,minecraft:plains,1104
+warm,intermediate,minecraft:savanna,2
+warm,wet,minecraft:birch_forest,26
+warm,wet,minecraft:dark_forest,2
+warm,wet,minecraft:deep_lukewarm_ocean,618
+warm,wet,minecraft:deep_ocean,1702
+warm,wet,minecraft:forest,699
+warm,wet,minecraft:lukewarm_ocean,43
+warm,wet,minecraft:ocean,44
+warm,wet,minecraft:plains,318

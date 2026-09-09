@@ -134,6 +134,13 @@ public final class FoundationTests {
         var plannedResolution=GenerationManifestStore.resolve(directory.resolve("planned.json"),Optional.of(planned)).orElseThrow();
         if(plannedResolution.kind()!=GenerationManifestStore.ResolutionKind.EXPLICIT_V1_BIOME_ASSIGNMENT)
             throw new AssertionError("V1 manifest resolution kind");
+        var pc=planned.content();
+        var changedCatalog=GenerationManifest.create(new ManifestContent(pc.versions(),pc.worldSeed(),pc.dimension(),
+                pc.geography(),pc.baselineClimate(),pc.biomeResolver(),pc.data(),
+                Optional.of(GenerationFingerprint.of(new CanonicalJson("{\"changedCatalog\":true}")))));
+        try{GenerationManifestStore.resolve(directory.resolve("planned.json"),Optional.of(changedCatalog));throw new AssertionError("Changed biome catalog accepted");}
+        catch(IllegalStateException expected){out.row("foundation_invalid","case","V1 catalog mismatch","error",expected.getMessage());}
+        if(!GenerationManifestStore.read(directory.resolve("planned.json")).equals(planned))throw new AssertionError("Catalog mismatch overwrote manifest");
         if(GenerationManifestStore.resolve(path,Optional.empty()).isPresent()||java.nio.file.Files.exists(path))throw new AssertionError("Foreign world assigned defaults");
         var first=GenerationManifestStore.resolve(path,Optional.of(manifest)).orElseThrow();
         var reopen=GenerationManifestStore.resolve(path,Optional.of(manifest)).orElseThrow();

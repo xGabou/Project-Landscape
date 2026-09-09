@@ -2,8 +2,8 @@
 
 Task 6 is not yet accepted. The initial draft exposed a canonical-climate startup cost and contained
 invalid survey assertions. Those assertions have been replaced by executed, fail-fast checks.
-Runtime, catalog reachability, broad canonical surveys and full comparator results must be recorded
-before this status can change.
+Runtime create/reopen and controlled catalog reachability now pass. Broad canonical surveys,
+full comparator results and total worldgen performance must be recorded before this status can change.
 
 ## Resolver contract
 
@@ -47,7 +47,7 @@ result participates in the world manifest. The built-in catalog and codec provid
 extension boundary; a descriptor resource reload mechanism is not yet implemented. Unknown modded
 biomes are excluded. Mushroom fields have no justified non-climatic mechanism and are unavailable.
 
-## Runtime integration being verified
+## Runtime integration
 
 The V1 source wraps the retained source and is explicitly selected by the developer manifest file.
 Its registered codec serializes the retained definition and manifest fingerprint. Decoding does
@@ -62,15 +62,33 @@ Possible-biome enumeration includes these cave holders.
 The initial source evaluated long canonical profiles repeatedly. A proposed 64-block nearest-cell
 shortcut was removed because it changed climate coordinates without error validation. The current
 reuse design copies exact filtered-tile elevation/mountain arrays into bounded detached surface
-fields. It preserves all profile sample coordinates and equations. Canonical equality and runtime
-performance still require live verification.
+fields. It preserves all profile sample coordinates and equations. Live verification compares nine
+canonical surface inputs and a full climate query exactly. Create/reopen biome digests and codec
+roundtrips agree in `reproduction-1788967364037`. See the performance report for the bounded cache
+and the distinction between this smoke observation and a paired generation benchmark.
+
+Physical decisions which depend only on temperature use an exact temperature projection and skip
+the irrelevant rainfall profile. Twenty-four signed/extreme-coordinate fixtures compare its raw
+double output with the full climate model. Ordinary terrestrial and wetland decisions retain full
+canonical climate sampling. Legacy sources are not wrapped. V1 surface selection bypasses the
+retained MultiNoise/TerraBlender result; the three explicit underground families still delegate.
+
+The only active resolver controls are regional variation scale and strength. The serialized
+spatial-resolution, fallback-weight and transition-softness fields remain reserved/inactive.
+They do not authorize coordinate snapping, silent fallback biomes or changes to climate equations.
+
+The current built-in catalog has 42 descriptors. Its default content fingerprint is
+`0d1fe8454a4e7690dd05563084dd8333b19e1f50836c6a149af3dd5a74c71427`.
+Empty traits, unknown traits, inverted/out-of-envelope preferred ranges, nonfinite ranges and
+negative priority are rejected by executed tests. Registry-backed binding rejects unresolved holders.
 
 ## Outstanding acceptance work
 
-The complete vanilla catalog, descriptor reachability, canonical-terrain biome patch surveys,
-wide-latitude family distributions, seamless transition measurements, runtime surface/structure
-smoke, save/reopen, full contemporary legacy comparators, and performance/memory review remain
-required. No Task 6 completion claim is made by a macro-proxy survey alone.
+Canonical-terrain patch surveys, actual generated dry/wet-family reachability, quart-scale seamless
+transition measurements, runtime surface/structure/cave assertions, full contemporary legacy
+comparators, TerraBlender V1 smoke, and performance/memory review remain required. Controlled
+descriptor reachability and wide-latitude proxy results are in BIOME_SURVEY.md. No Task 6 completion
+claim is made by a macro-proxy survey alone.
 
 No runtime weather, biome evolution, ecological succession or Dynamic Trees integration is part
 of this implementation.

@@ -1,0 +1,5493 @@
+[
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.591109267307445,
+    "rainfallMm": 740.2804841220375,
+    "evaporationMm": 979.0638683056102,
+    "ratio": 0.7561105134062228,
+    "rainShadow": 0.47046775147265235,
+    "elevationBlockY": 88.17799377441406,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03543313060509612
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.664105826450516,
+    "rainfallMm": 729.6656572133464,
+    "evaporationMm": 980.3778063701855,
+    "ratio": 0.7442698646095509,
+    "rainShadow": 0.42756405331130704,
+    "elevationBlockY": 76.94775390625,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028503436696774798
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.71280682916593,
+    "rainfallMm": 703.9568778013454,
+    "evaporationMm": 981.6090385206461,
+    "ratio": 0.7171458800565427,
+    "rainShadow": 0.49664683269885124,
+    "elevationBlockY": 70.275146484375,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.02298109440185636
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.58055321283292,
+    "rainfallMm": 719.8447216235352,
+    "evaporationMm": 979.2284734266519,
+    "ratio": 0.7351141650370467,
+    "rainShadow": 0.5120145051128676,
+    "elevationBlockY": 90.62185668945312,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.035503056380185916
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.431774391269133,
+    "rainfallMm": 750.6064271545845,
+    "evaporationMm": 976.3611568517814,
+    "ratio": 0.7687794848116145,
+    "rainShadow": 0.47640163114650996,
+    "elevationBlockY": 113.07276916503906,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05021138991656304
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.378900795077726,
+    "rainfallMm": 700.9470576934848,
+    "evaporationMm": 975.409432120336,
+    "ratio": 0.7186182895215321,
+    "rainShadow": 0.4925999349779445,
+    "elevationBlockY": 121.20716857910156,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05242393483933394
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.460684023929765,
+    "rainfallMm": 661.3048653824003,
+    "evaporationMm": 976.7162139248121,
+    "ratio": 0.6770696093239092,
+    "rainShadow": 0.49988493475375545,
+    "elevationBlockY": 108.24341583251953,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.045164947243276576
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.592595908237627,
+    "rainfallMm": 682.8469596812905,
+    "evaporationMm": 979.0906278423536,
+    "ratio": 0.6974297784732119,
+    "rainShadow": 0.512006165547794,
+    "elevationBlockY": 87.94927978515625,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.033529187860238174
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.651637245890477,
+    "rainfallMm": 717.9568924275945,
+    "evaporationMm": 980.0125655178283,
+    "ratio": 0.7325996805441303,
+    "rainShadow": 0.5212776694221107,
+    "elevationBlockY": 78.54154205322266,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.02921431093939253
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.390532866586835,
+    "rainfallMm": 704.9675802405213,
+    "evaporationMm": 975.3126866903627,
+    "ratio": 0.722811863170535,
+    "rainShadow": 0.47164825488786993,
+    "elevationBlockY": 69.70591735839844,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05030427548731509
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.392767107936535,
+    "rainfallMm": 701.4133990778241,
+    "evaporationMm": 975.2370615778658,
+    "ratio": 0.7192234859727192,
+    "rainShadow": 0.4838998671345462,
+    "elevationBlockY": 69.09571838378906,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.049914494878428695
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.396078452083263,
+    "rainfallMm": 729.2098984011443,
+    "evaporationMm": 975.2966657725069,
+    "ratio": 0.747680089548503,
+    "rainShadow": 0.5097033176888722,
+    "elevationBlockY": 68.5862808227539,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.050992518311184565
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.407501814107576,
+    "rainfallMm": 749.1537610066442,
+    "evaporationMm": 975.4117850262551,
+    "ratio": 0.7680384556625788,
+    "rainShadow": 0.4718440626767316,
+    "elevationBlockY": 66.6209487915039,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.0509421189623972
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.39043901656119,
+    "rainfallMm": 746.2440446114489,
+    "evaporationMm": 975.10465467042,
+    "ratio": 0.7652963618183889,
+    "rainShadow": 0.47166759449878193,
+    "elevationBlockY": 69.2459945678711,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.25964373377044,
+    "rainfallMm": 744.1395262775793,
+    "evaporationMm": 972.6854842110199,
+    "ratio": 0.7650361173850329,
+    "rainShadow": 0.4969620183625408,
+    "elevationBlockY": 89.21952056884766,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.249111831457206,
+    "rainfallMm": 803.632754209889,
+    "evaporationMm": 972.4959099693817,
+    "ratio": 0.8263610632924828,
+    "rainShadow": 0.5042576650520724,
+    "elevationBlockY": 90.83981323242188,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 7744,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.101310720309886,
+    "rainfallMm": 809.2457753676584,
+    "evaporationMm": 969.7964866436355,
+    "ratio": 0.8344490689674219,
+    "rainShadow": 0.4915381445258087,
+    "elevationBlockY": 113.48900604248047,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.654212059506108,
+    "rainfallMm": 743.0377560904293,
+    "evaporationMm": 980.1997185651862,
+    "ratio": 0.7580473060919524,
+    "rainShadow": 0.47914460529766983,
+    "elevationBlockY": 76.02789306640625,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03002728412758615
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.689562008389167,
+    "rainfallMm": 676.9086995201361,
+    "evaporationMm": 980.8360176450813,
+    "ratio": 0.6901344234333345,
+    "rainShadow": 0.5145125795443963,
+    "elevationBlockY": 70.58943939208984,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.024802623233496246
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.68804056311014,
+    "rainfallMm": 644.8244594094973,
+    "evaporationMm": 981.1632457316418,
+    "ratio": 0.6572040506151037,
+    "rainShadow": 0.5280139098024211,
+    "elevationBlockY": 71.64165496826172,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.025009602246504614
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.651364301208282,
+    "rainfallMm": 650.2539071218648,
+    "evaporationMm": 980.5030730174084,
+    "ratio": 0.6631839562937503,
+    "rainShadow": 0.5398940992142761,
+    "elevationBlockY": 77.2841567993164,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028293973649113457
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.54890678293703,
+    "rainfallMm": 699.6846895243939,
+    "evaporationMm": 978.4695399018035,
+    "ratio": 0.7150807061348198,
+    "rainShadow": 0.5367946233684829,
+    "elevationBlockY": 92.60962677001953,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03737103940773501
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.44515587885378,
+    "rainfallMm": 668.9937676508245,
+    "evaporationMm": 976.6020236283049,
+    "ratio": 0.6850218937345186,
+    "rainShadow": 0.4753825368968499,
+    "elevationBlockY": 108.57130432128906,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.04656749188475218
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.439174591549566,
+    "rainfallMm": 652.09024518437,
+    "evaporationMm": 976.3290441419686,
+    "ratio": 0.6679000784591523,
+    "rainShadow": 0.507457864844349,
+    "elevationBlockY": 109.11058044433594,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.04711040686590107
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.422844055660896,
+    "rainfallMm": 684.2019647887904,
+    "evaporationMm": 976.0350944959723,
+    "ratio": 0.7010013970267274,
+    "rainShadow": 0.5047381635349444,
+    "elevationBlockY": 111.62297058105469,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.04857099892717509
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.62671261343741,
+    "rainfallMm": 708.7888741609992,
+    "evaporationMm": 979.5639221336731,
+    "ratio": 0.7235759281713078,
+    "rainShadow": 0.45854420296148335,
+    "elevationBlockY": 79.93479919433594,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03100461603713367
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.36474718448167,
+    "rainfallMm": 735.725046049318,
+    "evaporationMm": 974.8485444124698,
+    "ratio": 0.7547070263029743,
+    "rainShadow": 0.4429193486654784,
+    "elevationBlockY": 71.23164367675781,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05416543377937866
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.37427334406173,
+    "rainfallMm": 748.9554503080758,
+    "evaporationMm": 974.9041738281193,
+    "ratio": 0.7682349408426274,
+    "rainShadow": 0.47028392447197526,
+    "elevationBlockY": 69.50016784667969,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05397124554909449
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.38710775949752,
+    "rainfallMm": 793.3804169218313,
+    "evaporationMm": 975.1351933059635,
+    "ratio": 0.8136106894389321,
+    "rainShadow": 0.4868188813915659,
+    "elevationBlockY": 67.52564239501953,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.008864003517417007
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:forest",
+    "traits": [
+      "FOREST"
+    ],
+    "temperatureC": 21.38829225174431,
+    "rainfallMm": 807.4866784382148,
+    "evaporationMm": 975.0660129037162,
+    "ratio": 0.8281353957087937,
+    "rainShadow": 0.4758461135624235,
+    "elevationBlockY": 67.13595581054688,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.004687112425972972
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.359424202122728,
+    "rainfallMm": 769.9233691462022,
+    "evaporationMm": 974.5463880105278,
+    "ratio": 0.7900325511625464,
+    "rainShadow": 0.46511148255740536,
+    "elevationBlockY": 71.57719421386719,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.252700809636288,
+    "rainfallMm": 774.5747957160651,
+    "evaporationMm": 972.5605115766051,
+    "ratio": 0.7964283831146013,
+    "rainShadow": 0.46579973289213417,
+    "elevationBlockY": 87.84766387939453,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.168951469578914,
+    "rainfallMm": 803.5346459907461,
+    "evaporationMm": 971.0530234555724,
+    "ratio": 0.8274879193839505,
+    "rainShadow": 0.4917132678018745,
+    "elevationBlockY": 100.732177734375,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 7808,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.028781507805455,
+    "rainfallMm": 783.7509015602584,
+    "evaporationMm": 968.4909608185558,
+    "ratio": 0.8092495782282185,
+    "rainShadow": 0.518685050467269,
+    "elevationBlockY": 122.20753479003906,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.66871216144573,
+    "rainfallMm": 703.8661493712232,
+    "evaporationMm": 980.6260367149602,
+    "ratio": 0.7177722424433411,
+    "rainShadow": 0.5223010557519643,
+    "elevationBlockY": 71.7358169555664,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.026811539015318298
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.649492499733082,
+    "rainfallMm": 665.6408930348,
+    "evaporationMm": 980.2800828041323,
+    "ratio": 0.6790313347290565,
+    "rainShadow": 0.49686744446329145,
+    "elevationBlockY": 74.69268798828125,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028374406380394124
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.654457183700984,
+    "rainfallMm": 619.5594911793521,
+    "evaporationMm": 981.3980025484295,
+    "ratio": 0.6313029877486208,
+    "rainShadow": 0.5570302362398859,
+    "elevationBlockY": 76.31317138671875,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028053215604503356
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.635765468460505,
+    "rainfallMm": 655.195488927871,
+    "evaporationMm": 981.0615516741009,
+    "ratio": 0.6678434067769079,
+    "rainShadow": 0.533557176082524,
+    "elevationBlockY": 79.1888198852539,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029750847009352488
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.558079032761043,
+    "rainfallMm": 681.3667572255418,
+    "evaporationMm": 979.6631958315106,
+    "ratio": 0.6955112329673842,
+    "rainShadow": 0.49961458383962937,
+    "elevationBlockY": 91.14057922363281,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03665303931173958
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.528807906967586,
+    "rainfallMm": 675.7064717936474,
+    "evaporationMm": 979.1363155672284,
+    "ratio": 0.6901045963168065,
+    "rainShadow": 0.4536952849655679,
+    "elevationBlockY": 95.64382934570312,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.039271749586832105
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.598831204953214,
+    "rainfallMm": 705.3388799167805,
+    "evaporationMm": 980.2386285678925,
+    "ratio": 0.7195583395313295,
+    "rainShadow": 0.4575921072063202,
+    "elevationBlockY": 84.50233459472656,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.033369709836389205
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.603885327878018,
+    "rainfallMm": 741.0282652452983,
+    "evaporationMm": 980.329602780539,
+    "ratio": 0.7558970606860153,
+    "rainShadow": 0.4775115454860841,
+    "elevationBlockY": 83.72477722167969,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.0347258793283477
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.535212079401294,
+    "rainfallMm": 755.6484307262633,
+    "evaporationMm": 978.9588521234413,
+    "ratio": 0.7718898798322325,
+    "rainShadow": 0.4879580946441954,
+    "elevationBlockY": 93.97657775878906,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.041525092376935024
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.372768825280758,
+    "rainfallMm": 760.7302349953029,
+    "evaporationMm": 976.0348735492717,
+    "ratio": 0.779408867050999,
+    "rainShadow": 0.46242569488426194,
+    "elevationBlockY": 69.96231842041016,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05479981094651931
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.371127696988186,
+    "rainfallMm": 776.0960053259184,
+    "evaporationMm": 975.8945875664,
+    "ratio": 0.7952662256907053,
+    "rainShadow": 0.4597773930039058,
+    "elevationBlockY": 69.95750427246094,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028548436982769987
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.374391284939847,
+    "rainfallMm": 800.5801040470899,
+    "evaporationMm": 975.95333214953,
+    "ratio": 0.8203057233113987,
+    "rainShadow": 0.46790438686488856,
+    "elevationBlockY": 69.45541381835938,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.0011948266096993843
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.382999177435874,
+    "rainfallMm": 774.4525706846665,
+    "evaporationMm": 976.0217744959061,
+    "ratio": 0.7934787838976792,
+    "rainShadow": 0.5173573328124319,
+    "elevationBlockY": 67.93042755126953,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03226473283468745
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.364433869818686,
+    "rainfallMm": 755.1147371769117,
+    "evaporationMm": 975.6875989587968,
+    "ratio": 0.7739308544894196,
+    "rainShadow": 0.5006665418555606,
+    "elevationBlockY": 70.78662872314453,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.32752382664209,
+    "rainfallMm": 762.0780489704392,
+    "evaporationMm": 974.9612335392798,
+    "ratio": 0.7816495905216279,
+    "rainShadow": 0.45698612834085417,
+    "elevationBlockY": 76.32142639160156,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.279525924725586,
+    "rainfallMm": 794.3751243367253,
+    "evaporationMm": 974.0972713047828,
+    "ratio": 0.8154987676668846,
+    "rainShadow": 0.4919990829719564,
+    "elevationBlockY": 83.70571899414062,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 7872,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.143073737763814,
+    "rainfallMm": 760.9549216781696,
+    "evaporationMm": 971.6038595868062,
+    "ratio": 0.7831946262561995,
+    "rainShadow": 0.5480392772171974,
+    "elevationBlockY": 104.61203002929688,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.661656949301403,
+    "rainfallMm": 679.9446054511549,
+    "evaporationMm": 980.4990428963622,
+    "ratio": 0.6934678930869944,
+    "rainShadow": 0.5139875003306866,
+    "elevationBlockY": 70.37960052490234,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.027245762619344194
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.630193551321664,
+    "rainfallMm": 670.1642898412982,
+    "evaporationMm": 979.932701732727,
+    "ratio": 0.6838880758406235,
+    "rainShadow": 0.4547563160120121,
+    "elevationBlockY": 75.22012329101562,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.030085973168919145
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.62881278318092,
+    "rainfallMm": 672.5483426996758,
+    "evaporationMm": 980.9364033390684,
+    "ratio": 0.6856187010802617,
+    "rainShadow": 0.43690596163249107,
+    "elevationBlockY": 77.81185150146484,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03032715304290201
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.618666748940196,
+    "rainfallMm": 710.5688057377952,
+    "evaporationMm": 980.7537747227354,
+    "ratio": 0.7245129450953955,
+    "rainShadow": 0.4595116854271791,
+    "elevationBlockY": 79.3727798461914,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.031799937066616435
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.639547661720957,
+    "rainfallMm": 727.9132363413912,
+    "evaporationMm": 981.129631152789,
+    "ratio": 0.7419134161569676,
+    "rainShadow": 0.4933085130396337,
+    "elevationBlockY": 76.16033172607422,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03086364304646394
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.645922543465343,
+    "rainfallMm": 685.2212126450488,
+    "evaporationMm": 981.244379024188,
+    "ratio": 0.6983186118492485,
+    "rainShadow": 0.4864943905403205,
+    "elevationBlockY": 75.17958068847656,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.02894018905620621
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.643195379573335,
+    "rainfallMm": 720.2783505876788,
+    "evaporationMm": 981.0371837110547,
+    "ratio": 0.734200866742909,
+    "rainShadow": 0.45263311560109853,
+    "elevationBlockY": 75.23123168945312,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.030211237844644634
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.66869118722104,
+    "rainfallMm": 756.1121625026303,
+    "evaporationMm": 981.4961082487134,
+    "ratio": 0.7703669491382534,
+    "rainShadow": 0.4573699360693114,
+    "elevationBlockY": 71.30879974365234,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029768454907489583
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.641928167637897,
+    "rainfallMm": 731.1984718269719,
+    "evaporationMm": 980.8797417117,
+    "ratio": 0.7454517008894302,
+    "rainShadow": 0.5020146014349752,
+    "elevationBlockY": 75.113525390625,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.030891575458013576
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.35226841037405,
+    "rainfallMm": 754.8476117228871,
+    "evaporationMm": 975.6658660809509,
+    "ratio": 0.7736743058921952,
+    "rainShadow": 0.492701513571838,
+    "elevationBlockY": 70.67103576660156,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05632796558035302
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.359598023992373,
+    "rainfallMm": 749.6362877155836,
+    "evaporationMm": 975.6870534524754,
+    "ratio": 0.7683163213686094,
+    "rainShadow": 0.450512537723156,
+    "elevationBlockY": 69.2866439819336,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.055406029795996625
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.375747750860047,
+    "rainfallMm": 784.3492266198526,
+    "evaporationMm": 975.9777485360936,
+    "ratio": 0.8036548249141213,
+    "rainShadow": 0.4651150071299588,
+    "elevationBlockY": 66.80207061767578,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.01691034461938623
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.36859088682771,
+    "rainfallMm": 758.2734873951387,
+    "evaporationMm": 975.7624252649591,
+    "ratio": 0.7771087180255344,
+    "rainShadow": 0.521496134414051,
+    "elevationBlockY": 67.70285034179688,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05498019728069092
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.359035184618236,
+    "rainfallMm": 758.1741426539978,
+    "evaporationMm": 975.5904226251886,
+    "ratio": 0.777143896732656,
+    "rainShadow": 0.49561481736248897,
+    "elevationBlockY": 69.17295837402344,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.32333463396919,
+    "rainfallMm": 720.8255754754882,
+    "evaporationMm": 974.8858280711676,
+    "ratio": 0.7393948652445353,
+    "rainShadow": 0.5229411119305944,
+    "elevationBlockY": 74.52198028564453,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.30636169543159,
+    "rainfallMm": 767.7448470865736,
+    "evaporationMm": 974.5803151774908,
+    "ratio": 0.7877697046925801,
+    "rainShadow": 0.48674425726649384,
+    "elevationBlockY": 77.1332015991211,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 7936,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.27075763133457,
+    "rainfallMm": 761.3348958919771,
+    "evaporationMm": 973.9021696710797,
+    "ratio": 0.7817365230319859,
+    "rainShadow": 0.5270262594359171,
+    "elevationBlockY": 82.52459716796875,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.657498486830413,
+    "rainfallMm": 711.2397714087352,
+    "evaporationMm": 980.6134883586068,
+    "ratio": 0.7253008242821941,
+    "rainShadow": 0.4742202459922821,
+    "elevationBlockY": 69.01280975341797,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.02817710298504361
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.64063083012265,
+    "rainfallMm": 682.6342820426102,
+    "evaporationMm": 980.309870537867,
+    "ratio": 0.6963454133824736,
+    "rainShadow": 0.48285877858486664,
+    "elevationBlockY": 71.60783386230469,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029167245182295853
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.642127447889095,
+    "rainfallMm": 710.3153192688914,
+    "evaporationMm": 981.3571569688445,
+    "ratio": 0.7238091801998668,
+    "rainShadow": 0.4371250845826289,
+    "elevationBlockY": 73.7389144897461,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029671039859690662
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.651461676404722,
+    "rainfallMm": 725.1440736940501,
+    "evaporationMm": 981.5251730821258,
+    "ratio": 0.7387931492546408,
+    "rainShadow": 0.49398498537145696,
+    "elevationBlockY": 72.3028793334961,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029636905200189023
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.691521679334482,
+    "rainfallMm": 719.7980715827055,
+    "evaporationMm": 983.0729480552806,
+    "ratio": 0.732191922284723,
+    "rainShadow": 0.517834263137382,
+    "elevationBlockY": 68.077392578125,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.025926514886068897
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.692009457044442,
+    "rainfallMm": 718.6532205717032,
+    "evaporationMm": 983.0817280540599,
+    "ratio": 0.7310208297678626,
+    "rainShadow": 0.49248097233574695,
+    "elevationBlockY": 68.00234985351562,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.025861598653497242
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.65988933061227,
+    "rainfallMm": 701.1760213970869,
+    "evaporationMm": 982.3522801455559,
+    "ratio": 0.7137724781309542,
+    "rainShadow": 0.4713772979013432,
+    "elevationBlockY": 72.5876693725586,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.027844361035770815
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.666742270217984,
+    "rainfallMm": 738.8398759411218,
+    "evaporationMm": 982.4756330584588,
+    "ratio": 0.7520185245114976,
+    "rainShadow": 0.45607589706881757,
+    "elevationBlockY": 71.53337097167969,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029139276516585766
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.668769104748183,
+    "rainfallMm": 726.4254934900233,
+    "evaporationMm": 982.3833153046753,
+    "ratio": 0.7394521895607831,
+    "rainShadow": 0.4828348803007765,
+    "elevationBlockY": 70.9188461303711,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028344757244241348
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.347128119609586,
+    "rainfallMm": 767.444971703759,
+    "evaporationMm": 976.5937775721806,
+    "ratio": 0.7858384820059299,
+    "rainShadow": 0.5040085400362599,
+    "elevationBlockY": 71.39654541015625,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.04321707156432053
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.354928035642693,
+    "rainfallMm": 717.5507289912996,
+    "evaporationMm": 976.6282513423026,
+    "ratio": 0.7347224780821973,
+    "rainShadow": 0.4972081348750678,
+    "elevationBlockY": 69.9480209350586,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05427728461459436
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.367087417509147,
+    "rainfallMm": 757.5980016574667,
+    "evaporationMm": 976.8471202158988,
+    "ratio": 0.775554317537452,
+    "rainShadow": 0.4959117718996789,
+    "elevationBlockY": 68.07734680175781,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05517995392555486
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.363931790978846,
+    "rainfallMm": 748.962042781253,
+    "evaporationMm": 976.7075916283251,
+    "ratio": 0.7668232019499465,
+    "rainShadow": 0.519382249225038,
+    "elevationBlockY": 68.36897277832031,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.054986119966530134
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.365038465173182,
+    "rainfallMm": 745.7391868050004,
+    "evaporationMm": 976.7275117638231,
+    "ratio": 0.7635079157935333,
+    "rainShadow": 0.5179808079926593,
+    "elevationBlockY": 68.19871520996094,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.054677467778709854
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.33279097794458,
+    "rainfallMm": 725.074275131105,
+    "evaporationMm": 976.0877847817565,
+    "ratio": 0.7428371571038812,
+    "rainShadow": 0.48785023308018544,
+    "elevationBlockY": 73.02111053466797,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.28940053223535,
+    "rainfallMm": 751.1517272719826,
+    "evaporationMm": 975.3067567589903,
+    "ratio": 0.7701697153909915,
+    "rainShadow": 0.5119844585290462,
+    "elevationBlockY": 79.69656372070312,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8000,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.244794495074228,
+    "rainfallMm": 764.0920460112077,
+    "evaporationMm": 974.1690622143428,
+    "ratio": 0.7843526094684039,
+    "rainShadow": 0.4937560282656115,
+    "elevationBlockY": 85.77742004394531,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.671816363575733,
+    "rainfallMm": 709.1970406601687,
+    "evaporationMm": 980.8712101400225,
+    "ratio": 0.7230276853155151,
+    "rainShadow": 0.5057383950743483,
+    "elevationBlockY": 64.36872100830078,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.02678436524959449
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.661238242390432,
+    "rainfallMm": 717.7460427466591,
+    "evaporationMm": 980.6808039586871,
+    "ratio": 0.7318854818503161,
+    "rainShadow": 0.49325992341495695,
+    "elevationBlockY": 65.99612426757812,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028209788360678
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.651013831219977,
+    "rainfallMm": 690.9937618018092,
+    "evaporationMm": 981.5171118688004,
+    "ratio": 0.7040058226658554,
+    "rainShadow": 0.4764300065017451,
+    "elevationBlockY": 69.92548370361328,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.02834709588634443
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.661196066937748,
+    "rainfallMm": 731.1355925579567,
+    "evaporationMm": 981.7003921117202,
+    "ratio": 0.7447644907070093,
+    "rainShadow": 0.4555732392258483,
+    "elevationBlockY": 68.3589859008789,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029053474384538758
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.675877005844633,
+    "rainfallMm": 724.642818377877,
+    "evaporationMm": 982.7913439324633,
+    "ratio": 0.7373312991121277,
+    "rainShadow": 0.4679905750411122,
+    "elevationBlockY": 68.033935546875,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.027528228756147466
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.66859009483389,
+    "rainfallMm": 727.5150475323799,
+    "evaporationMm": 982.66017953427,
+    "ratio": 0.7403526292041103,
+    "rainShadow": 0.49346960125875033,
+    "elevationBlockY": 69.15499877929688,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028351099060509588
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.653228770520187,
+    "rainfallMm": 677.1827586792932,
+    "evaporationMm": 982.2323900638984,
+    "ratio": 0.6894323232766124,
+    "rainShadow": 0.49149917609194915,
+    "elevationBlockY": 71.16278076171875,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028353590179551524
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.65072883537004,
+    "rainfallMm": 711.5943290127398,
+    "evaporationMm": 982.1873912311958,
+    "ratio": 0.7244995561597863,
+    "rainShadow": 0.4877866832657367,
+    "elevationBlockY": 71.5473861694336,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029173630921253024
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.643036043670516,
+    "rainfallMm": 706.1551597489881,
+    "evaporationMm": 981.9201202052773,
+    "ratio": 0.7191574398143115,
+    "rainShadow": 0.4993857194009082,
+    "elevationBlockY": 72.42881774902344,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.02958614346925348
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.32881417932049,
+    "rainfallMm": 746.9101595314374,
+    "evaporationMm": 976.2641266469768,
+    "ratio": 0.7650697584236082,
+    "rainShadow": 0.5084352354096024,
+    "elevationBlockY": 71.7651138305664,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.058041204393110224
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.331382872473554,
+    "rainfallMm": 721.4836278749414,
+    "evaporationMm": 976.2044384052582,
+    "ratio": 0.7390702187889737,
+    "rainShadow": 0.47410282653074043,
+    "elevationBlockY": 71.12191009521484,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.056531725320187465
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.33602261246379,
+    "rainfallMm": 754.0605093289462,
+    "evaporationMm": 976.2879537250824,
+    "ratio": 0.7723751035253331,
+    "rainShadow": 0.49742939381297335,
+    "elevationBlockY": 70.4081039428711,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05772495969355951
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.33992408799816,
+    "rainfallMm": 758.348633033458,
+    "evaporationMm": 976.2754529746727,
+    "ratio": 0.7767773231650962,
+    "rainShadow": 0.4737734395240902,
+    "elevationBlockY": 69.61442565917969,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05755294751041029
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.34035672044445,
+    "rainfallMm": 739.3220636955093,
+    "evaporationMm": 976.2832403587059,
+    "ratio": 0.7572823471023303,
+    "rainShadow": 0.5094208389402654,
+    "elevationBlockY": 69.54786682128906,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05651468795538106
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.32990514587161,
+    "rainfallMm": 766.1259504076384,
+    "evaporationMm": 976.035839804443,
+    "ratio": 0.7849362893898837,
+    "rainShadow": 0.4532440578985529,
+    "elevationBlockY": 71.017333984375,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.044741826983293764
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.251391283261746,
+    "rainfallMm": 757.8208172298872,
+    "evaporationMm": 974.6225902774654,
+    "ratio": 0.7775531008512158,
+    "rainShadow": 0.4802273589855547,
+    "elevationBlockY": 83.09638977050781,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8064,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.205204821621827,
+    "rainfallMm": 760.9871774262419,
+    "evaporationMm": 973.4564480921997,
+    "ratio": 0.781737260991635,
+    "rainShadow": 0.5293668873271141,
+    "elevationBlockY": 89.4220199584961,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.60856579716915,
+    "rainfallMm": 729.1061565208955,
+    "evaporationMm": 979.9453879952996,
+    "ratio": 0.7440273360666021,
+    "rainShadow": 0.4401881438674018,
+    "elevationBlockY": 72.14630889892578,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.03333862829254686
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.593480740864216,
+    "rainfallMm": 713.7076173990544,
+    "evaporationMm": 979.6738569818108,
+    "ratio": 0.7285155282165557,
+    "rainShadow": 0.49378712561888777,
+    "elevationBlockY": 74.46708679199219,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0339650816096545
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.63658423550211,
+    "rainfallMm": 678.7768088448523,
+    "evaporationMm": 981.4609087057026,
+    "ratio": 0.6915984149995198,
+    "rainShadow": 0.4764373902613677,
+    "elevationBlockY": 70.17274475097656,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029594230718264836
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.622917682004797,
+    "rainfallMm": 701.9727129624094,
+    "evaporationMm": 981.214910742751,
+    "ratio": 0.7154117872414276,
+    "rainShadow": 0.4737878485850461,
+    "elevationBlockY": 72.2752914428711,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03095101156798774
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.63684876861273,
+    "rainfallMm": 696.0346314535223,
+    "evaporationMm": 982.4570206755415,
+    "ratio": 0.7084631864861894,
+    "rainShadow": 0.4883929754552522,
+    "elevationBlockY": 72.455078125,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029729322984809348
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.640865595242374,
+    "rainfallMm": 713.4620167118394,
+    "evaporationMm": 982.529323554875,
+    "ratio": 0.7261483190450468,
+    "rainShadow": 0.4982496396745999,
+    "elevationBlockY": 71.83710479736328,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.0300829748653344
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.653913017367877,
+    "rainfallMm": 681.5594907980118,
+    "evaporationMm": 983.2385397046021,
+    "ratio": 0.69317816915799,
+    "rainShadow": 0.4790023916375247,
+    "elevationBlockY": 70.95280456542969,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028318512736404733
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.65433097085909,
+    "rainfallMm": 702.673590367696,
+    "evaporationMm": 983.2460628674439,
+    "ratio": 0.7146467368691887,
+    "rainShadow": 0.4994057695510424,
+    "elevationBlockY": 70.88850402832031,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.028436035340124288
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.650443652316753,
+    "rainfallMm": 710.0489899667107,
+    "evaporationMm": 983.0528086835889,
+    "ratio": 0.7222897729345191,
+    "rainShadow": 0.44471655972298757,
+    "elevationBlockY": 71.19397735595703,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.029152033569168512
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.352174737490653,
+    "rainfallMm": 721.0675917681654,
+    "evaporationMm": 977.683968216719,
+    "ratio": 0.73752625102709,
+    "rainShadow": 0.507578021239407,
+    "elevationBlockY": 68.07597351074219,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.054714046202355426
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.337402507623977,
+    "rainfallMm": 751.2982811601933,
+    "evaporationMm": 977.3166972406354,
+    "ratio": 0.7687357468478901,
+    "rainShadow": 0.46240449696103125,
+    "elevationBlockY": 70.10842895507812,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05751216159253414
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.30876956923897,
+    "rainfallMm": 752.9838085927526,
+    "evaporationMm": 976.8013043497052,
+    "ratio": 0.7708669155535611,
+    "rainShadow": 0.46174035973313315,
+    "elevationBlockY": 74.51349639892578,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.06010295228650231
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.32100427149299,
+    "rainfallMm": 750.1860331312901,
+    "evaporationMm": 976.9423739418594,
+    "ratio": 0.7678917949933614,
+    "rainShadow": 0.5148377140773366,
+    "elevationBlockY": 72.44391632080078,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05884135174250671
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.327098368630438,
+    "rainfallMm": 774.1680151643064,
+    "evaporationMm": 977.0520676903334,
+    "ratio": 0.7923508283385272,
+    "rainShadow": 0.4988494275365312,
+    "elevationBlockY": 71.50636291503906,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.03068844189233899
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.31703896580104,
+    "rainfallMm": 726.62813311024,
+    "evaporationMm": 976.5974901541733,
+    "ratio": 0.7440405493931065,
+    "rainShadow": 0.4811625152683847,
+    "elevationBlockY": 72.40830993652344,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.237031866649428,
+    "rainfallMm": 776.8767186349903,
+    "evaporationMm": 975.1573623694444,
+    "ratio": 0.7966680544228572,
+    "rainShadow": 0.4887541678545636,
+    "elevationBlockY": 84.71709442138672,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8128,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.23314188677655,
+    "rainfallMm": 782.7234519429431,
+    "evaporationMm": 974.4361006627121,
+    "ratio": 0.8032578548871644,
+    "rainShadow": 0.5177583695777755,
+    "elevationBlockY": 83.7880859375,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.208283519597988,
+    "rainfallMm": 668.8370003725277,
+    "evaporationMm": 972.7403069990187,
+    "ratio": 0.6875802262537501,
+    "rainShadow": 0.5034902274672536,
+    "elevationBlockY": 82.23114013671875,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06585053629345361
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.153382392736415,
+    "rainfallMm": 685.6664526373445,
+    "evaporationMm": 971.7520867155104,
+    "ratio": 0.705598127352496,
+    "rainShadow": 0.49229846312798925,
+    "elevationBlockY": 90.6774673461914,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07076265910339474
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.212762759712575,
+    "rainfallMm": 664.8566752768767,
+    "evaporationMm": 973.832122141491,
+    "ratio": 0.6827220628282763,
+    "rainShadow": 0.4716994436963181,
+    "elevationBlockY": 83.87406158447266,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06563759766886146
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.268162227180838,
+    "rainfallMm": 679.416676379864,
+    "evaporationMm": 974.8293125559197,
+    "ratio": 0.6969596293719268,
+    "rainShadow": 0.5020771709722549,
+    "elevationBlockY": 75.35106658935547,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.06079440395604285
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.28489259264891,
+    "rainfallMm": 678.646940212289,
+    "evaporationMm": 976.1218095081925,
+    "ratio": 0.6952482093953184,
+    "rainShadow": 0.4415380963340682,
+    "elevationBlockY": 75.0953369140625,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.059422814564065174
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.315096724728985,
+    "rainfallMm": 662.4763964046302,
+    "evaporationMm": 976.665483885634,
+    "ratio": 0.6783042990000916,
+    "rainShadow": 0.5042752727119925,
+    "elevationBlockY": 70.44854736328125,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.05679103401521124
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.319086493929138,
+    "rainfallMm": 680.0602124684664,
+    "evaporationMm": 977.2116622827048,
+    "ratio": 0.6959190508225093,
+    "rainShadow": 0.4701839794107751,
+    "elevationBlockY": 70.95539855957031,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.056497533839053315
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.30395070596527,
+    "rainfallMm": 689.4744589719877,
+    "evaporationMm": 976.9392180993552,
+    "ratio": 0.7057495964931851,
+    "rainShadow": 0.4338469852998436,
+    "elevationBlockY": 73.28398132324219,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.057854893436902755
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.314343063448927,
+    "rainfallMm": 682.1755243725497,
+    "evaporationMm": 977.0029980839679,
+    "ratio": 0.698232785068609,
+    "rainShadow": 0.5168351214501493,
+    "elevationBlockY": 71.3931884765625,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.056941677116801426
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.490090264552297,
+    "rainfallMm": 729.2545405050321,
+    "evaporationMm": 980.1664477038287,
+    "ratio": 0.7440109199956891,
+    "rainShadow": 0.49847554565951835,
+    "elevationBlockY": 69.03643798828125,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.04355516374232615
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.490112258595193,
+    "rainfallMm": 710.9957367186519,
+    "evaporationMm": 980.0654727581173,
+    "ratio": 0.7254573867578002,
+    "rainShadow": 0.44542851202666667,
+    "elevationBlockY": 68.7933578491211,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.042628354781555244
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.478231479328837,
+    "rainfallMm": 735.7357225523925,
+    "evaporationMm": 979.8516187313228,
+    "ratio": 0.7508644252738972,
+    "rainShadow": 0.46165324920183803,
+    "elevationBlockY": 70.62117004394531,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.04488831300583529
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.485339260594742,
+    "rainfallMm": 739.4343388401179,
+    "evaporationMm": 979.9004037456909,
+    "ratio": 0.7546015248219246,
+    "rainShadow": 0.5099848463529862,
+    "elevationBlockY": 69.34073638916016,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "margin": 0.044402188856831004
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.48655007602443,
+    "rainfallMm": 745.5020408013012,
+    "evaporationMm": 979.9221984234252,
+    "ratio": 0.760776765748059,
+    "rainShadow": 0.46252677096800954,
+    "elevationBlockY": 69.15445709228516,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.440597512220265,
+    "rainfallMm": 721.4676525947813,
+    "evaporationMm": 978.8215439897194,
+    "ratio": 0.7370778228419939,
+    "rainShadow": 0.4756324819513466,
+    "elevationBlockY": 75.57977294921875,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.43242783067119,
+    "rainfallMm": 760.3578554468818,
+    "evaporationMm": 978.6744897218362,
+    "ratio": 0.7769262031781319,
+    "rainShadow": 0.46966406550640805,
+    "elevationBlockY": 76.8366470336914,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8192,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.424770737378847,
+    "rainfallMm": 777.0380577569857,
+    "evaporationMm": 977.8854199735534,
+    "ratio": 0.7946105360462379,
+    "rainShadow": 0.3691248274359254,
+    "elevationBlockY": 76.49038696289062,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.116531103327866,
+    "rainfallMm": 658.177201320955,
+    "evaporationMm": 971.225349161962,
+    "ratio": 0.6776771239433507,
+    "rainShadow": 0.44944415291546425,
+    "elevationBlockY": 94.21891021728516,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07389631608062541
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.002877508357162,
+    "rainfallMm": 655.8182559117799,
+    "evaporationMm": 969.1795844524893,
+    "ratio": 0.6766736180088503,
+    "rainShadow": 0.498748416240679,
+    "elevationBlockY": 111.7040786743164,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08399772291216778
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.153441907605174,
+    "rainfallMm": 680.0612412334606,
+    "evaporationMm": 972.918773727599,
+    "ratio": 0.6989907683946762,
+    "rainShadow": 0.4503319573841385,
+    "elevationBlockY": 90.91323852539062,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07081958729940585
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.212256066998485,
+    "rainfallMm": 691.8337366847855,
+    "evaporationMm": 973.9774285966786,
+    "ratio": 0.7103180385623413,
+    "rainShadow": 0.4242624243930281,
+    "elevationBlockY": 81.86490631103516,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06567469052832697
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.275549447917506,
+    "rainfallMm": 678.6927355968393,
+    "evaporationMm": 976.1241871175007,
+    "ratio": 0.6952934314649267,
+    "rainShadow": 0.5063773197924579,
+    "elevationBlockY": 74.4837417602539,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06019155697626832
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.285430864238304,
+    "rainfallMm": 693.067512911422,
+    "evaporationMm": 976.302052611275,
+    "ratio": 0.7098904596765957,
+    "rainShadow": 0.4996432778805839,
+    "elevationBlockY": 72.9635238647461,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.059354676623693536
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.27820987454559,
+    "rainfallMm": 705.6835729417762,
+    "evaporationMm": 976.8417468499838,
+    "ratio": 0.7224134054644882,
+    "rainShadow": 0.42625032255566175,
+    "elevationBlockY": 75.6592025756836,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.060347408915386036
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.27532625332977,
+    "rainfallMm": 697.393133250823,
+    "evaporationMm": 976.7898416680991,
+    "ratio": 0.7139643590681284,
+    "rainShadow": 0.4522177858352462,
+    "elevationBlockY": 76.10283660888672,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0603391733311035
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.276480227335217,
+    "rainfallMm": 702.1173530572664,
+    "evaporationMm": 976.3327004362998,
+    "ratio": 0.7191373931688522,
+    "rainShadow": 0.5048650530337244,
+    "elevationBlockY": 74.79280853271484,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06032455802963943
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.455640930178085,
+    "rainfallMm": 749.906544508502,
+    "evaporationMm": 979.5575930874713,
+    "ratio": 0.7655563591160257,
+    "rainShadow": 0.4591492497326447,
+    "elevationBlockY": 71.91090393066406,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.431658214092558,
+    "rainfallMm": 711.5448846554281,
+    "evaporationMm": 978.6606366234207,
+    "ratio": 0.7270598796232404,
+    "rainShadow": 0.4665773320155421,
+    "elevationBlockY": 74.50532531738281,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.448084857464142,
+    "rainfallMm": 726.6554479228319,
+    "evaporationMm": 978.9563162041093,
+    "ratio": 0.7422756622485763,
+    "rainShadow": 0.48434044356810607,
+    "elevationBlockY": 71.9781494140625,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.4465347441432,
+    "rainfallMm": 774.645332475862,
+    "evaporationMm": 978.4768398556176,
+    "ratio": 0.7916848932164479,
+    "rainShadow": 0.3663347345053083,
+    "elevationBlockY": 71.16043853759766,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.4181166342494,
+    "rainfallMm": 712.7344802331675,
+    "evaporationMm": 977.9653138775292,
+    "ratio": 0.7287932098606346,
+    "rainShadow": 0.45303687425721223,
+    "elevationBlockY": 75.53245544433594,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.369640692215075,
+    "rainfallMm": 710.9082553034283,
+    "evaporationMm": 976.6440021651777,
+    "ratio": 0.7279093034180063,
+    "rainShadow": 0.5065767061341814,
+    "elevationBlockY": 81.94728088378906,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.407136496048086,
+    "rainfallMm": 717.152648500271,
+    "evaporationMm": 977.3189266341717,
+    "ratio": 0.7337959277736512,
+    "rainShadow": 0.46793701479918365,
+    "elevationBlockY": 76.17869567871094,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8256,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.419114872893513,
+    "rainfallMm": 758.3414585364662,
+    "evaporationMm": 977.0281289828506,
+    "ratio": 0.7761715717703529,
+    "rainShadow": 0.43619514531077613,
+    "elevationBlockY": 73.16658782958984,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.153125517144506,
+    "rainfallMm": 659.7533311180038,
+    "evaporationMm": 971.8840486106615,
+    "ratio": 0.678839550933202,
+    "rainShadow": 0.5005333980325656,
+    "elevationBlockY": 86.1485824584961,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0705948642261025
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.117156374230685,
+    "rainfallMm": 678.5059834033319,
+    "evaporationMm": 971.2366040382127,
+    "ratio": 0.6986000945415732,
+    "rainShadow": 0.504195549234793,
+    "elevationBlockY": 91.68229675292969,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07383492521438983
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.141057974138686,
+    "rainfallMm": 704.5603491343564,
+    "evaporationMm": 972.6958629252023,
+    "ratio": 0.7243377668077275,
+    "rainShadow": 0.4291708184133704,
+    "elevationBlockY": 90.37300872802734,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07207240306287166
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.150289350786636,
+    "rainfallMm": 675.8754084337046,
+    "evaporationMm": 972.8620277048653,
+    "ratio": 0.6947289432482024,
+    "rainShadow": 0.46210412632733777,
+    "elevationBlockY": 88.95279693603516,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07107912122605842
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.194658670655983,
+    "rainfallMm": 695.4006858157614,
+    "evaporationMm": 974.6681531267933,
+    "ratio": 0.7134743077270708,
+    "rainShadow": 0.5038867420967834,
+    "elevationBlockY": 84.47807312011719,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06726722775738214
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.221528200380106,
+    "rainfallMm": 723.5419881232966,
+    "evaporationMm": 975.1518046618276,
+    "ratio": 0.7419788228502673,
+    "rainShadow": 0.469032313200605,
+    "elevationBlockY": 80.34429931640625,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06610455856407793
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.26051371082904,
+    "rainfallMm": 690.837073884678,
+    "evaporationMm": 976.5232159030859,
+    "ratio": 0.707445622012984,
+    "rainShadow": 0.45113010677175214,
+    "elevationBlockY": 75.927978515625,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06155814924823377
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.261762165876647,
+    "rainfallMm": 678.4372086665652,
+    "evaporationMm": 976.5456880939428,
+    "ratio": 0.6947316617523175,
+    "rainShadow": 0.4938032008705446,
+    "elevationBlockY": 75.73590850830078,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.061468526099203946
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.25493086332038,
+    "rainfallMm": 748.1990805339788,
+    "evaporationMm": 975.9448118840328,
+    "ratio": 0.7666407684360783,
+    "rainShadow": 0.35631320812175604,
+    "elevationBlockY": 75.65674591064453,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.407078867036052,
+    "rainfallMm": 710.2948317842524,
+    "evaporationMm": 978.683475950915,
+    "ratio": 0.7257656323400281,
+    "rainShadow": 0.4381608366277781,
+    "elevationBlockY": 76.9306411743164,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.374172514736774,
+    "rainfallMm": 710.3028716425798,
+    "evaporationMm": 977.6258940350166,
+    "ratio": 0.7265589792337663,
+    "rainShadow": 0.4732503797652935,
+    "elevationBlockY": 80.90022277832031,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.384250956356645,
+    "rainfallMm": 712.2421509446051,
+    "evaporationMm": 977.8073059841743,
+    "ratio": 0.7284074751596638,
+    "rainShadow": 0.4627749767592549,
+    "elevationBlockY": 79.34969329833984,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.402171832632725,
+    "rainfallMm": 757.9520679974928,
+    "evaporationMm": 977.6783074484291,
+    "ratio": 0.7752571190575112,
+    "rainShadow": 0.4088843336406784,
+    "elevationBlockY": 75.53866577148438,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.3342576633212,
+    "rainfallMm": 718.6727392795108,
+    "evaporationMm": 976.4558524008216,
+    "ratio": 0.7360012616161837,
+    "rainShadow": 0.45391264361509237,
+    "elevationBlockY": 85.98699951171875,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.310468227583865,
+    "rainfallMm": 658.518475277633,
+    "evaporationMm": 975.5788978018159,
+    "ratio": 0.6750027873311051,
+    "rainShadow": 0.6075970425646574,
+    "elevationBlockY": 88.6061019897461,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.27122617359827,
+    "rainfallMm": 700.1892453371341,
+    "evaporationMm": 974.872540830075,
+    "ratio": 0.7182367089147303,
+    "rainShadow": 0.5393388104824336,
+    "elevationBlockY": 94.64334106445312,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8320,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.375732092322913,
+    "rainfallMm": 647.3604913494657,
+    "evaporationMm": 976.2472389325799,
+    "ratio": 0.6631112135664363,
+    "rainShadow": 0.5623693158971995,
+    "elevationBlockY": 77.3987045288086,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.15056616821497,
+    "rainfallMm": 674.3362800075718,
+    "evaporationMm": 971.9244800484821,
+    "ratio": 0.6938155112359492,
+    "rainShadow": 0.4978412356515323,
+    "elevationBlockY": 84.29993438720703,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07075544858638683
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.05503518142908,
+    "rainfallMm": 704.3732080562435,
+    "evaporationMm": 970.2049222863361,
+    "ratio": 0.7260045706595191,
+    "rainShadow": 0.4823277138906418,
+    "elevationBlockY": 98.99700927734375,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07947562577374134
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.11908306399912,
+    "rainfallMm": 682.6034326053476,
+    "evaporationMm": 972.3830418527183,
+    "ratio": 0.701990268469468,
+    "rainShadow": 0.4569159650318855,
+    "elevationBlockY": 91.50042724609375,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07372049298315386
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.151469847598975,
+    "rainfallMm": 668.4784688042695,
+    "evaporationMm": 972.9660039575157,
+    "ratio": 0.687052236239755,
+    "rainShadow": 0.47308050127313683,
+    "elevationBlockY": 86.5178451538086,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07091002199657792
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.12861635759037,
+    "rainfallMm": 733.426509696455,
+    "evaporationMm": 973.5585465400304,
+    "ratio": 0.7533460748744999,
+    "rainShadow": 0.3935319764235511,
+    "elevationBlockY": 92.37446594238281,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.074703866206423
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.176302678848916,
+    "rainfallMm": 688.7054274842639,
+    "evaporationMm": 974.4169003226843,
+    "ratio": 0.7067872357880848,
+    "rainShadow": 0.43250541953733723,
+    "elevationBlockY": 85.0381088256836,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06885955746587591
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.22866105288773,
+    "rainfallMm": 675.453805676916,
+    "evaporationMm": 975.0868025585103,
+    "ratio": 0.6927114631278022,
+    "rainShadow": 0.4630739748154548,
+    "elevationBlockY": 76.34423828125,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06424629509812452
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.23693571872025,
+    "rainfallMm": 683.3634094116159,
+    "evaporationMm": 975.2357465434956,
+    "ratio": 0.7007161210339595,
+    "rainShadow": 0.4592137412682138,
+    "elevationBlockY": 75.07121276855469,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06353618869817823
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.223845024653496,
+    "rainfallMm": 739.7056289686576,
+    "evaporationMm": 974.5034826382979,
+    "ratio": 0.7590589896775267,
+    "rainShadow": 0.371741037969226,
+    "elevationBlockY": 75.92754364013672,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.35407020732425,
+    "rainfallMm": 715.4534888454274,
+    "evaporationMm": 976.8475359263715,
+    "ratio": 0.7324105989241638,
+    "rainShadow": 0.4502579477090958,
+    "elevationBlockY": 80.57418060302734,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.293464352040292,
+    "rainfallMm": 651.8602544649285,
+    "evaporationMm": 975.2728280420315,
+    "ratio": 0.6683875893206318,
+    "rainShadow": 0.5961404411875304,
+    "elevationBlockY": 88.77813720703125,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.280380096821787,
+    "rainfallMm": 695.2552679932296,
+    "evaporationMm": 975.0373114480983,
+    "ratio": 0.7130550388483655,
+    "rainShadow": 0.5457161078557021,
+    "elevationBlockY": 90.79109954833984,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.286662526114267,
+    "rainfallMm": 648.9439433129538,
+    "evaporationMm": 974.6805296997939,
+    "ratio": 0.6658016894138961,
+    "rainShadow": 0.5793728423621167,
+    "elevationBlockY": 88.7439956665039,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.216544678671642,
+    "rainfallMm": 661.2917060479404,
+    "evaporationMm": 973.4184084458266,
+    "ratio": 0.6793499078199763,
+    "rainShadow": 0.5195727055717182,
+    "elevationBlockY": 99.53135681152344,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.211984811372915,
+    "rainfallMm": 706.0728055261096,
+    "evaporationMm": 972.8815312644347,
+    "ratio": 0.7257541466620719,
+    "rainShadow": 0.5228433640880763,
+    "elevationBlockY": 99.193603515625,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.37649964673058,
+    "rainfallMm": 716.9470010102475,
+    "evaporationMm": 975.8427983008726,
+    "ratio": 0.7346951806772446,
+    "rainShadow": 0.5104590811582979,
+    "elevationBlockY": 73.88362884521484,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8384,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.34933753115643,
+    "rainfallMm": 687.6344272235284,
+    "evaporationMm": 974.8772933697527,
+    "ratio": 0.7053548501952046,
+    "rainShadow": 0.5365483449898958,
+    "elevationBlockY": 76.98030090332031,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.15841341702082,
+    "rainfallMm": 704.1379414630115,
+    "evaporationMm": 972.0657305269875,
+    "ratio": 0.7243727654932102,
+    "rainShadow": 0.4392727736347146,
+    "elevationBlockY": 80.65322875976562,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07019665870133696
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 20.90904817120173,
+    "rainfallMm": 686.6837284643954,
+    "evaporationMm": 967.5771561022437,
+    "ratio": 0.7096940271209065,
+    "rainShadow": 0.43346296403587414,
+    "elevationBlockY": 119.0171127319336,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0920806004047825
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.036565226935085,
+    "rainfallMm": 673.9605006284112,
+    "evaporationMm": 970.8977207855658,
+    "ratio": 0.6941622028766338,
+    "rainShadow": 0.44658037749700646,
+    "elevationBlockY": 101.75101470947266,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08093761737783056
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.114680278204617,
+    "rainfallMm": 686.2710821061693,
+    "evaporationMm": 972.3037917084173,
+    "ratio": 0.7058196090136961,
+    "rainShadow": 0.41794564330634887,
+    "elevationBlockY": 89.73331451416016,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0740882003939084
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.067841736789934,
+    "rainfallMm": 736.18932166282,
+    "evaporationMm": 972.4646033656227,
+    "ratio": 0.7570345687801153,
+    "rainShadow": 0.3749841288343468,
+    "elevationBlockY": 99.27499389648438,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08013879125325707
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.165320363041154,
+    "rainfallMm": 699.6700719076123,
+    "evaporationMm": 974.2192186381446,
+    "ratio": 0.7181854540764213,
+    "rainShadow": 0.43089621824434005,
+    "elevationBlockY": 84.27828216552734,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06975862433632374
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.1967273286329,
+    "rainfallMm": 636.2576906554254,
+    "evaporationMm": 974.5119955219233,
+    "ratio": 0.6528987776232168,
+    "rainShadow": 0.557884879634059,
+    "elevationBlockY": 78.80905151367188,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06699599344555285
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.200582339619228,
+    "rainfallMm": 661.0550300604274,
+    "evaporationMm": 974.5813857196772,
+    "ratio": 0.678296384218618,
+    "rainShadow": 0.5495517613036318,
+    "elevationBlockY": 78.21597290039062,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06667635904623515
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.221619912919163,
+    "rainfallMm": 634.3781392299926,
+    "evaporationMm": 974.4634306270799,
+    "ratio": 0.6510025099882527,
+    "rainShadow": 0.557198384103609,
+    "elevationBlockY": 73.82424926757812,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06479954261058962
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.361298541024485,
+    "rainfallMm": 642.4764961651438,
+    "evaporationMm": 976.9776459329759,
+    "ratio": 0.65761637314803,
+    "rainShadow": 0.5235932025941274,
+    "elevationBlockY": 77.01651000976562,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.307197089028243,
+    "rainfallMm": 683.1146875479559,
+    "evaporationMm": 975.5200173078147,
+    "ratio": 0.7002569659546068,
+    "rainShadow": 0.5347706566388126,
+    "elevationBlockY": 84.22216796875,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.226687632393723,
+    "rainfallMm": 696.4610578475998,
+    "evaporationMm": 974.0708470883933,
+    "ratio": 0.7150004128851611,
+    "rainShadow": 0.5021118127061617,
+    "elevationBlockY": 96.60823822021484,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.19546439215981,
+    "rainfallMm": 680.7307367763283,
+    "evaporationMm": 973.0389632886136,
+    "ratio": 0.6995924751827398,
+    "rainShadow": 0.5216055950341246,
+    "elevationBlockY": 100.33354187011719,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.23580196235024,
+    "rainfallMm": 662.5493828999328,
+    "evaporationMm": 973.7650395520413,
+    "ratio": 0.6803996405587981,
+    "rainShadow": 0.5261578639532436,
+    "elevationBlockY": 94.12776184082031,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.29943068531634,
+    "rainfallMm": 698.0939547800925,
+    "evaporationMm": 974.4555569954163,
+    "ratio": 0.7163938363003006,
+    "rainShadow": 0.4850687314357614,
+    "elevationBlockY": 83.30168151855469,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.141440992628354,
+    "rainfallMm": 715.3304234214794,
+    "evaporationMm": 971.6117425270326,
+    "ratio": 0.7362307309718183,
+    "rainShadow": 0.4567376641488285,
+    "elevationBlockY": 107.6077880859375,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8448,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.174495517575302,
+    "rainfallMm": 654.1200515591287,
+    "evaporationMm": 971.7301371252923,
+    "ratio": 0.6731499071277525,
+    "rainShadow": 0.5238467734656274,
+    "elevationBlockY": 101.44268798828125,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.10587392806073,
+    "rainfallMm": 710.9654159808067,
+    "evaporationMm": 971.2307653993112,
+    "ratio": 0.7320252213061855,
+    "rainShadow": 0.4106847513999093,
+    "elevationBlockY": 86.5494155883789,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07511205749980121
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 20.91789274977704,
+    "rainfallMm": 675.0907005771043,
+    "evaporationMm": 967.8471041902046,
+    "ratio": 0.6975179216369626,
+    "rainShadow": 0.4339129149042875,
+    "elevationBlockY": 115.46959686279297,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.09123327360529077
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.078071414231328,
+    "rainfallMm": 622.3368525710699,
+    "evaporationMm": 971.750756875372,
+    "ratio": 0.6404284721857801,
+    "rainShadow": 0.5324684837755875,
+    "elevationBlockY": 93.16608428955078,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07720506403212513
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.059527281998662,
+    "rainfallMm": 644.5402819288272,
+    "evaporationMm": 971.416962495184,
+    "ratio": 0.6635052781796804,
+    "rainShadow": 0.5323119781028504,
+    "elevationBlockY": 96.01902770996094,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07889401873646773
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 20.914710674714527,
+    "rainfallMm": 653.3229475288413,
+    "evaporationMm": 969.0903499721214,
+    "ratio": 0.6741610289975913,
+    "rainShadow": 0.5150288077782319,
+    "elevationBlockY": 118.94644927978516,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0917469722245775
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 20.97130741925188,
+    "rainfallMm": 635.0349938313982,
+    "evaporationMm": 970.1090913737938,
+    "ratio": 0.6546016313815908,
+    "rainShadow": 0.5038057320524247,
+    "elevationBlockY": 110.2392578125,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08678415750607527
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.093193018740635,
+    "rainfallMm": 643.6879513797708,
+    "evaporationMm": 971.7750215160854,
+    "ratio": 0.6623837175558809,
+    "rainShadow": 0.5432153689477313,
+    "elevationBlockY": 90.26825714111328,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07601399398499531
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.161097666567784,
+    "rainfallMm": 657.7218516796694,
+    "evaporationMm": 972.9973051769741,
+    "ratio": 0.6759749982658372,
+    "rainShadow": 0.5105789678389804,
+    "elevationBlockY": 79.8213882446289,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07003724187146565
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.183433664635675,
+    "rainfallMm": 653.9388006178623,
+    "evaporationMm": 972.8831882970709,
+    "ratio": 0.672165793883758,
+    "rainShadow": 0.5379674956800492,
+    "elevationBlockY": 75.20171356201172,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06804501559898068
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.38945055720633,
+    "rainfallMm": 642.7208428744624,
+    "evaporationMm": 976.5914923633427,
+    "ratio": 0.6581266045223102,
+    "rainShadow": 0.515066777341989,
+    "elevationBlockY": 68.1880874633789,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.34365116535237,
+    "rainfallMm": 690.8654595394868,
+    "evaporationMm": 975.2639368130862,
+    "ratio": 0.7083881946840553,
+    "rainShadow": 0.4831053014675369,
+    "elevationBlockY": 74.08869934082031,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.269388645515946,
+    "rainfallMm": 718.8197462880859,
+    "evaporationMm": 973.9272114560306,
+    "ratio": 0.7380631096788469,
+    "rainShadow": 0.47314471839810684,
+    "elevationBlockY": 85.51370239257812,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.186063462766157,
+    "rainfallMm": 660.3861376286756,
+    "evaporationMm": 971.9383601387277,
+    "ratio": 0.6794526944429033,
+    "rainShadow": 0.5200762541735647,
+    "elevationBlockY": 97.22734832763672,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.221610288175093,
+    "rainfallMm": 675.7041180282803,
+    "evaporationMm": 972.5782029960886,
+    "ratio": 0.6947555640736457,
+    "rainShadow": 0.5416037193172237,
+    "elevationBlockY": 91.75860595703125,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.279613028882316,
+    "rainfallMm": 719.0562824761015,
+    "evaporationMm": 973.1486158736906,
+    "ratio": 0.7388966810896961,
+    "rainShadow": 0.48809127454150747,
+    "elevationBlockY": 81.7712631225586,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.11372630631762,
+    "rainfallMm": 663.0177025051141,
+    "evaporationMm": 970.1626548675259,
+    "ratio": 0.6834088069444892,
+    "rainShadow": 0.5365634347884246,
+    "elevationBlockY": 107.29229736328125,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8512,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.13048821138785,
+    "rainfallMm": 671.1990054080861,
+    "evaporationMm": 969.9941143844397,
+    "ratio": 0.6919619361134273,
+    "rainShadow": 0.5760957307210798,
+    "elevationBlockY": 103.6640625,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.002745542461117,
+    "rainfallMm": 652.9654460268893,
+    "evaporationMm": 969.3744544585181,
+    "ratio": 0.6735946496461251,
+    "rainShadow": 0.5096550402235337,
+    "elevationBlockY": 99.976806640625,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08359839719640805
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.095922887736993,
+    "rainfallMm": 625.671660861573,
+    "evaporationMm": 971.0516466734839,
+    "ratio": 0.6443237731020037,
+    "rainShadow": 0.5244859028958911,
+    "elevationBlockY": 85.64183044433594,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07543200631158242
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.015718996393808,
+    "rainfallMm": 599.3859693756064,
+    "evaporationMm": 970.6284133542965,
+    "ratio": 0.6175236178222405,
+    "rainShadow": 0.5790039363613123,
+    "elevationBlockY": 100.31523132324219,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08263881953777985
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 20.8901235755564,
+    "rainfallMm": 655.753720229367,
+    "evaporationMm": 968.3676957792233,
+    "ratio": 0.6771743038182382,
+    "rainShadow": 0.527433732474703,
+    "elevationBlockY": 119.63760375976562,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.09378463551423044
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 20.833553565758045,
+    "rainfallMm": 635.1507062101341,
+    "evaporationMm": 967.6295220109048,
+    "ratio": 0.6563986440700764,
+    "rainShadow": 0.5207022071068911,
+    "elevationBlockY": 128.98724365234375,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.09884321104117955
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 20.996577098625476,
+    "rainfallMm": 616.8933173353957,
+    "evaporationMm": 970.5639456025185,
+    "ratio": 0.6356029606606015,
+    "rainShadow": 0.5135654850729005,
+    "elevationBlockY": 103.90670013427734,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08447972482577781
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.096634907259375,
+    "rainfallMm": 652.721004681964,
+    "evaporationMm": 971.8369755094227,
+    "ratio": 0.671636314660509,
+    "rainShadow": 0.475986947162249,
+    "elevationBlockY": 87.29642486572266,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07563763718810945
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.154961288942726,
+    "rainfallMm": 684.9433802616204,
+    "evaporationMm": 972.886850379723,
+    "ratio": 0.7040319025735452,
+    "rainShadow": 0.4790528299538409,
+    "elevationBlockY": 78.32313537597656,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07050694634152144
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.17868369012317,
+    "rainfallMm": 638.4771641919065,
+    "evaporationMm": 972.7976887558458,
+    "ratio": 0.6563308810987034,
+    "rainShadow": 0.4842026803402876,
+    "elevationBlockY": 73.49270629882812,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06839240707494099
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.38641940898777,
+    "rainfallMm": 664.3227671955103,
+    "evaporationMm": 976.5369316954086,
+    "ratio": 0.680284324774231,
+    "rainShadow": 0.5208408416174127,
+    "elevationBlockY": 66.21464538574219,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.346668068030574,
+    "rainfallMm": 710.6210123696544,
+    "evaporationMm": 975.3182410612939,
+    "ratio": 0.7286042467496467,
+    "rainShadow": 0.4674625582180942,
+    "elevationBlockY": 71.187255859375,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.30278890238116,
+    "rainfallMm": 666.8567078647174,
+    "evaporationMm": 974.5284160796044,
+    "ratio": 0.6842865706752722,
+    "rainShadow": 0.5188439238532964,
+    "elevationBlockY": 77.93789672851562,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.22530017017598,
+    "rainfallMm": 652.2434631597135,
+    "evaporationMm": 972.6446208721046,
+    "ratio": 0.6705876423548109,
+    "rainShadow": 0.5579515313366086,
+    "elevationBlockY": 88.75601959228516,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.167998984568072,
+    "rainfallMm": 673.6658250722185,
+    "evaporationMm": 971.6131995311622,
+    "ratio": 0.6933477492867389,
+    "rainShadow": 0.564831329562955,
+    "elevationBlockY": 97.57158660888672,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.25638522757177,
+    "rainfallMm": 640.4146264947793,
+    "evaporationMm": 972.7305154501006,
+    "ratio": 0.6583679820083032,
+    "rainShadow": 0.5321261738246714,
+    "elevationBlockY": 82.91217041015625,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.080475555788322,
+    "rainfallMm": 638.6016555304526,
+    "evaporationMm": 969.5641413579987,
+    "ratio": 0.6586481783825145,
+    "rainShadow": 0.5729569577346123,
+    "elevationBlockY": 109.9751968383789,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8576,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.951103856673292,
+    "rainfallMm": 690.9399114493527,
+    "evaporationMm": 966.7651959995777,
+    "ratio": 0.7146925792409831,
+    "rainShadow": 0.5298491888965554,
+    "elevationBlockY": 128.8313446044922,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.107695049896154,
+    "rainfallMm": 596.8566563709655,
+    "evaporationMm": 970.9670432051882,
+    "ratio": 0.6147033110420779,
+    "rainShadow": 0.5466349709969041,
+    "elevationBlockY": 80.72232055664062,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07423156819143562
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.174882412567055,
+    "rainfallMm": 589.2199858987445,
+    "evaporationMm": 972.1764157332645,
+    "ratio": 0.6060833984069909,
+    "rainShadow": 0.54484903747782,
+    "elevationBlockY": 70.38580322265625,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.06836201922086016
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.123304382109286,
+    "rainfallMm": 612.1402956456109,
+    "evaporationMm": 971.8977747014645,
+    "ratio": 0.6298402070460966,
+    "rainShadow": 0.5040317283496918,
+    "elevationBlockY": 79.7941665649414,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.073017938835232
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.032490497374177,
+    "rainfallMm": 667.1494498944222,
+    "evaporationMm": 970.2631247762325,
+    "ratio": 0.6875964188047278,
+    "rainShadow": 0.48289254238456303,
+    "elevationBlockY": 93.76553344726562,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08109264928444782
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.08324406567993,
+    "rainfallMm": 637.1468792115711,
+    "evaporationMm": 971.2611544852455,
+    "ratio": 0.6559995489053094,
+    "rainShadow": 0.4640540373054194,
+    "elevationBlockY": 86.14978790283203,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07665937178634585
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.059313550390627,
+    "rainfallMm": 632.9177767740608,
+    "evaporationMm": 970.8304052100381,
+    "ratio": 0.6519344402250461,
+    "rainShadow": 0.5245838705467611,
+    "elevationBlockY": 89.83140563964844,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0788107083726971
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.12529891397801,
+    "rainfallMm": 681.023608697865,
+    "evaporationMm": 971.4696694722169,
+    "ratio": 0.7010240567447192,
+    "rainShadow": 0.46421115079911923,
+    "elevationBlockY": 78.43386840820312,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0729776457610366
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.139745039008528,
+    "rainfallMm": 651.5703242682515,
+    "evaporationMm": 971.7296997227662,
+    "ratio": 0.6705263042326935,
+    "rainShadow": 0.492359257305431,
+    "elevationBlockY": 76.21138763427734,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07172310090219192
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.13881196402613,
+    "rainfallMm": 623.8747584465099,
+    "evaporationMm": 971.1763658451798,
+    "ratio": 0.6423907957269678,
+    "rainShadow": 0.5377809364186743,
+    "elevationBlockY": 75.14521789550781,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.26809337914927,
+    "rainfallMm": 675.0983200047206,
+    "evaporationMm": 973.5034313173963,
+    "ratio": 0.6934729742977298,
+    "rainShadow": 0.5370721707815305,
+    "elevationBlockY": 79.93704986572266,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.218874568501132,
+    "rainfallMm": 639.8044647780248,
+    "evaporationMm": 972.0940899165786,
+    "ratio": 0.6581713348683463,
+    "rainShadow": 0.5367818839927763,
+    "elevationBlockY": 86.33763885498047,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.222556109944005,
+    "rainfallMm": 634.5430856064538,
+    "evaporationMm": 972.1603576625504,
+    "ratio": 0.6527144216537907,
+    "rainShadow": 0.5582045627682203,
+    "elevationBlockY": 85.77124786376953,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.11420223994096,
+    "rainfallMm": 678.9723019451784,
+    "evaporationMm": 969.7009668983958,
+    "ratio": 0.7001873001291132,
+    "rainShadow": 0.5142030000598485,
+    "elevationBlockY": 101.30973815917969,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.206240180919963,
+    "rainfallMm": 681.7201726651582,
+    "evaporationMm": 971.3576498360178,
+    "ratio": 0.7018220042640777,
+    "rainShadow": 0.48629061230529896,
+    "elevationBlockY": 87.15005493164062,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.184004040243416,
+    "rainfallMm": 670.3632407868472,
+    "evaporationMm": 970.4640276057324,
+    "ratio": 0.6907656767461284,
+    "rainShadow": 0.5347774272700139,
+    "elevationBlockY": 89.48188781738281,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.99011840105274,
+    "rainfallMm": 650.3615840961099,
+    "evaporationMm": 966.9740861003003,
+    "ratio": 0.672573953578163,
+    "rainShadow": 0.6130097665984505,
+    "elevationBlockY": 119.3104476928711,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8640,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.874714116084082,
+    "rainfallMm": 657.532144390673,
+    "evaporationMm": 964.4203731546861,
+    "ratio": 0.6817899773724602,
+    "rainShadow": 0.5376812074107644,
+    "elevationBlockY": 136.0200958251953,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.105161126556407,
+    "rainfallMm": 634.2397433997332,
+    "evaporationMm": 970.9214325850728,
+    "ratio": 0.6532348778325694,
+    "rainShadow": 0.4983193277157743,
+    "elevationBlockY": 78.67662048339844,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07437684844924408
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.114981595458993,
+    "rainfallMm": 615.3261575604238,
+    "evaporationMm": 971.0982010253194,
+    "ratio": 0.6336394783871918,
+    "rainShadow": 0.5336823857409561,
+    "elevationBlockY": 77.16577911376953,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07357625940226187
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.084720547860762,
+    "rainfallMm": 660.8978251786464,
+    "evaporationMm": 971.203265684991,
+    "ratio": 0.6804938250619598,
+    "rainShadow": 0.48070699097022523,
+    "elevationBlockY": 83.29141235351562,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07634984731068906
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.090537629312177,
+    "rainfallMm": 668.078713139446,
+    "evaporationMm": 971.3079731511166,
+    "ratio": 0.6878134758557222,
+    "rainShadow": 0.4714013443672968,
+    "elevationBlockY": 82.39647674560547,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07588902531393538
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.091250613519783,
+    "rainfallMm": 626.9950931369921,
+    "evaporationMm": 971.4052723463628,
+    "ratio": 0.6454516060248762,
+    "rainShadow": 0.5190042857108471,
+    "elevationBlockY": 82.47886657714844,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07587696405321032
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.12857949382984,
+    "rainfallMm": 644.9286327420917,
+    "evaporationMm": 972.0771921919438,
+    "ratio": 0.6634541350443965,
+    "rainShadow": 0.5120601122195817,
+    "elevationBlockY": 76.7359619140625,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07261738066475831
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.129824648051745,
+    "rainfallMm": 616.0123903085114,
+    "evaporationMm": 971.5511326855441,
+    "ratio": 0.6340504061847378,
+    "rainShadow": 0.5291897481730015,
+    "elevationBlockY": 75.30115509033203,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.072503685158397
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.13753298392821,
+    "rainfallMm": 612.6957837378604,
+    "evaporationMm": 971.6898827313205,
+    "ratio": 0.6305466328574252,
+    "rainShadow": 0.5560889943687494,
+    "elevationBlockY": 74.1152572631836,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.053034601459732,
+    "rainfallMm": 631.4182532089327,
+    "evaporationMm": 969.6323733189847,
+    "ratio": 0.6511934528832114,
+    "rainShadow": 0.5157471282220623,
+    "elevationBlockY": 85.90792083740234,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.16056552448693,
+    "rainfallMm": 691.200725107372,
+    "evaporationMm": 971.5679299334743,
+    "ratio": 0.7114280986556445,
+    "rainShadow": 0.4408228073086489,
+    "elevationBlockY": 94.04598236083984,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.21735275437992,
+    "rainfallMm": 680.3960612010827,
+    "evaporationMm": 972.0666972623968,
+    "ratio": 0.6999479183036127,
+    "rainShadow": 0.4989813934645004,
+    "elevationBlockY": 84.14051055908203,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.24475439622562,
+    "rainfallMm": 640.8738403625323,
+    "evaporationMm": 972.5599268156194,
+    "ratio": 0.6589556311053221,
+    "rainShadow": 0.5984917003386937,
+    "elevationBlockY": 79.92487335205078,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.188340698877887,
+    "rainfallMm": 641.1213250135852,
+    "evaporationMm": 971.0354591592604,
+    "ratio": 0.6602450188262736,
+    "rainShadow": 0.5448703326513494,
+    "elevationBlockY": 87.47505187988281,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.08173662249239,
+    "rainfallMm": 695.6338356097132,
+    "evaporationMm": 969.1165857843215,
+    "ratio": 0.7178020124861713,
+    "rainShadow": 0.5004767508901313,
+    "elevationBlockY": 103.87567901611328,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.119243322755857,
+    "rainfallMm": 684.5251741914936,
+    "evaporationMm": 969.2983346909563,
+    "ratio": 0.7062069021399304,
+    "rainShadow": 0.5495883859709152,
+    "elevationBlockY": 97.01870727539062,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.917282720949217,
+    "rainfallMm": 686.9574635263947,
+    "evaporationMm": 965.6630438584368,
+    "ratio": 0.7113842327252823,
+    "rainShadow": 0.5254844312475357,
+    "elevationBlockY": 128.08956909179688,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8704,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.94653528644586,
+    "rainfallMm": 696.6124541373132,
+    "evaporationMm": 965.7131542211982,
+    "ratio": 0.7213451024171852,
+    "rainShadow": 0.5266438424271753,
+    "elevationBlockY": 122.546630859375,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 7616,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.067828504743137,
+    "rainfallMm": 610.5210817994036,
+    "evaporationMm": 969.4268442674185,
+    "ratio": 0.6297753001267109,
+    "rainShadow": 0.50703990026827,
+    "elevationBlockY": 80.14707946777344,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07754559073515166
+  },
+  {
+    "seed": "8675309",
+    "x": 7680,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.081247450055635,
+    "rainfallMm": 624.6328602267281,
+    "evaporationMm": 969.6683852830434,
+    "ratio": 0.6441716257918417,
+    "rainShadow": 0.529379339993043,
+    "elevationBlockY": 78.08262634277344,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07642802411237548
+  },
+  {
+    "seed": "8675309",
+    "x": 7744,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.000568013889097,
+    "rainfallMm": 629.9405819035152,
+    "evaporationMm": 968.8890712296417,
+    "ratio": 0.6501679094223259,
+    "rainShadow": 0.4950463341522313,
+    "elevationBlockY": 91.99706268310547,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08365804764927176
+  },
+  {
+    "seed": "8675309",
+    "x": 7808,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.006534463626647,
+    "rainfallMm": 620.4720639512502,
+    "evaporationMm": 968.9964673249175,
+    "ratio": 0.6403243818464796,
+    "rainShadow": 0.5363039664217663,
+    "elevationBlockY": 91.07914733886719,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.08318469158593544
+  },
+  {
+    "seed": "8675309",
+    "x": 7872,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.04393405905151,
+    "rainfallMm": 615.7616526822566,
+    "evaporationMm": 969.6821705918092,
+    "ratio": 0.6350138956421665,
+    "rainShadow": 0.5013005486918092,
+    "elevationBlockY": 85.35342407226562,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07992763865645025
+  },
+  {
+    "seed": "8675309",
+    "x": 7936,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.070825607208246,
+    "rainfallMm": 663.4896631868061,
+    "evaporationMm": 970.1662184586305,
+    "ratio": 0.6838927707057637,
+    "rainShadow": 0.42797077893162033,
+    "elevationBlockY": 81.21626281738281,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.0775905040092758
+  },
+  {
+    "seed": "8675309",
+    "x": 8000,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 21.127784267532054,
+    "rainfallMm": 639.2954454662053,
+    "evaporationMm": 970.6216984734892,
+    "ratio": 0.658645326466155,
+    "rainShadow": 0.48709651899910245,
+    "elevationBlockY": 71.18030548095703,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "margin": 0.07255450477765946
+  },
+  {
+    "seed": "8675309",
+    "x": 8064,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.101337005721753,
+    "rainfallMm": 616.8806594645906,
+    "evaporationMm": 970.1456477609038,
+    "ratio": 0.6358639662903722,
+    "rainShadow": 0.5743555091650057,
+    "elevationBlockY": 75.24911499023438,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8128,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.996388592033522,
+    "rainfallMm": 608.6323294346668,
+    "evaporationMm": 967.6987741626692,
+    "ratio": 0.6289481248555929,
+    "rainShadow": 0.5434189505967445,
+    "elevationBlockY": 90.1583023071289,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.078346692489916,
+    "rainfallMm": 691.9514289909076,
+    "evaporationMm": 969.1740199708843,
+    "ratio": 0.7139599439651665,
+    "rainShadow": 0.47966371517057915,
+    "elevationBlockY": 102.23064422607422,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8256,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.221893179440674,
+    "rainfallMm": 683.8197751222024,
+    "evaporationMm": 971.2133132181754,
+    "ratio": 0.7040881398714802,
+    "rainShadow": 0.5424238926232233,
+    "elevationBlockY": 78.94828796386719,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8320,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.229519045376954,
+    "rainfallMm": 678.3843530354926,
+    "evaporationMm": 971.3505788050284,
+    "ratio": 0.6983929055460618,
+    "rainShadow": 0.534102465116171,
+    "elevationBlockY": 77.77507781982422,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8384,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 21.10920875534971,
+    "rainfallMm": 687.7099974642266,
+    "evaporationMm": 968.6550248353551,
+    "ratio": 0.7099637949858553,
+    "rainShadow": 0.5168022115014366,
+    "elevationBlockY": 95.1266098022461,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8448,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.874709918832373,
+    "rainfallMm": 678.5598647084685,
+    "evaporationMm": 964.4340457780431,
+    "ratio": 0.7035834826434919,
+    "rainShadow": 0.5855704896883129,
+    "elevationBlockY": 131.20335388183594,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8512,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.795363205382085,
+    "rainfallMm": 698.9575558135094,
+    "evaporationMm": 962.491751483642,
+    "ratio": 0.7261958917944956,
+    "rainShadow": 0.49826296243603246,
+    "elevationBlockY": 142.29544067382812,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8576,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.866877487608644,
+    "rainfallMm": 763.9832099766121,
+    "evaporationMm": 963.77900856372,
+    "ratio": 0.7926954241461895,
+    "rainShadow": 0.4476434188120546,
+    "elevationBlockY": 131.29324340820312,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 8640,
+    "z": 8768,
+    "stepBlocks": 64,
+    "biome": "minecraft:stony_peaks",
+    "traits": [
+      "ALPINE"
+    ],
+    "temperatureC": 20.792416259691592,
+    "rainfallMm": 734.6592530830658,
+    "evaporationMm": 961.9419343691063,
+    "ratio": 0.763725155162193,
+    "rainShadow": 0.524253178441304,
+    "elevationBlockY": 141.67848205566406,
+    "water": "LAND",
+    "landform": "MOUNTAIN",
+    "margin": 1.0
+  }
+]

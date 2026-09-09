@@ -1,0 +1,338 @@
+{
+  "uncoveredTestCombinations": 10640,
+  "mushroomFields": "excluded: non-climatic mechanism not implemented",
+  "scope": "controlled climate and terrain search; absence is not a mathematical impossibility proof",
+  "reached": {
+    "minecraft:badlands": {
+      "temperatureC": 20.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLATEAU",
+      "rainfallMm": 100.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 916.0
+    },
+    "minecraft:bamboo_jungle": {
+      "temperatureC": 20.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 2600.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 916.0
+    },
+    "minecraft:beach": {
+      "temperatureC": 2.0,
+      "rainfallMm": 1800,
+      "water": "COAST",
+      "landform": "PLAINS"
+    },
+    "minecraft:birch_forest": {
+      "temperatureC": 8.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 1100.0,
+      "x": 0,
+      "z": 0,
+      "evaporationMm": 700.0
+    },
+    "minecraft:cold_ocean": {
+      "temperatureC": 0.0,
+      "rainfallMm": 1800,
+      "water": "SHALLOW_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:dark_forest": {
+      "temperatureC": 10.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 1400.0,
+      "x": -8192,
+      "z": -4096,
+      "evaporationMm": 736.0
+    },
+    "minecraft:deep_cold_ocean": {
+      "temperatureC": 0.0,
+      "rainfallMm": 1800,
+      "water": "DEEP_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:deep_frozen_ocean": {
+      "temperatureC": -10.0,
+      "rainfallMm": 1800,
+      "water": "DEEP_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:deep_lukewarm_ocean": {
+      "temperatureC": 22.0,
+      "rainfallMm": 1800,
+      "water": "DEEP_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:deep_ocean": {
+      "temperatureC": 8.0,
+      "rainfallMm": 1800,
+      "water": "DEEP_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:desert": {
+      "temperatureC": 22.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 100.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 952.0
+    },
+    "minecraft:forest": {
+      "temperatureC": 8.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 900.0,
+      "x": 0,
+      "z": 0,
+      "evaporationMm": 700.0
+    },
+    "minecraft:frozen_ocean": {
+      "temperatureC": -10.0,
+      "rainfallMm": 1800,
+      "water": "SHALLOW_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:frozen_peaks": {
+      "temperatureC": -30.0,
+      "elevationBlocks": 0.0,
+      "landform": "MOUNTAIN",
+      "rainfallMm": 0.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 466.0
+    },
+    "minecraft:frozen_river": {
+      "temperatureC": -10.0,
+      "rainfallMm": 1800,
+      "water": "RIVER",
+      "landform": "PLAINS"
+    },
+    "minecraft:grove": {
+      "temperatureC": -8.0,
+      "elevationBlocks": 0.0,
+      "landform": "HILLS",
+      "rainfallMm": 800.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 466.0
+    },
+    "minecraft:ice_spikes": {
+      "temperatureC": -30.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 300.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 466.0
+    },
+    "minecraft:jagged_peaks": {
+      "temperatureC": -4.0,
+      "elevationBlocks": 0.0,
+      "landform": "MOUNTAIN",
+      "rainfallMm": 0.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 484.0
+    },
+    "minecraft:jungle": {
+      "temperatureC": 24.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 2100.0,
+      "x": -8192,
+      "z": -4096,
+      "evaporationMm": 988.0
+    },
+    "minecraft:lukewarm_ocean": {
+      "temperatureC": 22.0,
+      "rainfallMm": 1800,
+      "water": "SHALLOW_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:mangrove_swamp": {
+      "temperatureC": 20.0,
+      "rainfallMm": 1800,
+      "water": "WETLAND",
+      "landform": "COAST"
+    },
+    "minecraft:meadow": {
+      "temperatureC": 14.0,
+      "elevationBlocks": 0.0,
+      "landform": "HILLS",
+      "rainfallMm": 1000.0,
+      "x": -8192,
+      "z": -4096,
+      "evaporationMm": 808.0
+    },
+    "minecraft:ocean": {
+      "temperatureC": 8.0,
+      "rainfallMm": 1800,
+      "water": "SHALLOW_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:old_growth_pine_taiga": {
+      "temperatureC": -4.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 700.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 484.0
+    },
+    "minecraft:old_growth_spruce_taiga": {
+      "temperatureC": -2.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 800.0,
+      "x": 0,
+      "z": 0,
+      "evaporationMm": 520.0
+    },
+    "minecraft:plains": {
+      "temperatureC": -4.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 100.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 484.0
+    },
+    "minecraft:river": {
+      "temperatureC": 2.0,
+      "rainfallMm": 1800,
+      "water": "RIVER",
+      "landform": "PLAINS"
+    },
+    "minecraft:savanna": {
+      "temperatureC": 22.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 300.0,
+      "x": 0,
+      "z": 0,
+      "evaporationMm": 952.0
+    },
+    "minecraft:snowy_beach": {
+      "temperatureC": -10.0,
+      "rainfallMm": 1800,
+      "water": "COAST",
+      "landform": "PLAINS"
+    },
+    "minecraft:snowy_plains": {
+      "temperatureC": -30.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 0.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 466.0
+    },
+    "minecraft:snowy_slopes": {
+      "temperatureC": 0.0,
+      "elevationBlocks": 0.0,
+      "landform": "MOUNTAIN",
+      "rainfallMm": 0.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 556.0
+    },
+    "minecraft:snowy_taiga": {
+      "temperatureC": -16.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 900.0,
+      "x": -8192,
+      "z": -4096,
+      "evaporationMm": 466.0
+    },
+    "minecraft:sparse_jungle": {
+      "temperatureC": 22.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 1300.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 952.0
+    },
+    "minecraft:stony_peaks": {
+      "temperatureC": 4.0,
+      "elevationBlocks": 0.0,
+      "landform": "MOUNTAIN",
+      "rainfallMm": 0.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 628.0
+    },
+    "minecraft:stony_shore": {
+      "temperatureC": -10.0,
+      "rainfallMm": 1800,
+      "water": "COAST",
+      "landform": "MOUNTAIN"
+    },
+    "minecraft:swamp": {
+      "temperatureC": 2.0,
+      "rainfallMm": 1800,
+      "water": "WETLAND",
+      "landform": "PLAINS"
+    },
+    "minecraft:taiga": {
+      "temperatureC": -4.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLAINS",
+      "rainfallMm": 900.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 484.0
+    },
+    "minecraft:warm_ocean": {
+      "temperatureC": 24.0,
+      "rainfallMm": 1800,
+      "water": "SHALLOW_OCEAN",
+      "landform": "PLAINS"
+    },
+    "minecraft:windswept_forest": {
+      "temperatureC": 4.0,
+      "elevationBlocks": 0.0,
+      "landform": "HILLS",
+      "rainfallMm": 1400.0,
+      "x": -8192,
+      "z": -4096,
+      "evaporationMm": 628.0
+    },
+    "minecraft:windswept_gravelly_hills": {
+      "temperatureC": -8.0,
+      "elevationBlocks": 0.0,
+      "landform": "HILLS",
+      "rainfallMm": 100.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 466.0
+    },
+    "minecraft:windswept_hills": {
+      "temperatureC": -4.0,
+      "elevationBlocks": 0.0,
+      "landform": "HILLS",
+      "rainfallMm": 600.0,
+      "x": -16384,
+      "z": -8192,
+      "evaporationMm": 484.0
+    },
+    "minecraft:wooded_badlands": {
+      "temperatureC": 22.0,
+      "elevationBlocks": 0.0,
+      "landform": "PLATEAU",
+      "rainfallMm": 400.0,
+      "x": 0,
+      "z": 0,
+      "evaporationMm": 952.0
+    }
+  },
+  "notReached": []
+}

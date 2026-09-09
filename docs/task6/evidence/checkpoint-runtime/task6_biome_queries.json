@@ -1,0 +1,38 @@
+[
+  {
+    "reopened": false,
+    "count": 16,
+    "elapsedNs": 85700,
+    "surfaceCache": {
+      "hits": 1303504,
+      "retainedArrayBytes": 17039360,
+      "misses": 130,
+      "capacity": 1024,
+      "entries": 130
+    },
+    "climateCache": {
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 1,
+      "entries": 1
+    }
+  },
+  {
+    "reopened": true,
+    "count": 16,
+    "elapsedNs": 62600,
+    "surfaceCache": {
+      "hits": 16,
+      "retainedArrayBytes": 12451840,
+      "misses": 95,
+      "capacity": 1024,
+      "entries": 95
+    },
+    "climateCache": {
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 1,
+      "entries": 1
+    }
+  }
+]

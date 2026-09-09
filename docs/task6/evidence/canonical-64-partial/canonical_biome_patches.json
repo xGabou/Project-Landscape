@@ -1,0 +1,32 @@
+[
+  {
+    "seed": "8675309",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 741376,
+    "minX": 7616,
+    "maxX": 8512,
+    "minZ": 7744,
+    "maxZ": 8768,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "8675309",
+    "biome": "minecraft:stony_peaks",
+    "sampledAreaBlocks2": 438272,
+    "minX": 8064,
+    "maxX": 8640,
+    "minZ": 7744,
+    "maxZ": 8768,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "8675309",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 4096,
+    "minX": 8384,
+    "maxX": 8384,
+    "minZ": 7808,
+    "maxZ": 7808,
+    "boundaryCensored": false
+  }
+]

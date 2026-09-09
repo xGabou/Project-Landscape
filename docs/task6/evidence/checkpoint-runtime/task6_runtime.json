@@ -1,0 +1,50 @@
+[
+  {
+    "reopened": false,
+    "biomeDigest": "ad0a2426ae8beb95512c15306c85d760c12028b61e7a9948e9a28d67f1e3601c",
+    "sourceCodecRoundtrip": true,
+    "source": {
+      "retained": {
+        "preset": "minecraft:overworld",
+        "type": "minecraft:multi_noise"
+      },
+      "manifestFingerprint": "a021b1c92da64742b31382cd572e13b77e8148c94e4cf4b8132acd9f2a1cff11",
+      "type": "reterraforged:climate_biomes_v1"
+    },
+    "spawn": [
+      8,
+      8
+    ],
+    "surfaceCache": {
+      "hits": 1303504,
+      "retainedArrayBytes": 17039360,
+      "misses": 130,
+      "capacity": 1024,
+      "entries": 130
+    }
+  },
+  {
+    "reopened": true,
+    "biomeDigest": "ad0a2426ae8beb95512c15306c85d760c12028b61e7a9948e9a28d67f1e3601c",
+    "sourceCodecRoundtrip": true,
+    "source": {
+      "retained": {
+        "preset": "minecraft:overworld",
+        "type": "minecraft:multi_noise"
+      },
+      "manifestFingerprint": "a021b1c92da64742b31382cd572e13b77e8148c94e4cf4b8132acd9f2a1cff11",
+      "type": "reterraforged:climate_biomes_v1"
+    },
+    "spawn": [
+      8,
+      8
+    ],
+    "surfaceCache": {
+      "hits": 16,
+      "retainedArrayBytes": 12451840,
+      "misses": 95,
+      "capacity": 1024,
+      "entries": 95
+    }
+  }
+]

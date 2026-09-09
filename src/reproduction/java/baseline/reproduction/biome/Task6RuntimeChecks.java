@@ -38,6 +38,25 @@ public final class Task6RuntimeChecks {
             "evaporationMm",cached.potentialEvaporationMm(),"rainShadow",cached.rainShadow(),"exact",true);
         List<String> winners=new ArrayList<>();
         var sampler=level.getChunkSource().randomState().sampler();
+        var biomes=level.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.BIOME);
+        int caveCases=0;
+        for(var cave:List.of(net.minecraft.world.level.biome.Biomes.LUSH_CAVES,net.minecraft.world.level.biome.Biomes.DRIPSTONE_CAVES,net.minecraft.world.level.biome.Biomes.DEEP_DARK)){
+            var holder=biomes.getOrThrow(cave);
+            BiomeSource fixed=new BiomeSource(){
+                @Override protected com.mojang.serialization.Codec<? extends BiomeSource> codec(){throw new UnsupportedOperationException("Test fixture is not serialized");}
+                @Override protected java.util.stream.Stream<net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome>> collectPossibleBiomes(){return java.util.stream.Stream.of(holder);}
+                @Override public net.minecraft.core.Holder<net.minecraft.world.level.biome.Biome> getNoiseBiome(int x,int y,int z,net.minecraft.world.level.biome.Climate.Sampler ignored){return holder;}
+            };
+            var composed=new ClimateBiomeSource(fixed,geography,context.generationContext(),biomes);
+            int qx=Math.floorDiv(sx,4),qz=Math.floorDiv(sz,4);
+            int below=Math.floorDiv((int)Math.floor(geography.sample(qx*4,qz*4).elevationBlockY())-16,4);
+            if(!composed.getNoiseBiome(qx,below,qz,sampler).is(cave))throw new AssertionError("Lost retained cave family "+cave);
+            if(composed.getNoiseBiome(qx,level.getMaxBuildHeight()>>2,qz,sampler).is(cave))throw new AssertionError("Cave fixture leaked to surface "+cave);
+            if(!composed.possibleBiomes().contains(holder))throw new AssertionError("Cave holder missing from possible biomes");
+            caveCases++;
+        }
+        out.row("task6_cave_composition","reopened",reopened,"controlledRetainedFamilies",caveCases,"surfaceLeakage",0,
+                "scope","actual V1 source composed with fixed cave-holder fixtures; not a natural cave frequency survey");
         start=System.nanoTime();
         for(int z=sz>>2;z<(sz>>2)+4;z++)for(int x=sx>>2;x<(sx>>2)+4;x++)
             winners.add(v1.getNoiseBiome(x,level.getMaxBuildHeight()>>2,z,sampler).unwrapKey().orElseThrow().location().toString());
