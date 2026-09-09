@@ -1,0 +1,22 @@
+[
+  {
+    "seed": "8675309",
+    "digest": "026d27f1333536b067a7e4ad617568e15c5eefc88c15d2705d9b365b158dde56",
+    "samples": 17
+  },
+  {
+    "seed": "4303642605",
+    "digest": "fe6fd5ab47531e38f52c1d0dae54c66d3f17a5841356ac2d49059e9cc546f12a",
+    "samples": 17
+  },
+  {
+    "seed": "67890",
+    "digest": "c9608d4b94488315ca891bd53a3d5a0e28aa8f0663b3ffcf0dd36ff05ba0b9f7",
+    "samples": 10
+  },
+  {
+    "seed": "20260908",
+    "digest": "3b4e954efa1c6806654b7a4689ae1b3cf7e8e9b6b565c6ca3742d5a093d9e057",
+    "samples": 10
+  }
+]

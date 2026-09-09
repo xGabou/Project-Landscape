@@ -1,0 +1,218 @@
+[
+  {
+    "seed": "8675309",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 15,
+    "boundaryFraction": 0.10416666666666667,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 2,
+    "biomeDigest": "1a0370f64ee04a831fd545087f4ed0fa64eb87823a95e51ee2829cb9ff2ad936",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 2027,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5668,
+      "retainedArrayBytes": 134217728
+    }
+  },
+  {
+    "seed": "4303642605",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 14,
+    "boundaryFraction": 0.09722222222222222,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 0,
+    "biomeDigest": "0e09c7cff815d6a8f298253b6c9ff99bf9af11d1223256744722805eb4151d9e",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 2149,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5546,
+      "retainedArrayBytes": 134217728
+    }
+  },
+  {
+    "seed": "42",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 41,
+    "boundaryFraction": 0.2847222222222222,
+    "isolatedInteriorCells": 1,
+    "lowMarginBelow002": 12,
+    "biomeDigest": "275dd7edae5877d5b14264e3f8c1651bf9ad54261ac4fd095b6792df3e8db7a0",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 1936,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5759,
+      "retainedArrayBytes": 134217728
+    }
+  },
+  {
+    "seed": "-987654321",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 38,
+    "boundaryFraction": 0.2638888888888889,
+    "isolatedInteriorCells": 2,
+    "lowMarginBelow002": 14,
+    "biomeDigest": "6fe7e0062a22d2d9ebc698815f393c87bfefa0aa0930cff0e0afec1219cdd320",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 1920,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5775,
+      "retainedArrayBytes": 134217728
+    }
+  },
+  {
+    "seed": "0",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 29,
+    "boundaryFraction": 0.2013888888888889,
+    "isolatedInteriorCells": 1,
+    "lowMarginBelow002": 5,
+    "biomeDigest": "3a2b19aa88443939e8ec7cf858e92b5d66c985fae1125793092f3941722d2ca0",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 1959,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5736,
+      "retainedArrayBytes": 134217728
+    }
+  },
+  {
+    "seed": "9223372036854775807",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 9,
+    "boundaryFraction": 0.0625,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 3,
+    "biomeDigest": "afa39beaeab33f7c9ca3d8441b5996751850b67d942bd29b5f719a742edd50cc",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 2059,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5636,
+      "retainedArrayBytes": 134217728
+    }
+  },
+  {
+    "seed": "-9223372036854775807",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 14,
+    "boundaryFraction": 0.09722222222222222,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 6,
+    "biomeDigest": "63eda654d37f4f56711b7e84f5b8c7d7134f3e181749e09824471e8d929a4d3d",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 2008,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5687,
+      "retainedArrayBytes": 134217728
+    }
+  },
+  {
+    "seed": "-1",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 30,
+    "boundaryFraction": 0.20833333333333334,
+    "isolatedInteriorCells": 1,
+    "lowMarginBelow002": 12,
+    "biomeDigest": "454f5e15ed2aacc7ab38bac69904ba79f9c5868ce65797c014f3824970759b9e",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 2085,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5610,
+      "retainedArrayBytes": 134217728
+    }
+  },
+  {
+    "seed": "1",
+    "stepBlocks": 128,
+    "samples": 81,
+    "adjacentEdges": 144,
+    "differentBiomeEdges": 13,
+    "boundaryFraction": 0.09027777777777778,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 8,
+    "biomeDigest": "cabd8c13f13fb53bec80dc657be2c48b7ff4d12c38455a8f28cb978e20c9c13c",
+    "climateCache": {
+      "entries": 81,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 81
+    },
+    "surfaceCache": {
+      "misses": 1924,
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 5771,
+      "retainedArrayBytes": 134217728
+    }
+  }
+]

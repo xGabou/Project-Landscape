@@ -1,0 +1,74 @@
+[
+  {
+    "targets": 17,
+    "exactInputPoints": 1615,
+    "elapsedNs": 71138261300,
+    "surfaceCache": {
+      "misses": 968,
+      "capacity": 1024,
+      "entries": 968,
+      "hits": 647,
+      "retainedArrayBytes": 126877696
+    },
+    "exactReferenceChecks": 17,
+    "evictions": 0,
+    "arraysPerTile": 2,
+    "tileSideBlocks": 128,
+    "ordering": "tile Z, tile X, block Z, block X",
+    "scope": "full canonical terrain and exact profile coordinates; point records retained only for this bounded survey"
+  },
+  {
+    "targets": 17,
+    "exactInputPoints": 1615,
+    "elapsedNs": 71324272000,
+    "surfaceCache": {
+      "misses": 969,
+      "capacity": 1024,
+      "entries": 969,
+      "hits": 646,
+      "retainedArrayBytes": 127008768
+    },
+    "exactReferenceChecks": 17,
+    "evictions": 0,
+    "arraysPerTile": 2,
+    "tileSideBlocks": 128,
+    "ordering": "tile Z, tile X, block Z, block X",
+    "scope": "full canonical terrain and exact profile coordinates; point records retained only for this bounded survey"
+  },
+  {
+    "targets": 10,
+    "exactInputPoints": 950,
+    "elapsedNs": 23144901200,
+    "surfaceCache": {
+      "misses": 299,
+      "capacity": 1024,
+      "entries": 299,
+      "hits": 651,
+      "retainedArrayBytes": 39190528
+    },
+    "exactReferenceChecks": 10,
+    "evictions": 0,
+    "arraysPerTile": 2,
+    "tileSideBlocks": 128,
+    "ordering": "tile Z, tile X, block Z, block X",
+    "scope": "full canonical terrain and exact profile coordinates; point records retained only for this bounded survey"
+  },
+  {
+    "targets": 10,
+    "exactInputPoints": 950,
+    "elapsedNs": 24075177600,
+    "surfaceCache": {
+      "misses": 302,
+      "capacity": 1024,
+      "entries": 302,
+      "hits": 648,
+      "retainedArrayBytes": 39583744
+    },
+    "exactReferenceChecks": 10,
+    "evictions": 0,
+    "arraysPerTile": 2,
+    "tileSideBlocks": 128,
+    "ordering": "tile Z, tile X, block Z, block X",
+    "scope": "full canonical terrain and exact profile coordinates; point records retained only for this bounded survey"
+  }
+]
