@@ -18,7 +18,7 @@ final class SourceReuseChecks {
         for(var cave:List.of(Biomes.LUSH_CAVES,Biomes.DRIPSTONE_CAVES,Biomes.DEEP_DARK)){
             var source=new ClimateBiomeSource(new FixedBiomeSource(biomes.getOrThrow(cave)),g,generation,biomes);sources.add(source);
             source.getNoiseBiome(0,100,0,null);
-            for(int y:new int[]{-100,-99,-98}){if(!source.getNoiseBiome(0,y,0,null).is(cave))throw new AssertionError("Winner overrides cave");caveChecks++;}
+            for(int y:new int[]{-100,-99,-98}){if(source.getNoiseBiome(0,y,0,null)!=biomes.getOrThrow(cave))throw new AssertionError("Winner overrides cave");caveChecks++;}
         }
         var source=new ClimateBiomeSource(new FixedBiomeSource(biomes.getOrThrow(Biomes.PLAINS)),g,generation,biomes);sources.add(source);
         var winners=new ArrayList<String>();
@@ -27,7 +27,7 @@ final class SourceReuseChecks {
             var expected=resolver.select(geo,service.provider().sample(x,z));
             for(int y:new int[]{-100,0,24,100}){
                 var holder=source.getNoiseBiome(p[0],y,p[1],null);
-                if(!holder.unwrapKey().orElseThrow().location().equals(expected))throw new AssertionError("2D winner changed");
+                if(holder!=biomes.getOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.BIOME,expected)))throw new AssertionError("2D winner changed");
                 winners.add(holder.unwrapKey().orElseThrow().location().toString());
             }
         }
@@ -43,7 +43,7 @@ final class SourceReuseChecks {
             for(int i=0;i<10000;i++)source.getNoiseBiome(0,100,0,null);
             measurements.add(Map.of("pass",pass,"warmup",pass<0,"queries",10000,"referenceSurfacePathNanos",referenceNs,"cachedSourceNanos",System.nanoTime()-start));
         }
-        WorldgenBenchmark.write(out,"source_reuse.json",Map.of("caveDelegationChecks",caveChecks,"directHolderChecks",winners.size(),"winners",winners,
+        WorldgenBenchmark.write(out,"source_reuse.json",Map.of("caveDelegationChecks",caveChecks,"directHolderChecks",winners.size(),"holderReferenceIdentity",true,"winners",winners,
                 "measurements",measurements,"surfaceGeography",source.surfaceGeographyCacheStats(),"surfaceWinners",source.surfaceWinnerCacheStats(),
                 "scope","real registry holders and canonical terrain; reference repeats original surface physical path; full chunk effects measured separately"));
         return sources;
