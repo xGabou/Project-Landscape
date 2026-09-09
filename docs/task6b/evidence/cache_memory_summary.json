@@ -1,0 +1,85 @@
+{
+  "accounting": "Exact array element payload and record primitive fields from source; Java object layouts and completed map overhead are estimates, not measured retained heap. No GC reachability claim.",
+  "layoutAssumptions": "64-bit HotSpot compressed ordinary/class pointers, 12-byte object headers, 16-byte array headers, 8-byte alignment, 4-byte references; Long 24 B; LinkedHashMap.Entry 40 B. Shared enums, empty Optionals, registry holders and strings are not newly retained value graphs.",
+  "caches": [
+    {
+      "cache": "surface field",
+      "capacity": 1024,
+      "avoids": "filtered tile acquisition and two-array surface extraction for each climate profile point",
+      "primitivePayloadBytesPerEntry": 131072,
+      "maximumPrimitivePayloadBytes": 134217728,
+      "estimatedDetachedObjectBytesPerEntry": 131144,
+      "estimatedCompletedMapBytesAtCapacity": 73800,
+      "estimatedCompletedCacheBytesAtCapacity": 134365256
+    },
+    {
+      "cache": "distance field",
+      "capacity": 32,
+      "avoids": "160 x 160 macro lattice classification and three Euclidean transforms",
+      "primitivePayloadBytesPerEntry": 8192,
+      "maximumPrimitivePayloadBytes": 262144,
+      "estimatedDetachedObjectBytesPerEntry": 8248,
+      "estimatedCompletedMapBytesAtCapacity": 2376,
+      "estimatedCompletedCacheBytesAtCapacity": 266312
+    },
+    {
+      "cache": "climate baseline",
+      "capacity": 4096,
+      "avoids": "entire exact 24000-block climate profile and climate equations for repeated block X/Z",
+      "primitivePayloadBytesPerEntry": 56,
+      "maximumPrimitivePayloadBytes": 229376,
+      "estimatedDetachedObjectBytesPerEntry": 104,
+      "estimatedCompletedMapBytesAtCapacity": 294984,
+      "estimatedCompletedCacheBytesAtCapacity": 720968
+    },
+    {
+      "cache": "surface geography",
+      "capacity": 4096,
+      "avoids": "canonical terrain lookup and physical landform sampling on repeated quart X/Z at different Y",
+      "primitivePayloadBytesPerEntry": 75,
+      "maximumPrimitivePayloadBytes": 307200,
+      "estimatedDetachedObjectBytesPerEntry": 296,
+      "estimatedCompletedMapBytesAtCapacity": 294984,
+      "estimatedCompletedCacheBytesAtCapacity": 1507400
+    },
+    {
+      "cache": "surface winner",
+      "capacity": 4096,
+      "avoids": "temperature-only override or baseline climate/resolver work for repeated surface quart X/Z",
+      "newValueObjectsPerEntry": 0,
+      "holderValueReferenceBytesAtCompressedOops": 4,
+      "estimatedDetachedObjectBytesPerEntry": 0,
+      "estimatedCompletedMapBytesAtCapacity": 294984,
+      "estimatedCompletedCacheBytesAtCapacity": 294984
+    }
+  ],
+  "estimatedFiveCompletedCachesBytesAtAllCapacities": 137154920,
+  "excluded": "Cache/service scaffolding, pending maps/futures and retained pending-table capacity, common registry graph, original terrain TileCache, workspace pools and transient generation arrays are separate. This is not total world/JVM memory.",
+  "geoSampleBreakdownEstimatedBytes": {
+    "GeoSample": 56,
+    "BlockPosition": 24,
+    "GeographyMetrics": 40,
+    "HydrologySample": 32,
+    "threePresentOptionals": 48,
+    "threeMetrics": 96
+  },
+  "climateBreakdownEstimatedBytes": {
+    "ClimateBaseline": 56,
+    "presentOptional": 16,
+    "WindDirection": 32
+  },
+  "winnerReferenceAccounting": "Holder value reference is already inside the counted map entry; do not add 4096 independent holder objects or charge the registry graph again.",
+  "originalTerrainCacheSeparate": {
+    "capacity": 256,
+    "tileCellsIncludingHalo": 25600,
+    "estimatedBytesPerCell": 120,
+    "estimatedCellArrayAndCellsPerTile": 3174416,
+    "estimated256TileCellPayloadAndArrayBytes": 812650496,
+    "note": "Original Task 1B detached snapshots, unchanged by Task 6B. Plus tile, chunk-reader, cache-entry and table objects. Occupancy varies with expiry/chunk drops; not a measured retained heap."
+  },
+  "originalWorkspacePoolSeparate": {
+    "capacityArrays": 100,
+    "estimatedMaximumCellPoolBytesAt160SquaredCells": 317441600,
+    "note": "Pool capacity is not observed occupancy. Live borrows must return to zero on disposal; pooled storage can remain reachable while a test deliberately retains the context. No GC reclamation claim."
+  }
+}
