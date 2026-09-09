@@ -1,0 +1,108 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 2026-09-09 12:26:38
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Generation manifest mismatch in minecraft:overworld; changed fields: [content.data.registry/minecraft:worldgen/noise_settings]. Restore matching preset/datapacks/seed. No automatic migration; existing manifest was not overwritten.
+	at com.gabou.atmospheregen.persistence.GenerationManifestStore.resolve(GenerationManifestStore.java:34) ~[%23197!/:?] {re:classloading}
+	at com.gabou.atmospheregen.compat.legacy.LegacyWorldBinding.bind(LegacyWorldBinding.java:41) ~[%23197!/:?] {re:mixin,re:classloading}
+	at net.minecraft.server.level.ChunkMap.handler$zzg000$ChunkMap(ChunkMap.java:1399) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:mixin,re:classloading,pl:mixin:APP:reterraforged-common.mixins.json:MixinChunkMap,pl:mixin:A}
+	at net.minecraft.server.level.ChunkMap.<init>(ChunkMap.java:177) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:mixin,re:classloading,pl:mixin:APP:reterraforged-common.mixins.json:MixinChunkMap,pl:mixin:A}
+	at net.minecraft.server.level.ServerChunkCache.<init>(ServerChunkCache.java:77) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.<init>(ServerLevel.java:209) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.createLevels(MinecraftServer.java:337) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:308) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.client.server.IntegratedServer.initServer(IntegratedServer.java:63) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:634) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.4.22_mapped_official_1.20.1.jar%23191!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.17, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 375866680 bytes (358 MiB) / 3196059648 bytes (3048 MiB) up to 6442450944 bytes (6144 MiB)
+	CPUs: 24
+	Processor Vendor: GenuineIntel
+	Processor Name: 13th Gen Intel(R) Core(TM) i7-13700K
+	Identifier: Intel64 Family 6 Model 183 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 3.42
+	Number of physical packages: 1
+	Number of physical CPUs: 16
+	Number of logical CPUs: 24
+	Graphics card #0 name: Meta Virtual Monitor
+	Graphics card #0 vendor: Meta Inc.
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: DriverVersion=5.3.57.114
+	Graphics card #1 name: Parsec Virtual Display Adapter
+	Graphics card #1 vendor: Parsec Cloud, Inc.
+	Graphics card #1 VRAM (MB): 0.00
+	Graphics card #1 deviceId: unknown
+	Graphics card #1 versionInfo: DriverVersion=0.41.0.0
+	Graphics card #2 name: NVIDIA GeForce RTX 4070 Ti SUPER
+	Graphics card #2 vendor: NVIDIA (0x10de)
+	Graphics card #2 VRAM (MB): 4095.00
+	Graphics card #2 deviceId: 0x2705
+	Graphics card #2 versionInfo: DriverVersion=32.0.16.1088
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 6.00
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 6.00
+	Memory slot #1 type: Unknown
+	Memory slot #2 capacity (MB): 16384.00
+	Memory slot #2 clockSpeed (GHz): 6.00
+	Memory slot #2 type: Unknown
+	Memory slot #3 capacity (MB): 16384.00
+	Memory slot #3 clockSpeed (GHz): 6.00
+	Memory slot #3 type: Unknown
+	Virtual memory max (MB): 73924.08
+	Virtual memory used (MB): 44825.99
+	Swap memory total (MB): 8704.00
+	Swap memory used (MB): 323.57
+	JVM Flags: 3 total; -XX:ActiveProcessorCount=24 -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx6G
+	Server Running: true
+	Player Count: 0 / 8; []
+	Data Packs: vanilla, mod:terrablender, mod:forge, mod:reterraforged, mod:task1a_reproduction, file/reproduction-preset
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.2.33.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.22.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.22.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.22.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.22.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.22.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.20.1-47.4.22_mapped_official_1.20.1.jar   |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		terrablender-563928-6290448_mapped_official_1.20.1|TerraBlender                  |terrablender                  |3.0.1.10            |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |47.4.22             |DONE      |Manifest: NOSIGNATURE
+		main                                              |ReTerraForged                 |reterraforged                 |0.0.6               |DONE      |Manifest: NOSIGNATURE
+		reproduction                                      |Task 1A inherited behavior rep|task1a_reproduction           |1                   |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 80bebfcf-25be-4ec3-bdd4-9c55d3d52a24
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.22

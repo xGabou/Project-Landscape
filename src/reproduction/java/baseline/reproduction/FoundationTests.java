@@ -10,6 +10,7 @@ import com.mojang.serialization.*;
 import java.util.*;
 import net.minecraft.server.level.ServerLevel;
 public final class FoundationTests {
+    public static void runManifestChecks(ServerLevel level,Evidence out)throws Exception { manifests(level,out); }
     private static <T> void roundtrip(Evidence out,String name,Codec<T> codec,T value) {
         var json=codec.encodeStart(JsonOps.INSTANCE,value).getOrThrow(false,s->{});
         var decoded=codec.parse(JsonOps.INSTANCE,json).getOrThrow(false,s->{});
@@ -104,7 +105,7 @@ public final class FoundationTests {
         var manifest=GenerationManifest.create(content);
         var catalog=new com.gabou.atmospheregen.biome.VanillaBiomeCatalog();
         var planned=GenerationManifest.create(new ManifestContent(GenerationVersions.planned(),level.getSeed(),level.dimension().location(),
-            new WorldGeographyConfig(Optional.empty(),Optional.of(new PlannedGeographySettings(3000,1000,1200,2000,.5))),
+            new WorldGeographyConfig(Optional.empty(),Optional.of(new PlannedGeographySettings(16384,1000,1200,2000,.5,Optional.of(MacroGeographySettings.defaults())))),
             new BaselineClimateConfig(Optional.of(new BaselineClimateConfig.Planned(100000,.0065,.5,.5))),
             new BiomeResolverConfig(Optional.of(new BiomeResolverConfig.Planned(64,1))),content.data(),Optional.of(catalog.fingerprint())));
         roundtrip(out,"planned V1 manifest",GenerationManifest.CODEC,planned);

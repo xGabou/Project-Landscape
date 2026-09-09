@@ -1,0 +1,26 @@
+[
+  {
+    "reopened": false,
+    "biomeDigest": "ad0a2426ae8beb95512c15306c85d760c12028b61e7a9948e9a28d67f1e3601c",
+    "sourceCodecRoundtrip": true,
+    "source": {
+      "retained": {
+        "preset": "minecraft:overworld",
+        "type": "minecraft:multi_noise"
+      },
+      "manifestFingerprint": "36fe1112e14337cc8ae6735d2b946faae0ecffeb1f25572317d391a3c1a45add",
+      "type": "reterraforged:climate_biomes_v1"
+    },
+    "spawn": [
+      8,
+      8
+    ],
+    "surfaceCache": {
+      "capacity": 1024,
+      "misses": 675,
+      "retainedArrayBytes": 88473600,
+      "hits": 1361077,
+      "entries": 675
+    }
+  }
+]

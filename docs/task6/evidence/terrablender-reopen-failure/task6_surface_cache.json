@@ -1,0 +1,13 @@
+[
+  {
+    "checked": 9,
+    "exact": true,
+    "stats": {
+      "capacity": 1024,
+      "misses": 4,
+      "retainedArrayBytes": 524288,
+      "hits": 5,
+      "entries": 4
+    }
+  }
+]

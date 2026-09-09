@@ -1,0 +1,20 @@
+[
+  {
+    "reopened": false,
+    "count": 16,
+    "elapsedNs": 72300,
+    "surfaceCache": {
+      "entries": 130,
+      "hits": 1303504,
+      "retainedArrayBytes": 17039360,
+      "misses": 130,
+      "capacity": 1024
+    },
+    "climateCache": {
+      "entries": 1,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 1
+    }
+  }
+]

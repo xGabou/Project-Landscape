@@ -1,0 +1,6 @@
+[
+  {
+    "status": "FAIL",
+    "error": "java.lang.IllegalArgumentException: Functional PA_GEOGRAPHY_V1 requires frozen Task 4 macro settings"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "present": true,
+    "surfaceAuthority": "ClimateBiomeResolver",
+    "surfaceEqualityChecks": 27,
+    "passed": true
+  }
+]

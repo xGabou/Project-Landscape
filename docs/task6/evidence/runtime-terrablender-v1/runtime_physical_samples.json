@@ -1,0 +1,19 @@
+[
+  {
+    "seed": "8675309",
+    "x": 6120,
+    "z": 6240,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "elevationBlockY": 122.91353607177734,
+    "temperatureC": 21.4677857801504,
+    "rainfallMm": 525.5006758506989,
+    "evaporationMm": 957.4518975844403,
+    "ratio": 0.5488533441486585,
+    "winner": "minecraft:plains",
+    "winnerScore": 0.9075968861298029,
+    "directEqualsHolder": true,
+    "secondCandidate": "minecraft:savanna",
+    "margin": 0.04424365315002665
+  }
+]

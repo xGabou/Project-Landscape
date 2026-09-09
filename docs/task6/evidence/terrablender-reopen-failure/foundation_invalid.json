@@ -1,0 +1,38 @@
+[
+  {
+    "case": "context dimension mismatch",
+    "error": "Generation context dimension does not match manifest"
+  },
+  {
+    "case": "nonfinite fingerprint number NaN",
+    "error": "Invalid canonical JSON: Character N is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "nonfinite fingerprint number Infinity",
+    "error": "Invalid canonical JSON: Character I is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "nonfinite fingerprint number -Infinity",
+    "error": "Invalid canonical JSON: Character I is neither a decimal digit number, decimal point, nor \"e\" notation exponential mark."
+  },
+  {
+    "case": "changed fingerprint",
+    "error": "Manifest fingerprint mismatch: content was changed or corrupted; restore matching world generation data, do not regenerate with defaults"
+  },
+  {
+    "case": "malformed geography config",
+    "error": "legacy tileExponent must be in [3, 3]; got 4"
+  },
+  {
+    "case": "V1 catalog mismatch",
+    "error": "Generation manifest mismatch in minecraft:overworld; changed fields: [content.biomeCatalog]. Restore matching preset/datapacks/seed. No automatic migration; existing manifest was not overwritten."
+  },
+  {
+    "case": "foreign generator with manifest",
+    "error": "Manifest exists for minecraft:overworld but this dimension does not own a recognizable RTF preset/router. Restore the matching generator; no newest-version fallback."
+  },
+  {
+    "case": "world seed mismatch",
+    "error": "Generation manifest mismatch in minecraft:overworld; changed fields: [content.worldSeed]. Restore matching preset/datapacks/seed. No automatic migration; existing manifest was not overwritten."
+  }
+]

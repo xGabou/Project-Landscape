@@ -20,6 +20,7 @@ public final class Task6RuntimeChecks {
         if(!(source instanceof ClimateBiomeSource v1))throw new AssertionError("V1 source not installed");
         var context=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
         var geography=new PaGeographyProvider(context);
+        if(net.minecraftforge.fml.ModList.get().isLoaded("terrablender"))Task6TerraBlenderChecks.run(level,out,reopened);
         var exact=ClimateGeographyAdapters.of(geography,geography.macroProvider(),new CoarseDistanceField(geography.macroProvider()));
         var reuse=new CanonicalClimateGeography(geography);
         int checked=0;
@@ -61,6 +62,10 @@ public final class Task6RuntimeChecks {
         for(int z=sz>>2;z<(sz>>2)+4;z++)for(int x=sx>>2;x<(sx>>2)+4;x++)
             winners.add(v1.getNoiseBiome(x,level.getMaxBuildHeight()>>2,z,sampler).unwrapKey().orElseThrow().location().toString());
         out.row("task6_biome_queries","reopened",reopened,"count",winners.size(),"elapsedNs",System.nanoTime()-start,"surfaceCache",v1.surfaceCacheStats(),"climateCache",v1.climateCacheStats());
+        if(!reopened){
+            baseline.reproduction.FoundationTests.runManifestChecks(level,out);
+            Task6IntegrationChecks.run(level,v1,geography,out);
+        }
         var ops=RegistryOps.create(JsonOps.INSTANCE,level.registryAccess());
         var encoded=BiomeSource.CODEC.encodeStart(ops,v1).getOrThrow(false,s->{});
         var decoded=BiomeSource.CODEC.parse(ops,encoded).getOrThrow(false,s->{});
