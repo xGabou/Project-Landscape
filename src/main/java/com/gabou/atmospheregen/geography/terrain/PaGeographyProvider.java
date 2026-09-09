@@ -18,7 +18,7 @@ public final class PaGeographyProvider implements GeographyProvider {
         bridge=Objects.requireNonNull(context.generator.getHeightmap().paBridge(),"V1 provider requires installed V1 terrain");
         if(context.cache==null)throw new IllegalArgumentException("V1 canonical provider requires a tile cache");
         this.context=context;distances=new CoarseDistanceField(bridge.macro());
-        onClose(distances::clear);
+        onClose(distances::close);
     }
     @Override public GeoSample sample(int x,int z) {
         if(context.cache.isClosed())throw new IllegalStateException("V1 geography context is closed");

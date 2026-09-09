@@ -15,6 +15,7 @@ public final class CoarseDistanceField {
     private final MacroGeographyProvider provider;
     private final Map<Long,Tile> cache=new LinkedHashMap<>(CAPACITY,0.75f,true);
     private long hits,misses;
+    private boolean closed;
     public CoarseDistanceField(MacroGeographyProvider provider){this.provider=provider;}
     public Distances sample(int x,int z) {
         int gx=(int)Math.round((double)x/STEP),gz=(int)Math.round((double)z/STEP);
@@ -27,6 +28,7 @@ public final class CoarseDistanceField {
         return new Distance(value,STEP,snap,value>=LIMIT?Quality.CENSORED_SAMPLED_LATTICE_LOWER_BOUND:Quality.SAMPLED_LATTICE_ESTIMATE);
     }
     private synchronized Tile tile(int tx,int tz) {
+        if(closed)throw new IllegalStateException("Distance field context is disposed");
         long key=((long)tx<<32)|(tz&0xffffffffL);Tile tile=cache.get(key);
         if(tile!=null){hits++;return tile;}misses++;
         boolean[] land=new boolean[SIZE*SIZE],marine=new boolean[SIZE*SIZE],ocean=new boolean[SIZE*SIZE];
@@ -63,4 +65,5 @@ public final class CoarseDistanceField {
     }
     public synchronized Map<String,Long> cacheStats(){return Map.of("entries",(long)cache.size(),"capacity",(long)CAPACITY,"hits",hits,"misses",misses,"retainedArrayBytes",(long)cache.size()*CORE*CORE*8);}
     public synchronized void clear(){cache.clear();}
+    public synchronized void close(){closed=true;cache.clear();}
 }
