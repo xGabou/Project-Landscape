@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "backend": "LEGACY_RTF_V0",
+  "canonicalGeography": "595/595 exact",
+  "hints": "595/595 exact",
+  "biomeKeys": "85/85 unchanged",
+  "standaloneDigests": "420 exact",
+  "terraBlenderDigests": "105 exact",
+  "seedCollision": "preserved",
+  "source": "scripts/task2/Verify-Goldens.ps1 -CandidateRoot docs/task4/evidence -PrimaryOnly"
+}

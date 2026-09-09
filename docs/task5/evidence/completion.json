@@ -1,0 +1,11 @@
+{
+  "version": {
+    "schemaVersion": 1,
+    "geography": "PA_GEOGRAPHY_V1",
+    "baselineClimate": "PA_BASELINE_V1",
+    "biomeResolver": "LEGACY_MULTINOISE_V0"
+  },
+  "biomesImplemented": false,
+  "runtimeWeatherImplemented": false,
+  "status": "PASS"
+}

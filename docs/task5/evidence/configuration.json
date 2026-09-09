@@ -1,0 +1,14 @@
+{
+  "latitudeScaleBlocks": 100000.0,
+  "equatorZ": 0.0,
+  "lapseCelsiusPerBlock": 0.0065,
+  "oceanInfluence": 0.5,
+  "continentalityStrength": 1.0,
+  "windBandScaleBlocks": 4096.0,
+  "orographicStrength": 0.85,
+  "rainShadowRecoveryDistance": 12000.0,
+  "climateProfileDistance": 24000.0,
+  "climateProfileStep": 256.0,
+  "evaporationStrength": 1.0,
+  "regionalVariationStrength": 0.1
+}

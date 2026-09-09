@@ -1,0 +1,13 @@
+{
+  "task": "5",
+  "status": "PASS",
+  "version": "PA_GEOGRAPHY_V1",
+  "climateVersion": "PA_BASELINE_V1",
+  "syntheticOkanagan": {"windwardMm": 1011.0950606996917, "leewardMm": 401.782955975305, "controlMm": 937.481359333059, "leeControlRatio": 0.4286, "passesSixtyPercentGate": true},
+  "barrierRemoval": "recovered_to_unobstructed_control",
+  "windReversal": "passed",
+  "multiRange": "passed",
+  "geographyWriteback": false,
+  "biomeResolverImplemented": false,
+  "runtimeWeatherImplemented": false
+}
