@@ -1,0 +1,63 @@
+{
+  "A": {
+    "requests": 1520,
+    "tileHits": 987,
+    "tileMisses": 533,
+    "evictions": 0,
+    "sampleHits": 0,
+    "uniqueTilesReused": 430,
+    "evictedBeforeReuse": 0,
+    "medianReuseDistance": 380,
+    "p95ReuseDistance": 380,
+    "averageEvictedLifetimeRequests": 0.0,
+    "tileCapacity": 1024,
+    "sampleCapacity": 0,
+    "maximumSurfaceArrayBytes": 134217728
+  },
+  "B": {
+    "requests": 1520,
+    "tileHits": 0,
+    "tileMisses": 1520,
+    "evictions": 1392,
+    "sampleHits": 0,
+    "uniqueTilesReused": 430,
+    "evictedBeforeReuse": 1392,
+    "medianReuseDistance": 380,
+    "p95ReuseDistance": 380,
+    "averageEvictedLifetimeRequests": 128.0,
+    "tileCapacity": 128,
+    "sampleCapacity": 65536,
+    "maximumSurfaceArrayBytes": 16777216
+  },
+  "C": {
+    "requests": 1520,
+    "tileHits": 987,
+    "tileMisses": 533,
+    "evictions": 405,
+    "sampleHits": 0,
+    "uniqueTilesReused": 430,
+    "evictedBeforeReuse": 73,
+    "medianReuseDistance": 1,
+    "p95ReuseDistance": 1,
+    "averageEvictedLifetimeRequests": 370.0962962962963,
+    "tileCapacity": 128,
+    "sampleCapacity": 0,
+    "maximumSurfaceArrayBytes": 16777216
+  },
+  "D": {
+    "requests": 1520,
+    "tileHits": 987,
+    "tileMisses": 533,
+    "evictions": 405,
+    "sampleHits": 0,
+    "uniqueTilesReused": 430,
+    "evictedBeforeReuse": 73,
+    "medianReuseDistance": 1,
+    "p95ReuseDistance": 1,
+    "averageEvictedLifetimeRequests": 370.0962962962963,
+    "tileCapacity": 128,
+    "sampleCapacity": 65536,
+    "maximumSurfaceArrayBytes": 16777216
+  },
+  "scope": "A/B streaming LRU replay; C/D whole-corpus tile-major extraction lower bounds; load counts, not timings"
+}

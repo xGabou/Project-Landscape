@@ -5,7 +5,10 @@ import jdk.jfr.consumer.*;
 import java.nio.file.Path;
 import java.util.*;
 
-final class ProfileSummary {
+public final class ProfileSummary {
+    public static void main(String[] args)throws Exception {
+        java.nio.file.Files.writeString(Path.of(args[1]),new com.google.gson.GsonBuilder().setPrettyPrinting().create().toJson(read(Path.of(args[0]))),java.nio.file.StandardOpenOption.CREATE_NEW);
+    }
     static Map<String,Object> read(Path path)throws Exception {
         var groups=new TreeMap<String,Long>();var stacks=new HashMap<String,Long>();long samples=0,allocationWeight=0,monitorEvents=0;
         try(var file=new RecordingFile(path)){
