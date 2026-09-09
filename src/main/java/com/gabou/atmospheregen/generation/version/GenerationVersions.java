@@ -18,8 +18,9 @@ public record GenerationVersions(int schemaVersion, GeographyAlgorithmVersion ge
     public static GenerationVersions legacy(){return new GenerationVersions(1,GeographyAlgorithmVersion.LEGACY_RTF_V0,BaselineClimateAlgorithmVersion.LEGACY_RTF_HINTS_V0,BiomeResolverAlgorithmVersion.LEGACY_MULTINOISE_V0);}
     public static GenerationVersions planned(){return new GenerationVersions(1,GeographyAlgorithmVersion.PA_GEOGRAPHY_V1,BaselineClimateAlgorithmVersion.PA_BASELINE_V1,BiomeResolverAlgorithmVersion.PA_RESOLVER_V1);}
     public static GenerationVersions geographyV1(){return new GenerationVersions(1,GeographyAlgorithmVersion.PA_GEOGRAPHY_V1,BaselineClimateAlgorithmVersion.LEGACY_RTF_HINTS_V0,BiomeResolverAlgorithmVersion.LEGACY_MULTINOISE_V0);}
-    /** No misleading functional dispatch to an unfinished new generator. */
+    public static GenerationVersions climateV1(){return new GenerationVersions(1,GeographyAlgorithmVersion.PA_GEOGRAPHY_V1,BaselineClimateAlgorithmVersion.PA_BASELINE_V1,BiomeResolverAlgorithmVersion.LEGACY_MULTINOISE_V0);}
+    /** Task 6's full tuple remains intentionally unavailable until the new resolver exists. */
     public void requireFunctionalBackend() {
-        if(!equals(legacy())&&!equals(geographyV1()))throw new UnsupportedOperationException("Generation backend tuple "+this+" is not implemented; climate and resolver V1 remain unavailable. No legacy fallback.");
+        if(!equals(legacy())&&!equals(geographyV1())&&!equals(climateV1()))throw new UnsupportedOperationException("Generation backend tuple "+this+" is not implemented; biome resolver V1 remains unavailable. No legacy fallback.");
     }
 }

@@ -12,7 +12,7 @@ import java.util.*;
 
 /** World-storage-lock-owned initialization I/O only. Never called by sample or noise compute. */
 public final class GenerationManifestStore {
-    public enum ResolutionKind { EXPLICIT_LEGACY_ASSIGNMENT, EXISTING_MANIFEST, EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT }
+    public enum ResolutionKind { EXPLICIT_LEGACY_ASSIGNMENT, EXISTING_MANIFEST, EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT, EXPLICIT_V1_CLIMATE_ASSIGNMENT }
     public record Resolution(GenerationManifest manifest, ResolutionKind kind) {}
     private GenerationManifestStore() {}
 
@@ -51,7 +51,9 @@ public final class GenerationManifestStore {
             Files.move(temporary, file);
         } finally { Files.deleteIfExists(temporary); }
         return Optional.of(new Resolution(manifest, manifest.content().versions().equals(com.gabou.atmospheregen.generation.version.GenerationVersions.geographyV1())
-            ? ResolutionKind.EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT : ResolutionKind.EXPLICIT_LEGACY_ASSIGNMENT));
+            ? ResolutionKind.EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT
+            : manifest.content().versions().equals(com.gabou.atmospheregen.generation.version.GenerationVersions.climateV1())
+                ? ResolutionKind.EXPLICIT_V1_CLIMATE_ASSIGNMENT : ResolutionKind.EXPLICIT_LEGACY_ASSIGNMENT));
     }
 
     public static String encode(GenerationManifest manifest) {

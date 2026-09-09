@@ -38,5 +38,6 @@ public final class PaGeographyProvider implements GeographyProvider {
         return new GeoSample(new BlockPosition(x,z),elevation,elevation-context.levels.waterLevel,water,form,metrics,hydro);
     }
     public DetailedSample sampleDetailed(int x,int z){return new DetailedSample(sample(x,z),bridge.macro().sampleMacro(x,z),distances.sample(x,z));}
+    public com.gabou.atmospheregen.api.geography.MacroGeographyProvider macroProvider(){return bridge.macro();}
     public Map<String,Long> distanceCacheStats(){return distances.cacheStats();}
 }

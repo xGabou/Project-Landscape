@@ -135,6 +135,15 @@ tasks.register('task4Survey', JavaExec) {
     args file(providers.gradleProperty('task4Output').getOrElse('build/task4-survey')).absolutePath
 }
 
+// Offline Task 5 climate fixtures and V1 distribution survey.
+tasks.register('task5ClimateSurvey', JavaExec) {
+    dependsOn tasks.named('reproductionClasses')
+    classpath = sourceSets.reproduction.runtimeClasspath
+    mainClass = 'baseline.reproduction.climate.ClimateSurvey'
+    maxHeapSize = '2G'
+    args file(providers.gradleProperty('task5Output').getOrElse('build/task5-climate-survey')).absolutePath
+}
+
 tasks.matching { it.name == 'runSmokeClient' }.configureEach {
     def marker = file('run/task0-smoke/task0-pass.txt')
     doFirst { marker.delete() }
