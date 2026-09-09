@@ -1,0 +1,36 @@
+[
+  {
+    "chunkX": 0,
+    "chunkZ": 0,
+    "status": "minecraft:full",
+    "loadedBefore": true,
+    "acquisitionNs": 1900,
+    "surfaceBlocks": {
+      "minecraft:water": 256
+    },
+    "vegetationSurfaceColumns": 0,
+    "structureStarts": 0,
+    "quartQueries": 768,
+    "quartPopulationQueryNs": 675400,
+    "naturalCaveHolders": 0,
+    "retainedCaveEqualityChecks": 0,
+    "scope": "two bounded FULL chunks; cached spawn and offset acquisition, not paired fresh-generation benchmark; no structure or cave frequency claim"
+  },
+  {
+    "chunkX": 16,
+    "chunkZ": 0,
+    "status": "minecraft:full",
+    "loadedBefore": false,
+    "acquisitionNs": 695792700,
+    "surfaceBlocks": {
+      "minecraft:water": 256
+    },
+    "vegetationSurfaceColumns": 0,
+    "structureStarts": 0,
+    "quartQueries": 768,
+    "quartPopulationQueryNs": 1188600,
+    "naturalCaveHolders": 0,
+    "retainedCaveEqualityChecks": 0,
+    "scope": "two bounded FULL chunks; cached spawn and offset acquisition, not paired fresh-generation benchmark; no structure or cave frequency claim"
+  }
+]

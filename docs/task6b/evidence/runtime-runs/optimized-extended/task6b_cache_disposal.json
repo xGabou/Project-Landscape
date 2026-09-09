@@ -1,0 +1,64 @@
+[
+  {
+    "distance": {
+      "entries": 0,
+      "hits": 597099,
+      "retainedArrayBytes": 0,
+      "misses": 114,
+      "capacity": 32
+    },
+    "postCloseQueriesRejected": true,
+    "worldIndex": 0,
+    "reopened": false,
+    "surface": {
+      "evictions": 3304,
+      "inFlight": 0,
+      "peakInFlight": 9,
+      "failures": 0,
+      "misses": 4328,
+      "retainedArrayBytes": 0,
+      "entries": 0,
+      "capacity": 1024,
+      "hits": 591628,
+      "capacityWaits": 0,
+      "waits": 1257
+    },
+    "climate": {
+      "misses": 6073,
+      "capacityWaits": 0,
+      "entries": 0,
+      "hits": 8,
+      "waits": 0,
+      "evictions": 1977,
+      "peakInFlight": 49,
+      "failures": 0,
+      "capacity": 4096,
+      "inFlight": 0
+    },
+    "winners": {
+      "misses": 26345,
+      "capacityWaits": 0,
+      "entries": 0,
+      "hits": 1928471,
+      "waits": 0,
+      "evictions": 22249,
+      "peakInFlight": 49,
+      "failures": 0,
+      "capacity": 4096,
+      "inFlight": 0
+    },
+    "geography": {
+      "misses": 29324,
+      "capacityWaits": 0,
+      "entries": 0,
+      "hits": 2103394,
+      "waits": 0,
+      "evictions": 25228,
+      "peakInFlight": 5,
+      "failures": 0,
+      "capacity": 4096,
+      "inFlight": 0
+    },
+    "allEmpty": true
+  }
+]

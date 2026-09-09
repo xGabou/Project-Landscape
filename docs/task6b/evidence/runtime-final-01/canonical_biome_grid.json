@@ -1,0 +1,686 @@
+[
+  {
+    "seed": "8675309",
+    "x": -4,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.692138494547095,
+    "rainfallMm": 1157.4717199971662,
+    "evaporationMm": 928.4584929018476,
+    "ratio": 1.2466596286706904,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.983148574829102,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 0,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.43195228337414,
+    "rainfallMm": 1283.0124109426938,
+    "evaporationMm": 923.7751411007346,
+    "ratio": 1.3888795593848802,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.964110374450684,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 4,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.43195228337414,
+    "rainfallMm": 1283.0124109426938,
+    "evaporationMm": 923.7751411007346,
+    "ratio": 1.3888795593848802,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.94494342803955,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": -4,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.40107452614882,
+    "rainfallMm": 1270.1668259560656,
+    "evaporationMm": 923.2193414706787,
+    "ratio": 1.3758017936806903,
+    "rainShadow": 0.054572483675981324,
+    "elevationBlockY": 13.962494850158691,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 0,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.330036861073662,
+    "rainfallMm": 1238.5850036011605,
+    "evaporationMm": 921.9406634993259,
+    "ratio": 1.3434541425908872,
+    "rainShadow": 0.05671340300245902,
+    "elevationBlockY": 13.94355583190918,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 4,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.330036861073662,
+    "rainfallMm": 1240.0028513409368,
+    "evaporationMm": 921.9406634993259,
+    "ratio": 1.3449920373772986,
+    "rainShadow": 0.058524326339811174,
+    "elevationBlockY": 13.924488067626953,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": -4,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.400530646231484,
+    "rainfallMm": 1269.9816115603235,
+    "evaporationMm": 923.2095516321667,
+    "ratio": 1.375615762764899,
+    "rainShadow": 0.05541716153867392,
+    "elevationBlockY": 13.941763877868652,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 0,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.329492981156324,
+    "rainfallMm": 1238.0324412538387,
+    "evaporationMm": 921.9308736608139,
+    "ratio": 1.3428690551796416,
+    "rainShadow": 0.056029819309573355,
+    "elevationBlockY": 13.92292308807373,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "8675309",
+    "x": 4,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.329492981156324,
+    "rainfallMm": 1238.6176497915005,
+    "evaporationMm": 921.9308736608139,
+    "ratio": 1.343503819188941,
+    "rainShadow": 0.05678927454013944,
+    "elevationBlockY": 13.903955459594727,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": -4,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.623427855709796,
+    "rainfallMm": 1313.0600657299028,
+    "evaporationMm": 927.2217014027763,
+    "ratio": 1.4161230952030124,
+    "rainShadow": 0.1085096223737159,
+    "elevationBlockY": 9.367642402648926,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": 0,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.352552376050895,
+    "rainfallMm": 1447.596857619764,
+    "evaporationMm": 922.3459427689161,
+    "ratio": 1.5694727872646412,
+    "rainShadow": 0.10850435732671883,
+    "elevationBlockY": 9.367328643798828,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": 4,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.352552376050895,
+    "rainfallMm": 1447.4000382050478,
+    "evaporationMm": 922.3459427689161,
+    "ratio": 1.5692593972494748,
+    "rainShadow": 0.1082141991538182,
+    "elevationBlockY": 9.367035865783691,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": -4,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.67387969416816,
+    "rainfallMm": 1304.882278354342,
+    "evaporationMm": 928.1298344950269,
+    "ratio": 1.4059264446167674,
+    "rainShadow": 0.11756622418544835,
+    "elevationBlockY": 9.332619667053223,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": 0,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.51767138243844,
+    "rainfallMm": 1367.9993462783077,
+    "evaporationMm": 925.318084883892,
+    "ratio": 1.4784098232014593,
+    "rainShadow": 0.11644157490272601,
+    "elevationBlockY": 9.33228874206543,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": 4,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.51767138243844,
+    "rainfallMm": 1366.6984293925907,
+    "evaporationMm": 925.318084883892,
+    "ratio": 1.477003910027418,
+    "rainShadow": 0.1150292536903737,
+    "elevationBlockY": 9.331979751586914,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": -4,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.673335814250823,
+    "rainfallMm": 1317.9167701383137,
+    "evaporationMm": 928.1200446565149,
+    "ratio": 1.4199852462254035,
+    "rainShadow": 0.11884108197039758,
+    "elevationBlockY": 9.29761028289795,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": 0,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.517127502521102,
+    "rainfallMm": 1380.2836667609988,
+    "evaporationMm": 925.3082950453799,
+    "ratio": 1.4917013866100763,
+    "rainShadow": 0.11612899112138596,
+    "elevationBlockY": 9.297261238098145,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "4303642605",
+    "x": 4,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.517127502521102,
+    "rainfallMm": 1378.637813922191,
+    "evaporationMm": 925.3082950453799,
+    "ratio": 1.4899226790726854,
+    "rainShadow": 0.1142551145190024,
+    "elevationBlockY": 9.29693603515625,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": -4,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.56316472923819,
+    "rainfallMm": 1287.390815282607,
+    "evaporationMm": 926.1369651262874,
+    "ratio": 1.3900652535848834,
+    "rainShadow": 0.041386201580428175,
+    "elevationBlockY": 13.120322227478027,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": 0,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.421192944420323,
+    "rainfallMm": 1329.4437446744578,
+    "evaporationMm": 923.5814729995658,
+    "ratio": 1.4394439294637982,
+    "rainShadow": 0.039597352718879826,
+    "elevationBlockY": 13.112011909484863,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": 4,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.421192944420323,
+    "rainfallMm": 1328.401212644612,
+    "evaporationMm": 923.5814729995658,
+    "ratio": 1.4383151367580937,
+    "rainShadow": 0.03858654047937264,
+    "elevationBlockY": 13.10360050201416,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": -4,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.345393453412914,
+    "rainfallMm": 1316.7285060502786,
+    "evaporationMm": 922.2170821614325,
+    "ratio": 1.42778585597679,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.09139633178711,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": 0,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.375513859371953,
+    "rainfallMm": 1209.9258152885477,
+    "evaporationMm": 922.7592494686951,
+    "ratio": 1.3112042127837753,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.083163261413574,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": 4,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.375513859371953,
+    "rainfallMm": 1209.9258152885477,
+    "evaporationMm": 922.7592494686951,
+    "ratio": 1.3112042127837753,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.074830055236816,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": -4,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.344849573495576,
+    "rainfallMm": 1316.7285060502786,
+    "evaporationMm": 922.2072923229204,
+    "ratio": 1.4278010128651342,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.062409400939941,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": 0,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.374969979454615,
+    "rainfallMm": 1209.9258152885477,
+    "evaporationMm": 922.7494596301831,
+    "ratio": 1.3112181239027312,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.054253578186035,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "67890",
+    "x": 4,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.374969979454615,
+    "rainfallMm": 1209.9258152885477,
+    "evaporationMm": 922.7494596301831,
+    "ratio": 1.3112181239027312,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.045998573303223,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": -4,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.327671599402034,
+    "rainfallMm": 1282.7794010850744,
+    "evaporationMm": 921.8980887892367,
+    "ratio": 1.3914546701900605,
+    "rainShadow": 0.12014910240917576,
+    "elevationBlockY": 10.488991737365723,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": 0,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.52304474908821,
+    "rainfallMm": 1301.5285070403047,
+    "evaporationMm": 925.4148054835878,
+    "ratio": 1.4064271495636747,
+    "rainShadow": 0.12150608317265257,
+    "elevationBlockY": 10.443480491638184,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": 4,
+    "z": -4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.52304474908821,
+    "rainfallMm": 1300.505217206384,
+    "evaporationMm": 925.4148054835878,
+    "ratio": 1.4053213861504925,
+    "rainShadow": 0.12041297923013428,
+    "elevationBlockY": 10.397953987121582,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": -4,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.436480751261232,
+    "rainfallMm": 1325.5568952016413,
+    "evaporationMm": 923.8566535227021,
+    "ratio": 1.4348079760504404,
+    "rainShadow": 0.156554624316236,
+    "elevationBlockY": 10.488876342773438,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": 0,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.318096277425028,
+    "rainfallMm": 1484.565031425595,
+    "evaporationMm": 921.7257329936505,
+    "ratio": 1.610636416327352,
+    "rainShadow": 0.15257873309556735,
+    "elevationBlockY": 10.443375587463379,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": 4,
+    "z": 0,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.318096277425028,
+    "rainfallMm": 1483.1886923905756,
+    "evaporationMm": 921.7257329936505,
+    "ratio": 1.6091431966137728,
+    "rainShadow": 0.1530824050203981,
+    "elevationBlockY": 10.397860527038574,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": -4,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.435936871343895,
+    "rainfallMm": 1326.5190596354512,
+    "evaporationMm": 923.8468636841901,
+    "ratio": 1.4358646565573139,
+    "rainShadow": 0.15761901604832862,
+    "elevationBlockY": 10.488752365112305,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": 0,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.31755239750769,
+    "rainfallMm": 1486.0356830672558,
+    "evaporationMm": 921.7159431551383,
+    "ratio": 1.6122490818379325,
+    "rainShadow": 0.15400783245884977,
+    "elevationBlockY": 10.443263053894043,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  },
+  {
+    "seed": "20260908",
+    "x": 4,
+    "z": 4,
+    "stepBlocks": 4,
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.31755239750769,
+    "rainfallMm": 1483.0671488363137,
+    "evaporationMm": 921.7159431551383,
+    "ratio": 1.609028421228786,
+    "rainShadow": 0.15115586801926778,
+    "elevationBlockY": 10.397758483886719,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "margin": 1.0
+  }
+]

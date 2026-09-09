@@ -1,0 +1,19 @@
+{
+  "baselineMilliseconds": {
+    "samples": 14,
+    "median": 0.00035,
+    "p95NearestRank": 0.0005,
+    "min": 0.0003,
+    "max": 0.0005,
+    "sampleStandardDeviation": 6.462061726588642e-05
+  },
+  "optimizedMilliseconds": {
+    "samples": 14,
+    "median": 0.0004,
+    "p95NearestRank": 0.0006,
+    "min": 0.0003,
+    "max": 0.0006,
+    "sampleStandardDeviation": 8.644378215075665e-05
+  },
+  "scope": "untimed-output phase repeated access to same loaded chunk, identity asserted; excludes new FULL generation"
+}

@@ -1,0 +1,27 @@
+{
+  "initialHead": "8a2e36c",
+  "taskWorktree": "G:/mods/Undisclosed-PA-Addon-task6b",
+  "mainWorktree": "G:/mods/Undisclosed-PA-Addon",
+  "mainWorktreeChangesPreserved": [
+    "LICENSE",
+    "gradle.properties",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "taskWorktreeInitialTrackedChanges": [],
+  "taskWorktreeInitialUntrackedEvidencePreserved": true,
+  "initialDiffCheck": "PASS",
+  "laterCompletedRunsDiscovered": [
+    "determinism-1",
+    "determinism-2",
+    "determinism-24",
+    "determinism-48",
+    "legacy-offline",
+    "optimized-01",
+    "task4",
+    "task5",
+    "task6",
+    "runtime reproduction-1788977426740"
+  ],
+  "baselineProductionHead": "a3140a5d7113137563d275cbaea05a8e94f3b23e",
+  "baselineHarnessHead": "89e34f5251864c8bb7b3041197567e48e7d6a68e"
+}

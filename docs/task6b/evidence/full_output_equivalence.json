@@ -1,0 +1,1852 @@
+{
+  "status": "PASS_CANONICAL_AND_STORED_BIOMES",
+  "canonicalComparisons": [
+    {
+      "blockX": 8192,
+      "blockZ": 0,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:deep_lukewarm_ocean",
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "macroShorelineProfileBlocks": -2351.920789342044,
+      "tileDigest": "98e964064c7ff357dd440bf36b5badf654a323f0a6963a023e58036bd5375ec4"
+    },
+    {
+      "blockX": 8208,
+      "blockZ": 0,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:deep_lukewarm_ocean",
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "macroShorelineProfileBlocks": -2350.7804338443157,
+      "tileDigest": "98e964064c7ff357dd440bf36b5badf654a323f0a6963a023e58036bd5375ec4"
+    },
+    {
+      "blockX": 8224,
+      "blockZ": 0,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:deep_lukewarm_ocean",
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "macroShorelineProfileBlocks": -2350.505408130218,
+      "tileDigest": "98e964064c7ff357dd440bf36b5badf654a323f0a6963a023e58036bd5375ec4"
+    },
+    {
+      "blockX": 8240,
+      "blockZ": 0,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:deep_lukewarm_ocean",
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "macroShorelineProfileBlocks": -2351.167668626213,
+      "tileDigest": "98e964064c7ff357dd440bf36b5badf654a323f0a6963a023e58036bd5375ec4"
+    },
+    {
+      "blockX": 6128,
+      "blockZ": 6240,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:plains",
+      "landform": "PLAINS",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 3464.880538814202,
+      "tileDigest": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388"
+    },
+    {
+      "blockX": 6144,
+      "blockZ": 6240,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:stony_peaks",
+      "landform": "MOUNTAIN",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 3476.251610064121,
+      "tileDigest": "4cbd9d319ee9d4d3ef00dbfa9405a9e13e9418d2cb99bea1dc566ac46f75e1b7"
+    },
+    {
+      "blockX": -28672,
+      "blockZ": -12288,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:plains",
+      "landform": "OTHER",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 748.8291082674037,
+      "tileDigest": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030"
+    },
+    {
+      "blockX": -28656,
+      "blockZ": -12288,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:plains",
+      "landform": "OTHER",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 751.0720291265768,
+      "tileDigest": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030"
+    },
+    {
+      "blockX": -8192,
+      "blockZ": -150000,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:old_growth_pine_taiga",
+      "landform": "PLAINS",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 350.6140354531118,
+      "tileDigest": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3"
+    },
+    {
+      "blockX": 8192,
+      "blockZ": 60000,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:windswept_hills",
+      "landform": "OTHER",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 3177.4006662700635,
+      "tileDigest": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0"
+    },
+    {
+      "blockX": -8192,
+      "blockZ": -500000,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:grove",
+      "landform": "OTHER",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 6021.334660562743,
+      "tileDigest": "643abfaa2f02d7784aa72e079b59c750db3c3cc91c72ff24162d333b80a99274"
+    },
+    {
+      "blockX": 0,
+      "blockZ": -2000000,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:deep_frozen_ocean",
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "macroShorelineProfileBlocks": -4550.911328468801,
+      "tileDigest": "908d2cc0fa1a39fc66fe413c8b2d9ecc45973a4d2e15f4b9c91a3c69a9ab4aa3"
+    },
+    {
+      "blockX": -7969,
+      "blockZ": -8369,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:stony_peaks",
+      "landform": "MOUNTAIN",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 6430.9497956830255,
+      "tileDigest": "f5903c2ba209016f715d7a06bbd80c708e43396f1108effaf941320088b816ed"
+    },
+    {
+      "blockX": -1734,
+      "blockZ": -8369,
+      "exactCanonicalGeography": true,
+      "exactFinalizedTile": true,
+      "exactClimateRawBits": true,
+      "exactSurfaceWinner": true,
+      "surfaceBiome": "minecraft:forest",
+      "landform": "OTHER",
+      "water": "LAND",
+      "macroShorelineProfileBlocks": 55.51114444556572,
+      "tileDigest": "ac40b972b17c8a9f4349848fb78782809d40b1f7609631244f26ba6e0bd6eb14"
+    }
+  ],
+  "fullDigestComparisons": [
+    {
+      "before": "baseline-original",
+      "after": "baseline-repeat",
+      "rows": [
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76",
+          "afterBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76"
+        },
+        {
+          "version": "V1",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef",
+          "afterBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef"
+        },
+        {
+          "version": "V1",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c",
+          "afterBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c"
+        },
+        {
+          "version": "V1",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "c3e45ae57b795a4ecdfc0c59db8856645a05d511875d6c33c98e5797921be234",
+          "afterBlockDigest": "c3e45ae57b795a4ecdfc0c59db8856645a05d511875d6c33c98e5797921be234"
+        },
+        {
+          "version": "V1",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef",
+          "afterBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef"
+        },
+        {
+          "version": "V1",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60",
+          "afterBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60"
+        },
+        {
+          "version": "V1",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143",
+          "afterBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143"
+        },
+        {
+          "version": "V1",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "360a288b8f877cffbd4e08e101c112eca0ec987117fd3c5b8fe376e286101743",
+          "afterBlockDigest": "fd71f447557dcf040ac7642dd892cdbdc54479f8d88e8a388c48900b079a03e1"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "231b79bfff6183a8a38fc99247de566621dced977d7c3c8b2ec42707245db67c",
+          "afterBlockDigest": "71f3af2f3d54c38d4fc81a3ce1ad506efb053fc3b7142677810bfd329e398a78"
+        },
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3",
+          "afterBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98",
+          "afterBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98"
+        },
+        {
+          "version": "V1",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb",
+          "afterBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "dbb16086934f723bfaa9794ca7be938507af768c24a345dcea316b48953eec24",
+          "afterBlockDigest": "cfedd4f77490419f9c40e3a3bbdf64be2d7eaf01ec1f0824a3874eed2a8966d5"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "7da1ebb8e7ee1cf2a475992f771c6b0b2254008427749a7d20d879c8acba9c2e",
+          "afterBlockDigest": "d88009a430a26bea22229f2c64f4195e04f6d93fa821946c29f8135f8b166ce6"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "14c108c4901a672dc3a74b3981d4299e4cf243e7ef74e666bb62e3bfe11ce4e0",
+          "afterBlockDigest": "14c108c4901a672dc3a74b3981d4299e4cf243e7ef74e666bb62e3bfe11ce4e0"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "feab8e59c58abe663931b930e0f47816a90d0f30a921581846deebd2a67a9dcc",
+          "afterBlockDigest": "feab8e59c58abe663931b930e0f47816a90d0f30a921581846deebd2a67a9dcc"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2",
+          "afterBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0",
+          "afterBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91",
+          "afterBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "48d4e5c85836b70ce48971ca98d4130ec2b3d407ede38817250c94041b2db269",
+          "afterBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "efb3585b1b34f420a437544e61bb85c1fbb8355262da90a9f61121c0d6f7f27d",
+          "afterBlockDigest": "2ec0aecc881d749ef05fa984af1a10b1d724086bc989f6fc1746ee1fdd6f4099"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "a46abd166cda4993c01fae49bfee9abec24e9ad3484ba1d42371f7cadaf32e13",
+          "afterBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7",
+          "afterBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7"
+        },
+        {
+          "version": "legacy",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1",
+          "afterBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1"
+        }
+      ]
+    },
+    {
+      "before": "baseline-repeat",
+      "after": "baseline-extended",
+      "rows": [
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76",
+          "afterBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76"
+        },
+        {
+          "version": "V1",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef",
+          "afterBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef"
+        },
+        {
+          "version": "V1",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c",
+          "afterBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c"
+        },
+        {
+          "version": "V1",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "c3e45ae57b795a4ecdfc0c59db8856645a05d511875d6c33c98e5797921be234",
+          "afterBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0"
+        },
+        {
+          "version": "V1",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef",
+          "afterBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef"
+        },
+        {
+          "version": "V1",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60",
+          "afterBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60"
+        },
+        {
+          "version": "V1",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143",
+          "afterBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143"
+        },
+        {
+          "version": "V1",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "fd71f447557dcf040ac7642dd892cdbdc54479f8d88e8a388c48900b079a03e1",
+          "afterBlockDigest": "360a288b8f877cffbd4e08e101c112eca0ec987117fd3c5b8fe376e286101743"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "71f3af2f3d54c38d4fc81a3ce1ad506efb053fc3b7142677810bfd329e398a78",
+          "afterBlockDigest": "98b4149f50c8386e171bb10853e2aab118efee0b04d442cc4f3787b463f50f5b"
+        },
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3",
+          "afterBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98",
+          "afterBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98"
+        },
+        {
+          "version": "V1",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb",
+          "afterBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "cfedd4f77490419f9c40e3a3bbdf64be2d7eaf01ec1f0824a3874eed2a8966d5",
+          "afterBlockDigest": "cfedd4f77490419f9c40e3a3bbdf64be2d7eaf01ec1f0824a3874eed2a8966d5"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "d88009a430a26bea22229f2c64f4195e04f6d93fa821946c29f8135f8b166ce6",
+          "afterBlockDigest": "d88009a430a26bea22229f2c64f4195e04f6d93fa821946c29f8135f8b166ce6"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "14c108c4901a672dc3a74b3981d4299e4cf243e7ef74e666bb62e3bfe11ce4e0",
+          "afterBlockDigest": "4924d3a4d8a268fe851aceb918308430f6b7df2418086e38f55f127c155c4388"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "feab8e59c58abe663931b930e0f47816a90d0f30a921581846deebd2a67a9dcc",
+          "afterBlockDigest": "e288a533b2f5201bc32407ac4606558e552af5c84a5958018dc7e49181d43d50"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2",
+          "afterBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0",
+          "afterBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91",
+          "afterBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8",
+          "afterBlockDigest": "48d4e5c85836b70ce48971ca98d4130ec2b3d407ede38817250c94041b2db269"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2ec0aecc881d749ef05fa984af1a10b1d724086bc989f6fc1746ee1fdd6f4099",
+          "afterBlockDigest": "2ec0aecc881d749ef05fa984af1a10b1d724086bc989f6fc1746ee1fdd6f4099"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89",
+          "afterBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7",
+          "afterBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7"
+        },
+        {
+          "version": "legacy",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1",
+          "afterBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1"
+        }
+      ]
+    },
+    {
+      "before": "baseline-original",
+      "after": "optimized-original",
+      "rows": [
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76",
+          "afterBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76"
+        },
+        {
+          "version": "V1",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef",
+          "afterBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef"
+        },
+        {
+          "version": "V1",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c",
+          "afterBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c"
+        },
+        {
+          "version": "V1",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "c3e45ae57b795a4ecdfc0c59db8856645a05d511875d6c33c98e5797921be234",
+          "afterBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0"
+        },
+        {
+          "version": "V1",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef",
+          "afterBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef"
+        },
+        {
+          "version": "V1",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60",
+          "afterBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60"
+        },
+        {
+          "version": "V1",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143",
+          "afterBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143"
+        },
+        {
+          "version": "V1",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "360a288b8f877cffbd4e08e101c112eca0ec987117fd3c5b8fe376e286101743",
+          "afterBlockDigest": "fd71f447557dcf040ac7642dd892cdbdc54479f8d88e8a388c48900b079a03e1"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "231b79bfff6183a8a38fc99247de566621dced977d7c3c8b2ec42707245db67c",
+          "afterBlockDigest": "d686f414021ae5c8eb79dc73d4c19a4ae282233d70113670547f962b59a98d12"
+        },
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3",
+          "afterBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98",
+          "afterBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98"
+        },
+        {
+          "version": "V1",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb",
+          "afterBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "dbb16086934f723bfaa9794ca7be938507af768c24a345dcea316b48953eec24",
+          "afterBlockDigest": "dbb16086934f723bfaa9794ca7be938507af768c24a345dcea316b48953eec24"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "7da1ebb8e7ee1cf2a475992f771c6b0b2254008427749a7d20d879c8acba9c2e",
+          "afterBlockDigest": "57e6c9d379ba109f0907da1acb065224d6b40ed29fbe201b2582539c48ad2f9a"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "14c108c4901a672dc3a74b3981d4299e4cf243e7ef74e666bb62e3bfe11ce4e0",
+          "afterBlockDigest": "4924d3a4d8a268fe851aceb918308430f6b7df2418086e38f55f127c155c4388"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "feab8e59c58abe663931b930e0f47816a90d0f30a921581846deebd2a67a9dcc",
+          "afterBlockDigest": "e288a533b2f5201bc32407ac4606558e552af5c84a5958018dc7e49181d43d50"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2",
+          "afterBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0",
+          "afterBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91",
+          "afterBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "48d4e5c85836b70ce48971ca98d4130ec2b3d407ede38817250c94041b2db269",
+          "afterBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "efb3585b1b34f420a437544e61bb85c1fbb8355262da90a9f61121c0d6f7f27d",
+          "afterBlockDigest": "1d9ff8225923595536d0f524f18a2a5ef39d18b5b4de2c9e7665fe620c749aed"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "a46abd166cda4993c01fae49bfee9abec24e9ad3484ba1d42371f7cadaf32e13",
+          "afterBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7",
+          "afterBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7"
+        },
+        {
+          "version": "legacy",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1",
+          "afterBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1"
+        }
+      ]
+    },
+    {
+      "before": "baseline-extended",
+      "after": "optimized-extended",
+      "rows": [
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76",
+          "afterBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76"
+        },
+        {
+          "version": "V1",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef",
+          "afterBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef"
+        },
+        {
+          "version": "V1",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c",
+          "afterBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c"
+        },
+        {
+          "version": "V1",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0",
+          "afterBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0"
+        },
+        {
+          "version": "V1",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef",
+          "afterBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef"
+        },
+        {
+          "version": "V1",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60",
+          "afterBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60"
+        },
+        {
+          "version": "V1",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143",
+          "afterBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143"
+        },
+        {
+          "version": "V1",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "360a288b8f877cffbd4e08e101c112eca0ec987117fd3c5b8fe376e286101743",
+          "afterBlockDigest": "360a288b8f877cffbd4e08e101c112eca0ec987117fd3c5b8fe376e286101743"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "98b4149f50c8386e171bb10853e2aab118efee0b04d442cc4f3787b463f50f5b",
+          "afterBlockDigest": "d686f414021ae5c8eb79dc73d4c19a4ae282233d70113670547f962b59a98d12"
+        },
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3",
+          "afterBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98",
+          "afterBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98"
+        },
+        {
+          "version": "V1",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb",
+          "afterBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb"
+        },
+        {
+          "version": "V1",
+          "blockX": -7969,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2f9acba99153a4d68a48fb4d7c5dd2a5377557458ba21c8c6e4608969dddf7ae",
+          "afterBlockDigest": "2f9acba99153a4d68a48fb4d7c5dd2a5377557458ba21c8c6e4608969dddf7ae"
+        },
+        {
+          "version": "V1",
+          "blockX": -1734,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "07c94077d4cd4babb7e7a4b437234f468757ea8e879677870a1a64f43f46939c",
+          "afterBlockDigest": "07c94077d4cd4babb7e7a4b437234f468757ea8e879677870a1a64f43f46939c"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "cfedd4f77490419f9c40e3a3bbdf64be2d7eaf01ec1f0824a3874eed2a8966d5",
+          "afterBlockDigest": "cfedd4f77490419f9c40e3a3bbdf64be2d7eaf01ec1f0824a3874eed2a8966d5"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "d88009a430a26bea22229f2c64f4195e04f6d93fa821946c29f8135f8b166ce6",
+          "afterBlockDigest": "d88009a430a26bea22229f2c64f4195e04f6d93fa821946c29f8135f8b166ce6"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "4924d3a4d8a268fe851aceb918308430f6b7df2418086e38f55f127c155c4388",
+          "afterBlockDigest": "14c108c4901a672dc3a74b3981d4299e4cf243e7ef74e666bb62e3bfe11ce4e0"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "e288a533b2f5201bc32407ac4606558e552af5c84a5958018dc7e49181d43d50",
+          "afterBlockDigest": "e7de15ce9cf80a8a20846712937084d18eddf3c6c3da17e9e02f313bd965d8f9"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2",
+          "afterBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0",
+          "afterBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91",
+          "afterBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "48d4e5c85836b70ce48971ca98d4130ec2b3d407ede38817250c94041b2db269",
+          "afterBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "2ec0aecc881d749ef05fa984af1a10b1d724086bc989f6fc1746ee1fdd6f4099",
+          "afterBlockDigest": "1d9ff8225923595536d0f524f18a2a5ef39d18b5b4de2c9e7665fe620c749aed"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89",
+          "afterBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7",
+          "afterBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7"
+        },
+        {
+          "version": "legacy",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1",
+          "afterBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1"
+        },
+        {
+          "version": "legacy",
+          "blockX": -7969,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "1ce1ca4f8e96ee40c25686003cbdf1f4ce9af3377d7f626514a074e8882213ee",
+          "afterBlockDigest": "d4e754f276ebebfbacd87c6cfc5664dbf0377b33508149627e11ea5f316cad27"
+        },
+        {
+          "version": "legacy",
+          "blockX": -1734,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "96364e5d066cb9e591fa244addf658d2106b60ce63bb2cf47173a6d95c5a1a50",
+          "afterBlockDigest": "96364e5d066cb9e591fa244addf658d2106b60ce63bb2cf47173a6d95c5a1a50"
+        }
+      ]
+    },
+    {
+      "before": "optimized-original",
+      "after": "optimized-extended",
+      "rows": [
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76",
+          "afterBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76"
+        },
+        {
+          "version": "V1",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef",
+          "afterBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef"
+        },
+        {
+          "version": "V1",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c",
+          "afterBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c"
+        },
+        {
+          "version": "V1",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0",
+          "afterBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0"
+        },
+        {
+          "version": "V1",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef",
+          "afterBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef"
+        },
+        {
+          "version": "V1",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60",
+          "afterBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60"
+        },
+        {
+          "version": "V1",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143",
+          "afterBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143"
+        },
+        {
+          "version": "V1",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "fd71f447557dcf040ac7642dd892cdbdc54479f8d88e8a388c48900b079a03e1",
+          "afterBlockDigest": "360a288b8f877cffbd4e08e101c112eca0ec987117fd3c5b8fe376e286101743"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "d686f414021ae5c8eb79dc73d4c19a4ae282233d70113670547f962b59a98d12",
+          "afterBlockDigest": "d686f414021ae5c8eb79dc73d4c19a4ae282233d70113670547f962b59a98d12"
+        },
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3",
+          "afterBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98",
+          "afterBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98"
+        },
+        {
+          "version": "V1",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb",
+          "afterBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "dbb16086934f723bfaa9794ca7be938507af768c24a345dcea316b48953eec24",
+          "afterBlockDigest": "cfedd4f77490419f9c40e3a3bbdf64be2d7eaf01ec1f0824a3874eed2a8966d5"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "57e6c9d379ba109f0907da1acb065224d6b40ed29fbe201b2582539c48ad2f9a",
+          "afterBlockDigest": "d88009a430a26bea22229f2c64f4195e04f6d93fa821946c29f8135f8b166ce6"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "4924d3a4d8a268fe851aceb918308430f6b7df2418086e38f55f127c155c4388",
+          "afterBlockDigest": "14c108c4901a672dc3a74b3981d4299e4cf243e7ef74e666bb62e3bfe11ce4e0"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "e288a533b2f5201bc32407ac4606558e552af5c84a5958018dc7e49181d43d50",
+          "afterBlockDigest": "e7de15ce9cf80a8a20846712937084d18eddf3c6c3da17e9e02f313bd965d8f9"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2",
+          "afterBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0",
+          "afterBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91",
+          "afterBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8",
+          "afterBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "1d9ff8225923595536d0f524f18a2a5ef39d18b5b4de2c9e7665fe620c749aed",
+          "afterBlockDigest": "1d9ff8225923595536d0f524f18a2a5ef39d18b5b4de2c9e7665fe620c749aed"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89",
+          "afterBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7",
+          "afterBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7"
+        },
+        {
+          "version": "legacy",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1",
+          "afterBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1"
+        }
+      ]
+    },
+    {
+      "before": "optimized-extended",
+      "after": "optimized-24",
+      "rows": [
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76",
+          "afterBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76"
+        },
+        {
+          "version": "V1",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef",
+          "afterBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef"
+        },
+        {
+          "version": "V1",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c",
+          "afterBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c"
+        },
+        {
+          "version": "V1",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0",
+          "afterBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0"
+        },
+        {
+          "version": "V1",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef",
+          "afterBlockDigest": "7d6f4e3b5c6c4bb19296aff6e81f82e26288f157ca7afcc70357e6f89b86ef40"
+        },
+        {
+          "version": "V1",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60",
+          "afterBlockDigest": "707be8fd6c5539f06fab8ae788ab7ed4a2a8f99222e541c85a5d010eb185b44a"
+        },
+        {
+          "version": "V1",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143",
+          "afterBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143"
+        },
+        {
+          "version": "V1",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "360a288b8f877cffbd4e08e101c112eca0ec987117fd3c5b8fe376e286101743",
+          "afterBlockDigest": "fd71f447557dcf040ac7642dd892cdbdc54479f8d88e8a388c48900b079a03e1"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "d686f414021ae5c8eb79dc73d4c19a4ae282233d70113670547f962b59a98d12",
+          "afterBlockDigest": "231b79bfff6183a8a38fc99247de566621dced977d7c3c8b2ec42707245db67c"
+        },
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3",
+          "afterBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98",
+          "afterBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98"
+        },
+        {
+          "version": "V1",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb",
+          "afterBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb"
+        },
+        {
+          "version": "V1",
+          "blockX": -7969,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "2f9acba99153a4d68a48fb4d7c5dd2a5377557458ba21c8c6e4608969dddf7ae",
+          "afterBlockDigest": "9ca5ebe83ad929bf68f8eb9134dd33a3fef69693301d7f0b3fe64987569f5542"
+        },
+        {
+          "version": "V1",
+          "blockX": -1734,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "07c94077d4cd4babb7e7a4b437234f468757ea8e879677870a1a64f43f46939c",
+          "afterBlockDigest": "07c94077d4cd4babb7e7a4b437234f468757ea8e879677870a1a64f43f46939c"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "cfedd4f77490419f9c40e3a3bbdf64be2d7eaf01ec1f0824a3874eed2a8966d5",
+          "afterBlockDigest": "21257213f15d07103b4507126bd29911fc084e7a0e11984c953873d0e9d348aa"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "d88009a430a26bea22229f2c64f4195e04f6d93fa821946c29f8135f8b166ce6",
+          "afterBlockDigest": "7da1ebb8e7ee1cf2a475992f771c6b0b2254008427749a7d20d879c8acba9c2e"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "14c108c4901a672dc3a74b3981d4299e4cf243e7ef74e666bb62e3bfe11ce4e0",
+          "afterBlockDigest": "4924d3a4d8a268fe851aceb918308430f6b7df2418086e38f55f127c155c4388"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "e7de15ce9cf80a8a20846712937084d18eddf3c6c3da17e9e02f313bd965d8f9",
+          "afterBlockDigest": "3c3300d669dcf2f1b887af31c2a8b2fd7330820b9a5c0678eb2dcea458fedaca"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2",
+          "afterBlockDigest": "f5f378db10647eac0ed1e8da131d00759207e30f5a7b675f1b43c3a930867c5e"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0",
+          "afterBlockDigest": "bb3be7dd55f45ed778c5380c0835e7d4d1c138ff217d8325009e73f5cd9ea2f3"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91",
+          "afterBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8",
+          "afterBlockDigest": "48d4e5c85836b70ce48971ca98d4130ec2b3d407ede38817250c94041b2db269"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "1d9ff8225923595536d0f524f18a2a5ef39d18b5b4de2c9e7665fe620c749aed",
+          "afterBlockDigest": "2856021eb2a59676f0f4f9d110fd7be03abd1a125a54bdb1193993fad10fcdd8"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89",
+          "afterBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7",
+          "afterBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7"
+        },
+        {
+          "version": "legacy",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1",
+          "afterBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1"
+        },
+        {
+          "version": "legacy",
+          "blockX": -7969,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "d4e754f276ebebfbacd87c6cfc5664dbf0377b33508149627e11ea5f316cad27",
+          "afterBlockDigest": "d9840d35a8a2d89c42643717b7075657abff5a2bfe4df35a2874211faac36a9b"
+        },
+        {
+          "version": "legacy",
+          "blockX": -1734,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "96364e5d066cb9e591fa244addf658d2106b60ce63bb2cf47173a6d95c5a1a50",
+          "afterBlockDigest": "96364e5d066cb9e591fa244addf658d2106b60ce63bb2cf47173a6d95c5a1a50"
+        }
+      ]
+    },
+    {
+      "before": "optimized-extended",
+      "after": "optimized-48",
+      "rows": [
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76",
+          "afterBlockDigest": "41bab048fa97f8125c6bd99b0ec7c8c59ac3ed429225ea9797186d96eed06d76"
+        },
+        {
+          "version": "V1",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef",
+          "afterBlockDigest": "db2d200c88c560167bc90638314e4ea1d0de67f520a4836a0f2d6d490c7005ef"
+        },
+        {
+          "version": "V1",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c",
+          "afterBlockDigest": "13eced8e364994744024557b1d86ad10f7d1765f32729255e814ad9555cc357c"
+        },
+        {
+          "version": "V1",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0",
+          "afterBlockDigest": "1d12ada5c0b812aae3f7189cbe162f1c3a5772e534e5cbd1ba9b4f18a42fc6b0"
+        },
+        {
+          "version": "V1",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef",
+          "afterBlockDigest": "b8690b0f57b0b186d8872c0437372bd6c8f3d7a66a31c1d179c2b89f54a57bef"
+        },
+        {
+          "version": "V1",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60",
+          "afterBlockDigest": "bfbdca0767912eeecc65573d162813f7c5d1f352f470c31467f31911602e0e60"
+        },
+        {
+          "version": "V1",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143",
+          "afterBlockDigest": "288e2115380889bc9de964d4a77edc09b6fadd9191e5dc9835f38de9b38b9143"
+        },
+        {
+          "version": "V1",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "360a288b8f877cffbd4e08e101c112eca0ec987117fd3c5b8fe376e286101743",
+          "afterBlockDigest": "fd71f447557dcf040ac7642dd892cdbdc54479f8d88e8a388c48900b079a03e1"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "d686f414021ae5c8eb79dc73d4c19a4ae282233d70113670547f962b59a98d12",
+          "afterBlockDigest": "5d98a8fe1956493ca878778213b8c2ce0761e427dab2c84fb71bddacb8a9f094"
+        },
+        {
+          "version": "V1",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3",
+          "afterBlockDigest": "2784714a0f7c834e38e582f784a6afe7b4fa48145a6d91a70d8bdd408b0b1da3"
+        },
+        {
+          "version": "V1",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98",
+          "afterBlockDigest": "9ba25046d7a21bad8c81f415ee77406d9751451d067c17cf4789518f0b12ff98"
+        },
+        {
+          "version": "V1",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb",
+          "afterBlockDigest": "8bb2776f2ae10b9c032c89e19db0be7fa6b5bd143c4af11127790883d8be7acb"
+        },
+        {
+          "version": "V1",
+          "blockX": -7969,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "2f9acba99153a4d68a48fb4d7c5dd2a5377557458ba21c8c6e4608969dddf7ae",
+          "afterBlockDigest": "2f9acba99153a4d68a48fb4d7c5dd2a5377557458ba21c8c6e4608969dddf7ae"
+        },
+        {
+          "version": "V1",
+          "blockX": -1734,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "07c94077d4cd4babb7e7a4b437234f468757ea8e879677870a1a64f43f46939c",
+          "afterBlockDigest": "10e797b499215aee62cc649cc38cb68be471cc1f04d42a5905a668740dc265a7"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "cfedd4f77490419f9c40e3a3bbdf64be2d7eaf01ec1f0824a3874eed2a8966d5",
+          "afterBlockDigest": "21257213f15d07103b4507126bd29911fc084e7a0e11984c953873d0e9d348aa"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8208,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "d88009a430a26bea22229f2c64f4195e04f6d93fa821946c29f8135f8b166ce6",
+          "afterBlockDigest": "7da1ebb8e7ee1cf2a475992f771c6b0b2254008427749a7d20d879c8acba9c2e"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8224,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "14c108c4901a672dc3a74b3981d4299e4cf243e7ef74e666bb62e3bfe11ce4e0",
+          "afterBlockDigest": "4924d3a4d8a268fe851aceb918308430f6b7df2418086e38f55f127c155c4388"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8240,
+          "blockZ": 0,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "e7de15ce9cf80a8a20846712937084d18eddf3c6c3da17e9e02f313bd965d8f9",
+          "afterBlockDigest": "e288a533b2f5201bc32407ac4606558e552af5c84a5958018dc7e49181d43d50"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6128,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "a5b8832bda06a9fcd14863c6a5fbe9a550d2e06c765c3d7a52107ea723412fc2",
+          "afterBlockDigest": "f5f378db10647eac0ed1e8da131d00759207e30f5a7b675f1b43c3a930867c5e"
+        },
+        {
+          "version": "legacy",
+          "blockX": 6144,
+          "blockZ": 6240,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "6afbe7d0707866595fb4c5c9eb0c15ef6d83faa5c8d26760aa9f3aeef1f658e0",
+          "afterBlockDigest": "bb3be7dd55f45ed778c5380c0835e7d4d1c138ff217d8325009e73f5cd9ea2f3"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28672,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91",
+          "afterBlockDigest": "08de008fa1f4da25e2de2ef51b9bc88751f9dbb8575b0b884e06ab455378da91"
+        },
+        {
+          "version": "legacy",
+          "blockX": -28656,
+          "blockZ": -12288,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8",
+          "afterBlockDigest": "303b925ada31047d514fb1e2eac2d44ca0d1fd7f051b3aa25a4a5739bb5a51a8"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -150000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "1d9ff8225923595536d0f524f18a2a5ef39d18b5b4de2c9e7665fe620c749aed",
+          "afterBlockDigest": "590b2892a42b0f8fe7eaaa142582d96708f1b20fd29e22bba239bee13a9eb3d3"
+        },
+        {
+          "version": "legacy",
+          "blockX": 8192,
+          "blockZ": 60000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89",
+          "afterBlockDigest": "61064b70ce46c42fd302b5a02f4588f39c614eee6a2cd7d639a9cde17a11bd89"
+        },
+        {
+          "version": "legacy",
+          "blockX": -8192,
+          "blockZ": -500000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7",
+          "afterBlockDigest": "4dc3f75ade972c36e78f14ee7462efa06ac17ac0d5647bf708cdcb88ebc567c7"
+        },
+        {
+          "version": "legacy",
+          "blockX": 0,
+          "blockZ": -2000000,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1",
+          "afterBlockDigest": "300bc28a4f7416f08770f67f4a0f7d1bc3a4e654dc52fe58313b78a76852c6e1"
+        },
+        {
+          "version": "legacy",
+          "blockX": -7969,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": false,
+          "beforeBlockDigest": "d4e754f276ebebfbacd87c6cfc5664dbf0377b33508149627e11ea5f316cad27",
+          "afterBlockDigest": "c571de7696f3b077a3b5b045314ec5fc5c9fbf49e3d7a34b84d9c1de0a61a85d"
+        },
+        {
+          "version": "legacy",
+          "blockX": -1734,
+          "blockZ": -8369,
+          "storedBiomeDigestExact": true,
+          "blockDigestExact": true,
+          "beforeBlockDigest": "96364e5d066cb9e591fa244addf658d2106b60ce63bb2cf47173a6d95c5a1a50",
+          "afterBlockDigest": "96364e5d066cb9e591fa244addf658d2106b60ce63bb2cf47173a6d95c5a1a50"
+        }
+      ]
+    }
+  ],
+  "blockScope": "Block digests are diagnostic: repeated baseline and unchanged legacy feature scheduling can vary. Canonical geography, finalized tiles, raw climate and stored quart biomes require exact equality; block differences are never accepted by epsilon."
+}

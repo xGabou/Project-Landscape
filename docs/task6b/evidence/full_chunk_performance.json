@@ -1,0 +1,553 @@
+{
+  "scope": "fresh worlds, fixed ordered requests to FULL with prerequisite neighbors; hashing and exact-output validation outside timed calls",
+  "p95Caveat": "nearest-rank p95 of 12 or 14 per-chunk observations equals the largest observation; descriptive corpus tail, not a population tail estimate",
+  "runs": {
+    "baseline-original": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 216.892802,
+        "newFullProcessCpuSeconds": 618.5,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1535.4690999999998,
+          "p95NearestRank": 52061.602,
+          "min": 95.1957,
+          "max": 52061.602,
+          "sampleStandardDeviation": 22211.210668395892
+        },
+        "newFullThroughputChunksPerSecond": 0.05532687064460535,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 73027788792,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 9.0755873,
+        "newFullProcessCpuSeconds": 40.109375,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 647.5731000000001,
+          "p95NearestRank": 2176.4181,
+          "min": 83.3285,
+          "max": 2176.4181,
+          "sampleStandardDeviation": 725.4215877010697
+        },
+        "newFullThroughputChunksPerSecond": 1.3222284799133606,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 4931192032,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "baseline-repeat": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 211.1963163,
+        "newFullProcessCpuSeconds": 635.125,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1514.9018,
+          "p95NearestRank": 50042.3817,
+          "min": 108.8658,
+          "max": 50042.3817,
+          "sampleStandardDeviation": 21528.127783315384
+        },
+        "newFullThroughputChunksPerSecond": 0.05681917284463545,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 73287522360,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 8.5899979,
+        "newFullProcessCpuSeconds": 37.9375,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 611.02835,
+          "p95NearestRank": 2185.2042,
+          "min": 70.3755,
+          "max": 2185.2042,
+          "sampleStandardDeviation": 696.6269905266747
+        },
+        "newFullThroughputChunksPerSecond": 1.396973566198427,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 5295291624,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "baseline-extended": {
+      "V1": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 247.7816504,
+        "newFullProcessCpuSeconds": 740.640625,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 1713.5098000000003,
+          "p95NearestRank": 50317.6443,
+          "min": 88.8423,
+          "max": 50317.6443,
+          "sampleStandardDeviation": 20984.81255701281
+        },
+        "newFullThroughputChunksPerSecond": 0.05650135906916213,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 87026538040,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 11.2840861,
+        "newFullProcessCpuSeconds": 48.171875,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 712.2462,
+          "p95NearestRank": 2281.7105,
+          "min": 73.4944,
+          "max": 2281.7105,
+          "sampleStandardDeviation": 697.44923785328
+        },
+        "newFullThroughputChunksPerSecond": 1.240685322314228,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 6398137608,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "optimized-original": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 112.8832562,
+        "newFullProcessCpuSeconds": 485.578125,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1266.29335,
+          "p95NearestRank": 29111.1155,
+          "min": 100.5821,
+          "max": 29111.1155,
+          "sampleStandardDeviation": 11489.593699364119
+        },
+        "newFullThroughputChunksPerSecond": 0.10630451675436343,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 70756133416,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 8.1655197,
+        "newFullProcessCpuSeconds": 33.0,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 580.68845,
+          "p95NearestRank": 2057.1878,
+          "min": 70.4181,
+          "max": 2057.1878,
+          "sampleStandardDeviation": 666.7546641331211
+        },
+        "newFullThroughputChunksPerSecond": 1.4695941521027742,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 4473639920,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "optimized-extended": {
+      "V1": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 169.8338428,
+        "newFullProcessCpuSeconds": 704.46875,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 1662.9696999999999,
+          "p95NearestRank": 35444.5077,
+          "min": 106.8311,
+          "max": 35444.5077,
+          "sampleStandardDeviation": 14396.281983613988
+        },
+        "newFullThroughputChunksPerSecond": 0.08243351130249524,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 84762131240,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 10.4623092,
+        "newFullProcessCpuSeconds": 45.921875,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 682.5226,
+          "p95NearestRank": 2105.5705,
+          "min": 71.8933,
+          "max": 2105.5705,
+          "sampleStandardDeviation": 637.2274042919239
+        },
+        "newFullThroughputChunksPerSecond": 1.3381367088634697,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 6191252968,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "optimized-24": {
+      "V1": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 152.3670223,
+        "newFullProcessCpuSeconds": 818.90625,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 1824.4876,
+          "p95NearestRank": 30424.0128,
+          "min": 98.5294,
+          "max": 30424.0128,
+          "sampleStandardDeviation": 12522.277328755912
+        },
+        "newFullThroughputChunksPerSecond": 0.0918833996272171,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 84398684152,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 10.6536645,
+        "newFullProcessCpuSeconds": 51.359375,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 682.1276,
+          "p95NearestRank": 2029.5398,
+          "min": 101.929,
+          "max": 2029.5398,
+          "sampleStandardDeviation": 614.310722110753
+        },
+        "newFullThroughputChunksPerSecond": 1.3141018285304555,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 6501366352,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "optimized-48": {
+      "V1": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 134.6590886,
+        "newFullProcessCpuSeconds": 744.015625,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 1692.3424499999999,
+          "p95NearestRank": 28320.2344,
+          "min": 94.3307,
+          "max": 28320.2344,
+          "sampleStandardDeviation": 11109.909520489544
+        },
+        "newFullThroughputChunksPerSecond": 0.10396624650851825,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 83815923776,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 10.1917538,
+        "newFullProcessCpuSeconds": 55.765625,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 677.41365,
+          "p95NearestRank": 2066.8331,
+          "min": 99.8306,
+          "max": 2066.8331,
+          "sampleStandardDeviation": 615.600238579567
+        },
+        "newFullThroughputChunksPerSecond": 1.3736595560226346,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 6050179440,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    }
+  },
+  "common12PointRuns": {
+    "baseline-original": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 216.892802,
+        "newFullProcessCpuSeconds": 618.5,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1535.4690999999998,
+          "p95NearestRank": 52061.602,
+          "min": 95.1957,
+          "max": 52061.602,
+          "sampleStandardDeviation": 22211.210668395892
+        },
+        "newFullThroughputChunksPerSecond": 0.05532687064460535,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 73027788792,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 9.0755873,
+        "newFullProcessCpuSeconds": 40.109375,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 647.5731000000001,
+          "p95NearestRank": 2176.4181,
+          "min": 83.3285,
+          "max": 2176.4181,
+          "sampleStandardDeviation": 725.4215877010697
+        },
+        "newFullThroughputChunksPerSecond": 1.3222284799133606,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 4931192032,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "baseline-repeat": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 211.1963163,
+        "newFullProcessCpuSeconds": 635.125,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1514.9018,
+          "p95NearestRank": 50042.3817,
+          "min": 108.8658,
+          "max": 50042.3817,
+          "sampleStandardDeviation": 21528.127783315384
+        },
+        "newFullThroughputChunksPerSecond": 0.05681917284463545,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 73287522360,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 8.5899979,
+        "newFullProcessCpuSeconds": 37.9375,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 611.02835,
+          "p95NearestRank": 2185.2042,
+          "min": 70.3755,
+          "max": 2185.2042,
+          "sampleStandardDeviation": 696.6269905266747
+        },
+        "newFullThroughputChunksPerSecond": 1.396973566198427,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 5295291624,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "baseline-extended": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 211.8897673,
+        "newFullProcessCpuSeconds": 647.03125,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1602.4844,
+          "p95NearestRank": 50317.6443,
+          "min": 88.8423,
+          "max": 50317.6443,
+          "sampleStandardDeviation": 21646.200853709102
+        },
+        "newFullThroughputChunksPerSecond": 0.0566332209096725,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 73631465616,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 9.3824349,
+        "newFullProcessCpuSeconds": 41.0,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 673.1931500000001,
+          "p95NearestRank": 2281.7105,
+          "min": 73.4944,
+          "max": 2281.7105,
+          "sampleStandardDeviation": 755.262424293382
+        },
+        "newFullThroughputChunksPerSecond": 1.2789856927224723,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 5272606672,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "optimized-original": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 112.8832562,
+        "newFullProcessCpuSeconds": 485.578125,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1266.29335,
+          "p95NearestRank": 29111.1155,
+          "min": 100.5821,
+          "max": 29111.1155,
+          "sampleStandardDeviation": 11489.593699364119
+        },
+        "newFullThroughputChunksPerSecond": 0.10630451675436343,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 70756133416,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 8.1655197,
+        "newFullProcessCpuSeconds": 33.0,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 580.68845,
+          "p95NearestRank": 2057.1878,
+          "min": 70.4181,
+          "max": 2057.1878,
+          "sampleStandardDeviation": 666.7546641331211
+        },
+        "newFullThroughputChunksPerSecond": 1.4695941521027742,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 4473639920,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "optimized-extended": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 146.4225125,
+        "newFullProcessCpuSeconds": 620.140625,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1509.4447,
+          "p95NearestRank": 35444.5077,
+          "min": 106.8311,
+          "max": 35444.5077,
+          "sampleStandardDeviation": 14972.794399505814
+        },
+        "newFullThroughputChunksPerSecond": 0.08195461063407172,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 71773480808,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 8.6685161,
+        "newFullProcessCpuSeconds": 39.3125,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 631.8407500000001,
+          "p95NearestRank": 2105.5705,
+          "min": 71.8933,
+          "max": 2105.5705,
+          "sampleStandardDeviation": 689.1551454829581
+        },
+        "newFullThroughputChunksPerSecond": 1.3843199760568017,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 5087609280,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "optimized-24": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 129.2734048,
+        "newFullProcessCpuSeconds": 720.140625,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1566.4699,
+          "p95NearestRank": 30424.0128,
+          "min": 98.5294,
+          "max": 30424.0128,
+          "sampleStandardDeviation": 12881.055276062001
+        },
+        "newFullThroughputChunksPerSecond": 0.09282651770923264,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 71386852216,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 9.0698549,
+        "newFullProcessCpuSeconds": 42.921875,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 580.27405,
+          "p95NearestRank": 2029.5398,
+          "min": 101.929,
+          "max": 2029.5398,
+          "sampleStandardDeviation": 667.568313870334
+        },
+        "newFullThroughputChunksPerSecond": 1.323064165006653,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 5375813992,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    },
+    "optimized-48": {
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 114.8488097,
+        "newFullProcessCpuSeconds": 656.046875,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1636.1115,
+          "p95NearestRank": 28320.2344,
+          "min": 94.3307,
+          "max": 28320.2344,
+          "sampleStandardDeviation": 11430.546048606602
+        },
+        "newFullThroughputChunksPerSecond": 0.10448519258793851,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 70924236328,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 8.4709287,
+        "newFullProcessCpuSeconds": 47.234375,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 603.4117,
+          "p95NearestRank": 2066.8331,
+          "min": 99.8306,
+          "max": 2066.8331,
+          "sampleStandardDeviation": 666.3163967627625
+        },
+        "newFullThroughputChunksPerSecond": 1.4166097278094196,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 4984509368,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      }
+    }
+  },
+  "pairedCommon12": [
+    {
+      "baseline": "baseline-original",
+      "optimized": "optimized-original",
+      "chunks": 12,
+      "baselineWallSeconds": 216.892802,
+      "optimizedWallSeconds": 112.8832562,
+      "reductionPercent": 47.954355719006294
+    },
+    {
+      "baseline": "baseline-repeat",
+      "optimized": "optimized-extended",
+      "chunks": 12,
+      "baselineWallSeconds": 211.1963163,
+      "optimizedWallSeconds": 146.4225125,
+      "reductionPercent": 30.669949615972534
+    }
+  ],
+  "extended14Pair": {
+    "chunks": 14,
+    "baselineWallSeconds": 247.7816504,
+    "optimizedWallSeconds": 169.8338428,
+    "reductionPercent": 31.45826475615403,
+    "scope": "same appended mountain/coastal coverage; one independent 8-worker extended pair, supported by original 12-point repeats"
+  },
+  "common12BaselineRunWallSpread": {
+    "samples": 3,
+    "median": 211.8897673,
+    "p95NearestRank": 216.892802,
+    "min": 211.1963163,
+    "max": 216.892802,
+    "sampleStandardDeviation": 3.1080856870724936
+  },
+  "common12OptimizedRunWallSpread": {
+    "samples": 2,
+    "median": 129.65288435000002,
+    "p95NearestRank": 146.4225125,
+    "min": 112.8832562,
+    "max": 146.4225125,
+    "sampleStandardDeviation": 23.71583556568364
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "checked": 9,
+    "exact": true,
+    "stats": {
+      "failures": 0,
+      "capacity": 1024,
+      "inFlight": 0,
+      "retainedArrayBytes": 524288,
+      "entries": 4,
+      "hits": 5,
+      "evictions": 0,
+      "misses": 4,
+      "waits": 0
+    }
+  },
+  {
+    "checked": 9,
+    "exact": true,
+    "stats": {
+      "failures": 0,
+      "capacity": 1024,
+      "inFlight": 0,
+      "retainedArrayBytes": 524288,
+      "entries": 4,
+      "hits": 5,
+      "evictions": 0,
+      "misses": 4,
+      "waits": 0
+    }
+  }
+]

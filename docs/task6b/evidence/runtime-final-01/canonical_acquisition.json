@@ -1,0 +1,90 @@
+[
+  {
+    "targets": 17,
+    "exactInputPoints": 1615,
+    "elapsedNs": 48045715500,
+    "surfaceCache": {
+      "failures": 0,
+      "capacity": 1024,
+      "inFlight": 0,
+      "retainedArrayBytes": 126877696,
+      "entries": 968,
+      "hits": 647,
+      "evictions": 0,
+      "misses": 968,
+      "waits": 0
+    },
+    "exactReferenceChecks": 17,
+    "evictions": 0,
+    "arraysPerTile": 2,
+    "tileSideBlocks": 128,
+    "ordering": "tile Z, tile X, block Z, block X",
+    "scope": "full canonical terrain and exact profile coordinates; point records retained only for this bounded survey"
+  },
+  {
+    "targets": 17,
+    "exactInputPoints": 1615,
+    "elapsedNs": 49577418700,
+    "surfaceCache": {
+      "failures": 0,
+      "capacity": 1024,
+      "inFlight": 0,
+      "retainedArrayBytes": 127008768,
+      "entries": 969,
+      "hits": 646,
+      "evictions": 0,
+      "misses": 969,
+      "waits": 0
+    },
+    "exactReferenceChecks": 17,
+    "evictions": 0,
+    "arraysPerTile": 2,
+    "tileSideBlocks": 128,
+    "ordering": "tile Z, tile X, block Z, block X",
+    "scope": "full canonical terrain and exact profile coordinates; point records retained only for this bounded survey"
+  },
+  {
+    "targets": 10,
+    "exactInputPoints": 950,
+    "elapsedNs": 15145724600,
+    "surfaceCache": {
+      "failures": 0,
+      "capacity": 1024,
+      "inFlight": 0,
+      "retainedArrayBytes": 39190528,
+      "entries": 299,
+      "hits": 651,
+      "evictions": 0,
+      "misses": 299,
+      "waits": 0
+    },
+    "exactReferenceChecks": 10,
+    "evictions": 0,
+    "arraysPerTile": 2,
+    "tileSideBlocks": 128,
+    "ordering": "tile Z, tile X, block Z, block X",
+    "scope": "full canonical terrain and exact profile coordinates; point records retained only for this bounded survey"
+  },
+  {
+    "targets": 10,
+    "exactInputPoints": 950,
+    "elapsedNs": 15497514100,
+    "surfaceCache": {
+      "failures": 0,
+      "capacity": 1024,
+      "inFlight": 0,
+      "retainedArrayBytes": 39583744,
+      "entries": 302,
+      "hits": 648,
+      "evictions": 0,
+      "misses": 302,
+      "waits": 0
+    },
+    "exactReferenceChecks": 10,
+    "evictions": 0,
+    "arraysPerTile": 2,
+    "tileSideBlocks": 128,
+    "ordering": "tile Z, tile X, block Z, block X",
+    "scope": "full canonical terrain and exact profile coordinates; point records retained only for this bounded survey"
+  }
+]

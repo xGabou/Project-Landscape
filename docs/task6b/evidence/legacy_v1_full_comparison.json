@@ -1,0 +1,162 @@
+{
+  "contemporary": [
+    {
+      "run": "optimized-original",
+      "V1": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 112.8832562,
+        "newFullProcessCpuSeconds": 485.578125,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 1266.29335,
+          "p95NearestRank": 29111.1155,
+          "min": 100.5821,
+          "max": 29111.1155,
+          "sampleStandardDeviation": 11489.593699364119
+        },
+        "newFullThroughputChunksPerSecond": 0.10630451675436343,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 70756133416,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 12,
+        "newFullWallSeconds": 8.1655197,
+        "newFullProcessCpuSeconds": 33.0,
+        "newFullTimingMilliseconds": {
+          "samples": 12,
+          "median": 580.68845,
+          "p95NearestRank": 2057.1878,
+          "min": 70.4181,
+          "max": 2057.1878,
+          "sampleStandardDeviation": 666.7546641331211
+        },
+        "newFullThroughputChunksPerSecond": 1.4695941521027742,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 4473639920,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "relativeTimeOverheadPercent": 1282.4381098486604,
+      "scope": "same seed and coordinates, V1 world followed by legacy world in the same JVM; version-specific terrain is expected, no identical-terrain claim"
+    },
+    {
+      "run": "optimized-extended",
+      "V1": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 169.8338428,
+        "newFullProcessCpuSeconds": 704.46875,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 1662.9696999999999,
+          "p95NearestRank": 35444.5077,
+          "min": 106.8311,
+          "max": 35444.5077,
+          "sampleStandardDeviation": 14396.281983613988
+        },
+        "newFullThroughputChunksPerSecond": 0.08243351130249524,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 84762131240,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 10.4623092,
+        "newFullProcessCpuSeconds": 45.921875,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 682.5226,
+          "p95NearestRank": 2105.5705,
+          "min": 71.8933,
+          "max": 2105.5705,
+          "sampleStandardDeviation": 637.2274042919239
+        },
+        "newFullThroughputChunksPerSecond": 1.3381367088634697,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 6191252968,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "relativeTimeOverheadPercent": 1523.2921389859137,
+      "scope": "same seed and coordinates, V1 world followed by legacy world in the same JVM; version-specific terrain is expected, no identical-terrain claim"
+    },
+    {
+      "run": "optimized-24",
+      "V1": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 152.3670223,
+        "newFullProcessCpuSeconds": 818.90625,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 1824.4876,
+          "p95NearestRank": 30424.0128,
+          "min": 98.5294,
+          "max": 30424.0128,
+          "sampleStandardDeviation": 12522.277328755912
+        },
+        "newFullThroughputChunksPerSecond": 0.0918833996272171,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 84398684152,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 10.6536645,
+        "newFullProcessCpuSeconds": 51.359375,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 682.1276,
+          "p95NearestRank": 2029.5398,
+          "min": 101.929,
+          "max": 2029.5398,
+          "sampleStandardDeviation": 614.310722110753
+        },
+        "newFullThroughputChunksPerSecond": 1.3141018285304555,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 6501366352,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "relativeTimeOverheadPercent": 1330.184161515505,
+      "scope": "same seed and coordinates, V1 world followed by legacy world in the same JVM; version-specific terrain is expected, no identical-terrain claim"
+    },
+    {
+      "run": "optimized-48",
+      "V1": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 134.6590886,
+        "newFullProcessCpuSeconds": 744.015625,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 1692.3424499999999,
+          "p95NearestRank": 28320.2344,
+          "min": 94.3307,
+          "max": 28320.2344,
+          "sampleStandardDeviation": 11109.909520489544
+        },
+        "newFullThroughputChunksPerSecond": 0.10396624650851825,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 83815923776,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "legacy": {
+        "newFullChunks": 14,
+        "newFullWallSeconds": 10.1917538,
+        "newFullProcessCpuSeconds": 55.765625,
+        "newFullTimingMilliseconds": {
+          "samples": 14,
+          "median": 677.41365,
+          "p95NearestRank": 2066.8331,
+          "min": 99.8306,
+          "max": 2066.8331,
+          "sampleStandardDeviation": 615.600238579567
+        },
+        "newFullThroughputChunksPerSecond": 1.3736595560226346,
+        "preexistingFullChunks": 0,
+        "liveThreadAllocationDeltaBytes": 6050179440,
+        "allocationScope": "sum of observed live-thread allocation counters; excludes threads already terminated at snapshot, not exact whole-process allocation"
+      },
+      "relativeTimeOverheadPercent": 1221.255313290633,
+      "scope": "same seed and coordinates, V1 world followed by legacy world in the same JVM; version-specific terrain is expected, no identical-terrain claim"
+    }
+  ],
+  "historicalTargetOverheadPercent": 25,
+  "targetIsNotPermissionToChangeOutputs": true
+}

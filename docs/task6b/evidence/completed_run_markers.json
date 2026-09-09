@@ -1,0 +1,178 @@
+[
+  {
+    "path": "build/task6b-baseline-04-complete.json",
+    "sha256": "9ce2e42dad9218407c5af69a9d5aa64388acf3a2db9112959a93a64cf8bc1130",
+    "run": {
+      "name": "baseline-04",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-frozen",
+      "arguments": [
+        "-Ptask6bOutput=build/task6b-baseline-04"
+      ],
+      "startedUtc": "2026-09-09T21:12:41.6794403Z",
+      "finishedUtc": "2026-09-09T21:16:11.3329302Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-baseline-04-resume.log",
+      "exitCode": 0
+    }
+  },
+  {
+    "path": "build/task6b-full-baseline-03-complete.json",
+    "sha256": "898b8de8cdb4e55dc56fd58c0f42f721b1787074dda10d1eb7eb2e1c68ea3863",
+    "run": {
+      "name": "full-baseline-03",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-frozen",
+      "arguments": [
+        "-PreproProfile=task6b",
+        "-PreproProcessors=8",
+        "-PwithTerraBlender=true"
+      ],
+      "startedUtc": "2026-09-09T21:18:28.4917563Z",
+      "finishedUtc": "2026-09-09T21:24:28.9223007Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-baseline-03-resume.log",
+      "exitCode": 0,
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-baseline-03"
+    }
+  },
+  {
+    "path": "build/task6b-full-baseline-04-complete.json",
+    "sha256": "1e7bdc388cb776fcaf3d77e63daa9593a2c97a3310ee4c6c00e4620b0b13799d",
+    "run": {
+      "name": "full-baseline-04",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-frozen",
+      "arguments": [
+        "-PreproProfile=task6b",
+        "-PreproProcessors=8",
+        "-PwithTerraBlender=true"
+      ],
+      "startedUtc": "2026-09-09T22:11:32.3928611Z",
+      "finishedUtc": "2026-09-09T22:18:30.5298053Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-baseline-04-resume.log",
+      "exitCode": 0,
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-baseline-04"
+    }
+  },
+  {
+    "path": "build/task6b-full-optimized-02-complete.json",
+    "sha256": "ed34f607cb24643a42f9429bada259d4e2a93e3f8b185bab5a17209c1ec27a42",
+    "run": {
+      "name": "full-optimized-02",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b",
+      "arguments": [
+        "-PreproProfile=task6b",
+        "-PreproProcessors=8",
+        "-PwithTerraBlender=true"
+      ],
+      "startedUtc": "2026-09-09T21:24:28.9433215Z",
+      "finishedUtc": "2026-09-09T21:29:29.7745977Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-optimized-02-resume.log",
+      "exitCode": 0,
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-optimized-02"
+    }
+  },
+  {
+    "path": "build/task6b-full-workers-24-complete.json",
+    "sha256": "d458e7cc7c32bf100a87121fad7bd392f77b04251ebcd503c0f9f70078c2147f",
+    "run": {
+      "name": "full-workers-24",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b",
+      "arguments": [
+        "-PreproProfile=task6b",
+        "-PreproProcessors=24",
+        "-PwithTerraBlender=true"
+      ],
+      "startedUtc": "2026-09-09T21:29:29.7937045Z",
+      "finishedUtc": "2026-09-09T21:33:57.4500698Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-workers-24-resume.log",
+      "exitCode": 0,
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-workers-24"
+    }
+  },
+  {
+    "path": "build/task6b-full-workers-48-complete.json",
+    "sha256": "384d76efda9bf0d88e9cf8d1508139f2c9d190def9c309676dce1df0b4a71238",
+    "run": {
+      "name": "full-workers-48",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b",
+      "arguments": [
+        "-PreproProfile=task6b",
+        "-PreproProcessors=48",
+        "-PwithTerraBlender=true"
+      ],
+      "startedUtc": "2026-09-09T21:33:57.4660810Z",
+      "finishedUtc": "2026-09-09T21:38:11.9218516Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-workers-48-resume.log",
+      "exitCode": 0,
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-full-workers-48"
+    }
+  },
+  {
+    "path": "build/task6b-legacy-runtime-24-complete.json",
+    "sha256": "de8c24bb0dfbb95621923c48c2e7d6b6752907b9f04500ae9b73c832aa5a6384",
+    "run": {
+      "name": "legacy-runtime-24",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b",
+      "arguments": [
+        "-PreproProfile=golden",
+        "-PreproProcessors=24",
+        "-PreproSeeds=8675309",
+        "-PwithTerraBlender=false"
+      ],
+      "startedUtc": "2026-09-09T21:38:11.9419992Z",
+      "finishedUtc": "2026-09-09T21:39:18.6943382Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-legacy-runtime-24-resume.log",
+      "exitCode": 0,
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-legacy-runtime-24"
+    }
+  },
+  {
+    "path": "build/task6b-legacy-runtime-tb-complete.json",
+    "sha256": "793f355575d2797316c3c534290b61fa69cf0ed309ad7de8ccbe3533e11c597e",
+    "run": {
+      "name": "legacy-runtime-tb",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b",
+      "arguments": [
+        "-PreproProfile=golden",
+        "-PreproProcessors=24",
+        "-PreproSeeds=8675309",
+        "-PwithTerraBlender=true"
+      ],
+      "startedUtc": "2026-09-09T21:39:18.7101052Z",
+      "finishedUtc": "2026-09-09T21:40:28.5089152Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-legacy-runtime-tb-resume.log",
+      "exitCode": 0,
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-legacy-runtime-tb"
+    }
+  },
+  {
+    "path": "build/task6b-optimized-03-complete.json",
+    "sha256": "5518f13d841d7aef314e27fee1c95fb0609033e65213dd8c4c6ba2d626e3220b",
+    "run": {
+      "name": "optimized-03",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b",
+      "arguments": [
+        "-Ptask6bOutput=build/task6b-optimized-03"
+      ],
+      "startedUtc": "2026-09-09T21:16:11.3523879Z",
+      "finishedUtc": "2026-09-09T21:18:28.4897251Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-optimized-03-resume.log",
+      "exitCode": 0
+    }
+  },
+  {
+    "path": "build/task6b-task1b-final-complete.json",
+    "sha256": "aacf77a6842a804033fb8f1e32e8b1ee61c1d20277c7714e67e62cd8f002db33",
+    "run": {
+      "name": "task1b-final",
+      "root": "G:\\mods\\Undisclosed-PA-Addon-task6b",
+      "arguments": [
+        "-PreproProfile=full",
+        "-PreproProcessors=24",
+        "-PwithTerraBlender=false"
+      ],
+      "startedUtc": "2026-09-09T21:40:28.5261781Z",
+      "finishedUtc": "2026-09-09T21:42:35.4106193Z",
+      "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-task1b-final-resume.log",
+      "exitCode": 0,
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-task1b-final"
+    }
+  }
+]
