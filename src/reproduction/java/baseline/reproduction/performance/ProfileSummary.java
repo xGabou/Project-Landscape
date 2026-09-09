@@ -11,11 +11,15 @@ public final class ProfileSummary {
     }
     static Map<String,Object> read(Path path)throws Exception {
         var groups=new TreeMap<String,Long>();var stacks=new HashMap<String,Long>();long samples=0,allocationWeight=0,monitorEvents=0;
+        var monitorCounts=new TreeMap<String,Long>();var monitorNanos=new TreeMap<String,Long>();var monitorMaxNanos=new TreeMap<String,Long>();
         try(var file=new RecordingFile(path)){
             while(file.hasMoreEvents()){
                 var event=file.readEvent();String type=event.getEventType().getName();
                 if(type.equals("jdk.ObjectAllocationSample"))allocationWeight+=event.getLong("weight");
-                if(type.equals("jdk.JavaMonitorEnter"))monitorEvents++;
+                if(type.equals("jdk.JavaMonitorEnter")){
+                    monitorEvents++;String monitor=event.getClass("monitorClass").getName();long nanos=event.getDuration().toNanos();
+                    monitorCounts.merge(monitor,1L,Long::sum);monitorNanos.merge(monitor,nanos,Long::sum);monitorMaxNanos.merge(monitor,nanos,Math::max);
+                }
                 if(!type.equals("jdk.ExecutionSample")||event.getStackTrace()==null)continue;
                 samples++;String group="other";var stack=new StringBuilder();
                 for(var frame:event.getStackTrace().getFrames()){
@@ -29,7 +33,7 @@ public final class ProfileSummary {
         var top=stacks.entrySet().stream().sorted(Map.Entry.<String,Long>comparingByValue().reversed()).limit(20)
                 .map(e->Map.of("stack",e.getKey(),"samples",e.getValue())).toList();
         return Map.of("executionSamples",samples,"subsystemSamples",groups,"topStacks",top,
-                "sampledAllocationWeightBytes",allocationWeight,"monitorEnterEvents",monitorEvents,
+                "sampledAllocationWeightBytes",allocationWeight,"monitorEnterEvents",monitorEvents,"monitorCounts",monitorCounts,"monitorBlockedThreadNanos",monitorNanos,"monitorMaxNanos",monitorMaxNanos,
                 "methodology","JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates");
     }
     static String classify(String n){

@@ -13,7 +13,7 @@ public final class ExactCache<V> implements AutoCloseable {
     private final LinkedHashMap<Long,V> completed = new LinkedHashMap<>(16,.75f,true);
     private final HashMap<Long,Flight<V>> pending = new HashMap<>();
     private boolean closed;
-    private long hits, misses, waits, evictions, failures;
+    private long hits, misses, waits, evictions, failures, capacityWaits, peakInFlight;
 
     public ExactCache(int capacity) {
         if(capacity<1)throw new IllegalArgumentException("Positive cache capacity required");
@@ -35,8 +35,9 @@ public final class ExactCache<V> implements AutoCloseable {
                 }
                 if(pending.size()<capacity){
                     flight=new Flight<>(Thread.currentThread(),new CompletableFuture<>());
-                    pending.put(key,flight);misses++;owner=true;break;
+                    pending.put(key,flight);misses++;peakInFlight=Math.max(peakInFlight,pending.size());owner=true;break;
                 }
+                capacityWaits++;
                 try {wait();} catch(InterruptedException interrupted) {
                     Thread.currentThread().interrupt();throw new IllegalStateException("Interrupted waiting for cache capacity",interrupted);
                 }
@@ -68,7 +69,8 @@ public final class ExactCache<V> implements AutoCloseable {
 
     public synchronized Map<String,Long> stats() {
         return Map.of("entries",(long)completed.size(),"capacity",(long)capacity,"hits",hits,"misses",misses,
-                "waits",waits,"evictions",evictions,"failures",failures,"inFlight",(long)pending.size());
+                "waits",waits,"evictions",evictions,"failures",failures,"inFlight",(long)pending.size(),
+                "capacityWaits",capacityWaits,"peakInFlight",peakInFlight);
     }
 
     public void clear(){discard(false);}

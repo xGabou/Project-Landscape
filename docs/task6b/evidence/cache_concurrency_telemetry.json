@@ -1,0 +1,99 @@
+{
+  "failureRetry": true,
+  "recreatedWorld": true,
+  "scope": "exact cache concurrency mechanics; real terrain worker determinism is a separate gate",
+  "inFlightDisposal": true,
+  "workerChecks": [
+    {
+      "workers": 1,
+      "stats": {
+        "failures": 0,
+        "peakInFlight": 1,
+        "evictions": 9993,
+        "waits": 0,
+        "hits": 0,
+        "entries": 8,
+        "capacityWaits": 0,
+        "misses": 10001,
+        "inFlight": 0,
+        "capacity": 8
+      },
+      "singleFlightLoads": 1,
+      "churnQueries": 10000,
+      "exact": true
+    },
+    {
+      "workers": 2,
+      "stats": {
+        "failures": 0,
+        "peakInFlight": 2,
+        "evictions": 19361,
+        "waits": 186,
+        "hits": 447,
+        "entries": 8,
+        "capacityWaits": 0,
+        "misses": 19369,
+        "inFlight": 0,
+        "capacity": 8
+      },
+      "singleFlightLoads": 1,
+      "churnQueries": 20000,
+      "exact": true
+    },
+    {
+      "workers": 8,
+      "stats": {
+        "failures": 0,
+        "peakInFlight": 7,
+        "evictions": 64932,
+        "waits": 4033,
+        "hits": 11035,
+        "entries": 8,
+        "capacityWaits": 0,
+        "misses": 64940,
+        "inFlight": 0,
+        "capacity": 8
+      },
+      "singleFlightLoads": 1,
+      "churnQueries": 80000,
+      "exact": true
+    },
+    {
+      "workers": 24,
+      "stats": {
+        "failures": 0,
+        "peakInFlight": 8,
+        "evictions": 189535,
+        "waits": 14887,
+        "hits": 35594,
+        "entries": 8,
+        "capacityWaits": 0,
+        "misses": 189543,
+        "inFlight": 0,
+        "capacity": 8
+      },
+      "singleFlightLoads": 1,
+      "churnQueries": 240000,
+      "exact": true
+    },
+    {
+      "workers": 48,
+      "stats": {
+        "failures": 0,
+        "peakInFlight": 8,
+        "evictions": 304952,
+        "waits": 52102,
+        "hits": 122986,
+        "entries": 8,
+        "capacityWaits": 21,
+        "misses": 304960,
+        "inFlight": 0,
+        "capacity": 8
+      },
+      "singleFlightLoads": 1,
+      "churnQueries": 480000,
+      "exact": true
+    }
+  ],
+  "worldIsolation": true
+}

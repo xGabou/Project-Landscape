@@ -65,6 +65,7 @@ public final class ClimateBiomeSource extends BiomeSource {
     public BiomeSource retained(){return retained;}
     public String manifestFingerprint(){return manifestFingerprint;}
     public com.gabou.atmospheregen.api.climate.ClimateBaseline sampleClimate(int x,int z){return climateProvider.sample(x,z);}
+    public Map<String,Long> distanceCacheStats(){return geography.distanceField().cacheStats();}
     public Map<String,Long> climateCacheStats(){return climateProvider.cacheStats();}
     public Map<String,Long> surfaceCacheStats(){return climateGeography.cacheStats();}
     public Map<String,Long> surfaceWinnerCacheStats(){return surfaceWinners.stats();}

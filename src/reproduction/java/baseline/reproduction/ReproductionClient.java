@@ -153,8 +153,10 @@ public final class ReproductionClient {
                 out.row("disposal","case","actual world unload","seed",currentSeed(),"worldIndex",worldIndex,"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
                 if(task6bDisposedSource!=null){
                     var source=task6bDisposedSource;
-                    if(source.surfaceCacheStats().get("entries")!=0 || source.climateCacheStats().get("entries")!=0 || source.surfaceWinnerCacheStats().get("entries")!=0 || source.surfaceGeographyCacheStats().get("entries")!=0)throw new AssertionError("V1 caches retained after actual world unload");
-                    out.row("task6b_cache_disposal","worldIndex",worldIndex,"reopened",task6Reopened,"surface",source.surfaceCacheStats(),"climate",source.climateCacheStats(),"winners",source.surfaceWinnerCacheStats(),"geography",source.surfaceGeographyCacheStats(),"allEmpty",true);
+                    if(source.distanceCacheStats().get("entries")!=0 || source.surfaceCacheStats().get("entries")!=0 || source.climateCacheStats().get("entries")!=0 || source.surfaceWinnerCacheStats().get("entries")!=0 || source.surfaceGeographyCacheStats().get("entries")!=0)throw new AssertionError("V1 caches retained after actual world unload");
+                    try{source.sampleClimate(0,0);throw new AssertionError("Post-unload climate recreated");}catch(IllegalStateException expected){}
+                    try{source.getNoiseBiome(0,80,0,null);throw new AssertionError("Post-unload source recreated");}catch(IllegalStateException expected){}
+                    out.row("task6b_cache_disposal","distance",source.distanceCacheStats(),"postCloseQueriesRejected",true,"worldIndex",worldIndex,"reopened",task6Reopened,"surface",source.surfaceCacheStats(),"climate",source.climateCacheStats(),"winners",source.surfaceWinnerCacheStats(),"geography",source.surfaceGeographyCacheStats(),"allEmpty",true);
                     task6bDisposedSource=null;
                 }
                 worldContexts=List.of();

@@ -17,6 +17,7 @@ public final class FullChunkPerformance {
         var os=(com.sun.management.OperatingSystemMXBean)ManagementFactory.getOperatingSystemMXBean();
         var threads=(com.sun.management.ThreadMXBean)ManagementFactory.getThreadMXBean();
         try(var recording=new jdk.jfr.Recording(jdk.jfr.Configuration.getConfiguration("profile"))){
+            recording.enable("jdk.JavaMonitorEnter").withThreshold(java.time.Duration.ofMillis(1));
             recording.start();
             // Global block coordinates fixed before either version is measured. Categories are observed below.
             int[][] points={{8192,0},{8208,0},{8224,0},{8240,0},{6128,6240},{6144,6240},
@@ -52,11 +53,12 @@ public final class FullChunkPerformance {
             java.nio.file.Files.createDirectories(path.getParent());recording.dump(path);
             out.row("task6b_profiles","version",version,"path",path.toAbsolutePath().toString());out.flush();
         }
+        if(Runtime.getRuntime().availableProcessors()==8)FullOutputEvidence.run(level,out);
         if(source instanceof ClimateBiomeSource climateSource){
-            out.row("task6b_cache_metrics","phase","after paired corpus","surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());
+            out.row("task6b_cache_metrics","phase","after paired corpus","distance",climateSource.distanceCacheStats(),"surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());
             LocalityTrace.enabled=true;
             try{level.getChunk((6128>>4)+64,(6240>>4)+64);}finally{LocalityTrace.flush(out);}
-            out.row("task6b_cache_metrics","phase","after locality chunk","surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());out.flush();
+            out.row("task6b_cache_metrics","phase","after locality chunk","distance",climateSource.distanceCacheStats(),"surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());out.flush();
         }
     }
     private static long allocated(com.sun.management.ThreadMXBean bean){long sum=0;for(long value:bean.getThreadAllocatedBytes(bean.getAllThreadIds()))if(value>0)sum+=value;return sum;}
