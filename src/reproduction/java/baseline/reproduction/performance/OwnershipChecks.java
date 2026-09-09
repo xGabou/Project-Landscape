@@ -25,8 +25,13 @@ final class OwnershipChecks {
         var reference=new com.gabou.atmospheregen.climate.BaselineClimateModel(generation.seeds(),config)
                 .sample(com.gabou.atmospheregen.climate.ClimateGeographyAdapters.of(g,g.macroProvider(),g.distanceField()),0,0);
         if(!baseline.equals(reference))throw new AssertionError("Service changes climate");
+        var sources=System.getProperty("task6b.sourceChecks","false").equals("true")?SourceReuseChecks.run(context,generation,out):List.<com.gabou.atmospheregen.biome.ClimateBiomeSource>of();
         var before=Map.of("surface",service.geography().cacheStats(),"climate",service.provider().cacheStats(),"distance",g.distanceCacheStats());
         context.cache.close();
+        for(var source:sources){
+            if(source.surfaceWinnerCacheStats().get("entries")!=0||source.surfaceGeographyCacheStats().get("entries")!=0)throw new AssertionError("Retained source cache after disposal");
+            try{source.getNoiseBiome(0,100,0,null);throw new AssertionError("Source query after disposal");}catch(IllegalStateException expected){}
+        }
         if(service.geography().cacheStats().get("entries")!=0||service.provider().cacheStats().get("entries")!=0||g.distanceCacheStats().get("entries")!=0)throw new AssertionError("Retained cache payload after dispose");
         try{service.provider().sample(0,0);throw new AssertionError("Climate after dispose");}catch(IllegalStateException expected){}
         try{context.canonicalClimate(generation);throw new AssertionError("Recreated service after dispose");}catch(IllegalStateException expected){}

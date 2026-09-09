@@ -83,6 +83,7 @@ minecraft {
                 mods { task6b_performance { source sourceSets.performance } }
                 property 'task6b.output', file(providers.gradleProperty('task6bOutput').get()).absolutePath
                 property 'task6b.mode', providers.gradleProperty('task6bMode').getOrElse('acquisition')
+                property 'task6b.sourceChecks', providers.gradleProperty('task6bSourceChecks').getOrElse('false')
                 jvmArgs '-Xmx6G', "-XX:ActiveProcessorCount=${providers.gradleProperty('task6bWorkers').getOrElse('8')}"
             }
             args '--mod', providers.gradleProperty('task6bOutput').isPresent() ? 'task6b_performance' : mod_id, '--all', '--output', file(providers.gradleProperty('task6bOutput').isPresent() ? 'build/task6b-datagen-unused' : 'src/generated/resources/'),
@@ -141,6 +142,13 @@ tasks.named('jar', Jar) {
 tasks.named('sourcesJar', Jar) { from('LICENSE') { into 'META-INF' } }
 
 // Offline production macro provider survey; no Minecraft client, chunks or terrain erosion.
+tasks.register('task6bCacheChecks', JavaExec) {
+    dependsOn tasks.named('performanceClasses')
+    classpath = sourceSets.performance.runtimeClasspath
+    mainClass = 'baseline.reproduction.performance.ExactCacheChecks'
+    args file(providers.gradleProperty('task6bOutput').getOrElse('build/task6b-cache-checks')).absolutePath
+}
+
 tasks.register('task6bJfrSummary', JavaExec) {
     dependsOn tasks.named('performanceClasses')
     classpath = sourceSets.performance.runtimeClasspath

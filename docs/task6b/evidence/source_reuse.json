@@ -1,0 +1,112 @@
+{
+  "surfaceWinners": {
+    "waits": 0,
+    "entries": 5,
+    "hits": 90015,
+    "evictions": 0,
+    "inFlight": 0,
+    "failures": 0,
+    "capacity": 4096,
+    "misses": 5
+  },
+  "measurements": [
+    {
+      "pass": -2,
+      "referenceSurfacePathNanos": 61471500,
+      "warmup": true,
+      "queries": 10000,
+      "cachedSourceNanos": 1541200
+    },
+    {
+      "pass": -1,
+      "referenceSurfacePathNanos": 12726000,
+      "warmup": true,
+      "queries": 10000,
+      "cachedSourceNanos": 1637700
+    },
+    {
+      "pass": 0,
+      "referenceSurfacePathNanos": 11132100,
+      "warmup": false,
+      "queries": 10000,
+      "cachedSourceNanos": 1014700
+    },
+    {
+      "pass": 1,
+      "referenceSurfacePathNanos": 10527100,
+      "warmup": false,
+      "queries": 10000,
+      "cachedSourceNanos": 341000
+    },
+    {
+      "pass": 2,
+      "referenceSurfacePathNanos": 8908000,
+      "warmup": false,
+      "queries": 10000,
+      "cachedSourceNanos": 323400
+    },
+    {
+      "pass": 3,
+      "referenceSurfacePathNanos": 10775800,
+      "warmup": false,
+      "queries": 10000,
+      "cachedSourceNanos": 318900
+    },
+    {
+      "pass": 4,
+      "referenceSurfacePathNanos": 8372400,
+      "warmup": false,
+      "queries": 10000,
+      "cachedSourceNanos": 305300
+    },
+    {
+      "pass": 5,
+      "referenceSurfacePathNanos": 8065700,
+      "warmup": false,
+      "queries": 10000,
+      "cachedSourceNanos": 298400
+    },
+    {
+      "pass": 6,
+      "referenceSurfacePathNanos": 7910500,
+      "warmup": false,
+      "queries": 10000,
+      "cachedSourceNanos": 296300
+    }
+  ],
+  "caveDelegationChecks": 9,
+  "scope": "real registry holders and canonical terrain; reference repeats original surface physical path; full chunk effects measured separately",
+  "winners": [
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:plains",
+    "minecraft:plains",
+    "minecraft:plains",
+    "minecraft:plains"
+  ],
+  "directHolderChecks": 20,
+  "surfaceGeography": {
+    "waits": 0,
+    "entries": 5,
+    "hits": 90015,
+    "evictions": 0,
+    "inFlight": 0,
+    "failures": 0,
+    "capacity": 4096,
+    "misses": 5
+  }
+}

@@ -31,6 +31,10 @@ public final class ClimateBiomeSource extends BiomeSource {
     private final BiomeResolutionContext resolution;
     private final BiomeCatalog catalog;
     private final Map<net.minecraft.resources.ResourceLocation,Holder<Biome>> holders;
+    private final com.gabou.atmospheregen.generation.cache.ExactCache<com.gabou.atmospheregen.api.geography.GeoSample> surfaceGeography =
+            new com.gabou.atmospheregen.generation.cache.ExactCache<>(4096);
+    private final com.gabou.atmospheregen.generation.cache.ExactCache<Holder<Biome>> surfaceWinners =
+            new com.gabou.atmospheregen.generation.cache.ExactCache<>(4096);
 
     /** Codec decoding does not capture server state. */
     private ClimateBiomeSource(BiomeSource retained,String manifestFingerprint) {
@@ -55,12 +59,16 @@ public final class ClimateBiomeSource extends BiomeSource {
         var resolved=new HashMap<net.minecraft.resources.ResourceLocation,Holder<Biome>>();
         for(var d:catalog.descriptors())resolved.put(d.key(),biomes.getOrThrow(ResourceKey.create(Registries.BIOME,d.key())));
         holders=Map.copyOf(resolved);
+        geography.onClose(surfaceGeography::close);
+        geography.onClose(surfaceWinners::close);
     }
     public BiomeSource retained(){return retained;}
     public String manifestFingerprint(){return manifestFingerprint;}
     public com.gabou.atmospheregen.api.climate.ClimateBaseline sampleClimate(int x,int z){return climateProvider.sample(x,z);}
     public Map<String,Long> climateCacheStats(){return climateProvider.cacheStats();}
     public Map<String,Long> surfaceCacheStats(){return climateGeography.cacheStats();}
+    public Map<String,Long> surfaceWinnerCacheStats(){return surfaceWinners.stats();}
+    public Map<String,Long> surfaceGeographyCacheStats(){return surfaceGeography.stats();}
     @Override protected Codec<? extends BiomeSource> codec(){return CODEC;}
     @Override protected Stream<Holder<Biome>> collectPossibleBiomes(){
         if(geography==null)return retained.possibleBiomes().stream();
@@ -71,11 +79,16 @@ public final class ClimateBiomeSource extends BiomeSource {
     @Override public Holder<Biome> getNoiseBiome(int quartX,int quartY,int quartZ,Climate.Sampler sampler){
         if(geography==null)throw new IllegalStateException("V1 biome source must be bound to its manifest before sampling");
         int x=QuartPos.toBlock(quartX),y=QuartPos.toBlock(quartY),z=QuartPos.toBlock(quartZ);
-        var g=BiomeGeography.sample(geography,x,z);
+        long columnKey=((long)quartX<<32)^(quartZ&0xffffffffL);
+        var g=surfaceGeography.get(columnKey,ignored->BiomeGeography.sample(geography,x,z));
         if(y<g.elevationBlockY()-8){
             Holder<Biome> underground=retained.getNoiseBiome(quartX,quartY,quartZ,sampler);
             if(isCave(underground))return underground;
         }
+        // Cave delegation is evaluated for every Y before consulting this strictly 2D winner.
+        return surfaceWinners.get(columnKey,ignored->surfaceWinner(g,x,z));
+    }
+    private Holder<Biome> surfaceWinner(com.gabou.atmospheregen.api.geography.GeoSample g,int x,int z){
         // Exact Task 5 coordinates. Regional approximations require independent measured error gates.
         if(GeographicBiomeRules.temperatureOnlyEligible(g)){
             var forced=GeographicBiomeRules.temperatureOnlyOverride(g,climateModel.temperatureOnly(climateGeography,x,z));
