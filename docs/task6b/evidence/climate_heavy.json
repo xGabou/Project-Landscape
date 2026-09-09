@@ -1,0 +1,189 @@
+{
+  "scenario": "climate_heavy",
+  "scope": "cold-plus-warm canonical climate acquisition; not FULL chunk generation",
+  "pairs": [
+    {
+      "pair": 1,
+      "baseline": "build/task6b-baseline-02",
+      "optimized": "build/task6b-optimized-01",
+      "baselineWallSeconds": 8.7564926,
+      "optimizedWallSeconds": 5.5925948,
+      "absoluteReductionSeconds": 3.1638978,
+      "wallReductionPercent": 36.13202162701536,
+      "exactClimateComparisons": 128,
+      "rawDoubleFieldsPerOutput": 7,
+      "allSevenRawDoubleBitsExact": true,
+      "baselineSurface": {
+        "entries": 113,
+        "capacity": 1024,
+        "misses": 113,
+        "retainedArrayBytes": 14811136,
+        "hits": 1407
+      },
+      "optimizedSurface": {
+        "capacity": 1024,
+        "failures": 0,
+        "waits": 0,
+        "misses": 113,
+        "evictions": 0,
+        "hits": 1407,
+        "entries": 113,
+        "retainedArrayBytes": 14811136,
+        "inFlight": 0
+      },
+      "baselineClimate": {
+        "entries": 16,
+        "misses": 16,
+        "capacity": 4096,
+        "hits": 112
+      },
+      "optimizedClimate": {
+        "entries": 16,
+        "hits": 112,
+        "evictions": 0,
+        "inFlight": 0,
+        "failures": 0,
+        "capacity": 4096,
+        "misses": 16,
+        "waits": 0
+      }
+    },
+    {
+      "pair": 2,
+      "baseline": "build/task6b-frozen/build/task6b-baseline-03",
+      "optimized": "build/task6b-optimized-02a",
+      "baselineWallSeconds": 7.6905299,
+      "optimizedWallSeconds": 5.2460819,
+      "absoluteReductionSeconds": 2.444448,
+      "wallReductionPercent": 31.78516996598635,
+      "exactClimateComparisons": 128,
+      "rawDoubleFieldsPerOutput": 7,
+      "allSevenRawDoubleBitsExact": true,
+      "baselineSurface": {
+        "capacity": 1024,
+        "entries": 113,
+        "hits": 1407,
+        "retainedArrayBytes": 14811136,
+        "misses": 113
+      },
+      "optimizedSurface": {
+        "waits": 0,
+        "capacityWaits": 0,
+        "hits": 1407,
+        "capacity": 1024,
+        "entries": 113,
+        "retainedArrayBytes": 14811136,
+        "misses": 113,
+        "failures": 0,
+        "peakInFlight": 1,
+        "inFlight": 0,
+        "evictions": 0
+      },
+      "baselineClimate": {
+        "entries": 16,
+        "hits": 112,
+        "capacity": 4096,
+        "misses": 16
+      },
+      "optimizedClimate": {
+        "capacityWaits": 0,
+        "misses": 16,
+        "inFlight": 0,
+        "capacity": 4096,
+        "failures": 0,
+        "peakInFlight": 1,
+        "evictions": 0,
+        "waits": 0,
+        "hits": 112,
+        "entries": 16
+      }
+    },
+    {
+      "pair": 3,
+      "baseline": "build/task6b-frozen/build/task6b-baseline-04",
+      "optimized": "build/task6b-optimized-03",
+      "baselineWallSeconds": 8.3465289,
+      "optimizedWallSeconds": 5.8996081,
+      "absoluteReductionSeconds": 2.4469208,
+      "wallReductionPercent": 29.316627658235273,
+      "exactClimateComparisons": 128,
+      "rawDoubleFieldsPerOutput": 7,
+      "allSevenRawDoubleBitsExact": true,
+      "baselineSurface": {
+        "hits": 1407,
+        "entries": 113,
+        "capacity": 1024,
+        "misses": 113,
+        "retainedArrayBytes": 14811136
+      },
+      "optimizedSurface": {
+        "retainedArrayBytes": 14811136,
+        "misses": 113,
+        "failures": 0,
+        "peakInFlight": 1,
+        "inFlight": 0,
+        "evictions": 0,
+        "waits": 0,
+        "capacityWaits": 0,
+        "hits": 1407,
+        "capacity": 1024,
+        "entries": 113
+      },
+      "baselineClimate": {
+        "entries": 16,
+        "misses": 16,
+        "capacity": 4096,
+        "hits": 112
+      },
+      "optimizedClimate": {
+        "capacity": 4096,
+        "failures": 0,
+        "peakInFlight": 1,
+        "evictions": 0,
+        "waits": 0,
+        "hits": 112,
+        "entries": 16,
+        "capacityWaits": 0,
+        "misses": 16,
+        "inFlight": 0
+      }
+    }
+  ],
+  "baselineWallSeconds": {
+    "runs": 3,
+    "median": 8.3465289,
+    "min": 7.6905299,
+    "max": 8.7564926,
+    "sampleStandardDeviation": 0.5376928183002478,
+    "p95": null,
+    "p95Note": "Three independent runs do not support a reliable tail estimate."
+  },
+  "optimizedWallSeconds": {
+    "runs": 3,
+    "median": 5.5925948,
+    "min": 5.2460819,
+    "max": 5.8996081,
+    "sampleStandardDeviation": 0.32696198819071204,
+    "p95": null,
+    "p95Note": "Three independent runs do not support a reliable tail estimate."
+  },
+  "pairedAbsoluteReductionSeconds": {
+    "runs": 3,
+    "median": 2.4469208,
+    "min": 2.444448,
+    "max": 3.1638978,
+    "sampleStandardDeviation": 0.41466254311766976,
+    "p95": null,
+    "p95Note": "Three independent runs do not support a reliable tail estimate."
+  },
+  "pairedReductionPercent": {
+    "runs": 3,
+    "median": 31.78516996598635,
+    "min": 29.316627658235273,
+    "max": 36.13202162701536,
+    "sampleStandardDeviation": 3.450565543932176,
+    "p95": null,
+    "p95Note": "Three independent runs do not support a reliable tail estimate."
+  },
+  "allRawDoubleBitsExact": true
+}

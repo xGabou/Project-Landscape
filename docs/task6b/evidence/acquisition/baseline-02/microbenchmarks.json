@@ -1,0 +1,58 @@
+[
+  {
+    "processCpuNanos": 140625000,
+    "count": 10000,
+    "callingThreadAllocatedBytes": 5718304,
+    "callingThreadCpuNanos": 31250000,
+    "name": "macro",
+    "wallNanos": 35329600
+  },
+  {
+    "processCpuNanos": 2062500000,
+    "count": 1,
+    "callingThreadAllocatedBytes": 10304128,
+    "callingThreadCpuNanos": 109375000,
+    "name": "exact_geography_cold",
+    "wallNanos": 348307700
+  },
+  {
+    "processCpuNanos": 0,
+    "count": 1000,
+    "callingThreadAllocatedBytes": 1064176,
+    "callingThreadCpuNanos": 0,
+    "name": "exact_geography_warm",
+    "wallNanos": 3727000
+  },
+  {
+    "processCpuNanos": 62500000,
+    "count": 10,
+    "callingThreadAllocatedBytes": 1365080,
+    "callingThreadCpuNanos": 0,
+    "name": "surface_extraction",
+    "wallNanos": 8263500
+  },
+  {
+    "processCpuNanos": 18718750000,
+    "count": 1,
+    "callingThreadAllocatedBytes": 83254272,
+    "callingThreadCpuNanos": 171875000,
+    "name": "climate_cold",
+    "wallNanos": 5944931800
+  },
+  {
+    "processCpuNanos": 0,
+    "count": 10000,
+    "callingThreadAllocatedBytes": 40,
+    "callingThreadCpuNanos": 0,
+    "name": "climate_warm",
+    "wallNanos": 866800
+  },
+  {
+    "processCpuNanos": 31250000,
+    "count": 10000,
+    "callingThreadAllocatedBytes": 5040168,
+    "callingThreadCpuNanos": 15625000,
+    "name": "temperature_warm",
+    "wallNanos": 6752800
+  }
+]

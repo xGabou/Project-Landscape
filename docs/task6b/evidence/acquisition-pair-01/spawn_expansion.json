@@ -1,0 +1,44 @@
+{
+    "scenario":  "spawn_expansion",
+    "baselineWallNanos":  13468645800,
+    "optimizedWallNanos":  8651559900,
+    "wallReductionPercent":  35.76518360888219,
+    "baselineProcessCpuNanos":  36828125000,
+    "optimizedProcessCpuNanos":  31265625000,
+    "exactClimateComparisons":  32,
+    "allSevenRawDoubleBitsExact":  true,
+    "baselineSurface":  {
+                            "entries":  176,
+                            "capacity":  1024,
+                            "misses":  176,
+                            "retainedArrayBytes":  23068672,
+                            "hits":  1344
+                        },
+    "optimizedSurface":  {
+                             "capacity":  1024,
+                             "failures":  0,
+                             "waits":  0,
+                             "misses":  176,
+                             "evictions":  0,
+                             "hits":  1344,
+                             "entries":  176,
+                             "retainedArrayBytes":  23068672,
+                             "inFlight":  0
+                         },
+    "baselineClimate":  {
+                            "entries":  16,
+                            "misses":  16,
+                            "capacity":  4096,
+                            "hits":  16
+                        },
+    "optimizedClimate":  {
+                             "entries":  16,
+                             "hits":  16,
+                             "evictions":  0,
+                             "inFlight":  0,
+                             "failures":  0,
+                             "capacity":  4096,
+                             "misses":  16,
+                             "waits":  0
+                         }
+}

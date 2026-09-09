@@ -1,0 +1,273 @@
+{
+  "scope": "acquisition, three fresh JVMs",
+  "productionHead": "a3140a5d7113137563d275cbaea05a8e94f3b23e",
+  "runs": [
+    {
+      "pair": 1,
+      "source": "build/task6b-baseline-02",
+      "environment": {
+        "java": "17.0.17+10",
+        "config": {
+          "latitudeScaleBlocks": 100000.0,
+          "equatorZ": 0.0,
+          "lapseCelsiusPerBlock": 0.0065,
+          "oceanInfluence": 0.5,
+          "continentalityStrength": 1.0,
+          "windBandScaleBlocks": 4096.0,
+          "orographicStrength": 0.85,
+          "rainShadowRecoveryDistance": 12000.0,
+          "climateProfileDistance": 24000.0,
+          "climateProfileStep": 256.0,
+          "evaporationStrength": 1.0,
+          "regionalVariationStrength": 0.1
+        },
+        "status": "OFFLINE_ACQUISITION_COMPLETE_NOT_FULL_ACCEPTANCE",
+        "limitations": [
+          "one cold and one warm pass; repeats required",
+          "no FULL chunks in this harness",
+          "microbenchmarks include startup; not steady-state acceptance"
+        ],
+        "seed": 8675309,
+        "workers": 8,
+        "baselineHead": "a3140a5d7113137563d275cbaea05a8e94f3b23e"
+      },
+      "microbenchmarks": [
+        {
+          "callingThreadCpuNanos": 46875000,
+          "callingThreadAllocatedBytes": 5707696,
+          "count": 10000,
+          "processCpuNanos": 218750000,
+          "wallNanos": 56248900,
+          "name": "macro"
+        },
+        {
+          "callingThreadCpuNanos": 125000000,
+          "callingThreadAllocatedBytes": 10246088,
+          "count": 1,
+          "processCpuNanos": 2156250000,
+          "wallNanos": 416925100,
+          "name": "exact_geography_cold"
+        },
+        {
+          "callingThreadCpuNanos": 0,
+          "callingThreadAllocatedBytes": 936040,
+          "count": 1000,
+          "processCpuNanos": 0,
+          "wallNanos": 4383400,
+          "name": "exact_geography_warm"
+        },
+        {
+          "callingThreadCpuNanos": 15625000,
+          "callingThreadAllocatedBytes": 1363776,
+          "count": 10,
+          "processCpuNanos": 78125000,
+          "wallNanos": 10906300,
+          "name": "surface_extraction"
+        },
+        {
+          "callingThreadCpuNanos": 156250000,
+          "callingThreadAllocatedBytes": 82621872,
+          "count": 1,
+          "processCpuNanos": 23609375000,
+          "wallNanos": 8291465700,
+          "name": "climate_cold"
+        },
+        {
+          "callingThreadCpuNanos": 0,
+          "callingThreadAllocatedBytes": 40,
+          "count": 10000,
+          "processCpuNanos": 0,
+          "wallNanos": 1014100,
+          "name": "climate_warm"
+        },
+        {
+          "callingThreadCpuNanos": 15625000,
+          "callingThreadAllocatedBytes": 5040288,
+          "count": 10000,
+          "processCpuNanos": 46875000,
+          "wallNanos": 8291900,
+          "name": "temperature_warm"
+        }
+      ],
+      "evidence": "docs/task6b/evidence/acquisition/baseline-01"
+    },
+    {
+      "pair": 2,
+      "source": "build/task6b-frozen/build/task6b-baseline-03",
+      "environment": {
+        "workers": 8,
+        "seed": 8675309,
+        "limitations": [
+          "one cold and one warm pass; repeats required",
+          "no FULL chunks in this harness",
+          "microbenchmarks include startup; not steady-state acceptance"
+        ],
+        "status": "OFFLINE_ACQUISITION_COMPLETE_NOT_FULL_ACCEPTANCE",
+        "config": {
+          "latitudeScaleBlocks": 100000.0,
+          "equatorZ": 0.0,
+          "lapseCelsiusPerBlock": 0.0065,
+          "oceanInfluence": 0.5,
+          "continentalityStrength": 1.0,
+          "windBandScaleBlocks": 4096.0,
+          "orographicStrength": 0.85,
+          "rainShadowRecoveryDistance": 12000.0,
+          "climateProfileDistance": 24000.0,
+          "climateProfileStep": 256.0,
+          "evaporationStrength": 1.0,
+          "regionalVariationStrength": 0.1
+        },
+        "java": "17.0.17+10",
+        "baselineHead": "a3140a5d7113137563d275cbaea05a8e94f3b23e"
+      },
+      "microbenchmarks": [
+        {
+          "processCpuNanos": 140625000,
+          "count": 10000,
+          "callingThreadAllocatedBytes": 5718304,
+          "callingThreadCpuNanos": 31250000,
+          "name": "macro",
+          "wallNanos": 35329600
+        },
+        {
+          "processCpuNanos": 2062500000,
+          "count": 1,
+          "callingThreadAllocatedBytes": 10304128,
+          "callingThreadCpuNanos": 109375000,
+          "name": "exact_geography_cold",
+          "wallNanos": 348307700
+        },
+        {
+          "processCpuNanos": 0,
+          "count": 1000,
+          "callingThreadAllocatedBytes": 1064176,
+          "callingThreadCpuNanos": 0,
+          "name": "exact_geography_warm",
+          "wallNanos": 3727000
+        },
+        {
+          "processCpuNanos": 62500000,
+          "count": 10,
+          "callingThreadAllocatedBytes": 1365080,
+          "callingThreadCpuNanos": 0,
+          "name": "surface_extraction",
+          "wallNanos": 8263500
+        },
+        {
+          "processCpuNanos": 18718750000,
+          "count": 1,
+          "callingThreadAllocatedBytes": 83254272,
+          "callingThreadCpuNanos": 171875000,
+          "name": "climate_cold",
+          "wallNanos": 5944931800
+        },
+        {
+          "processCpuNanos": 0,
+          "count": 10000,
+          "callingThreadAllocatedBytes": 40,
+          "callingThreadCpuNanos": 0,
+          "name": "climate_warm",
+          "wallNanos": 866800
+        },
+        {
+          "processCpuNanos": 31250000,
+          "count": 10000,
+          "callingThreadAllocatedBytes": 5040168,
+          "callingThreadCpuNanos": 15625000,
+          "name": "temperature_warm",
+          "wallNanos": 6752800
+        }
+      ],
+      "evidence": "docs/task6b/evidence/acquisition/baseline-02"
+    },
+    {
+      "pair": 3,
+      "source": "build/task6b-frozen/build/task6b-baseline-04",
+      "environment": {
+        "java": "17.0.17+10",
+        "config": {
+          "latitudeScaleBlocks": 100000.0,
+          "equatorZ": 0.0,
+          "lapseCelsiusPerBlock": 0.0065,
+          "oceanInfluence": 0.5,
+          "continentalityStrength": 1.0,
+          "windBandScaleBlocks": 4096.0,
+          "orographicStrength": 0.85,
+          "rainShadowRecoveryDistance": 12000.0,
+          "climateProfileDistance": 24000.0,
+          "climateProfileStep": 256.0,
+          "evaporationStrength": 1.0,
+          "regionalVariationStrength": 0.1
+        },
+        "status": "OFFLINE_ACQUISITION_COMPLETE_NOT_FULL_ACCEPTANCE",
+        "limitations": [
+          "one cold and one warm pass; repeats required",
+          "no FULL chunks in this harness",
+          "microbenchmarks include startup; not steady-state acceptance"
+        ],
+        "seed": 8675309,
+        "workers": 8,
+        "baselineHead": "a3140a5d7113137563d275cbaea05a8e94f3b23e"
+      },
+      "microbenchmarks": [
+        {
+          "callingThreadCpuNanos": 46875000,
+          "callingThreadAllocatedBytes": 5718496,
+          "count": 10000,
+          "processCpuNanos": 171875000,
+          "wallNanos": 51078100,
+          "name": "macro"
+        },
+        {
+          "callingThreadCpuNanos": 109375000,
+          "callingThreadAllocatedBytes": 10307080,
+          "count": 1,
+          "processCpuNanos": 1812500000,
+          "wallNanos": 332708100,
+          "name": "exact_geography_cold"
+        },
+        {
+          "callingThreadCpuNanos": 0,
+          "callingThreadAllocatedBytes": 889000,
+          "count": 1000,
+          "processCpuNanos": 0,
+          "wallNanos": 4041700,
+          "name": "exact_geography_warm"
+        },
+        {
+          "callingThreadCpuNanos": 0,
+          "callingThreadAllocatedBytes": 1365096,
+          "count": 10,
+          "processCpuNanos": 15625000,
+          "wallNanos": 7648000,
+          "name": "surface_extraction"
+        },
+        {
+          "callingThreadCpuNanos": 93750000,
+          "callingThreadAllocatedBytes": 82637656,
+          "count": 1,
+          "processCpuNanos": 22906250000,
+          "wallNanos": 7155720100,
+          "name": "climate_cold"
+        },
+        {
+          "callingThreadCpuNanos": 0,
+          "callingThreadAllocatedBytes": 40,
+          "count": 10000,
+          "processCpuNanos": 0,
+          "wallNanos": 862300,
+          "name": "climate_warm"
+        },
+        {
+          "callingThreadCpuNanos": 0,
+          "callingThreadAllocatedBytes": 5040320,
+          "count": 10000,
+          "processCpuNanos": 0,
+          "wallNanos": 6163600,
+          "name": "temperature_warm"
+        }
+      ],
+      "evidence": "docs/task6b/evidence/acquisition/baseline-03"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+    "baseline":  "build/task6b-baseline-02",
+    "optimized":  "build/task6b-optimized-01",
+    "methodology":  "Same machine/JDK17, Forge data launcher, 8 available processors, 6GiB heap, same preset/seed/config/coordinates. Separate fresh JVMs; each workload fresh world context, one cold then one warm pass. JFR profile enabled in both. Not a confidence interval or FULL chunk result.",
+    "scenarios":  [
+                      {
+                          "scenario":  "sequential_generation",
+                          "baselineWallNanos":  18001959800,
+                          "optimizedWallNanos":  11605762000,
+                          "wallReductionPercent":  35.530563733399731,
+                          "baselineProcessCpuNanos":  51203125000,
+                          "optimizedProcessCpuNanos":  43046875000,
+                          "exactClimateComparisons":  32,
+                          "allSevenRawDoubleBitsExact":  true,
+                          "baselineSurface":  {
+                                                  "entries":  228,
+                                                  "capacity":  1024,
+                                                  "misses":  228,
+                                                  "retainedArrayBytes":  29884416,
+                                                  "hits":  1292
+                                              },
+                          "optimizedSurface":  {
+                                                   "capacity":  1024,
+                                                   "failures":  0,
+                                                   "waits":  0,
+                                                   "misses":  228,
+                                                   "evictions":  0,
+                                                   "hits":  1292,
+                                                   "entries":  228,
+                                                   "retainedArrayBytes":  29884416,
+                                                   "inFlight":  0
+                                               },
+                          "baselineClimate":  {
+                                                  "entries":  16,
+                                                  "misses":  16,
+                                                  "capacity":  4096,
+                                                  "hits":  16
+                                              },
+                          "optimizedClimate":  {
+                                                   "entries":  16,
+                                                   "hits":  16,
+                                                   "evictions":  0,
+                                                   "inFlight":  0,
+                                                   "failures":  0,
+                                                   "capacity":  4096,
+                                                   "misses":  16,
+                                                   "waits":  0
+                                               }
+                      },
+                      {
+                          "scenario":  "spawn_expansion",
+                          "baselineWallNanos":  13468645800,
+                          "optimizedWallNanos":  8651559900,
+                          "wallReductionPercent":  35.76518360888219,
+                          "baselineProcessCpuNanos":  36828125000,
+                          "optimizedProcessCpuNanos":  31265625000,
+                          "exactClimateComparisons":  32,
+                          "allSevenRawDoubleBitsExact":  true,
+                          "baselineSurface":  {
+                                                  "entries":  176,
+                                                  "capacity":  1024,
+                                                  "misses":  176,
+                                                  "retainedArrayBytes":  23068672,
+                                                  "hits":  1344
+                                              },
+                          "optimizedSurface":  {
+                                                   "capacity":  1024,
+                                                   "failures":  0,
+                                                   "waits":  0,
+                                                   "misses":  176,
+                                                   "evictions":  0,
+                                                   "hits":  1344,
+                                                   "entries":  176,
+                                                   "retainedArrayBytes":  23068672,
+                                                   "inFlight":  0
+                                               },
+                          "baselineClimate":  {
+                                                  "entries":  16,
+                                                  "misses":  16,
+                                                  "capacity":  4096,
+                                                  "hits":  16
+                                              },
+                          "optimizedClimate":  {
+                                                   "entries":  16,
+                                                   "hits":  16,
+                                                   "evictions":  0,
+                                                   "inFlight":  0,
+                                                   "failures":  0,
+                                                   "capacity":  4096,
+                                                   "misses":  16,
+                                                   "waits":  0
+                                               }
+                      },
+                      {
+                          "scenario":  "scattered_generation",
+                          "baselineWallNanos":  114347190600,
+                          "optimizedWallNanos":  65668939500,
+                          "wallReductionPercent":  42.570570247136445,
+                          "baselineProcessCpuNanos":  241546875000,
+                          "optimizedProcessCpuNanos":  194156250000,
+                          "exactClimateComparisons":  32,
+                          "allSevenRawDoubleBitsExact":  true,
+                          "baselineSurface":  {
+                                                  "entries":  1024,
+                                                  "capacity":  1024,
+                                                  "misses":  1520,
+                                                  "retainedArrayBytes":  134217728,
+                                                  "hits":  0
+                                              },
+                          "optimizedSurface":  {
+                                                   "capacity":  1024,
+                                                   "failures":  0,
+                                                   "waits":  0,
+                                                   "misses":  1520,
+                                                   "evictions":  496,
+                                                   "hits":  0,
+                                                   "entries":  1024,
+                                                   "retainedArrayBytes":  134217728,
+                                                   "inFlight":  0
+                                               },
+                          "baselineClimate":  {
+                                                  "entries":  16,
+                                                  "misses":  16,
+                                                  "capacity":  4096,
+                                                  "hits":  16
+                                              },
+                          "optimizedClimate":  {
+                                                   "entries":  16,
+                                                   "hits":  16,
+                                                   "evictions":  0,
+                                                   "inFlight":  0,
+                                                   "failures":  0,
+                                                   "capacity":  4096,
+                                                   "misses":  16,
+                                                   "waits":  0
+                                               }
+                      },
+                      {
+                          "scenario":  "interleaved_regions",
+                          "baselineWallNanos":  41521278000,
+                          "optimizedWallNanos":  23806894400,
+                          "wallReductionPercent":  42.663387191502146,
+                          "baselineProcessCpuNanos":  100562500000,
+                          "optimizedProcessCpuNanos":  77046875000,
+                          "exactClimateComparisons":  32,
+                          "allSevenRawDoubleBitsExact":  true,
+                          "baselineSurface":  {
+                                                  "entries":  533,
+                                                  "capacity":  1024,
+                                                  "misses":  533,
+                                                  "retainedArrayBytes":  69861376,
+                                                  "hits":  987
+                                              },
+                          "optimizedSurface":  {
+                                                   "capacity":  1024,
+                                                   "failures":  0,
+                                                   "waits":  0,
+                                                   "misses":  533,
+                                                   "evictions":  0,
+                                                   "hits":  987,
+                                                   "entries":  533,
+                                                   "retainedArrayBytes":  69861376,
+                                                   "inFlight":  0
+                                               },
+                          "baselineClimate":  {
+                                                  "entries":  16,
+                                                  "misses":  16,
+                                                  "capacity":  4096,
+                                                  "hits":  16
+                                              },
+                          "optimizedClimate":  {
+                                                   "entries":  16,
+                                                   "hits":  16,
+                                                   "evictions":  0,
+                                                   "inFlight":  0,
+                                                   "failures":  0,
+                                                   "capacity":  4096,
+                                                   "misses":  16,
+                                                   "waits":  0
+                                               }
+                      },
+                      {
+                          "scenario":  "climate_heavy",
+                          "baselineWallNanos":  8756492600,
+                          "optimizedWallNanos":  5592594800,
+                          "wallReductionPercent":  36.132021627015362,
+                          "baselineProcessCpuNanos":  23234375000,
+                          "optimizedProcessCpuNanos":  21406250000,
+                          "exactClimateComparisons":  128,
+                          "allSevenRawDoubleBitsExact":  true,
+                          "baselineSurface":  {
+                                                  "entries":  113,
+                                                  "capacity":  1024,
+                                                  "misses":  113,
+                                                  "retainedArrayBytes":  14811136,
+                                                  "hits":  1407
+                                              },
+                          "optimizedSurface":  {
+                                                   "capacity":  1024,
+                                                   "failures":  0,
+                                                   "waits":  0,
+                                                   "misses":  113,
+                                                   "evictions":  0,
+                                                   "hits":  1407,
+                                                   "entries":  113,
+                                                   "retainedArrayBytes":  14811136,
+                                                   "inFlight":  0
+                                               },
+                          "baselineClimate":  {
+                                                  "entries":  16,
+                                                  "misses":  16,
+                                                  "capacity":  4096,
+                                                  "hits":  112
+                                              },
+                          "optimizedClimate":  {
+                                                   "entries":  16,
+                                                   "hits":  112,
+                                                   "evictions":  0,
+                                                   "inFlight":  0,
+                                                   "failures":  0,
+                                                   "capacity":  4096,
+                                                   "misses":  16,
+                                                   "waits":  0
+                                               }
+                      }
+                  ],
+    "digestCaveat":  "Original outputDigest used JVM-dependent Map serialization order; acceptance compares coordinates and all seven raw-double bit values directly."
+}
