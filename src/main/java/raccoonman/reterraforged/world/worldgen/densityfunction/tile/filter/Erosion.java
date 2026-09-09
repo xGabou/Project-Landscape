@@ -21,8 +21,14 @@ public class Erosion implements Filter {
     private final int seed;
     private final int mapSize;
     private final Modifier modifier;
+    private final boolean reuseInvariantStrength;
     
     public Erosion(final int seed, final int mapSize, final FilterSettings.Erosion settings, final Modifier modifier) {
+        this(seed, mapSize, settings, modifier, false);
+    }
+
+    private Erosion(final int seed, final int mapSize, final FilterSettings.Erosion settings, final Modifier modifier, boolean reuseInvariantStrength) {
+        this.reuseInvariantStrength = reuseInvariantStrength;
         this.seed = seed;
         this.mapSize = mapSize;
         this.modifier = modifier;
@@ -50,6 +56,10 @@ public class Erosion implements Filter {
         final int mapSize = size.total();
         final float maxPos = (float)(mapSize - 2);
         final Cell[] cells = map.getBacking();
+        // Erosion changes only height, sediment and heightErosion. Terrain identity,
+        // terrainRegionEdge and riverMask are invariant for this entire apply call.
+        // Scratch belongs to this invocation, never to pooled cells or shared state.
+        final float[] strengths = this.reuseInvariantStrength ? invariantStrengths(cells) : null;
         final TerrainPos gradient1 = new TerrainPos();
         final TerrainPos gradient2 = new TerrainPos();
         final FastRandom random = new FastRandom();
@@ -67,13 +77,13 @@ public class Erosion implements Filter {
                     float posZ = (float)(relZ + random.nextInt(16));
                     posX = NoiseUtil.clamp(posX, 1.0f, maxPos);
                     posZ = NoiseUtil.clamp(posZ, 1.0f, maxPos);
-                    this.applyDrop(posX, posZ, cells, mapSize, gradient1, gradient2);
+                    this.applyDrop(posX, posZ, cells, strengths, mapSize, gradient1, gradient2);
                 }
             }
         }
     }
     
-    private void applyDrop(float posX, float posY, final Cell[] cells, final int mapSize, final TerrainPos gradient1, final TerrainPos gradient2) {
+    private void applyDrop(float posX, float posY, final Cell[] cells, final float[] strengths, final int mapSize, final TerrainPos gradient1, final TerrainPos gradient2) {
         float dirX = 0.0f;
         float dirY = 0.0f;
         float sediment = 0.0f;
@@ -109,10 +119,10 @@ public class Erosion implements Filter {
             if (sediment > sedimentCapacity || deltaHeight > 0.0f) {
                 final float amountToDeposit = (deltaHeight > 0.0f) ? Math.min(deltaHeight, sediment) : ((sediment - sedimentCapacity) * this.depositSpeed);
                 sediment -= amountToDeposit;
-                this.deposit(cells[dropletIndex], amountToDeposit * (1.0f - cellOffsetX) * (1.0f - cellOffsetY));
-                this.deposit(cells[dropletIndex + 1], amountToDeposit * cellOffsetX * (1.0f - cellOffsetY));
-                this.deposit(cells[dropletIndex + mapSize], amountToDeposit * (1.0f - cellOffsetX) * cellOffsetY);
-                this.deposit(cells[dropletIndex + mapSize + 1], amountToDeposit * cellOffsetX * cellOffsetY);
+                this.deposit(cells[dropletIndex], strengths, dropletIndex, amountToDeposit * (1.0f - cellOffsetX) * (1.0f - cellOffsetY));
+                this.deposit(cells[dropletIndex + 1], strengths, dropletIndex + 1, amountToDeposit * cellOffsetX * (1.0f - cellOffsetY));
+                this.deposit(cells[dropletIndex + mapSize], strengths, dropletIndex + mapSize, amountToDeposit * (1.0f - cellOffsetX) * cellOffsetY);
+                this.deposit(cells[dropletIndex + mapSize + 1], strengths, dropletIndex + mapSize + 1, amountToDeposit * cellOffsetX * cellOffsetY);
             }
             else {
                 final float amountToErode = Math.min((sedimentCapacity - sediment) * this.erodeSpeed, -deltaHeight);
@@ -122,7 +132,7 @@ public class Erosion implements Filter {
                     final float brushWeight = this.erosionBrushWeights[dropletIndex][brushPointIndex];
                     final float weighedErodeAmount = amountToErode * brushWeight;
                     final float deltaSediment = Math.min(cell.height, weighedErodeAmount);
-                    this.erode(cell, deltaSediment);
+                    this.erode(cell, strengths, nodeIndex, deltaSediment);
                     sediment += deltaSediment;
                 }
             }
@@ -174,24 +184,49 @@ public class Erosion implements Filter {
         }
     }
     
-    private void deposit(final Cell cell, final float amount) {
+    private void deposit(final Cell cell, final float[] strengths, final int index, final float amount) {
         if (!cell.erosionMask) {
-            final float change = this.modifier.modify(cell, amount);
+            final float change = strengths == null ? this.modifier.modify(cell, amount)
+                    : this.modifier.getValueModifier(cell.height) * strengths[index] * amount;
             cell.height += change;
             cell.sediment += change;
         }
     }
     
-    private void erode(final Cell cell, final float amount) {
+    private void erode(final Cell cell, final float[] strengths, final int index, final float amount) {
         if (!cell.erosionMask) {
-            final float change = this.modifier.modify(cell, amount);
+            final float change = strengths == null ? this.modifier.modify(cell, amount)
+                    : this.modifier.getValueModifier(cell.height) * strengths[index] * amount;
             cell.height -= change;
             cell.heightErosion -= change;
         }
     }
     
     public static IntFunction<Erosion> factory(final GeneratorContext context) {
-        return new Factory(context.seed.root(), context.preset.filters(), context.levels);
+        return factory(context, false);
+    }
+
+    /** Only the internal range modifier is used by this factory; arbitrary Modifier overrides retain modify(). */
+    public static IntFunction<Erosion> factory(final GeneratorContext context, boolean reuseInvariantStrength) {
+        return new Factory(context.seed.root(), context.preset.filters(), context.levels, reuseInvariantStrength);
+    }
+
+    private static float[] invariantStrengths(Cell[] cells) {
+        float[] strengths = new float[cells.length];
+        for (int index = 0; index < cells.length; index++) {
+            Cell cell = cells[index];
+            float strength = 1.0F;
+            float erosionModifier = cell.terrain.erosionModifier();
+            if (erosionModifier != 1.0F) {
+                float alpha = NoiseUtil.map(cell.terrainRegionEdge, 0.0F, 0.15F, 0.15F);
+                strength = NoiseUtil.lerp(1.0F, erosionModifier, alpha);
+            }
+            if (cell.riverMask < 0.1F) {
+                strength *= NoiseUtil.map(cell.riverMask, 0.002F, 0.1F, 0.098F);
+            }
+            strengths[index] = strength;
+        }
+        return strengths;
     }
     
     private static class TerrainPos
@@ -228,8 +263,10 @@ public class Erosion implements Filter {
         private final int seed;
         private final Modifier modifier;
         private final FilterSettings.Erosion settings;
+        private final boolean reuseInvariantStrength;
         
-        private Factory(final int seed, final FilterSettings filters, final Levels levels) {
+        private Factory(final int seed, final FilterSettings filters, final Levels levels, boolean reuseInvariantStrength) {
+            this.reuseInvariantStrength = reuseInvariantStrength;
             this.seed = seed + 12768;
             this.settings = filters.erosion.copy();
             this.modifier = Modifier.range(levels.ground, levels.ground(15));
@@ -237,7 +274,7 @@ public class Erosion implements Filter {
         
         @Override
         public Erosion apply(final int size) {
-            return new Erosion(this.seed, size, this.settings, this.modifier);
+            return new Erosion(this.seed, size, this.settings, this.modifier, this.reuseInvariantStrength);
         }
     }
 }

@@ -28,7 +28,11 @@ public class LegacyGeographyFinalizationStage implements GeographyFinalizationSt
     private int smoothingIterations;
     
     public LegacyGeographyFinalizationStage(GeneratorContext context) {
-        IntFunction<Erosion> factory = Erosion.factory(context);
+        this(context, false);
+    }
+
+    public LegacyGeographyFinalizationStage(GeneratorContext context, boolean reuseInvariantStrength) {
+        IntFunction<Erosion> factory = Erosion.factory(context, reuseInvariantStrength);
         this.settings = context.preset.filters();
         this.beach = BeachDetect.make(context);
         this.smoothing = Smoothing.make(context.preset.filters().smoothing, context.levels);

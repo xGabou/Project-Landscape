@@ -6,4 +6,5 @@ import raccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFin
 /** Compatibility name for existing internal/filter test consumers. Physical ownership is the stage. */
 public class WorldFilters extends LegacyGeographyFinalizationStage {
     public WorldFilters(GeneratorContext context) { super(context); }
+    public WorldFilters(GeneratorContext context, boolean reuseInvariantStrength) { super(context, reuseInvariantStrength); }
 }
