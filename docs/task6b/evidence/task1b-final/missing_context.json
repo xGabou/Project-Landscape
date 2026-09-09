@@ -1,0 +1,75 @@
+[
+  {
+    "case": "makeUncached public lookup",
+    "result": "direct",
+    "cached": false
+  },
+  {
+    "case": "uncached context exact request",
+    "error": "java.lang.IllegalStateException: RTF filtered tile query at 0,0 requires a cached generation context; this lookup is direct-only"
+  },
+  {
+    "case": "RandomState before initialize",
+    "error": "java.lang.IllegalStateException: Cannot sample density field TEMPERATURE for ReTerraForged dimension\u003d\u003cunbound; ChunkMap initialization not completed\u003e, seed\u003d8675309: missing generation context; initialize RandomState with the required RTF preset before sampling"
+  },
+  {
+    "case": "structure before initialization",
+    "error": "java.lang.IllegalStateException: Cannot test structure geography at BlockPos{x\u003d0, y\u003d0, z\u003d0} for ReTerraForged dimension\u003d\u003cunbound; ChunkMap initialization not completed\u003e, seed\u003d8675309: missing generation context; initialize RandomState with the required RTF preset before sampling"
+  },
+  {
+    "case": "same state after initialize",
+    "contextPresent": true
+  },
+  {
+    "case": "wrong dimension rebind",
+    "error": "java.lang.IllegalStateException: Cannot rebind ReTerraForged RandomState from dimension minecraft:overworld to minecraft:the_nether"
+  },
+  {
+    "case": "owned sampler after shutdown",
+    "error": "java.lang.IllegalStateException: Cannot sample density field TEMPERATURE for ReTerraForged dimension\u003dminecraft:overworld, seed\u003d8675309: generation context has been shut down"
+  },
+  {
+    "case": "missing preset initialization",
+    "error": "java.lang.IllegalStateException: Cannot initialize ReTerraForged dimension\u003dminecraft:overworld, seed\u003d8675309: density router requires generation context but the RTF preset is missing"
+  },
+  {
+    "case": "initialized with empty preset registry",
+    "error": "java.lang.IllegalStateException: Cannot sample density field TEMPERATURE for ReTerraForged dimension\u003dminecraft:overworld, seed\u003d8675309: missing generation context; initialize RandomState with the required RTF preset before sampling"
+  },
+  {
+    "case": "actual structure rule with missing context",
+    "error": "java.lang.IllegalStateException: Cannot test structure geography at BlockPos{x\u003d0, y\u003d0, z\u003d0} for ReTerraForged dimension\u003dminecraft:overworld, seed\u003d8675309: missing generation context; initialize RandomState with the required RTF preset before sampling"
+  },
+  {
+    "case": "bootstrapped vanilla overworld router",
+    "required": false,
+    "contextPresent": false,
+    "sample": "TargetPoint[temperature\u003d-1043, humidity\u003d-3234, continentalness\u003d-6588, erosion\u003d-1496, depth\u003d-3509, weirdness\u003d4395]"
+  },
+  {
+    "case": "RTF geography rule explicitly applied to foreign router",
+    "result": false
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:overworld",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:the_nether",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "actual dimension",
+    "dimension": "minecraft:the_end",
+    "presetPresent": true,
+    "contextPresent": true
+  },
+  {
+    "case": "cache closed then query",
+    "error": "java.lang.IllegalStateException: ReTerraForged cache is closed; generation context has been disposed"
+  }
+]

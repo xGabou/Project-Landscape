@@ -1,0 +1,1052 @@
+[
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+  },
+  {
+    "seed": "8675309",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+  },
+  {
+    "seed": "8675309",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+  },
+  {
+    "seed": "8675309",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4bb93ee019607f2ca5357fd09b05a2eae86ec5d02f71de0bf345e0af2ea85ebf"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "1358b795c0a2b2f2235ccd0be8e0739aa2d601171cd6051c9e7e50218d1fe51e"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "600f5b442517b5b730eb3997383bf5879ac517fd6fd2f7f1dec0cc01b0ac5efe"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "90b59a00b5a57549671bf76bb15ddbece65ee5b4e356e1838ba569c55b944282"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ec2748cd6fbbf3bc4bfaf82fad5e0f719f644d555bfe798f2c772c0a30bdcc0d"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "e4771fb7bbad07606f5327735cd6aa17486dfc5a6390a61079dbddc0b5574fad"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d9f322ce8ea4588672fa479385763af856b9ff3465ebb78d46caddc2113bf040"
+  },
+  {
+    "seed": "42",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "3c73fe4afc8ffac5ec5af9c04f6b16d5d1a0ed8c8b54ad757b9f0f7d3b833b76"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d7c15b871592dfc633232c44de2c858d9eb0b1086fccc9db80bb454eeecee3c1"
+  },
+  {
+    "seed": "42",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4da37e64acf27eb875e3836a6d0acd60eae97d6a2a559e9ab45d680e61d0744d"
+  },
+  {
+    "seed": "42",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4da37e64acf27eb875e3836a6d0acd60eae97d6a2a559e9ab45d680e61d0744d"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d7c15b871592dfc633232c44de2c858d9eb0b1086fccc9db80bb454eeecee3c1"
+  },
+  {
+    "seed": "42",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "3c73fe4afc8ffac5ec5af9c04f6b16d5d1a0ed8c8b54ad757b9f0f7d3b833b76"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d9f322ce8ea4588672fa479385763af856b9ff3465ebb78d46caddc2113bf040"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "e4771fb7bbad07606f5327735cd6aa17486dfc5a6390a61079dbddc0b5574fad"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "e4771fb7bbad07606f5327735cd6aa17486dfc5a6390a61079dbddc0b5574fad"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d9f322ce8ea4588672fa479385763af856b9ff3465ebb78d46caddc2113bf040"
+  },
+  {
+    "seed": "42",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "3c73fe4afc8ffac5ec5af9c04f6b16d5d1a0ed8c8b54ad757b9f0f7d3b833b76"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d7c15b871592dfc633232c44de2c858d9eb0b1086fccc9db80bb454eeecee3c1"
+  },
+  {
+    "seed": "42",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "4da37e64acf27eb875e3836a6d0acd60eae97d6a2a559e9ab45d680e61d0744d"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "720813d68da4947cc14145a64c9b6b89cb0cd74272bae52431099c65930495ca"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "b751c872eeb590e2c2ef1fee8bf6c9f86d9b6b589688e398691858ba497dfba6"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "2539b34dcd5f2a6191d38127fba994b50e0a102c65bb69bd525d27e95d275074"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "8f95128a86ec6b7c7e04c65791cc87d592d641b600d5f48b87c5b082ef3e3446"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "daa02b7af4d1ba67343ce73328f2d42c3fdc751e08933070192dd2f39fe3dfc4"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "daa02b7af4d1ba67343ce73328f2d42c3fdc751e08933070192dd2f39fe3dfc4"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "8f95128a86ec6b7c7e04c65791cc87d592d641b600d5f48b87c5b082ef3e3446"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "2539b34dcd5f2a6191d38127fba994b50e0a102c65bb69bd525d27e95d275074"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "b751c872eeb590e2c2ef1fee8bf6c9f86d9b6b589688e398691858ba497dfba6"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "720813d68da4947cc14145a64c9b6b89cb0cd74272bae52431099c65930495ca"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "720813d68da4947cc14145a64c9b6b89cb0cd74272bae52431099c65930495ca"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "b751c872eeb590e2c2ef1fee8bf6c9f86d9b6b589688e398691858ba497dfba6"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "2539b34dcd5f2a6191d38127fba994b50e0a102c65bb69bd525d27e95d275074"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "8f95128a86ec6b7c7e04c65791cc87d592d641b600d5f48b87c5b082ef3e3446"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "daa02b7af4d1ba67343ce73328f2d42c3fdc751e08933070192dd2f39fe3dfc4"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "479291827d95a1bc8eaf344dcf584e6336442bf773f340c9341dfe41dafc582a"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ed4143d7ae49df97f9561dcd6c91c9c31c491022a840a7fe3ea0a3edcfc2ae01"
+  },
+  {
+    "seed": "0",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "20ed24ce61c362e88e1e77570342c1a007437cb240015e3ad1ec988a2c7abb6d"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "fe0b173811f899575a52ee1abfa44f106f126f0879f26db7850472b3ccf91cc9"
+  },
+  {
+    "seed": "0",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "2ac137f9d0fe3fcf24e99eb2dfeda734717df121995bdc4536b1028104d086fb"
+  },
+  {
+    "seed": "0",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "2ac137f9d0fe3fcf24e99eb2dfeda734717df121995bdc4536b1028104d086fb"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "fe0b173811f899575a52ee1abfa44f106f126f0879f26db7850472b3ccf91cc9"
+  },
+  {
+    "seed": "0",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "20ed24ce61c362e88e1e77570342c1a007437cb240015e3ad1ec988a2c7abb6d"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ed4143d7ae49df97f9561dcd6c91c9c31c491022a840a7fe3ea0a3edcfc2ae01"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "479291827d95a1bc8eaf344dcf584e6336442bf773f340c9341dfe41dafc582a"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "479291827d95a1bc8eaf344dcf584e6336442bf773f340c9341dfe41dafc582a"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ed4143d7ae49df97f9561dcd6c91c9c31c491022a840a7fe3ea0a3edcfc2ae01"
+  },
+  {
+    "seed": "0",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "20ed24ce61c362e88e1e77570342c1a007437cb240015e3ad1ec988a2c7abb6d"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "fe0b173811f899575a52ee1abfa44f106f126f0879f26db7850472b3ccf91cc9"
+  },
+  {
+    "seed": "0",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "2ac137f9d0fe3fcf24e99eb2dfeda734717df121995bdc4536b1028104d086fb"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "80c71e6fb4986e2826f83b54aae2497e9425e68da19f0475db94a9e2ea6deace"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d1930567bd8e0bd8cb33fc3f10a6d0eddce29288f075809e3c2975b1fc212c0f"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "dac18785543ccfa10b9939cbc696fd98ec0fd19ea7388a0df61c469f520ffc17"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "356fde61933b0bd40c10dfd8794db2649b5e3c49860ff61cfec2f42a7364c4af"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ca9f42f1b27cbf387564a5949968b6052e30176a238bd0f76b9fc292125fb268"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ca9f42f1b27cbf387564a5949968b6052e30176a238bd0f76b9fc292125fb268"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "356fde61933b0bd40c10dfd8794db2649b5e3c49860ff61cfec2f42a7364c4af"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "dac18785543ccfa10b9939cbc696fd98ec0fd19ea7388a0df61c469f520ffc17"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d1930567bd8e0bd8cb33fc3f10a6d0eddce29288f075809e3c2975b1fc212c0f"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "80c71e6fb4986e2826f83b54aae2497e9425e68da19f0475db94a9e2ea6deace"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "80c71e6fb4986e2826f83b54aae2497e9425e68da19f0475db94a9e2ea6deace"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "d1930567bd8e0bd8cb33fc3f10a6d0eddce29288f075809e3c2975b1fc212c0f"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "dac18785543ccfa10b9939cbc696fd98ec0fd19ea7388a0df61c469f520ffc17"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "356fde61933b0bd40c10dfd8794db2649b5e3c49860ff61cfec2f42a7364c4af"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ca9f42f1b27cbf387564a5949968b6052e30176a238bd0f76b9fc292125fb268"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "36de18894557d6769e7dbcc7e4db19c4ee4ef7d17942d4c1e0e061a4490d8483"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "27343d251e49840ab2d930394251db861c5451b1a2ae8d6f619534c7854ce397"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "731dbc0ad492fc91057e6b0b8c5fa8eacc75dbbf0c5e85affcc1d165d3011eef"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ceeedcd1794667d7e02ecc0160b7f924ee1d6bd3cbb0358090ebb6baf1b6f44a"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "center_first",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "456d4b233c38b98221bd7530ee7cd67e66a68d0a5d8805efc54b741bf12be11c"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "456d4b233c38b98221bd7530ee7cd67e66a68d0a5d8805efc54b741bf12be11c"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ceeedcd1794667d7e02ecc0160b7f924ee1d6bd3cbb0358090ebb6baf1b6f44a"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "731dbc0ad492fc91057e6b0b8c5fa8eacc75dbbf0c5e85affcc1d165d3011eef"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "27343d251e49840ab2d930394251db861c5451b1a2ae8d6f619534c7854ce397"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "reverse",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "36de18894557d6769e7dbcc7e4db19c4ee4ef7d17942d4c1e0e061a4490d8483"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "36de18894557d6769e7dbcc7e4db19c4ee4ef7d17942d4c1e0e061a4490d8483"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "27343d251e49840ab2d930394251db861c5451b1a2ae8d6f619534c7854ce397"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "731dbc0ad492fc91057e6b0b8c5fa8eacc75dbbf0c5e85affcc1d165d3011eef"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "ceeedcd1794667d7e02ecc0160b7f924ee1d6bd3cbb0358090ebb6baf1b6f44a"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 2,
+    "order": "parallel",
+    "semantics": "LEGACY_FILTERED_CANONICAL",
+    "coreCells": 16384,
+    "sha256": "456d4b233c38b98221bd7530ee7cd67e66a68d0a5d8805efc54b741bf12be11c"
+  }
+]

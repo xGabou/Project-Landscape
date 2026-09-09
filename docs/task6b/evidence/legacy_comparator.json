@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "exactness": "raw float bits and exact identifiers; no tolerance",
+  "rows": [
+    {
+      "source": "build/task6b-legacy-runtime-24",
+      "table": "canonical_geography",
+      "exactRows": 595,
+      "expectedRows": 595
+    },
+    {
+      "source": "build/task6b-legacy-runtime-24",
+      "table": "legacy_direct_samples",
+      "exactRows": 595,
+      "expectedRows": 595
+    },
+    {
+      "source": "build/task6b-legacy-runtime-24",
+      "table": "biome_hints",
+      "exactRows": 595,
+      "expectedRows": 595
+    },
+    {
+      "source": "build/task6b-legacy-runtime-24",
+      "table": "minecraft_biomes",
+      "exactRows": 85,
+      "expectedRows": 85
+    },
+    {
+      "source": "build/task6b-legacy-runtime-24",
+      "table": "seed_collision",
+      "exactRows": 85,
+      "expectedRows": 85
+    },
+    {
+      "source": "build/task6b-legacy-runtime-24",
+      "table": "cached_direct_comparison",
+      "exactRows": 595,
+      "expectedRows": 595
+    },
+    {
+      "source": "build/task6b-legacy-runtime-tb",
+      "table": "canonical_geography",
+      "exactRows": 595,
+      "expectedRows": 595
+    },
+    {
+      "source": "build/task6b-legacy-runtime-tb",
+      "table": "legacy_direct_samples",
+      "exactRows": 595,
+      "expectedRows": 595
+    },
+    {
+      "source": "build/task6b-legacy-runtime-tb",
+      "table": "biome_hints",
+      "exactRows": 595,
+      "expectedRows": 595
+    },
+    {
+      "source": "build/task6b-legacy-runtime-tb",
+      "table": "minecraft_biomes",
+      "exactRows": 85,
+      "expectedRows": 85
+    },
+    {
+      "source": "build/task6b-legacy-runtime-tb",
+      "table": "seed_collision",
+      "exactRows": 85,
+      "expectedRows": 85
+    },
+    {
+      "source": "build/task6b-legacy-runtime-tb",
+      "table": "cached_direct_comparison",
+      "exactRows": 595,
+      "expectedRows": 595
+    }
+  ],
+  "tiles": [
+    {
+      "suite": "golden-24",
+      "source": "build/task6b-legacy-runtime-24",
+      "exact": 105,
+      "expected": 105,
+      "workers": [
+        24
+      ]
+    },
+    {
+      "suite": "golden-2",
+      "source": "docs/task6b/evidence/legacy-offline/golden-2",
+      "exact": 105,
+      "expected": 105,
+      "workers": [
+        2
+      ]
+    },
+    {
+      "suite": "golden-48",
+      "source": "docs/task6b/evidence/legacy-offline/golden-48",
+      "exact": 105,
+      "expected": 105,
+      "workers": [
+        48
+      ]
+    },
+    {
+      "suite": "golden-repeat",
+      "source": "docs/task6b/evidence/legacy-offline/golden-repeat",
+      "exact": 105,
+      "expected": 105,
+      "workers": [
+        24
+      ]
+    },
+    {
+      "suite": "golden-tb",
+      "source": "build/task6b-legacy-runtime-tb",
+      "exact": 105,
+      "expected": 105,
+      "workers": [
+        24
+      ]
+    }
+  ],
+  "canonicalGeography": "595/595",
+  "biomeHints": "595/595",
+  "biomeKeys": "85/85",
+  "standaloneTileDigests": "420/420",
+  "TerraBlenderTileDigests": "105/105",
+  "legacyCollisionPreserved": true,
+  "scope": "fresh production runtime primary/TerraBlender suites plus retained completed 2/48/repeat offline scheduling suites. Offline runs are used only for tile digests, not invented holder observations."
+}
