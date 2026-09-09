@@ -11,9 +11,6 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.util.ExtraCodecs;
 import net.minecraft.util.Mth;
 import raccoonman.reterraforged.world.worldgen.noise.NoiseUtil;
-import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
-import raccoonman.reterraforged.world.worldgen.noise.module.Noises;
-import raccoonman.reterraforged.world.worldgen.noise.module.Noise.Visitor;
 
 public record LinearSpline(Noise input, List<Pair<Float, Noise>> points, float minValue, float maxValue) implements Noise {
 	public static final Codec<LinearSpline> CODEC = RecordCodecBuilder.create(instance -> instance.group(

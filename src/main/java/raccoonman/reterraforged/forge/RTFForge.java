@@ -2,6 +2,7 @@
  * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.forge;
 
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.metadata.PackMetadataGenerator;
@@ -36,7 +37,7 @@ public class RTFForge {
 
     private static void unloadLevel(net.minecraftforge.event.level.LevelEvent.Unload event) {
         if (event.getLevel() instanceof net.minecraft.server.level.ServerLevel level) {
-            var state = (raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState();
+            var state = (RTFRandomState)(Object)level.getChunkSource().randomState();
             var context = state.generatorContext();
             if (context != null && context.cache != null) context.cache.close();
         }

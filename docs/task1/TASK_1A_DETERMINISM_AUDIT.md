@@ -228,7 +228,7 @@ from E's opportunistic lookup. Its path availability is a finding, not desired b
 | PresetEditorPage preview | Explicit makeUncached -> generateZoomed(...,false); omits optional filters deliberately. Does not call broken makeUncached.lookup.applyCell |
 | ErodeFeature, DecorateSnowFeature, elevation/biome-edge chance, FastPoissonModifier | Fetch Tile.Chunk explicitly for generation/features; retain F07 lifetime exposure |
 
-Source inventory is searchable under `src/main/java/raccoonman/reterraforged`; the
+Source inventory is searchable under `src/main/java/Gabou/reterraforged`; the
 active filter family is `world/worldgen/densityfunction/tile/filter`, not the parallel
 older `cell/filter` classes.
 

@@ -2,11 +2,11 @@
  * Calls the MIT-derived legacy backend; no inherited implementation is relicensed here. */
 package com.gabou.atmospheregen.compat.legacy;
 
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import com.gabou.atmospheregen.api.geography.*;
 import java.util.Optional;
 import net.minecraft.server.level.ServerLevel;
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.Terrain;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;

@@ -24,7 +24,7 @@ Recorded 2026-09-05. Scope: source repair, loader/build conversion, launch and c
 | ForgeGradle | 6.0.42 |
 | MixinGradle | 0.7.38 |
 | Mixin annotation processor/runtime | 0.8.5 |
-| Mod version / package | 0.0.6 / `raccoonman.reterraforged` |
+| Mod version / package | 0.0.6 / `Gabou.projectlandscape` |
 | TerraBlender | 3.0.1.10; Curse file 6290448, compile-only by default |
 | Architectury plugin / Loom | Removed from final build; repaired comparator resolved 3.4.164 / 1.9.436 |
 | Fabric Loader / Fabric API / Architectury API | No final dependency |
@@ -49,7 +49,7 @@ These optional profiles are preserved, not certified as an integration/modpack. 
 
 ```text
 build.gradle, settings.gradle, gradle.properties, gradlew[.bat], gradle/wrapper/
-src/main/java/raccoonman/reterraforged/     existing common + native Forge code
+src/main/java/Gabou/reterraforged/     existing common + native Forge code
 src/main/resources/                       common assets + Forge metadata/mixins/AT
 src/generated/resources/                  tracked language + pack metadata
 src/smoke/java/baseline/smoke/             development-only lifecycle harness

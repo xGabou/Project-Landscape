@@ -2,6 +2,7 @@ package raccoonman.reterraforged.world.worldgen.feature.template;
 
 import java.util.List;
 
+import raccoonman.reterraforged.server.RTFMinecraftServer;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
@@ -16,7 +17,6 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import raccoonman.reterraforged.RTFCommon;
-import raccoonman.reterraforged.server.RTFMinecraftServer;
 import raccoonman.reterraforged.world.worldgen.feature.template.TemplateFeature.Config;
 import raccoonman.reterraforged.world.worldgen.feature.template.decorator.DecoratorConfig;
 import raccoonman.reterraforged.world.worldgen.feature.template.decorator.TemplateDecorator;
@@ -54,11 +54,11 @@ public class TemplateFeature extends Feature<Config<?>> {
             return false;
         }
         
-        if(world.getServer() instanceof RTFMinecraftServer rtfMinecraftServer) {
+        if(world.getServer() instanceof RTFMinecraftServer RTFMinecraftServer) {
 	        DecoratorConfig<T> decoratorConfig = config.decorator();
 	        
 	        ResourceLocation templateName = nextTemplate(config.templates, rand);
-	        FeatureTemplate template = rtfMinecraftServer.getFeatureTemplateManager().load(templateName);
+	        FeatureTemplate template = RTFMinecraftServer.getFeatureTemplateManager().load(templateName);
 	        
 	        Dimensions dimensions = template.getDimensions(mirror, rotation);
 	        TemplatePlacement<T> placement = config.placement();

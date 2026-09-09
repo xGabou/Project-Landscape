@@ -1,6 +1,8 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
 package com.gabou.atmospheregen.compat.legacy;
 
+import raccoonman.reterraforged.RTFCommon;
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import com.gabou.atmospheregen.config.*;
 import com.gabou.atmospheregen.generation.context.WorldGenerationContext;
 import com.gabou.atmospheregen.generation.version.GenerationVersions;
@@ -14,7 +16,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.*;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.densityfunction.CellSampler;
 
 /** Binds metadata after RandomState initialization and before ChunkMap publishes or schedules chunks. */
@@ -37,7 +38,7 @@ public final class LegacyWorldBinding {
             GenerationManifestStore.resolve(file, recognized).ifPresent(resolution -> {
                 var legacy = state.requireGeneratorContext("bind persisted generation metadata");
                 legacy.bindGenerationContext(new WorldGenerationContext(resolution.manifest(), level.dimension(), legacy.lookup.samplingIdentity()));
-                raccoonman.reterraforged.RTFCommon.LOGGER.info("AtmosphereGen {}: {} dimension={} fingerprint={}", resolution.kind(),
+                RTFCommon.LOGGER.info("AtmosphereGen {}: {} dimension={} fingerprint={}", resolution.kind(),
                     resolution.manifest().content().versions().geography(), level.dimension().location(), resolution.manifest().fingerprint().sha256());
             });
         } catch (IOException failure) { throw new UncheckedIOException("Cannot persist generation manifest for " + level.dimension().location() + "; world generation must not proceed", failure); }

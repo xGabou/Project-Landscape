@@ -1,17 +1,15 @@
 package raccoonman.reterraforged.data.worldgen.preset;
 
+import raccoonman.reterraforged.RTFCommon;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import raccoonman.reterraforged.RTFCommon;
 import raccoonman.reterraforged.data.worldgen.preset.settings.MiscellaneousSettings;
 import raccoonman.reterraforged.data.worldgen.preset.settings.Preset;
-import raccoonman.reterraforged.world.worldgen.biome.RTFBiomes;
 
 public final class PresetBiomeData {
     public static final ResourceKey<Biome> BRYCE = createKey("bryce");

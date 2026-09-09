@@ -9,7 +9,7 @@ import raccoonman.reterraforged.world.worldgen.noise.domain.Domain;
 import raccoonman.reterraforged.world.worldgen.noise.domain.Domains;
 import raccoonman.reterraforged.world.worldgen.noise.function.DistanceFunction;
 import raccoonman.reterraforged.world.worldgen.noise.function.EdgeFunction;
-import raccoonman.reterraforged.world.worldgen.noise.module.Noises;	
+import raccoonman.reterraforged.world.worldgen.noise.module.Noises;
 
 public class RegionModule implements CellPopulator {
     private int seed;

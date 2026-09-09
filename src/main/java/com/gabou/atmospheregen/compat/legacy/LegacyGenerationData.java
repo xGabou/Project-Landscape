@@ -1,6 +1,7 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
 package com.gabou.atmospheregen.compat.legacy;
 
+import raccoonman.reterraforged.registries.RTFRegistries;
 import com.gabou.atmospheregen.persistence.*;
 import com.google.gson.*;
 import com.mojang.serialization.*;
@@ -11,7 +12,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.*;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.chunk.ChunkGenerator;
-import raccoonman.reterraforged.registries.RTFRegistries;
 import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
 import raccoonman.reterraforged.world.worldgen.structure.rule.StructureRule;
 

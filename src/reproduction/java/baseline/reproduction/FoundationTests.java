@@ -1,5 +1,6 @@
 /* Original development tests. All Rights Reserved. */
 package baseline.reproduction;
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import com.gabou.atmospheregen.config.*;
 import com.gabou.atmospheregen.generation.version.*;
 import com.gabou.atmospheregen.generation.seed.*;
@@ -50,13 +51,13 @@ public final class FoundationTests {
         binding(level,out);
     }
     private static void binding(ServerLevel level,Evidence out) throws Exception {
-        var legacy=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
+        var legacy=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
         var context=legacy.generationContext();
         if(context==null||context.runtimeToken()!=legacy.lookup.samplingIdentity())throw new AssertionError("World context not bound to cache token");
         var emptyObjectHash=GenerationFingerprint.of(new CanonicalJson("{}"));
         for(String key:List.of("nbt_resources","worldgen_json_resources"))if(emptyObjectHash.equals(context.manifest().content().data().get(key)))throw new AssertionError("Default world resource capture is empty: "+key);
         for(var dim:List.of(net.minecraft.world.level.Level.NETHER,net.minecraft.world.level.Level.END)) {
-            var other=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getServer().getLevel(dim).getChunkSource().randomState()).generatorContext();
+            var other=((RTFRandomState)(Object)level.getServer().getLevel(dim).getChunkSource().randomState()).generatorContext();
             if(other!=null&&other.generationContext()!=null)throw new AssertionError("Companion forced into foreign dimension");
         }
         var provider=com.gabou.atmospheregen.compat.legacy.LegacyRtfGeographyAdapter.forLevel(level);
@@ -92,7 +93,7 @@ public final class FoundationTests {
         out.row("api_contracts","unknownMetricsAbsent",true,"invalidValuesRejected",invalid.size(),"unavailableGeographyAndClimateFail",true,"negativeSpatialKey",Long.toString(sample.position().spatialKey()));
     }
     private static void manifests(ServerLevel level,Evidence out) throws Exception {
-        var preset=((raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState()).preset();
+        var preset=((RTFRandomState)(Object)level.getChunkSource().randomState()).preset();
         var legacy=LegacyPresetSnapshot.capture(preset);
         var config=new WorldGeographyConfig(Optional.of(legacy),Optional.empty());
         var checksum=GenerationFingerprint.of(legacy.effectivePreset());

@@ -1,5 +1,6 @@
 package raccoonman.reterraforged.mixin;
 
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -23,7 +24,6 @@ import net.minecraft.world.level.levelgen.NoiseSettings;
 import net.minecraft.world.level.levelgen.RandomState;
 import raccoonman.reterraforged.data.worldgen.preset.settings.Preset;
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.densityfunction.CellSampler;
 import raccoonman.reterraforged.world.worldgen.densityfunction.ConditionalArrayCache;
 import raccoonman.reterraforged.world.worldgen.densityfunction.tile.Tile;
@@ -57,7 +57,7 @@ class MixinNoiseChunk {
 		this.chunkX = SectionPos.blockToSectionCoord(minBlockX);
 		this.chunkZ = SectionPos.blockToSectionCoord(minBlockZ);
 		GeneratorContext generatorContext;
-		if((Object) randomState instanceof RTFRandomState rtfRandomState && cellCountXZ > 1 && (generatorContext = rtfRandomState.generatorContext()) != null) {
+		if((Object) randomState instanceof RTFRandomState RTFRandomState && cellCountXZ > 1 && (generatorContext = RTFRandomState.generatorContext()) != null) {
 			this.chunk = generatorContext.cache.provideAtChunk(this.chunkX, this.chunkZ).getChunkReader(this.chunkX, this.chunkZ);
 		}
 		this.cache2d = new CellSampler.Cache2d();
@@ -73,10 +73,10 @@ class MixinNoiseChunk {
 		argsOnly = true
 	)
 	private static Aquifer.FluidPicker modifyFluidPicker(Aquifer.FluidPicker fluidPicker, int i, RandomState randomState, int j, int k, NoiseSettings noiseSettings, DensityFunctions.BeardifierOrMarker beardifierOrMarker, NoiseGeneratorSettings noiseGeneratorSettings) {
-		if((Object) randomState instanceof RTFRandomState rtfRandomState) {
+		if((Object) randomState instanceof RTFRandomState RTFRandomState) {
 			@Nullable
-			Preset preset = rtfRandomState.preset();
-			if(preset != null && rtfRandomState.generatorContext() != null) {
+			Preset preset = RTFRandomState.preset();
+			if(preset != null && RTFRandomState.generatorContext() != null) {
 				int lavaLevel = preset.world().properties.lavaLevel;
 		        Aquifer.FluidStatus lava = new Aquifer.FluidStatus(lavaLevel, Blocks.LAVA.defaultBlockState());
 		        int seaLevel = noiseGeneratorSettings.seaLevel();

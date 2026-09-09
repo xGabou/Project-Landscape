@@ -7,6 +7,7 @@ import java.util.function.Function;
 
 import javax.annotation.Nullable;
 
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -25,7 +26,6 @@ import net.minecraft.world.level.chunk.ChunkStatus;
 import net.minecraft.world.level.levelgen.RandomState;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager;
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 
 @Mixin(ChunkStatus.class)
 public class MixinChunkStatus {
@@ -38,10 +38,10 @@ public class MixinChunkStatus {
 	)
 	private static void lambda$static$2(ChunkStatus status, Executor executor, ServerLevel level, ChunkGenerator generator, StructureTemplateManager templateManager, ThreadedLevelLightEngine lightEngine, Function<ChunkAccess, CompletableFuture<Either<ChunkAccess, ChunkHolder.ChunkLoadingFailure>>> chunkLookup, List<ChunkAccess> regionChunks, ChunkAccess centerChunk, CallbackInfoReturnable<CompletableFuture<ChunkAccess>> callback) {
 		RandomState randomState = level.getChunkSource().randomState();
-		if((Object) randomState instanceof RTFRandomState rtfRandomState) {
+		if((Object) randomState instanceof RTFRandomState RTFRandomState) {
 			ChunkPos chunkPos = centerChunk.getPos();
 			@Nullable
-			GeneratorContext context = rtfRandomState.generatorContext();
+			GeneratorContext context = RTFRandomState.generatorContext();
 			
 			if(context != null) {
 				context.cache.queueAtChunk(chunkPos.x, chunkPos.z);
@@ -57,10 +57,10 @@ public class MixinChunkStatus {
 	)
 	private static void lambda$static$11(ChunkStatus status, ServerLevel level, ChunkGenerator generator, List<ChunkAccess> chunks, ChunkAccess centerChunk, CallbackInfo callback) {
 		RandomState randomState = level.getChunkSource().randomState();
-		if((Object) randomState instanceof RTFRandomState rtfRandomState) {
+		if((Object) randomState instanceof RTFRandomState RTFRandomState) {
 			ChunkPos chunkPos = centerChunk.getPos();
 			@Nullable
-			GeneratorContext context = rtfRandomState.generatorContext();
+			GeneratorContext context = RTFRandomState.generatorContext();
 			
 			if(context != null) {
 				context.cache.dropAtChunk(chunkPos.x, chunkPos.z);

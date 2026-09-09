@@ -1,6 +1,6 @@
 # Task 3 — geography extraction
 
-Status: method-level audit and pre-extraction stage capture in progress. Not a completion report.
+Status: extraction implemented; comprehensive comparator/runtime/performance gates in progress.
 Started from clean accepted Task 2 `203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7`.
 All 342 Task 2 indexed evidence hashes verified before changes. LEGACY_RTF_V0 is immutable
 comparator behavior, not permission to update goldens after a refactor.
@@ -101,3 +101,133 @@ registries and exact Task 1C field encoding. Later staged captures must match th
 complete golden/scheduling/Task 1B/smoke/performance gates. Task 1C/2 evidence remains read-only.
 
 Task 4 continent/ocean redesign, new climate/biome authority and runtime integrations remain out of scope.
+
+## Implemented architecture
+
+Original ARR contracts under `com.gabou.atmospheregen.geography`:
+`GeographyWorkspace`, `ContinentStage`, `TerrainStage`, `HydrologyStage`,
+`GeographyFinalizationStage`, and generic batched `GeographyPipeline<W,R,T>`.
+The explicit `compat.legacy.LegacyPreFilterCompatibility` hook is the only old-classification
+extension point in this orchestrator. There are no future climate/biome API dependencies and no
+new geography version factory. Float point coordinates are deliberate for inherited zoomed previews;
+public coordinates remain integer blocks. No per-point workspace or immutable sample allocation.
+
+MIT-derived implementations live under `Gabou.projectlandscape.world.worldgen.cell.geography`:
+
+| Implementation | Responsibility |
+|---|---|
+| LegacyGeographyFactory | Frozen `Heightmap.make` graph construction and exact seed allocation order |
+| LegacyContinentStage | Original point preparation, beach noise and unchanged continent application |
+| LegacyTerrainStage | Region application, scaled terrain coordinates and unchanged composed terrain graph |
+| LegacyHydrologyStage | Primitive site-key RiverMapSource, per-chunk map reuse, carving and volcano post-carving correction |
+| LegacyMinecraftParameterAdapter | V0 valley/river/lake/wetland parameter overrides, old climate passes, weirdness sign; continentalness channel mapping |
+| LegacyCoastCompatibility | Biome-center coast mask and submerged coast correction at their original call positions |
+| LegacyGeographyFinalizationStage | Existing erosion/smoothing/steepness/beach/quart-correction algorithm and order |
+
+`Heightmap` now contains the concrete stage bindings, Levels and ControlPoints. Its old point
+methods delegate; compatibility accessors remain for feature random seeds and spawn/preview center
+selection. It no longer constructs the graph or owns parameter correction formulas. Its direct apply
+method remains a deliberately noncanonical compatibility facade. `WorldFilters` is a compatibility
+subclass of the finalization stage; filter-failure tests can still replace TileGenerator's existing
+filter slot and reach the real finish path.
+
+```text
+GeneratorContext → LegacyGeographyFactory → legacy stages + frozen graphs
+  → TileGenerator.geographyPipeline
+       per batch/chunk: Continent → Terrain → Hydrology → V0 compatibility
+       all writers complete → finalization → detached publication
+  → existing TileCache (unchanged context token and ownership)
+  → LegacyRtfGeographyAdapter → immutable GeoSample / HydrologySample
+```
+
+Filtering still runs before snapshot publication. Submission/cancellation/failure draining, workspace
+pool return, tile geometry, chunk traversal and batch scheduling have not been rewritten. New contexts
+keep their Task 2 runtime token; the provider captures the owning immutable context and cache once.
+No new global state or per-point registry/manifest/seed hash appears.
+
+## Cell partition and captured mountain data
+
+Cell implements the geography-only workspace view. Existing 24 public fields remain as legacy storage;
+classification and parameter fields are explicitly documented as compatibility scratch rather than
+new geography authority. Physical `heightErosion` is exposed as normalized removal delta, distinctly
+named from the legacy Minecraft erosion parameter. Reset/copy/snapshot continue transporting all fields.
+
+Three **private float** captures avoid changing the frozen public Cell field schema:
+
+1. Existing Blender control sample, unavailable (internal NaN sentinel) where the ocean-only branch
+   never evaluates the land mountain selector; public absence is Optional.empty, never numeric NaN.
+2. Mountain-chain population contribution: existing blend alpha, multiplied by the existing continental
+   land blend where applicable. Outside the transition it is zero or one.
+3. Regional mountain population contribution: mountain population membership weighted by RegionLerper,
+   then by the non-chain land fraction and continental land fraction.
+
+Combined influence is their sum, bounded to [0,1] at the public diagnostic boundary to handle float
+rounding. These are **pre-carving/pre-filter terrain synthesis contributions**, transported alongside
+finalized height, not a measured fraction of final elevation or ridge geometry. No selector/noise graph
+is reevaluated to populate them. A three-case synthetic blend test verifies weights and branch call counts.
+The new fields have separate capture/digest tables; the old 24-field tile digest is unchanged.
+
+The 24-worker allocation pilot measured 3,201,648–3,201,680 bytes per tile versus Task 2
+2,996,848–2,996,880: about +6.83%. Private field layout adds eight bytes per published Cell on this JVM
+(25,600 cells → 204,800 additional bytes). Warmed pooled workspaces are reused; first-allocation costs
+and retained tile-memory growth are not identical to this warmed allocation metric. Final throughput
+and allocation repeats remain required, not inferred from the pilot's short timings.
+
+## Public sample semantics and enrichment
+
+The Task 2 adapter now queries tiles produced by the extracted pipeline. It captures the owner context
+and cache and rejects shutdown. It reads the nonpooled published tile only while constructing detached
+records; it does not allocate an intermediate Cell copy, return a Cell/Tile, or use direct fallback.
+Task 1B's reader-lifetime invariant makes retained published storage safe across eviction. This eliminates
+an unnecessary query-only allocation while adding the new immutable diagnostic fields.
+
+`GeoSample` retains its previous constructor and adds optional `LegacyTerrainSignals`, containing
+properly labeled land value, existing continent center/site, terrain-region selector/edge, selector and
+continuous mountain contributions, physical removal delta and sediment in block units. No hash selector
+is advertised as a globally unique connected continent/region ID. Existing normalized land value is not
+mapped to ocean distance or physical continentality. Exact PLATEAU/HILLS terrain identities now populate
+those public landforms; ambiguous composite terrains remain conservative rather than name-guessed.
+
+`GeographyMetrics.mountainInfluence` is now populated with LEGACY_HEURISTIC quality at block sampling
+resolution. Slope, local relief, physical continentality, ocean/coast distance, latitude and ridge direction
+remain explicitly unavailable. Using the tile halo would not satisfy canonical neighbor semantics at
+partition boundaries, and generating extra adjacent eroded tiles is not silently added to every query.
+
+Hydrology still exposes water category, river/lake/wetland flags and normalized `1-riverMask` valley
+influence when valid. Segment ID, exact distance, basin, flow, discharge and water table are absent.
+New physical baseline climate and biome resolver remain unavailable; legacy temperature/moisture and
+BiomeType diagnostics are emitted separately from physical fields.
+
+## Legacy consumer disposition
+
+`WorldLookup.sampleFilteredTile` is explicit canonical internal sampling;
+`sampleDirectApproximate` is unfiltered plus its point coast correction;
+`sampleLegacyOpportunistic` deliberately retains cache-dependent V0 semantics. Deprecated `applyCell`
+overloads remain compatibility shims for frozen harness/external inherited consumers, not a public
+GeographyProvider. Production structure checks explicitly call the opportunistic climate-disabled path
+because changing it to exact would change frozen structure eligibility. No blacklist/cutoff changed.
+
+CellSampler retains its context/tile/climate-mode cache and exact in-chunk readers; its fallback is already
+explicit direct-or-selected-tile sampling from Task 1B. Continentalness conversion now delegates to the
+legacy parameter adapter without changing operations or floats. Old temperature/moisture/biome-region
+field reads stay in this legacy Minecraft bridge until a future resolver replaces them.
+
+Preview calls `generatePreviewApproximate`, with the old `generateZoomed` name a deprecated shim.
+Its UI explicitly labels “Legacy preview approximation”. It keeps transformed coordinates and skips
+optional filters as before; no forced canonical tile generation per preview pixel.
+
+## Verification records (in progress)
+
+Pre-extraction `stage-baseline` captured 2,975 rows (595 × five stages). Point-stage extraction,
+tile-pipeline integration, coast/parameter isolation and mountain capture each passed every legacy
+field at every stage exactly. `provider-checks-fixed` and `geography` test 85 real public locations,
+warmth, eviction/regeneration, copy/reset and synthetic mountain blend evaluation counts.
+
+One initial developer export failed because Gson tried reflecting into Java Optional. The evidence
+serializer was corrected to export explicit values/nulls, without opening JDK modules or changing the
+production API. The failed log remains a harness-development failure, not a terrain defect.
+
+Run `scripts/task3/Verify-Dependencies.ps1` for package-direction assertions. Run `Run-Gates.ps1`
+sequentially for geography/goldens/scheduling/full regressions/foundation/stage/benchmarks. Stage tests
+compare the new pipeline directly against the pre-extraction capture. Complete aggregate results and
+performance disposition will be added after all gates finish; accepted evidence is never overwritten.

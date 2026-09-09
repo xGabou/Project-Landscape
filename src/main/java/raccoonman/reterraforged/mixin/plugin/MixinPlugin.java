@@ -3,11 +3,11 @@ package raccoonman.reterraforged.mixin.plugin;
 import java.util.List;
 import java.util.Set;
 
+import raccoonman.reterraforged.RTFCommon;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
-import raccoonman.reterraforged.RTFCommon;
 import raccoonman.reterraforged.world.worldgen.terrablender.TBCompat;
 
 public class MixinPlugin implements IMixinConfigPlugin {

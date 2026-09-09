@@ -8,7 +8,6 @@ import raccoonman.reterraforged.world.worldgen.cell.biome.type.BiomeType;
 import raccoonman.reterraforged.world.worldgen.cell.continent.Continent;
 import raccoonman.reterraforged.world.worldgen.cell.heightmap.ControlPoints;
 import raccoonman.reterraforged.world.worldgen.cell.heightmap.Levels;
-import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
 import raccoonman.reterraforged.world.worldgen.noise.NoiseUtil;
 import raccoonman.reterraforged.world.worldgen.noise.NoiseUtil.Vec2f;
 import raccoonman.reterraforged.world.worldgen.noise.function.DistanceFunction;

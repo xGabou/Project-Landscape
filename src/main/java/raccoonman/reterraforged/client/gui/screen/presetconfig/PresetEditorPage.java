@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.io.IOException;
 import java.util.Optional;
 
+import raccoonman.reterraforged.RTFCommon;
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.platform.NativeImage;
@@ -26,7 +27,6 @@ import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import raccoonman.reterraforged.RTFCommon;
 import raccoonman.reterraforged.client.data.RTFTranslationKeys;
 import raccoonman.reterraforged.client.gui.screen.page.BisectedPage;
 import raccoonman.reterraforged.client.gui.screen.presetconfig.PresetListPage.PresetEntry;
@@ -124,7 +124,7 @@ public abstract class PresetEditorPage extends BisectedPage<PresetConfigScreen, 
 	    public static final int SIZE = (1 << 4) << FACTOR;
 	    private static final float[] LEGEND_SCALES = { 1, 0.9F, 0.75F, 0.6F };
 	    private DynamicTexture texture = new DynamicTexture(new NativeImage(SIZE, SIZE, false));
-	    private ResourceLocation textureId = Minecraft.getInstance().getTextureManager().register(RTFCommon.MOD_ID + "-preview-framebuffer", this.texture); 
+	    private ResourceLocation textureId = Minecraft.getInstance().getTextureManager().register(RTFCommon.MOD_ID + "-preview-framebuffer", this.texture);
 	    private Tile tile;
 	    private int centerX, centerZ;
 	    

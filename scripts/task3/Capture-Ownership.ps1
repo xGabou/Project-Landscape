@@ -10,7 +10,7 @@ $hints=@('erosion','weirdness')
 $classification=@('biomeRegionId','biomeRegionEdge','macroBiomeId','regionMoisture','regionTemperature','biome','temperature','moisture')
 $all=$physical+$hydrology+$finalization+$hints+$classification
 $writes=@()
-$paths=@('src/main/java/raccoonman/reterraforged/world/worldgen/cell','src/main/java/raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter')
+$paths=@('src/main/java/Gabou/reterraforged/world/worldgen/cell','src/main/java/Gabou/reterraforged/world/worldgen/densityfunction/tile/filter')
 foreach($file in Get-ChildItem $paths -Recurse -Filter '*.java'){
     $path=$file.FullName.Substring($root.Length+1).Replace('\','/')
     $lineNumber=0

@@ -88,7 +88,7 @@ Detailed trace:
 
 ## 4. Subsystem disposition
 
-Paths below are relative to `common/src/main/java/raccoonman/reterraforged` unless explicitly marked Forge. Class links locate the principal evidence; method names distinguish similarly named systems. Classifications describe the target Phase 1 disposition, not changes already made.
+Paths below are relative to `common/src/main/java/Gabou/reterraforged` unless explicitly marked Forge. Class links locate the principal evidence; method names distinguish similarly named systems. Classifications describe the target Phase 1 disposition, not changes already made.
 
 | Subsystem | Actual implementation and communication | Disposition and reason |
 | --- | --- | --- |
@@ -182,7 +182,7 @@ flowchart TD
 
 The coarse barrier field is a separately specified geographic scale, not a cache miss fallback for exact terrain. It avoids generating many fully eroded 1-block tiles along every upwind ray. Final local elevation/slope comes from canonical geography; regional moisture transport uses the documented coarse field. Both have versioned deterministic contracts.
 
-New original systems should live in a companion namespace, outside `raccoonman.reterraforged`. Keep derived internals in their existing package initially, avoiding a bulk rename that obscures provenance. The final product/mod ID is a naming decision before registering persisted identifiers; this audit does not invent a permanent brand. Proposed relative packages are `api/{geography,climate,biome}`, `geography`, `climate/baseline`, `biome`, `compat/{terrablender,biomes}`, `worldgen/minecraft`, `persistence`, and `config`. No Phase 2 source modules are needed.
+New original systems should live in a companion namespace, outside `Gabou.projectlandscape`. Keep derived internals in their existing package initially, avoiding a bulk rename that obscures provenance. The final product/mod ID is a naming decision before registering persisted identifiers; this audit does not invent a permanent brand. Proposed relative packages are `api/{geography,climate,biome}`, `geography`, `climate/baseline`, `biome`, `compat/{terrablender,biomes}`, `worldgen/minecraft`, `persistence`, and `config`. No Phase 2 source modules are needed.
 
 ### API semantics to establish before writing records
 

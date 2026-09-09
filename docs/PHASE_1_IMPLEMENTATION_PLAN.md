@@ -38,7 +38,7 @@ Create a generation manifest and codec before changing algorithms. Persist the s
 
 Add a named seed derivation service: deterministic 64-bit mixing of world seed, dimension identity, stage name and stage version, narrowing only at the boundary to a retained noise algorithm that requires an int. Stage seeds must not depend on object construction or task execution order. Retain legacy `Seed.next()` allocation only inside the legacy-version backend.
 
-Gate: codec round trips, invalid-range rejection and version dispatch work; no public API imports `raccoonman.reterraforged` implementation types. Unsupported/missing manifests cannot silently default an existing world to the newest generator.
+Gate: codec round trips, invalid-range rejection and version dispatch work; no public API imports `Gabou.projectlandscape` implementation types. Unsupported/missing manifests cannot silently default an existing world to the newest generator.
 
 ### 3. Extract geography without changing continent design
 

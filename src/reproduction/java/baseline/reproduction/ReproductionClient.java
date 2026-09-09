@@ -4,6 +4,8 @@ package baseline.reproduction;
 import java.nio.file.*;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
+
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.client.gui.screens.worldselection.CreateWorldScreen;
@@ -20,7 +22,6 @@ import net.minecraftforge.fml.common.Mod;
 import raccoonman.reterraforged.RTFCommon;
 import raccoonman.reterraforged.data.worldgen.Datapacks;
 import raccoonman.reterraforged.data.worldgen.preset.settings.Presets;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 
 @Mod("task1a_reproduction")
@@ -125,10 +126,12 @@ public final class ReproductionClient {
                 }
                 if((full||chunksOnly||task1cRepeat())&&++worldIndex<(task1c.equals("variance")?6:task1cRepeat()?4:full&&disabledBootstrapSucceeded?4:Math.min(3,seeds.length))){stage=0;}else{
                     out.row("completion","status","PASS","kind","reproduction observations, not correctness goldens","run",run);out.flush();
-                    Files.writeString(mc.gameDirectory.toPath().resolve("task1a-pass.txt"),run+"\n");stage=99;RTFCommon.LOGGER.info("TASK1A PASS {}",run);mc.stop();
+                    Files.writeString(mc.gameDirectory.toPath().resolve("task1a-pass.txt"),run+"\n");stage=99;
+                    RTFCommon.LOGGER.info("TASK1A PASS {}",run);mc.stop();
                 }
             }
-        }catch(Throwable ex){stage=99;RTFCommon.LOGGER.error("TASK1A FAIL",ex);try{out.row("completion","status","FAIL","error",Evidence.failure(ex));out.flush();}catch(Exception ignored){}mc.stop();}
+        }catch(Throwable ex){stage=99;
+            RTFCommon.LOGGER.error("TASK1A FAIL",ex);try{out.row("completion","status","FAIL","error",Evidence.failure(ex));out.flush();}catch(Exception ignored){}mc.stop();}
     }
     private long currentSeed(){return task1c.equals("variance")?seeds[worldIndex%3]:task1cRepeat()?8675309L:seeds[worldIndex<3?worldIndex:0];}
     private void disabledVegetation(ServerLevel level) {

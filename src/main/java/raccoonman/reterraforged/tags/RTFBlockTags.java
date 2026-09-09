@@ -1,9 +1,9 @@
 package raccoonman.reterraforged.tags;
 
+import raccoonman.reterraforged.RTFCommon;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
-import raccoonman.reterraforged.RTFCommon;
 
 public final class RTFBlockTags {
 	public static final TagKey<Block> SOIL = resolve("soil");

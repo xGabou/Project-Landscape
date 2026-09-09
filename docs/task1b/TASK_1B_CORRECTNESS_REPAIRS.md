@@ -42,7 +42,7 @@ distinct lookup tokens regardless of seed equality. Context mutation is not a su
 version transition; Task 2 must create a new context for changed version/config.
 
 Changed production files: `cell/heightmap/WorldLookup.java`, `densityfunction/CellSampler.java`
-(both under `src/main/java/raccoonman/reterraforged/world/worldgen/`). Existing MIT notice
+(both under `src/main/java/Gabou/reterraforged/world/worldgen/`). Existing MIT notice
 retained at root and provenance headers added to these touched derived files.
 Developer changes: `.gitattributes`, `ReproductionSuite.java`, new verifier and this record/evidence.
 

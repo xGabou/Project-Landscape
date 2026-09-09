@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import raccoonman.reterraforged.RTFCommon;
+import raccoonman.reterraforged.registries.RTFRegistries;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.Lifecycle;
 
@@ -20,9 +22,6 @@ import net.minecraftforge.registries.DataPackRegistryEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.GameData;
 import net.minecraftforge.registries.RegistryBuilder;
-import raccoonman.reterraforged.RTFCommon;
-import raccoonman.reterraforged.registries.RTFBuiltInRegistries;
-import raccoonman.reterraforged.registries.RTFRegistries;
 
 //this is only public so the initializer class can call register
 //TODO make this non public

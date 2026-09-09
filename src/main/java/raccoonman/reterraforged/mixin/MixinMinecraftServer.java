@@ -1,6 +1,8 @@
 /* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.mixin;
 
+import raccoonman.reterraforged.registries.RTFRegistries;
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -12,7 +14,6 @@ import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.levelgen.RandomState;
 import net.minecraft.world.level.storage.ServerLevelData;
 import raccoonman.reterraforged.data.worldgen.preset.settings.Preset;
-import raccoonman.reterraforged.registries.RTFRegistries;
 
 @Mixin(MinecraftServer.class)
 class MixinMinecraftServer {
@@ -23,7 +24,7 @@ class MixinMinecraftServer {
 	private void atmospheregen$guardFrozenGenerationReload(java.util.Collection<String> packs,
 			org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.util.concurrent.CompletableFuture<Void>> callback) {
 		for (ServerLevel level : ((MinecraftServer)(Object)this).getAllLevels()) {
-			var state = (raccoonman.reterraforged.world.worldgen.RTFRandomState)(Object)level.getChunkSource().randomState();
+			var state = (RTFRandomState)(Object)level.getChunkSource().randomState();
 			var context = state.generatorContext();
 			if (context != null && context.generationContext() != null) {
 				callback.setReturnValue(java.util.concurrent.CompletableFuture.failedFuture(new IllegalStateException(

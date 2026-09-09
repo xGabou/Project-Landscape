@@ -3,6 +3,8 @@ package raccoonman.reterraforged.world.worldgen.surface.rule;
 import java.util.ArrayList;
 import java.util.List;
 
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
+import raccoonman.reterraforged.world.worldgen.surface.RTFSurfaceSystem;
 import org.jetbrains.annotations.Nullable;
 
 import com.google.common.collect.ImmutableList;
@@ -21,11 +23,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraft.world.level.levelgen.SurfaceRules.Context;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.noise.NoiseUtil;
 import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
 import raccoonman.reterraforged.world.worldgen.noise.module.Noises;
-import raccoonman.reterraforged.world.worldgen.surface.RTFSurfaceSystem;
 
 public record StrataRule(ResourceLocation name, Holder<Noise> selector, List<Strata> strata, int iterations) implements SurfaceRules.RuleSource {
 	public static final Codec<StrataRule> CODEC = RecordCodecBuilder.create(instance -> instance.group(
@@ -41,8 +41,8 @@ public record StrataRule(ResourceLocation name, Holder<Noise> selector, List<Str
 	
 	@Override
 	public Source apply(Context ctx) {
-		if(ctx.system instanceof RTFSurfaceSystem rtfSurfaceSystem && (Object) ctx.randomState instanceof RTFRandomState rtfRandomState) {
-			return new Source(ctx, rtfRandomState.seed(this.selector.value()), rtfSurfaceSystem.getOrCreateStrata(this.name, this::generateStrata));
+		if(ctx.system instanceof RTFSurfaceSystem RTFSurfaceSystem && (Object) ctx.randomState instanceof RTFRandomState RTFRandomState) {
+			return new Source(ctx, RTFRandomState.seed(this.selector.value()), RTFSurfaceSystem.getOrCreateStrata(this.name, this::generateStrata));
 		} else {
 			throw new IllegalStateException();
 		}

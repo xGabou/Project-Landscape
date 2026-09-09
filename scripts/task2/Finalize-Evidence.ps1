@@ -37,7 +37,7 @@ try{
     }
     if(@($entries|Where-Object {$_ -match '^(baseline/|net/fabricmc/|dev/architectury/)'}).Count){throw 'Developer or removed loader classes in production artifact'}
     $api=@(Get-ChildItem "$root/src/main/java/com/gabou/atmospheregen/api" -Recurse -Filter '*.java')
-    if($api | Select-String -Pattern 'raccoonman\.reterraforged'){throw 'Inherited implementation leaked into public API'}
+    if($api | Select-String -Pattern 'Gabou\.reterraforged'){throw 'Inherited implementation leaked into public API'}
     $build=[ordered]@{status='PASS';commands='compileJava classes jar build reproductionClasses smokeClasses runData runReproductionClient -PreproProfile=foundation -PwithTerraBlender=true';
         log='verified-logs/build-release.txt';minecraft='1.20.1';forge='47.4.22';java='17.0.17+10';gradle='8.11';forgeGradle='6.0.42';mixinGradle='0.7.38';terraBlender='3.0.1.10';
         artifact='build/libs/reterraforged-forge-1.20.1-0.0.6.jar';artifactSha256=(Get-FileHash $jar -Algorithm SHA256).Hash.ToLowerInvariant();

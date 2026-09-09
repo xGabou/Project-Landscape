@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import raccoonman.reterraforged.RTFCommon;
+import raccoonman.reterraforged.registries.RTFRegistries;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.client.gui.screens.worldselection.CreateWorldScreen;
@@ -28,7 +30,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
-import raccoonman.reterraforged.RTFCommon;
 import raccoonman.reterraforged.data.worldgen.Datapacks;
 import raccoonman.reterraforged.data.worldgen.preset.settings.Presets;
 import raccoonman.reterraforged.world.worldgen.RTFRandomState;
@@ -108,7 +109,7 @@ public final class BaselineSmoke {
                                 throw new IllegalStateException("RTF unexpectedly claimed vanilla dimension " + dimension.dimension());
                             RTFCommon.LOGGER.info("TASK1B VANILLA_CONTEXT reopened={} dimension={} required=false context=false preset=false", reopened, dimension.dimension().location());
                         }
-                        int rules = level.registryAccess().registry(raccoonman.reterraforged.registries.RTFRegistries.STRUCTURE_RULE).map(r -> r.size()).orElse(0);
+                        int rules = level.registryAccess().registry(RTFRegistries.STRUCTURE_RULE).map(r -> r.size()).orElse(0);
                         if (rules != 0) throw new IllegalStateException("Unexpected RTF rules in vanilla world: " + rules);
                         RTFCommon.LOGGER.info("TASK1B VANILLA_RULES count={}", rules);
                     } else if (state.generatorContext() == null || state.preset() == null) throw new IllegalStateException("ReTerraForged context/preset missing");

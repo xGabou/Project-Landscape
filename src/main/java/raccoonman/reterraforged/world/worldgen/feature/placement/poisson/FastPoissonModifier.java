@@ -3,6 +3,7 @@ package raccoonman.reterraforged.world.worldgen.feature.placement.poisson;
 import java.util.Random;
 import java.util.stream.Stream;
 
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
@@ -15,7 +16,6 @@ import net.minecraft.world.level.levelgen.RandomState;
 import net.minecraft.world.level.levelgen.placement.PlacementContext;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 import net.minecraft.world.level.levelgen.placement.PlacementModifierType;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.densityfunction.tile.Tile;
 import raccoonman.reterraforged.world.worldgen.feature.placement.RTFPlacementModifiers;
 import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
@@ -82,8 +82,8 @@ public class FastPoissonModifier extends PlacementModifier {
 		BiomeVariance biomeVariance = BiomeVariance.NONE;
 		
 		if (this.biomeFade > BiomeVariance.MIN_FADE) {
-			if((Object) randomState instanceof RTFRandomState rtfRandomState) {
-				Tile.Chunk reader = rtfRandomState.generatorContext().cache.provideAtChunk(chunkPos.x, chunkPos.z).getChunkReader(chunkPos.x, chunkPos.z);
+			if((Object) randomState instanceof RTFRandomState RTFRandomState) {
+				Tile.Chunk reader = RTFRandomState.generatorContext().cache.provideAtChunk(chunkPos.x, chunkPos.z).getChunkReader(chunkPos.x, chunkPos.z);
 				if (reader != null) {
 					biomeVariance = new BiomeVariance(reader, this.biomeFade);
 				}

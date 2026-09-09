@@ -1,5 +1,6 @@
 package raccoonman.reterraforged.data.worldgen.preset.settings;
 
+import raccoonman.reterraforged.registries.RTFRegistries;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
@@ -21,7 +22,6 @@ import raccoonman.reterraforged.data.worldgen.preset.PresetNoiseGeneratorSetting
 import raccoonman.reterraforged.data.worldgen.preset.PresetNoiseRouterData;
 import raccoonman.reterraforged.data.worldgen.preset.PresetPlacedFeatures;
 import raccoonman.reterraforged.data.worldgen.preset.PresetStructureRuleData;
-import raccoonman.reterraforged.registries.RTFRegistries;
 
 public record Preset(WorldSettings world, CaveSettings caves, ClimateSettings climate, TerrainSettings terrain, RiverSettings rivers, FilterSettings filters, StructureSettings structures, MiscellaneousSettings miscellaneous) {
 	public static final Codec<Preset> DIRECT_CODEC = RecordCodecBuilder.create(instance -> instance.group(

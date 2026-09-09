@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import net.minecraft.resources.ResourceLocation;
 import raccoonman.reterraforged.RTFCommon;
+import net.minecraft.resources.ResourceLocation;
 
 public class PresetTemplatePaths {
 	public static final List<ResourceLocation> OAK_SMALL = tree("oak/small", "oak_bush_1", "oak_bush_2", "oak_small_1", "oak_small_2", "oak_small_3", "oak_small_4");

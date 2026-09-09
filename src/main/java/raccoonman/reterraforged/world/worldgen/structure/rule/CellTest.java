@@ -5,6 +5,7 @@ package raccoonman.reterraforged.world.worldgen.structure.rule;
 import java.util.List;
 import java.util.Set;
 
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import org.jetbrains.annotations.Nullable;
 
 import com.google.common.collect.ImmutableSet;
@@ -14,7 +15,6 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.levelgen.RandomState;
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.heightmap.WorldLookup;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.Terrain;
@@ -32,15 +32,15 @@ record CellTest(float cutoff, Set<Terrain> terrainTypeBlacklist) implements Stru
 	
 	@Override
 	public boolean test(RandomState randomState, BlockPos pos) {
-		if((Object) randomState instanceof RTFRandomState rtfRandomState) {
+		if((Object) randomState instanceof RTFRandomState RTFRandomState) {
 			@Nullable
-			GeneratorContext generatorContext = rtfRandomState.generatorContext();
-			if (generatorContext == null && !rtfRandomState.requiresGeneratorContext()) {
+			GeneratorContext generatorContext = RTFRandomState.generatorContext();
+			if (generatorContext == null && !RTFRandomState.requiresGeneratorContext()) {
 				// This geography rule is not satisfiable in a foreign generator. Its
 				// absence cannot be interpreted as permission to place a structure.
 				return false;
 			}
-			generatorContext = rtfRandomState.requireGeneratorContext("test structure geography at " + pos);
+			generatorContext = RTFRandomState.requireGeneratorContext("test structure geography at " + pos);
 			if(generatorContext != null) {
 				WorldLookup worldLookup = generatorContext.lookup;
 				Cell cell = new Cell();

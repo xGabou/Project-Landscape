@@ -2,6 +2,7 @@ package raccoonman.reterraforged.forge.mixin;
 
 import java.net.Proxy;
 
+import raccoonman.reterraforged.server.RTFMinecraftServer;
 import org.spongepowered.asm.mixin.Implements;
 import org.spongepowered.asm.mixin.Interface;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,7 +20,6 @@ import net.minecraft.server.level.progress.ChunkProgressListenerFactory;
 import net.minecraft.server.packs.repository.PackRepository;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.world.level.storage.LevelStorageSource;
-import raccoonman.reterraforged.server.RTFMinecraftServer;
 import raccoonman.reterraforged.world.worldgen.feature.template.template.FeatureTemplateManager;
 
 @Implements(@Interface(iface = RTFMinecraftServer.class, prefix = "reterraforged$RTFMinecraftServer$"))

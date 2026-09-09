@@ -1,7 +1,7 @@
 package raccoonman.reterraforged.client.data;
 
-import net.minecraft.data.PackOutput;
 import raccoonman.reterraforged.RTFCommon;
+import net.minecraft.data.PackOutput;
 import raccoonman.reterraforged.client.gui.Tooltips;
 
 // TODO add some more languages

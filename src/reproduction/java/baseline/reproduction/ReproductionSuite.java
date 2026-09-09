@@ -72,7 +72,7 @@ public final class ReproductionSuite {
             "processors", Runtime.getRuntime().availableProcessors(), "worldgenWorkers", ThreadPools.availableProcessors(), "repeats", repeats,
             "seedSuite", seeds, "dimension", level.dimension().location().toString(), "preset", "loaded Legacy Default",
             "tileSize", 3, "tileBorderChunks", 1, "batchCount", 6, "fieldEncoding", "float raw IEEE754 signed int bits; stable terrain/enum names; no golden values");
-        out.row("preset", "value", Preset.DIRECT_CODEC.encodeStart(com.mojang.serialization.JsonOps.INSTANCE,preset).getOrThrow(false,RTFCommon.LOGGER::error));
+        out.row("preset", "value", Preset.DIRECT_CODEC.encodeStart(com.mojang.serialization.JsonOps.INSTANCE,preset).getOrThrow(false, RTFCommon.LOGGER::error));
         legacyGeometryConfiguration();
         try {
             if(full) {
@@ -89,8 +89,8 @@ public final class ReproductionSuite {
         }
     }
     private void legacyGeometryConfiguration() throws Exception {
-        var defaults=raccoonman.reterraforged.config.PerformanceConfig.makeDefault();
-        var read=raccoonman.reterraforged.config.PerformanceConfig.read(raccoonman.reterraforged.config.PerformanceConfig.DEFAULT_FILE_PATH).result().orElseThrow();
+        var defaults= raccoonman.reterraforged.config.PerformanceConfig.makeDefault();
+        var read= raccoonman.reterraforged.config.PerformanceConfig.read(raccoonman.reterraforged.config.PerformanceConfig.DEFAULT_FILE_PATH).result().orElseThrow();
         out.row("legacy_geometry_config","case","defaults and config reader","tileSize",defaults.tileSize(),"batchCount",defaults.batchCount(),"readTileSize",read.tileSize(),"readBatchCount",read.batchCount());
         for(int size:new int[]{2,3,4}) {
             try { var config=new raccoonman.reterraforged.config.PerformanceConfig(size,6,defaults.threadCount());

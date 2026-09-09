@@ -1,5 +1,6 @@
 package raccoonman.reterraforged.world.worldgen.feature;
 
+import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import org.jetbrains.annotations.Nullable;
 
 import com.mojang.serialization.Codec;
@@ -25,7 +26,6 @@ import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import raccoonman.reterraforged.tags.RTFBlockTags;
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
-import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.heightmap.Levels;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
@@ -47,7 +47,7 @@ public class ErodeFeature extends Feature<Config> {
 		
 		@Nullable
 		GeneratorContext generatorContext;
-		if((Object) randomState instanceof RTFRandomState rtfRandomState && (generatorContext = rtfRandomState.generatorContext()) != null) {
+		if((Object) randomState instanceof RTFRandomState RTFRandomState && (generatorContext = RTFRandomState.generatorContext()) != null) {
 			ChunkPos chunkPos = new ChunkPos(placeContext.origin());
 			int chunkX = chunkPos.x;
 			int chunkZ = chunkPos.z;

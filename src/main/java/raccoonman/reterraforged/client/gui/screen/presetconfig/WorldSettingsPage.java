@@ -67,7 +67,7 @@ public class WorldSettingsPage extends PresetEditorPage {
 				ContinentType.SINGLE,
 				ContinentType.MULTI_IMPROVED
 			),
-			continent.continentType, RTFTranslationKeys.GUI_BUTTON_CONTINENT_TYPE, 
+			continent.continentType, RTFTranslationKeys.GUI_BUTTON_CONTINENT_TYPE,
 			(button, value) -> {
 				continent.continentType = value;
 				this.applyContinentType(value);
