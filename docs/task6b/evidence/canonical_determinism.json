@@ -250,5 +250,6 @@
   ],
   "crossWorkerExact": true,
   "tileComparisons": 30,
-  "scope": "unchanged reference modifier on identical V1 graph; full public cell values plus all three mountain raw-bit fields"
+  "scope": "unchanged reference modifier on identical V1 graph; full public cell values plus all three mountain raw-bit fields",
+  "workerCountCaveat": "Requested JVM counts 1/2/8/24/48; production ThreadPools.availableProcessors() has minimum 2, so actual terrain pools are 2/2/8/24/48. No artificial single-thread production override was introduced."
 }

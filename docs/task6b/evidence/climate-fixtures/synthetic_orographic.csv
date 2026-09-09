@@ -1,0 +1,5 @@
+case,rainfallMm,shadow,orographicRainfall,maximumRise
+windward,1011.0950606996917,0.0,0.0,0.0
+leeward,401.782955975305,0.681540459232325,0.7422521057486328,1700.0
+unobstructed_control,937.481359333059,0.0,0.0,0.0
+barrier_removed,937.481359333059,0.0,0.0,0.0

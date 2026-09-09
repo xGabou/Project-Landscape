@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "candidate": "build/task6b-task5",
+  "reference": "docs/task5/evidence",
+  "comparisons": [
+    {
+      "file": "climate_distribution.csv",
+      "exact": true,
+      "candidateSha256": "535b51b96309416375c1ed5eb8849bd47d9fcc869772086ab53b98aea000ce1b",
+      "referenceSha256": "535b51b96309416375c1ed5eb8849bd47d9fcc869772086ab53b98aea000ce1b",
+      "comparison": "exact text"
+    },
+    {
+      "file": "climate_transects.csv",
+      "exact": true,
+      "candidateSha256": "405ec7f3cf5f09feba0b5343559fdeb6c2cee531b0a5e22191f5cfa808a2b6f7",
+      "referenceSha256": "405ec7f3cf5f09feba0b5343559fdeb6c2cee531b0a5e22191f5cfa808a2b6f7",
+      "comparison": "exact text"
+    },
+    {
+      "file": "completion.json",
+      "exact": true,
+      "candidateSha256": "0d7a1af848fe5cda76147a4f59cc9b8c0e81b49d096de2195e0479e93e7e41d2",
+      "referenceSha256": "feec65e981856be41e7e921f0591130e7eaee94521d1093a24de765619fe0725",
+      "comparison": "JSON values independent of property order"
+    },
+    {
+      "file": "configuration.json",
+      "exact": true,
+      "candidateSha256": "bcf427b2109e5ab94c998067d3719e1b7661e1c556424d7f74284310ff73972b",
+      "referenceSha256": "d94de78ccfe5e3b7e87cd9f976a83aca32c9501e8227a93d90aad7781171c0ed",
+      "comparison": "JSON values independent of property order"
+    },
+    {
+      "file": "determinism_digests.csv",
+      "exact": true,
+      "candidateSha256": "d5439f7d9ad546fbb2e888fbbd115693a7b4f80f948ff162465940c5dc08e85f",
+      "referenceSha256": "cff02095075b1fa54c9dadeaaf054a089b4fd41ebcb1fd35eca4a7c149b2dfcd",
+      "comparison": "exact text"
+    },
+    {
+      "file": "multi_range.csv",
+      "exact": true,
+      "candidateSha256": "bbc042be40cfb455529c3b20149d2b0d7e965d4496946c512effceaf6d515722",
+      "referenceSha256": "bbc042be40cfb455529c3b20149d2b0d7e965d4496946c512effceaf6d515722",
+      "comparison": "exact text"
+    },
+    {
+      "file": "rainfall_fixtures.csv",
+      "exact": true,
+      "candidateSha256": "ccaaffc405f4bb749d2453612028cc995a990832b69a8b1cddf96621efe0d802",
+      "referenceSha256": "ccaaffc405f4bb749d2453612028cc995a990832b69a8b1cddf96621efe0d802",
+      "comparison": "exact text"
+    },
+    {
+      "file": "seed_divergence.json",
+      "exact": true,
+      "candidateSha256": "9161c1bc9591121025241074bec5cb20c1595a3d84465f72113ccd340faf5e2e",
+      "referenceSha256": "8c11ee776f57727fe0cfd4f5b3fd0c4110ff8735ceb32dae8df2322292f77da5",
+      "comparison": "JSON values independent of property order"
+    },
+    {
+      "file": "synthetic_orographic.csv",
+      "exact": true,
+      "candidateSha256": "1e07144370bf567fe595268fadf6420608f5d83b2c93ce103fcb87078d04d7fb",
+      "referenceSha256": "1e07144370bf567fe595268fadf6420608f5d83b2c93ce103fcb87078d04d7fb",
+      "comparison": "exact text"
+    },
+    {
+      "file": "synthetic_temperature.csv",
+      "exact": true,
+      "candidateSha256": "7ee14f2c2bd91881a7d82c1e28548da0d3c0c087b7143d9a0da019f6e372aff0",
+      "referenceSha256": "7ee14f2c2bd91881a7d82c1e28548da0d3c0c087b7143d9a0da019f6e372aff0",
+      "comparison": "exact text"
+    },
+    {
+      "file": "wind_reversal.csv",
+      "exact": true,
+      "candidateSha256": "81f0ef9f43daf9e56e6373823476f2b7fdfb61060d7e279ca4089e16cfe78831",
+      "referenceSha256": "81f0ef9f43daf9e56e6373823476f2b7fdfb61060d7e279ca4089e16cfe78831",
+      "comparison": "exact text"
+    }
+  ],
+  "runtimeCanonicalComparisons": []
+}
