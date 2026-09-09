@@ -18,6 +18,7 @@ public final class PaGeographyProvider implements GeographyProvider {
         bridge=Objects.requireNonNull(context.generator.getHeightmap().paBridge(),"V1 provider requires installed V1 terrain");
         if(context.cache==null)throw new IllegalArgumentException("V1 canonical provider requires a tile cache");
         this.context=context;distances=new CoarseDistanceField(bridge.macro());
+        onClose(distances::clear);
     }
     @Override public GeoSample sample(int x,int z) {
         if(context.cache.isClosed())throw new IllegalStateException("V1 geography context is closed");
@@ -40,6 +41,10 @@ public final class PaGeographyProvider implements GeographyProvider {
     public DetailedSample sampleDetailed(int x,int z){return new DetailedSample(sample(x,z),bridge.macro().sampleMacro(x,z),distances.sample(x,z));}
     public com.gabou.atmospheregen.api.geography.MacroGeographyProvider macroProvider(){return bridge.macro();}
     public Map<String,Long> distanceCacheStats(){return distances.cacheStats();}
+    public CoarseDistanceField distanceField(){return distances;}
+    public void onClose(Runnable action){context.cache.onClose(action);}
+    public com.gabou.atmospheregen.climate.CanonicalClimateService climateService(
+            com.gabou.atmospheregen.generation.context.WorldGenerationContext generation){return context.canonicalClimate(generation);}
     /** Detached world-aligned surface field, copied from the same canonical filtered tile as sample(). */
     public SurfaceTile snapshotSurfaceTile(int x,int z){
         if(context.cache.isClosed())throw new IllegalStateException("V1 geography context is closed");

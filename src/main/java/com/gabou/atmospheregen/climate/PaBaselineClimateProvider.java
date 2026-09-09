@@ -18,4 +18,5 @@ public final class PaBaselineClimateProvider implements BaselineClimateProvider 
     public synchronized BaselineClimateModel.Result explain(int x,int z) { return model.breakdown(geography,x,z); }
     public synchronized Map<String,Long> cacheStats(){return Map.of("entries",(long)cache.size(),"capacity",(long)CAPACITY,"hits",hits,"misses",misses);}
     public synchronized void clear(){cache.clear();}
+    public synchronized void close(){cache.clear();}
 }

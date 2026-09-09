@@ -31,18 +31,20 @@ public final class ClimateDebugCommand {
         net.minecraft.server.level.ServerLevel level = source.getLevel();
         var random=(RTFRandomState)(Object)level.getChunkSource().randomState();GeneratorContext context=random.generatorContext();
         if(context==null||context.generator.getHeightmap().paBridge()==null){source.sendFailure(Component.literal("PA_GEOGRAPHY_V1 is not installed in this world"));return 0;}
-        var geography=new PaGeographyProvider(context);MacroGeographyProvider macro=geography.macroProvider();
+        var geography=context.canonicalGeography();MacroGeographyProvider macro=geography.macroProvider();
         var versions=context.generationContext()==null?null:context.generationContext().manifest().content().versions();
         if(versions==null||versions.geography()!=GeographyAlgorithmVersion.PA_GEOGRAPHY_V1){source.sendFailure(Component.literal("/geo climate requires PA_GEOGRAPHY_V1"));return 0;}
         var configured=context.generationContext().manifest().content().baselineClimate().planned().orElseGet(()->new BaselineClimateConfig.Planned(100000,0,.0065,.5));
-        var model=new BaselineClimateModel(context.generationContext().seeds(),configured);var adapter=ClimateGeographyAdapters.of(geography,macro,new CoarseDistanceField(macro));
-        var result=model.breakdown(adapter,x,z);var b=result.baseline();var d=result.breakdown();
+        var model=new BaselineClimateModel(context.generationContext().seeds(),configured);var adapter=ClimateGeographyAdapters.of(geography,macro,geography.distanceField());
+        var result=context.generationContext().manifest().content().baselineClimate().planned().isPresent()
+                ? context.canonicalClimate(context.generationContext()).provider().explain(x,z) : model.breakdown(adapter,x,z);
+        var b=result.baseline();var d=result.breakdown();
         source.sendSuccess(()->Component.literal("PA_GEOGRAPHY_V1 / "+versions.baselineClimate()+" x="+x+" z="+z+" lat="+d.latitudeDegrees()+" elevContribution="+d.altitudeContributionCelsius()+"C wind="+b.prevailingWind().orElseThrow().x()+","+b.prevailingWind().orElseThrow().z()+" temp="+b.meanTemperatureCelsius()+"C rain="+b.annualRainfallMm()+"mm/y evap="+b.potentialEvaporationMm()+"mm/y moisture="+b.ecologicalMoistureIndex()+" shadow="+b.rainShadow()+" fetch="+d.marineFetch()+" orographic="+d.orographicRainfall()),false);return 1;
     }
     private static int sampleBiome(net.minecraft.commands.CommandSourceStack source,int x,int z) {
         var level=source.getLevel();var random=(RTFRandomState)(Object)level.getChunkSource().randomState();var context=random.generatorContext();
         if(context==null||context.generationContext()==null||!(level.getChunkSource().getGenerator().getBiomeSource() instanceof com.gabou.atmospheregen.biome.ClimateBiomeSource)) {source.sendFailure(Component.literal("/geo biome requires the explicit PA_GEOGRAPHY_V1 biome resolver selection"));return 0;}
-        var geography=new PaGeographyProvider(context);
+        var geography=context.canonicalGeography();
         var config=context.generationContext().manifest().content();
         var biomeSource=(com.gabou.atmospheregen.biome.ClimateBiomeSource)level.getChunkSource().getGenerator().getBiomeSource();
         var g=com.gabou.atmospheregen.biome.BiomeGeography.sample(geography,x,z);

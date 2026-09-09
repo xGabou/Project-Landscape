@@ -23,7 +23,7 @@ public final class ClimateBiomeInstallation {
                 throw new IllegalStateException("Saved V1 BiomeSource and generation manifest mismatch; restore matching generation data");
             original=saved.retained();
         }
-        var geography=new PaGeographyProvider(context);
+        var geography=context.canonicalGeography();
         var biomes=level.registryAccess().lookupOrThrow(Registries.BIOME);
         access.atmospheregen$setBiomeSource(new ClimateBiomeSource(original,geography,context.generationContext(),biomes));
     }

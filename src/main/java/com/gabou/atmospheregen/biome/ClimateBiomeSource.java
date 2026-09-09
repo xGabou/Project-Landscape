@@ -47,11 +47,10 @@ public final class ClimateBiomeSource extends BiomeSource {
         manifestFingerprint=generation.manifest().fingerprint().sha256();
         catalog=new VanillaBiomeCatalog();
         resolution=new BiomeResolutionContext(generation,biomes,Optional.of(catalog.fingerprint()));
-        var input=new CanonicalClimateGeography(geography);
-        climateGeography=input;
-        var climateConfig=generation.manifest().content().baselineClimate().planned().orElseThrow();
-        climateModel=new BaselineClimateModel(generation.seeds(),climateConfig);
-        climateProvider=new PaBaselineClimateProvider(input,generation.seeds(),climateConfig);
+        var service=geography.climateService(generation);
+        climateGeography=service.geography();
+        climateModel=service.model();
+        climateProvider=service.provider();
         resolver=new ClimateBiomeResolver(catalog,generation.seeds(),generation.manifest().content().biomeResolver().planned().orElseThrow());
         var resolved=new HashMap<net.minecraft.resources.ResourceLocation,Holder<Biome>>();
         for(var d:catalog.descriptors())resolved.put(d.key(),biomes.getOrThrow(ResourceKey.create(Registries.BIOME,d.key())));

@@ -13,7 +13,7 @@ public final class CanonicalClimateGeography implements ClimateGeography {
     private final CoarseDistanceField distances;
     private final Map<Long,PaGeographyProvider.SurfaceTile> cache=new LinkedHashMap<>(CAPACITY,.75f,true);
     private long hits,misses;
-    public CanonicalClimateGeography(PaGeographyProvider geography){this.geography=Objects.requireNonNull(geography);distances=new CoarseDistanceField(geography.macroProvider());}
+    public CanonicalClimateGeography(PaGeographyProvider geography){this.geography=Objects.requireNonNull(geography);distances=geography.distanceField();geography.onClose(this::clear);}
     @Override public Sample sample(int x,int z){
         var tile=tile(x,z);var macro=geography.macroProvider().sampleMacro(x,z);var d=distances.sample(x,z);
         return new Sample(tile.seaRelativeElevation(x,z),d.marineShoreline().valueBlocks(),d.oceanWater().valueBlocks(),tile.mountainInfluence(x,z),macro.waterBody());

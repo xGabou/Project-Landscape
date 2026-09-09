@@ -1,0 +1,49 @@
+{
+  "scope": "payload cleared even while test retains service/context references; no GC reachability claim",
+  "after": {
+    "surface": {
+      "capacity": 1024,
+      "entries": 0,
+      "hits": 0,
+      "retainedArrayBytes": 0,
+      "misses": 96
+    },
+    "climate": {
+      "entries": 0,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 2
+    },
+    "distance": {
+      "capacity": 32,
+      "entries": 0,
+      "hits": 182,
+      "retainedArrayBytes": 0,
+      "misses": 8
+    }
+  },
+  "before": {
+    "surface": {
+      "capacity": 1024,
+      "entries": 95,
+      "hits": 0,
+      "retainedArrayBytes": 12451840,
+      "misses": 95
+    },
+    "climate": {
+      "entries": 1,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 1
+    },
+    "distance": {
+      "capacity": 32,
+      "entries": 8,
+      "hits": 182,
+      "retainedArrayBytes": 65536,
+      "misses": 8
+    }
+  },
+  "exactClimate": true,
+  "postCloseQueriesRejected": true
+}

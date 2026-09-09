@@ -38,6 +38,10 @@ public final class WorldgenBenchmark {
             var context=GeneratorContext.makeCached(preset,registries.lookupOrThrow(RTFRegistries.NOISE),8675309,3,6,false);
             var seeds=new NamedSeedService(8675309,new ResourceLocation("minecraft","overworld"),GenerationVersions.planned());
             PaGeographyInstallation.install(context,seeds,MacroGeographySettings.defaults(),6,false);
+            if(System.getProperty("task6b.mode","acquisition").equals("ownership")) {
+                try {OwnershipChecks.run(context,out);} finally {context.cache.close();}
+                return;
+            }
             if(System.getProperty("task6b.mode","acquisition").equals("erosion-experiment")) {
                 try {ErosionExperiment.run(context,out);} finally {context.cache.close();}
                 return;

@@ -24,6 +24,22 @@ public class GeneratorContext {
     public WorldLookup lookup;
     // Task 2 metadata only. Sampling continues using the existing cheap WorldLookup token.
     private volatile com.gabou.atmospheregen.generation.context.WorldGenerationContext generationContext;
+    private com.gabou.atmospheregen.geography.terrain.PaGeographyProvider canonicalGeography;
+    private com.gabou.atmospheregen.climate.CanonicalClimateService canonicalClimate;
+
+    public synchronized com.gabou.atmospheregen.geography.terrain.PaGeographyProvider canonicalGeography() {
+        if(cache==null||cache.isClosed())throw new IllegalStateException("Canonical geography context is disposed");
+        if(canonicalGeography==null)canonicalGeography=new com.gabou.atmospheregen.geography.terrain.PaGeographyProvider(this);
+        return canonicalGeography;
+    }
+
+    public synchronized com.gabou.atmospheregen.climate.CanonicalClimateService canonicalClimate(
+            com.gabou.atmospheregen.generation.context.WorldGenerationContext generation) {
+        if(generation!=generationContext||generation==null)throw new IllegalArgumentException("Climate service requires its bound generation context");
+        if(cache==null||cache.isClosed())throw new IllegalStateException("Canonical climate context is disposed");
+        if(canonicalClimate==null)canonicalClimate=new com.gabou.atmospheregen.climate.CanonicalClimateService(canonicalGeography(),generation);
+        return canonicalClimate;
+    }
 
     public synchronized void bindGenerationContext(com.gabou.atmospheregen.generation.context.WorldGenerationContext context) {
         if (this.generationContext != null) throw new IllegalStateException("RTF generation metadata is already bound");
