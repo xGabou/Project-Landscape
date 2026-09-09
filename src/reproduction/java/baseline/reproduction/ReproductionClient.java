@@ -54,7 +54,7 @@ public final class ReproductionClient {
             }else if(stage==1&&mc.screen instanceof CreateWorldScreen screen){
                 stage=2;String name=run+"-seed"+worldIndex;
                 Path root=mc.gameDirectory.toPath().resolve("saves").resolve(name), pack=root.resolve("datapacks/reproduction-preset");Files.createDirectories(pack);
-                if(task1c.equals("task6-biomes") && worldIndex==0) {
+                if((task1c.equals("task6-biomes") || task1c.equals("task6b")) && worldIndex==0) {
                     Files.createDirectories(root.resolve("data/atmospheregen"));
                     Files.writeString(root.resolve("data/atmospheregen/development_biomes_v1.json"),"{\"climate\":{\"latitudeScaleBlocks\":100000,\"equatorZ\":0,\"lapseCelsiusPerBlock\":0.0065,\"oceanInfluence\":0.5,\"continentalityStrength\":1,\"windBandScaleBlocks\":4096,\"orographicStrength\":0.85,\"rainShadowRecoveryDistance\":12000,\"climateProfileDistance\":24000,\"climateProfileStep\":256,\"evaporationStrength\":1,\"regionalVariationStrength\":0.1},\"resolver\":{\"spatialResolutionBlocks\":64,\"fallbackWeight\":1,\"regionalVariationScaleBlocks\":4096,\"regionalVariationStrength\":0.18,\"transitionSoftness\":0.12}}");
                 }
@@ -102,6 +102,8 @@ public final class ReproductionClient {
                             out.row("world_binding","phase",foundationReopened?"reopened":"created","metadata",com.gabou.atmospheregen.generation.context.GenerationDiagnostics.describe(metadata),"persistedContextStable",true);
                             ((net.minecraft.world.level.storage.PrimaryLevelData)server.getWorldData()).withConfirmedWarning(true);
                             server.saveEverything(false,true,true);
+                        } else if(task1c.equals("task6b")) {
+                            baseline.reproduction.task6b.FullChunkPerformance.run(server.overworld(),out,worldIndex);
                         } else if(task1c.equals("task6-biomes")) {
                             String digest=baseline.reproduction.biome.Task6RuntimeChecks.run(server.overworld(),out,task6Reopened);
                             if(task6Reopened&&!digest.equals(task6Digest))throw new AssertionError("Task 6 save/reopen biome mismatch");
@@ -142,14 +144,14 @@ public final class ReproductionClient {
                     try{previousFoundationProvider.sample(0,0);throw new AssertionError("Provider sampled after shutdown");}catch(IllegalStateException expected){out.row("api_shutdown","reopened",foundationReopened,"rejected",true);}
                     if(!foundationReopened){foundationReopened=true;stage=2;mc.createWorldOpenFlows().loadLevel(mc.screen,run+"-seed0");return;}
                 }
-                if((full||chunksOnly||task1cRepeat())&&++worldIndex<(task1c.equals("variance")?6:task1cRepeat()?4:full&&disabledBootstrapSucceeded?4:Math.min(3,seeds.length))){stage=0;}else{
+                if((full||chunksOnly||task1cRepeat()||task1c.equals("task6b"))&&++worldIndex<(task1c.equals("task6b")?2:task1c.equals("variance")?6:task1cRepeat()?4:full&&disabledBootstrapSucceeded?4:Math.min(3,seeds.length))){stage=0;}else{
                     out.row("completion","status","PASS","kind","reproduction observations, not correctness goldens","run",run);out.flush();
                     Files.writeString(mc.gameDirectory.toPath().resolve("task1a-pass.txt"),run+"\n");stage=99;RTFCommon.LOGGER.info("TASK1A PASS {}",run);mc.stop();
                 }
             }
         }catch(Throwable ex){stage=99;RTFCommon.LOGGER.error("TASK1A FAIL",ex);try{out.row("completion","status","FAIL","error",Evidence.failure(ex));out.flush();}catch(Exception ignored){}mc.stop();}
     }
-    private long currentSeed(){return task1c.equals("variance")?seeds[worldIndex%3]:task1cRepeat()?8675309L:seeds[worldIndex<3?worldIndex:0];}
+    private long currentSeed(){return task1c.equals("task6b")?8675309L:task1c.equals("variance")?seeds[worldIndex%3]:task1cRepeat()?8675309L:seeds[worldIndex<3?worldIndex:0];}
     private void disabledVegetation(ServerLevel level) {
         var context=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
         var placed=level.registryAccess().registryOrThrow(Registries.PLACED_FEATURE);

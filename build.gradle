@@ -16,6 +16,12 @@ java {
 
 // Development-only smoke harness. Never packaged in the production mod jar.
 sourceSets {
+    performance {
+        java.srcDir 'src/reproduction/java'
+        java.include 'baseline/reproduction/performance/**'
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
     reproduction {
         compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
         runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
@@ -71,7 +77,13 @@ minecraft {
         server { args '--nogui' }
         data {
             workingDirectory project.file('run/data')
-            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'),
+            if (providers.gradleProperty('task6bOutput').isPresent()) {
+                workingDirectory project.file('run/task6b-offline')
+                mods { task6b_performance { source sourceSets.performance } }
+                property 'task6b.output', file(providers.gradleProperty('task6bOutput').get()).absolutePath
+                jvmArgs '-Xmx6G', "-XX:ActiveProcessorCount=${providers.gradleProperty('task6bWorkers').getOrElse('8')}"
+            }
+            args '--mod', providers.gradleProperty('task6bOutput').isPresent() ? 'task6b_performance' : mod_id, '--all', '--output', file(providers.gradleProperty('task6bOutput').isPresent() ? 'build/task6b-datagen-unused' : 'src/generated/resources/'),
                  '--existing', file('src/main/resources/')
         }
     }
