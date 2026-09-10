@@ -1,0 +1,10 @@
+{
+  "source": "docs\\task6b\\evidence\\runtime-runs\\optimized-extended\\task6b_locality_trace.json.gz",
+  "dropped": 0,
+  "profileSamples": 65274,
+  "surfaceLoads": 463,
+  "uniqueProfileCoordinates": 65274,
+  "uniqueProfileTiles": 463,
+  "uniqueLoadTiles": 463,
+  "conclusion": "463 distinct owning tiles, 463 loads: real upstream coverage, not repeated surface loading. This untimed trace is separate from timed FULL rows."
+}

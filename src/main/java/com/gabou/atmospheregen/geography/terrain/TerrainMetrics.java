@@ -10,7 +10,7 @@ public final class TerrainMetrics {
     public enum Stage {
         TILE, BATCH, MACRO, TERRAIN_HEIGHT, HYDROLOGY, LEGACY_HINTS, SHORELINE,
         EROSION, SMOOTHING, STEEPNESS, BEACH, CORRECTIONS, SURFACE_ACQUISITION,
-        EROSION_NOISE, ISLAND_WAIT, ISLAND_WORK;
+        EROSION_NOISE, ISLAND_WAIT, ISLAND_WORK, ISLAND_COMPUTE, ISLAND_INSERT, ISLAND_EVICTION;
         private final LongAdder calls=new LongAdder(),nanos=new LongAdder();
         public long start() { return ENABLED?System.nanoTime():0; }
         public void end(long start) { if(ENABLED){nanos.add(System.nanoTime()-start);calls.increment();} }

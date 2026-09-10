@@ -1,0 +1,8 @@
+{
+  "identityChecks": true,
+  "surfaceCaches": 1,
+  "scope": "actual production context/service construction through headless Forge, diagnostic reference shares provider",
+  "geographyProviders": 1,
+  "distanceFields": 1,
+  "climateProviders": 1
+}

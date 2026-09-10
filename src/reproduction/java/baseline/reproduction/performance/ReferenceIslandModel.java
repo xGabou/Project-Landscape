@@ -1,5 +1,8 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
-package com.gabou.atmospheregen.geography.continent;
+package baseline.reproduction.performance;
+import com.gabou.atmospheregen.geography.continent.*;
+import com.gabou.atmospheregen.geography.continent.IslandModel.Island;
+import com.gabou.atmospheregen.geography.continent.IslandModel.Sample;
 
 import com.gabou.atmospheregen.api.geography.MacroGeographyProvider.IslandClass;
 import com.gabou.atmospheregen.config.MacroGeographySettings;
@@ -8,40 +11,26 @@ import java.util.*;
 import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
 
 /** Explicit independent coastal/oceanic islands and bounded clusters. Immutable cached geometry. */
-public final class IslandModel implements AutoCloseable {
-    public record Island(double x,double z,double radius,IslandClass kind,long clusterId) {}
-    public record Sample(double profile,IslandClass kind,long clusterId) {}
+final class ReferenceIslandModel {
     private final long islandSeed,clusterSeed;
     private final MacroGeographySettings settings;
     private final ReservedCellContinentModel continent;
     private final Map<Long,List<Island>> cache=new LinkedHashMap<>(256,0.75f,true);
-    private record HotEntry(long id,List<Island> values) {}
-    private final java.util.concurrent.atomic.AtomicReferenceArray<HotEntry> front=new java.util.concurrent.atomic.AtomicReferenceArray<>(64);
-    private final java.util.concurrent.atomic.LongAdder frontHits=new java.util.concurrent.atomic.LongAdder();
-    private volatile boolean closed;
     private long hits,misses;
-    public IslandModel(GenerationSeedService seeds,MacroGeographySettings settings,ReservedCellContinentModel continent) {
+    public ReferenceIslandModel(GenerationSeedService seeds,MacroGeographySettings settings,ReservedCellContinentModel continent) {
         islandSeed=seeds.seed(SeedDomain.ISLANDS);clusterSeed=seeds.seed(SeedDomain.ARCHIPELAGOS);
         this.settings=settings;this.continent=continent;
     }
     public List<Island> islands(MacroSiteField.Site site) {
-        if(closed)throw new IllegalStateException("Island model is disposed");
-        int slot=(int)MacroSiteField.mix(site.id())&63;HotEntry entry=front.get(slot);
-        if(entry!=null&&entry.id()==site.id()){recordFrontHit();return entry.values();}
         long waiting=Stage.ISLAND_WAIT.start();
         synchronized(this) {
             Stage.ISLAND_WAIT.end(waiting);
-            if(closed)throw new IllegalStateException("Island model is disposed");
-            entry=front.get(slot);
-            if(entry!=null&&entry.id()==site.id()){recordFrontHit();return entry.values();}
             long working=Stage.ISLAND_WORK.start();
-            try {var result=islandsLocked(site);front.set(slot,new HotEntry(site.id(),result));return result;} finally {Stage.ISLAND_WORK.end(working);}
+            try {return islandsLocked(site);} finally {Stage.ISLAND_WORK.end(working);}
         }
     }
-    private void recordFrontHit(){if(com.gabou.atmospheregen.geography.terrain.TerrainMetrics.ENABLED)frontHits.increment();}
     private List<Island> islandsLocked(MacroSiteField.Site site) {
         List<Island> found=cache.get(site.id());if(found!=null){hits++;return found;}misses++;
-        long computing=Stage.ISLAND_COMPUTE.start();
         List<Island> result=new ArrayList<>();
         long h=MacroSiteField.hash(islandSeed,site.gridX(),site.gridZ());
         if(MacroSiteField.unit(h)<settings.islandFrequency()) {
@@ -71,10 +60,7 @@ public final class IslandModel implements AutoCloseable {
             }
         }
         List<Island> immutable=List.copyOf(result);
-        Stage.ISLAND_COMPUTE.end(computing);
-        long inserting=Stage.ISLAND_INSERT.start();
-        if(cache.size()>=256){cache.remove(cache.keySet().iterator().next());Stage.ISLAND_EVICTION.end(Stage.ISLAND_EVICTION.start());}
-        cache.put(site.id(),immutable);Stage.ISLAND_INSERT.end(inserting);return immutable;
+        if(cache.size()>=256)cache.remove(cache.keySet().iterator().next());cache.put(site.id(),immutable);return immutable;
     }
     private void add(List<Island> result,MacroSiteField.Site site,double x,double z,double r,IslandClass kind,long cluster) {
         // Full disc plus clearance is excluded from every reserved marine strip.
@@ -85,19 +71,17 @@ public final class IslandModel implements AutoCloseable {
             double a=i*Math.PI/16;
             if(continent.sample(x+Math.cos(a)*(r+96),z+Math.sin(a)*(r+96)).shorelineProfileBlocks()>-128)return;
         }
-        for(var existing:result)if(Math.hypot(x-existing.x,z-existing.z)<r+existing.radius+96)return;
+        for(var existing:result)if(Math.hypot(x-existing.x(),z-existing.z())<r+existing.radius()+96)return;
         result.add(new Island(x,z,r,kind,cluster));
     }
     public Sample sample(double x,double z,MacroSiteField.Site site) {
         double best=-Double.MAX_VALUE;IslandClass kind=IslandClass.NONE;long cluster=0;
         for(Island island:islands(site)) {
-            double profile=island.radius-Math.hypot(x-island.x,z-island.z);
-            if(profile>best){best=profile;kind=island.kind;cluster=island.clusterId;}
+            double profile=island.radius()-Math.hypot(x-island.x(),z-island.z());
+            if(profile>best){best=profile;kind=island.kind();cluster=island.clusterId();}
         }
         return new Sample(best,kind,cluster);
     }
-    /** Front-hit counting is diagnostic-only to avoid a shared write on release hot reads. */
-    public synchronized Map<String,Long> cacheStats(){long hot=0;for(int i=0;i<64;i++)if(front.get(i)!=null)hot++;return Map.of("entries",(long)cache.size(),"capacity",256L,"hits",hits+frontHits.sum(),"backingHits",hits,"misses",misses,"frontHits",frontHits.sum(),"frontEntries",hot,"frontCapacity",64L,"frontHitCountingEnabled",com.gabou.atmospheregen.geography.terrain.TerrainMetrics.ENABLED?1L:0L);}
-    public synchronized void clear(){for(int i=0;i<64;i++)front.set(i,null);cache.clear();}
-    @Override public synchronized void close(){closed=true;clear();}
+    public synchronized Map<String,Long> cacheStats(){return Map.of("entries",(long)cache.size(),"capacity",256L,"hits",hits,"misses",misses);}
+    public synchronized void clear(){cache.clear();}
 }

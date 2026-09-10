@@ -22,5 +22,6 @@ public final class PaGeographyInstallation {
         int border=Math.min(2,Math.max(1,context.preset.filters().erosion.dropletLifetime/16));
         context.generator=new TileGenerator(heightmap,new WorldFilters(context,true),3,border,batchCount);
         context.cache=new TileCache(3,queue,context.generator);context.lookup=new WorldLookup(context);
+        context.cache.onClose(bridge.macro().islands()::close);
     }
 }

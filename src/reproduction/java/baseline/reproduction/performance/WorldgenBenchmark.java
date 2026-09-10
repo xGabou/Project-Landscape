@@ -35,6 +35,10 @@ public final class WorldgenBenchmark {
             var preset=Presets.makeLegacyDefault();
             var registries=new RegistrySetBuilder().add(RTFRegistries.NOISE,c->PresetNoiseData.bootstrap(preset,c))
                     .build(RegistryAccess.EMPTY);
+            if(System.getProperty("task6b.mode","acquisition").equals("island-experiment")){IslandExperiment.run(out);return;}
+            if(System.getProperty("task6b.mode","acquisition").equals("macro-determinism")){
+                baseline.reproduction.geography.GeographySurvey.determinism(out,MacroGeographySettings.defaults());return;
+            }
             if(System.getProperty("task6b.mode","acquisition").startsWith("legacy")) {
                 var evidence=new baseline.reproduction.Evidence(out);
                 new baseline.reproduction.LegacyBaselineSuite(preset,registries.lookupOrThrow(RTFRegistries.NOISE),evidence)
@@ -50,6 +54,14 @@ public final class WorldgenBenchmark {
             }
             if(System.getProperty("task6b.mode","acquisition").equals("ownership")) {
                 try {OwnershipChecks.run(context,out);} finally {context.cache.close();}
+                return;
+            }
+            if(System.getProperty("task6b.mode","acquisition").equals("marine-experiment")) {
+                try {MarineProjectionExperiment.run(context,out);} finally {context.cache.close();}
+                return;
+            }
+            if(System.getProperty("task6b.mode","acquisition").equals("marine-opportunity")) {
+                try {MarineProjectionExperiment.opportunity(context,out);} finally {context.cache.close();}
                 return;
             }
             if(System.getProperty("task6b.mode","acquisition").equals("smoothing-experiment")) {
@@ -100,7 +112,8 @@ public final class WorldgenBenchmark {
                             }
                         }
                         write(out,scenario.getKey()+".json",Map.of("measurements",measurements,"surfaceCache",s.cacheStats(),"climateCache",c.cacheStats(),
-                                "outputDigest",hash(JSON.toJson(outputs)),"queriesPerPass",scenario.getValue().size(),"outputs",outputs));
+                                "outputDigest",hash(JSON.toJson(outputs)),"queriesPerPass",scenario.getValue().size(),"outputs",outputs,
+                                "islandCache",fresh.generator.getHeightmap().paBridge().macro().islands().cacheStats()));
                     } finally {fresh.cache.close();}
                 }
                 recording.stop();Path jfr=out.resolve("profile.jfr");recording.dump(jfr);

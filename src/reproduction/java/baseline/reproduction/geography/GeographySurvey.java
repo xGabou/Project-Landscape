@@ -99,7 +99,7 @@ public final class GeographySurvey {
         stream.forEach(i->{int x=(i%129-64)*509-1,z=(i/129-64)*509+1;rows[i]=JSON.toJson(p.sampleMacro(x,z));});
         MessageDigest hash=MessageDigest.getInstance("SHA-256");for(String row:rows)hash.update(row.getBytes(StandardCharsets.UTF_8));return HexFormat.of().formatHex(hash.digest());
     }
-    private static void determinism(Path out,MacroGeographySettings settings)throws Exception {
+    public static void determinism(Path out,MacroGeographySettings settings)throws Exception {
         List<Integer> order=new ArrayList<>();for(int i=0;i<129*129;i++)order.add(i);
         var p=provider(SEEDS[0],settings);String cold=digest(p,order,false),warm=digest(p,order,false);
         Collections.reverse(order);String reverse=digest(p,order,false),restart=digest(provider(SEEDS[0],settings),order,false);

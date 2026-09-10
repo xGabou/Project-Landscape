@@ -27,18 +27,17 @@ public final class IslandModel implements AutoCloseable {
     public List<Island> islands(MacroSiteField.Site site) {
         if(closed)throw new IllegalStateException("Island model is disposed");
         int slot=(int)MacroSiteField.mix(site.id())&63;HotEntry entry=front.get(slot);
-        if(entry!=null&&entry.id()==site.id()){recordFrontHit();return entry.values();}
+        if(entry!=null&&entry.id()==site.id()){frontHits.increment();return entry.values();}
         long waiting=Stage.ISLAND_WAIT.start();
         synchronized(this) {
             Stage.ISLAND_WAIT.end(waiting);
             if(closed)throw new IllegalStateException("Island model is disposed");
             entry=front.get(slot);
-            if(entry!=null&&entry.id()==site.id()){recordFrontHit();return entry.values();}
+            if(entry!=null&&entry.id()==site.id()){frontHits.increment();return entry.values();}
             long working=Stage.ISLAND_WORK.start();
             try {var result=islandsLocked(site);front.set(slot,new HotEntry(site.id(),result));return result;} finally {Stage.ISLAND_WORK.end(working);}
         }
     }
-    private void recordFrontHit(){if(com.gabou.atmospheregen.geography.terrain.TerrainMetrics.ENABLED)frontHits.increment();}
     private List<Island> islandsLocked(MacroSiteField.Site site) {
         List<Island> found=cache.get(site.id());if(found!=null){hits++;return found;}misses++;
         long computing=Stage.ISLAND_COMPUTE.start();
@@ -96,8 +95,7 @@ public final class IslandModel implements AutoCloseable {
         }
         return new Sample(best,kind,cluster);
     }
-    /** Front-hit counting is diagnostic-only to avoid a shared write on release hot reads. */
-    public synchronized Map<String,Long> cacheStats(){long hot=0;for(int i=0;i<64;i++)if(front.get(i)!=null)hot++;return Map.of("entries",(long)cache.size(),"capacity",256L,"hits",hits+frontHits.sum(),"backingHits",hits,"misses",misses,"frontHits",frontHits.sum(),"frontEntries",hot,"frontCapacity",64L,"frontHitCountingEnabled",com.gabou.atmospheregen.geography.terrain.TerrainMetrics.ENABLED?1L:0L);}
+    public synchronized Map<String,Long> cacheStats(){long hot=0;for(int i=0;i<64;i++)if(front.get(i)!=null)hot++;return Map.of("entries",(long)cache.size(),"capacity",256L,"hits",hits+frontHits.sum(),"misses",misses,"frontHits",frontHits.sum(),"frontEntries",hot,"frontCapacity",64L);}
     public synchronized void clear(){for(int i=0;i<64;i++)front.set(i,null);cache.clear();}
     @Override public synchronized void close(){closed=true;clear();}
 }

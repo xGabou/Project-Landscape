@@ -27,7 +27,11 @@ final class OwnershipChecks {
         if(!baseline.equals(reference))throw new AssertionError("Service changes climate");
         var sources=System.getProperty("task6b.sourceChecks","false").equals("true")?SourceReuseChecks.run(context,generation,out):List.<com.gabou.atmospheregen.biome.ClimateBiomeSource>of();
         var before=Map.of("surface",service.geography().cacheStats(),"climate",service.provider().cacheStats(),"distance",g.distanceCacheStats());
+        var islands=context.generator.getHeightmap().paBridge().macro().islands();var islandBefore=islands.cacheStats();
         context.cache.close();
+        if(islands.cacheStats().get("frontEntries")!=0||islands.cacheStats().get("entries")!=0)throw new AssertionError("Island cache retained after disposal");
+        try{islands.islands(context.generator.getHeightmap().paBridge().macro().sites().at(0,0));throw new AssertionError("Island query after disposal");}catch(IllegalStateException expected){}
+        WorldgenBenchmark.write(out,"island_disposal.json",Map.of("before",islandBefore,"after",islands.cacheStats(),"postCloseQueriesRejected",true));
         for(var source:sources){
             if(source.surfaceWinnerCacheStats().get("entries")!=0||source.surfaceGeographyCacheStats().get("entries")!=0)throw new AssertionError("Retained source cache after disposal");
             try{source.getNoiseBiome(0,100,0,null);throw new AssertionError("Source query after disposal");}catch(IllegalStateException expected){}
