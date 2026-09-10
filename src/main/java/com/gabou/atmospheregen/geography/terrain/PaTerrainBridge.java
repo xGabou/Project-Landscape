@@ -83,9 +83,15 @@ public final class PaTerrainBridge implements Continent {
         cell.continentEdge=edge(s);
     }
     private void setMarine(Cell cell,MacroSample s) {
-        cell.height=(float)(levels.water-s.marineDepthBlocks()/levels.worldHeight);
+        cell.height=marineHeight(s);
         cell.terrain=s.shelfFraction()>0.5?TerrainType.SHALLOW_OCEAN:TerrainType.DEEP_OCEAN;
         cell.riverMask=1;cell.erosionMask=false;cell.resetMountainContributions();
+    }
+    private float marineHeight(MacroSample s){return (float)(levels.water-s.marineDepthBlocks()/levels.worldHeight);}
+    /** Same float operations as finalization and detached surface extraction. */
+    public double marineSeaRelativeElevation(MacroSample s){
+        if(s.land())throw new IllegalArgumentException("Marine projection requires non-land macro classification");
+        return (double)(marineHeight(s)*levels.worldHeight)-levels.waterLevel;
     }
     private float edge(MacroSample sample) {
         var c=backend.controlPoints();double d=sample.shorelineProfileBlocks();

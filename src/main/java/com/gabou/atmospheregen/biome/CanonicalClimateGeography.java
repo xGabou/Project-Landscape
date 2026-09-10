@@ -15,7 +15,12 @@ public final class CanonicalClimateGeography implements ClimateGeography {
             new com.gabou.atmospheregen.generation.cache.ExactCache<>(CAPACITY);
     public CanonicalClimateGeography(PaGeographyProvider geography){this.geography=Objects.requireNonNull(geography);distances=geography.distanceField();geography.onClose(cache::close);}
     @Override public Sample sample(int x,int z){
-        var tile=tile(x,z);var macro=geography.macroProvider().sampleMacro(x,z);var d=distances.sample(x,z);
+        var macro=geography.macroProvider().sampleMacro(x,z);
+        if(!macro.land()){
+            double elevation=geography.marineSeaRelativeElevation(macro);var d=distances.sample(x,z);
+            return new Sample(elevation,d.marineShoreline().valueBlocks(),d.oceanWater().valueBlocks(),0,macro.waterBody());
+        }
+        var tile=tile(x,z);var d=distances.sample(x,z);
         return new Sample(tile.seaRelativeElevation(x,z),d.marineShoreline().valueBlocks(),d.oceanWater().valueBlocks(),tile.mountainInfluence(x,z),macro.waterBody());
     }
     private PaGeographyProvider.SurfaceTile tile(int x,int z){

@@ -36,11 +36,19 @@ final class MarineProjectionExperiment {
     }
     static void run(GeneratorContext context,Path out)throws Exception {
         var geography=new PaGeographyProvider(context);var rows=new ArrayList<Object>();long compared=0;
-        var fullClimate=new com.gabou.atmospheregen.biome.CanonicalClimateGeography(geography);
         var categories=new TreeMap<String,Long>();
+        var fixtures=new ArrayList<int[]>(List.of(new int[][]{{0,0},{-1,-1},{47,48},{-224,-96},{-64,-1172},{64,468},{-64,-3907},{-63,-66},{-14,-66},{234373,234373},{-234374,-234374}}));
+        var selected=new HashSet<String>();var model=context.generator.getHeightmap().paBridge().macro();
+        for(int z=-131072;z<=131072;z+=512)for(int x=-131072;x<=131072;x+=512){
+            var m=model.sampleMacro(x,z);String tag=m.waterBody().name();
+            if((tag.equals("INLAND_SEA")||Math.abs(m.shorelineProfileBlocks())<128)&&selected.add(tag))fixtures.add(new int[]{x>>7,z>>7});
+        }
+        for(int z=-8;z<=8;z++)for(int x=-8;x<=8;x++)for(var island:model.islands().islands(model.sites().site(x,z)))
+            if(selected.add(island.kind().name()))fixtures.add(new int[]{((int)(island.x()+island.radius()))>>7,((int)island.z())>>7});
         // Original/extended fixtures plus negative tile boundaries and near coordinate limits.
-        for(int[] point:new int[][]{{0,0},{-1,-1},{47,48},{-224,-96},{-64,-1172},{64,468},{-64,-3907},{-63,-66},{-14,-66},{234373,234373},{-234374,-234374}}) {
+        for(int[] point:fixtures) {
             var tile=context.cache.provide(point[0],point[1]);int ox=point[0]*128,oz=point[1]*128;long marine=0;
+            var surface=geography.snapshotSurfaceTile(ox,oz);
             for(int dz=0;dz<128;dz++)for(int dx=0;dx<128;dx++) {
                 int x=ox+dx,z=oz+dz;var macro=geography.macroProvider().sampleMacro(x,z);
                 if(macro.land())continue;
@@ -62,7 +70,8 @@ final class MarineProjectionExperiment {
                 var distances=geography.distanceField().sample(x,z);
                 var candidate=new com.gabou.atmospheregen.climate.ClimateGeography.Sample((double)actualElevation-context.levels.waterLevel,
                     distances.marineShoreline().valueBlocks(),distances.oceanWater().valueBlocks(),0,macro.waterBody());
-                if(!fullClimate.sample(x,z).equals(candidate))throw new AssertionError("Downstream climate projection at "+x+","+z);
+                var reference=new com.gabou.atmospheregen.climate.ClimateGeography.Sample(surface.seaRelativeElevation(x,z),distances.marineShoreline().valueBlocks(),distances.oceanWater().valueBlocks(),surface.mountainInfluence(x,z),macro.waterBody());
+                if(!reference.equals(candidate)||geography.marineSeaRelativeElevation(macro)!=candidate.elevationBlocks())throw new AssertionError("Downstream climate projection at "+x+","+z);
                 var geo=geography.sample(x,z);
                 if(geo.elevationBlockY()!=(double)actualElevation||geo.seaRelativeElevationBlocks()!=candidate.elevationBlocks()
                    ||geo.landform()!=com.gabou.atmospheregen.api.geography.Landform.OCEAN)

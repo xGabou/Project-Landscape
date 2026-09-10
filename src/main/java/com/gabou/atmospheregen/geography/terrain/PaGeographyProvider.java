@@ -64,6 +64,11 @@ public final class PaGeographyProvider implements GeographyProvider {
         return new SurfaceTile(originX,originZ,side,context.levels.waterLevel,elevation,mountains);
     }
     public int surfaceTileCoordinate(int blockCoordinate){return context.cache.chunkToTile(blockCoordinate>>4);}
+    /** Exact climate-only projection of fields unconditionally overwritten during marine finalization. */
+    public double marineSeaRelativeElevation(MacroGeographyProvider.MacroSample sample){
+        if(context.cache.isClosed())throw new IllegalStateException("V1 geography context is closed");
+        return bridge.marineSeaRelativeElevation(sample);
+    }
     /** Additional physical terrain label; existing Task 4 samples retain their original classification. */
     public Landform detailedLandform(int x,int z){
         var sample=sample(x,z);

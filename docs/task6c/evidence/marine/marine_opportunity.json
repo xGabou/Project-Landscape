@@ -1,0 +1,21 @@
+{
+  "source": "..\\..\\docs\\task6b\\evidence\\runtime-runs\\optimized-extended\\task6b_locality_trace.json.gz",
+  "profileSamples": 65274,
+  "uniqueProfileCoordinates": 65274,
+  "uniqueProfileTiles": 463,
+  "marineSamples": 31913,
+  "landSamples": 33361,
+  "coastalWithin384BlocksOverlappingLandMarine": 11711,
+  "waterClasses": {
+    "COASTAL_WATER": 29168,
+    "LAND": 33361,
+    "MAJOR_OCEAN": 2745
+  },
+  "potentialEligibleMarineSamples": 31913,
+  "marineSamplePercent": 48.89082942672427,
+  "uniqueTilesWithMarineSamples": 226,
+  "uniqueTilesRequiredByLand": 246,
+  "maximumProfileTilesAvoided": 217,
+  "maximumProfileTilesAvoidedPercent": 46.868250539956804,
+  "scope": "Opportunity only: all non-LAND macro samples are candidates because finalization resets marine height and mountain fields. Tiles needed for other generation work may still be generated. Coastal count overlaps; not a third partition."
+}
