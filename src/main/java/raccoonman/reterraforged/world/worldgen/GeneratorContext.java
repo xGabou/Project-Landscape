@@ -26,6 +26,7 @@ public class GeneratorContext {
     private volatile com.gabou.projectlandscape.generation.context.WorldGenerationContext generationContext;
     private com.gabou.projectlandscape.geography.terrain.PaGeographyProvider canonicalGeography;
     private com.gabou.projectlandscape.climate.CanonicalClimateService canonicalClimate;
+    private com.gabou.projectlandscape.compat.projectatmosphere.LandscapeForecastService atmosphereForecast;
 
     public synchronized com.gabou.projectlandscape.geography.terrain.PaGeographyProvider canonicalGeography() {
         if(cache==null||cache.isClosed())throw new IllegalStateException("Canonical geography context is disposed");
@@ -50,6 +51,20 @@ public class GeneratorContext {
     @Nullable
     public com.gabou.projectlandscape.generation.context.WorldGenerationContext generationContext() {
         return this.generationContext;
+    }
+
+    /** Forecast-only service for optional atmosphere integrations. It never reads the terrain tile cache. */
+    @Nullable
+    public synchronized com.gabou.projectlandscape.compat.projectatmosphere.LandscapeForecastService atmosphereForecastService() {
+        var generation = this.generationContext;
+        if (generation == null || this.cache == null || this.cache.isClosed()
+                || this.generator.getHeightmap().paBridge() == null) {
+            return null;
+        }
+        if (this.atmosphereForecast == null) {
+            this.atmosphereForecast = new com.gabou.projectlandscape.compat.projectatmosphere.LandscapeForecastService(this, generation);
+        }
+        return this.atmosphereForecast;
     }
     
     public GeneratorContext(Preset preset, HolderGetter<Noise> noiseLookup, int seed, int tileSize, int tileBorder, int batchCount, @Nullable TileCache cache) {
