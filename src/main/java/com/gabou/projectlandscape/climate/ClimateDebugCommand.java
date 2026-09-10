@@ -13,61 +13,97 @@ import raccoonman.reterraforged.world.worldgen.GeneratorContext;
 import com.gabou.projectlandscape.geography.terrain.PaGeographyProvider;
 import com.gabou.projectlandscape.geography.ocean.CoarseDistanceField;
 
-/** Developer-only readable climate diagnostic; it does not select biomes or run weather. */
+/**
+ * Developer-only readable climate diagnostic; it does not select biomes or run weather.
+ */
 public final class ClimateDebugCommand {
-    private ClimateDebugCommand() {}
+    private ClimateDebugCommand() {
+    }
+
     public static void register(RegisterCommandsEvent event) {
         var z = Commands.argument("z", IntegerArgumentType.integer())
-            .requires(source -> source.hasPermission(2))
-            .executes(context -> sample(context.getSource(), IntegerArgumentType.getInteger(context, "x"), IntegerArgumentType.getInteger(context, "z")));
+                .requires(source -> source.hasPermission(2))
+                .executes(context -> sample(context.getSource(), IntegerArgumentType.getInteger(context, "x"), IntegerArgumentType.getInteger(context, "z")));
         var x = Commands.argument("x", IntegerArgumentType.integer()).then(z);
         event.getDispatcher().register(Commands.literal("geo").then(Commands.literal("climate").then(x)));
         var bz = Commands.argument("z", IntegerArgumentType.integer()).requires(source -> source.hasPermission(2))
-            .executes(context -> sampleBiome(context.getSource(), IntegerArgumentType.getInteger(context, "x"), IntegerArgumentType.getInteger(context, "z")));
+                .executes(context -> sampleBiome(context.getSource(), IntegerArgumentType.getInteger(context, "x"), IntegerArgumentType.getInteger(context, "z")));
         var bx = Commands.argument("x", IntegerArgumentType.integer()).then(bz);
         event.getDispatcher().register(Commands.literal("geo").then(Commands.literal("biome").then(bx)));
     }
-    private static int sample(net.minecraft.commands.CommandSourceStack source,int x,int z) {
+
+    private static int sample(net.minecraft.commands.CommandSourceStack source, int x, int z) {
         net.minecraft.server.level.ServerLevel level = source.getLevel();
-        var random=(RTFRandomState)(Object)level.getChunkSource().randomState();GeneratorContext context=random.generatorContext();
-        if(context==null||context.generator.getHeightmap().paBridge()==null){source.sendFailure(Component.literal("PA_GEOGRAPHY_V1 is not installed in this world"));return 0;}
-        var geography=context.canonicalGeography();MacroGeographyProvider macro=geography.macroProvider();
-        var versions=context.generationContext()==null?null:context.generationContext().manifest().content().versions();
-        if(versions==null||versions.geography()!=GeographyAlgorithmVersion.PA_GEOGRAPHY_V1){source.sendFailure(Component.literal("/geo climate requires PA_GEOGRAPHY_V1"));return 0;}
-        var configured=context.generationContext().manifest().content().baselineClimate().planned().orElseGet(()->new BaselineClimateConfig.Planned(100000,0,.0065,.5));
-        var model=new BaselineClimateModel(context.generationContext().seeds(),configured);var adapter=ClimateGeographyAdapters.of(geography,macro,geography.distanceField());
-        var result=context.generationContext().manifest().content().baselineClimate().planned().isPresent()
-                ? context.canonicalClimate(context.generationContext()).provider().explain(x,z) : model.breakdown(adapter,x,z);
-        var b=result.baseline();var d=result.breakdown();
-        source.sendSuccess(()->Component.literal("PA_GEOGRAPHY_V1 / "+versions.baselineClimate()+" x="+x+" z="+z+" lat="+d.latitudeDegrees()+" elevContribution="+d.altitudeContributionCelsius()+"C wind="+b.prevailingWind().orElseThrow().x()+","+b.prevailingWind().orElseThrow().z()+" temp="+b.meanTemperatureCelsius()+"C rain="+b.annualRainfallMm()+"mm/y evap="+b.potentialEvaporationMm()+"mm/y moisture="+b.ecologicalMoistureIndex()+" shadow="+b.rainShadow()+" fetch="+d.marineFetch()+" orographic="+d.orographicRainfall()),false);return 1;
+        if (!((Object) level.getChunkSource().randomState() instanceof RTFRandomState random)) {
+            source.sendFailure(Component.literal("/geo climate requires a Project Landscape RTF generator; dimension=" + level.dimension().location()));
+            return 0;
+        }
+        GeneratorContext context = random.generatorContext();
+        if (context == null) {
+            source.sendFailure(Component.literal("/geo climate has no live Project Landscape generation context; dimension=" + level.dimension().location()));
+            return 0;
+        }
+        var generation = context.generationContext();
+        if (generation == null) {
+            source.sendFailure(Component.literal("/geo climate has no bound generation manifest; dimension=" + level.dimension().location()));
+            return 0;
+        }
+        var versions = generation.manifest().content().versions();
+        if (versions.geography() != GeographyAlgorithmVersion.PA_GEOGRAPHY_V1) {
+            source.sendFailure(Component.literal("/geo climate requires PA_GEOGRAPHY_V1, but this world is bound as "
+                    + versions.geography() + "; dimension=" + level.dimension().location()));
+            return 0;
+        }
+        if (context.generator.getHeightmap().paBridge() == null) {
+            source.sendFailure(Component.literal("World manifest declares PA_GEOGRAPHY_V1, but its live geography bridge is absent; "
+                    + "restart with the matching Project Landscape jar and unchanged generation data; dimension=" + level.dimension().location()));
+            return 0;
+        }
+        var geography = context.canonicalGeography();
+        MacroGeographyProvider macro = geography.macroProvider();
+        var configured = generation.manifest().content().baselineClimate().planned().orElseGet(() -> new BaselineClimateConfig.Planned(100000, 0, .0065, .5));
+        var model = new BaselineClimateModel(generation.seeds(), configured);
+        var adapter = ClimateGeographyAdapters.of(geography, macro, geography.distanceField());
+        var result = generation.manifest().content().baselineClimate().planned().isPresent()
+                ? context.canonicalClimate(generation).provider().explain(x, z) : model.breakdown(adapter, x, z);
+        var b = result.baseline();
+        var d = result.breakdown();
+        source.sendSuccess(() -> Component.literal("PA_GEOGRAPHY_V1 / " + versions.baselineClimate() + " x=" + x + " z=" + z + " lat=" + d.latitudeDegrees() + " elevContribution=" + d.altitudeContributionCelsius() + "C wind=" + b.prevailingWind().orElseThrow().x() + "," + b.prevailingWind().orElseThrow().z() + " temp=" + b.meanTemperatureCelsius() + "C rain=" + b.annualRainfallMm() + "mm/y evap=" + b.potentialEvaporationMm() + "mm/y moisture=" + b.ecologicalMoistureIndex() + " shadow=" + b.rainShadow() + " fetch=" + d.marineFetch() + " orographic=" + d.orographicRainfall()), false);
+        return 1;
     }
-    private static int sampleBiome(net.minecraft.commands.CommandSourceStack source,int x,int z) {
-        var level=source.getLevel();var random=(RTFRandomState)(Object)level.getChunkSource().randomState();var context=random.generatorContext();
-        if(context==null||context.generationContext()==null||!(level.getChunkSource().getGenerator().getBiomeSource() instanceof com.gabou.projectlandscape.biome.ClimateBiomeSource)) {source.sendFailure(Component.literal("/geo biome requires the explicit PA_GEOGRAPHY_V1 biome resolver selection"));return 0;}
-        var geography=context.canonicalGeography();
-        var config=context.generationContext().manifest().content();
-        var biomeSource=(com.gabou.projectlandscape.biome.ClimateBiomeSource)level.getChunkSource().getGenerator().getBiomeSource();
-        var g=com.gabou.projectlandscape.biome.BiomeGeography.sample(geography,x,z);
-        var c=biomeSource.sampleClimate(x,z);
-        var resolver=new com.gabou.projectlandscape.biome.ClimateBiomeResolver(
-                new com.gabou.projectlandscape.biome.VanillaBiomeCatalog(),context.generationContext().seeds(),
+
+    private static int sampleBiome(net.minecraft.commands.CommandSourceStack source, int x, int z) {
+        var level = source.getLevel();
+        var random = (RTFRandomState) (Object) level.getChunkSource().randomState();
+        var context = random.generatorContext();
+        if (context == null || context.generationContext() == null || !(level.getChunkSource().getGenerator().getBiomeSource() instanceof com.gabou.projectlandscape.biome.ClimateBiomeSource)) {
+            source.sendFailure(Component.literal("/geo biome requires the explicit PA_GEOGRAPHY_V1 biome resolver selection"));
+            return 0;
+        }
+        var geography = context.canonicalGeography();
+        var config = context.generationContext().manifest().content();
+        var biomeSource = (com.gabou.projectlandscape.biome.ClimateBiomeSource) level.getChunkSource().getGenerator().getBiomeSource();
+        var g = com.gabou.projectlandscape.biome.BiomeGeography.sample(geography, x, z);
+        var c = biomeSource.sampleClimate(x, z);
+        var resolver = new com.gabou.projectlandscape.biome.ClimateBiomeResolver(
+                new com.gabou.projectlandscape.biome.VanillaBiomeCatalog(), context.generationContext().seeds(),
                 config.biomeResolver().planned().orElseThrow());
-        var result=resolver.explain(g,c);
-        double ratio=com.gabou.projectlandscape.biome.BiomeScorer.aridity(c);
-        source.sendSuccess(()->Component.literal(config.versions()+" x="+x+" z="+z
-                +" terrain="+g.landform()+" water="+g.water()+" elevation="+g.elevationBlockY()
-                +" temp="+c.meanTemperatureCelsius()+"C rain="+c.annualRainfallMm()
-                +"mm/y evap="+c.potentialEvaporationMm()+"mm/y rain/evap="+ratio),false);
-        source.sendSuccess(()->Component.literal("winner="+result.winner().key()+" score="+result.winner().score()
-                +" margin="+result.second().map(s->result.winner().score()-s.score()).orElse(1.0)
-                +" override="+result.geographicOverride()+" ("+result.explanation()+")"),false);
-        for(var candidate:result.candidates().subList(0,Math.min(5,result.candidates().size()))) {
-            var d=candidate.descriptor();
-            source.sendSuccess(()->Component.literal(candidate.key()+" score="+candidate.score()
-                    +" climate="+candidate.climateScore()+" variation="+candidate.regionalVariation()
-                    +" components[T="+d.temperature().score(c.meanTemperatureCelsius())
-                    +", rain="+d.rainfall().score(c.annualRainfallMm())+", ratio="+d.aridity().score(ratio)
-                    +", elevation="+d.elevation().score(g.seaRelativeElevationBlocks())+"]"),false);
+        var result = resolver.explain(g, c);
+        double ratio = com.gabou.projectlandscape.biome.BiomeScorer.aridity(c);
+        source.sendSuccess(() -> Component.literal(config.versions() + " x=" + x + " z=" + z
+                + " terrain=" + g.landform() + " water=" + g.water() + " elevation=" + g.elevationBlockY()
+                + " temp=" + c.meanTemperatureCelsius() + "C rain=" + c.annualRainfallMm()
+                + "mm/y evap=" + c.potentialEvaporationMm() + "mm/y rain/evap=" + ratio), false);
+        source.sendSuccess(() -> Component.literal("winner=" + result.winner().key() + " score=" + result.winner().score()
+                + " margin=" + result.second().map(s -> result.winner().score() - s.score()).orElse(1.0)
+                + " override=" + result.geographicOverride() + " (" + result.explanation() + ")"), false);
+        for (var candidate : result.candidates().subList(0, Math.min(5, result.candidates().size()))) {
+            var d = candidate.descriptor();
+            source.sendSuccess(() -> Component.literal(candidate.key() + " score=" + candidate.score()
+                    + " climate=" + candidate.climateScore() + " variation=" + candidate.regionalVariation()
+                    + " components[T=" + d.temperature().score(c.meanTemperatureCelsius())
+                    + ", rain=" + d.rainfall().score(c.annualRainfallMm()) + ", ratio=" + d.aridity().score(ratio)
+                    + ", elevation=" + d.elevation().score(g.seaRelativeElevationBlocks()) + "]"), false);
         }
         return 1;
     }
