@@ -30,3 +30,10 @@ The marine shortcut removes an exact subset of these terrain dependencies; it
 does not crop erosion/smoothing workspaces or shorten climate profiles. Cropped
 filter regions, reordered droplets, separable smoothing, altered accumulation,
 and arbitrary filter parallelization remain rejected without equivalence proof.
+
+Final retained runtime accounting is in [cold_query_analysis.json](evidence/cold_query_analysis.json):
+the original 463-owning-tile profile now needs 246 surface misses; remote profiles
+covering 500 and 16 owning tiles need 78 and zero surface misses respectively.
+The corresponding FULL requests generate 253, 84 and 16 terrain tiles because
+chunk/prerequisite terrain is additional to climate surface acquisition.
+See [final performance report](PERFORMANCE_COMPARISON.md) for diagnostic scope.
