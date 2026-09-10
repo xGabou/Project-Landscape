@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "phase": "2A only",
+  "phase1Reference": "b9e27263075ab8274c9206bb837e92c768c56a2e",
+  "landscapeProductionCommit": "d2ce7113c28671886b82bfc73c884f373526fd82",
+  "landscapeProductionTree": "d869fed9652e643248868107a81ae577c26985eb",
+  "paProductionCommit": "1296044e9255f1097e9c76a73301d17ff040720c",
+  "paProductionTree": "7c44018bd30135a7bbc045e1c89224a21f44a4e5",
+  "staticRun": "reproduction-1789051830945",
+  "runtimeRun": "reproduction-1789052678232",
+  "focusedChecks": 31,
+  "savedCount": 4,
+  "restoredCount": 4,
+  "continuedCount": 7,
+  "coveredTicksBefore": 600,
+  "coveredTicksAfter": 1000,
+  "queriesPerSession": 100,
+  "terrainGenerationsPerSession": [
+    0,
+    0
+  ],
+  "diagnosticsActiveAndMissing": true,
+  "sampleNanosecondsPerCall": [
+    18321.0,
+    3242.0
+  ],
+  "baselineTemperatureCelsius": 22.330036861073662,
+  "representativePoint": [
+    0,
+    0
+  ],
+  "baselineIntegration": "Real PA TemperatureGenerator called after retained representative became available; callback used baseline and existing variation remained. Initial startup had no retained context and used PA fallback.",
+  "reopenBaselineContext": "Unavailable; -12345 in the raw initializer probe is a test-only fallback sentinel, not a baseline or runtime temperature.",
+  "saveReopenNoInterpolation": "Four observations covered 600 ticks; three more in a new session added only two 200-tick intervals, total 1000 ticks.",
+  "worldIsolation": "Save-local UUID creation/reuse/missing-ID refusal and history identity rejection tested; distinct live ServerLevel reopened after complete disposal.",
+  "dimensionIsolation": "Actual Forge Nether service absent; production explicitly Overworld-only; mismatched dimension NBT rejected.",
+  "runtimeDisposal": "Both unloads unregister service, reject stale service/history/PA session access, and clear PA level/callback references.",
+  "phase1Regression": "Task4 geography digest, Task5 fixtures/digests, Task6 fixtures/digests, six finalized terrain tile digests exact.",
+  "builds": "Both final builds passed; Landscape jar excludes PA and reproduction classes.",
+  "testScope": "Actual Forge integrated server. Reproduction-only forecast sampling radii 128; native region size remains 2000; no synthetic weather. Dedicated standalone server and full default startup radius not acceptance-tested.",
+  "ecologyOrBiomeTransitionsAdded": false,
+  "phase2BStarted": false,
+  "productionTreePath": "src/main",
+  "paBridgeCommit": "919ab8baeef60b73931df3368d4f3c9cd849ae4c",
+  "closureValidation": "Reused successful evidence; verified source trees, artifact hashes and jar separation. No source changes or expensive reruns."
+}

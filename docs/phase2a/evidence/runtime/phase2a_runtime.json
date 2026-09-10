@@ -1,0 +1,68 @@
+[
+  {
+    "pa": true,
+    "reopened": false,
+    "serverAuthority": true,
+    "baselineSeparate": true,
+    "baselineTemperature": 22.330036861073662,
+    "runtimeSample": {
+      "gameTick": 660,
+      "temperatureCelsius": 11.54172134399414,
+      "precipitationIntensity": 0.0,
+      "humidityFraction": 0.48005908727645874,
+      "windXMetresPerSecond": 8.050015246375139,
+      "windZMetresPerSecond": 0.9077749836090988,
+      "pressureHpa": 1000.9070434570312
+    },
+    "historyCount": 4,
+    "coverageTicks": 600,
+    "runtimeQueryTerrainGenerations": 0,
+    "grid": 2000,
+    "saveReopen": false,
+    "restoredCount": 0,
+    "naturalBaselineInitializations": 0,
+    "sample100Ns": 1832100,
+    "diagnostic": true,
+    "baselineBackedTemperatureGenerator": true,
+    "windowTicks": [
+      24000,
+      24000,
+      96000,
+      384000
+    ],
+    "baselinePoint": "0,0"
+  },
+  {
+    "pa": true,
+    "reopened": true,
+    "serverAuthority": true,
+    "baselineSeparate": true,
+    "baselineTemperature": -12345.0,
+    "runtimeSample": {
+      "gameTick": 1319,
+      "temperatureCelsius": 11.92811107635498,
+      "precipitationIntensity": 0.0,
+      "humidityFraction": 0.47088342905044556,
+      "windXMetresPerSecond": 3.5337868305707127,
+      "windZMetresPerSecond": 4.451050895481354,
+      "pressureHpa": 1000.5147094726562
+    },
+    "historyCount": 7,
+    "coverageTicks": 1000,
+    "runtimeQueryTerrainGenerations": 0,
+    "grid": 2000,
+    "saveReopen": true,
+    "restoredCount": 4,
+    "naturalBaselineInitializations": 0,
+    "sample100Ns": 324200,
+    "diagnostic": true,
+    "baselineBackedTemperatureGenerator": false,
+    "windowTicks": [
+      24000,
+      24000,
+      96000,
+      384000
+    ],
+    "baselinePoint": "unavailable; no terrain acquired"
+  }
+]

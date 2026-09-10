@@ -1,0 +1,12 @@
+[
+  {
+    "reopened": false,
+    "restoredCount": 0,
+    "status": "runtime climate provider: projectatmosphere:regional_server_v1"
+  },
+  {
+    "reopened": true,
+    "restoredCount": 4,
+    "status": "runtime climate provider: projectatmosphere:regional_server_v1"
+  }
+]

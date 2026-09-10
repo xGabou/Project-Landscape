@@ -133,6 +133,7 @@ public final class ReproductionClient {
                         out.flush();
                     }catch(Exception ex){throw new RuntimeException(ex);}
                 });
+                if(Boolean.getBoolean("phase2a.runtime"))work=work.thenCompose(ignored->server.submit(()->RuntimeIntegrationChecks.begin(server,out,task6Reopened)).thenCompose(future->future));
             }else if(stage==3&&work.isDone()){
                 worldContexts=new ArrayList<>();
                 for(var level:mc.getSingleplayerServer().getAllLevels()) {
@@ -166,6 +167,7 @@ public final class ReproductionClient {
                     out.row("task6b_cache_disposal","distance",source.distanceCacheStats(),"postCloseQueriesRejected",true,"worldIndex",worldIndex,"reopened",task6Reopened,"surface",source.surfaceCacheStats(),"climate",source.climateCacheStats(),"winners",source.surfaceWinnerCacheStats(),"geography",source.surfaceGeographyCacheStats(),"allEmpty",true);
                     task6bDisposedSource=null;
                 }
+                if(Boolean.getBoolean("phase2a.runtime"))RuntimeIntegrationChecks.unloaded(out);
                 worldContexts=List.of();
                 if(task1c.equals("task6b")&&Boolean.getBoolean("task6b.final")&&worldIndex==0&&!task6Reopened){
                     task6Reopened=true;stage=2;mc.createWorldOpenFlows().loadLevel(mc.screen,run+"-seed0");return;

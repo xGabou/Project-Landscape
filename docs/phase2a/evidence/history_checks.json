@@ -1,0 +1,7 @@
+{
+  "boundedWindows": true,
+  "worldIsolation": true,
+  "compressedPersistence": true,
+  "status": "PASS",
+  "checks": 31
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "project": "Landscape",
+    "status": "PASS",
+    "productionCommit": "d2ce7113c28671886b82bfc73c884f373526fd82",
+    "sourceMainTree": "d869fed9652e643248868107a81ae577c26985eb",
+    "log": "phase2a-build-final.log",
+    "logSha256": "f7ede5ce291c41ffcc37c21e14ccc587e346a5f40634419f57758a8045c46a59",
+    "durationSeconds": 9,
+    "reusedSuccessfulBuild": true
+  },
+  {
+    "project": "PA",
+    "status": "PASS",
+    "productionCommit": "1296044e9255f1097e9c76a73301d17ff040720c",
+    "sourceMainTree": "7c44018bd30135a7bbc045e1c89224a21f44a4e5",
+    "log": "phase2a-build-final-resumed.log",
+    "logSha256": "3ea420bf8683497c96409b882d828c9c22266fc1796f7f4efbc3900b0c19b80e",
+    "durationSeconds": 62,
+    "reusedSuccessfulBuild": true
+  }
+]

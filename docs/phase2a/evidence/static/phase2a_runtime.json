@@ -1,0 +1,14 @@
+[
+  {
+    "pa": false,
+    "reopened": false,
+    "staticMode": true,
+    "status": "runtime climate provider: unavailable (PA absent); baseline climate: available; dynamic climate: disabled"
+  },
+  {
+    "pa": false,
+    "reopened": true,
+    "staticMode": true,
+    "status": "runtime climate provider: unavailable (PA absent); baseline climate: available; dynamic climate: disabled"
+  }
+]
