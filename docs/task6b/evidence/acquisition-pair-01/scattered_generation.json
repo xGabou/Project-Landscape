@@ -1,0 +1,44 @@
+{
+    "scenario":  "scattered_generation",
+    "baselineWallNanos":  114347190600,
+    "optimizedWallNanos":  65668939500,
+    "wallReductionPercent":  42.570570247136445,
+    "baselineProcessCpuNanos":  241546875000,
+    "optimizedProcessCpuNanos":  194156250000,
+    "exactClimateComparisons":  32,
+    "allSevenRawDoubleBitsExact":  true,
+    "baselineSurface":  {
+                            "entries":  1024,
+                            "capacity":  1024,
+                            "misses":  1520,
+                            "retainedArrayBytes":  134217728,
+                            "hits":  0
+                        },
+    "optimizedSurface":  {
+                             "capacity":  1024,
+                             "failures":  0,
+                             "waits":  0,
+                             "misses":  1520,
+                             "evictions":  496,
+                             "hits":  0,
+                             "entries":  1024,
+                             "retainedArrayBytes":  134217728,
+                             "inFlight":  0
+                         },
+    "baselineClimate":  {
+                            "entries":  16,
+                            "misses":  16,
+                            "capacity":  4096,
+                            "hits":  16
+                        },
+    "optimizedClimate":  {
+                             "entries":  16,
+                             "hits":  16,
+                             "evictions":  0,
+                             "inFlight":  0,
+                             "failures":  0,
+                             "capacity":  4096,
+                             "misses":  16,
+                             "waits":  0
+                         }
+}

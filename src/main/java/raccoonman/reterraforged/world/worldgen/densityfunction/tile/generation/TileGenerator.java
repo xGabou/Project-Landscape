@@ -2,6 +2,8 @@
  * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen.densityfunction.tile.generation;
 
+import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
+
 import java.util.concurrent.CompletableFuture;
 import com.gabou.atmospheregen.geography.GeographyPipeline;
 
@@ -32,7 +34,7 @@ public class TileGenerator {
 		this.heightmap = heightmap;
 		this.filters = filters;
 		// Retain the real filter slot for failure-injection/lifecycle tests. No per-cell lambda.
-		this.geography = new GeographyPipeline<>(heightmap.continentStage(), heightmap.terrainStage(),
+        this.geography = heightmap.paBridge()!=null ? heightmap.paBridge().pipeline(filters) : new GeographyPipeline<>(heightmap.continentStage(), heightmap.terrainStage(),
 			heightmap.hydrologyStage(), heightmap.legacyParameters(), (tile, optional) -> this.filters.apply(tile, optional));
 		this.cellPool = ArrayPool.of(100, (length) -> {
 			Cell[] cells = new Cell[length];
@@ -57,7 +59,8 @@ public class TileGenerator {
 	public GeographyPipeline<Cell, Rivermap, Tile> geographyPipeline() { return this.geography; }
 
 	public CompletableFuture<Tile> generate(int tileX, int tileZ) {
-		Tile tile = this.makeTile(tileX, tileZ);
+		long measured=Stage.TILE.start();
+        Tile tile = this.makeTile(tileX, tileZ);
 		CompletableFuture<?>[] futures = new CompletableFuture<?>[this.batchCount * this.batchCount];
 		try {
 		for (int batchZ = 0; batchZ < this.batchCount; batchZ++) {
@@ -65,7 +68,8 @@ public class TileGenerator {
 				int chunkX = batchX * this.batchSize;
 				int chunkZ = batchZ * this.batchSize;
 				futures[batchX * this.batchCount + batchZ] = CompletableFuture.runAsync(() -> {
-			        int maxX = Math.min(this.tileSizeChunks.total(), chunkX + this.batchSize);
+			        long batchMeasured=Stage.BATCH.start();
+                    int maxX = Math.min(this.tileSizeChunks.total(), chunkX + this.batchSize);
 			        int maxZ = Math.min(this.tileSizeChunks.total(), chunkZ + this.batchSize);
 		            for (int cZ = chunkZ; cZ < maxZ; cZ++) {
 		            	for (int cX = chunkX; cX < maxX; cX++) {
@@ -83,11 +87,14 @@ public class TileGenerator {
 			                }
 			            }
 			        }
-				}, ThreadPools.WORLD_GEN);
+				Stage.BATCH.end(batchMeasured);
+                }, ThreadPools.WORLD_GEN);
 	        }
 	    }
 		} catch (Throwable failure) { return this.finish(tile, futures, true, failure); }
-		return this.finish(tile, futures, true, null);
+		var result=this.finish(tile, futures, true, null);
+        if(com.gabou.atmospheregen.geography.terrain.TerrainMetrics.ENABLED)result.whenComplete((v,e)->Stage.TILE.end(measured));
+        return result;
 	}
 	
 	/** Compatibility name; this is transformed preview geometry, never owning-tile canonical geography. */
@@ -108,7 +115,8 @@ public class TileGenerator {
 				int chunkX = batchX * this.batchSize;
 				int chunkZ = batchZ * this.batchSize;
 				futures[batchX * this.batchCount + batchZ] = CompletableFuture.runAsync(() -> {
-			        int maxX = Math.min(this.tileSizeChunks.total(), chunkX + this.batchSize);
+			        long batchMeasured=Stage.BATCH.start();
+                    int maxX = Math.min(this.tileSizeChunks.total(), chunkX + this.batchSize);
 			        int maxZ = Math.min(this.tileSizeChunks.total(), chunkZ + this.batchSize);
 			        for (int cZ = chunkZ; cZ < maxZ; cZ++) {
 			            for (int cX = chunkX; cX < maxX; cX++) {
@@ -126,7 +134,8 @@ public class TileGenerator {
 			                }
 			            }
 			        }
-				}, ThreadPools.WORLD_GEN);
+				Stage.BATCH.end(batchMeasured);
+                }, ThreadPools.WORLD_GEN);
 	        }
 	    }
 		} catch (Throwable failure) { return this.finish(tile, futures, applyOptionalFilters, failure); }

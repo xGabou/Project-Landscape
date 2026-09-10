@@ -1,0 +1,138 @@
+{
+  "rows": [
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 1,
+      "bounded128Hits": 4776136,
+      "candidateNanos": 589429300,
+      "referenceNanos": 1107498500,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": -1
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 1,
+      "bounded128Hits": 4776136,
+      "candidateNanos": 561948100,
+      "referenceNanos": 1075912300,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 0
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 1,
+      "bounded128Hits": 4776136,
+      "candidateNanos": 568832200,
+      "referenceNanos": 1060443500,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 1
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 1,
+      "bounded128Hits": 4776136,
+      "candidateNanos": 567596200,
+      "referenceNanos": 1068753700,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 2
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 2,
+      "bounded128Hits": 5325688,
+      "candidateNanos": 622296700,
+      "referenceNanos": 1427215000,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": -1
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 2,
+      "bounded128Hits": 5325688,
+      "candidateNanos": 623333400,
+      "referenceNanos": 1400187000,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 0
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 2,
+      "bounded128Hits": 5325688,
+      "candidateNanos": 622285200,
+      "referenceNanos": 1409138300,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 1
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 2,
+      "bounded128Hits": 5325688,
+      "candidateNanos": 620437500,
+      "referenceNanos": 1392170500,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 2
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 3,
+      "bounded128Hits": 5355785,
+      "candidateNanos": 664042300,
+      "referenceNanos": 1537880200,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": -1
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 3,
+      "bounded128Hits": 5355785,
+      "candidateNanos": 653369800,
+      "referenceNanos": 1531562600,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 0
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 3,
+      "bounded128Hits": 5355785,
+      "candidateNanos": 665145300,
+      "referenceNanos": 1530786000,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 1
+    },
+    {
+      "duplicatesFromPreviousSample": 7619056,
+      "mountainGraph": 3,
+      "bounded128Hits": 5355785,
+      "candidateNanos": 662555700,
+      "referenceNanos": 1536717100,
+      "samples": 153600,
+      "rawBitsExact": true,
+      "latticeValuesComputedReference": 7680000,
+      "pass": 2
+    }
+  ],
+  "scope": "Isolated real three mountain Erosion input graphs; unwarped row-major 160x160 input-coordinate scan at six origins. Records input lattice coordinate bits including octave scaling. Not a production tile-worker trace. Wrapper includes diagnostic set allocation in both timings; fixed reference-first order. No production candidate accepted by this result.",
+  "capacity": 128
+}

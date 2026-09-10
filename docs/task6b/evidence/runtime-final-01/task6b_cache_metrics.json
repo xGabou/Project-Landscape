@@ -1,0 +1,90 @@
+[
+  {
+    "phase": "after paired corpus",
+    "surface": {
+      "failures": 0,
+      "capacity": 1024,
+      "inFlight": 0,
+      "retainedArrayBytes": 134217728,
+      "entries": 1024,
+      "hits": 430949,
+      "evictions": 1753,
+      "misses": 2777,
+      "waits": 1233
+    },
+    "climate": {
+      "evictions": 280,
+      "hits": 0,
+      "entries": 4096,
+      "waits": 0,
+      "misses": 4376,
+      "capacity": 4096,
+      "failures": 0,
+      "inFlight": 0
+    },
+    "geography": {
+      "evictions": 21462,
+      "hits": 1875939,
+      "entries": 4096,
+      "waits": 0,
+      "misses": 25558,
+      "capacity": 4096,
+      "failures": 0,
+      "inFlight": 0
+    },
+    "winners": {
+      "evictions": 19519,
+      "hits": 1759232,
+      "entries": 4096,
+      "waits": 0,
+      "misses": 23615,
+      "capacity": 4096,
+      "failures": 0,
+      "inFlight": 0
+    }
+  },
+  {
+    "phase": "after locality chunk",
+    "surface": {
+      "failures": 0,
+      "capacity": 1024,
+      "inFlight": 0,
+      "retainedArrayBytes": 134217728,
+      "entries": 1024,
+      "hits": 495587,
+      "evictions": 2216,
+      "misses": 3240,
+      "waits": 1406
+    },
+    "climate": {
+      "evictions": 966,
+      "hits": 0,
+      "entries": 4096,
+      "waits": 0,
+      "misses": 5062,
+      "capacity": 4096,
+      "failures": 0,
+      "inFlight": 0
+    },
+    "geography": {
+      "evictions": 22644,
+      "hits": 1950480,
+      "entries": 4096,
+      "waits": 0,
+      "misses": 26740,
+      "capacity": 4096,
+      "failures": 0,
+      "inFlight": 0
+    },
+    "winners": {
+      "evictions": 20309,
+      "hits": 1812548,
+      "entries": 4096,
+      "waits": 0,
+      "misses": 24405,
+      "capacity": 4096,
+      "failures": 0,
+      "inFlight": 0
+    }
+  }
+]

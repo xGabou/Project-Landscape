@@ -1,0 +1,18 @@
+[
+  {
+    "phase": "before_suite",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 625,
+      "entryGetCalls": 7189746,
+      "entryGetInclusiveNs": 2003619000,
+      "entryGetInitiallyPending": 14,
+      "presentHit": 4576955,
+      "presentMiss": 2917995,
+      "provideCalls": 2612166,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 4,
+      "tileGenerationCalls": 41
+    }
+  }
+]

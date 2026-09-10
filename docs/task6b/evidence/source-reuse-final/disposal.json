@@ -1,0 +1,73 @@
+{
+  "scope": "payload cleared even while test retains service/context references; no GC reachability claim",
+  "after": {
+    "climate": {
+      "misses": 5,
+      "capacityWaits": 0,
+      "entries": 0,
+      "hits": 2,
+      "waits": 0,
+      "evictions": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "capacity": 4096,
+      "inFlight": 0
+    },
+    "distance": {
+      "entries": 0,
+      "hits": 90555,
+      "retainedArrayBytes": 0,
+      "misses": 22,
+      "capacity": 32
+    },
+    "surface": {
+      "evictions": 0,
+      "inFlight": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "misses": 472,
+      "retainedArrayBytes": 0,
+      "entries": 0,
+      "capacity": 1024,
+      "hits": 90010,
+      "capacityWaits": 0,
+      "waits": 0
+    }
+  },
+  "before": {
+    "climate": {
+      "misses": 5,
+      "capacityWaits": 0,
+      "entries": 5,
+      "hits": 2,
+      "waits": 0,
+      "evictions": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "capacity": 4096,
+      "inFlight": 0
+    },
+    "distance": {
+      "entries": 22,
+      "hits": 90555,
+      "retainedArrayBytes": 180224,
+      "misses": 22,
+      "capacity": 32
+    },
+    "surface": {
+      "evictions": 0,
+      "inFlight": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "misses": 472,
+      "retainedArrayBytes": 61865984,
+      "entries": 472,
+      "capacity": 1024,
+      "hits": 90010,
+      "capacityWaits": 0,
+      "waits": 0
+    }
+  },
+  "exactClimate": true,
+  "postCloseQueriesRejected": true
+}

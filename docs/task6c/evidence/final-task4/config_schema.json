@@ -1,0 +1,12 @@
+{
+  "shelfWidthBlocks": 384.0,
+  "shelfDepthBlocks": 18.0,
+  "marineDepthInfluence": 1.0,
+  "archipelagoFrequency": 0.16,
+  "inlandSeaFrequency": 0.2,
+  "minimumMajorOceanWidthBlocks": 1000.0,
+  "coastlineDetailBlocks": 128.0,
+  "islandFrequency": 0.3,
+  "continentScaleBlocks": 16384.0,
+  "landCoverageTarget": 0.44
+}

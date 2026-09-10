@@ -39,6 +39,9 @@ import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
 @Mod("baseline_smoke")
 public final class BaselineSmoke {
     private final boolean vanilla = Boolean.getBoolean("task1b.smokeVanilla");
+    private final boolean geographyV1 = Boolean.getBoolean("task4.smokeV1");
+    private String initialV1Manifest;
+    private java.util.List<String> initialV1Topology;
     private final boolean existingWorld = System.getProperty("task2.existingWorld") != null;
     private final String world = System.getProperty("task2.existingWorld", "task0-" + System.currentTimeMillis());
     private int stage;
@@ -82,6 +85,13 @@ public final class BaselineSmoke {
                 stage = 2;
                 Path root = mc.gameDirectory.toPath().resolve("saves").resolve(world);
                 Path pack = root.resolve("datapacks/task0-preset");
+                if(geographyV1) {
+                    if(vanilla)throw new IllegalArgumentException("V1 and vanilla smoke are separate cases");
+                    var selection=com.gabou.atmospheregen.persistence.DevelopmentGeographySelection.path(root);
+                    Files.createDirectories(selection.getParent());
+                    Files.writeString(selection,com.gabou.atmospheregen.config.MacroGeographySettings.CODEC.encodeStart(
+                        com.mojang.serialization.JsonOps.INSTANCE,com.gabou.atmospheregen.config.MacroGeographySettings.defaults()).getOrThrow(false,s->{}).toString(),java.nio.file.StandardOpenOption.CREATE_NEW);
+                }
                 if (!vanilla) {
                     Files.createDirectories(pack);
                     Datapacks.makePreset(Presets.makeLegacyDefault(), create.getUiState().getSettings().worldgenLoadContext(),
@@ -114,6 +124,16 @@ public final class BaselineSmoke {
                         RTFCommon.LOGGER.info("TASK1B VANILLA_RULES count={}", rules);
                     } else if (state.generatorContext() == null || state.preset() == null) throw new IllegalStateException("ReTerraForged context/preset missing");
                     if (!vanilla && state.generatorContext().generationContext() == null) throw new IllegalStateException("Task 2 world metadata missing");
+                    if(geographyV1) {
+                        var c=state.generatorContext();var bridge=c.generator.getHeightmap().paBridge();
+                        if(bridge==null)throw new AssertionError("V1 development world did not install new geography");
+                        String manifest=com.gabou.atmospheregen.persistence.GenerationManifestStore.encode(c.generationContext().manifest());
+                        var topology=new java.util.ArrayList<String>();
+                        for(int z=-32768;z<=32768;z+=4096)for(int x=-32768;x<=32768;x+=4096)topology.add(bridge.macro().sampleMacro(x,z).toString());
+                        if(reopened&&(!manifest.equals(initialV1Manifest)||!topology.equals(initialV1Topology)))throw new AssertionError("V1 save/reopen manifest/topology changed");
+                        initialV1Manifest=manifest;initialV1Topology=topology;
+                        task2Evidence.add(java.util.Map.of("v1",true,"reopened",reopened,"topologySamples",topology.size(),"manifestStable",true,"topologyStable",true));
+                    }
                     task2Evidence.add(java.util.Map.of("phase", reopened ? "reopened" : "initial", "vanilla", vanilla,
                         "existingTask1CWorld", existingWorld, "terraBlender", ModList.get().isLoaded("terrablender"),
                         "metadata", vanilla ? java.util.Map.of("ownership", "foreign_untouched") :
@@ -138,7 +158,7 @@ public final class BaselineSmoke {
                         RTFCommon.LOGGER.info("TASK0 CHUNK reopened={} x={} z={} status={} height={} surface={} biome={}",
                             reopened, x, z, chunk.getStatus(), y, block, level.getBiome(new BlockPos(x, y, z)).unwrapKey());
                     }
-                    if (!reopened && !vanilla) {
+                    if (!reopened && !vanilla && !geographyV1) {
                         // Conversion comparator coverage, not a cached/uncached determinism test.
                         var found = new java.util.HashSet<String>();
                         var heightmap = state.generatorContext().generator.getHeightmap();

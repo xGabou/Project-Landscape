@@ -1,0 +1,212 @@
+[
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 0,
+    "tiles": 8,
+    "elapsedNs": 462018100
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 1,
+    "tiles": 8,
+    "elapsedNs": 465658700
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 2,
+    "tiles": 8,
+    "elapsedNs": 466450000
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 3,
+    "tiles": 8,
+    "elapsedNs": 458179900
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 4,
+    "tiles": 8,
+    "elapsedNs": 461533100
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 5,
+    "tiles": 8,
+    "elapsedNs": 447805200
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 6,
+    "tiles": 8,
+    "elapsedNs": 455176900
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 7,
+    "tiles": 8,
+    "elapsedNs": 464472200
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 8,
+    "tiles": 8,
+    "elapsedNs": 454791100
+  },
+  {
+    "version": "LEGACY_RTF_V0",
+    "operation": "filtered_tile_batch",
+    "repetition": 9,
+    "tiles": 8,
+    "elapsedNs": 455768300
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 0,
+    "tiles": 8,
+    "elapsedNs": 550481400
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 1,
+    "tiles": 8,
+    "elapsedNs": 550946500
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 2,
+    "tiles": 8,
+    "elapsedNs": 553474800
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 3,
+    "tiles": 8,
+    "elapsedNs": 567356500
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 4,
+    "tiles": 8,
+    "elapsedNs": 549706400
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 5,
+    "tiles": 8,
+    "elapsedNs": 544857200
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 6,
+    "tiles": 8,
+    "elapsedNs": 547214900
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 7,
+    "tiles": 8,
+    "elapsedNs": 555366900
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 8,
+    "tiles": 8,
+    "elapsedNs": 543422300
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "filtered_tile_batch",
+    "repetition": 9,
+    "tiles": 8,
+    "elapsedNs": 558450600
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "macro_sample",
+    "queries": 100000,
+    "elapsedNs": 28706400,
+    "checksum": -99978.70756733228
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "canonical_warm_sample",
+    "queries": 100000,
+    "elapsedNs": 46134400,
+    "checksum": 1262137.288645627
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "macro_sample",
+    "queries": 100000,
+    "elapsedNs": 23871100,
+    "checksum": -99978.70756733228
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "canonical_warm_sample",
+    "queries": 100000,
+    "elapsedNs": 38915800,
+    "checksum": 1262137.288645627
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "macro_sample",
+    "queries": 100000,
+    "elapsedNs": 22106200,
+    "checksum": -99978.70756733228
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "canonical_warm_sample",
+    "queries": 100000,
+    "elapsedNs": 38595900,
+    "checksum": 1262137.288645627
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "macro_sample",
+    "queries": 100000,
+    "elapsedNs": 21194100,
+    "checksum": -99978.70756733228
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "canonical_warm_sample",
+    "queries": 100000,
+    "elapsedNs": 37908000,
+    "checksum": 1262137.288645627
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "macro_sample",
+    "queries": 100000,
+    "elapsedNs": 22383500,
+    "checksum": -99978.70756733228
+  },
+  {
+    "version": "PA_GEOGRAPHY_V1",
+    "operation": "canonical_warm_sample",
+    "queries": 100000,
+    "elapsedNs": 38364700,
+    "checksum": 1262137.288645627
+  }
+]

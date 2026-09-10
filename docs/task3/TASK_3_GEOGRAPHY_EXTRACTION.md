@@ -1,6 +1,6 @@
 # Task 3 — geography extraction
 
-Status: extraction implemented; comprehensive comparator/runtime/performance gates in progress.
+Status: Task 3 complete. Exact legacy comparators, performance, build/datagen and runtime gates pass.
 Started from clean accepted Task 2 `203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7`.
 All 342 Task 2 indexed evidence hashes verified before changes. LEGACY_RTF_V0 is immutable
 comparator behavior, not permission to update goldens after a refactor.
@@ -112,7 +112,7 @@ extension point in this orchestrator. There are no future climate/biome API depe
 new geography version factory. Float point coordinates are deliberate for inherited zoomed previews;
 public coordinates remain integer blocks. No per-point workspace or immutable sample allocation.
 
-MIT-derived implementations live under `Gabou.projectlandscape.world.worldgen.cell.geography`:
+MIT-derived implementations live under `raccoonman.reterraforged.world.worldgen.cell.geography`:
 
 | Implementation | Responsibility |
 |---|---|
@@ -171,7 +171,7 @@ The 24-worker allocation pilot measured 3,201,648–3,201,680 bytes per tile ver
 2,996,848–2,996,880: about +6.83%. Private field layout adds eight bytes per published Cell on this JVM
 (25,600 cells → 204,800 additional bytes). Warmed pooled workspaces are reused; first-allocation costs
 and retained tile-memory growth are not identical to this warmed allocation metric. Final throughput
-and allocation repeats remain required, not inferred from the pilot's short timings.
+and allocation results below are measured independently of the pilot's short timings.
 
 ## Public sample semantics and enrichment
 
@@ -216,7 +216,7 @@ Preview calls `generatePreviewApproximate`, with the old `generateZoomed` name a
 Its UI explicitly labels “Legacy preview approximation”. It keeps transformed coordinates and skips
 optional filters as before; no forced canonical tile generation per preview pixel.
 
-## Verification records (in progress)
+## Verification records
 
 Pre-extraction `stage-baseline` captured 2,975 rows (595 × five stages). Point-stage extraction,
 tile-pipeline integration, coast/parameter isolation and mountain capture each passed every legacy
@@ -229,5 +229,90 @@ production API. The failed log remains a harness-development failure, not a terr
 
 Run `scripts/task3/Verify-Dependencies.ps1` for package-direction assertions. Run `Run-Gates.ps1`
 sequentially for geography/goldens/scheduling/full regressions/foundation/stage/benchmarks. Stage tests
-compare the new pipeline directly against the pre-extraction capture. Complete aggregate results and
-performance disposition will be added after all gates finish; accepted evidence is never overwritten.
+compare the new pipeline directly against the pre-extraction capture. Aggregate results and
+performance disposition are recorded below; accepted evidence is never overwritten.
+
+## Resumed verification
+
+The interrupted session left the extraction commits through `9edf3503772d67c948d4ed5d4348428c004a293f`
+and unfinished performance/runtime reports. Work resumed in the `task3-completion` branch and
+isolated checkout, because the original workspace contained a separate uncommitted package rename.
+That rename is preserved in the original workspace and is outside this Task 3 result. The inherited
+package and resource identities in this branch remain those used by the accepted comparator.
+
+No production source changes were needed to resume verification. The initial benchmark and its
+historical comparison are retained as `benchmark/`, `benchmark_summary.json`, and
+`initial_performance_comparison.json`. The fresh same-protocol candidate is `benchmark-resumed/`.
+A separate accepted Task 2 checkout supplies the control; its production source/config are checked
+against the accepted commit before running. Test harness additions are not production changes.
+
+The initial short public-provider benchmark still changed substantially during measured repetitions.
+Both versions therefore receive an identical supplementary protocol: 20 discarded warmup batches,
+then 10 measured batches of 262,144 queries. Immutable results escape through volatile storage;
+timer overhead remains included. The short-run archives are retained, not replaced. The standalone
+legacy point/tile/FULL benchmark protocol and frozen golden fixtures are unchanged.
+
+Performance evidence is engineering evidence from live Minecraft clients, not an assertion that
+every scheduling or JIT effect has been isolated. Changes between process runs are reported alongside
+the initial measurements; no unmeasured cause or exact retained-heap attribution is claimed.
+
+## Final comparator and performance results
+
+| Check | Result |
+|---|---|
+| Five-stage comparisons | 2,975 / 2,975 exact |
+| Canonical geography | 595 / 595 exact |
+| Legacy biome/router hints | 595 / 595 exact |
+| Minecraft biome keys | 85 / 85 unchanged |
+| Standalone legacy tile digests | 420 / 420 exact across workers 2, 24, 48 and repeat ordering |
+| TerraBlender legacy tile digests | 105 / 105 exact |
+| Independently encoded mountain digests | 525 / 525 scheduling invariant |
+| Task 1B lifecycle/cache/correctness regressions | 64 / 64 pass |
+| Accepted Task 1C / Task 2 archived files | 362 / 342 hashes unchanged |
+
+The legacy seeds `8675309` and `4303642605` still collide across all 85 fixture pairs.
+Legacy int narrowing is preserved; Task 2's new 64-bit seed service is not substituted into V0.
+Filtered/direct disagreement remains 340 / 340 diagnostic locations, with the same field counts:
+gradient 340, height 319, erosion height 176, sediment 96, terrain 6. Direct approximation is not
+being presented as canonical output. Stage captures and complete golden comparators use exact
+float bits, not an epsilon or updated expected values.
+
+The ownership map classifies 133 explicit Cell writes over 24 legacy fields: 54 physical geography,
+23 hydrology, 13 finalization, 21 legacy Minecraft parameter hints, and 22 legacy climate/biome
+classification. Transport/reset and inactive filter-family writes are marked separately in the map;
+these counts are not a claim that every listed write belongs to the active point path.
+
+The fresh paired performance gate passes. Largest isolated positive time delta is +0.30%; filtered
+tiles measure -0.87%, public immutable queries -1.33%, and worker/caller allocation +6.84%.
+See [PERFORMANCE_COMPARISON.md](PERFORMANCE_COMPARISON.md) for all operations, original slower
+runs, control protocol, public query warmup, allocation scope and measurement limitations.
+
+`Cell`, old Climate/ClimateModule/BiomeType classification, legacy parameter scratch and the private
+continent-owned river caches remain explicitly transitional. Climate's biome-center coast effects
+still run before filtering through the V0 compatibility boundary. Public unknown distances, physical
+continentality, latitude, slope, local relief, basin, flow and ridge orientation remain unavailable.
+Structure eligibility retains the named V0 opportunistic path; preview remains labeled approximate.
+
+No new continent/ocean algorithm, climate model, biome resolver, runtime ecology or integration was
+implemented. `PA_GEOGRAPHY_V1` remains unavailable. Task 4 was not started.
+
+## Build, runtime and handoff
+
+`compileJava`, `classes`, `jar`, `build`, `reproductionClasses`, `smokeClasses` and `runData` pass.
+Standalone, TerraBlender, vanilla and copied existing Task 2 world tests each pass 14 FULL chunk
+checks across create/open, save, reopen and additional generation. The existing world's persisted
+manifest remains byte-identical; its source save is unchanged. Existing development warnings remain
+in the logs; no new fatal mixin or registry failure occurred. Developer observer/smoke classes are
+excluded from the production artifact.
+
+The finalizer validates the accepted evidence hashes, stage/golden/mountain/dependency checks,
+64 Task 1B regressions, benchmark completion, performance status, all runtime cases, build logs and
+artifact contents before generating `evidence/final_summary.json` and `evidence/manifest.json`.
+The manifest hashes every included evidence file except itself and the unarchived raw-log directory.
+Successful logs are copied into `verified-logs/`. `evidence/files_and_commits.json` records the
+complete Task 3 commit/file inventory; the containing Git commit identifies the final report itself.
+
+The completion branch is `task3-completion`, located at `build/task3-completion` beneath the original
+workspace. Its production source retains inherited identities. The original workspace's separate
+uncommitted rename has not been merged into or overwritten by this result. Only this branch is
+claimed as the completed, clean Task 3 checkout.

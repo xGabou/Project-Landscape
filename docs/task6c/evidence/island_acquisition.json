@@ -1,0 +1,382 @@
+{
+  "before": "build/task6c-smoothing-acquisition",
+  "after": "build/task6c-island-acquisition-01",
+  "methodology": "Sequential independent JVMs; cold plus warm pass, diagnostics disabled. Small fixed corpus, no confidence claim. Raw climate outputs exact.",
+  "scenarios": [
+    {
+      "scenario": "sequential_generation",
+      "before": {
+        "totalSeconds": 10.622308,
+        "medianSeconds": 0.10130990000000001,
+        "p95Seconds": 0.6371838,
+        "minimumSeconds": 6e-06,
+        "maximumSeconds": 4.4927907,
+        "sampleStandardDeviationSeconds": 0.7927079243101844,
+        "throughputQueriesPerSecond": 3.0125279741464848,
+        "processCpuSeconds": 40.109375,
+        "surface": {
+          "retainedArrayBytes": 29884416,
+          "misses": 228,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 0,
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 1292,
+          "capacity": 1024,
+          "entries": 228
+        },
+        "climate": {
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 16,
+          "entries": 16,
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0
+        }
+      },
+      "after": {
+        "totalSeconds": 13.023787200000001,
+        "medianSeconds": 0.12311704999999999,
+        "p95Seconds": 0.7881478,
+        "minimumSeconds": 7.1e-06,
+        "maximumSeconds": 5.4701717,
+        "sampleStandardDeviationSeconds": 0.9649015630823772,
+        "throughputQueriesPerSecond": 2.457042602784542,
+        "processCpuSeconds": 51.453125,
+        "surface": {
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 1292,
+          "capacity": 1024,
+          "entries": 228,
+          "retainedArrayBytes": 29884416,
+          "misses": 228,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 0
+        },
+        "climate": {
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0,
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 16,
+          "entries": 16
+        }
+      },
+      "rawClimateExact": true,
+      "reductionPercent": -22.607885216659128
+    },
+    {
+      "scenario": "spawn_expansion",
+      "before": {
+        "totalSeconds": 7.842365900000001,
+        "medianSeconds": 5.975e-05,
+        "p95Seconds": 0.5698736,
+        "minimumSeconds": 5.3e-06,
+        "maximumSeconds": 4.3344367,
+        "sampleStandardDeviationSeconds": 0.7713070808436027,
+        "throughputQueriesPerSecond": 4.080401298286783,
+        "processCpuSeconds": 26.8125,
+        "surface": {
+          "retainedArrayBytes": 23068672,
+          "misses": 176,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 0,
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 1344,
+          "capacity": 1024,
+          "entries": 176
+        },
+        "climate": {
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 16,
+          "entries": 16,
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0
+        }
+      },
+      "after": {
+        "totalSeconds": 9.6577333,
+        "medianSeconds": 7.565e-05,
+        "p95Seconds": 0.6923873,
+        "minimumSeconds": 4.4e-06,
+        "maximumSeconds": 5.449102,
+        "sampleStandardDeviationSeconds": 0.9679444188371646,
+        "throughputQueriesPerSecond": 3.3134068839941975,
+        "processCpuSeconds": 35.640625,
+        "surface": {
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 1344,
+          "capacity": 1024,
+          "entries": 176,
+          "retainedArrayBytes": 23068672,
+          "misses": 176,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 0
+        },
+        "climate": {
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0,
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 16,
+          "entries": 16
+        }
+      },
+      "rawClimateExact": true,
+      "reductionPercent": -23.148210924460933
+    },
+    {
+      "scenario": "scattered_generation",
+      "before": {
+        "totalSeconds": 61.970203999999995,
+        "medianSeconds": 1.7467458999999999,
+        "p95Seconds": 4.3032211,
+        "minimumSeconds": 3.7e-06,
+        "maximumSeconds": 4.3178227,
+        "sampleStandardDeviationSeconds": 1.975313906502862,
+        "throughputQueriesPerSecond": 0.5163771931426916,
+        "processCpuSeconds": 186.65625,
+        "surface": {
+          "retainedArrayBytes": 134217728,
+          "misses": 1520,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 496,
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 0,
+          "capacity": 1024,
+          "entries": 1024
+        },
+        "climate": {
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 16,
+          "entries": 16,
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0
+        }
+      },
+      "after": {
+        "totalSeconds": 69.198932,
+        "medianSeconds": 1.8407552,
+        "p95Seconds": 5.1755417,
+        "minimumSeconds": 4.2e-06,
+        "maximumSeconds": 5.2980029,
+        "sampleStandardDeviationSeconds": 2.22185292811054,
+        "throughputQueriesPerSecond": 0.4624348826655302,
+        "processCpuSeconds": 209.796875,
+        "surface": {
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 0,
+          "capacity": 1024,
+          "entries": 1024,
+          "retainedArrayBytes": 134217728,
+          "misses": 1520,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 496
+        },
+        "climate": {
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0,
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 16,
+          "entries": 16
+        }
+      },
+      "rawClimateExact": true,
+      "reductionPercent": -11.664844608224945
+    },
+    {
+      "scenario": "interleaved_regions",
+      "before": {
+        "totalSeconds": 22.757799300000002,
+        "medianSeconds": 0.2228162,
+        "p95Seconds": 4.0374209,
+        "minimumSeconds": 3.7e-06,
+        "maximumSeconds": 4.4554768,
+        "sampleStandardDeviationSeconds": 1.3195004299184545,
+        "throughputQueriesPerSecond": 1.4061113545368158,
+        "processCpuSeconds": 73.203125,
+        "surface": {
+          "retainedArrayBytes": 69861376,
+          "misses": 533,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 0,
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 987,
+          "capacity": 1024,
+          "entries": 533
+        },
+        "climate": {
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 16,
+          "entries": 16,
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0
+        }
+      },
+      "after": {
+        "totalSeconds": 24.6334956,
+        "medianSeconds": 0.22499919999999998,
+        "p95Seconds": 4.4555076,
+        "minimumSeconds": 2.2e-06,
+        "maximumSeconds": 4.9717065,
+        "sampleStandardDeviationSeconds": 1.428284022658885,
+        "throughputQueriesPerSecond": 1.2990442168508152,
+        "processCpuSeconds": 82.28125,
+        "surface": {
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 987,
+          "capacity": 1024,
+          "entries": 533,
+          "retainedArrayBytes": 69861376,
+          "misses": 533,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 0
+        },
+        "climate": {
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0,
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 16,
+          "entries": 16
+        }
+      },
+      "rawClimateExact": true,
+      "reductionPercent": -8.241993328414665
+    },
+    {
+      "scenario": "climate_heavy",
+      "before": {
+        "totalSeconds": 5.1206748,
+        "medianSeconds": 3.7e-06,
+        "p95Seconds": 0.0680886,
+        "minimumSeconds": 3.5e-06,
+        "maximumSeconds": 4.3328733,
+        "sampleStandardDeviationSeconds": 0.38354313066213674,
+        "throughputQueriesPerSecond": 24.99670551232818,
+        "processCpuSeconds": 17.8125,
+        "surface": {
+          "retainedArrayBytes": 14811136,
+          "misses": 113,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 0,
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 1407,
+          "capacity": 1024,
+          "entries": 113
+        },
+        "climate": {
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 112,
+          "entries": 16,
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0
+        }
+      },
+      "after": {
+        "totalSeconds": 5.7977466,
+        "medianSeconds": 2.3e-06,
+        "p95Seconds": 0.0752107,
+        "minimumSeconds": 2.2e-06,
+        "maximumSeconds": 4.9083615,
+        "sampleStandardDeviationSeconds": 0.43449247064599383,
+        "throughputQueriesPerSecond": 22.077543023353247,
+        "processCpuSeconds": 21.65625,
+        "surface": {
+          "waits": 0,
+          "capacityWaits": 0,
+          "hits": 1407,
+          "capacity": 1024,
+          "entries": 113,
+          "retainedArrayBytes": 14811136,
+          "misses": 113,
+          "failures": 0,
+          "peakInFlight": 1,
+          "inFlight": 0,
+          "evictions": 0
+        },
+        "climate": {
+          "capacityWaits": 0,
+          "misses": 16,
+          "inFlight": 0,
+          "capacity": 4096,
+          "failures": 0,
+          "peakInFlight": 1,
+          "evictions": 0,
+          "waits": 0,
+          "hits": 112,
+          "entries": 16
+        }
+      },
+      "rawClimateExact": true,
+      "reductionPercent": -13.222315933829654
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "seed": "8675309",
+    "workers": 1,
+    "points": 17,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "8675309",
+    "workers": 2,
+    "points": 17,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "8675309",
+    "workers": 8,
+    "points": 17,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "4303642605",
+    "workers": 1,
+    "points": 17,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "4303642605",
+    "workers": 2,
+    "points": 17,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "4303642605",
+    "workers": 8,
+    "points": 17,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "67890",
+    "workers": 1,
+    "points": 10,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "67890",
+    "workers": 2,
+    "points": 10,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "67890",
+    "workers": 8,
+    "points": 10,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "20260908",
+    "workers": 1,
+    "points": 10,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "20260908",
+    "workers": 2,
+    "points": 10,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  },
+  {
+    "seed": "20260908",
+    "workers": 8,
+    "points": 10,
+    "exact": true,
+    "scope": "canonical detached inputs; reconstructed climate/resolver, reverse order, cold/warm climate cache; not reconstructed terrain contexts"
+  }
+]

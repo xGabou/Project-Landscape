@@ -41,6 +41,10 @@ public final class LegacyBaselineSuite {
         this.preset=((RTFRandomState)(Object)level.getChunkSource().randomState()).preset();
         this.noises=level.registryAccess().lookupOrThrow(RTFRegistries.NOISE);
     }
+    /** Offline comparator uses identical preset/noise bootstrap; holder checks remain runtime-only. */
+    public LegacyBaselineSuite(Preset preset, HolderGetter<Noise> noises, Evidence out) {
+        this.level=null;this.preset=preset;this.noises=noises;this.out=out;
+    }
     private GeneratorContext context(long seed) {
         var c=GeneratorContext.makeUncached(preset,noises,(int)seed,3,1,6);
         c.cache=new TileCache(3,false,c.generator);c.lookup=new WorldLookup(c);owned.add(c);return c;
@@ -123,6 +127,7 @@ public final class LegacyBaselineSuite {
             c.cache.close();
         }
         // Real Minecraft holder resolution, with the live world's full seed and loaded registries.
+        if(level==null)return;
         var source=level.getChunkSource().getGenerator().getBiomeSource();var rs=level.getChunkSource().randomState();
         for(var p:collisionPoints)out.row("minecraft_biomes","seed",Long.toString(level.getSeed()),"point",p,"quartY",20,
             "semantics","legacy MultiNoiseBiomeSource query; not a filtered-geography resolver","biome",source.getNoiseBiome(p.x()>>2,20,p.z()>>2,rs.sampler()).unwrapKey().orElseThrow().location().toString());

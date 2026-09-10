@@ -1,0 +1,17 @@
+{
+  "postCloseRejected": true,
+  "collisionReplacementExact": true,
+  "frontSurvivesBackingEviction": true,
+  "afterClose": {
+    "backingHits": 0,
+    "misses": 305,
+    "frontHitCountingEnabled": 0,
+    "frontHits": 0,
+    "frontCapacity": 64,
+    "frontEntries": 0,
+    "hits": 0,
+    "capacity": 256,
+    "entries": 0
+  },
+  "clearReconstructionExact": true
+}

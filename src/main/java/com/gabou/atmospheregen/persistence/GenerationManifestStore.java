@@ -12,7 +12,7 @@ import java.util.*;
 
 /** World-storage-lock-owned initialization I/O only. Never called by sample or noise compute. */
 public final class GenerationManifestStore {
-    public enum ResolutionKind { EXPLICIT_LEGACY_ASSIGNMENT, EXISTING_MANIFEST }
+    public enum ResolutionKind { EXPLICIT_LEGACY_ASSIGNMENT, EXISTING_MANIFEST, EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT, EXPLICIT_V1_CLIMATE_ASSIGNMENT, EXPLICIT_V1_BIOME_ASSIGNMENT }
     public record Resolution(GenerationManifest manifest, ResolutionKind kind) {}
     private GenerationManifestStore() {}
 
@@ -50,7 +50,12 @@ public final class GenerationManifestStore {
             // Same-directory rename, deliberately WITHOUT REPLACE_EXISTING. A competing writer is an error.
             Files.move(temporary, file);
         } finally { Files.deleteIfExists(temporary); }
-        return Optional.of(new Resolution(manifest, ResolutionKind.EXPLICIT_LEGACY_ASSIGNMENT));
+        return Optional.of(new Resolution(manifest, manifest.content().versions().equals(com.gabou.atmospheregen.generation.version.GenerationVersions.geographyV1())
+            ? ResolutionKind.EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT
+            : manifest.content().versions().equals(com.gabou.atmospheregen.generation.version.GenerationVersions.climateV1())
+                ? ResolutionKind.EXPLICIT_V1_CLIMATE_ASSIGNMENT
+                : manifest.content().versions().equals(com.gabou.atmospheregen.generation.version.GenerationVersions.planned())
+                    ? ResolutionKind.EXPLICIT_V1_BIOME_ASSIGNMENT : ResolutionKind.EXPLICIT_LEGACY_ASSIGNMENT));
     }
 
     public static String encode(GenerationManifest manifest) {

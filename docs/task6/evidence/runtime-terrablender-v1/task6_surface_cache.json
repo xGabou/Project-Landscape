@@ -1,0 +1,24 @@
+[
+  {
+    "checked": 9,
+    "exact": true,
+    "stats": {
+      "entries": 4,
+      "hits": 5,
+      "retainedArrayBytes": 524288,
+      "misses": 4,
+      "capacity": 1024
+    }
+  },
+  {
+    "checked": 9,
+    "exact": true,
+    "stats": {
+      "entries": 4,
+      "hits": 5,
+      "retainedArrayBytes": 524288,
+      "misses": 4,
+      "capacity": 1024
+    }
+  }
+]

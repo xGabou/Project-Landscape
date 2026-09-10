@@ -1,0 +1,26 @@
+[
+  {
+    "seed": "8675309",
+    "stepBlocks": 64,
+    "samples": 289,
+    "adjacentEdges": 544,
+    "differentBiomeEdges": 32,
+    "boundaryFraction": 0.058823529411764705,
+    "isolatedInteriorCells": 1,
+    "lowMarginBelow002": 4,
+    "biomeDigest": "b58eb24a69a131dcd10aa0a68bd2dd52ccd26d13262a6c33ea711435bbce14e3",
+    "climateCache": {
+      "entries": 289,
+      "hits": 0,
+      "capacity": 4096,
+      "misses": 289
+    },
+    "surfaceCache": {
+      "capacity": 1024,
+      "entries": 1024,
+      "hits": 25421,
+      "retainedArrayBytes": 134217728,
+      "misses": 2034
+    }
+  }
+]

@@ -1,0 +1,5 @@
+boundary,description,acceptance
+macro_profile,world-aligned bounded profile with fixed step,no cache-order dependence
+climate_cache_tile,bounded provider key cache,eviction does not change output
+coast_boundary,physical coastline transition,accepted geographic transition
+macro_cell,site transition inherited from V1 macro field,requires future continuous interpolation refinement

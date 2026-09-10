@@ -1,0 +1,25 @@
+{
+  "before": {
+    "frontHitCountingEnabled": 1,
+    "frontHits": 5380306,
+    "frontCapacity": 64,
+    "frontEntries": 11,
+    "hits": 5387039,
+    "capacity": 256,
+    "entries": 12,
+    "backingHits": 6733,
+    "misses": 12
+  },
+  "postCloseQueriesRejected": true,
+  "after": {
+    "frontHitCountingEnabled": 1,
+    "frontHits": 5380306,
+    "frontCapacity": 64,
+    "frontEntries": 0,
+    "hits": 5387039,
+    "capacity": 256,
+    "entries": 0,
+    "backingHits": 6733,
+    "misses": 12
+  }
+}

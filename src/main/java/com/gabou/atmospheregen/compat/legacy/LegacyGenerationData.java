@@ -28,7 +28,14 @@ public final class LegacyGenerationData {
         }
         registry(result, access, ops, RTFRegistries.NOISE, Noise.DIRECT_CODEC);
         registry(result, access, ops, RTFRegistries.STRUCTURE_RULE, StructureRule.DIRECT_CODEC);
-        result.put("active_chunk_generator", encode(ChunkGenerator.CODEC, ops, generator, "active chunk generator"));
+        if(generator.getBiomeSource() instanceof com.gabou.atmospheregen.biome.ClimateBiomeSource) {
+            var definition=ChunkGenerator.CODEC.encodeStart(ops,generator).getOrThrow(false,s->{}).getAsJsonObject();
+            var source=definition.getAsJsonObject("biome_source");
+            if(source==null||!source.has("retained"))
+                throw new IllegalStateException("V1 source serialization has no retained generator definition");
+            definition.add("biome_source",source.get("retained"));
+            result.put("active_chunk_generator",GenerationFingerprint.of(CanonicalJson.of(definition)));
+        } else result.put("active_chunk_generator", encode(ChunkGenerator.CODEC, ops, generator, "active chunk generator"));
         // Resolve effective tags rather than pack ordering. All registries are included conservatively.
         JsonObject tags = new JsonObject();
         access.registries().forEach(entry -> {

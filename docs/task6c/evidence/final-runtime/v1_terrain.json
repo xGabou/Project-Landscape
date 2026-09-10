@@ -1,0 +1,23 @@
+[
+  {
+    "seed": "8675309",
+    "canonicalChecks": 43,
+    "reverseWarmExact": true,
+    "digest": "da608486505857be26a359b65358dc9f7ea4b9d113b6f501b23494d3622ae13a",
+    "riverCacheEntries": 4
+  },
+  {
+    "seed": "4303642605",
+    "canonicalChecks": 43,
+    "reverseWarmExact": true,
+    "digest": "7dcdde7ab2f8c9db38149aca118d23c849c91b352b4a7dcc9ebb7bc4718ae965",
+    "riverCacheEntries": 4
+  },
+  {
+    "seed": "42",
+    "canonicalChecks": 43,
+    "reverseWarmExact": true,
+    "digest": "cde7d05263667bd36366a72291378e547c2ffb2f3fd21605dc1946083b007949",
+    "riverCacheEntries": 4
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "macroExact": true,
+  "frozenTask6BTilesExact": true,
+  "isolated": [
+    {
+      "workers": 1,
+      "reference": {
+        "medianMilliseconds": 32.003,
+        "blockedThreadMillis": 0
+      },
+      "candidate": {
+        "medianMilliseconds": 32.2123,
+        "blockedThreadMillis": 0
+      }
+    },
+    {
+      "workers": 8,
+      "reference": {
+        "medianMilliseconds": 14.2462,
+        "blockedThreadMillis": 196
+      },
+      "candidate": {
+        "medianMilliseconds": 1.503,
+        "blockedThreadMillis": 0
+      }
+    },
+    {
+      "workers": 24,
+      "reference": {
+        "medianMilliseconds": 13.7431,
+        "blockedThreadMillis": 698
+      },
+      "candidate": {
+        "medianMilliseconds": 1.0696,
+        "blockedThreadMillis": 0
+      }
+    },
+    {
+      "workers": 48,
+      "reference": {
+        "medianMilliseconds": 12.5973,
+        "blockedThreadMillis": 1336
+      },
+      "candidate": {
+        "medianMilliseconds": 0.9678,
+        "blockedThreadMillis": 0
+      }
+    }
+  ],
+  "productionStageComparison": "../island_acquisition_02.json",
+  "diagnostics": "../island_diagnostics.json",
+  "releaseFrontHitCounterEnabled": false
+}

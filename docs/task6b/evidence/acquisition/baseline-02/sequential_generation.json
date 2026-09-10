@@ -1,0 +1,693 @@
+{
+  "outputs": [
+    {
+      "x": -28672,
+      "rawDoubleBits": [
+        4626164996989051285,
+        4646112352284654808,
+        4599469374356680747,
+        4651003804403554488,
+        4600604184498089813,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28656,
+      "rawDoubleBits": [
+        4626179922520095927,
+        4646284437439703860,
+        4599555808168634831,
+        4651012200014767099,
+        4600430606320858922,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28640,
+      "rawDoubleBits": [
+        4626190242382689151,
+        4646332948466590547,
+        4599578173287189404,
+        4651018004937475788,
+        4600243991203092438,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28624,
+      "rawDoubleBits": [
+        4626194948818589527,
+        4646338416073911830,
+        4599579674420906114,
+        4651020652307669749,
+        4600119832682426356,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28608,
+      "rawDoubleBits": [
+        4626199663829587972,
+        4646265602684848775,
+        4599535392708257768,
+        4651033066338041163,
+        4600110658520179888,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28592,
+      "rawDoubleBits": [
+        4626200784136373653,
+        4646163900885842069,
+        4599481621370008633,
+        4651033696510608109,
+        4600710016152635212,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28576,
+      "rawDoubleBits": [
+        4626206515164639777,
+        4646093224839881553,
+        4599442582844313399,
+        4651036920214007803,
+        4600674238582262600,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28560,
+      "rawDoubleBits": [
+        4626210034962279551,
+        4645920782777492463,
+        4599349332686656922,
+        4651038900100180177,
+        4601033925062659735,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28544,
+      "rawDoubleBits": [
+        4626214178501913596,
+        4645838905048142352,
+        4599303887011123600,
+        4651041230841224327,
+        4601036387973231163,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28528,
+      "rawDoubleBits": [
+        4626219923795913593,
+        4645765356208205541,
+        4599262241484369747,
+        4651044462569099325,
+        4601127052137276162,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28512,
+      "rawDoubleBits": [
+        4626225478889434370,
+        4645846610146160974,
+        4599304929656102127,
+        4651047587309204762,
+        4600891768712401451,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28496,
+      "rawDoubleBits": [
+        4626225762166149861,
+        4645718322144902742,
+        4599234883614626342,
+        4651047746652357226,
+        4601079581643732566,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28480,
+      "rawDoubleBits": [
+        4626228525878535443,
+        4645588633856967619,
+        4599157001833184151,
+        4651060795482270647,
+        4601338499673348544,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28464,
+      "rawDoubleBits": [
+        4626232240831972955,
+        4645490987425845625,
+        4599101619580815378,
+        4651062885143579248,
+        4601459858202832371,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28448,
+      "rawDoubleBits": [
+        4626235522188060841,
+        4645479987458229510,
+        4599094575396816292,
+        4651064730906378684,
+        4601568643399891202,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28432,
+      "rawDoubleBits": [
+        4626237983082988623,
+        4645549105739922634,
+        4599132472066986078,
+        4651066115159775561,
+        4601561553564129965,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28672,
+      "rawDoubleBits": [
+        4626164996989051285,
+        4646112352284654808,
+        4599469374356680747,
+        4651003804403554488,
+        4600604184498089813,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28656,
+      "rawDoubleBits": [
+        4626179922520095927,
+        4646284437439703860,
+        4599555808168634831,
+        4651012200014767099,
+        4600430606320858922,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28640,
+      "rawDoubleBits": [
+        4626190242382689151,
+        4646332948466590547,
+        4599578173287189404,
+        4651018004937475788,
+        4600243991203092438,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28624,
+      "rawDoubleBits": [
+        4626194948818589527,
+        4646338416073911830,
+        4599579674420906114,
+        4651020652307669749,
+        4600119832682426356,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28608,
+      "rawDoubleBits": [
+        4626199663829587972,
+        4646265602684848775,
+        4599535392708257768,
+        4651033066338041163,
+        4600110658520179888,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28592,
+      "rawDoubleBits": [
+        4626200784136373653,
+        4646163900885842069,
+        4599481621370008633,
+        4651033696510608109,
+        4600710016152635212,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28576,
+      "rawDoubleBits": [
+        4626206515164639777,
+        4646093224839881553,
+        4599442582844313399,
+        4651036920214007803,
+        4600674238582262600,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28560,
+      "rawDoubleBits": [
+        4626210034962279551,
+        4645920782777492463,
+        4599349332686656922,
+        4651038900100180177,
+        4601033925062659735,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28544,
+      "rawDoubleBits": [
+        4626214178501913596,
+        4645838905048142352,
+        4599303887011123600,
+        4651041230841224327,
+        4601036387973231163,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28528,
+      "rawDoubleBits": [
+        4626219923795913593,
+        4645765356208205541,
+        4599262241484369747,
+        4651044462569099325,
+        4601127052137276162,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28512,
+      "rawDoubleBits": [
+        4626225478889434370,
+        4645846610146160974,
+        4599304929656102127,
+        4651047587309204762,
+        4600891768712401451,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28496,
+      "rawDoubleBits": [
+        4626225762166149861,
+        4645718322144902742,
+        4599234883614626342,
+        4651047746652357226,
+        4601079581643732566,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28480,
+      "rawDoubleBits": [
+        4626228525878535443,
+        4645588633856967619,
+        4599157001833184151,
+        4651060795482270647,
+        4601338499673348544,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28464,
+      "rawDoubleBits": [
+        4626232240831972955,
+        4645490987425845625,
+        4599101619580815378,
+        4651062885143579248,
+        4601459858202832371,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28448,
+      "rawDoubleBits": [
+        4626235522188060841,
+        4645479987458229510,
+        4599094575396816292,
+        4651064730906378684,
+        4601568643399891202,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    },
+    {
+      "x": -28432,
+      "rawDoubleBits": [
+        4626237983082988623,
+        4645549105739922634,
+        4599132472066986078,
+        4651066115159775561,
+        4601561553564129965,
+        -4616463332727861121,
+        -4625389587051770927
+      ],
+      "z": -12288
+    }
+  ],
+  "surfaceCache": {
+    "capacity": 1024,
+    "entries": 228,
+    "hits": 1292,
+    "retainedArrayBytes": 29884416,
+    "misses": 228
+  },
+  "measurements": [
+    {
+      "processCpuNanos": 21359375000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 77140840,
+      "callingThreadCpuNanos": 46875000,
+      "name": "pass0_query0",
+      "wallNanos": 6815006300
+    },
+    {
+      "processCpuNanos": 1890625000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 1867808,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query1",
+      "wallNanos": 812303900
+    },
+    {
+      "processCpuNanos": 2312500000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 1867608,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query2",
+      "wallNanos": 838166200
+    },
+    {
+      "processCpuNanos": 2109375000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 1447320,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query3",
+      "wallNanos": 665288300
+    },
+    {
+      "processCpuNanos": 1609375000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 1447320,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query4",
+      "wallNanos": 624584600
+    },
+    {
+      "processCpuNanos": 1828125000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 1727512,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query5",
+      "wallNanos": 789334700
+    },
+    {
+      "processCpuNanos": 3078125000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 1727512,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query6",
+      "wallNanos": 903476800
+    },
+    {
+      "processCpuNanos": 2687500000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 1727512,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query7",
+      "wallNanos": 867683500
+    },
+    {
+      "processCpuNanos": 2265625000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 1587360,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query8",
+      "wallNanos": 752407200
+    },
+    {
+      "processCpuNanos": 1062500000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 886880,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query9",
+      "wallNanos": 430399000
+    },
+    {
+      "processCpuNanos": 1046875000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 886936,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query10",
+      "wallNanos": 429918400
+    },
+    {
+      "processCpuNanos": 1093750000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 746840,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query11",
+      "wallNanos": 351555300
+    },
+    {
+      "processCpuNanos": 875000000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 746840,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query12",
+      "wallNanos": 300543700
+    },
+    {
+      "processCpuNanos": 1109375000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 886936,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query13",
+      "wallNanos": 453177800
+    },
+    {
+      "processCpuNanos": 1437500000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 886936,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query14",
+      "wallNanos": 432983800
+    },
+    {
+      "processCpuNanos": 1500000000,
+      "count": 1,
+      "callingThreadAllocatedBytes": 886936,
+      "callingThreadCpuNanos": 0,
+      "name": "pass0_query15",
+      "wallNanos": 429470900
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query0",
+      "wallNanos": 1100
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query1",
+      "wallNanos": 900
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query2",
+      "wallNanos": 600
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query3",
+      "wallNanos": 700
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query4",
+      "wallNanos": 600
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query5",
+      "wallNanos": 700
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query6",
+      "wallNanos": 700
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query7",
+      "wallNanos": 600
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query8",
+      "wallNanos": 800
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query9",
+      "wallNanos": 600
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query10",
+      "wallNanos": 500
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query11",
+      "wallNanos": 800
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query12",
+      "wallNanos": 800
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query13",
+      "wallNanos": 500
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query14",
+      "wallNanos": 500
+    },
+    {
+      "processCpuNanos": 0,
+      "count": 1,
+      "callingThreadAllocatedBytes": 48,
+      "callingThreadCpuNanos": 0,
+      "name": "pass1_query15",
+      "wallNanos": 400
+    }
+  ],
+  "climateCache": {
+    "entries": 16,
+    "hits": 16,
+    "capacity": 4096,
+    "misses": 16
+  },
+  "queriesPerPass": 16,
+  "outputDigest": "0ee95445f32ac2b66d148f5fb29a23a971866a93a0a6380e527ae5cc3686f849"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "shelfMarineFraction": 0.17574095746128515,
+    "marineSamples": 146972,
+    "shelfSamples": 25829,
+    "seed": "8675309"
+  },
+  {
+    "shelfMarineFraction": 0.17947944172010563,
+    "marineSamples": 145805,
+    "shelfSamples": 26169,
+    "seed": "4303642605"
+  },
+  {
+    "shelfMarineFraction": 0.176005215371765,
+    "marineSamples": 147257,
+    "shelfSamples": 25918,
+    "seed": "42"
+  },
+  {
+    "shelfMarineFraction": 0.17452400396860215,
+    "marineSamples": 148163,
+    "shelfSamples": 25858,
+    "seed": "-987654321"
+  },
+  {
+    "shelfMarineFraction": 0.1724533311876408,
+    "marineSamples": 149136,
+    "shelfSamples": 25719,
+    "seed": "0"
+  },
+  {
+    "shelfMarineFraction": 0.1791053934100996,
+    "marineSamples": 146679,
+    "shelfSamples": 26271,
+    "seed": "9223372036854775807"
+  },
+  {
+    "shelfMarineFraction": 0.17621433974497513,
+    "marineSamples": 148064,
+    "shelfSamples": 26091,
+    "seed": "-9223372036854775807"
+  },
+  {
+    "shelfMarineFraction": 0.17237692374518018,
+    "marineSamples": 149643,
+    "shelfSamples": 25795,
+    "seed": "1"
+  },
+  {
+    "shelfMarineFraction": 0.17236051153113713,
+    "marineSamples": 147557,
+    "shelfSamples": 25433,
+    "seed": "-1"
+  },
+  {
+    "shelfMarineFraction": 0.17114174648338878,
+    "marineSamples": 149718,
+    "shelfSamples": 25623,
+    "seed": "12345"
+  },
+  {
+    "shelfMarineFraction": 0.17499396086641436,
+    "marineSamples": 149028,
+    "shelfSamples": 26079,
+    "seed": "67890"
+  },
+  {
+    "shelfMarineFraction": 0.17275756472000756,
+    "marineSamples": 148254,
+    "shelfSamples": 25612,
+    "seed": "314159"
+  },
+  {
+    "shelfMarineFraction": 0.17174826310199498,
+    "marineSamples": 147821,
+    "shelfSamples": 25388,
+    "seed": "271828"
+  },
+  {
+    "shelfMarineFraction": 0.17637340496977838,
+    "marineSamples": 148900,
+    "shelfSamples": 26262,
+    "seed": "20260908"
+  },
+  {
+    "shelfMarineFraction": 0.17817507992425013,
+    "marineSamples": 147327,
+    "shelfSamples": 26250,
+    "seed": "-424242"
+  },
+  {
+    "shelfMarineFraction": 0.17622619185236058,
+    "marineSamples": 147061,
+    "shelfSamples": 25916,
+    "seed": "987654321012345"
+  }
+]

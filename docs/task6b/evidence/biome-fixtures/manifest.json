@@ -1,0 +1,12 @@
+{
+  "versions": "GenerationVersions[schemaVersion\u003d1, geography\u003dPA_GEOGRAPHY_V1, baselineClimate\u003dPA_BASELINE_V1, biomeResolver\u003dPA_RESOLVER_V1]",
+  "catalogFingerprint": "0d1fe8454a4e7690dd05563084dd8333b19e1f50836c6a149af3dd5a74c71427",
+  "scope": "macro-proxy and synthetic validation; runtime acceptance separate",
+  "resolverConfig": {
+    "spatialResolutionBlocks": 64,
+    "fallbackWeight": 1,
+    "regionalVariationScaleBlocks": 4096.0,
+    "regionalVariationStrength": 0.18,
+    "transitionSoftness": 0.12
+  }
+}

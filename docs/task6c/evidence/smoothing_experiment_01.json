@@ -1,0 +1,440 @@
+{
+  "exact": true,
+  "measurements": [
+    {
+      "warmup": true,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": -2,
+      "referenceNanos": 1308800,
+      "candidateNanos": 4355700
+    },
+    {
+      "warmup": true,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": -1,
+      "referenceNanos": 1145900,
+      "candidateNanos": 602300
+    },
+    {
+      "warmup": false,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": 0,
+      "referenceNanos": 1154300,
+      "candidateNanos": 369400
+    },
+    {
+      "warmup": false,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": 1,
+      "referenceNanos": 1171200,
+      "candidateNanos": 338000
+    },
+    {
+      "warmup": false,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": 2,
+      "referenceNanos": 1148900,
+      "candidateNanos": 359400
+    },
+    {
+      "warmup": false,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": 3,
+      "referenceNanos": 1167100,
+      "candidateNanos": 384800
+    },
+    {
+      "warmup": false,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": 4,
+      "referenceNanos": 1195600,
+      "candidateNanos": 368500
+    },
+    {
+      "warmup": false,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": 5,
+      "referenceNanos": 1208200,
+      "candidateNanos": 384700
+    },
+    {
+      "warmup": false,
+      "tileZ": 0,
+      "tileX": 0,
+      "pass": 6,
+      "referenceNanos": 1178300,
+      "candidateNanos": 364500
+    },
+    {
+      "warmup": true,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": -2,
+      "referenceNanos": 1455900,
+      "candidateNanos": 2042900
+    },
+    {
+      "warmup": true,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": -1,
+      "referenceNanos": 1450000,
+      "candidateNanos": 760500
+    },
+    {
+      "warmup": false,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": 0,
+      "referenceNanos": 1474200,
+      "candidateNanos": 500000
+    },
+    {
+      "warmup": false,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": 1,
+      "referenceNanos": 1150300,
+      "candidateNanos": 391900
+    },
+    {
+      "warmup": false,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": 2,
+      "referenceNanos": 1151200,
+      "candidateNanos": 421500
+    },
+    {
+      "warmup": false,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": 3,
+      "referenceNanos": 1013000,
+      "candidateNanos": 381600
+    },
+    {
+      "warmup": false,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": 4,
+      "referenceNanos": 1073300,
+      "candidateNanos": 414800
+    },
+    {
+      "warmup": false,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": 5,
+      "referenceNanos": 1044800,
+      "candidateNanos": 473800
+    },
+    {
+      "warmup": false,
+      "tileZ": 48,
+      "tileX": 47,
+      "pass": 6,
+      "referenceNanos": 1018000,
+      "candidateNanos": 451600
+    },
+    {
+      "warmup": true,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": -2,
+      "referenceNanos": 996900,
+      "candidateNanos": 442500
+    },
+    {
+      "warmup": true,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": -1,
+      "referenceNanos": 1006800,
+      "candidateNanos": 382000
+    },
+    {
+      "warmup": false,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": 0,
+      "referenceNanos": 996300,
+      "candidateNanos": 387600
+    },
+    {
+      "warmup": false,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": 1,
+      "referenceNanos": 1045400,
+      "candidateNanos": 423100
+    },
+    {
+      "warmup": false,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": 2,
+      "referenceNanos": 1023300,
+      "candidateNanos": 460500
+    },
+    {
+      "warmup": false,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": 3,
+      "referenceNanos": 1021900,
+      "candidateNanos": 376600
+    },
+    {
+      "warmup": false,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": 4,
+      "referenceNanos": 1081100,
+      "candidateNanos": 442600
+    },
+    {
+      "warmup": false,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": 5,
+      "referenceNanos": 978500,
+      "candidateNanos": 383100
+    },
+    {
+      "warmup": false,
+      "tileZ": -96,
+      "tileX": -224,
+      "pass": 6,
+      "referenceNanos": 1012700,
+      "candidateNanos": 464000
+    },
+    {
+      "warmup": true,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": -2,
+      "referenceNanos": 1016300,
+      "candidateNanos": 467200
+    },
+    {
+      "warmup": true,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": -1,
+      "referenceNanos": 1181800,
+      "candidateNanos": 414200
+    },
+    {
+      "warmup": false,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": 0,
+      "referenceNanos": 1145800,
+      "candidateNanos": 410000
+    },
+    {
+      "warmup": false,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": 1,
+      "referenceNanos": 1030300,
+      "candidateNanos": 380700
+    },
+    {
+      "warmup": false,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": 2,
+      "referenceNanos": 1080000,
+      "candidateNanos": 400800
+    },
+    {
+      "warmup": false,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": 3,
+      "referenceNanos": 1033300,
+      "candidateNanos": 545500
+    },
+    {
+      "warmup": false,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": 4,
+      "referenceNanos": 1143000,
+      "candidateNanos": 420300
+    },
+    {
+      "warmup": false,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": 5,
+      "referenceNanos": 1149900,
+      "candidateNanos": 427300
+    },
+    {
+      "warmup": false,
+      "tileZ": -1172,
+      "tileX": -64,
+      "pass": 6,
+      "referenceNanos": 1163400,
+      "candidateNanos": 422500
+    },
+    {
+      "warmup": true,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": -2,
+      "referenceNanos": 1308200,
+      "candidateNanos": 2023700
+    },
+    {
+      "warmup": true,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": -1,
+      "referenceNanos": 857700,
+      "candidateNanos": 715500
+    },
+    {
+      "warmup": false,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": 0,
+      "referenceNanos": 981400,
+      "candidateNanos": 465000
+    },
+    {
+      "warmup": false,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": 1,
+      "referenceNanos": 894500,
+      "candidateNanos": 510900
+    },
+    {
+      "warmup": false,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": 2,
+      "referenceNanos": 958400,
+      "candidateNanos": 446900
+    },
+    {
+      "warmup": false,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": 3,
+      "referenceNanos": 855000,
+      "candidateNanos": 391200
+    },
+    {
+      "warmup": false,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": 4,
+      "referenceNanos": 930100,
+      "candidateNanos": 414800
+    },
+    {
+      "warmup": false,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": 5,
+      "referenceNanos": 954900,
+      "candidateNanos": 410100
+    },
+    {
+      "warmup": false,
+      "tileZ": 468,
+      "tileX": 64,
+      "pass": 6,
+      "referenceNanos": 958400,
+      "candidateNanos": 423700
+    },
+    {
+      "warmup": true,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": -2,
+      "referenceNanos": 897800,
+      "candidateNanos": 380500
+    },
+    {
+      "warmup": true,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": -1,
+      "referenceNanos": 941400,
+      "candidateNanos": 404800
+    },
+    {
+      "warmup": false,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": 0,
+      "referenceNanos": 841600,
+      "candidateNanos": 443000
+    },
+    {
+      "warmup": false,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": 1,
+      "referenceNanos": 932900,
+      "candidateNanos": 389900
+    },
+    {
+      "warmup": false,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": 2,
+      "referenceNanos": 876200,
+      "candidateNanos": 484500
+    },
+    {
+      "warmup": false,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": 3,
+      "referenceNanos": 877600,
+      "candidateNanos": 428800
+    },
+    {
+      "warmup": false,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": 4,
+      "referenceNanos": 1011300,
+      "candidateNanos": 428600
+    },
+    {
+      "warmup": false,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": 5,
+      "referenceNanos": 961100,
+      "candidateNanos": 404500
+    },
+    {
+      "warmup": false,
+      "tileZ": -3907,
+      "tileX": -64,
+      "pass": 6,
+      "referenceNanos": 976600,
+      "candidateNanos": 464100
+    }
+  ],
+  "rawFieldComparisons": 33177600,
+  "candidate": "precompute ordered disk kernel offsets and weights; retain absent-neighbor checks and accumulation order",
+  "scope": "isolated smoothing on identical real finalized snapshots, not FULL generation; all public Cell fields compared, same in-place scan and float accumulation order"
+}

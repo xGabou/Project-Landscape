@@ -1,0 +1,265 @@
+[
+  {
+    "passed": true,
+    "score": 0.8654724305966378,
+    "winner": "minecraft:desert",
+    "case": "climate_35.0_80.0"
+  },
+  {
+    "passed": true,
+    "score": 0.919290177415815,
+    "winner": "minecraft:savanna",
+    "case": "climate_35.0_400.0"
+  },
+  {
+    "passed": true,
+    "score": 0.8395445234713106,
+    "winner": "minecraft:savanna",
+    "case": "climate_35.0_900.0"
+  },
+  {
+    "passed": true,
+    "score": 0.7215930697854789,
+    "winner": "minecraft:jungle",
+    "case": "climate_35.0_1800.0"
+  },
+  {
+    "passed": true,
+    "score": 0.9044269979141499,
+    "winner": "minecraft:desert",
+    "case": "climate_25.0_80.0"
+  },
+  {
+    "passed": true,
+    "score": 0.919290177415815,
+    "winner": "minecraft:savanna",
+    "case": "climate_25.0_400.0"
+  },
+  {
+    "passed": true,
+    "score": 0.7937025952530613,
+    "winner": "minecraft:plains",
+    "case": "climate_25.0_900.0"
+  },
+  {
+    "passed": true,
+    "score": 0.9383734912263367,
+    "winner": "minecraft:sparse_jungle",
+    "case": "climate_25.0_1800.0"
+  },
+  {
+    "passed": true,
+    "score": 0.5590997828299727,
+    "winner": "minecraft:plains",
+    "case": "climate_15.0_80.0"
+  },
+  {
+    "passed": true,
+    "score": 0.918470342849662,
+    "winner": "minecraft:plains",
+    "case": "climate_15.0_400.0"
+  },
+  {
+    "passed": true,
+    "score": 0.9248717033195631,
+    "winner": "minecraft:forest",
+    "case": "climate_15.0_900.0"
+  },
+  {
+    "passed": true,
+    "score": 0.9294342165499369,
+    "winner": "minecraft:dark_forest",
+    "case": "climate_15.0_1800.0"
+  },
+  {
+    "passed": true,
+    "score": 0.5112038637030054,
+    "winner": "minecraft:plains",
+    "case": "climate_5.0_80.0"
+  },
+  {
+    "passed": true,
+    "score": 0.840562671356385,
+    "winner": "minecraft:plains",
+    "case": "climate_5.0_400.0"
+  },
+  {
+    "passed": true,
+    "score": 0.9203231350694736,
+    "winner": "minecraft:old_growth_pine_taiga",
+    "case": "climate_5.0_900.0"
+  },
+  {
+    "passed": true,
+    "score": 0.9330721976590325,
+    "winner": "minecraft:taiga",
+    "case": "climate_5.0_1800.0"
+  },
+  {
+    "passed": true,
+    "score": 0.30470842250489716,
+    "winner": "minecraft:plains",
+    "case": "climate_-5.0_80.0"
+  },
+  {
+    "passed": true,
+    "score": 0.5815234319057084,
+    "winner": "minecraft:ice_spikes",
+    "case": "climate_-5.0_400.0"
+  },
+  {
+    "passed": true,
+    "score": 0.8291272644840422,
+    "winner": "minecraft:snowy_taiga",
+    "case": "climate_-5.0_900.0"
+  },
+  {
+    "passed": true,
+    "score": 0.9382781768823676,
+    "winner": "minecraft:snowy_taiga",
+    "case": "climate_-5.0_1800.0"
+  },
+  {
+    "passed": true,
+    "score": 0.3957220353562313,
+    "winner": "minecraft:snowy_plains",
+    "case": "climate_-15.0_80.0"
+  },
+  {
+    "passed": true,
+    "score": 0.9211153596979733,
+    "winner": "minecraft:ice_spikes",
+    "case": "climate_-15.0_400.0"
+  },
+  {
+    "passed": true,
+    "score": 0.7307671678324476,
+    "winner": "minecraft:snowy_taiga",
+    "case": "climate_-15.0_900.0"
+  },
+  {
+    "passed": true,
+    "score": 0.8663068121585539,
+    "winner": "minecraft:snowy_plains",
+    "case": "climate_-15.0_1800.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:frozen_ocean",
+    "case": "SHALLOW_OCEAN_-10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:ocean",
+    "case": "SHALLOW_OCEAN_10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:warm_ocean",
+    "case": "SHALLOW_OCEAN_26.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:deep_frozen_ocean",
+    "case": "DEEP_OCEAN_-10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:deep_ocean",
+    "case": "DEEP_OCEAN_10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "case": "DEEP_OCEAN_26.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:frozen_ocean",
+    "case": "INLAND_SEA_-10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:ocean",
+    "case": "INLAND_SEA_10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:warm_ocean",
+    "case": "INLAND_SEA_26.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:snowy_beach",
+    "case": "COAST_-10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:beach",
+    "case": "COAST_10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:beach",
+    "case": "COAST_26.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:frozen_river",
+    "case": "RIVER_-10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:river",
+    "case": "RIVER_10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:river",
+    "case": "RIVER_26.0"
+  },
+  {
+    "passed": true,
+    "score": 0.911277366036832,
+    "winner": "minecraft:snowy_taiga",
+    "case": "WETLAND_-10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:swamp",
+    "case": "WETLAND_10.0"
+  },
+  {
+    "passed": true,
+    "score": 1.0,
+    "winner": "minecraft:swamp",
+    "case": "WETLAND_26.0"
+  },
+  {
+    "case": "temperature_projection_exact",
+    "coordinates": 24,
+    "passed": true
+  },
+  {
+    "passed": true,
+    "leeward": 401.782955975305,
+    "control": 937.481359333059,
+    "case": "Okanagan_rainfall_60_percent"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "distance": {
+    "misses": 14,
+    "retainedArrayBytes": 8192,
+    "hits": 16,
+    "entries": 1,
+    "capacity": 32
+  },
+  "islands": {
+    "misses": 6,
+    "capacity": 256,
+    "hits": 215154,
+    "entries": 6
+  }
+}

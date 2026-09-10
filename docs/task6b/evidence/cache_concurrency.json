@@ -1,0 +1,89 @@
+{
+  "failureRetry": true,
+  "worldIsolation": true,
+  "workerChecks": [
+    {
+      "exact": true,
+      "churnQueries": 10000,
+      "singleFlightLoads": 1,
+      "stats": {
+        "evictions": 9993,
+        "inFlight": 0,
+        "failures": 0,
+        "capacity": 8,
+        "misses": 10001,
+        "waits": 0,
+        "entries": 8,
+        "hits": 0
+      },
+      "workers": 1
+    },
+    {
+      "exact": true,
+      "churnQueries": 20000,
+      "singleFlightLoads": 1,
+      "stats": {
+        "evictions": 19305,
+        "inFlight": 0,
+        "failures": 0,
+        "capacity": 8,
+        "misses": 19313,
+        "waits": 257,
+        "entries": 8,
+        "hits": 432
+      },
+      "workers": 2
+    },
+    {
+      "exact": true,
+      "churnQueries": 80000,
+      "singleFlightLoads": 1,
+      "stats": {
+        "evictions": 63961,
+        "inFlight": 0,
+        "failures": 0,
+        "capacity": 8,
+        "misses": 63969,
+        "waits": 4110,
+        "entries": 8,
+        "hits": 11929
+      },
+      "workers": 8
+    },
+    {
+      "exact": true,
+      "churnQueries": 240000,
+      "singleFlightLoads": 1,
+      "stats": {
+        "evictions": 180439,
+        "inFlight": 0,
+        "failures": 0,
+        "capacity": 8,
+        "misses": 180447,
+        "waits": 17292,
+        "entries": 8,
+        "hits": 42285
+      },
+      "workers": 24
+    },
+    {
+      "exact": true,
+      "churnQueries": 480000,
+      "singleFlightLoads": 1,
+      "stats": {
+        "evictions": 312809,
+        "inFlight": 0,
+        "failures": 0,
+        "capacity": 8,
+        "misses": 312817,
+        "waits": 47167,
+        "entries": 8,
+        "hits": 120064
+      },
+      "workers": 48
+    }
+  ],
+  "inFlightDisposal": true,
+  "scope": "exact cache concurrency mechanics; real terrain worker determinism is a separate gate",
+  "recreatedWorld": true
+}

@@ -1,0 +1,301 @@
+{
+  "monitorEnterEvents": 1230,
+  "topStacks": [
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Modifier.modify\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.erode\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.applyDrop\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.applyOptionalFilters\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.lambda$pipeline$2\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9180+0x000001e21f116e58.1923387390.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.finalizeTile\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$finish$6\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9320+0x000001e21f182480.409064960.accept\njava.util.concurrent.CompletableFuture.uniWhenComplete\njava.util.concurrent.CompletableFuture$UniWhenComplete.tryFire\njava.util.concurrent.CompletableFuture.postComplete\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 6863
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.applyDrop\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.applyOptionalFilters\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.lambda$pipeline$2\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9180+0x000001e21f116e58.1923387390.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.finalizeTile\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$finish$6\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9320+0x000001e21f182480.409064960.accept\njava.util.concurrent.CompletableFuture.uniWhenComplete\njava.util.concurrent.CompletableFuture$UniWhenComplete.tryFire\njava.util.concurrent.CompletableFuture.postComplete\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 4756
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.NoiseUtil.gradCoord2D\nraccoonman.reterraforged.world.worldgen.noise.module.Perlin.sample\nraccoonman.reterraforged.world.worldgen.noise.module.PerlinRidge.compute\nraccoonman.reterraforged.world.worldgen.noise.module.ShiftSeed.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\n",
+      "samples": 1100
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.module.Perlin.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Alpha.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 999
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.module.PerlinRidge.compute\nraccoonman.reterraforged.world.worldgen.noise.module.ShiftSeed.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\n",
+      "samples": 641
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.module.Perlin.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Map.compute\nraccoonman.reterraforged.world.worldgen.noise.domain.DomainWarp.getOffsetX\nraccoonman.reterraforged.world.worldgen.noise.domain.Domain.getX\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\n",
+      "samples": 482
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 463
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.cell.terrain.ITerrain$Delegate.erosionModifier\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Modifier.modify\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.erode\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.applyDrop\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.applyOptionalFilters\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.lambda$pipeline$2\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9180+0x000001e21f116e58.1923387390.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.finalizeTile\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$finish$6\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9320+0x000001e21f182480.409064960.accept\njava.util.concurrent.CompletableFuture.uniWhenComplete\njava.util.concurrent.CompletableFuture$UniWhenComplete.tryFire\njava.util.concurrent.CompletableFuture.postComplete\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 280
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.module.Map.compute\nraccoonman.reterraforged.world.worldgen.noise.domain.DomainWarp.getOffsetZ\nraccoonman.reterraforged.world.worldgen.noise.domain.Domain.getZ\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 274
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Smoothing.apply\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Smoothing.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.applyOptionalFilters\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.lambda$pipeline$2\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9180+0x000001e21f116e58.1923387390.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.finalizeTile\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$finish$6\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9320+0x000001e21f182480.409064960.accept\njava.util.concurrent.CompletableFuture.uniWhenComplete\njava.util.concurrent.CompletableFuture$UniWhenComplete.tryFire\njava.util.concurrent.CompletableFuture.postComplete\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 239
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 201
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.module.Perlin.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Map.compute\nraccoonman.reterraforged.world.worldgen.noise.domain.DomainWarp.getOffsetZ\nraccoonman.reterraforged.world.worldgen.noise.domain.Domain.getZ\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\n",
+      "samples": 197
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Steepness.visit\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Filter.iterate\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Steepness.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.applyRequiredFilters\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.lambda$pipeline$2\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9180+0x000001e21f116e58.1923387390.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.finalizeTile\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$finish$6\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9320+0x000001e21f182480.409064960.accept\njava.util.concurrent.CompletableFuture.uniWhenComplete\njava.util.concurrent.CompletableFuture$UniWhenComplete.tryFire\njava.util.concurrent.CompletableFuture.postComplete\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 180
+    },
+    {
+      "stack": "net.minecraft.client.multiplayer.ClientLevel.calculateBlockTint\nnet.minecraft.client.multiplayer.ClientLevel.lambda$new$2\nnet.minecraft.client.multiplayer.ClientLevel$$Lambda$10101+0x000001e21f2d7258.315527833.applyAsInt\nnet.minecraft.client.color.block.BlockTintCache.getColor\nnet.minecraft.client.multiplayer.ClientLevel.getBlockTint\nnet.minecraft.client.renderer.chunk.RenderChunkRegion.getBlockTint\nnet.minecraft.client.renderer.BiomeColors.getAverageColor\nnet.minecraft.client.renderer.BiomeColors.getAverageWaterColor\nnet.minecraftforge.common.ForgeMod$2$1.getTintColor\nnet.minecraft.client.renderer.block.LiquidBlockRenderer.tesselate\nnet.minecraft.client.renderer.block.BlockRenderDispatcher.renderLiquid\nnet.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$RebuildTask.compile\nnet.minecraft.client.renderer.chunk.ChunkRenderDispatcher$RenderChunk$RebuildTask.doTask\nnet.minecraft.client.renderer.chunk.ChunkRenderDispatcher.lambda$runTask$0\nnet.minecraft.client.renderer.chunk.ChunkRenderDispatcher$$Lambda$10345+0x000001e21f312f88.877555696.get\njava.util.concurrent.CompletableFuture$AsyncSupply.run\njava.util.concurrent.CompletableFuture$AsyncSupply.exec\njava.util.concurrent.ForkJoinTask.doExec\njava.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec\njava.util.concurrent.ForkJoinPool.scan\njava.util.concurrent.ForkJoinPool.runWorker\njava.util.concurrent.ForkJoinWorkerThread.run\n",
+      "samples": 175
+    },
+    {
+      "stack": "net.minecraft.world.phys.AABB.equals\nnet.minecraft.client.renderer.culling.Frustum.isVisible\nnet.minecraft.client.particle.ParticleEngine.render\nnet.minecraft.client.renderer.LevelRenderer.renderLevel\nnet.minecraft.client.renderer.GameRenderer.renderLevel\nnet.minecraft.client.renderer.GameRenderer.render\nnet.minecraft.client.Minecraft.runTick\nnet.minecraft.client.Minecraft.run\nnet.minecraft.client.main.Main.main\njdk.internal.reflect.NativeMethodAccessorImpl.invoke0\njdk.internal.reflect.NativeMethodAccessorImpl.invoke\njdk.internal.reflect.DelegatingMethodAccessorImpl.invoke\n",
+      "samples": 150
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.module.Perlin.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Alpha.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.region.RegionSelector.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.region.RegionLerper.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\n",
+      "samples": 128
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.NoiseUtil.gradCoord2D\nraccoonman.reterraforged.world.worldgen.noise.module.Perlin.sample\nraccoonman.reterraforged.world.worldgen.noise.module.PerlinRidge.compute\nraccoonman.reterraforged.world.worldgen.noise.module.ShiftSeed.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.region.RegionSelector.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.region.RegionLerper.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\n",
+      "samples": 118
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.NoiseUtil.gradCoord2D\nraccoonman.reterraforged.world.worldgen.noise.module.Perlin.sample\nraccoonman.reterraforged.world.worldgen.noise.module.Perlin.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Map.compute\nraccoonman.reterraforged.world.worldgen.noise.domain.DomainWarp.getOffsetX\nraccoonman.reterraforged.world.worldgen.noise.domain.Domain.getX\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\n",
+      "samples": 114
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.noise.NoiseUtil.gradCoord2D\nraccoonman.reterraforged.world.worldgen.noise.module.Perlin.sample\nraccoonman.reterraforged.world.worldgen.noise.module.Perlin.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Alpha.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getNoiseValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getSingleErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.getErosionValue\nraccoonman.reterraforged.world.worldgen.noise.module.Erosion.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Warp.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d$Cached.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Cache2d.compute\nraccoonman.reterraforged.world.worldgen.noise.module.Multiply.compute\nraccoonman.reterraforged.world.worldgen.cell.terrain.populator.TerrainPopulator.apply\nraccoonman.reterraforged.world.worldgen.cell.terrain.Blender.apply\nraccoonman.reterraforged.world.worldgen.cell.continent.ContinentLerper2.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyTerrainStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9176+0x000001e21f1165e0.241432568.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.generatePoint\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$generate$3\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9317+0x000001e21f181e00.1585010778.run\njava.util.concurrent.CompletableFuture$AsyncRun.run\n",
+      "samples": 108
+    },
+    {
+      "stack": "raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Modifier.modify\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.deposit\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.applyDrop\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Erosion.apply\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.applyOptionalFilters\nraccoonman.reterraforged.world.worldgen.cell.geography.LegacyGeographyFinalizationStage.apply\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge.lambda$pipeline$2\ncom.gabou.atmospheregen.geography.terrain.PaTerrainBridge$$Lambda$9180+0x000001e21f116e58.1923387390.apply\ncom.gabou.atmospheregen.geography.GeographyPipeline.finalizeTile\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator.lambda$finish$6\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.generation.TileGenerator$$Lambda$9320+0x000001e21f182480.409064960.accept\njava.util.concurrent.CompletableFuture.uniWhenComplete\njava.util.concurrent.CompletableFuture$UniWhenComplete.tryFire\njava.util.concurrent.CompletableFuture.postComplete\njava.util.concurrent.CompletableFuture$AsyncRun.run\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "samples": 96
+    }
+  ],
+  "monitorMaxNanos": {
+    "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 146272500,
+    "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 6340689200,
+    "com.gabou.atmospheregen.geography.continent.IslandModel": 16788400,
+    "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 7038200,
+    "java.lang.Object": 1136400,
+    "java.util.concurrent.ConcurrentHashMap$Node": 1443700
+  },
+  "monitorCounts": {
+    "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 93,
+    "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 448,
+    "com.gabou.atmospheregen.geography.continent.IslandModel": 667,
+    "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 20,
+    "java.lang.Object": 1,
+    "java.util.concurrent.ConcurrentHashMap$Node": 1
+  },
+  "threadParks": {
+    "counts": {
+      "other": 27370,
+      "terrain cache": 2752
+    },
+    "blockedThreadNanos": {
+      "other": 3533481668000,
+      "terrain cache": 214250077600
+    }
+  },
+  "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+  "subsystemSamples": {
+    "Minecraft chunk pipeline": 544,
+    "biome resolver": 4,
+    "cache lookup": 41,
+    "climate geography sampling": 15,
+    "erosion/filtering": 12267,
+    "features/structures": 27,
+    "other": 1219,
+    "surface-field extraction": 16,
+    "terrain noise": 6472,
+    "tile construction": 930
+  },
+  "executionSamples": 21535,
+  "sampledAllocationWeightBytes": 106902491000,
+  "monitorBlockedThreadNanos": {
+    "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 7043829900,
+    "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 217430948900,
+    "com.gabou.atmospheregen.geography.continent.IslandModel": 1765167800,
+    "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 35989800,
+    "java.lang.Object": 1136400,
+    "java.util.concurrent.ConcurrentHashMap$Node": 1443700
+  },
+  "eventCounts": {
+    "jdk.ActiveRecording": 1,
+    "jdk.ActiveSetting": 353,
+    "jdk.BooleanFlag": 526,
+    "jdk.CPUInformation": 1,
+    "jdk.CPULoad": 211,
+    "jdk.CPUTimeStampCounter": 1,
+    "jdk.ClassLoaderStatistics": 244,
+    "jdk.ClassLoadingStatistics": 211,
+    "jdk.ClassRedefinition": 20,
+    "jdk.CodeCacheConfiguration": 1,
+    "jdk.CodeCacheStatistics": 6,
+    "jdk.CodeSweeperConfiguration": 1,
+    "jdk.CodeSweeperStatistics": 2,
+    "jdk.Compilation": 57,
+    "jdk.CompilationFailure": 7,
+    "jdk.CompilerConfiguration": 1,
+    "jdk.CompilerStatistics": 211,
+    "jdk.Deoptimization": 21801,
+    "jdk.DirectBufferStatistics": 43,
+    "jdk.DoubleFlag": 11,
+    "jdk.EvacuationInformation": 223,
+    "jdk.ExceptionStatistics": 211,
+    "jdk.ExecuteVMOperation": 363,
+    "jdk.ExecutionSample": 21535,
+    "jdk.G1AdaptiveIHOP": 223,
+    "jdk.G1BasicIHOP": 223,
+    "jdk.G1EvacuationOldStatistics": 223,
+    "jdk.G1EvacuationYoungStatistics": 223,
+    "jdk.G1GarbageCollection": 223,
+    "jdk.G1HeapSummary": 462,
+    "jdk.G1MMU": 239,
+    "jdk.GCCPUTime": 239,
+    "jdk.GCConfiguration": 2,
+    "jdk.GCHeapConfiguration": 1,
+    "jdk.GCHeapSummary": 462,
+    "jdk.GCPhaseConcurrent": 48,
+    "jdk.GCPhaseConcurrentLevel1": 32,
+    "jdk.GCPhaseParallel": 113014,
+    "jdk.GCPhasePause": 239,
+    "jdk.GCPhasePauseLevel1": 980,
+    "jdk.GCPhasePauseLevel2": 269,
+    "jdk.GCReferenceStatistics": 924,
+    "jdk.GCSurvivorConfiguration": 1,
+    "jdk.GCTLABConfiguration": 1,
+    "jdk.GarbageCollection": 231,
+    "jdk.InitialEnvironmentVariable": 88,
+    "jdk.InitialSecurityProperty": 47,
+    "jdk.InitialSystemProperty": 34,
+    "jdk.IntFlag": 6,
+    "jdk.JVMInformation": 1,
+    "jdk.JavaErrorThrow": 21,
+    "jdk.JavaMonitorEnter": 1230,
+    "jdk.JavaMonitorWait": 17,
+    "jdk.JavaThreadStatistics": 211,
+    "jdk.LoaderConstraintsTableStatistics": 21,
+    "jdk.LongFlag": 198,
+    "jdk.MetaspaceChunkFreeListSummary": 924,
+    "jdk.MetaspaceGCThreshold": 4,
+    "jdk.MetaspaceSummary": 462,
+    "jdk.ModuleExport": 1706,
+    "jdk.ModuleRequire": 12126,
+    "jdk.NativeLibrary": 256,
+    "jdk.NativeMethodSample": 10651,
+    "jdk.NetworkUtilization": 84,
+    "jdk.OSInformation": 1,
+    "jdk.ObjectAllocationSample": 57607,
+    "jdk.OldGarbageCollection": 8,
+    "jdk.OldObjectSample": 252,
+    "jdk.PhysicalMemory": 2,
+    "jdk.PlaceholderTableStatistics": 21,
+    "jdk.PromoteObjectInNewPLAB": 27083,
+    "jdk.PromoteObjectOutsidePLAB": 3551,
+    "jdk.ProtectionDomainCacheTableStatistics": 21,
+    "jdk.RetransformClasses": 1,
+    "jdk.SafepointBegin": 333,
+    "jdk.StringFlag": 29,
+    "jdk.StringTableStatistics": 21,
+    "jdk.SymbolTableStatistics": 21,
+    "jdk.SystemProcess": 456,
+    "jdk.TenuringDistribution": 3345,
+    "jdk.ThreadAllocationStatistics": 103,
+    "jdk.ThreadCPULoad": 503,
+    "jdk.ThreadContextSwitchRate": 21,
+    "jdk.ThreadDump": 3,
+    "jdk.ThreadEnd": 67,
+    "jdk.ThreadPark": 30122,
+    "jdk.ThreadStart": 60,
+    "jdk.UnsignedIntFlag": 7,
+    "jdk.UnsignedLongFlag": 144,
+    "jdk.VirtualizationInformation": 1,
+    "jdk.YoungGarbageCollection": 223,
+    "jdk.YoungGenerationConfiguration": 1,
+    "minecraft.ServerTickTime": 211
+  },
+  "recordingStart": "2026-09-09T21:19:07.212769300Z",
+  "recordingEnd": "2026-09-09T21:22:48.027003900Z",
+  "recordedSpanNanos": 220814234600,
+  "gcSumOfPausesNanos": 1359749600,
+  "compilationThreadNanos": 11692981400,
+  "monitorPathCounts": {
+    "other": 1229,
+    "terrain cache call path": 1
+  },
+  "monitorPathBlockedThreadNanos": {
+    "other": 226277072800,
+    "terrain cache call path": 1443700
+  },
+  "parkPathCounts": {
+    "other": 27370,
+    "terrain wait outside ExactCache": 2752
+  },
+  "parkPathBlockedThreadNanos": {
+    "other": 3533481668000,
+    "terrain wait outside ExactCache": 214250077600
+  },
+  "topParkStacksByBlockedThreadNanos": [
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\njava.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block\njava.util.concurrent.ForkJoinPool.unmanagedBlock\njava.util.concurrent.ForkJoinPool.managedBlock\njava.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await\njava.util.concurrent.LinkedBlockingQueue.take\njava.util.concurrent.ThreadPoolExecutor.getTask\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "blockedThreadNanos": 1227091519600
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\njava.util.concurrent.ForkJoinPool.awaitWork\njava.util.concurrent.ForkJoinPool.runWorker\njava.util.concurrent.ForkJoinWorkerThread.run\n",
+      "blockedThreadNanos": 880094472900
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.parkNanos\njava.util.concurrent.SynchronousQueue$TransferStack.transfer\njava.util.concurrent.SynchronousQueue.poll\njava.util.concurrent.ThreadPoolExecutor.getTask\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "blockedThreadNanos": 678392812800
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.parkUntil\njava.util.concurrent.ForkJoinPool.awaitWork\njava.util.concurrent.ForkJoinPool.runWorker\njava.util.concurrent.ForkJoinWorkerThread.run\n",
+      "blockedThreadNanos": 315926863000
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\njava.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block\njava.util.concurrent.ForkJoinPool.unmanagedBlock\njava.util.concurrent.ForkJoinPool.managedBlock\njava.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await\njava.util.concurrent.LinkedBlockingQueue.take\nio.netty.util.concurrent.SingleThreadEventExecutor.takeTask\nio.netty.channel.DefaultEventLoop.run\nio.netty.util.concurrent.SingleThreadEventExecutor$4.run\nio.netty.util.internal.ThreadExecutorMap$2.run\njava.lang.Thread.run\n",
+      "blockedThreadNanos": 219823334900
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.parkNanos\njava.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos\njava.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take\njava.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take\njava.util.concurrent.ThreadPoolExecutor.getTask\njava.util.concurrent.ThreadPoolExecutor.runWorker\njava.util.concurrent.ThreadPoolExecutor$Worker.run\njava.lang.Thread.run\n",
+      "blockedThreadNanos": 207383210700
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\njava.util.concurrent.CompletableFuture$Signaller.block\njava.util.concurrent.ForkJoinPool.compensatedBlock\njava.util.concurrent.ForkJoinPool.managedBlock\njava.util.concurrent.CompletableFuture.waitingGet\njava.util.concurrent.CompletableFuture.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.create\nraccoonman.reterraforged.concurrent.task.LazyCallable.call\nraccoonman.reterraforged.concurrent.task.LazyCallable.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.get\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache.provide\ncom.gabou.atmospheregen.geography.terrain.PaGeographyProvider.snapshotSurfaceTile\ncom.gabou.atmospheregen.biome.CanonicalClimateGeography.tile\ncom.gabou.atmospheregen.biome.CanonicalClimateGeography.sample\ncom.gabou.atmospheregen.climate.BaselineClimateModel.profile\ncom.gabou.atmospheregen.climate.BaselineClimateModel.breakdownWithWind\ncom.gabou.atmospheregen.climate.BaselineClimateModel.breakdown\ncom.gabou.atmospheregen.climate.BaselineClimateModel.sample\ncom.gabou.atmospheregen.climate.PaBaselineClimateProvider.sample\ncom.gabou.atmospheregen.biome.ClimateBiomeSource.getNoiseBiome\nnet.minecraft.world.level.levelgen.structure.Structure.isValidBiome\nnet.minecraft.world.level.levelgen.structure.Structure.lambda$findValidGenerationPoint$2\nnet.minecraft.world.level.levelgen.structure.Structure$$Lambda$9334+0x000001e21f185890.977810970.test\njava.util.Optional.filter\nnet.minecraft.world.level.levelgen.structure.Structure.findValidGenerationPoint\nnet.minecraft.world.level.levelgen.structure.Structure.generate\nnet.minecraft.world.level.chunk.ChunkGenerator.tryGenerateStructure\nnet.minecraft.world.level.chunk.ChunkGenerator.lambda$createStructures$14\nnet.minecraft.world.level.chunk.ChunkGenerator$$Lambda$9322+0x000001e21f183338.1172699174.accept\njava.lang.Iterable.forEach\nnet.minecraft.world.level.chunk.ChunkGenerator.createStructures\nnet.minecraft.world.level.chunk.ChunkStatus.lambda$static$2\nnet.minecraft.world.level.chunk.ChunkStatus$$Lambda$2715+0x000001e21e912c40.986350938.doWork\nnet.minecraft.world.level.chunk.ChunkStatus.generate\nnet.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27\nnet.minecraft.server.level.ChunkMap$$Lambda$9313+0x000001e21f180d20.1620292525.apply\ncom.mojang.datafixers.util.Either$Left.map\nnet.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$29\nnet.minecraft.server.level.ChunkMap$$Lambda$9237+0x000001e21f1291a0.473378858.apply\njava.util.concurrent.CompletableFuture$UniCompose.tryFire\njava.util.concurrent.CompletableFuture$Completion.run\nnet.minecraft.server.level.ChunkTaskPriorityQueueSorter.lambda$message$1\nnet.minecraft.server.level.ChunkTaskPriorityQueueSorter$$Lambda$9311+0x000001e21f1808d0.422856701.run\nnet.minecraft.util.thread.ProcessorMailbox.pollTask\nnet.minecraft.util.thread.ProcessorMailbox.pollUntil\nnet.minecraft.util.thread.ProcessorMailbox.run\njava.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec\njava.util.concurrent.ForkJoinTask.doExec\njava.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec\njava.util.concurrent.ForkJoinPool.scan\njava.util.concurrent.ForkJoinPool.runWorker\njava.util.concurrent.ForkJoinWorkerThread.run\n",
+      "blockedThreadNanos": 143573097800
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\njava.util.concurrent.CompletableFuture$Signaller.block\njava.util.concurrent.ForkJoinPool.compensatedBlock\njava.util.concurrent.ForkJoinPool.managedBlock\njava.util.concurrent.CompletableFuture.waitingGet\njava.util.concurrent.CompletableFuture.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.create\nraccoonman.reterraforged.concurrent.task.LazyCallable.call\nraccoonman.reterraforged.concurrent.task.LazyCallable.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.get\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache.provide\ncom.gabou.atmospheregen.geography.terrain.PaGeographyProvider.snapshotSurfaceTile\ncom.gabou.atmospheregen.biome.CanonicalClimateGeography.tile\ncom.gabou.atmospheregen.biome.CanonicalClimateGeography.sample\ncom.gabou.atmospheregen.climate.BaselineClimateModel.profile\ncom.gabou.atmospheregen.climate.BaselineClimateModel.breakdownWithWind\ncom.gabou.atmospheregen.climate.BaselineClimateModel.breakdown\ncom.gabou.atmospheregen.climate.BaselineClimateModel.sample\ncom.gabou.atmospheregen.climate.PaBaselineClimateProvider.sample\ncom.gabou.atmospheregen.biome.ClimateBiomeSource.getNoiseBiome\nnet.minecraft.world.level.chunk.LevelChunkSection.fillBiomesFromNoise\nnet.minecraft.world.level.chunk.ChunkAccess.fillBiomesFromNoise\nnet.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.doCreateBiomes\nnet.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.lambda$createBiomes$5\nnet.minecraft.world.level.levelgen.NoiseBasedChunkGenerator$$Lambda$9378+0x000001e21f19fa00.2143131727.get\njava.util.concurrent.CompletableFuture$AsyncSupply.run\njava.util.concurrent.CompletableFuture$AsyncSupply.exec\njava.util.concurrent.ForkJoinTask.doExec\njava.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec\njava.util.concurrent.ForkJoinPool.scan\njava.util.concurrent.ForkJoinPool.runWorker\njava.util.concurrent.ForkJoinWorkerThread.run\n",
+      "blockedThreadNanos": 34574949200
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\njava.util.concurrent.CompletableFuture$Signaller.block\njava.util.concurrent.ForkJoinPool.compensatedBlock\njava.util.concurrent.ForkJoinPool.managedBlock\njava.util.concurrent.CompletableFuture.waitingGet\njava.util.concurrent.CompletableFuture.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.create\nraccoonman.reterraforged.concurrent.task.LazyCallable.call\nraccoonman.reterraforged.concurrent.task.LazyCallable.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.get\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache.provide\ncom.gabou.atmospheregen.geography.terrain.PaGeographyProvider.snapshotSurfaceTile\ncom.gabou.atmospheregen.biome.CanonicalClimateGeography.tile\ncom.gabou.atmospheregen.biome.CanonicalClimateGeography.sample\ncom.gabou.atmospheregen.climate.BaselineClimateModel.profile\ncom.gabou.atmospheregen.climate.BaselineClimateModel.breakdownWithWind\ncom.gabou.atmospheregen.climate.BaselineClimateModel.breakdown\ncom.gabou.atmospheregen.climate.BaselineClimateModel.sample\ncom.gabou.atmospheregen.climate.PaBaselineClimateProvider.sample\ncom.gabou.atmospheregen.biome.ClimateBiomeSource.getNoiseBiome\nnet.minecraft.world.level.biome.BiomeSource.getBiomesWithin\nnet.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure.findGenerationPoint\nnet.minecraft.world.level.levelgen.structure.Structure.findValidGenerationPoint\nnet.minecraft.world.level.levelgen.structure.Structure.generate\nnet.minecraft.world.level.chunk.ChunkGenerator.tryGenerateStructure\nnet.minecraft.world.level.chunk.ChunkGenerator.lambda$createStructures$14\nnet.minecraft.world.level.chunk.ChunkGenerator$$Lambda$9322+0x000001e21f183338.1172699174.accept\njava.lang.Iterable.forEach\nnet.minecraft.world.level.chunk.ChunkGenerator.createStructures\nnet.minecraft.world.level.chunk.ChunkStatus.lambda$static$2\nnet.minecraft.world.level.chunk.ChunkStatus$$Lambda$2715+0x000001e21e912c40.986350938.doWork\nnet.minecraft.world.level.chunk.ChunkStatus.generate\nnet.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27\nnet.minecraft.server.level.ChunkMap$$Lambda$9313+0x000001e21f180d20.1620292525.apply\ncom.mojang.datafixers.util.Either$Left.map\nnet.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$29\nnet.minecraft.server.level.ChunkMap$$Lambda$9237+0x000001e21f1291a0.473378858.apply\njava.util.concurrent.CompletableFuture$UniCompose.tryFire\njava.util.concurrent.CompletableFuture$Completion.run\nnet.minecraft.server.level.ChunkTaskPriorityQueueSorter.lambda$message$1\nnet.minecraft.server.level.ChunkTaskPriorityQueueSorter$$Lambda$9311+0x000001e21f1808d0.422856701.run\nnet.minecraft.util.thread.ProcessorMailbox.pollTask\nnet.minecraft.util.thread.ProcessorMailbox.pollUntil\nnet.minecraft.util.thread.ProcessorMailbox.run\njava.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec\njava.util.concurrent.ForkJoinTask.doExec\njava.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec\njava.util.concurrent.ForkJoinPool.scan\njava.util.concurrent.ForkJoinPool.runWorker\njava.util.concurrent.ForkJoinWorkerThread.run\n",
+      "blockedThreadNanos": 19439555900
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\njava.util.concurrent.CompletableFuture$Signaller.block\njava.util.concurrent.ForkJoinPool.unmanagedBlock\njava.util.concurrent.ForkJoinPool.managedBlock\njava.util.concurrent.CompletableFuture.waitingGet\njava.util.concurrent.CompletableFuture.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.create\nraccoonman.reterraforged.concurrent.task.LazyCallable.call\nraccoonman.reterraforged.concurrent.task.LazyCallable.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.get\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache.provide\ncom.gabou.atmospheregen.geography.terrain.PaGeographyProvider.snapshotSurfaceTile\ncom.gabou.atmospheregen.biome.CanonicalClimateGeography.tile\ncom.gabou.atmospheregen.biome.CanonicalClimateGeography.sample\ncom.gabou.atmospheregen.climate.BaselineClimateModel.profile\ncom.gabou.atmospheregen.climate.BaselineClimateModel.breakdownWithWind\ncom.gabou.atmospheregen.climate.BaselineClimateModel.breakdown\ncom.gabou.atmospheregen.climate.BaselineClimateModel.sample\ncom.gabou.atmospheregen.climate.PaBaselineClimateProvider.sample\ncom.gabou.atmospheregen.biome.ClimateBiomeSource.getNoiseBiome\nbaseline.reproduction.task6b.FullChunkPerformance.run\nbaseline.reproduction.ReproductionClient.lambda$tick$1\nbaseline.reproduction.ReproductionClient$$Lambda$10313+0x000001e21f316470.1195506573.run\nnet.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0\nnet.minecraft.util.thread.BlockableEventLoop$$Lambda$10314+0x000001e21f316690.1557708545.get\njava.util.concurrent.CompletableFuture$AsyncSupply.run\nnet.minecraft.server.TickTask.run\nnet.minecraft.util.thread.BlockableEventLoop.doRunTask\nnet.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask\nnet.minecraft.server.MinecraftServer.doRunTask\nnet.minecraft.server.MinecraftServer.doRunTask\nnet.minecraft.util.thread.BlockableEventLoop.pollTask\nnet.minecraft.server.MinecraftServer.pollTaskInternal\nnet.minecraft.server.MinecraftServer.pollTask\nnet.minecraft.util.thread.BlockableEventLoop.managedBlock\nnet.minecraft.server.MinecraftServer.waitUntilNextTick\nnet.minecraft.server.MinecraftServer.runServer\nnet.minecraft.server.MinecraftServer.lambda$spin$2\nnet.minecraft.server.MinecraftServer$$Lambda$8873+0x000001e21f093c50.1194632529.run\njava.lang.Thread.run\n",
+      "blockedThreadNanos": 8826086900
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\nnet.minecraft.client.sounds.SoundEngineExecutor.waitForTasks\nnet.minecraft.util.thread.BlockableEventLoop.managedBlock\nnet.minecraft.client.sounds.SoundEngineExecutor.run\nnet.minecraft.client.sounds.SoundEngineExecutor$$Lambda$5743+0x000001e21ed23d80.225839514.run\njava.lang.Thread.run\n",
+      "blockedThreadNanos": 2960071400
+    },
+    {
+      "stack": "jdk.internal.misc.Unsafe.park\njava.util.concurrent.locks.LockSupport.park\njava.util.concurrent.CompletableFuture$Signaller.block\njava.util.concurrent.ForkJoinPool.compensatedBlock\njava.util.concurrent.ForkJoinPool.managedBlock\njava.util.concurrent.CompletableFuture.waitingGet\njava.util.concurrent.CompletableFuture.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.create\nraccoonman.reterraforged.concurrent.task.LazyCallable.call\nraccoonman.reterraforged.concurrent.task.LazyCallable.get\nraccoonman.reterraforged.concurrent.cache.CacheEntry.get\nraccoonman.reterraforged.world.worldgen.densityfunction.tile.TileCache.provideIfPresent\nraccoonman.reterraforged.world.worldgen.cell.heightmap.WorldLookup.cachedTile\nraccoonman.reterraforged.world.worldgen.densityfunction.CellSampler$Cache2d.getAndUpdate\nraccoonman.reterraforged.world.worldgen.densityfunction.CellSampler$CacheChunk.compute\nnet.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.apply\nnet.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.apply\nnet.minecraft.util.CubicSpline$Multipoint.apply\nnet.minecraft.world.level.levelgen.DensityFunctions$Spline.compute\nnet.minecraft.world.level.levelgen.DensityFunctions$PureTransformer.compute\nnet.minecraft.world.level.levelgen.DensityFunctions$Ap2.compute\nnet.minecraft.world.level.levelgen.DensityFunctions$PureTransformer.compute\nnet.minecraft.world.level.levelgen.NoiseChunk$Cache2D.compute\nnet.minecraft.world.level.levelgen.NoiseChunk$FlatCache.\u003cinit\u003e\nnet.minecraft.world.level.levelgen.NoiseChunk.wrapNew\nnet.minecraft.world.level.levelgen.NoiseChunk$$Lambda$9349+0x000001e21f195060.111470894.apply\njava.util.HashMap.computeIfAbsent\nnet.minecraft.world.level.levelgen.NoiseChunk.wrap\nnet.minecraft.world.level.levelgen.NoiseChunk$$Lambda$9348+0x000001e21f194e30.1527889101.apply\nnet.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Ap2.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Mapped.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Mapped.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Ap2.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Ap2.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Clamp.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Ap2.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Ap2.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$Ap2.mapAll\nnet.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.mapAll\nnet.minecraft.world.level.levelgen.NoiseRouter.mapAll\nnet.minecraft.world.level.levelgen.NoiseChunk.\u003cinit\u003e\nnet.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.iterateNoiseColumn\nnet.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.getBaseHeight\nnet.minecraft.world.level.chunk.ChunkGenerator.getFirstOccupiedHeight\nnet.minecraft.world.level.levelgen.structure.Structure.onTopOfChunkCenter\nnet.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure.findGenerationPoint\nnet.minecraft.world.level.levelgen.structure.Structure.findValidGenerationPoint\nnet.minecraft.world.level.levelgen.structure.Structure.generate\nnet.minecraft.world.level.chunk.ChunkGenerator.tryGenerateStructure\nnet.minecraft.world.level.chunk.ChunkGenerator.lambda$createStructures$14\nnet.minecraft.world.level.chunk.ChunkGenerator$$Lambda$9322+0x000001e21f183338.1172699174.accept\njava.lang.Iterable.forEach\nnet.minecraft.world.level.chunk.ChunkGenerator.createStructures\nnet.minecraft.world.level.chunk.ChunkStatus.lambda$static$2\n",
+      "blockedThreadNanos": 1385197200
+    }
+  ],
+  "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events."
+}

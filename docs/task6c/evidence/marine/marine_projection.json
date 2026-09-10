@@ -1,0 +1,98 @@
+{
+  "exact": true,
+  "scope": "All marine cell height/elevation bits, all three mountain fields, terrain, river/erosion masks, public elevation/landform, and complete downstream ClimateGeography.Sample including both distance fields; no production shortcut yet",
+  "marineCellsCompared": 117189,
+  "categories": {
+    "COASTAL_WATER": 68037,
+    "INLAND_SEA": 16384,
+    "MAJOR_OCEAN": 32768,
+    "coastalWithin384": 51653
+  },
+  "tiles": [
+    {
+      "marineCells": 16384,
+      "tileZ": 0,
+      "tileX": 0
+    },
+    {
+      "marineCells": 16384,
+      "tileZ": -1,
+      "tileX": -1
+    },
+    {
+      "marineCells": 0,
+      "tileZ": 48,
+      "tileX": 47
+    },
+    {
+      "marineCells": 0,
+      "tileZ": -96,
+      "tileX": -224
+    },
+    {
+      "marineCells": 0,
+      "tileZ": -1172,
+      "tileX": -64
+    },
+    {
+      "marineCells": 0,
+      "tileZ": 468,
+      "tileX": 64
+    },
+    {
+      "marineCells": 0,
+      "tileZ": -3907,
+      "tileX": -64
+    },
+    {
+      "marineCells": 0,
+      "tileZ": -66,
+      "tileX": -63
+    },
+    {
+      "marineCells": 0,
+      "tileZ": -66,
+      "tileX": -14
+    },
+    {
+      "marineCells": 16384,
+      "tileZ": 234373,
+      "tileX": 234373
+    },
+    {
+      "marineCells": 16384,
+      "tileZ": -234374,
+      "tileX": -234374
+    },
+    {
+      "marineCells": 9861,
+      "tileZ": -1012,
+      "tileX": -696
+    },
+    {
+      "marineCells": 0,
+      "tileZ": -1012,
+      "tileX": 64
+    },
+    {
+      "marineCells": 16384,
+      "tileZ": -976,
+      "tileX": -836
+    },
+    {
+      "marineCells": 1497,
+      "tileZ": -912,
+      "tileX": -911
+    },
+    {
+      "marineCells": 11794,
+      "tileZ": -930,
+      "tileX": -272
+    },
+    {
+      "marineCells": 12117,
+      "tileZ": -920,
+      "tileX": 155
+    }
+  ]
+}

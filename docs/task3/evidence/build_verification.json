@@ -1,0 +1,31 @@
+{
+    "status":  "PASS",
+    "tasks":  [
+                  "compileJava",
+                  "classes",
+                  "jar",
+                  "build",
+                  "reproductionClasses",
+                  "smokeClasses",
+                  "runData"
+              ],
+    "artifact":  {
+                     "path":  "build/libs/reterraforged-forge-1.20.1-0.0.6.jar",
+                     "sha256":  "463994cf4b3267f836811ce291e4f334a99edce94b8c2ec373edbf9d7d5090f8",
+                     "mixins":  [
+                                    "reterraforged-common.mixins.json",
+                                    "reterraforged-forge.mixins.json"
+                                ],
+                     "notices":  [
+                                     "META-INF/LICENSE"
+                                 ],
+                     "developerClassesPackaged":  false
+                 },
+    "minecraft":  "1.20.1",
+    "forge":  "47.4.22",
+    "java":  "17.0.17+10",
+    "gradle":  "8.11",
+    "forgeGradle":  "6.0.42",
+    "terraBlender":  "3.0.1.10",
+    "note":  "Real Forge reproduction/smoke assertions, not NO-SOURCE unit test success. Existing mapped refmap, deprecation, first-run Forge config and offline-client warnings retained."
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "case": 0,
+    "accepted": true,
+    "invalidSections": 0
+  },
+  {
+    "case": 1,
+    "accepted": true,
+    "invalidSections": 0
+  },
+  {
+    "case": 2,
+    "accepted": true,
+    "invalidSections": 0
+  },
+  {
+    "case": 3,
+    "accepted": true,
+    "invalidSections": 0
+  },
+  {
+    "case": 4,
+    "accepted": true,
+    "invalidSections": 0
+  },
+  {
+    "case": 5,
+    "accepted": true,
+    "invalidSections": 0
+  },
+  {
+    "case": 6,
+    "accepted": true,
+    "invalidSections": 0
+  },
+  {
+    "case": 7,
+    "accepted": true,
+    "invalidSections": 0
+  },
+  {
+    "case": 8,
+    "accepted": false,
+    "reason": "continentScaleBlocks/landCoverageTarget/coastlineDetailBlocks leave insufficient clearance for minimumMajorOceanWidthBlocks; increase scale or reduce coverage/detail/width"
+  },
+  {
+    "case": 9,
+    "accepted": false,
+    "reason": "continentScaleBlocks must be finite in [8192.0, 131072.0]; got 0.0"
+  },
+  {
+    "case": 10,
+    "accepted": false,
+    "reason": "landCoverageTarget must be finite in [0.15, 0.6]; got NaN"
+  },
+  {
+    "case": 11,
+    "accepted": false,
+    "reason": "shelfWidthBlocks must be \u003c\u003d half minimumMajorOceanWidthBlocks to retain a deep marine corridor"
+  }
+]

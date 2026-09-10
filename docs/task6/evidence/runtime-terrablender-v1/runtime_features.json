@@ -1,0 +1,12 @@
+[
+  {
+    "biome": "minecraft:plains",
+    "ordinaryTreeFeatures": true,
+    "allHoldersBound": true
+  },
+  {
+    "biome": "minecraft:forest",
+    "ordinaryTreeFeatures": true,
+    "allHoldersBound": true
+  }
+]

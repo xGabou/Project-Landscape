@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "productionSourceTree": "1260ea83753e593e8fe7f15b408fb98c1aa8ac36",
+  "productionLastChanged": "d82f149",
+  "completedGates": [
+    {
+      "name": "final-build",
+      "startedUtc": "2026-09-10T03:59:55.7277803Z",
+      "finishedUtc": "2026-09-10T03:59:59.1793897Z",
+      "arguments": [],
+      "evidence": null,
+      "task": "build"
+    },
+    {
+      "name": "final-cache",
+      "startedUtc": "2026-09-10T03:39:23.1260573Z",
+      "finishedUtc": "2026-09-10T03:39:25.2307830Z",
+      "arguments": [
+        "-Ptask6bOutput=build/task6c-final-cache"
+      ],
+      "evidence": null,
+      "task": "task6bCacheChecks"
+    },
+    {
+      "name": "final-determinism-1",
+      "startedUtc": "2026-09-10T03:36:25.2044895Z",
+      "finishedUtc": "2026-09-10T03:36:35.2251345Z",
+      "arguments": [
+        "-Ptask6bMode=determinism",
+        "-Ptask6bWorkers=1",
+        "-Ptask6bOutput=build/task6c-final-determinism-1"
+      ],
+      "evidence": null,
+      "task": "runData"
+    },
+    {
+      "name": "final-determinism-2",
+      "startedUtc": "2026-09-10T03:36:35.2436474Z",
+      "finishedUtc": "2026-09-10T03:36:45.9272966Z",
+      "arguments": [
+        "-Ptask6bMode=determinism",
+        "-Ptask6bWorkers=2",
+        "-Ptask6bOutput=build/task6c-final-determinism-2"
+      ],
+      "evidence": null,
+      "task": "runData"
+    },
+    {
+      "name": "final-determinism-24",
+      "startedUtc": "2026-09-10T03:36:56.3114947Z",
+      "finishedUtc": "2026-09-10T03:37:08.4242914Z",
+      "arguments": [
+        "-Ptask6bMode=determinism",
+        "-Ptask6bWorkers=24",
+        "-Ptask6bOutput=build/task6c-final-determinism-24"
+      ],
+      "evidence": null,
+      "task": "runData"
+    },
+    {
+      "name": "final-determinism-48",
+      "startedUtc": "2026-09-10T03:37:08.4262912Z",
+      "finishedUtc": "2026-09-10T03:37:20.8577116Z",
+      "arguments": [
+        "-Ptask6bMode=determinism",
+        "-Ptask6bWorkers=48",
+        "-Ptask6bOutput=build/task6c-final-determinism-48"
+      ],
+      "evidence": null,
+      "task": "runData"
+    },
+    {
+      "name": "final-determinism-8",
+      "startedUtc": "2026-09-10T03:36:45.9292978Z",
+      "finishedUtc": "2026-09-10T03:36:56.3104940Z",
+      "arguments": [
+        "-Ptask6bMode=determinism",
+        "-Ptask6bWorkers=8",
+        "-Ptask6bOutput=build/task6c-final-determinism-8"
+      ],
+      "evidence": null,
+      "task": "runData"
+    },
+    {
+      "name": "final-full-8",
+      "startedUtc": "2026-09-10T03:40:27.9187281Z",
+      "finishedUtc": "2026-09-10T03:46:28.6398830Z",
+      "arguments": [
+        "-PreproProfile=task6b",
+        "-PreproProcessors=8",
+        "-PwithTerraBlender=true",
+        "-Ptask6bFinal=true"
+      ],
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6c/build/task6c-final-full-8",
+      "task": "runReproductionClient"
+    },
+    {
+      "name": "final-legacy",
+      "startedUtc": "2026-09-10T03:39:25.2317839Z",
+      "finishedUtc": "2026-09-10T03:39:55.1384999Z",
+      "arguments": [
+        "-Ptask6bMode=legacy",
+        "-Ptask6bOutput=build/task6c-final-legacy"
+      ],
+      "evidence": null,
+      "task": "runData"
+    },
+    {
+      "name": "final-legacy-tb",
+      "startedUtc": "2026-09-10T03:48:22.0588095Z",
+      "finishedUtc": "2026-09-10T03:49:22.6203287Z",
+      "arguments": [
+        "-PreproProfile=golden",
+        "-PreproProcessors=24",
+        "-PreproSeeds=8675309",
+        "-PwithTerraBlender=true"
+      ],
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6c/build/task6c-final-legacy-tb",
+      "task": "runReproductionClient"
+    },
+    {
+      "name": "final-ownership",
+      "startedUtc": "2026-09-10T03:37:20.8597108Z",
+      "finishedUtc": "2026-09-10T03:37:38.5673005Z",
+      "arguments": [
+        "-Ptask6bMode=ownership",
+        "-Ptask6bSourceChecks=true",
+        "-Ptask6cMetrics=true",
+        "-Ptask6bOutput=build/task6c-final-ownership"
+      ],
+      "evidence": null,
+      "task": "runData"
+    },
+    {
+      "name": "final-task1b",
+      "startedUtc": "2026-09-10T03:46:28.6558818Z",
+      "finishedUtc": "2026-09-10T03:48:22.0568096Z",
+      "arguments": [
+        "-PreproProfile=full",
+        "-PreproProcessors=24",
+        "-PwithTerraBlender=false"
+      ],
+      "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6c/build/task6c-final-task1b",
+      "task": "runReproductionClient"
+    },
+    {
+      "name": "final-task4",
+      "startedUtc": "2026-09-10T03:37:38.5682982Z",
+      "finishedUtc": "2026-09-10T03:37:46.0737877Z",
+      "arguments": [
+        "-Ptask4Output=build/task6c-final-task4"
+      ],
+      "evidence": null,
+      "task": "task4Survey"
+    },
+    {
+      "name": "final-task5",
+      "startedUtc": "2026-09-10T03:37:46.0747878Z",
+      "finishedUtc": "2026-09-10T03:39:20.6512029Z",
+      "arguments": [
+        "-Ptask5Output=build/task6c-final-task5"
+      ],
+      "evidence": null,
+      "task": "task5ClimateSurvey"
+    },
+    {
+      "name": "final-task6",
+      "startedUtc": "2026-09-10T03:39:20.6532030Z",
+      "finishedUtc": "2026-09-10T03:39:23.1250572Z",
+      "arguments": [
+        "-Ptask6ChecksOnly=true",
+        "-Ptask6Output=build/task6c-final-task6"
+      ],
+      "evidence": null,
+      "task": "task6BiomeSurvey"
+    }
+  ],
+  "task1b": "64/64",
+  "islandEviction": "PASS",
+  "legacy": "PASS with explicitly retained unaffected scheduling suites",
+  "productionUnchangedSinceGates": true,
+  "phase2Implemented": false
+}

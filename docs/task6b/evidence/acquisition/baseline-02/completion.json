@@ -1,0 +1,26 @@
+{
+  "workers": 8,
+  "seed": 8675309,
+  "limitations": [
+    "one cold and one warm pass; repeats required",
+    "no FULL chunks in this harness",
+    "microbenchmarks include startup; not steady-state acceptance"
+  ],
+  "status": "OFFLINE_ACQUISITION_COMPLETE_NOT_FULL_ACCEPTANCE",
+  "config": {
+    "latitudeScaleBlocks": 100000.0,
+    "equatorZ": 0.0,
+    "lapseCelsiusPerBlock": 0.0065,
+    "oceanInfluence": 0.5,
+    "continentalityStrength": 1.0,
+    "windBandScaleBlocks": 4096.0,
+    "orographicStrength": 0.85,
+    "rainShadowRecoveryDistance": 12000.0,
+    "climateProfileDistance": 24000.0,
+    "climateProfileStep": 256.0,
+    "evaporationStrength": 1.0,
+    "regionalVariationStrength": 0.1
+  },
+  "java": "17.0.17+10",
+  "baselineHead": "a3140a5d7113137563d275cbaea05a8e94f3b23e"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "IN_PROGRESS",
+  "task6Accepted": false,
+  "runtimeRun": "reproduction-1788967364037",
+  "runtimeCreateReopenBiomeDigest": "ad0a2426ae8beb95512c15306c85d760c12028b61e7a9948e9a28d67f1e3601c",
+  "macroSurvey": "build/task6-audit-08",
+  "uncontendedResolverBenchmark": "build/task6-checks-07",
+  "task4RegressionRun": "build/task4-survey-task6-final",
+  "task4AcceptedDigestExact": true,
+  "task5bRegressionRun": "build/task5b-task6-regression",
+  "task5bJointDistributionSha256": "aee2e0a7b53ea87b5ffcec28320046e3d945b616b671560a452c114d6afd7616",
+  "task5bJointDistributionExact": true,
+  "legacyComparator": "build/task6-legacy-current-02",
+  "legacyComparatorStatus": "PASS",
+  "legacyGeographyExact": 595,
+  "legacyHintsExact": 595,
+  "legacyBiomeKeysExact": 85,
+  "legacyStandaloneTileDigestsExact": 420,
+  "legacyTerraBlenderTileDigestsExact": 105,
+  "remaining": [
+    "Task 1B regressions",
+    "canonical terrain patch and real climate reachability survey",
+    "quart-scale seam and coherence checks",
+    "cave, hydrology, structures and surface-specific assertions",
+    "V1 TerraBlender and vanilla smoke",
+    "manifest mismatch and final foundation regression",
+    "paired full chunk performance and total memory review",
+    "final evidence manifest and visual review"
+  ],
+  "runtimeEcologyImplemented": false,
+  "dynamicTreesImplemented": false
+}

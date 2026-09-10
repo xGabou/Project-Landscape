@@ -1,0 +1,6 @@
+{
+  "algorithm": "atmospheregen:baseline_climate_v1",
+  "units": {"temperature": "C", "rainfall": "model_mm_per_year", "evaporation": "model_mm_per_year", "moistureIndex": "normalized_0_1", "rainShadow": "normalized_0_1", "wind": "normalized_xz"},
+  "profile": {"distanceBlocks": 24000, "stepBlocks": 256, "bounded": true},
+  "validation": "finite values, positive scales/distances, normalized strengths, profile step <= profile distance"
+}

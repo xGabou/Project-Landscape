@@ -1,0 +1,9 @@
+[
+  {
+    "recognition": "isolated store test with real active legacy preset; automatic binding is tested separately in world_binding_checks and runtime smoke",
+    "foreignWithoutManifest": "untouched",
+    "first": "EXPLICIT_LEGACY_ASSIGNMENT",
+    "reopen": "EXISTING_MANIFEST",
+    "mismatch": "rejected without overwrite"
+  }
+]

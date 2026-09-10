@@ -1,0 +1,21 @@
+{
+  "after": {
+    "capacity": 256,
+    "hits": 1360,
+    "frontHits": 0,
+    "frontEntries": 0,
+    "entries": 0,
+    "misses": 6,
+    "frontCapacity": 64
+  },
+  "postCloseQueriesRejected": true,
+  "before": {
+    "capacity": 256,
+    "hits": 1360,
+    "frontHits": 0,
+    "frontEntries": 5,
+    "entries": 6,
+    "misses": 6,
+    "frontCapacity": 64
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "seed": "8675309",
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "sampledAreaBlocks2": 144,
+    "minX": -4,
+    "maxX": 4,
+    "minZ": -4,
+    "maxZ": 4,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "4303642605",
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "sampledAreaBlocks2": 144,
+    "minX": -4,
+    "maxX": 4,
+    "minZ": -4,
+    "maxZ": 4,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "67890",
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "sampledAreaBlocks2": 144,
+    "minX": -4,
+    "maxX": 4,
+    "minZ": -4,
+    "maxZ": 4,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "20260908",
+    "biome": "minecraft:deep_lukewarm_ocean",
+    "sampledAreaBlocks2": 144,
+    "minX": -4,
+    "maxX": 4,
+    "minZ": -4,
+    "maxZ": 4,
+    "boundaryCensored": true
+  }
+]

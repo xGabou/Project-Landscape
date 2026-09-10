@@ -1,0 +1,29 @@
+[
+  {
+    "mountainGraph": 1,
+    "latticeValuesPerQuery": 50.0,
+    "adjacentReusePercent": 99.20645833333333,
+    "bounded128HitPercent": 62.18927083333333,
+    "referenceMedianMs": 1068.7537,
+    "candidateMedianMs": 567.5962,
+    "rawBitsExact": true
+  },
+  {
+    "mountainGraph": 2,
+    "latticeValuesPerQuery": 50.0,
+    "adjacentReusePercent": 99.20645833333333,
+    "bounded128HitPercent": 69.34489583333334,
+    "referenceMedianMs": 1400.187,
+    "candidateMedianMs": 622.2852,
+    "rawBitsExact": true
+  },
+  {
+    "mountainGraph": 3,
+    "latticeValuesPerQuery": 50.0,
+    "adjacentReusePercent": 99.20645833333333,
+    "bounded128HitPercent": 69.73678385416666,
+    "referenceMedianMs": 1531.5626,
+    "candidateMedianMs": 662.5557,
+    "rawBitsExact": true
+  }
+]

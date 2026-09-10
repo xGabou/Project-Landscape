@@ -22,11 +22,11 @@ $smoke=Json "$destination/runtime_smoke.json"
 if($smoke.status -ne 'PASS' -or @($smoke.results|Where-Object {$_.chunkChecks -ne 14}).Count){throw 'Smoke gate failed'}
 $perf=Json "$destination/performance_comparison.json"
 if($perf.status -notlike 'PASS*'){throw 'Performance gate has not been resolved'}
-foreach($case in @('geography-final','foundation','stage-final','benchmark','allocation','public-provider-benchmark')){
+foreach($case in @('geography-final','foundation','stage-final','benchmark','allocation','public-provider-benchmark','benchmark-resumed','benchmark-task2-reference-stable','public-provider-stable','public-provider-reference-stable')){
     if((Json "$destination/$case/completion.json")[-1].status -ne 'PASS'){throw "Missing completed $case"}
 }
 $archived=New-Item -ItemType Directory "$destination/verified-logs" -Force
-foreach($log in @('final-build','stage-baseline','stage-final','geography-final','golden-24','golden-2','golden-48','golden-repeat','golden-tb','full','foundation','benchmark','allocation','public-provider-benchmark','smoke-standalone','smoke-tb','smoke-vanilla','smoke-existing-legacy')){
+foreach($log in @('final-build','stage-baseline','stage-final','geography-final','golden-24','golden-2','golden-48','golden-repeat','golden-tb','full','foundation','benchmark','allocation','public-provider-benchmark','benchmark-resumed','benchmark-task2-reference-stable','public-provider-stable','public-provider-reference-stable','smoke-standalone','smoke-tb','smoke-vanilla','smoke-existing-legacy')){
     if(!(Select-String "$destination/logs/$log.log" -Pattern 'BUILD SUCCESSFUL' -Quiet)){throw "Missing successful log: $log"}
     Copy-Item -LiteralPath "$destination/logs/$log.log" -Destination "$archived/$log.txt" -Force
 }

@@ -1,0 +1,150 @@
+{
+  "reference": "b9e27263075ab8274c9206bb837e92c768c56a2e",
+  "status": "PASS",
+  "comparisons": [
+    {
+      "stage": "task4",
+      "file": "determinism_digests.json",
+      "exact": true,
+      "sha256": "09e0a752e52805f47b1d467fe7fb32192a996afb8596125ee34e7d2d7647f354"
+    },
+    {
+      "stage": "task5",
+      "file": "climate_distribution.csv",
+      "exact": true,
+      "sha256": "535b51b96309416375c1ed5eb8849bd47d9fcc869772086ab53b98aea000ce1b"
+    },
+    {
+      "stage": "task5",
+      "file": "climate_transects.csv",
+      "exact": true,
+      "sha256": "405ec7f3cf5f09feba0b5343559fdeb6c2cee531b0a5e22191f5cfa808a2b6f7"
+    },
+    {
+      "stage": "task5",
+      "file": "completion.json",
+      "exact": true,
+      "sha256": "c59b08e676c3b16f944e5b469f5aa2d6650972522a283fe1aebc8cc2cf90226a"
+    },
+    {
+      "stage": "task5",
+      "file": "configuration.json",
+      "exact": true,
+      "sha256": "bcf427b2109e5ab94c998067d3719e1b7661e1c556424d7f74284310ff73972b"
+    },
+    {
+      "stage": "task5",
+      "file": "determinism_digests.csv",
+      "exact": true,
+      "sha256": "d5439f7d9ad546fbb2e888fbbd115693a7b4f80f948ff162465940c5dc08e85f",
+      "comparison": "JSON array content (file has CSV suffix); line-ending-only difference"
+    },
+    {
+      "stage": "task5",
+      "file": "multi_range.csv",
+      "exact": true,
+      "sha256": "bbc042be40cfb455529c3b20149d2b0d7e965d4496946c512effceaf6d515722"
+    },
+    {
+      "stage": "task5",
+      "file": "rainfall_fixtures.csv",
+      "exact": true,
+      "sha256": "ccaaffc405f4bb749d2453612028cc995a990832b69a8b1cddf96621efe0d802"
+    },
+    {
+      "stage": "task5",
+      "file": "seed_divergence.json",
+      "exact": true,
+      "sha256": "9161c1bc9591121025241074bec5cb20c1595a3d84465f72113ccd340faf5e2e"
+    },
+    {
+      "stage": "task5",
+      "file": "synthetic_orographic.csv",
+      "exact": true,
+      "sha256": "1e07144370bf567fe595268fadf6420608f5d83b2c93ce103fcb87078d04d7fb"
+    },
+    {
+      "stage": "task5",
+      "file": "synthetic_temperature.csv",
+      "exact": true,
+      "sha256": "7ee14f2c2bd91881a7d82c1e28548da0d3c0c087b7143d9a0da019f6e372aff0"
+    },
+    {
+      "stage": "task5",
+      "file": "wind_reversal.csv",
+      "exact": true,
+      "sha256": "81f0ef9f43daf9e56e6373823476f2b7fdfb61060d7e279ca4089e16cfe78831"
+    },
+    {
+      "stage": "task6",
+      "file": "descriptor_validation.json",
+      "exact": true,
+      "sha256": "d6f130300a74508769ca50f8abd503c1cea1647b2fa83bc337c1714d6c17ee7e"
+    },
+    {
+      "stage": "task6",
+      "file": "determinism.json",
+      "exact": true,
+      "sha256": "ba06c98d26d099587f9b6f55838da65f0b63c1fde624286c8c25c9f9be925801"
+    },
+    {
+      "stage": "task6",
+      "file": "manifest.json",
+      "exact": true,
+      "sha256": "3a0a0cdb86d9a3d3838a536ef9cca55f6ffb8c51b7bb0d70904dab418be5f22b"
+    },
+    {
+      "stage": "task6",
+      "file": "orographic_biome_transect.csv",
+      "exact": true,
+      "sha256": "373d9fb9c789bdc22ef7a02553c2a94048cbd521b61cb968e7ab58c1374d217a"
+    },
+    {
+      "stage": "task6",
+      "file": "semantic_assertions.json",
+      "exact": true,
+      "sha256": "f3ae1ea35e1bd03a5c147edbb77bf6d3328d752850524821f3b9fbc842d81150"
+    },
+    {
+      "stage": "task6",
+      "file": "synthetic_elevation_transect.csv",
+      "exact": true,
+      "sha256": "643737ae55f9837ec8b09fefb3c43ce8b1c51e6b848e9948a3354c5ffc2f1433"
+    },
+    {
+      "stage": "task6",
+      "file": "synthetic_moisture_transect.csv",
+      "exact": true,
+      "sha256": "edecbf480de8e36219b43e10b0095c86af628c33443535e6e06e61e7e93ae797"
+    },
+    {
+      "stage": "task6",
+      "file": "synthetic_temperature_transect.csv",
+      "exact": true,
+      "sha256": "c9450674e57844d8f1abe6640c4f0b899e64f9764f4d98e7459286a73289622e"
+    },
+    {
+      "stage": "task6",
+      "file": "unreachable_descriptors.json",
+      "exact": true,
+      "sha256": "adb2b06cd0731a7c5b598133f5b0316549de28db2a05ae20d5b02d09c37506e6"
+    },
+    {
+      "stage": "task6",
+      "file": "validation_summary.json",
+      "exact": true,
+      "sha256": "84383ede516b8a08ea567e5885eaae8149c69a58201e24cd5dd7c94e4ce3d7ae"
+    },
+    {
+      "stage": "task6",
+      "file": "vanilla_biome_catalog.json",
+      "exact": true,
+      "sha256": "b546d12ad6560f784954139c650d5923b6dd108e8cce1a621bedc6cb165d85c8"
+    },
+    {
+      "stage": "finalizedTerrain",
+      "tiles": 6,
+      "exact": true
+    }
+  ]
+}

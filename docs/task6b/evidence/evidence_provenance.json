@@ -1,0 +1,36 @@
+{
+  "reviewHead": "ef754746eeced5f4704751d16a56feb3d8289023",
+  "productionSourceTree": "c9c64c19ecf2b34af301c17c158a38c66249e67a",
+  "lastProductionChange": "4442abe76598ad351ff8350bcc2b7d036c548661",
+  "lastSemanticImplementation": "cee8f113d9071039cbd1318eefe83a3f0ae8fff8",
+  "laterProductionFiles": [
+    "src/main/java/com/gabou/atmospheregen/biome/ClimateBiomeSource.java",
+    "src/main/java/com/gabou/atmospheregen/generation/cache/ExactCache.java"
+  ],
+  "laterProductionChangeReview": "4442abe adds capacityWaits/peakInFlight counters and a read-only distanceCacheStats accessor. Cache policy, loaders, generation equations and lifecycle behavior remain identical to cee8f11. Current resume changes are harness/analysis/documentation only.",
+  "retainedGatesValid": [
+    "erosion 33177600 fields",
+    "Task4",
+    "Task5",
+    "Task6",
+    "worker-reference determinism",
+    "three acquisition pairs",
+    "save/reopen TerraBlender lifecycle"
+  ],
+  "runtimeLifecycleSource": "runtime-final-01: reproduction-1788977426740, finished 2026-09-09 14:17 EDT, after cee8f11; subsequent 4442abe telemetry is nonsemantic",
+  "sourceIdentityGate": "source-reuse-final reruns strengthened d102ce2 reference-identity assertion",
+  "task1bRun": {
+    "name": "task1b-final",
+    "root": "G:\\mods\\Undisclosed-PA-Addon-task6b",
+    "arguments": [
+      "-PreproProfile=full",
+      "-PreproProcessors=24",
+      "-PwithTerraBlender=false"
+    ],
+    "startedUtc": "2026-09-09T21:40:28.5261781Z",
+    "finishedUtc": "2026-09-09T21:42:35.4106193Z",
+    "log": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-task1b-final-resume.log",
+    "exitCode": 0,
+    "evidence": "G:\\mods\\Undisclosed-PA-Addon-task6b/build/task6b-task1b-final"
+  }
+}

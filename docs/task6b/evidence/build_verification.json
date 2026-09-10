@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "command": "./gradlew.bat build --offline --console=plain",
+  "sourceTree": "c9c64c19ecf2b34af301c17c158a38c66249e67a",
+  "log": "final-build.log",
+  "sourceIdentityCommand": "./gradlew.bat runData -Ptask6bOutput=build/task6b-source-reuse-final -Ptask6bMode=ownership -Ptask6bSourceChecks=true --offline --console=plain",
+  "warnings": "Existing deprecated Java/Gradle API warnings; build and strengthened source identity check exit successfully."
+}

@@ -1,0 +1,117 @@
+{
+  "scope": "real registry holders and canonical terrain; reference repeats original surface physical path; full chunk effects measured separately",
+  "winners": [
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:plains",
+    "minecraft:plains",
+    "minecraft:plains",
+    "minecraft:plains"
+  ],
+  "directHolderChecks": 20,
+  "caveDelegationChecks": 9,
+  "surfaceGeography": {
+    "capacity": 4096,
+    "failures": 0,
+    "peakInFlight": 1,
+    "evictions": 0,
+    "waits": 0,
+    "hits": 90015,
+    "entries": 5,
+    "capacityWaits": 0,
+    "misses": 5,
+    "inFlight": 0
+  },
+  "holderReferenceIdentity": true,
+  "surfaceWinners": {
+    "capacity": 4096,
+    "failures": 0,
+    "peakInFlight": 1,
+    "evictions": 0,
+    "waits": 0,
+    "hits": 90015,
+    "entries": 5,
+    "capacityWaits": 0,
+    "misses": 5,
+    "inFlight": 0
+  },
+  "measurements": [
+    {
+      "warmup": true,
+      "referenceSurfacePathNanos": 14837700,
+      "pass": -2,
+      "cachedSourceNanos": 2738300,
+      "queries": 10000
+    },
+    {
+      "warmup": true,
+      "referenceSurfacePathNanos": 10278800,
+      "pass": -1,
+      "cachedSourceNanos": 1420600,
+      "queries": 10000
+    },
+    {
+      "warmup": false,
+      "referenceSurfacePathNanos": 9267900,
+      "pass": 0,
+      "cachedSourceNanos": 421400,
+      "queries": 10000
+    },
+    {
+      "warmup": false,
+      "referenceSurfacePathNanos": 8028900,
+      "pass": 1,
+      "cachedSourceNanos": 309400,
+      "queries": 10000
+    },
+    {
+      "warmup": false,
+      "referenceSurfacePathNanos": 8139200,
+      "pass": 2,
+      "cachedSourceNanos": 306100,
+      "queries": 10000
+    },
+    {
+      "warmup": false,
+      "referenceSurfacePathNanos": 8224400,
+      "pass": 3,
+      "cachedSourceNanos": 301300,
+      "queries": 10000
+    },
+    {
+      "warmup": false,
+      "referenceSurfacePathNanos": 7876600,
+      "pass": 4,
+      "cachedSourceNanos": 284000,
+      "queries": 10000
+    },
+    {
+      "warmup": false,
+      "referenceSurfacePathNanos": 7822700,
+      "pass": 5,
+      "cachedSourceNanos": 272200,
+      "queries": 10000
+    },
+    {
+      "warmup": false,
+      "referenceSurfacePathNanos": 7639700,
+      "pass": 6,
+      "cachedSourceNanos": 271800,
+      "queries": 10000
+    }
+  ]
+}

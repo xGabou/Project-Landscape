@@ -43,6 +43,17 @@ public record ManifestContent(GenerationVersions versions, long worldSeed, Resou
         } else if (geography.legacy().isPresent() || geography.planned().isEmpty()) {
             throw new IllegalArgumentException("PA_GEOGRAPHY_V1 metadata requires planned settings, never a legacy fallback");
         }
+        if(versions.equals(GenerationVersions.geographyV1())||versions.equals(GenerationVersions.climateV1())||versions.equals(GenerationVersions.planned())) {
+            var settings=geography.planned().orElseThrow();
+            var macro=settings.macro().orElseThrow(()->new IllegalArgumentException("Functional PA_GEOGRAPHY_V1 requires frozen Task 4 macro settings"));
+            if(settings.continentScaleBlocks()!=macro.continentScaleBlocks() || settings.minimumMajorOceanWidthBlocks()!=macro.minimumMajorOceanWidthBlocks())
+                throw new IllegalArgumentException("V1 macro scale/width disagree with outer settings");
+            boolean climateV1=versions.equals(GenerationVersions.climateV1());
+            boolean resolverV1=versions.equals(GenerationVersions.planned());
+            if(resolverV1) { if(!baselineClimate.planned().isPresent()||!biomeResolver.planned().isPresent()||biomeCatalog.isEmpty()) throw new IllegalArgumentException("Task 6 V1 requires frozen climate, resolver, and biome catalog settings"); }
+            else if(climateV1!=baselineClimate.planned().isPresent()||biomeResolver.planned().isPresent()||biomeCatalog.isPresent())
+                throw new IllegalArgumentException(climateV1?"Task 5 V1 requires frozen baseline climate settings and legacy resolver":"Task 4 V1 requires legacy hints/resolver and no planned climate/catalog");
+        }
         if (data.isEmpty()) throw new IllegalArgumentException("Generation data fingerprints are required; an untracked world is not a valid manifest");
     }
 }

@@ -1,0 +1,29 @@
+{
+    "schemaVersion":  1,
+    "fixtureVersion":  1,
+    "run":  "reproduction-1788896584278",
+    "sourceHead":  "9edf3503772d67c948d4ed5d4348428c004a293f",
+    "sourceDirty":  [
+                        " M src/generated/resources/assets/reterraforged/lang/en_us.json",
+                        " M src/generated/resources/pack.mcmeta",
+                        " M src/reproduction/java/baseline/reproduction/PublicProviderBenchmark.java",
+                        "?? docs/task3/evidence/allocation/",
+                        "?? docs/task3/evidence/benchmark-resumed/",
+                        "?? docs/task3/evidence/benchmark-task2-reference/",
+                        "?? docs/task3/evidence/benchmark/",
+                        "?? docs/task3/evidence/benchmark_summary.json",
+                        "?? docs/task3/evidence/machine.json",
+                        "?? docs/task3/evidence/performance_comparison.json",
+                        "?? docs/task3/evidence/public-provider-benchmark/",
+                        "?? docs/task3/evidence/public-provider-reference/",
+                        "?? scripts/task3/Capture-Machine.ps1",
+                        "?? scripts/task3/Compare-Performance.ps1",
+                        "?? scripts/task3/Finalize-Evidence.ps1",
+                        "?? scripts/task3/Run-Reference.ps1",
+                        "?? scripts/task3/Run-Smokes.ps1"
+                    ],
+    "acceptedTask2":  "203dc3c1c2e1d4e09fa911a3d6dc7472664f4ba7",
+    "backend":  "LEGACY_RTF_V0",
+    "fixtureReference":  "../../../task1c/evidence/fixture_manifest.json",
+    "fixtureSha256":  "5ab8460c9cee4bfc7b311a1984e0987dcadb36e453c1ca817dc170d8015ef8d5"
+}

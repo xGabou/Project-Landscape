@@ -1,0 +1,20 @@
+[
+  {
+    "version": "V1",
+    "queries": 1536,
+    "uniqueXZ": 16,
+    "wallNanos": 8227491200,
+    "processCpuNanos": 17046875000,
+    "liveThreadAllocationDeltaBytes": 2964687056,
+    "digest": "141f55a5902f2c9af91cf98b1982b19a21d17e02f1cec95af08dc343a3072bae"
+  },
+  {
+    "version": "legacy",
+    "queries": 1536,
+    "uniqueXZ": 16,
+    "wallNanos": 1518900,
+    "processCpuNanos": 0,
+    "liveThreadAllocationDeltaBytes": 709512,
+    "digest": "32165d1fb7e83f9b195170ff6cc133e5b08bf683b96c2316bbeeca4133c3ede1"
+  }
+]

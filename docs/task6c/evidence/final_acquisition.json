@@ -1,0 +1,962 @@
+[
+  {
+    "scenario": "sequential_generation",
+    "stage": "Task6C baseline (frozen Task6B)",
+    "rawClimateExact": true,
+    "surface": {
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1292,
+      "capacity": 1024,
+      "entries": 228,
+      "retainedArrayBytes": 29884416,
+      "misses": 228,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 10.910627,
+      "medianSeconds": 0.10207954999999999,
+      "p95Seconds": 0.6613264,
+      "minimumSeconds": 5e-07,
+      "maximumSeconds": 4.6502522,
+      "sampleStandardDeviationSeconds": 0.8201846384871152,
+      "throughputPerSecond": 2.9329203537065287
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 10.9105996,
+      "medianSeconds": 0.46654675,
+      "p95Seconds": 4.6502522,
+      "minimumSeconds": 0.2041458,
+      "maximumSeconds": 4.6502522,
+      "sampleStandardDeviationSeconds": 1.068761581559428,
+      "throughputPerSecond": 1.4664638596030966
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 2.7400000000000002e-05,
+      "medianSeconds": 8e-07,
+      "p95Seconds": 1.33e-05,
+      "minimumSeconds": 5e-07,
+      "maximumSeconds": 1.33e-05,
+      "sampleStandardDeviationSeconds": 3.1584542632961038e-06,
+      "throughputPerSecond": 583941.605839416
+    }
+  },
+  {
+    "scenario": "sequential_generation",
+    "stage": "smoothing",
+    "rawClimateExact": true,
+    "surface": {
+      "retainedArrayBytes": 29884416,
+      "misses": 228,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1292,
+      "capacity": 1024,
+      "entries": 228
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 10.622308,
+      "medianSeconds": 0.10130990000000001,
+      "p95Seconds": 0.6371838,
+      "minimumSeconds": 6e-06,
+      "maximumSeconds": 4.4927907,
+      "sampleStandardDeviationSeconds": 0.7927079243101844,
+      "throughputPerSecond": 3.0125279741464848
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 10.6221813,
+      "medianSeconds": 0.45002220000000004,
+      "p95Seconds": 4.4927907,
+      "minimumSeconds": 0.2026013,
+      "maximumSeconds": 4.4927907,
+      "sampleStandardDeviationSeconds": 1.0313125965926875,
+      "throughputPerSecond": 1.5062819535945975
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 0.00012670000000000002,
+      "medianSeconds": 6.55e-06,
+      "p95Seconds": 1.85e-05,
+      "minimumSeconds": 6e-06,
+      "maximumSeconds": 1.85e-05,
+      "sampleStandardDeviationSeconds": 3.261537214259558e-06,
+      "throughputPerSecond": 126282.55722178372
+    }
+  },
+  {
+    "scenario": "sequential_generation",
+    "stage": "smoothing + IslandModel",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "evictions": 0,
+      "inFlight": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "misses": 228,
+      "retainedArrayBytes": 29884416,
+      "entries": 228,
+      "capacity": 1024,
+      "hits": 1292,
+      "capacityWaits": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 10.3678341,
+      "medianSeconds": 0.09605585,
+      "p95Seconds": 0.6336648,
+      "minimumSeconds": 7e-06,
+      "maximumSeconds": 4.4234836,
+      "sampleStandardDeviationSeconds": 0.7800267968829632,
+      "throughputPerSecond": 3.0864691401649647
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 10.3676789,
+      "medianSeconds": 0.45344375000000003,
+      "p95Seconds": 4.4234836,
+      "minimumSeconds": 0.1920868,
+      "maximumSeconds": 4.4234836,
+      "sampleStandardDeviationSeconds": 1.0166209570446962,
+      "throughputPerSecond": 1.5432576716858004
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 0.0001552,
+      "medianSeconds": 8.05e-06,
+      "p95Seconds": 2.49e-05,
+      "minimumSeconds": 7e-06,
+      "maximumSeconds": 2.49e-05,
+      "sampleStandardDeviationSeconds": 4.425833254879808e-06,
+      "throughputPerSecond": 103092.78350515464
+    }
+  },
+  {
+    "scenario": "sequential_generation",
+    "stage": "final (plus marine)",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1034,
+      "capacity": 1024,
+      "entries": 184,
+      "retainedArrayBytes": 24117248,
+      "misses": 184,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 9.346832299999999,
+      "medianSeconds": 0.08637494999999999,
+      "p95Seconds": 0.5847234,
+      "minimumSeconds": 6.7e-06,
+      "maximumSeconds": 3.9686157,
+      "sampleStandardDeviationSeconds": 0.699911108973421,
+      "throughputPerSecond": 3.423619786138669
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 9.346678,
+      "medianSeconds": 0.38716494999999995,
+      "p95Seconds": 3.9686157,
+      "minimumSeconds": 0.1727251,
+      "maximumSeconds": 3.9686157,
+      "sampleStandardDeviationSeconds": 0.9112709196206629,
+      "throughputPerSecond": 1.7118381525500288
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 0.0001543,
+      "medianSeconds": 7.5e-06,
+      "p95Seconds": 2.48e-05,
+      "minimumSeconds": 6.7e-06,
+      "maximumSeconds": 2.48e-05,
+      "sampleStandardDeviationSeconds": 4.959968917913364e-06,
+      "throughputPerSecond": 103694.10239792611
+    }
+  },
+  {
+    "scenario": "spawn_expansion",
+    "stage": "Task6C baseline (frozen Task6B)",
+    "rawClimateExact": true,
+    "surface": {
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1344,
+      "capacity": 1024,
+      "entries": 176,
+      "retainedArrayBytes": 23068672,
+      "misses": 176,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 8.068621,
+      "medianSeconds": 4.97e-05,
+      "p95Seconds": 0.583546,
+      "minimumSeconds": 4e-07,
+      "maximumSeconds": 4.4872795,
+      "sampleStandardDeviationSeconds": 0.7980559804167094,
+      "throughputPerSecond": 3.9659812996545507
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 8.068606599999999,
+      "medianSeconds": 0.09558420000000001,
+      "p95Seconds": 4.4872795,
+      "minimumSeconds": 9.58e-05,
+      "maximumSeconds": 4.4872795,
+      "sampleStandardDeviationSeconds": 1.0865618760237796,
+      "throughputPerSecond": 1.9829941888603173
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 1.44e-05,
+      "medianSeconds": 6e-07,
+      "p95Seconds": 3.6e-06,
+      "minimumSeconds": 4e-07,
+      "maximumSeconds": 3.6e-06,
+      "sampleStandardDeviationSeconds": 8.563488385776753e-07,
+      "throughputPerSecond": 1111111.1111111112
+    }
+  },
+  {
+    "scenario": "spawn_expansion",
+    "stage": "smoothing",
+    "rawClimateExact": true,
+    "surface": {
+      "retainedArrayBytes": 23068672,
+      "misses": 176,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1344,
+      "capacity": 1024,
+      "entries": 176
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 7.842365900000001,
+      "medianSeconds": 5.975e-05,
+      "p95Seconds": 0.5698736,
+      "minimumSeconds": 5.3e-06,
+      "maximumSeconds": 4.3344367,
+      "sampleStandardDeviationSeconds": 0.7713070808436027,
+      "throughputPerSecond": 4.080401298286783
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 7.842262700000001,
+      "medianSeconds": 0.0957586,
+      "p95Seconds": 4.3344367,
+      "minimumSeconds": 0.0001099,
+      "maximumSeconds": 4.3344367,
+      "sampleStandardDeviationSeconds": 1.049460010385678,
+      "throughputPerSecond": 2.0402274970972343
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 0.00010320000000000001,
+      "medianSeconds": 5.950000000000001e-06,
+      "p95Seconds": 9.6e-06,
+      "minimumSeconds": 5.3e-06,
+      "maximumSeconds": 9.6e-06,
+      "sampleStandardDeviationSeconds": 1.4320148975016518e-06,
+      "throughputPerSecond": 155038.75968992244
+    }
+  },
+  {
+    "scenario": "spawn_expansion",
+    "stage": "smoothing + IslandModel",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "evictions": 0,
+      "inFlight": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "misses": 176,
+      "retainedArrayBytes": 23068672,
+      "entries": 176,
+      "capacity": 1024,
+      "hits": 1344,
+      "capacityWaits": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 7.6953034,
+      "medianSeconds": 6.38e-05,
+      "p95Seconds": 0.5605243,
+      "minimumSeconds": 4.4e-06,
+      "maximumSeconds": 4.270087,
+      "sampleStandardDeviationSeconds": 0.7594709085071517,
+      "throughputPerSecond": 4.158380551961083
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 7.6951947999999994,
+      "medianSeconds": 0.0961157,
+      "p95Seconds": 4.270087,
+      "minimumSeconds": 0.0001015,
+      "maximumSeconds": 4.270087,
+      "sampleStandardDeviationSeconds": 1.0337707482226393,
+      "throughputPerSecond": 2.0792196189757277
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 0.00010859999999999998,
+      "medianSeconds": 5e-06,
+      "p95Seconds": 2.61e-05,
+      "minimumSeconds": 4.4e-06,
+      "maximumSeconds": 2.61e-05,
+      "sampleStandardDeviationSeconds": 5.3065839608295404e-06,
+      "throughputPerSecond": 147329.65009208105
+    }
+  },
+  {
+    "scenario": "spawn_expansion",
+    "stage": "final (plus marine)",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1081,
+      "capacity": 1024,
+      "entries": 135,
+      "retainedArrayBytes": 17694720,
+      "misses": 135,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 6.6753727000000005,
+      "medianSeconds": 6.305e-05,
+      "p95Seconds": 0.5221557,
+      "minimumSeconds": 4.7e-06,
+      "maximumSeconds": 3.7995095,
+      "sampleStandardDeviationSeconds": 0.6758669669087723,
+      "throughputPerSecond": 4.793739831185755
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 6.6752517000000005,
+      "medianSeconds": 0.0762061,
+      "p95Seconds": 3.7995095,
+      "minimumSeconds": 9.96e-05,
+      "maximumSeconds": 3.7995095,
+      "sampleStandardDeviationSeconds": 0.9226145116657666,
+      "throughputPerSecond": 2.3969133628324455
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 0.00012099999999999999,
+      "medianSeconds": 5.1e-06,
+      "p95Seconds": 2.65e-05,
+      "minimumSeconds": 4.7e-06,
+      "maximumSeconds": 2.65e-05,
+      "sampleStandardDeviationSeconds": 5.647285483604785e-06,
+      "throughputPerSecond": 132231.4049586777
+    }
+  },
+  {
+    "scenario": "scattered_generation",
+    "stage": "Task6C baseline (frozen Task6B)",
+    "rawClimateExact": true,
+    "surface": {
+      "evictions": 496,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 0,
+      "capacity": 1024,
+      "entries": 1024,
+      "retainedArrayBytes": 134217728,
+      "misses": 1520,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 63.0198501,
+      "medianSeconds": 1.7534826000000001,
+      "p95Seconds": 4.3631628,
+      "minimumSeconds": 4e-07,
+      "maximumSeconds": 4.4279375,
+      "sampleStandardDeviationSeconds": 2.0098123554230716,
+      "throughputPerSecond": 0.5077765172278631
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 63.019839,
+      "medianSeconds": 3.8263062999999997,
+      "p95Seconds": 4.4279375,
+      "minimumSeconds": 3.5069626,
+      "maximumSeconds": 4.4279375,
+      "sampleStandardDeviationSeconds": 0.27207623714607115,
+      "throughputPerSecond": 0.25388830333254264
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 1.11e-05,
+      "medianSeconds": 5.5e-07,
+      "p95Seconds": 2.6e-06,
+      "minimumSeconds": 4e-07,
+      "maximumSeconds": 2.6e-06,
+      "sampleStandardDeviationSeconds": 5.297405025104273e-07,
+      "throughputPerSecond": 1441441.4414414414
+    }
+  },
+  {
+    "scenario": "scattered_generation",
+    "stage": "smoothing",
+    "rawClimateExact": true,
+    "surface": {
+      "retainedArrayBytes": 134217728,
+      "misses": 1520,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 496,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 0,
+      "capacity": 1024,
+      "entries": 1024
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 61.970203999999995,
+      "medianSeconds": 1.7467458999999999,
+      "p95Seconds": 4.3032211,
+      "minimumSeconds": 3.7e-06,
+      "maximumSeconds": 4.3178227,
+      "sampleStandardDeviationSeconds": 1.975313906502862,
+      "throughputPerSecond": 0.5163771931426916
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 61.9701175,
+      "medianSeconds": 3.7756560500000003,
+      "p95Seconds": 4.3178227,
+      "minimumSeconds": 3.4934752,
+      "maximumSeconds": 4.3178227,
+      "sampleStandardDeviationSeconds": 0.25151775468885684,
+      "throughputPerSecond": 0.25818895695977984
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 8.649999999999999e-05,
+      "medianSeconds": 4.05e-06,
+      "p95Seconds": 1.66e-05,
+      "minimumSeconds": 3.7e-06,
+      "maximumSeconds": 1.66e-05,
+      "sampleStandardDeviationSeconds": 3.3727276300743093e-06,
+      "throughputPerSecond": 184971.09826589597
+    }
+  },
+  {
+    "scenario": "scattered_generation",
+    "stage": "smoothing + IslandModel",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "evictions": 496,
+      "inFlight": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "misses": 1520,
+      "retainedArrayBytes": 134217728,
+      "entries": 1024,
+      "capacity": 1024,
+      "hits": 0,
+      "capacityWaits": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 57.6206228,
+      "medianSeconds": 1.55668095,
+      "p95Seconds": 4.2433846,
+      "minimumSeconds": 4.4e-06,
+      "maximumSeconds": 4.287314,
+      "sampleStandardDeviationSeconds": 1.8471502208854789,
+      "throughputPerSecond": 0.5553567185670891
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 57.6205053,
+      "medianSeconds": 3.44346905,
+      "p95Seconds": 4.287314,
+      "minimumSeconds": 3.1133348,
+      "maximumSeconds": 4.287314,
+      "sampleStandardDeviationSeconds": 0.36673996455962315,
+      "throughputPerSecond": 0.2776789255265347
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 0.00011750000000000001,
+      "medianSeconds": 4.9999999999999996e-06,
+      "p95Seconds": 2.71e-05,
+      "minimumSeconds": 4.4e-06,
+      "maximumSeconds": 2.71e-05,
+      "sampleStandardDeviationSeconds": 5.819045597575832e-06,
+      "throughputPerSecond": 136170.21276595743
+    }
+  },
+  {
+    "scenario": "scattered_generation",
+    "stage": "final (plus marine)",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 0,
+      "capacity": 1024,
+      "entries": 679,
+      "retainedArrayBytes": 88997888,
+      "misses": 679,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 34.3806714,
+      "medianSeconds": 0.61542235,
+      "p95Seconds": 3.9737101,
+      "minimumSeconds": 4.4e-06,
+      "maximumSeconds": 4.0456144,
+      "sampleStandardDeviationSeconds": 1.3099193449547932,
+      "throughputPerSecond": 0.9307555291081373
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 34.380577599999995,
+      "medianSeconds": 1.55401885,
+      "p95Seconds": 4.0456144,
+      "minimumSeconds": 1.2308255,
+      "maximumSeconds": 4.0456144,
+      "sampleStandardDeviationSeconds": 1.0409770194748906,
+      "throughputPerSecond": 0.4653790342370514
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 9.38e-05,
+      "medianSeconds": 4.7e-06,
+      "p95Seconds": 1.92e-05,
+      "minimumSeconds": 4.4e-06,
+      "maximumSeconds": 1.92e-05,
+      "sampleStandardDeviationSeconds": 3.685806108121623e-06,
+      "throughputPerSecond": 170575.69296375266
+    }
+  },
+  {
+    "scenario": "interleaved_regions",
+    "stage": "Task6C baseline (frozen Task6B)",
+    "rawClimateExact": true,
+    "surface": {
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 987,
+      "capacity": 1024,
+      "entries": 533,
+      "retainedArrayBytes": 69861376,
+      "misses": 533,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 23.2345456,
+      "medianSeconds": 0.2271125,
+      "p95Seconds": 4.1281474,
+      "minimumSeconds": 3e-07,
+      "maximumSeconds": 4.499129,
+      "sampleStandardDeviationSeconds": 1.3335902060916887,
+      "throughputPerSecond": 1.3772595578542324
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 23.2345353,
+      "medianSeconds": 0.55036755,
+      "p95Seconds": 4.499129,
+      "minimumSeconds": 0.4542227,
+      "maximumSeconds": 4.499129,
+      "sampleStandardDeviationSeconds": 1.597127619030534,
+      "throughputPerSecond": 0.6886300842005649
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 1.03e-05,
+      "medianSeconds": 5e-07,
+      "p95Seconds": 2.3e-06,
+      "minimumSeconds": 3e-07,
+      "maximumSeconds": 2.3e-06,
+      "sampleStandardDeviationSeconds": 4.78844094321593e-07,
+      "throughputPerSecond": 1553398.0582524273
+    }
+  },
+  {
+    "scenario": "interleaved_regions",
+    "stage": "smoothing",
+    "rawClimateExact": true,
+    "surface": {
+      "retainedArrayBytes": 69861376,
+      "misses": 533,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 987,
+      "capacity": 1024,
+      "entries": 533
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 22.757799300000002,
+      "medianSeconds": 0.2228162,
+      "p95Seconds": 4.0374209,
+      "minimumSeconds": 3.7e-06,
+      "maximumSeconds": 4.4554768,
+      "sampleStandardDeviationSeconds": 1.3195004299184545,
+      "throughputPerSecond": 1.4061113545368158
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 22.7577134,
+      "medianSeconds": 0.5334631000000001,
+      "p95Seconds": 4.4554768,
+      "minimumSeconds": 0.4456178,
+      "maximumSeconds": 4.4554768,
+      "sampleStandardDeviationSeconds": 1.5872165915303875,
+      "throughputPerSecond": 0.7030583309832876
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 8.59e-05,
+      "medianSeconds": 4.25e-06,
+      "p95Seconds": 1.46e-05,
+      "minimumSeconds": 3.7e-06,
+      "maximumSeconds": 1.46e-05,
+      "sampleStandardDeviationSeconds": 2.778901161730418e-06,
+      "throughputPerSecond": 186263.09662398137
+    }
+  },
+  {
+    "scenario": "interleaved_regions",
+    "stage": "smoothing + IslandModel",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "evictions": 0,
+      "inFlight": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "misses": 533,
+      "retainedArrayBytes": 69861376,
+      "entries": 533,
+      "capacity": 1024,
+      "hits": 987,
+      "capacityWaits": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 21.839349500000004,
+      "medianSeconds": 0.203178,
+      "p95Seconds": 3.9256649,
+      "minimumSeconds": 2.5e-06,
+      "maximumSeconds": 4.3077168,
+      "sampleStandardDeviationSeconds": 1.258548154256333,
+      "throughputPerSecond": 1.4652451072317878
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 21.8392471,
+      "medianSeconds": 0.52659825,
+      "p95Seconds": 4.3077168,
+      "minimumSeconds": 0.4063336,
+      "maximumSeconds": 4.3077168,
+      "sampleStandardDeviationSeconds": 1.5099142274773019,
+      "throughputPerSecond": 0.7326259887411595
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 0.00010240000000000001,
+      "medianSeconds": 3.2e-06,
+      "p95Seconds": 2.24e-05,
+      "minimumSeconds": 2.5e-06,
+      "maximumSeconds": 2.24e-05,
+      "sampleStandardDeviationSeconds": 6.358616201658974e-06,
+      "throughputPerSecond": 156250.0
+    }
+  },
+  {
+    "scenario": "interleaved_regions",
+    "stage": "final (plus marine)",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 533,
+      "capacity": 1024,
+      "entries": 298,
+      "retainedArrayBytes": 39059456,
+      "misses": 298,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0
+    },
+    "allQueries": {
+      "samples": 32,
+      "totalSeconds": 14.7251218,
+      "medianSeconds": 0.03092315,
+      "p95Seconds": 2.6008917,
+      "minimumSeconds": 2.4e-06,
+      "maximumSeconds": 3.8273199,
+      "sampleStandardDeviationSeconds": 0.8938660264411173,
+      "throughputPerSecond": 2.173156897079113
+    },
+    "cold": {
+      "samples": 16,
+      "totalSeconds": 14.725038699999999,
+      "medianSeconds": 0.42825195,
+      "p95Seconds": 3.8273199,
+      "minimumSeconds": 0.0618164,
+      "maximumSeconds": 3.8273199,
+      "sampleStandardDeviationSeconds": 1.095236070436086,
+      "throughputPerSecond": 1.0865845805892518
+    },
+    "warm": {
+      "samples": 16,
+      "totalSeconds": 8.31e-05,
+      "medianSeconds": 2.6e-06,
+      "p95Seconds": 2.99e-05,
+      "minimumSeconds": 2.4e-06,
+      "maximumSeconds": 2.99e-05,
+      "sampleStandardDeviationSeconds": 7.2746563492717645e-06,
+      "throughputPerSecond": 192539.10950661852
+    }
+  },
+  {
+    "scenario": "climate_heavy",
+    "stage": "Task6C baseline (frozen Task6B)",
+    "rawClimateExact": true,
+    "surface": {
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1407,
+      "capacity": 1024,
+      "entries": 113,
+      "retainedArrayBytes": 14811136,
+      "misses": 113,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0
+    },
+    "allQueries": {
+      "samples": 128,
+      "totalSeconds": 5.2470243,
+      "medianSeconds": 3e-07,
+      "p95Seconds": 0.0708109,
+      "minimumSeconds": 2e-07,
+      "maximumSeconds": 4.442608,
+      "sampleStandardDeviationSeconds": 0.3932572720117626,
+      "throughputPerSecond": 24.39477934188336
+    },
+    "cold": {
+      "samples": 64,
+      "totalSeconds": 5.246999199999999,
+      "medianSeconds": 3e-07,
+      "p95Seconds": 0.1339873,
+      "minimumSeconds": 2e-07,
+      "maximumSeconds": 4.442608,
+      "sampleStandardDeviationSeconds": 0.5552866974116385,
+      "throughputPerSecond": 12.197448019431755
+    },
+    "warm": {
+      "samples": 64,
+      "totalSeconds": 2.510000000000001e-05,
+      "medianSeconds": 3e-07,
+      "p95Seconds": 6e-07,
+      "minimumSeconds": 2e-07,
+      "maximumSeconds": 4.5e-06,
+      "sampleStandardDeviationSeconds": 5.355029344990958e-07,
+      "throughputPerSecond": 2549800.796812748
+    }
+  },
+  {
+    "scenario": "climate_heavy",
+    "stage": "smoothing",
+    "rawClimateExact": true,
+    "surface": {
+      "retainedArrayBytes": 14811136,
+      "misses": 113,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1407,
+      "capacity": 1024,
+      "entries": 113
+    },
+    "allQueries": {
+      "samples": 128,
+      "totalSeconds": 5.1206748,
+      "medianSeconds": 3.7e-06,
+      "p95Seconds": 0.0680886,
+      "minimumSeconds": 3.5e-06,
+      "maximumSeconds": 4.3328733,
+      "sampleStandardDeviationSeconds": 0.38354313066213674,
+      "throughputPerSecond": 24.99670551232818
+    },
+    "cold": {
+      "samples": 64,
+      "totalSeconds": 5.1204128,
+      "medianSeconds": 3.7e-06,
+      "p95Seconds": 0.133978,
+      "minimumSeconds": 3.5e-06,
+      "maximumSeconds": 4.3328733,
+      "sampleStandardDeviationSeconds": 0.5415668807232075,
+      "throughputPerSecond": 12.498992268748331
+    },
+    "warm": {
+      "samples": 64,
+      "totalSeconds": 0.0002620000000000001,
+      "medianSeconds": 3.7e-06,
+      "p95Seconds": 6.2e-06,
+      "minimumSeconds": 3.5e-06,
+      "maximumSeconds": 9.7e-06,
+      "sampleStandardDeviationSeconds": 1.1126794486983013e-06,
+      "throughputPerSecond": 244274.80916030527
+    }
+  },
+  {
+    "scenario": "climate_heavy",
+    "stage": "smoothing + IslandModel",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "evictions": 0,
+      "inFlight": 0,
+      "peakInFlight": 1,
+      "failures": 0,
+      "misses": 113,
+      "retainedArrayBytes": 14811136,
+      "entries": 113,
+      "capacity": 1024,
+      "hits": 1407,
+      "capacityWaits": 0
+    },
+    "allQueries": {
+      "samples": 128,
+      "totalSeconds": 5.145492399999999,
+      "medianSeconds": 2.3e-06,
+      "p95Seconds": 0.0702497,
+      "minimumSeconds": 2.1e-06,
+      "maximumSeconds": 4.3328202,
+      "sampleStandardDeviationSeconds": 0.3835989972434582,
+      "throughputPerSecond": 24.87614207728691
+    },
+    "cold": {
+      "samples": 64,
+      "totalSeconds": 5.145317299999999,
+      "medianSeconds": 2.3e-06,
+      "p95Seconds": 0.1354218,
+      "minimumSeconds": 2.1e-06,
+      "maximumSeconds": 4.3328202,
+      "sampleStandardDeviationSeconds": 0.5416172710413142,
+      "throughputPerSecond": 12.438494317930598
+    },
+    "warm": {
+      "samples": 64,
+      "totalSeconds": 0.00017510000000000003,
+      "medianSeconds": 2.3e-06,
+      "p95Seconds": 2.7e-06,
+      "minimumSeconds": 2.1e-06,
+      "maximumSeconds": 1.73e-05,
+      "sampleStandardDeviationSeconds": 2.334038477634712e-06,
+      "throughputPerSecond": 365505.4254711593
+    }
+  },
+  {
+    "scenario": "climate_heavy",
+    "stage": "final (plus marine)",
+    "rawClimateExact": true,
+    "surface": {
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 1127,
+      "capacity": 1024,
+      "entries": 89,
+      "retainedArrayBytes": 11665408,
+      "misses": 89,
+      "failures": 0,
+      "peakInFlight": 1,
+      "inFlight": 0,
+      "evictions": 0
+    },
+    "allQueries": {
+      "samples": 128,
+      "totalSeconds": 4.4853067,
+      "medianSeconds": 2.4500000000000003e-06,
+      "p95Seconds": 0.0348835,
+      "minimumSeconds": 2.2e-06,
+      "maximumSeconds": 3.8530628,
+      "sampleStandardDeviationSeconds": 0.34098603454931925,
+      "throughputPerSecond": 28.537624862977598
+    },
+    "cold": {
+      "samples": 64,
+      "totalSeconds": 4.4851362,
+      "medianSeconds": 2.6e-06,
+      "p95Seconds": 0.1170546,
+      "minimumSeconds": 2.3e-06,
+      "maximumSeconds": 3.8530628,
+      "sampleStandardDeviationSeconds": 0.48155386105969267,
+      "throughputPerSecond": 14.269354852590652
+    },
+    "warm": {
+      "samples": 64,
+      "totalSeconds": 0.00017050000000000013,
+      "medianSeconds": 2.3e-06,
+      "p95Seconds": 3e-06,
+      "minimumSeconds": 2.2e-06,
+      "maximumSeconds": 1.56e-05,
+      "sampleStandardDeviationSeconds": 1.7259335810483775e-06,
+      "throughputPerSecond": 375366.5689149557
+    }
+  }
+]

@@ -16,7 +16,15 @@ java {
 
 // Development-only smoke harness. Never packaged in the production mod jar.
 sourceSets {
+    performance {
+        java.srcDir 'src/reproduction/java'
+        java.include 'baseline/reproduction/**'
+        java.exclude 'baseline/reproduction/ReproductionClient.java'
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
     reproduction {
+        java.exclude 'baseline/reproduction/performance/**'
         compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
         runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
     }
@@ -49,6 +57,12 @@ minecraft {
             property 'task1a.seeds', providers.gradleProperty('reproSeeds').getOrElse('8675309,4303642605,42,-987654321')
             property 'task1a.repeats', providers.gradleProperty('reproRepeats').getOrElse('3')
             property 'task1a.points', providers.gradleProperty('reproPoints').getOrElse('')
+            property 'task6b.final', providers.gradleProperty('task6bFinal').getOrElse('false')
+            property 'phase2a.runtime', providers.gradleProperty('phase2aRuntime').getOrElse('false')
+            if (providers.gradleProperty('phase2aPaJar').isPresent()) {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', file('build/createSrgToMcp/output.srg').absolutePath
+            }
             // Task 1C test corpus only; no production generation-version mechanism.
             property 'task1c.fixtureFile', file('docs/task1c/evidence/fixture_manifest.json').absolutePath
             if (providers.gradleProperty('reproPreset').isPresent()) {
@@ -62,6 +76,7 @@ minecraft {
             mods { baseline_smoke { source sourceSets.smoke } }
             property 'mixin.debug.export', 'true'
             property 'task1b.smokeVanilla', providers.gradleProperty('smokeVanilla').getOrElse('false')
+            property 'task4.smokeV1', providers.gradleProperty('smokeV1').getOrElse('false')
             if (providers.gradleProperty('smokeExistingWorld').isPresent()) {
                 property 'task2.existingWorld', providers.gradleProperty('smokeExistingWorld').get()
             }
@@ -70,7 +85,17 @@ minecraft {
         server { args '--nogui' }
         data {
             workingDirectory project.file('run/data')
-            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'),
+            if (providers.gradleProperty('task6bOutput').isPresent()) {
+                workingDirectory project.file('run/task6b-offline')
+                mods { task6b_performance { source sourceSets.performance } }
+                property 'task6b.output', file(providers.gradleProperty('task6bOutput').get()).absolutePath
+                property 'task6c.metrics', providers.gradleProperty('task6cMetrics').getOrElse('false')
+                property 'task6b.mode', providers.gradleProperty('task6bMode').getOrElse('acquisition')
+                property 'task6b.sourceChecks', providers.gradleProperty('task6bSourceChecks').getOrElse('false')
+                property 'task1c.fixtureFile', file('docs/task1c/evidence/fixture_manifest.json').absolutePath
+                jvmArgs '-Xmx6G', "-XX:ActiveProcessorCount=${providers.gradleProperty('task6bWorkers').getOrElse('8')}"
+            }
+            args '--mod', providers.gradleProperty('task6bOutput').isPresent() ? 'task6b_performance' : mod_id, '--all', '--output', file(providers.gradleProperty('task6bOutput').isPresent() ? 'build/task6b-datagen-unused' : 'src/generated/resources/'),
                  '--existing', file('src/main/resources/')
         }
     }
@@ -83,7 +108,18 @@ mixin {
 }
 sourceSets.main.resources.srcDir 'src/generated/resources'
 
+// File dependencies bypass ForgeGradle remapping. Stage the supplied jar under a
+// content-addressed local module so rebuilt companion jars cannot hit a stale mapping cache.
+def phase2aPaVersion = null
+if (providers.gradleProperty('phase2aPaJar').isPresent()) {
+    def paJar = file(providers.gradleProperty('phase2aPaJar').get())
+    phase2aPaVersion = java.security.MessageDigest.getInstance('SHA-256').digest(paJar.bytes).encodeHex().toString()
+    copy { from paJar; into layout.buildDirectory.dir('phase2a-pa-repo'); rename { "pa-bridge-${phase2aPaVersion}.jar" } }
+}
 repositories {
+    if (phase2aPaVersion != null) {
+        flatDir { dirs layout.buildDirectory.dir('phase2a-pa-repo'); content { includeGroup 'phase2a.local' } }
+    }
     mavenCentral()
     maven { url = 'https://maven.minecraftforge.net/' }
     maven {
@@ -93,6 +129,13 @@ repositories {
 }
 
 dependencies {
+    if (providers.gradleProperty('phase2aPaJar').isPresent()) {
+        runtimeOnly fg.deobf("phase2a.local:pa-bridge:${phase2aPaVersion}")
+        runtimeOnly fg.deobf('curse.maven:gabous-libs-1367332:8280104')
+        runtimeOnly fg.deobf('curse.maven:cool-rain-reforged-1346978:7270440')
+        runtimeOnly fg.deobf('curse.maven:architectury-api-419699:5137938')
+        runtimeOnly fg.deobf('curse.maven:cloth-config-348521:5729105')
+    }
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     compileOnly fg.deobf("curse.maven:terrablender-563928:${terrablender_curse_file}")
@@ -125,6 +168,53 @@ tasks.named('jar', Jar) {
 }
 tasks.named('sourcesJar', Jar) { from('LICENSE') { into 'META-INF' } }
 
+// Offline production macro provider survey; no Minecraft client, chunks or terrain erosion.
+tasks.register('task6bCacheChecks', JavaExec) {
+    dependsOn tasks.named('performanceClasses')
+    classpath = sourceSets.performance.runtimeClasspath
+    mainClass = 'baseline.reproduction.performance.ExactCacheChecks'
+    args file(providers.gradleProperty('task6bOutput').getOrElse('build/task6b-cache-checks')).absolutePath
+}
+
+tasks.register('task6bJfrSummary', JavaExec) {
+    dependsOn tasks.named('performanceClasses')
+    classpath = sourceSets.performance.runtimeClasspath
+    mainClass = 'baseline.reproduction.performance.ProfileSummary'
+    args providers.gradleProperty('task6bJfr').getOrElse(''), providers.gradleProperty('task6bSummary').getOrElse('')
+}
+
+tasks.register('task4Survey', JavaExec) {
+    dependsOn tasks.named('reproductionClasses')
+    classpath = sourceSets.reproduction.runtimeClasspath
+    mainClass = 'baseline.reproduction.geography.GeographySurvey'
+    maxHeapSize = '2G'
+    args file(providers.gradleProperty('task4Output').getOrElse('build/task4-survey')).absolutePath
+}
+
+// Offline Task 5 climate fixtures and V1 distribution survey.
+tasks.register('task5ClimateSurvey', JavaExec) {
+    dependsOn tasks.named('reproductionClasses')
+    classpath = sourceSets.reproduction.runtimeClasspath
+    mainClass = 'baseline.reproduction.climate.ClimateSurvey'
+    maxHeapSize = '2G'
+    args file(providers.gradleProperty('task5Output').getOrElse('build/task5-climate-survey')).absolutePath
+}
+tasks.register('task5bClimateAudit', JavaExec) {
+    dependsOn tasks.named('reproductionClasses')
+    classpath = sourceSets.reproduction.runtimeClasspath
+    mainClass = 'baseline.reproduction.climate.ClimateCalibrationAudit'
+    maxHeapSize = '2G'
+    args file(providers.gradleProperty('task5bOutput').getOrElse('build/task5b-climate-audit')).absolutePath
+}
+tasks.register('task6BiomeSurvey', JavaExec) {
+    dependsOn tasks.named('reproductionClasses')
+    classpath = sourceSets.reproduction.runtimeClasspath
+    mainClass = 'baseline.reproduction.biome.BiomeSurvey'
+    systemProperty 'task6.checksOnly', providers.gradleProperty('task6ChecksOnly').getOrElse('false')
+    maxHeapSize = '2G'
+    args file(providers.gradleProperty('task6Output').getOrElse('build/task6-biome-survey')).absolutePath
+}
+
 tasks.matching { it.name == 'runSmokeClient' }.configureEach {
     def marker = file('run/task0-smoke/task0-pass.txt')
     doFirst { marker.delete() }
@@ -139,4 +229,11 @@ tasks.matching { it.name == 'runReproductionClient' }.configureEach {
     doLast {
         if (!marker.isFile()) throw new GradleException('Task 1A reproduction harness did not finish; inspect run/task1a/logs/latest.log')
     }
+}
+
+tasks.register('phase2aHistoryChecks', JavaExec) {
+    dependsOn tasks.named('performanceClasses')
+    classpath = sourceSets.performance.runtimeClasspath
+    mainClass = 'baseline.reproduction.performance.RuntimeHistoryChecks'
+    args file('build/phase2a-history/history.dat').absolutePath
 }

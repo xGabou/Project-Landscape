@@ -1,0 +1,11 @@
+# Preserve bulky/raw session evidence locally; commit focused summaries.
+/logs/
+/task4/
+/task5/
+/task6/
+/saved-world/*.dat
+/runtime/*
+!/runtime/completion.json
+!/runtime/phase2a_start.json
+!/runtime/phase2a_runtime.json
+!/runtime/phase2a_disposal.json

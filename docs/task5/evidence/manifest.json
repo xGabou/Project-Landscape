@@ -1,0 +1,8 @@
+{
+  "task": 5,
+  "generationTuple": "PA_GEOGRAPHY_V1 + PA_BASELINE_V1 + LEGACY_MULTINOISE_V0",
+  "activeClimateConfig": "configuration.json",
+  "developerSelection": "data/atmospheregen/development_climate_v1.json",
+  "configMismatchPolicy": "ManifestContent validation/fingerprint policy remains active",
+  "legacyTuple": "LEGACY_RTF_V0 unchanged"
+}

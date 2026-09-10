@@ -1,0 +1,1081 @@
+{
+  "scope": "All seven retained FULL runs, V1 and legacy; all three acquisition pairs. Frozen original before summary is preserved separately.",
+  "fullRuns": [
+    {
+      "run": "baseline-original",
+      "version": "V1",
+      "newFullSeconds": 216.892802,
+      "monitorEnterEvents": 524,
+      "monitorMaxNanos": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 179441800,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 6904725600,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 14410000,
+        "java.util.concurrent.ConcurrentHashMap$Node": 12525900
+      },
+      "monitorCounts": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 95,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 420,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 8,
+        "java.util.concurrent.ConcurrentHashMap$Node": 1
+      },
+      "threadParks": {
+        "counts": {
+          "other": 27611,
+          "terrain cache": 2766
+        },
+        "blockedThreadNanos": {
+          "other": 3661038422700,
+          "terrain cache": 217939276900
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 631,
+        "biome resolver": 3,
+        "cache lookup": 68,
+        "climate equations": 1,
+        "climate geography sampling": 16,
+        "erosion/filtering": 12532,
+        "features/structures": 30,
+        "other": 888,
+        "surface-field extraction": 26,
+        "terrain noise": 6003,
+        "tile construction": 984
+      },
+      "executionSamples": 21182,
+      "sampledAllocationWeightBytes": 106658801504,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 7791473900,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 200712367100,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 101086200,
+        "java.util.concurrent.ConcurrentHashMap$Node": 12525900
+      },
+      "recordingStart": "2026-09-09T16:57:00.547561600Z",
+      "recordingEnd": "2026-09-09T17:00:46.183046900Z",
+      "recordedSpanNanos": 225635485300,
+      "gcSumOfPausesNanos": 1405174600,
+      "compilationThreadNanos": 12088799300,
+      "monitorPathCounts": {
+        "other": 523,
+        "terrain cache call path": 1
+      },
+      "monitorPathBlockedThreadNanos": {
+        "other": 208604927200,
+        "terrain cache call path": 12525900
+      },
+      "parkPathCounts": {
+        "other": 27611,
+        "terrain wait outside ExactCache": 2766
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 3661038422700,
+        "terrain wait outside ExactCache": 217939276900
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 229,
+      "compilations": 61,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/baseline-original-V1.json"
+    },
+    {
+      "run": "baseline-original",
+      "version": "legacy",
+      "newFullSeconds": 9.0755873,
+      "monitorBlockedThreadNanos": {},
+      "sampledAllocationWeightBytes": 22805165968,
+      "executionSamples": 1849,
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 522,
+        "cache lookup": 30,
+        "erosion/filtering": 449,
+        "features/structures": 14,
+        "other": 68,
+        "terrain noise": 622,
+        "tile construction": 144
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "threadParks": {
+        "blockedThreadNanos": {
+          "other": 140920835500,
+          "terrain cache": 2750167600
+        },
+        "counts": {
+          "other": 1334,
+          "terrain cache": 33
+        }
+      },
+      "monitorCounts": {},
+      "monitorMaxNanos": {},
+      "monitorEnterEvents": 0,
+      "recordingStart": "2026-09-09T16:57:00.597772400Z",
+      "recordingEnd": "2026-09-09T17:01:18.012067700Z",
+      "recordedSpanNanos": 257414295300,
+      "gcSumOfPausesNanos": 113133100,
+      "compilationThreadNanos": 3550084700,
+      "monitorPathCounts": {},
+      "monitorPathBlockedThreadNanos": {},
+      "parkPathCounts": {
+        "other": 1334,
+        "terrain wait outside ExactCache": 33
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 140920835500,
+        "terrain wait outside ExactCache": 2750167600
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 9,
+      "compilations": 15,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/baseline-original-legacy.json"
+    },
+    {
+      "run": "baseline-repeat",
+      "version": "V1",
+      "newFullSeconds": 211.1963163,
+      "monitorEnterEvents": 1230,
+      "monitorMaxNanos": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 146272500,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 6340689200,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 16788400,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 7038200,
+        "java.lang.Object": 1136400,
+        "java.util.concurrent.ConcurrentHashMap$Node": 1443700
+      },
+      "monitorCounts": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 93,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 448,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 667,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 20,
+        "java.lang.Object": 1,
+        "java.util.concurrent.ConcurrentHashMap$Node": 1
+      },
+      "threadParks": {
+        "counts": {
+          "other": 27370,
+          "terrain cache": 2752
+        },
+        "blockedThreadNanos": {
+          "other": 3533481668000,
+          "terrain cache": 214250077600
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 544,
+        "biome resolver": 4,
+        "cache lookup": 41,
+        "climate geography sampling": 15,
+        "erosion/filtering": 12267,
+        "features/structures": 27,
+        "other": 1219,
+        "surface-field extraction": 16,
+        "terrain noise": 6472,
+        "tile construction": 930
+      },
+      "executionSamples": 21535,
+      "sampledAllocationWeightBytes": 106902491000,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 7043829900,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 217430948900,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 1765167800,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 35989800,
+        "java.lang.Object": 1136400,
+        "java.util.concurrent.ConcurrentHashMap$Node": 1443700
+      },
+      "recordingStart": "2026-09-09T21:19:07.212769300Z",
+      "recordingEnd": "2026-09-09T21:22:48.027003900Z",
+      "recordedSpanNanos": 220814234600,
+      "gcSumOfPausesNanos": 1359749600,
+      "compilationThreadNanos": 11692981400,
+      "monitorPathCounts": {
+        "other": 1229,
+        "terrain cache call path": 1
+      },
+      "monitorPathBlockedThreadNanos": {
+        "other": 226277072800,
+        "terrain cache call path": 1443700
+      },
+      "parkPathCounts": {
+        "other": 27370,
+        "terrain wait outside ExactCache": 2752
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 3533481668000,
+        "terrain wait outside ExactCache": 214250077600
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 231,
+      "compilations": 57,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/baseline-repeat-V1.json"
+    },
+    {
+      "run": "baseline-repeat",
+      "version": "legacy",
+      "newFullSeconds": 8.5899979,
+      "sampledAllocationWeightBytes": 44992721872,
+      "monitorBlockedThreadNanos": {
+        "jdk.jfr.internal.PlatformRecorder": 7073100
+      },
+      "monitorEnterEvents": 1,
+      "monitorMaxNanos": {
+        "jdk.jfr.internal.PlatformRecorder": 7073100
+      },
+      "monitorCounts": {
+        "jdk.jfr.internal.PlatformRecorder": 1
+      },
+      "threadParks": {
+        "counts": {
+          "other": 1288,
+          "terrain cache": 34
+        },
+        "blockedThreadNanos": {
+          "other": 131550605400,
+          "terrain cache": 2532698400
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 520,
+        "cache lookup": 43,
+        "erosion/filtering": 399,
+        "features/structures": 21,
+        "other": 69,
+        "terrain noise": 625,
+        "tile construction": 117
+      },
+      "executionSamples": 1794,
+      "recordingStart": "2026-09-09T21:19:07.264641Z",
+      "recordingEnd": "2026-09-09T21:24:25.495984200Z",
+      "recordedSpanNanos": 318231343200,
+      "gcSumOfPausesNanos": 138362800,
+      "compilationThreadNanos": 2794126700,
+      "monitorPathCounts": {
+        "other": 1
+      },
+      "monitorPathBlockedThreadNanos": {
+        "other": 7073100
+      },
+      "parkPathCounts": {
+        "other": 1288,
+        "terrain wait outside ExactCache": 34
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 131550605400,
+        "terrain wait outside ExactCache": 2532698400
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 5,
+      "compilations": 11,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/baseline-repeat-legacy.json"
+    },
+    {
+      "run": "baseline-extended",
+      "version": "V1",
+      "newFullSeconds": 247.7816504,
+      "monitorEnterEvents": 1100,
+      "monitorMaxNanos": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 172125000,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 6647729200,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 20471500,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 2618700,
+        "java.lang.Object": 1430500
+      },
+      "monitorCounts": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 98,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 529,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 461,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 11,
+        "java.lang.Object": 1
+      },
+      "threadParks": {
+        "counts": {
+          "other": 32029,
+          "terrain cache": 3231
+        },
+        "blockedThreadNanos": {
+          "other": 4220489123300,
+          "terrain cache": 250278064000
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 893,
+        "biome resolver": 7,
+        "cache lookup": 47,
+        "climate geography sampling": 13,
+        "erosion/filtering": 14246,
+        "features/structures": 28,
+        "other": 1319,
+        "surface-field extraction": 19,
+        "terrain noise": 7095,
+        "tile construction": 1192
+      },
+      "executionSamples": 24859,
+      "sampledAllocationWeightBytes": 120798609736,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.biome.CanonicalClimateGeography": 7848775700,
+        "com.gabou.atmospheregen.climate.PaBaselineClimateProvider": 239680049400,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 1372170000,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 24066400,
+        "java.lang.Object": 1430500
+      },
+      "recordingStart": "2026-09-09T22:12:09.478089200Z",
+      "recordingEnd": "2026-09-09T22:16:26.023211200Z",
+      "recordedSpanNanos": 256545122000,
+      "gcSumOfPausesNanos": 1611264000,
+      "compilationThreadNanos": 13449285600,
+      "monitorPathCounts": {
+        "other": 1100
+      },
+      "monitorPathBlockedThreadNanos": {
+        "other": 248926492000
+      },
+      "parkPathCounts": {
+        "other": 32029,
+        "terrain wait outside ExactCache": 3231
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 4220489123300,
+        "terrain wait outside ExactCache": 250278064000
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 263,
+      "compilations": 69,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/baseline-extended-V1.json"
+    },
+    {
+      "run": "baseline-extended",
+      "version": "legacy",
+      "newFullSeconds": 11.2840861,
+      "monitorMaxNanos": {
+        "jdk.jfr.internal.PlatformRecorder": 6268800
+      },
+      "monitorCounts": {
+        "jdk.jfr.internal.PlatformRecorder": 1
+      },
+      "threadParks": {
+        "counts": {
+          "other": 1686,
+          "terrain cache": 43
+        },
+        "blockedThreadNanos": {
+          "other": 174957234400,
+          "terrain cache": 3515891900
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 704,
+        "cache lookup": 52,
+        "erosion/filtering": 499,
+        "features/structures": 22,
+        "other": 76,
+        "terrain noise": 794,
+        "tile construction": 145
+      },
+      "executionSamples": 2292,
+      "sampledAllocationWeightBytes": 53153486432,
+      "monitorBlockedThreadNanos": {
+        "jdk.jfr.internal.PlatformRecorder": 6268800
+      },
+      "monitorEnterEvents": 1,
+      "recordingStart": "2026-09-09T22:12:09.528153500Z",
+      "recordingEnd": "2026-09-09T22:18:26.558105600Z",
+      "recordedSpanNanos": 377029952100,
+      "gcSumOfPausesNanos": 150465200,
+      "compilationThreadNanos": 4299729400,
+      "monitorPathCounts": {
+        "other": 1
+      },
+      "monitorPathBlockedThreadNanos": {
+        "other": 6268800
+      },
+      "parkPathCounts": {
+        "other": 1686,
+        "terrain wait outside ExactCache": 43
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 174957234400,
+        "terrain wait outside ExactCache": 3515891900
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 4,
+      "compilations": 17,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/baseline-extended-legacy.json"
+    },
+    {
+      "run": "optimized-original",
+      "version": "V1",
+      "newFullSeconds": 112.8832562,
+      "monitorEnterEvents": 13,
+      "monitorMaxNanos": {
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 15517400
+      },
+      "monitorCounts": {
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 13
+      },
+      "threadParks": {
+        "counts": {
+          "ExactCache single-flight": 3790,
+          "other": 22735,
+          "terrain cache": 56
+        },
+        "blockedThreadNanos": {
+          "ExactCache single-flight": 198313053500,
+          "other": 2794238607500,
+          "terrain cache": 4644583800
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 579,
+        "biome resolver": 1,
+        "cache lookup": 33,
+        "climate equations": 2,
+        "climate geography sampling": 11,
+        "erosion/filtering": 6292,
+        "features/structures": 25,
+        "other": 580,
+        "surface-field extraction": 20,
+        "terrain noise": 4898,
+        "tile construction": 637
+      },
+      "executionSamples": 13078,
+      "sampledAllocationWeightBytes": 102113470560,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 164080300
+      },
+      "recordingStart": "2026-09-09T18:10:49.727735600Z",
+      "recordingEnd": "2026-09-09T18:12:47.724580Z",
+      "recordedSpanNanos": 117996844400,
+      "gcSumOfPausesNanos": 1268922300,
+      "compilationThreadNanos": 12006402500,
+      "monitorPathCounts": {
+        "other": 13
+      },
+      "monitorPathBlockedThreadNanos": {
+        "other": 164080300
+      },
+      "parkPathCounts": {
+        "ExactCache wait without inner terrain frame": 1103,
+        "other": 22735,
+        "terrain wait inside ExactCache loader": 2687,
+        "terrain wait outside ExactCache": 56
+      },
+      "parkPathBlockedThreadNanos": {
+        "ExactCache wait without inner terrain frame": 67569385100,
+        "other": 2794238607500,
+        "terrain wait inside ExactCache loader": 130743668400,
+        "terrain wait outside ExactCache": 4644583800
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 226,
+      "compilations": 58,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/optimized-original-V1.json"
+    },
+    {
+      "run": "optimized-original",
+      "version": "legacy",
+      "newFullSeconds": 8.1655197,
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "threadParks": {
+        "blockedThreadNanos": {
+          "other": 189807273000,
+          "terrain cache": 2306744300
+        },
+        "counts": {
+          "other": 1360,
+          "terrain cache": 35
+        }
+      },
+      "monitorCounts": {},
+      "monitorMaxNanos": {},
+      "monitorEnterEvents": 0,
+      "monitorBlockedThreadNanos": {},
+      "sampledAllocationWeightBytes": 57629091584,
+      "executionSamples": 1830,
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 501,
+        "cache lookup": 32,
+        "erosion/filtering": 345,
+        "features/structures": 14,
+        "other": 259,
+        "terrain noise": 563,
+        "tile construction": 116
+      },
+      "recordingStart": "2026-09-09T18:10:49.778459400Z",
+      "recordingEnd": "2026-09-09T18:14:22.494318400Z",
+      "recordedSpanNanos": 212715859000,
+      "gcSumOfPausesNanos": 113658500,
+      "compilationThreadNanos": 2290643600,
+      "monitorPathCounts": {},
+      "monitorPathBlockedThreadNanos": {},
+      "parkPathCounts": {
+        "other": 1360,
+        "terrain wait outside ExactCache": 35
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 189807273000,
+        "terrain wait outside ExactCache": 2306744300
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 6,
+      "compilations": 9,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/optimized-original-legacy.json"
+    },
+    {
+      "run": "optimized-extended",
+      "version": "V1",
+      "newFullSeconds": 169.8338428,
+      "executionSamples": 21720,
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 720,
+        "biome resolver": 1,
+        "cache lookup": 82,
+        "climate equations": 1,
+        "climate geography sampling": 11,
+        "erosion/filtering": 9861,
+        "features/structures": 24,
+        "other": 1110,
+        "surface-field extraction": 41,
+        "terrain noise": 8854,
+        "tile construction": 1015
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "threadParks": {
+        "blockedThreadNanos": {
+          "ExactCache single-flight": 287531642600,
+          "other": 5105613967900,
+          "terrain cache": 6800732200
+        },
+        "counts": {
+          "ExactCache single-flight": 4178,
+          "other": 28167,
+          "terrain cache": 79
+        }
+      },
+      "monitorCounts": {
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 26,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 381,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 10,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 4,
+        "java.lang.Object": 2
+      },
+      "monitorMaxNanos": {
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 9643100,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 21086200,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 3145100,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 14631800,
+        "java.lang.Object": 1036900
+      },
+      "monitorEnterEvents": 423,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 51980400,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 1458431900,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 25177900,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 46121600,
+        "java.lang.Object": 2055700
+      },
+      "sampledAllocationWeightBytes": 116109365720,
+      "recordingStart": "2026-09-09T21:25:01.822247Z",
+      "recordingEnd": "2026-09-09T21:27:57.305580700Z",
+      "recordedSpanNanos": 175483333700,
+      "gcSumOfPausesNanos": 1745984400,
+      "compilationThreadNanos": 17167547800,
+      "monitorPathCounts": {
+        "ExactCache call path": 34,
+        "other": 389
+      },
+      "monitorPathBlockedThreadNanos": {
+        "ExactCache call path": 120226400,
+        "other": 1463541100
+      },
+      "parkPathCounts": {
+        "ExactCache wait without inner terrain frame": 1026,
+        "other": 28167,
+        "terrain wait inside ExactCache loader": 3152,
+        "terrain wait outside ExactCache": 79
+      },
+      "parkPathBlockedThreadNanos": {
+        "ExactCache wait without inner terrain frame": 87398736100,
+        "other": 5105613967900,
+        "terrain wait inside ExactCache loader": 200132906500,
+        "terrain wait outside ExactCache": 6800732200
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 243,
+      "compilations": 82,
+      "exactCacheMonitorClassBlockedThreadNanos": 51980400,
+      "detail": "profiles/optimized-extended-V1.json"
+    },
+    {
+      "run": "optimized-extended",
+      "version": "legacy",
+      "newFullSeconds": 10.4623092,
+      "monitorBlockedThreadNanos": {},
+      "monitorEnterEvents": 0,
+      "monitorMaxNanos": {},
+      "monitorCounts": {},
+      "threadParks": {
+        "counts": {
+          "other": 1769,
+          "terrain cache": 42
+        },
+        "blockedThreadNanos": {
+          "other": 219237633900,
+          "terrain cache": 3291304200
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 645,
+        "cache lookup": 39,
+        "erosion/filtering": 534,
+        "features/structures": 16,
+        "other": 281,
+        "terrain noise": 725,
+        "tile construction": 144
+      },
+      "executionSamples": 2384,
+      "sampledAllocationWeightBytes": 54814052296,
+      "recordingStart": "2026-09-09T21:25:01.873535700Z",
+      "recordingEnd": "2026-09-09T21:29:25.394807400Z",
+      "recordedSpanNanos": 263521271700,
+      "gcSumOfPausesNanos": 150616300,
+      "compilationThreadNanos": 3122342400,
+      "monitorPathCounts": {},
+      "monitorPathBlockedThreadNanos": {},
+      "parkPathCounts": {
+        "other": 1769,
+        "terrain wait outside ExactCache": 42
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 219237633900,
+        "terrain wait outside ExactCache": 3291304200
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 12,
+      "compilations": 13,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/optimized-extended-legacy.json"
+    },
+    {
+      "run": "optimized-24",
+      "version": "V1",
+      "newFullSeconds": 152.3670223,
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 722,
+        "biome resolver": 1,
+        "cache lookup": 73,
+        "climate geography sampling": 22,
+        "erosion/filtering": 9831,
+        "features/structures": 35,
+        "other": 1152,
+        "surface-field extraction": 40,
+        "terrain noise": 5339,
+        "tile construction": 814
+      },
+      "executionSamples": 18029,
+      "sampledAllocationWeightBytes": 115711403944,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 1099103000,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 28539257000,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 623096500,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 82622800,
+        "java.lang.Object": 2004900,
+        "java.util.concurrent.ConcurrentHashMap$Node": 287582900,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 28256000
+      },
+      "monitorEnterEvents": 10341,
+      "monitorMaxNanos": {
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 27644100,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 42095700,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 42276400,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 12200200,
+        "java.lang.Object": 2004900,
+        "java.util.concurrent.ConcurrentHashMap$Node": 27060000,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 3848400
+      },
+      "monitorCounts": {
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 253,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 9924,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 97,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 21,
+        "java.lang.Object": 1,
+        "java.util.concurrent.ConcurrentHashMap$Node": 29,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 16
+      },
+      "threadParks": {
+        "blockedThreadNanos": {
+          "ExactCache single-flight": 265056574700,
+          "other": 7482068950200,
+          "terrain cache": 8371673000
+        },
+        "counts": {
+          "ExactCache single-flight": 4367,
+          "other": 76119,
+          "terrain cache": 85
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "recordingStart": "2026-09-09T21:30:15.553956300Z",
+      "recordingEnd": "2026-09-09T21:32:53.769077800Z",
+      "recordedSpanNanos": 158215121500,
+      "gcSumOfPausesNanos": 1442591100,
+      "compilationThreadNanos": 40155503500,
+      "monitorPathCounts": {
+        "ExactCache call path": 319,
+        "other": 9985,
+        "terrain cache call path": 37
+      },
+      "monitorPathBlockedThreadNanos": {
+        "ExactCache call path": 1522537100,
+        "other": 28835084000,
+        "terrain cache call path": 304302000
+      },
+      "parkPathCounts": {
+        "ExactCache wait without inner terrain frame": 1222,
+        "other": 76119,
+        "terrain wait inside ExactCache loader": 3145,
+        "terrain wait outside ExactCache": 85
+      },
+      "parkPathBlockedThreadNanos": {
+        "ExactCache wait without inner terrain frame": 89315206600,
+        "other": 7482068950200,
+        "terrain wait inside ExactCache loader": 175741368100,
+        "terrain wait outside ExactCache": 8371673000
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 240,
+      "compilations": 159,
+      "exactCacheMonitorClassBlockedThreadNanos": 1099103000,
+      "detail": "profiles/optimized-24-V1.json"
+    },
+    {
+      "run": "optimized-24",
+      "version": "legacy",
+      "newFullSeconds": 10.6536645,
+      "threadParks": {
+        "counts": {
+          "other": 3840,
+          "terrain cache": 39
+        },
+        "blockedThreadNanos": {
+          "other": 757924313900,
+          "terrain cache": 2852546400
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 584,
+        "cache lookup": 47,
+        "erosion/filtering": 507,
+        "features/structures": 12,
+        "other": 311,
+        "terrain noise": 269,
+        "tile construction": 76
+      },
+      "executionSamples": 1806,
+      "sampledAllocationWeightBytes": 39738175576,
+      "monitorBlockedThreadNanos": {
+        "java.util.concurrent.ConcurrentHashMap$Node": 139359200,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 422007900
+      },
+      "monitorEnterEvents": 34,
+      "monitorMaxNanos": {
+        "java.util.concurrent.ConcurrentHashMap$Node": 21135000,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 94636400
+      },
+      "monitorCounts": {
+        "java.util.concurrent.ConcurrentHashMap$Node": 25,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 9
+      },
+      "recordingStart": "2026-09-09T21:30:15.621072700Z",
+      "recordingEnd": "2026-09-09T21:33:52.992104600Z",
+      "recordedSpanNanos": 217371031900,
+      "gcSumOfPausesNanos": 118833000,
+      "compilationThreadNanos": 3620447300,
+      "monitorPathCounts": {
+        "other": 9,
+        "terrain cache call path": 25
+      },
+      "monitorPathBlockedThreadNanos": {
+        "other": 422007900,
+        "terrain cache call path": 139359200
+      },
+      "parkPathCounts": {
+        "other": 3840,
+        "terrain wait outside ExactCache": 39
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 757924313900,
+        "terrain wait outside ExactCache": 2852546400
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 11,
+      "compilations": 18,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/optimized-24-legacy.json"
+    },
+    {
+      "run": "optimized-48",
+      "version": "V1",
+      "newFullSeconds": 134.6590886,
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "threadParks": {
+        "blockedThreadNanos": {
+          "ExactCache single-flight": 215700510000,
+          "other": 12675441683600,
+          "terrain cache": 5077581200
+        },
+        "counts": {
+          "ExactCache single-flight": 4134,
+          "other": 117582,
+          "terrain cache": 62
+        }
+      },
+      "monitorCounts": {
+        "[I": 1,
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 128,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 16201,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 129,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 9,
+        "java.lang.Object": 5,
+        "java.util.concurrent.ConcurrentHashMap$Node": 9,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 14
+      },
+      "monitorMaxNanos": {
+        "[I": 1613600,
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 39587400,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 297130700,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 57476400,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 8332500,
+        "java.lang.Object": 7586100,
+        "java.util.concurrent.ConcurrentHashMap$Node": 2235000,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 31886900
+      },
+      "monitorEnterEvents": 16496,
+      "monitorBlockedThreadNanos": {
+        "[I": 1613600,
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 1322219700,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 73990863900,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 2612641600,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 26019100,
+        "java.lang.Object": 16468300,
+        "java.util.concurrent.ConcurrentHashMap$Node": 15559400,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 220203200
+      },
+      "sampledAllocationWeightBytes": 115242416784,
+      "executionSamples": 15287,
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 726,
+        "cache lookup": 91,
+        "climate geography sampling": 15,
+        "erosion/filtering": 8022,
+        "features/structures": 30,
+        "other": 685,
+        "surface-field extraction": 26,
+        "terrain noise": 4987,
+        "tile construction": 705
+      },
+      "recordingStart": "2026-09-09T21:34:54.327885600Z",
+      "recordingEnd": "2026-09-09T21:37:14.536371800Z",
+      "recordedSpanNanos": 140208486200,
+      "gcSumOfPausesNanos": 1505109900,
+      "compilationThreadNanos": 54941989900,
+      "monitorPathCounts": {
+        "ExactCache call path": 232,
+        "other": 16250,
+        "terrain cache call path": 14
+      },
+      "monitorPathBlockedThreadNanos": {
+        "ExactCache call path": 2603402900,
+        "other": 75579724500,
+        "terrain cache call path": 22461400
+      },
+      "parkPathCounts": {
+        "ExactCache wait without inner terrain frame": 981,
+        "other": 117582,
+        "terrain wait inside ExactCache loader": 3153,
+        "terrain wait outside ExactCache": 62
+      },
+      "parkPathBlockedThreadNanos": {
+        "ExactCache wait without inner terrain frame": 61987374600,
+        "other": 12675441683600,
+        "terrain wait inside ExactCache loader": 153713135400,
+        "terrain wait outside ExactCache": 5077581200
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 270,
+      "compilations": 195,
+      "exactCacheMonitorClassBlockedThreadNanos": 1322219700,
+      "detail": "profiles/optimized-48-V1.json"
+    },
+    {
+      "run": "optimized-48",
+      "version": "legacy",
+      "newFullSeconds": 10.1917538,
+      "monitorMaxNanos": {
+        "java.util.concurrent.ConcurrentHashMap$Node": 29085200,
+        "jdk.jfr.internal.PlatformRecorder": 6660400,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 18485400
+      },
+      "monitorCounts": {
+        "java.util.concurrent.ConcurrentHashMap$Node": 49,
+        "jdk.jfr.internal.PlatformRecorder": 1,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 46
+      },
+      "threadParks": {
+        "counts": {
+          "other": 5391,
+          "terrain cache": 38
+        },
+        "blockedThreadNanos": {
+          "other": 1201174547800,
+          "terrain cache": 3164947400
+        }
+      },
+      "methodology": "JFR profile settings; first recognized subsystem from leaf; sample counts are not exact CPU time; allocation weights are estimates",
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 566,
+        "cache lookup": 44,
+        "erosion/filtering": 560,
+        "features/structures": 25,
+        "other": 275,
+        "terrain noise": 226,
+        "tile construction": 82
+      },
+      "executionSamples": 1778,
+      "sampledAllocationWeightBytes": 39049643336,
+      "monitorBlockedThreadNanos": {
+        "java.util.concurrent.ConcurrentHashMap$Node": 682791000,
+        "jdk.jfr.internal.PlatformRecorder": 6660400,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 404268700
+      },
+      "monitorEnterEvents": 96,
+      "recordingStart": "2026-09-09T21:34:54.399167900Z",
+      "recordingEnd": "2026-09-09T21:38:07.370720500Z",
+      "recordedSpanNanos": 192971552600,
+      "gcSumOfPausesNanos": 147020900,
+      "compilationThreadNanos": 5580696700,
+      "monitorPathCounts": {
+        "other": 47,
+        "terrain cache call path": 49
+      },
+      "monitorPathBlockedThreadNanos": {
+        "other": 410929100,
+        "terrain cache call path": 682791000
+      },
+      "parkPathCounts": {
+        "other": 5391,
+        "terrain wait outside ExactCache": 38
+      },
+      "parkPathBlockedThreadNanos": {
+        "other": 1201174547800,
+        "terrain wait outside ExactCache": 3164947400
+      },
+      "durationCaveat": "Monitor/park and compilation durations sum across threads and may exceed wall time; park stacks containing ExactCache include nested terrain waits, not solely follower waits. Events below recording thresholds are absent. GC sums use GarbageCollection.sumOfPauses, not overlapping phase events.",
+      "garbageCollections": 11,
+      "compilations": 22,
+      "exactCacheMonitorClassBlockedThreadNanos": 0,
+      "detail": "profiles/optimized-48-legacy.json"
+    }
+  ],
+  "acquisitionPairs": [
+    {
+      "version": "baseline",
+      "pair": 1,
+      "executionSamples": 13286,
+      "subsystemSamples": {
+        "cache lookup": 9,
+        "climate equations": 1,
+        "climate geography sampling": 26,
+        "erosion/filtering": 7346,
+        "other": 23,
+        "surface-field extraction": 19,
+        "terrain noise": 5101,
+        "tile construction": 761
+      }
+    },
+    {
+      "version": "baseline",
+      "pair": 2,
+      "executionSamples": 12707,
+      "subsystemSamples": {
+        "cache lookup": 7,
+        "climate geography sampling": 36,
+        "erosion/filtering": 3355,
+        "other": 9,
+        "surface-field extraction": 6,
+        "terrain noise": 5528,
+        "tile construction": 3766
+      }
+    },
+    {
+      "version": "baseline",
+      "pair": 3,
+      "executionSamples": 14986,
+      "subsystemSamples": {
+        "cache lookup": 12,
+        "climate geography sampling": 27,
+        "erosion/filtering": 8006,
+        "other": 18,
+        "surface-field extraction": 12,
+        "terrain noise": 6030,
+        "tile construction": 881
+      }
+    },
+    {
+      "version": "optimized",
+      "pair": 1,
+      "executionSamples": 10047,
+      "subsystemSamples": {
+        "cache lookup": 10,
+        "climate equations": 1,
+        "climate geography sampling": 24,
+        "erosion/filtering": 4044,
+        "other": 9,
+        "surface-field extraction": 12,
+        "terrain noise": 5321,
+        "tile construction": 626
+      }
+    },
+    {
+      "version": "optimized",
+      "pair": 2,
+      "executionSamples": 9158,
+      "subsystemSamples": {
+        "cache lookup": 6,
+        "climate equations": 1,
+        "climate geography sampling": 24,
+        "erosion/filtering": 3871,
+        "other": 15,
+        "surface-field extraction": 12,
+        "terrain noise": 4726,
+        "tile construction": 503
+      }
+    },
+    {
+      "version": "optimized",
+      "pair": 3,
+      "executionSamples": 11058,
+      "subsystemSamples": {
+        "cache lookup": 8,
+        "climate geography sampling": 25,
+        "erosion/filtering": 4357,
+        "other": 17,
+        "surface-field extraction": 19,
+        "terrain noise": 6020,
+        "tile construction": 612
+      }
+    }
+  ],
+  "methodology": "First recognized subsystem from sampled stack leaf. Counts describe recorded execution samples, not exact CPU percentages. FULL recordings include output hashing and repeated quart microbenchmark between/after timed chunks; timings exclude those activities. Durations of parks/monitors/compilation sum across threads and cannot be divided by wall time as CPU cost. Original recording predates explicit 1 ms monitor threshold. Later recordings use 1 ms; installed JDK17 profile.jfc ThreadPark threshold is 10 ms (original JavaMonitorEnter also 10 ms).",
+  "attributionCaveat": "An ExactCache frame below a park includes loader waits on terrain as well as same-key followers. The monitor class identifies locking the ExactCache itself; call-path attribution is an upper bound including nested loader locks."
+}

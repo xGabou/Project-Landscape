@@ -1,0 +1,22 @@
+[
+  {
+    "project": "Landscape",
+    "path": "G:\\mods\\Undisclosed-PA-Addon-phase2a\\build\\libs\\reterraforged-forge-1.20.1-0.0.6.jar",
+    "bytes": 1368036,
+    "sha256": "18712f555d0f867f874ead1a3cb9f0b123360d24f3df99fccdd3288dc8b923f5",
+    "companionClassesBundled": false,
+    "reproductionClassesBundled": false,
+    "forecastRadiusOverrideBundled": false,
+    "reproductionMixinConfigurationBundled": false
+  },
+  {
+    "project": "PA",
+    "path": "G:\\Project-Atmosphere-phase2a\\build\\libs\\Forge-projectatmosphere-0.9.1.1-alpha.jar",
+    "bytes": 14574092,
+    "sha256": "17abf6032737feb8c1527c2b5cee72b35d1ae15180d000bd6e2c087db3d8f57b",
+    "companionClassesBundled": null,
+    "reproductionClassesBundled": false,
+    "forecastRadiusOverrideBundled": false,
+    "reproductionMixinConfigurationBundled": false
+  }
+]

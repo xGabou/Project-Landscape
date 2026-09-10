@@ -1,0 +1,86 @@
+{
+  "commitsThroughEvidenceParent": [
+    {
+      "sha": "a71807ef899eba896142eed66b3d426797723394",
+      "subject": "test: add Task 6B canonical acquisition and paired FULL benchmark harnesses"
+    },
+    {
+      "sha": "bb4ac6007782e0aa4d00412e5d89fe40f6d86d95",
+      "subject": "test: isolate headless benchmark mod from client reproduction classes"
+    },
+    {
+      "sha": "89e34f5251864c8bb7b3041197567e48e7d6a68e",
+      "subject": "test: capture Task 6 baseline profiles and exact erosion reuse experiment"
+    },
+    {
+      "sha": "ab4120cd3213d32c50018e3ad7f5615bc9a029b1",
+      "subject": "perf: reuse exact invariant erosion strength within V1 tile filtering"
+    },
+    {
+      "sha": "d5e4222fcfc495419dba80c891b278251e0982b8",
+      "subject": "perf: share world-scoped V1 geography and climate services with disposal"
+    },
+    {
+      "sha": "65ed78a35d019106340cec1b9a017d54d1d1893c",
+      "subject": "perf: coordinate exact cache misses per key and reject disposed distance queries"
+    },
+    {
+      "sha": "cee8f113d9071039cbd1318eefe83a3f0ae8fff8",
+      "subject": "perf: reuse exact surface geography and biome winners without caching cave delegation"
+    },
+    {
+      "sha": "502bb208dc823bcbab672c7c7b4bbd9f26f58d96",
+      "subject": "test: add final worker, legacy, locality and runtime disposal gates"
+    },
+    {
+      "sha": "8a2e36c0bd0ea6c32247df7911f5e1462ad5e82c",
+      "subject": "test: isolate locality corpus and retain standalone Task 1B protocol"
+    },
+    {
+      "sha": "3303b01b30a726ab7053be8c4085bdace126d91d",
+      "subject": "test: verify exact V1 reference tiles across all five worker counts"
+    },
+    {
+      "sha": "4442abe76598ad351ff8350bcc2b7d036c548661",
+      "subject": "test: measure pending capacity and validate runtime disposal and FULL outputs"
+    },
+    {
+      "sha": "f3ba0a141d3861bd80e046ca39695bfd2bcafbda",
+      "subject": "test: serialize remaining benchmark gates and isolate cache measurements"
+    },
+    {
+      "sha": "90f9f0fdfd04abc888f273e9871e7d557a4cf911",
+      "subject": "test: attribute recorded cache parking separately from monitor contention"
+    },
+    {
+      "sha": "dd9d8f78b8567893c1a9561f99ba718a96d3ea98",
+      "subject": "test: extend FULL corpus with verified mountain and coastal margin fixtures"
+    },
+    {
+      "sha": "1718d15e9cce44a256adcd47f619173f96969e43",
+      "subject": "test: retain three paired acquisition runs with exact raw climate comparisons"
+    },
+    {
+      "sha": "d102ce235e192fed27f712997a25135eb13f37eb",
+      "subject": "test: assert cached biome holder reference identity against direct registry lookup"
+    },
+    {
+      "sha": "ef754746eeced5f4704751d16a56feb3d8289023",
+      "subject": "test: retain exact Task 4 geography Task 5 climate and Task 6 biome regressions"
+    },
+    {
+      "sha": "8b7e79ae744dc855989c4b28cf2ee13e4051adfd",
+      "subject": "test: retain final FULL runtime measurements and exact canonical outputs"
+    },
+    {
+      "sha": "26d04eb9a1be07bd6978e811bcf8fb06c3cc9861",
+      "subject": "test: close legacy Task 1B Holder identity and lifecycle regression gates"
+    },
+    {
+      "sha": "eaa112fe89addee9b53350574514055b7664022e",
+      "subject": "test: characterize FULL variance terrain waits and bounded cache memory"
+    }
+  ],
+  "scope": "Task 6B branch commits after baseline a3140a5. Final documentation/manifest commit necessarily follows this inventory; obtain complete final list with git log --reverse --format=%H a3140a5..task6b-performance. No squash.",
+  "productionTree": "c9c64c19ecf2b34af301c17c158a38c66249e67a"
+}

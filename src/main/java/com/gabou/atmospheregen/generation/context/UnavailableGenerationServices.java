@@ -9,7 +9,7 @@ import com.gabou.atmospheregen.api.geography.GeographyProvider;
 public final class UnavailableGenerationServices {
     private UnavailableGenerationServices() {}
     public static GeographyProvider plannedGeography() {
-        return (x, z) -> { throw new UnsupportedOperationException("PA_GEOGRAPHY_V1 geography is not implemented; select LEGACY_RTF_V0"); };
+        return (x, z) -> { throw new UnsupportedOperationException("Unbound planned geography has no backend; V1 requires an installed world-scoped PaGeographyProvider"); };
     }
     public static BaselineClimateProvider baselineClimate() {
         return (x, z) -> { throw new UnsupportedOperationException("Physical baseline climate is not implemented; legacy hints are not ClimateBaseline"); };

@@ -1,0 +1,1536 @@
+{
+  "status": "PASS",
+  "productionSourceTree": "c9c64c19ecf2b34af301c17c158a38c66249e67a",
+  "hashMethod": "SHA-256; text CRLF normalized to LF for cross-platform checkout stability, binary exact. Manifest excludes itself; final Git commit is reported externally to avoid self-reference.",
+  "files": [
+    {
+      "path": "docs/task6b/CACHE_ARCHITECTURE.md",
+      "sha256": "89ebff9db5bec1157e8520388cdd28f964e648865ea28a1d88dd2b8437d3bb84"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-01/climate_heavy.json",
+      "sha256": "63d7fc9cec31a9a66d02f919745d40f24e170a6eada4f7ff99394c1de98160db"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-01/completion.json",
+      "sha256": "a291827f648b4d23b8ad5b9facf90b06a2d78049551bc25cc70492c10c4b5ed4"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-01/interleaved_regions.json",
+      "sha256": "d408269a643cc74359a26a3f9c5c21af0573ae3707a7f96feae14069f514629b"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-01/jfr_summary.json",
+      "sha256": "6fdfca1518e9b8af90739d7d1df05c80cd09785d6943ca6b5cff95a86de2d497"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-01/microbenchmarks.json",
+      "sha256": "650a0e36c94bd7ae1723868db47f9e8889f62046c06767046375420ca5dfc073"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-01/scattered_generation.json",
+      "sha256": "329e7a2c538bc0459121d358a3f06df250ff42ee5d03f4013ce4d87a3d11fb28"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-01/sequential_generation.json",
+      "sha256": "262568dd8aaedc08aed60d8af465e5bbcc6b9b64b900f4cbb8c7228d2601e6e9"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-01/spawn_expansion.json",
+      "sha256": "64501400d24e72fbcade56368ab327a9afb622c0514b911347225708f6ad6ff0"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-02/climate_heavy.json",
+      "sha256": "791c0f8b8dfceddb0df4b095f039213620c6b50faf0da3be53532b2731e4066e"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-02/completion.json",
+      "sha256": "314273e4314cf7a7d9b14b6fd474e642782001051ee57b69da0734aa90ffc0ae"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-02/interleaved_regions.json",
+      "sha256": "27f640df3c53ba87e601f565ecd1229038a004daeca72d0b7069b7224f6a2983"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-02/jfr_summary.json",
+      "sha256": "fb3b7399333f6750f1693f56c8c1d87badcee0b572dce438938e66ccf355f017"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-02/microbenchmarks.json",
+      "sha256": "6112767af3a8afe4d51c3a2d6ffe30e6f6ca2e8744d1f238d8848aa9d87e5120"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-02/scattered_generation.json",
+      "sha256": "beae378eeb84d9ee8154be544ac6b909b712552fc9dfa44de252a853fc6ca444"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-02/sequential_generation.json",
+      "sha256": "30dda05af35669be63e746e80ac7a414690d0f4b822910fd58ab76cf254e99c8"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-02/spawn_expansion.json",
+      "sha256": "de2a0b902825317749709da9f150fcb9fe09bfc0d59f194c557003fdee6efd25"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-03/climate_heavy.json",
+      "sha256": "11a66763f57d86f638f3779de3df3f74affe910eddb72e125f6a4c67bdeda34a"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-03/completion.json",
+      "sha256": "a291827f648b4d23b8ad5b9facf90b06a2d78049551bc25cc70492c10c4b5ed4"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-03/interleaved_regions.json",
+      "sha256": "88b641b1b5d4ce26d4f7f5083293ded85a2eb5ce34b3d6c87c13cf819799783c"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-03/jfr_summary.json",
+      "sha256": "617a0d5a59d0943c378298c25af2af2055c8a6a3f50cdb40d1a320da61ac05c7"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-03/microbenchmarks.json",
+      "sha256": "97df79cb8384410e4f8f2b42dac8cbd3b573501649e1ddb898a50416ecc64b0c"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-03/scattered_generation.json",
+      "sha256": "750356aa0bddafa3be8b83aba017e311568cfc0d58e25814c55020ae0c1ed6d0"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-03/sequential_generation.json",
+      "sha256": "35cfc0652d6b2fa9c38b5957d02212c3950aa9346503f23c643a7be07087ea7f"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/baseline-03/spawn_expansion.json",
+      "sha256": "06fb72e0a39751161db56279735badb0557faa7922b884ee82072e70b0739591"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-01/climate_heavy.json",
+      "sha256": "7090386535bfe96289e918bc9339d2deb1f15dde2feea89ddc27aeaa3446432c"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-01/completion.json",
+      "sha256": "819466b835efbaf63b90a71e54146ad317ba6f30778d1f3fd619b3a5f3f04e12"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-01/interleaved_regions.json",
+      "sha256": "63e199af54a3a04202ddcddd6adabfe542910a78afb9548ae193909c9f181672"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-01/jfr_summary.json",
+      "sha256": "f07194f63c97f3e9633fd58567c2c13336052a213e92b017b1b17a54574417cf"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-01/microbenchmarks.json",
+      "sha256": "a587c3a64a5224705d85e2a4a0b9c6482aec673d4eb07c6480307ad4ee317863"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-01/scattered_generation.json",
+      "sha256": "ce179f3fc4ca2e02f08996fe84b891e034f72e60299c9a6790df8c6130d22d8e"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-01/sequential_generation.json",
+      "sha256": "bae5eecc6d494b8d2f6fd21b487fe48c8843253b3b99884f95bd258cd9c41c63"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-01/spawn_expansion.json",
+      "sha256": "bfc056fc6b48e509cb9e641f011fa5da28c4247bdcd74b9a16afc9b21e4b8f8b"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-02/climate_heavy.json",
+      "sha256": "a74288072c2f5aa435e7984454a1b47377537ba36c6cdc2d6354a068bc23aa2b"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-02/completion.json",
+      "sha256": "a1c18e3c0bf5c121bcbf5b0c5339ca0a4ce292b5680de6a2aa723e093bc14178"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-02/interleaved_regions.json",
+      "sha256": "6b48e7a7e032160c8f142d3decd30db2cc9011ed3db3236510e4e113dc1812a0"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-02/jfr_summary.json",
+      "sha256": "2e5b86b71bcc1ce9cd0031877bf59fc22760ebe35bfd8214b350515805b44d0e"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-02/microbenchmarks.json",
+      "sha256": "0ad4b18cde69ebb88214eb2dc7596df89dcfc7ef4de8e34d23b65dbcb18bad94"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-02/scattered_generation.json",
+      "sha256": "123169407e5d5206f75126f7afdc489b1863afd4e617012ffbbf04128bd26d7b"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-02/sequential_generation.json",
+      "sha256": "e45c6c04bcc8ec70083215dacfd92b3a3b86ad8bb169078e49f3150845cf1d13"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-02/spawn_expansion.json",
+      "sha256": "70993efc21e7d8f58eceb26c1716ddbe59fbc60d25431fb1f169f50cffa37dd2"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-03/climate_heavy.json",
+      "sha256": "1aef95f1f32384e8402c90f79db1b1b4a58182e741d86d4870df09555d57c900"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-03/completion.json",
+      "sha256": "a291827f648b4d23b8ad5b9facf90b06a2d78049551bc25cc70492c10c4b5ed4"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-03/interleaved_regions.json",
+      "sha256": "5e23d1f973002a6fb6979dcd088357c6a1a0596955a1eda86111cdefa8c76e3f"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-03/jfr_summary.json",
+      "sha256": "938a801c066381020982b0fb1f12ccad28b6cf102ec6eb59aab9e2dbb016069e"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-03/microbenchmarks.json",
+      "sha256": "c698244355fc8ca7108c71d8df2f57833c6e21344dc968b9e09bcef8a34f3410"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-03/scattered_generation.json",
+      "sha256": "9f1d2b583956402a6fe6bb07641bb8f2ebbd4bd0d3faf0ce075642e7cb0a4097"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-03/sequential_generation.json",
+      "sha256": "7276107fd799b097f2f1a5388ee9043ead360c4ce080a9b521ea2d3cceacbf97"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition/optimized-03/spawn_expansion.json",
+      "sha256": "103c89ba44d47918b3a43e65e8412f3f583c5a491661c636e46ef7ca81f8f96e"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition-pair-01/baseline_benchmark.json",
+      "sha256": "6e2ae9ffc141988c255e44fd7ceb1cf0d73e8e43d21f548db89b4f2756dc5fd2"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition-pair-01/climate_heavy.json",
+      "sha256": "ba2a5023eefe18d696be7c451256c3f7baaac9153e88d8f96105bfab2a37e1ac"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition-pair-01/interleaved_regions.json",
+      "sha256": "a2288bc9da1bad367dc70ff8ddf1cc96602e6f533718d2cabc35703a00dcdc57"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition-pair-01/optimized_benchmark.json",
+      "sha256": "df5333b53e515fde2a653228b2be477e5e468e8a81053447e964f16752c4d66c"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition-pair-01/paired_comparison.json",
+      "sha256": "b71acf2ddfadd556d7be65e8fda0b60aabec3bc70dd148aef8312f3697c50238"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition-pair-01/scattered_generation.json",
+      "sha256": "6a78227251f40e02bf8c51d18feeebf069a20bd013797435a6afbb03695c51e0"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition-pair-01/sequential_generation.json",
+      "sha256": "8e86858b40b0cf9c49acc5b6a5d0cb595849b4f22f21f911f1a807a79b537b44"
+    },
+    {
+      "path": "docs/task6b/evidence/acquisition-pair-01/spawn_expansion.json",
+      "sha256": "8958ade37b1078fe6857a2292e10dc560dbe6811ccd4eb7dec4347d7ba1158b8"
+    },
+    {
+      "path": "docs/task6b/evidence/already_loaded_chunks.json",
+      "sha256": "1b96cd85443d1204cb2dae87524c873a60f1195c742f1ba579afb9579632d284"
+    },
+    {
+      "path": "docs/task6b/evidence/baseline_benchmark.json",
+      "sha256": "932dfddfec0dbf8e99026fb845eeba1a4ebdd4bd6c09aeb43c8d753fd210eb2d"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/descriptor_validation.json",
+      "sha256": "99b0388cd5462ed020eaa943314a0067c6e12cdec2afb6c92b426795c92c672d"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/determinism.json",
+      "sha256": "aa2c4afeffb90f723df1ff7d707d65ba499d2c2ee682eb07c8bc5eb338815226"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/manifest.json",
+      "sha256": "3a0a0cdb86d9a3d3838a536ef9cca55f6ffb8c51b7bb0d70904dab418be5f22b"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/orographic_biome_transect.csv",
+      "sha256": "af99ad4e247587cb914886f7bb89f61f21879ba6b368a5fa14b3c7f770184709"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/resolver_performance.json",
+      "sha256": "65bab5f78b2291eb44106727160b1da06d195bf03a6e40af78cc6b3d8d4e8d12"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/semantic_assertions.json",
+      "sha256": "f951ed238ec655dd219cb1dd9b80d41b9f532d9c24141a244d9049d1c798bf99"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/synthetic_elevation_transect.csv",
+      "sha256": "2df5732bb2490411794d222d32b416fa82bcffbb59122445d551b5bd67617a2a"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/synthetic_moisture_transect.csv",
+      "sha256": "e67254f5575cb6d8a0565918e85b0a0122535625e9ea0f628ee8d01851bbbbe3"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/synthetic_temperature_transect.csv",
+      "sha256": "d72bb4dcef22419207048808dbb56050e8766effb37ad1324d9bce362d80b96d"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/unreachable_descriptors.json",
+      "sha256": "650728b4f9f40fc6ba78037d79d37f59dc96acd1403fc3c81f16474d92cc2cd7"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/validation_summary.json",
+      "sha256": "84383ede516b8a08ea567e5885eaae8149c69a58201e24cd5dd7c94e4ce3d7ae"
+    },
+    {
+      "path": "docs/task6b/evidence/biome-fixtures/vanilla_biome_catalog.json",
+      "sha256": "b546d12ad6560f784954139c650d5923b6dd108e8cce1a621bedc6cb165d85c8"
+    },
+    {
+      "path": "docs/task6b/evidence/biome_regression.json",
+      "sha256": "f02d93b4b656a6c7c3b4acc31959c40f3008788fbecd29cf13ae6b5e170c1905"
+    },
+    {
+      "path": "docs/task6b/evidence/build_verification.json",
+      "sha256": "82921d4bb07811d172debd7f701c288f31a3676bc595a080a651c6748c020ac7"
+    },
+    {
+      "path": "docs/task6b/evidence/cache_concurrency.json",
+      "sha256": "d72a028ebb6886a42f40cb960727a3176026ccac2424ec5dffb867afa4fc959f"
+    },
+    {
+      "path": "docs/task6b/evidence/cache_concurrency_telemetry.json",
+      "sha256": "63207758f9f8d3fd8a8e2437d49ee16a7e9d834655c766592839d89d4810c975"
+    },
+    {
+      "path": "docs/task6b/evidence/cache_memory_summary.json",
+      "sha256": "bf33392a65f594753a7283ef0e60ccfc0317d2e3da36d95cf23e860b4b8e41c7"
+    },
+    {
+      "path": "docs/task6b/evidence/canonical_determinism.json",
+      "sha256": "68b80093807a183f07fe58c4f32125f746db40c0256705aefa22914e04fd668d"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/climate_distribution.csv",
+      "sha256": "45bfcecdef20f83a5b672184d04277e7444e23463dc3cffa5d8e23752fac1a8a"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/climate_transects.csv",
+      "sha256": "fc1b501181169fbccb316f6b8447e7b5b9c042506cf9cffdcaddbb45103da05f"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/completion.json",
+      "sha256": "0d7a1af848fe5cda76147a4f59cc9b8c0e81b49d096de2195e0479e93e7e41d2"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/configuration.json",
+      "sha256": "bcf427b2109e5ab94c998067d3719e1b7661e1c556424d7f74284310ff73972b"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/determinism_digests.csv",
+      "sha256": "d5439f7d9ad546fbb2e888fbbd115693a7b4f80f948ff162465940c5dc08e85f"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/multi_range.csv",
+      "sha256": "8a6f44e02183173115890b1ee433bee3957c04926cfd97762daeb7842c274a7f"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/rainfall_fixtures.csv",
+      "sha256": "5118412d4e788d40d40265895f144bbdde5d0f93e5c409b060ef6995db9ad7ca"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/seed_divergence.json",
+      "sha256": "9161c1bc9591121025241074bec5cb20c1595a3d84465f72113ccd340faf5e2e"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/synthetic_orographic.csv",
+      "sha256": "d385e9d97144e43dc0f5112209c054960cdeb474cbb69a3b3959ab4172e695a2"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/synthetic_temperature.csv",
+      "sha256": "05dcb682f0bf10cb389de2e4c8c4929a1c4106ddd8d0b8723b45aa066159b282"
+    },
+    {
+      "path": "docs/task6b/evidence/climate-fixtures/wind_reversal.csv",
+      "sha256": "d38e690b37763b669f73064c557d6897967792f2d2175934fb2fb2460b9e9cbd"
+    },
+    {
+      "path": "docs/task6b/evidence/climate_heavy.json",
+      "sha256": "2fd6f8508f1e4146c8af286663a69fbcc6f6a38127f32153d52ac3b4677449ee"
+    },
+    {
+      "path": "docs/task6b/evidence/climate_regression.json",
+      "sha256": "e14966349650401b794415a9c1e2ed806ee0651a9a281810c9ebcf618a31ebdc"
+    },
+    {
+      "path": "docs/task6b/evidence/completed_run_markers.json",
+      "sha256": "893dcad0d8bd9dbd1882d5f63e505a86d91331fc572e3047d8c3c1fdefae054b"
+    },
+    {
+      "path": "docs/task6b/evidence/erosion_experiment.json",
+      "sha256": "6730546223969b1c362d535e18fe03801a22bd7a8e11aa727afefa7723286973"
+    },
+    {
+      "path": "docs/task6b/evidence/erosion_production_regression.json",
+      "sha256": "e21416b33024e2e7ff41d33b464b82f30ebcaaf7690b40e21a365aaf8f5a1598"
+    },
+    {
+      "path": "docs/task6b/evidence/evidence_provenance.json",
+      "sha256": "cd96e99c1eb4a03519bbb85c05c99792a7ae207dd38cd4a8e489bfbf494c9626"
+    },
+    {
+      "path": "docs/task6b/evidence/failed-experiments/task6b-baseline-03-failed-compile.log",
+      "sha256": "5cd2ee87e595a3bd8f0bc06135784ae96d284b42085b1171727f36f0938b5ad7"
+    },
+    {
+      "path": "docs/task6b/evidence/failed-experiments/task6b-optimized-02.log",
+      "sha256": "ee0ed95156afddc09c2258bf144c8dbe3a161e06f00c2bd8756cc5ef49fb4c36"
+    },
+    {
+      "path": "docs/task6b/evidence/final-build.log",
+      "sha256": "999bfc010945da6f488fe346bd1072b7645f349c157d25ee5e48b55e72297ee1"
+    },
+    {
+      "path": "docs/task6b/evidence/final_summary.json",
+      "sha256": "9567a1376f7137d57bbcf54bc7457ebd483be841a239c14e70c4b5824a229e2d"
+    },
+    {
+      "path": "docs/task6b/evidence/frozen_harness_final.patch",
+      "sha256": "b52346a5131d3b3584569e0e3b3b45ddc910d5157bd77db4036a40b62c5b6070"
+    },
+    {
+      "path": "docs/task6b/evidence/frozen_harness_only.patch",
+      "sha256": "191d94539e559b298bb910515c5aaf4b53cb17838c919f5c1f91dae2ee5c1db7"
+    },
+    {
+      "path": "docs/task6b/evidence/full-baseline/completion.json",
+      "sha256": "4ad56cb343b2bce730c75dd8047e1a0f06c5974865f52709c4047572fa7f0429"
+    },
+    {
+      "path": "docs/task6b/evidence/full-baseline/disposal.json",
+      "sha256": "7737c6d367a7a21cbf212b6f853c6e015192115f798140f2017aff08428590b8"
+    },
+    {
+      "path": "docs/task6b/evidence/full-baseline/task6b_full_chunks.json",
+      "sha256": "caf0c3ba80c646ae3694e6b06d72001f21553729c9fbeeeecfb06a5083904060"
+    },
+    {
+      "path": "docs/task6b/evidence/full-baseline/task6b_profiles.json",
+      "sha256": "1a95dab9d0c076319d956fc0dc0f388b92829255aba69368cf51f317d95d0de8"
+    },
+    {
+      "path": "docs/task6b/evidence/full-baseline/task6b_quart_population.json",
+      "sha256": "bd5d0f58d5eadef5bba87c4e851a3107a9b328612bea77f6409c571a6ce65910"
+    },
+    {
+      "path": "docs/task6b/evidence/full_chunk_performance.json",
+      "sha256": "d94837713af00722fe52375da1a32bea304e7db6ec32d967074d52a7d9d0fde8"
+    },
+    {
+      "path": "docs/task6b/evidence/full_output_equivalence.json",
+      "sha256": "b345e310cdfa326e995e37425d4f507a1de740acb3eec439c0720a87a6786ea0"
+    },
+    {
+      "path": "docs/task6b/evidence/full_tail_analysis.json",
+      "sha256": "3a991933f8f69b9dbc2ccc3608c67e1aa6b39012a02a99cf9848682272d95994"
+    },
+    {
+      "path": "docs/task6b/evidence/geography_regression.json",
+      "sha256": "7ecfc4db3826bb285b87e37318153059d8ae5e041142ed2d6d748c0e37149f8f"
+    },
+    {
+      "path": "docs/task6b/evidence/interleaved_regions.json",
+      "sha256": "8e9b8b2c05c9932c56c353d9ce0e09aa3e5cfc3f2b4ba910910fc044fe58b9c1"
+    },
+    {
+      "path": "docs/task6b/evidence/jfr_after_summary.json",
+      "sha256": "853a40c8c137ff9297f685eb619859368def97c1a5aee9bb625059b6d2e377a6"
+    },
+    {
+      "path": "docs/task6b/evidence/jfr_before_summary.json",
+      "sha256": "9ffefbd832fe94835395ec290cd735784c8de6abd55d534a565c7b6054fc15ac"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-2/completion.json",
+      "sha256": "b5c5441cdfad7fb07bd09f9b1c5fffb9d12fdf062ea1179ac32bacffb58ae520"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-2/environment.json",
+      "sha256": "a840a995780ab348d0bc52e1cec7bb7590307f8174836173e24cd5b65e118d44"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-2/identity.json",
+      "sha256": "8a9ee86b5f4d46e10e15d94ca7289dc607cb8728bac93a5528a77b935f432a79"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-2/mountain_tile_digests.json",
+      "sha256": "0f39d1b65123f437c4aea3ceade774ceb6d03afd41157955de5c3bf6577bff4a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-2/tile_digests.json",
+      "sha256": "713c295a43418dcb12640fe49d5077e45e1640e0f6e9b8f28bb99139b9c074f2"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/biome_hints.json",
+      "sha256": "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/cached_direct_comparison.json",
+      "sha256": "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/canonical_geography.json",
+      "sha256": "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/completion.json",
+      "sha256": "b5c5441cdfad7fb07bd09f9b1c5fffb9d12fdf062ea1179ac32bacffb58ae520"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/environment.json",
+      "sha256": "97cabf10179dd6dc666f34e1a240cdb57512f5ff7180fc0a212d8cccad75cca9"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/fixtures.json",
+      "sha256": "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/identity.json",
+      "sha256": "b9a5a87450262a28173630a707a5a4fe3fe7f40eec7dcafc26de0af7e6d6c211"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/legacy_direct_samples.json",
+      "sha256": "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/mountain_tile_digests.json",
+      "sha256": "afc87aa79d994e6a80fa04d82066dc15ed5ae245c60c5f2829ca7ed8f2ecbdf5"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/seed_collision.json",
+      "sha256": "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/terrain_traits.json",
+      "sha256": "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-24/tile_digests.json",
+      "sha256": "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-48/completion.json",
+      "sha256": "b5c5441cdfad7fb07bd09f9b1c5fffb9d12fdf062ea1179ac32bacffb58ae520"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-48/environment.json",
+      "sha256": "daacbf10a0138a7a691ada9bc0a68107192d5b793d515d166d740bd525594b07"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-48/identity.json",
+      "sha256": "7c5595e7522a34c1eed75df2aeedc93cfa6a6fed8347743e47bea34e830dfe4a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-48/mountain_tile_digests.json",
+      "sha256": "835e6e53c1f9da6cd1128baf45823cbf32ba2228ee3d755a8d68deecd94a94f7"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-48/tile_digests.json",
+      "sha256": "eae9bf2daa209b2e7c21cf248373da2bd381abeb796c5a5199d4b3908cecadbb"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-repeat/completion.json",
+      "sha256": "b5c5441cdfad7fb07bd09f9b1c5fffb9d12fdf062ea1179ac32bacffb58ae520"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-repeat/environment.json",
+      "sha256": "f3c21607ce1a31720019a042461fd6ed337c254d28d5afca2233fcdaf3a1ae5a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-repeat/identity.json",
+      "sha256": "5944440bd951199d16383736d88b095f6592a05222e7ee6d5c7489d193e6cd4a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-repeat/mountain_tile_digests.json",
+      "sha256": "afc87aa79d994e6a80fa04d82066dc15ed5ae245c60c5f2829ca7ed8f2ecbdf5"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-offline/golden-repeat/tile_digests.json",
+      "sha256": "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/biome_hints.json",
+      "sha256": "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/cached_direct_comparison.json",
+      "sha256": "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/canonical_geography.json",
+      "sha256": "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/completion.json",
+      "sha256": "f3e02fc425e35934548fc5fb21e1be5ec9cac7aa0d329d7f873c4bbe4e8aa4ba"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/disposal.json",
+      "sha256": "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/environment.json",
+      "sha256": "8641950aa2178cb675232539e13ea43122056799db1f43619a9a6e8d669d5989"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/fixtures.json",
+      "sha256": "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/identity.json",
+      "sha256": "b9a5a87450262a28173630a707a5a4fe3fe7f40eec7dcafc26de0af7e6d6c211"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/legacy_direct_samples.json",
+      "sha256": "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/minecraft_biomes.json",
+      "sha256": "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/mountain_tile_digests.json",
+      "sha256": "afc87aa79d994e6a80fa04d82066dc15ed5ae245c60c5f2829ca7ed8f2ecbdf5"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/observer_counters.json",
+      "sha256": "3390b3dc06eb684b5ee97fdaeee64ed47725f08f25aceedfb4b8571a455f06de"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/seed_collision.json",
+      "sha256": "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/terrain_traits.json",
+      "sha256": "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-24/tile_digests.json",
+      "sha256": "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/biome_hints.json",
+      "sha256": "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/cached_direct_comparison.json",
+      "sha256": "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/canonical_geography.json",
+      "sha256": "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/completion.json",
+      "sha256": "782221f3922edceab3698bac1d7b5984b8d19d6bfd08ce484dab135e57c18026"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/disposal.json",
+      "sha256": "3be23c277e873986b080008e2ec080bd71f063e4bb8292a26ce2f07232a325b8"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/environment.json",
+      "sha256": "8641950aa2178cb675232539e13ea43122056799db1f43619a9a6e8d669d5989"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/fixtures.json",
+      "sha256": "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/identity.json",
+      "sha256": "cedfcfd7e9f90321e2d8642507c8bdeb32e8eff8d1c917b0ea635193c1da7e8a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/legacy_direct_samples.json",
+      "sha256": "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/minecraft_biomes.json",
+      "sha256": "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/mountain_tile_digests.json",
+      "sha256": "afc87aa79d994e6a80fa04d82066dc15ed5ae245c60c5f2829ca7ed8f2ecbdf5"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/observer_counters.json",
+      "sha256": "8ed43a068baafdca74e04eac3ee77d880f5db5c10acd84270e5d8e521f2fe0ae"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/seed_collision.json",
+      "sha256": "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/terrain_traits.json",
+      "sha256": "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy-runtime-tb/tile_digests.json",
+      "sha256": "5387633b4043e227d199b34146b9a4fb6b995a1a4212426272951506866b790e"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy_comparator.json",
+      "sha256": "1ad8602d406bd098aefd5de7b17c11e412463d40d1988cb2e8e028eaa6c1f72e"
+    },
+    {
+      "path": "docs/task6b/evidence/legacy_v1_full_comparison.json",
+      "sha256": "8749d18da6a61a1fc3819fa872983beda98d40c9008d0155e9810b80bfbdca30"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/climate_heavy.json",
+      "sha256": "63d7fc9cec31a9a66d02f919745d40f24e170a6eada4f7ff99394c1de98160db"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/climate_heavy_strategies.json",
+      "sha256": "bd27ce4a49f8677582c2a4904a1929f2958ed3d721308851cf5c65b8ba095985"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/climate_heavy_trace.json",
+      "sha256": "9f7b89222aca7cf43bb1ecb2f4c11a99e19f37745c4ae386ed08b3cd6f14076a"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/completion.json",
+      "sha256": "a291827f648b4d23b8ad5b9facf90b06a2d78049551bc25cc70492c10c4b5ed4"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/interleaved_regions.json",
+      "sha256": "d408269a643cc74359a26a3f9c5c21af0573ae3707a7f96feae14069f514629b"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/interleaved_regions_strategies.json",
+      "sha256": "f528eaf78fd415c82bc3da83377e46f2d0db97b76a850a3f70a17c426ee0805c"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/interleaved_regions_trace.json",
+      "sha256": "bb42667062ae3d87703f7440efa7bac687fbb08f9c7dccdec52a007079cf5253"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/jfr_summary.json",
+      "sha256": "6fdfca1518e9b8af90739d7d1df05c80cd09785d6943ca6b5cff95a86de2d497"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/microbenchmarks.json",
+      "sha256": "650a0e36c94bd7ae1723868db47f9e8889f62046c06767046375420ca5dfc073"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/scattered_generation.json",
+      "sha256": "329e7a2c538bc0459121d358a3f06df250ff42ee5d03f4013ce4d87a3d11fb28"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/scattered_generation_strategies.json",
+      "sha256": "1da9f8a6c3a89adc51d85c672f06a793fd27225f8515e2d3a5b712ed700779b5"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/scattered_generation_trace.json",
+      "sha256": "00cffa9fc0f7e36b2a27ea64039ac8773408068105df8bf96ccdd21a52f4d25c"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/sequential_generation.json",
+      "sha256": "262568dd8aaedc08aed60d8af465e5bbcc6b9b64b900f4cbb8c7228d2601e6e9"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/sequential_generation_strategies.json",
+      "sha256": "dd54850cc0bde8e4881807f33408bfd904ed00f826291f864811e9373f3f4ba5"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/sequential_generation_trace.json",
+      "sha256": "cee10cb349e94affcd9cdc3272d5806ee8ed59fe1f726fcf8e46ccd684ac2654"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/spawn_expansion.json",
+      "sha256": "64501400d24e72fbcade56368ab327a9afb622c0514b911347225708f6ad6ff0"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/spawn_expansion_strategies.json",
+      "sha256": "d867f902a07068b91781bb513206c36f5819e9f7dae5bf038e02ebabccc9e758"
+    },
+    {
+      "path": "docs/task6b/evidence/offline-baseline/spawn_expansion_trace.json",
+      "sha256": "f3586ecc1db7e9e4e10ea8af3ec452fc67bb1246e062318f1b6b2330977d2518"
+    },
+    {
+      "path": "docs/task6b/evidence/optimized_benchmark.json",
+      "sha256": "26446a4accc2a6b764f45805c6bed9a5c7e9a1e190b4d2fca9ba29a7cb466b39"
+    },
+    {
+      "path": "docs/task6b/evidence/ownership_disposal.json",
+      "sha256": "aac6e5371a48f4aa8ccfacd9a015bac6a6c8c3928935f761490f2ad0b0400341"
+    },
+    {
+      "path": "docs/task6b/evidence/paired_comparison.json",
+      "sha256": "c65b6c28153ae4519c7c83d1b285682bd72c6b689a320b25a11ae169ea59aa02"
+    },
+    {
+      "path": "docs/task6b/evidence/production_cache_metrics.json",
+      "sha256": "016388ad2b21239d88888c21da0b9040a07f28fd2a4688e7e29c63080d9e28ce"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/baseline-extended-legacy.json",
+      "sha256": "f84e97cb4da210871341df15f7019d9f3677af17347d9d6a273ef658352e7679"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/baseline-extended-V1.json",
+      "sha256": "5aac08e1cc83518bd357907376831f1f40cee22b0a5e94f4dc15dc6811066cc7"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/baseline-original-legacy.json",
+      "sha256": "c9fedae1e040421eb2b8dbb787b68f9c346ab6f1939021ec6f8938c89b11c9f3"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/baseline-original-V1.json",
+      "sha256": "c3effb662ca1497b46c50efb74751cd51f5284eed39f97ad811d3e1c79686c11"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/baseline-repeat-legacy.json",
+      "sha256": "327bd7e42e3784df3159d5e176ab07ea4b1944c1fe05c220aa0ef43413fef589"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/baseline-repeat-V1.json",
+      "sha256": "c7a4e01101987949a30ed6e3fc468bd61f6aeb991bb5b97eb8e8b334f103fc2d"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/optimized-24-legacy.json",
+      "sha256": "b02a958a4ea5eef43c3de2c5d05942e5e1ebd128ff6116c1caad5656d3e1f3e3"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/optimized-24-V1.json",
+      "sha256": "416d21a306d008a2585279dae6cc9344498316d200b8d604a4d7b1d5c3f936a0"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/optimized-48-legacy.json",
+      "sha256": "f4a2a9264f8a49d4f92db14bd1949b09a008600656aa0ec7b30446893d3c8b50"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/optimized-48-V1.json",
+      "sha256": "51172a173801a2bef1d45497109b468b21e1a6a226158525fdc0d2205f23b1ff"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/optimized-extended-legacy.json",
+      "sha256": "16a0cd69720ce3a94d598dcc2a6304522cda731bb3a84d5201ca9d885d3bd8d6"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/optimized-extended-V1.json",
+      "sha256": "db81f8f3a19143836830559bf7e9e72d32a06766e62b6881e27a5d3fc08bad94"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/optimized-original-legacy.json",
+      "sha256": "5a6898dd71a5a85da872f4ab45422be45e5fc7a0297ceb7cc493142575d3c2ce"
+    },
+    {
+      "path": "docs/task6b/evidence/profiles/optimized-original-V1.json",
+      "sha256": "cf12a8af99f63bf8293106d67a072fc636bf0fc384795935839315b759cf1140"
+    },
+    {
+      "path": "docs/task6b/evidence/provider_instance_counts.json",
+      "sha256": "9393a42de8c50dfabc2d794386fc055a99223134fc307cbe1ce2847f004e1f78"
+    },
+    {
+      "path": "docs/task6b/evidence/resume_inspection.json",
+      "sha256": "73d42189ad9938cc7a6c5d8e7c7df21a44d7f76b8ffed782dc891ba723f8b596"
+    },
+    {
+      "path": "docs/task6b/evidence/retained_experiments.json",
+      "sha256": "2faab0e4a3884073c5c7f4ef1eb91b92956cd6a6f8ed1101199767c7d21c730c"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/biome_hints.json",
+      "sha256": "278ec2099ea7cafea7b6541edea81067969e0487e2bf362c818b8bcde12adce2"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/cached_direct_comparison.json",
+      "sha256": "70faef87882eea37e7569e7e1da34011517c25f0f71318afa5a56e7ed23b24ee"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_acquisition.json",
+      "sha256": "a1c3e8971344bdf976929899e7bda1fe2665f010cc4bc153d8e72843ba3764ae"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_biome_grid.json",
+      "sha256": "6fe6cedfbe534fdb2649a0191cbb81d3db5b61a6a210af2ce6ad584d0ebb4ed0"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_biome_patches.json",
+      "sha256": "9f4c4b60d28c462d95281265a73bc167e1193b1e40f236f6a498e831b45ff531"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_coherence.json",
+      "sha256": "39e1cd8104b5fc8ac010b6c0b63dac1b96c45bd29b72eada2de61df2251da0af"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_determinism.json",
+      "sha256": "4f8070bd09d91eb7947831e8edaec09f6f346dfdb2de28d7bd31c4ef265b7173"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_geography.json",
+      "sha256": "664361bcd0aaca10f1fbdab9d40160610c87689585b2230073cc42129e0cb4aa"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_performance.json",
+      "sha256": "1858b1fb3a3bcdfe963c5fdb9cb79ebe97163f2c5f6230813798755d69675d94"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_seed_digests.json",
+      "sha256": "b2095b1c22a332c295b994eaf5679d3d3211d7a611d8e495f283c421ccb282d3"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/canonical_targeted_samples.json",
+      "sha256": "d274d73526c9c728121b259ee48863247188f27f26e4e2c41a9567a201f22232"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/completion.json",
+      "sha256": "4a30d047c0b397608059217e2b9dc86320b2aaf9bdf3c838e936972dd99ebbe3"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/disposal.json",
+      "sha256": "3c11ef99a5774e26aee44792442ce69fdfd00812ea526400acc5b844235422d8"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/environment.json",
+      "sha256": "593714224740e6fc949315d71beccd7c0ca6c3426d8fddef8b9b299ad16e6ee6"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/existing_world_resolution.json",
+      "sha256": "1bd904491a85c2f54d386a39fc66590e0959a11c8874b42c04fab20f43ba396e"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/fixtures.json",
+      "sha256": "fd2f9793da993bdba5ecad532f4f8d1ad9b92fc6c48b1914f6141c149f2ef26a"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/foundation_invalid.json",
+      "sha256": "66a2196450baf189747e25989028b24f08edfce2576bcc813617cea3dfa082df"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/foundation_roundtrip.json",
+      "sha256": "fd3bd4ea7c8bc0d35674df895a12dd770a4df5dd91d8089af7002983f1b04a07"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/hydrology_validation.json",
+      "sha256": "9e74af0b4f8e69ca67cda9f114e8ea42a83103ec7b714d5f042bc59de600be99"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/identity.json",
+      "sha256": "df0aa6dcba51a7e5244dceae2af4d8c0c0bc2b84623deca599b0a6501db538c2"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/legacy_direct_samples.json",
+      "sha256": "08fccca8e1f94c464d2757268649983edc048ea9808d82892c08210c3318e79e"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/manifest_roundtrip.json",
+      "sha256": "b0e1236bfb2c336b3887e408cb2b0c3662e55798eb938ee0f6505c7abbfc74f5"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/minecraft_biomes.json",
+      "sha256": "b86a94f3622b5405504c189a70bd10448dd7ff8fba39b0d530cfa5966d0a3992"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/mountain_tile_digests.json",
+      "sha256": "44ed8328d32c5f21f7e15a920f45559ac27bad4803b1b916b34f21dbcfde6f6e"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/observer_counters.json",
+      "sha256": "6382ab1185c95c0584bfe26f7e81f59d99e97bc088b428ad2d4acb4f49feb07f"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/quart_seams.json",
+      "sha256": "20254571a2dac122049a19209bd97dbfd9416c6ca7c9c6a799e6f178f16ac00b"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/runtime_features.json",
+      "sha256": "dc9aeef6206ffc0de9bd0a8e6dd69cec37ae2fd06086850dad69b986d7e3daba"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/runtime_full_chunks.json",
+      "sha256": "73ef04460e386bc831703e1199cfa4326a02a69b77bc577cf8b7eac16fa38891"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/runtime_physical_samples.json",
+      "sha256": "8a4c802c01cca07df591b7ac148267fc8a431a92e0aa37d5ba3e15af3d719054"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/runtime_physical_search.json",
+      "sha256": "da7cedc60ca084dfa89f26d09def54b47f66fa346fa007d2a149052cbacdd972"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/seed_collision.json",
+      "sha256": "1f56689b3f0bf80b27749d7a9a95fbd940b56513079771151a52880d5e1a46fa"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task4_performance.json",
+      "sha256": "0314ea9830b2fb7997c827c2a398eb74e09f483708fb89ee1d924ab5f920deaa"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6_biome_queries.json",
+      "sha256": "f74b9ed83da473ecd4023af819369510a829cc0113aff6bfdae3e7690010df20"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6_cave_composition.json",
+      "sha256": "c8d8caef221572cb4b0b891f05d4b8a90b0a26d4696366fb2384e60f64262052"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6_climate_exact.json",
+      "sha256": "fe29f9a9d543d53aacb91ac76a68620280940503e356f14d2fc8bd13feb9f575"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6_runtime.json",
+      "sha256": "53f259464325bace77ae845fc069c8bf3499c02d76fef1b45a4ee2402152c3e0"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6_surface_cache.json",
+      "sha256": "6afe9b3a8daf08f2f0c7c47dd8470ad4f5f6efab81ec91c6f01579340ed1dcab"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6b_cache_disposal.json",
+      "sha256": "bd58b2360a5efa6b8fab1231876186b0e61fc7807cb38fc0fd63f5b5795eab8f"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6b_cache_metrics.json",
+      "sha256": "11d7809f9d443f730ad69dad037ebb246e912458128b81741c137c221e25fe4a"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6b_full_chunks.json",
+      "sha256": "1145071a4b5a6a4726a966f29ea1c817d2413ca0ac31e264c3def09833ed4e9f"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6b_locality_trace.json.gz",
+      "sha256": "8d3b4783c5ab5588873b18d2f35a180a03a852a4afa715eea520b051b9cf3c86"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6b_profiles.json",
+      "sha256": "7eb4ec07e27daefacff52ec6d96f52caf81b886dd6914a98cbe0ae53593616e2"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/task6b_quart_population.json",
+      "sha256": "7d68a647083c93f17c6259f3fcfd4b342b7f27c5d448a1f2a7d48112cee67d32"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/terrablender_fingerprint.json",
+      "sha256": "7bf077bfbbb691213264e7d00e777894591cd3bb596e8d051a0c1a4d4c85ef28"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/terrablender_v1.json",
+      "sha256": "524402ca39f57bb552dff7caff7fe13abe1d90bf0b1c7eb27d2f7c1978e7b6c5"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/terrain_traits.json",
+      "sha256": "4db844ba9db0fbab205f5f55b82175f1151503ae8d4cb498c90bc30729abe79a"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/tile_digests.json",
+      "sha256": "21aa063d700c6c7addf8e702bd4357b25eccd03a3329817ba6052f2a29a095ec"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/v1_debug_samples.json",
+      "sha256": "422087fb3af41461c2cc747e08f7eb4351f1f7ff401e94d1914b38edd5a7006a"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-final-01/v1_terrain.json",
+      "sha256": "3ec983238810eece3be7883d7f7719ec876787e7d9f478d816cb188c4709f8e5"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-extended/completion.json",
+      "sha256": "9938c40b48b29c4d71f925c2d112efb66f8b7dd24490b071c7ea504d20d2639d"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-extended/disposal.json",
+      "sha256": "7737c6d367a7a21cbf212b6f853c6e015192115f798140f2017aff08428590b8"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-extended/observer_counters.json",
+      "sha256": "7e2de8330544ac019867edfbc05e77f0ba574b5a13c929470d9aff2f80118021"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-extended/task6b_full_chunks.json",
+      "sha256": "4f490c83b58bb5094fc06d9ad21bfebddc15b2f8bbaf014919830c9772ddcec5"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-extended/task6b_full_outputs.json",
+      "sha256": "ad8812299e8d12072d312ab5f69c2b63f4f12793af25025b97a6572765cb5f2b"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-extended/task6b_profiles.json",
+      "sha256": "5a752f7eb0e6c8013495cd1f797b4fc53cacf88ea316e64a19bcca5cb099bd55"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-extended/task6b_quart_population.json",
+      "sha256": "49c6c9a46a97db9d9c5139a7ff249bd701ffee1b3fd15394fede6953ce6c0bec"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-repeat/completion.json",
+      "sha256": "768db21ec161cf38ec38173a9a9d12f588c3ca9b1da1d1f007119e89385db091"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-repeat/disposal.json",
+      "sha256": "7737c6d367a7a21cbf212b6f853c6e015192115f798140f2017aff08428590b8"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-repeat/observer_counters.json",
+      "sha256": "43c382055d914a3acc60b46282255480faaf431bf394f9838d5001fc1e2c6b72"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-repeat/task6b_full_chunks.json",
+      "sha256": "0cd16f32019aad8bd45cb40b84a074a6de7ba0d2a58aa43fe74fa729c95ac881"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-repeat/task6b_full_outputs.json",
+      "sha256": "d7ae57c498769cfb7927f6ceabd7bc1ee76ff371d36bf1ff73b1ac4b504a90b3"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-repeat/task6b_profiles.json",
+      "sha256": "432aec8fb2179e18e5092a823e9bb18c490740414e00cdc5f97e5a70e2b2cde2"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/baseline-repeat/task6b_quart_population.json",
+      "sha256": "42449c9c7315b5d1f0f177c1dfe920a2da0e3834e4d265240ba2b95396a9be15"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/completion.json",
+      "sha256": "b07e7f2c7eca8c0ce43ef0a6e929f9f64136fcdd7040a5eaa1269c0446b1b52e"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/disposal.json",
+      "sha256": "7737c6d367a7a21cbf212b6f853c6e015192115f798140f2017aff08428590b8"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/observer_counters.json",
+      "sha256": "ee69b3da4e30392a2f6c06238b7d77833b6323abc3a474e01ab6f2a2a04d8de2"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/task6b_cache_disposal.json",
+      "sha256": "8481767d9bacd3950269821880ba7066bad72ae278493423fad6d835ee568a26"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/task6b_cache_metrics.json",
+      "sha256": "959df04fa40fbe23e20b4dcaaafc62d2511cd828bacd5bcfdbfb59454db514e0"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/task6b_full_chunks.json",
+      "sha256": "11a87956b5348e6b8a3ab54340aa1e3c0f32593c14d80cabbef6f09c0140e055"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/task6b_locality_trace.json.gz",
+      "sha256": "4564a79b9eb0b21e1c4f8b8ff7cd7a091cc1fea83b6c5de7af75e35fc6b3fda0"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/task6b_profiles.json",
+      "sha256": "c98c95a79efcaefff100e3957792455b151b7244355de4f7ca161dfbd96325ee"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-24/task6b_quart_population.json",
+      "sha256": "5d62c5afdcceb934ef0cce47c53039a350e467141fd1e61461d97bee60e8eab9"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/completion.json",
+      "sha256": "7013f107e0556f7ab56c56a98a727f544fe1cb2ec2f1927932419440c48733c2"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/disposal.json",
+      "sha256": "7737c6d367a7a21cbf212b6f853c6e015192115f798140f2017aff08428590b8"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/observer_counters.json",
+      "sha256": "dd5f9b17b0ab5f1dd808a6313884ffe711005daac6b5009d97d334763596000b"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/task6b_cache_disposal.json",
+      "sha256": "8e57335b5d8d606c73749c9f9fcfd45dd02e09392c2a628bd4a39b11e854f4cb"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/task6b_cache_metrics.json",
+      "sha256": "87ede4c8a487f3dd285a50b8f12ad9858ce31be8a4efa376935c884b35d419c1"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/task6b_full_chunks.json",
+      "sha256": "6a142fa2df38bce8179a58503ee11237564c38caf2d3462b692cb678201b2b6e"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/task6b_locality_trace.json.gz",
+      "sha256": "3078cf2f51c5773e82e9b5714cf38a7f6f50fbccf57861242573712d98320a46"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/task6b_profiles.json",
+      "sha256": "806f6112c1ac0ce9cb6337ccb6b63988cc26698a6709591580e08d3403204521"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-48/task6b_quart_population.json",
+      "sha256": "ee580a152eeb0c409f3ad580da1261d6983075448ad3a9857ef67335d5b31be0"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/completion.json",
+      "sha256": "85c403373e27e323e9bb8667e343cbc57e228a0d4e9f459ee978748f295bdbf5"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/disposal.json",
+      "sha256": "7737c6d367a7a21cbf212b6f853c6e015192115f798140f2017aff08428590b8"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/observer_counters.json",
+      "sha256": "de7ca56401c28e9f239dabdd16c2eb0f60977189aacaeeec76adc6a8fd325aae"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/task6b_cache_disposal.json",
+      "sha256": "c4c1d2b2c0408c546e185e03571824fd8069a87d5114a7fdda0e1b9107f622ad"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/task6b_cache_metrics.json",
+      "sha256": "6ebb7ddddbaf0bad8691e603ad88f716afbf47e469d2ebfee5d73a2a4e461698"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/task6b_full_chunks.json",
+      "sha256": "60ff68b19269b0b48f7683ec62ebbc2fdff7d380f20474079083d8da2415e81c"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/task6b_full_outputs.json",
+      "sha256": "d346b04fe52d476a2a2b0c93c4abc12e32a99d9dd7fdfec28bc43927e94af2a5"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/task6b_locality_trace.json.gz",
+      "sha256": "d71652528ca96ce28703f95615ce01ccd355997489ea277695819e68bf0768eb"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/task6b_profiles.json",
+      "sha256": "2e3d64c64303bf94e43277864687cd834b3501f5e1101414115d68ff9e181597"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime-runs/optimized-extended/task6b_quart_population.json",
+      "sha256": "d1269cb71924f51d7eac88f7e5187e4e0184cb6385e3316c44db6b9dccbec560"
+    },
+    {
+      "path": "docs/task6b/evidence/runtime_disposal.json",
+      "sha256": "f07a46167b057e01d9135df5f1e3f9cdf780363386bfa7cb893a01211b097f55"
+    },
+    {
+      "path": "docs/task6b/evidence/save_reopen.json",
+      "sha256": "ee2149912faac5a98874d5c60ffe3f61771cdffdd3d5c86ed2cfc16a81cc7ff5"
+    },
+    {
+      "path": "docs/task6b/evidence/scattered_generation.json",
+      "sha256": "e3392da4c64f2b8be3c1a40420354eaa4c69cb84f7c64f9b09800f0fb9f0eb1f"
+    },
+    {
+      "path": "docs/task6b/evidence/sequential_generation.json",
+      "sha256": "bf211bc23844871c380df9555b27269036e7905b76cc33db8fa667f06948935d"
+    },
+    {
+      "path": "docs/task6b/evidence/source-reuse-final/disposal.json",
+      "sha256": "144aac5950994cf2dfa37eb0678d420746a450012602eee61d685d456b1c51a2"
+    },
+    {
+      "path": "docs/task6b/evidence/source-reuse-final/provider_instance_counts.json",
+      "sha256": "e18b485dcba26f8d409283c0b11c63956a70896148f55e50c2b4d1c4f76c88d3"
+    },
+    {
+      "path": "docs/task6b/evidence/source-reuse-final/source_reuse.json",
+      "sha256": "5f59e39adde51f6eac166d22d949930a29d10296dbd2c19631a62e4a55802bf6"
+    },
+    {
+      "path": "docs/task6b/evidence/source-reuse-final.log",
+      "sha256": "962dfc73be5de0fac0370937cd92041d8e645dd465404137421d0a140c909576"
+    },
+    {
+      "path": "docs/task6b/evidence/source-reuse-initial/source_reuse.json",
+      "sha256": "1cd344003e2a4226a8f9abfba815a78af13be057c72ea492309dc060b0b59fc8"
+    },
+    {
+      "path": "docs/task6b/evidence/source_reuse.json",
+      "sha256": "5f59e39adde51f6eac166d22d949930a29d10296dbd2c19631a62e4a55802bf6"
+    },
+    {
+      "path": "docs/task6b/evidence/spawn_expansion.json",
+      "sha256": "ccc5f736386104b8669b4fafeb7385b6bff5f238ff99b72e5c6349c1c279a2a3"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/cached_uncached.json",
+      "sha256": "fb07cf1f9dad01baad59f90ce45cdadf22f492800f91b8b24cd80a64c51ebd02"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/cell_resources.json",
+      "sha256": "43bb5a970160af4524f75f77a24d6efd2048eeeba82d32e5464cdc6bab8868b3"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/closed_cache_ownership.json",
+      "sha256": "5fb17e51c5f17f11dd75f2aceeab82b90617b29667467f8e33adf19ad73c3281"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/completion.json",
+      "sha256": "d850c731ffda5e09be77189cd204dedb44f8dd6222895e189297371283d58134"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/contexts.json",
+      "sha256": "0c57bd814098431d9f4801b143ef2dab570a2fbc974df0b8300e3c28a92880da"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/cross_world_cache.json",
+      "sha256": "4a3afcb05d1aca65d3148de8c8760a8cd3feb5487535c017abdc0caa3c08f481"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/disposal.json",
+      "sha256": "bfed1997e0366f83c22a143a4f2435b226f45b054bb42ff1dc2c8e109bf24708"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/environment.json",
+      "sha256": "bd02e2aa8531a9cd108144e00dfaab6b55bda1cc1a076092395d4f0260077ff2"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/eviction_reload.json",
+      "sha256": "c830d43c9c7bd34c06d8bc79ded13927d14973b9f02c7082de7402ec1b4f04ea"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/fixtures.json",
+      "sha256": "a45bc8be2da2ccccb3e13ae8b1f79b133645f06c256c402377d8fe527da10d6c"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/generated_chunks.json",
+      "sha256": "7567824a993be74de9bd7d2f9615b207d52927ee0376570e054db9245c948628"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/generation_order.json",
+      "sha256": "026ac49ea9193c05eac82224841b24b45124e271dcb0255418a75141d384ff78"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/invalid_noise_validation.json",
+      "sha256": "f838b28c474ffcf201d6b5b0e76d037e72e8be1a8d3a647d4730a2397b6a4edf"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/legacy_geometry_config.json",
+      "sha256": "89ca999aa9072f55204f732cb06d19be0d94d2eefad3401231fd89589374a45e"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/lifecycle.json",
+      "sha256": "65f3728cfbccf0060904501d24093cb82862e272982c24dad6b58186d5b73098"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/measurements.json",
+      "sha256": "e23846b95c579b4239cc313abbc65be70507c94294e58c68e4e50e9aa5cdb0ea"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/missing_context.json",
+      "sha256": "c938477003755611f7d35efdb78a41de1715cdb2e7b187a625c5f17151987ee9"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/noise_cache.json",
+      "sha256": "5912e2c83d5ed422b15e931e336c4e4accac5c97f843ed5b402ac28f588f43d9"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/noise_cache_bits.json",
+      "sha256": "f0a031d93aad87f005e3036f1986715298070ebe77c632dc782e3816487eeac0"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/observer_counters.json",
+      "sha256": "9ea8afe2d432398715571b2b975156e341e51d5a2adca5660a3fa760f8fe1eb8"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/preset.json",
+      "sha256": "74043032645cac9d1888035e7db7196dd1a28fc5096a7c5eaf7705091dceee19"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/sampling_semantics.json",
+      "sha256": "e30c37646a1d1868bdd5bc043e24807f0c0ee90850f92c1a21ecf650cd5332ca"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/seed_collisions.json",
+      "sha256": "5cf3da0b02349cf07287da755d0fb8753f0abd0b13f492ab89bb8090e57976b3"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/tile_bounds.json",
+      "sha256": "96634defde3f18bf4e3fbc585a3c5e8ea82155a8fc119ab79011589112843a68"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/tile_geometry.json",
+      "sha256": "c6cddc8ac1c7047593fe96a4ad9968f3b5b7e23a332a6b311d9c9280874887c6"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/tile_overlap.json",
+      "sha256": "972d73a86acc6263124891c6950adc28224adac39a70b1ea5f5b425f66aac0df"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b-final/vegetation_disabled.json",
+      "sha256": "fade1cc4fda21a352529826aadad1ec7a9367e4d059594dd02a71b99f16fbe42"
+    },
+    {
+      "path": "docs/task6b/evidence/task1b_regressions.json",
+      "sha256": "cce604691d5ea4fef9d20882aaa3aa085057a7453691f43ef3f5c7d0902060c2"
+    },
+    {
+      "path": "docs/task6b/evidence/task6b_commits.json",
+      "sha256": "bf40f15ab2da9add9a2fc72b9efbac9336b26cf99111afca7b5d11b91b209387"
+    },
+    {
+      "path": "docs/task6b/evidence/terrablender_runtime.json",
+      "sha256": "734c0c99907eb515f72d81e2d2615cb7bf2aaf1a9223d1801c3d1bef4d3e6d34"
+    },
+    {
+      "path": "docs/task6b/evidence/worker-tiles/workers-1.json",
+      "sha256": "4c29850bd905978eba475b25c7e4a004d6f19d727cb5b9f189e9f0ec9379dfe9"
+    },
+    {
+      "path": "docs/task6b/evidence/worker-tiles/workers-2.json",
+      "sha256": "c2a5af97e6006869b2dc31a9cbf4c1eac77348fe143c0165f14ba8199f88ea2a"
+    },
+    {
+      "path": "docs/task6b/evidence/worker-tiles/workers-24.json",
+      "sha256": "df97c080fd3d04f64ba62c0fe2a2b27039702d62d94759fe2fed1938bd2e5c1d"
+    },
+    {
+      "path": "docs/task6b/evidence/worker-tiles/workers-48.json",
+      "sha256": "1311296e437d14cfeb2867f2ecbf94a96675dee1202c5ad415ed6242912ceb63"
+    },
+    {
+      "path": "docs/task6b/evidence/worker-tiles/workers-8.json",
+      "sha256": "599b1bb7a7bec14c16937939530da3ab594b41d39a22f66232be689f65015b31"
+    },
+    {
+      "path": "docs/task6b/PERFORMANCE_COMPARISON.md",
+      "sha256": "3bbdc8aa123a57a1b7bcd295dca64e742f22fb3d438ac1a6c3f6b1a46c465694"
+    },
+    {
+      "path": "docs/task6b/TASK_6B_WORLDGEN_PERFORMANCE.md",
+      "sha256": "87f9bf768ba53ffc028cd5c010425f572e7d61b16a66c56e6661f9832a901533"
+    },
+    {
+      "path": "scripts/task6b/Compare-Acquisition.ps1",
+      "sha256": "5f6978ab10acbc764787312d464f30ae686fcf0df0d665c1b2bdd9d98dbb0048"
+    },
+    {
+      "path": "scripts/task6b/Compare-Acquisition.py",
+      "sha256": "c2982541893c361469b520a1a6f4661e04d7e172648fd9fb6b72e89171dc413d"
+    },
+    {
+      "path": "scripts/task6b/Compare-Legacy.py",
+      "sha256": "46107338afaeaf36ad20283a23b5002a4f888924495850aaeb8792fc864d645a"
+    },
+    {
+      "path": "scripts/task6b/Finalize-Analysis.py",
+      "sha256": "faa3c6dcbb496345ce889e3ed41525b91913c4693967c17e5f5ab99df08486e4"
+    },
+    {
+      "path": "scripts/task6b/Finalize-Manifest.py",
+      "sha256": "aa169c4882f9d252b4bd5ab0768f000aed121533ce119c4a9fa5b868e0309ce9"
+    },
+    {
+      "path": "scripts/task6b/Finalize-Runtime.py",
+      "sha256": "a757d0a9c2d73147145f8ad5dc377b90432129c1a160189f13fdb6be1db16b04"
+    },
+    {
+      "path": "scripts/task6b/Run-FinalProfiles.ps1",
+      "sha256": "f531903bd223a655fc2b2786377dbf1118895b4ea4cc6a10aa8393e899835f4a"
+    },
+    {
+      "path": "scripts/task6b/Run-RemainingGates.ps1",
+      "sha256": "53a1435a57e841125003173a2273475ce3b934ee3db4a79c55b2cf448adef585"
+    }
+  ],
+  "retainedLocalFullJfrRecordings": [
+    {
+      "reference": "full-baseline/task6b_profiles.json",
+      "version": "V1",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-V1-1788973246185.jfr",
+      "bytes": 16441067,
+      "sha256": "6db853fd5030472e2dc0d3addf2fa362bca3edcf558e0e407742d5d344081c2e"
+    },
+    {
+      "reference": "full-baseline/task6b_profiles.json",
+      "version": "legacy",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-legacy-1788973278026.jfr",
+      "bytes": 1498501,
+      "sha256": "822f4cfaaa69de53efb43e29da6fbe10dda466beb21f3d660f6bef20a7668dab"
+    },
+    {
+      "reference": "runtime-final-01/task6b_profiles.json",
+      "version": "V1",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-V1-1788977567727.jfr",
+      "bytes": 24275740,
+      "sha256": "1d345db161e71ca4144e0f049717f0ba854c0c3fe49604991a5b0a1c118ffc90"
+    },
+    {
+      "reference": "runtime-final-01/task6b_profiles.json",
+      "version": "legacy",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-legacy-1788977662505.jfr",
+      "bytes": 1692091,
+      "sha256": "ba420d5d39da9bbd7fcc76d40dbd8fce1f5c926831ebba50392f7ba8917bd287"
+    },
+    {
+      "reference": "runtime-runs/baseline-extended/task6b_profiles.json",
+      "version": "V1",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\build\\task6b-frozen\\run\\task1a\\evidence\\task6b-V1-1788992186038.jfr",
+      "bytes": 78778665,
+      "sha256": "5e3f6e650a7a215ab13b58f06efb305a937a54410c4a0811d145fde2802e4549"
+    },
+    {
+      "reference": "runtime-runs/baseline-extended/task6b_profiles.json",
+      "version": "legacy",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\build\\task6b-frozen\\run\\task1a\\evidence\\task6b-legacy-1788992306585.jfr",
+      "bytes": 2181252,
+      "sha256": "4d8f62689fc76634a810e619274d98f95ce177b9ce7c08435c9d232f9b2fb40c"
+    },
+    {
+      "reference": "runtime-runs/baseline-repeat/task6b_profiles.json",
+      "version": "V1",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\build\\task6b-frozen\\run\\task1a\\evidence\\task6b-V1-1788988968031.jfr",
+      "bytes": 9475214,
+      "sha256": "abc1ff285f4f38fad51fcc95fc19fd04fb6404f3a5bdb63fc3851b49c1225e0c"
+    },
+    {
+      "reference": "runtime-runs/baseline-repeat/task6b_profiles.json",
+      "version": "legacy",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\build\\task6b-frozen\\run\\task1a\\evidence\\task6b-legacy-1788989065505.jfr",
+      "bytes": 1442663,
+      "sha256": "d91770146c3432946c689f56fefa110006fd60b83cecde05ed08fe430c121b4b"
+    },
+    {
+      "reference": "runtime-runs/optimized-24/task6b_profiles.json",
+      "version": "V1",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-V1-1788989573829.jfr",
+      "bytes": 50252079,
+      "sha256": "efe35f0aee05cb5b77f343f89f47507b1bd2fa7980063b38d31ca3846e76f4fa"
+    },
+    {
+      "reference": "runtime-runs/optimized-24/task6b_profiles.json",
+      "version": "legacy",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-legacy-1788989633021.jfr",
+      "bytes": 2373964,
+      "sha256": "10f9fd93685338106a5452ad90c03af6c741fe115e43bebc4e16c13e32e7f5fd"
+    },
+    {
+      "reference": "runtime-runs/optimized-48/task6b_profiles.json",
+      "version": "V1",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-V1-1788989834584.jfr",
+      "bytes": 45851609,
+      "sha256": "479587380c164ebec10c22e08bf2a56a00d2dc70340b06f93814cd4a70031399"
+    },
+    {
+      "reference": "runtime-runs/optimized-48/task6b_profiles.json",
+      "version": "legacy",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-legacy-1788989887385.jfr",
+      "bytes": 2171015,
+      "sha256": "90595877e25da484c241698db7e163f9275925f7a764bc13ffa7c0688dfe2ef4"
+    },
+    {
+      "reference": "runtime-runs/optimized-extended/task6b_profiles.json",
+      "version": "V1",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-V1-1788989277325.jfr",
+      "bytes": 52893834,
+      "sha256": "74b928d9668b85f352f1b07da0b90075266d85458bd4f369fd317c0937702f4c"
+    },
+    {
+      "reference": "runtime-runs/optimized-extended/task6b_profiles.json",
+      "version": "legacy",
+      "localPath": "G:\\mods\\Undisclosed-PA-Addon-task6b\\run\\task1a\\evidence\\task6b-legacy-1788989365431.jfr",
+      "bytes": 7581521,
+      "sha256": "4bddac7ee198ac6d098d9c97701165764ddd617cbd00ef584bce3b961bfceffa"
+    }
+  ],
+  "preservation": "Original acquisition/equivalence evidence and failed/partial local runs retained. source-reuse-initial preserves earlier observations superseded by strengthened Holder-reference test."
+}

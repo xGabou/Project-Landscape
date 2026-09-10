@@ -1,0 +1,49 @@
+{
+  "scope": "resolver only; preconstructed synthetic climate/geography",
+  "hotDebugExactPoints": 256,
+  "runs": [
+    {
+      "allocatedBytes": 1592,
+      "queries": 100000,
+      "elapsedNs": 17373500,
+      "batch": 0
+    },
+    {
+      "allocatedBytes": 0,
+      "queries": 100000,
+      "elapsedNs": 18252500,
+      "batch": 1
+    },
+    {
+      "allocatedBytes": 0,
+      "queries": 100000,
+      "elapsedNs": 17479900,
+      "batch": 2
+    },
+    {
+      "allocatedBytes": 0,
+      "queries": 100000,
+      "elapsedNs": 16836400,
+      "batch": 3
+    },
+    {
+      "allocatedBytes": 0,
+      "queries": 100000,
+      "elapsedNs": 16970500,
+      "batch": 4
+    },
+    {
+      "allocatedBytes": 0,
+      "queries": 100000,
+      "elapsedNs": 16821400,
+      "batch": 5
+    },
+    {
+      "allocatedBytes": 0,
+      "queries": 100000,
+      "elapsedNs": 17224900,
+      "batch": 6
+    }
+  ],
+  "checksum": -1077553587644000
+}

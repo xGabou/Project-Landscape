@@ -18,6 +18,7 @@ public class TileCache implements TileFactory, AutoCloseable {
 	private boolean queue;
 	private Cache<CacheEntry<Entry>> cache;
 	private TileGenerator generator;
+    private final java.util.List<Runnable> disposalActions = new java.util.ArrayList<>();
 	
 	public TileCache(int tileSize, boolean queue, TileGenerator generator) {
 		this.tileSize = tileSize;
@@ -31,7 +32,22 @@ public class TileCache implements TileFactory, AutoCloseable {
 	}
 
 	@Override
-	public void close() { this.cache.close(); }
+	public void close() {
+        java.util.List<Runnable> actions;
+        synchronized(this) {
+            this.cache.close();
+            actions=java.util.List.copyOf(this.disposalActions);this.disposalActions.clear();
+        }
+        for(Runnable action:actions)action.run();
+    }
+
+    /** Context-owned detached services share the terrain cache's disposal boundary. */
+    public void onClose(Runnable action) {
+        synchronized(this) {
+            if(!this.cache.isClosed()){this.disposalActions.add(java.util.Objects.requireNonNull(action));return;}
+        }
+        action.run();
+    }
 
 	public boolean isClosed() { return this.cache.isClosed(); }
 	

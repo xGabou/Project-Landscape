@@ -32,6 +32,8 @@ public class RTFCommon {
 
 	public static void bootstrap() {
 		RTFBuiltInRegistries.bootstrap();
+		RegistryUtil.register(net.minecraft.core.registries.BuiltInRegistries.BIOME_SOURCE,
+			"atmospheregen:climate_biomes_v1", com.gabou.atmospheregen.biome.ClimateBiomeSource.CODEC);
 		TemplatePlacements.bootstrap();
 		TemplateDecorators.bootstrap();
 		RTFChanceModifiers.bootstrap();

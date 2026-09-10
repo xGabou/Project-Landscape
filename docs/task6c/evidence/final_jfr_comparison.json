@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "run": "Task6B original",
+      "source": "docs/task6b/evidence/profiles/optimized-original-V1.json",
+      "executionSamples": 13078,
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 579,
+        "biome resolver": 1,
+        "cache lookup": 33,
+        "climate equations": 2,
+        "climate geography sampling": 11,
+        "erosion/filtering": 6292,
+        "features/structures": 25,
+        "other": 580,
+        "surface-field extraction": 20,
+        "terrain noise": 4898,
+        "tile construction": 637
+      },
+      "recordedSpanNanos": 117996844400,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 164080300
+      },
+      "parkPathBlockedThreadNanos": {
+        "ExactCache wait without inner terrain frame": 67569385100,
+        "other": 2794238607500,
+        "terrain wait inside ExactCache loader": 130743668400,
+        "terrain wait outside ExactCache": 4644583800
+      },
+      "gcSumOfPausesNanos": 1268922300,
+      "garbageCollections": 226
+    },
+    {
+      "run": "Task6B extended",
+      "source": "docs/task6b/evidence/profiles/optimized-extended-V1.json",
+      "executionSamples": 21720,
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 720,
+        "biome resolver": 1,
+        "cache lookup": 82,
+        "climate equations": 1,
+        "climate geography sampling": 11,
+        "erosion/filtering": 9861,
+        "features/structures": 24,
+        "other": 1110,
+        "surface-field extraction": 41,
+        "terrain noise": 8854,
+        "tile construction": 1015
+      },
+      "recordedSpanNanos": 175483333700,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 51980400,
+        "com.gabou.atmospheregen.geography.continent.IslandModel": 1458431900,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 25177900,
+        "com.gabou.atmospheregen.geography.ocean.CoarseDistanceField": 46121600,
+        "java.lang.Object": 2055700
+      },
+      "parkPathBlockedThreadNanos": {
+        "ExactCache wait without inner terrain frame": 87398736100,
+        "other": 5105613967900,
+        "terrain wait inside ExactCache loader": 200132906500,
+        "terrain wait outside ExactCache": 6800732200
+      },
+      "gcSumOfPausesNanos": 1745984400,
+      "garbageCollections": 243
+    },
+    {
+      "run": "Task6C final",
+      "source": "docs/task6c/evidence/final_jfr_v1.json",
+      "executionSamples": 13261,
+      "subsystemSamples": {
+        "Minecraft chunk pipeline": 736,
+        "cache lookup": 42,
+        "climate geography sampling": 14,
+        "erosion/filtering": 3977,
+        "features/structures": 31,
+        "other": 831,
+        "surface-field extraction": 10,
+        "terrain noise": 7049,
+        "tile construction": 571
+      },
+      "recordedSpanNanos": 91628109600,
+      "monitorBlockedThreadNanos": {
+        "com.gabou.atmospheregen.generation.cache.ExactCache": 18568800,
+        "com.gabou.atmospheregen.geography.hydrology.PaRiverGenerator": 22250700,
+        "java.lang.Object": 1106400,
+        "java.util.concurrent.ConcurrentHashMap$Node": 1822100,
+        "raccoonman.reterraforged.concurrent.cache.Cache": 8660100
+      },
+      "parkPathBlockedThreadNanos": {
+        "ExactCache wait without inner terrain frame": 51343449300,
+        "other": 1967324981400,
+        "terrain wait inside ExactCache loader": 95103664700,
+        "terrain wait outside ExactCache": 4872907700
+      },
+      "gcSumOfPausesNanos": 1007546600,
+      "garbageCollections": 157
+    }
+  ],
+  "scope": "Existing FULL recordings include hashing and quart probes; final recording also includes three diagnostic cold traces. Unequal work: counts are not matched CPU timings. First recognized stack subsystem; parks/monitor durations sum across threads. Zero events means none above recording threshold.",
+  "conclusion": "No final IslandModel monitor events. Terrain noise and erosion/filtering dominate execution samples. Cache waits are mostly terrain acquisition, not ExactCache monitor contention. Hydraulic erosion and smoothing remain grouped by existing classifier; no invented separate CPU totals."
+}

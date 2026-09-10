@@ -1,0 +1,49 @@
+{
+  "requestedProcessors": 8,
+  "terrainWorkers": 8,
+  "scope": "parallel V1 finalized tiles vs unchanged modifier reference on the same V1 graph; complete public cells and mountain capture bits",
+  "tiles": [
+    {
+      "tileZ": 0,
+      "referenceSha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+      "exact": true,
+      "sha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+      "tileX": 0
+    },
+    {
+      "tileZ": -1,
+      "referenceSha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+      "exact": true,
+      "sha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+      "tileX": -1
+    },
+    {
+      "tileZ": 48,
+      "referenceSha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+      "exact": true,
+      "sha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+      "tileX": 47
+    },
+    {
+      "tileZ": -96,
+      "referenceSha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+      "exact": true,
+      "sha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+      "tileX": -224
+    },
+    {
+      "tileZ": -1172,
+      "referenceSha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+      "exact": true,
+      "sha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+      "tileX": -64
+    },
+    {
+      "tileZ": 468,
+      "referenceSha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+      "exact": true,
+      "sha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+      "tileX": 64
+    }
+  ]
+}

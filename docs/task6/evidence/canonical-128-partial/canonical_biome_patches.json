@@ -1,0 +1,422 @@
+[
+  {
+    "seed": "8675309",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 917504,
+    "minX": 7552,
+    "maxX": 8448,
+    "minZ": 7680,
+    "maxZ": 8704,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "8675309",
+    "biome": "minecraft:stony_peaks",
+    "sampledAreaBlocks2": 409600,
+    "minX": 8064,
+    "maxX": 8576,
+    "minZ": 7680,
+    "maxZ": 8704,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "4303642605",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 557056,
+    "minX": 7808,
+    "maxX": 8448,
+    "minZ": 7808,
+    "maxZ": 8832,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "4303642605",
+    "biome": "minecraft:stony_peaks",
+    "sampledAreaBlocks2": 770048,
+    "minX": 8064,
+    "maxX": 8832,
+    "minZ": 7808,
+    "maxZ": 8832,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "42",
+    "biome": "minecraft:stony_peaks",
+    "sampledAreaBlocks2": 245760,
+    "minX": 7808,
+    "maxX": 8832,
+    "minZ": 7296,
+    "maxZ": 7552,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "42",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 114688,
+    "minX": 8448,
+    "maxX": 8832,
+    "minZ": 7424,
+    "maxZ": 7552,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "42",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 753664,
+    "minX": 7808,
+    "maxX": 8832,
+    "minZ": 7552,
+    "maxZ": 8320,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "42",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 16384,
+    "minX": 8192,
+    "maxX": 8192,
+    "minZ": 7680,
+    "maxZ": 7680,
+    "boundaryCensored": false
+  },
+  {
+    "seed": "42",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 196608,
+    "minX": 8192,
+    "maxX": 8832,
+    "minZ": 7808,
+    "maxZ": 8064,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 16384,
+    "minX": 7936,
+    "maxX": 7936,
+    "minZ": 7296,
+    "maxZ": 7296,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 704512,
+    "minX": 8064,
+    "maxX": 8960,
+    "minZ": 7296,
+    "maxZ": 8064,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 16384,
+    "minX": 8576,
+    "maxX": 8576,
+    "minZ": 7296,
+    "maxZ": 7296,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:stony_peaks",
+    "sampledAreaBlocks2": 114688,
+    "minX": 8704,
+    "maxX": 8960,
+    "minZ": 7296,
+    "maxZ": 7552,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 49152,
+    "minX": 7936,
+    "maxX": 7936,
+    "minZ": 7424,
+    "maxZ": 7680,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 49152,
+    "minX": 8064,
+    "maxX": 8064,
+    "minZ": 7424,
+    "maxZ": 7680,
+    "boundaryCensored": false
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 16384,
+    "minX": 8320,
+    "maxX": 8320,
+    "minZ": 7424,
+    "maxZ": 7424,
+    "boundaryCensored": false
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 344064,
+    "minX": 7936,
+    "maxX": 8960,
+    "minZ": 7808,
+    "maxZ": 8320,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-987654321",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 16384,
+    "minX": 8192,
+    "maxX": 8192,
+    "minZ": 7808,
+    "maxZ": 7808,
+    "boundaryCensored": false
+  },
+  {
+    "seed": "0",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 376832,
+    "minX": 7424,
+    "maxX": 7808,
+    "minZ": 7296,
+    "maxZ": 8320,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "0",
+    "biome": "minecraft:stony_peaks",
+    "sampledAreaBlocks2": 802816,
+    "minX": 7552,
+    "maxX": 8448,
+    "minZ": 7296,
+    "maxZ": 8320,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "0",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 81920,
+    "minX": 8064,
+    "maxX": 8448,
+    "minZ": 7296,
+    "maxZ": 7424,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "0",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 16384,
+    "minX": 7808,
+    "maxX": 7808,
+    "minZ": 8192,
+    "maxZ": 8192,
+    "boundaryCensored": false
+  },
+  {
+    "seed": "0",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 16384,
+    "minX": 7552,
+    "maxX": 7552,
+    "minZ": 8320,
+    "maxZ": 8320,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "0",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 16384,
+    "minX": 7936,
+    "maxX": 7936,
+    "minZ": 8320,
+    "maxZ": 8320,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "0",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 16384,
+    "minX": 8448,
+    "maxX": 8448,
+    "minZ": 8320,
+    "maxZ": 8320,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "9223372036854775807",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 1179648,
+    "minX": 7808,
+    "maxX": 8832,
+    "minZ": 7808,
+    "maxZ": 8832,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "9223372036854775807",
+    "biome": "minecraft:stony_peaks",
+    "sampledAreaBlocks2": 98304,
+    "minX": 8576,
+    "maxX": 8704,
+    "minZ": 7808,
+    "maxZ": 8064,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "9223372036854775807",
+    "biome": "minecraft:lukewarm_ocean",
+    "sampledAreaBlocks2": 49152,
+    "minX": 8832,
+    "maxX": 8832,
+    "minZ": 7808,
+    "maxZ": 8064,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-9223372036854775807",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 933888,
+    "minX": 7424,
+    "maxX": 8192,
+    "minZ": 7424,
+    "maxZ": 8448,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-9223372036854775807",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 344064,
+    "minX": 8192,
+    "maxX": 8448,
+    "minZ": 7424,
+    "maxZ": 8448,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-9223372036854775807",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 49152,
+    "minX": 8448,
+    "maxX": 8448,
+    "minZ": 8192,
+    "maxZ": 8448,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-1",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 1032192,
+    "minX": 7424,
+    "maxX": 8448,
+    "minZ": 7680,
+    "maxZ": 8704,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-1",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 180224,
+    "minX": 8192,
+    "maxX": 8448,
+    "minZ": 7680,
+    "maxZ": 8064,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-1",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 32768,
+    "minX": 7936,
+    "maxX": 8064,
+    "minZ": 8192,
+    "maxZ": 8192,
+    "boundaryCensored": false
+  },
+  {
+    "seed": "-1",
+    "biome": "minecraft:stony_peaks",
+    "sampledAreaBlocks2": 16384,
+    "minX": 7424,
+    "maxX": 7424,
+    "minZ": 8320,
+    "maxZ": 8320,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "-1",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 32768,
+    "minX": 7552,
+    "maxX": 7552,
+    "minZ": 8320,
+    "maxZ": 8448,
+    "boundaryCensored": false
+  },
+  {
+    "seed": "-1",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 16384,
+    "minX": 7936,
+    "maxX": 7936,
+    "minZ": 8448,
+    "maxZ": 8448,
+    "boundaryCensored": false
+  },
+  {
+    "seed": "-1",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 16384,
+    "minX": 7808,
+    "maxX": 7808,
+    "minZ": 8704,
+    "maxZ": 8704,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "1",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 32768,
+    "minX": 7552,
+    "maxX": 7552,
+    "minZ": 7808,
+    "maxZ": 7936,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "1",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 163840,
+    "minX": 7552,
+    "maxX": 8064,
+    "minZ": 7808,
+    "maxZ": 8064,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "1",
+    "biome": "minecraft:plains",
+    "sampledAreaBlocks2": 1114112,
+    "minX": 7552,
+    "maxX": 8576,
+    "minZ": 7808,
+    "maxZ": 8832,
+    "boundaryCensored": true
+  },
+  {
+    "seed": "1",
+    "biome": "minecraft:forest",
+    "sampledAreaBlocks2": 16384,
+    "minX": 8576,
+    "maxX": 8576,
+    "minZ": 8832,
+    "maxZ": 8832,
+    "boundaryCensored": true
+  }
+]

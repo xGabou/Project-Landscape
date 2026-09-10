@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "biomeDigest": "ad0a2426ae8beb95512c15306c85d760c12028b61e7a9948e9a28d67f1e3601c",
+  "manifestFingerprint": "6299fb0ac8a4d407f871e61ea37ac9b61bfd8b1087ec76da74bd12a5a78d5580",
+  "surfaceRuleFingerprint": "f3cc9c0b1895ae4b858ff2c404dc5b52736a606a0ab36eff3d5383fa0ee738ad",
+  "climateExact": true,
+  "climate": {
+    "temperatureC": 22.328908850399568,
+    "rainfallMm": 1235.008125139968,
+    "evaporationMm": 921.9203593071923,
+    "rainShadow": 0.05004060721487597
+  },
+  "sourceCodecRoundtrip": true,
+  "reference": "runtime-final-01",
+  "scope": "Real saved world reopened through normal manifest and TerraBlender guards; complete seven-field raw climate equality is independently covered by paired acquisition and FULL output evidence."
+}

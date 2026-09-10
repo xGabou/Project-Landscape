@@ -1,0 +1,97 @@
+{
+  "recording": "task6-canonical-current.jfr",
+  "scope": "historical partial run; sampled CPU stacks, not wall-time attribution; mutually exclusive classification in terrain/resolver/climate/other order",
+  "samples": 2476,
+  "counts": {
+    "other_including_startup": 150,
+    "terrain_noise_erosion_stack": 2316,
+    "climate_stack_without_terrain_or_resolver": 10
+  },
+  "percentages": {
+    "other_including_startup": 6.058158319870759,
+    "terrain_noise_erosion_stack": 93.53796445880452,
+    "climate_stack_without_terrain_or_resolver": 0.40387722132471726
+  },
+  "topFrames": [
+    [
+      "raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Modifier.modify",
+      785
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Erosion.applyDrop",
+      664
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/Perlin.compute",
+      234
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/PerlinRidge.compute",
+      142
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/NoiseUtil.gradCoord2D",
+      89
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/Erosion.getNoiseValue",
+      68
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/Map.compute",
+      60
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Smoothing.apply",
+      43
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/WorleyEdge.sample",
+      25
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/cell/terrain/ITerrain$Delegate.erosionModifier",
+      24
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/Warp.compute",
+      24
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/densityfunction/tile/filter/Steepness.visit",
+      21
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/cell/terrain/ITerrain.erosionModifier",
+      15
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/densityfunction/tile/Tile.close",
+      15
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/Perlin2.compute",
+      13
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/Multiply.compute",
+      11
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/noise/module/Erosion.getErosionValue",
+      10
+    ],
+    [
+      "raccoonman/reterraforged/world/worldgen/densityfunction/tile/Tile.snapshot",
+      10
+    ],
+    [
+      "net/minecraft/world/level/LevelReader.getNoiseBiome",
+      9
+    ],
+    [
+      "com/gabou/atmospheregen/geography/terrain/PaGeographyProvider.snapshotSurfaceTile",
+      8
+    ]
+  ]
+}

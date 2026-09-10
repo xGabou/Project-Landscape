@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "seed": 8675309,
+  "workerRuns": [
+    {
+      "terrainWorkers": 2,
+      "requestedProcessors": 1,
+      "tiles": [
+        {
+          "exact": true,
+          "referenceSha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+          "tileZ": 0,
+          "tileX": 0,
+          "sha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+          "tileZ": -1,
+          "tileX": -1,
+          "sha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+          "tileZ": 48,
+          "tileX": 47,
+          "sha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+          "tileZ": -96,
+          "tileX": -224,
+          "sha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+          "tileZ": -1172,
+          "tileX": -64,
+          "sha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+          "tileZ": 468,
+          "tileX": 64,
+          "sha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0"
+        }
+      ],
+      "scope": "parallel V1 finalized tiles vs unchanged modifier reference on the same V1 graph; complete public cells and mountain capture bits"
+    },
+    {
+      "scope": "parallel V1 finalized tiles vs unchanged modifier reference on the same V1 graph; complete public cells and mountain capture bits",
+      "terrainWorkers": 2,
+      "requestedProcessors": 2,
+      "tiles": [
+        {
+          "exact": true,
+          "referenceSha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+          "tileZ": 0,
+          "tileX": 0,
+          "sha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+          "tileZ": -1,
+          "tileX": -1,
+          "sha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+          "tileZ": 48,
+          "tileX": 47,
+          "sha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+          "tileZ": -96,
+          "tileX": -224,
+          "sha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+          "tileZ": -1172,
+          "tileX": -64,
+          "sha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+          "tileZ": 468,
+          "tileX": 64,
+          "sha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0"
+        }
+      ]
+    },
+    {
+      "tiles": [
+        {
+          "sha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+          "tileX": 0,
+          "tileZ": 0,
+          "referenceSha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+          "exact": true
+        },
+        {
+          "sha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+          "tileX": -1,
+          "tileZ": -1,
+          "referenceSha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+          "exact": true
+        },
+        {
+          "sha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+          "tileX": 47,
+          "tileZ": 48,
+          "referenceSha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+          "exact": true
+        },
+        {
+          "sha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+          "tileX": -224,
+          "tileZ": -96,
+          "referenceSha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+          "exact": true
+        },
+        {
+          "sha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+          "tileX": -64,
+          "tileZ": -1172,
+          "referenceSha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+          "exact": true
+        },
+        {
+          "sha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+          "tileX": 64,
+          "tileZ": 468,
+          "referenceSha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+          "exact": true
+        }
+      ],
+      "requestedProcessors": 8,
+      "terrainWorkers": 8,
+      "scope": "parallel V1 finalized tiles vs unchanged modifier reference on the same V1 graph; complete public cells and mountain capture bits"
+    },
+    {
+      "requestedProcessors": 24,
+      "tiles": [
+        {
+          "tileX": 0,
+          "sha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+          "exact": true,
+          "referenceSha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+          "tileZ": 0
+        },
+        {
+          "tileX": -1,
+          "sha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+          "exact": true,
+          "referenceSha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+          "tileZ": -1
+        },
+        {
+          "tileX": 47,
+          "sha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+          "exact": true,
+          "referenceSha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+          "tileZ": 48
+        },
+        {
+          "tileX": -224,
+          "sha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+          "exact": true,
+          "referenceSha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+          "tileZ": -96
+        },
+        {
+          "tileX": -64,
+          "sha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+          "exact": true,
+          "referenceSha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+          "tileZ": -1172
+        },
+        {
+          "tileX": 64,
+          "sha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+          "exact": true,
+          "referenceSha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+          "tileZ": 468
+        }
+      ],
+      "scope": "parallel V1 finalized tiles vs unchanged modifier reference on the same V1 graph; complete public cells and mountain capture bits",
+      "terrainWorkers": 24
+    },
+    {
+      "terrainWorkers": 48,
+      "requestedProcessors": 48,
+      "tiles": [
+        {
+          "exact": true,
+          "referenceSha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4",
+          "tileZ": 0,
+          "tileX": 0,
+          "sha256": "8392aa16fc7e00481e1cb0d1bdb1f6bd899b07db9510296e46da7d616d7a4bc4"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff",
+          "tileZ": -1,
+          "tileX": -1,
+          "sha256": "18c8fd4d37d830339517dfac61b224261890917aa95ce14e15541eeee7a50eff"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388",
+          "tileZ": 48,
+          "tileX": 47,
+          "sha256": "0f8bec17410c5dc305a9e4adeaf4c5aad5f88f7bf9350e3c4dc41515e4680388"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030",
+          "tileZ": -96,
+          "tileX": -224,
+          "sha256": "a49c0619a295c954236e9c73d84ff1865c801f48c202fadac428e59ed75c2030"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3",
+          "tileZ": -1172,
+          "tileX": -64,
+          "sha256": "f48573a16b19f37d2f4f3a2f71f69ab1a6a2e7fbaa5e1904d2908c5499d317e3"
+        },
+        {
+          "exact": true,
+          "referenceSha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0",
+          "tileZ": 468,
+          "tileX": 64,
+          "sha256": "db536aeb722873f9adf8dfc20498fb0b272420fffcd985e8b4e47d99738bdcc0"
+        }
+      ],
+      "scope": "parallel V1 finalized tiles vs unchanged modifier reference on the same V1 graph; complete public cells and mountain capture bits"
+    }
+  ],
+  "crossWorkerExact": true,
+  "tileComparisons": 30,
+  "scope": "unchanged reference modifier on identical V1 graph; full public cell values plus all three mountain raw-bit fields",
+  "workerCountCaveat": "Requested JVM counts 1/2/8/24/48; production ThreadPools.availableProcessors() has minimum 2, so actual terrain pools are 2/2/8/24/48. No artificial single-thread production override was introduced."
+}

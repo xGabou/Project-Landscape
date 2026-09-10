@@ -1,0 +1,14 @@
+{
+  "catalogFingerprint": "0d1fe8454a4e7690dd05563084dd8333b19e1f50836c6a149af3dd5a74c71427",
+  "rejectedInvalidCases": [
+    "invertedRange",
+    "preferredOutsideAllowed",
+    "unknownTrait",
+    "emptyTraits",
+    "negativePriority",
+    "nonfinite_NaN",
+    "nonfinite_Infinity",
+    "nonfinite_-Infinity"
+  ],
+  "uniqueDescriptors": 42
+}

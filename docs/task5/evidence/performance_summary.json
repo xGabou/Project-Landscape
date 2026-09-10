@@ -1,0 +1,9 @@
+{
+  "status": "MEASURED",
+  "provider": "PaBaselineClimateProvider",
+  "survey": {"seeds": 16, "pointsPerSeed": 289, "wallTime": "1m57s including Gradle/JVM startup and compilation"},
+  "profile": {"maximumDistanceBlocks": 24000, "stepBlocks": 256, "samplesPerProfile": 94},
+  "cache": {"scope": "world/context", "capacity": 4096, "eviction": "bounded LRU", "warmthIndependent": true},
+  "chunkGenerationRegression": "none introduced: climate provider is not queried by chunk generation in Task 5",
+  "task4Context": "accepted V1 eight-tile batch was approximately +21.9% versus legacy contemporary benchmark"
+}

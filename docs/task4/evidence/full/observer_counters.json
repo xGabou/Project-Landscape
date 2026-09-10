@@ -1,0 +1,194 @@
+[
+  {
+    "phase": "before_suite",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 625,
+      "entryGetCalls": 9228578,
+      "entryGetInclusiveNs": 2414161800,
+      "entryGetInitiallyPending": 6,
+      "presentHit": 9217259,
+      "presentMiss": 2691593,
+      "provideCalls": 10694,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 4,
+      "tileGenerationCalls": 36
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 9777,
+      "entryGetCalls": 9238982,
+      "entryGetInclusiveNs": 12111562000,
+      "entryGetInitiallyPending": 153,
+      "presentHit": 9218362,
+      "presentMiss": 2692650,
+      "provideCalls": 10843,
+      "queueCalls": 2025,
+      "thresholdTileReleases": 147,
+      "tileGenerationCalls": 339
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 9813,
+      "entryGetCalls": 10611716,
+      "entryGetInclusiveNs": 13660295400,
+      "entryGetInitiallyPending": 168,
+      "presentHit": 10590421,
+      "presentMiss": 2695993,
+      "provideCalls": 11482,
+      "queueCalls": 4141,
+      "thresholdTileReleases": 147,
+      "tileGenerationCalls": 392
+    }
+  },
+  {
+    "phase": "before_suite",
+    "seed": 4303642605,
+    "counters": {
+      "dropCalls": 10438,
+      "entryGetCalls": 16957528,
+      "entryGetInclusiveNs": 15902247200,
+      "entryGetInitiallyPending": 176,
+      "presentHit": 16925136,
+      "presentMiss": 5285858,
+      "provideCalls": 21954,
+      "queueCalls": 6166,
+      "thresholdTileReleases": 151,
+      "tileGenerationCalls": 428
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 4303642605,
+    "counters": {
+      "dropCalls": 10438,
+      "entryGetCalls": 16957528,
+      "entryGetInclusiveNs": 15902247200,
+      "entryGetInitiallyPending": 176,
+      "presentHit": 16925136,
+      "presentMiss": 5285858,
+      "provideCalls": 21954,
+      "queueCalls": 6166,
+      "thresholdTileReleases": 151,
+      "tileGenerationCalls": 428
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 4303642605,
+    "counters": {
+      "dropCalls": 10474,
+      "entryGetCalls": 18557444,
+      "entryGetInclusiveNs": 17424214100,
+      "entryGetInitiallyPending": 192,
+      "presentHit": 18524413,
+      "presentMiss": 5290974,
+      "provideCalls": 22557,
+      "queueCalls": 8282,
+      "thresholdTileReleases": 151,
+      "tileGenerationCalls": 481
+    }
+  },
+  {
+    "phase": "before_suite",
+    "seed": 42,
+    "counters": {
+      "dropCalls": 11099,
+      "entryGetCalls": 25689632,
+      "entryGetInclusiveNs": 18789068300,
+      "entryGetInitiallyPending": 201,
+      "presentHit": 25653856,
+      "presentMiss": 8012552,
+      "provideCalls": 24677,
+      "queueCalls": 10307,
+      "thresholdTileReleases": 155,
+      "tileGenerationCalls": 530
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 42,
+    "counters": {
+      "dropCalls": 11099,
+      "entryGetCalls": 25689632,
+      "entryGetInclusiveNs": 18789068300,
+      "entryGetInitiallyPending": 201,
+      "presentHit": 25653856,
+      "presentMiss": 8012552,
+      "provideCalls": 24677,
+      "queueCalls": 10307,
+      "thresholdTileReleases": 155,
+      "tileGenerationCalls": 530
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 42,
+    "counters": {
+      "dropCalls": 11144,
+      "entryGetCalls": 28715898,
+      "entryGetInclusiveNs": 20281826600,
+      "entryGetInitiallyPending": 223,
+      "presentHit": 28679749,
+      "presentMiss": 8037728,
+      "provideCalls": 25005,
+      "queueCalls": 12552,
+      "thresholdTileReleases": 155,
+      "tileGenerationCalls": 584
+    }
+  },
+  {
+    "phase": "before_suite",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 11769,
+      "entryGetCalls": 37932331,
+      "entryGetInclusiveNs": 22277267600,
+      "entryGetInitiallyPending": 231,
+      "presentHit": 37893466,
+      "presentMiss": 10732861,
+      "provideCalls": 27096,
+      "queueCalls": 14577,
+      "thresholdTileReleases": 159,
+      "tileGenerationCalls": 620
+    }
+  },
+  {
+    "phase": "before_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 11769,
+      "entryGetCalls": 37932331,
+      "entryGetInclusiveNs": 22277267600,
+      "entryGetInitiallyPending": 231,
+      "presentHit": 37893466,
+      "presentMiss": 10732861,
+      "provideCalls": 27096,
+      "queueCalls": 14577,
+      "thresholdTileReleases": 159,
+      "tileGenerationCalls": 620
+    }
+  },
+  {
+    "phase": "after_chunks",
+    "seed": 8675309,
+    "counters": {
+      "dropCalls": 11805,
+      "entryGetCalls": 39304774,
+      "entryGetInclusiveNs": 23838082000,
+      "entryGetInitiallyPending": 252,
+      "presentHit": 39265605,
+      "presentMiss": 10736012,
+      "provideCalls": 27364,
+      "queueCalls": 16693,
+      "thresholdTileReleases": 159,
+      "tileGenerationCalls": 672
+    }
+  }
+]
