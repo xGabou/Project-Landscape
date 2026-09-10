@@ -1,4 +1,4 @@
-# Task 6C investigation (in progress)
+# Task 6C investigation record
 
 Baseline: `39c597cb605c051ff0c0f484d65a50ec47120496`. No Phase 2 work.
 
@@ -26,6 +26,6 @@ Terrain batch workers execute raw geography. Finalization is an allOf completion
 
 Fresh unmodified baseline acquisition: `evidence/baseline-acquisition-01`. Same five Task 6B scenarios and parameters. Diagnostics enabled only with `-Ptask6cMetrics=true`; nested stage durations overlap. Static aggregate counters retain no world or coordinate references; fixed enum cardinality. Instrumented timings are not used as uninstrumented performance baselines.
 
-Smoothing experiment compares detached identical finalized snapshots, alternating candidate/reference order, two warmup passes and seven measured passes at six fixtures. All 33,177,600 public field comparisons are exact. First measured aggregate: 44.0633 ms reference, 17.6551 ms candidate. This measures smoothing alone, not total generation. No production smoothing change yet.
+Smoothing experiment compares detached identical finalized snapshots, alternating candidate/reference order, two warmup passes and seven measured passes at six fixtures. All 33,177,600 public field comparisons are exact. First measured aggregate: 44.0633 ms reference, 17.6551 ms candidate. This measures smoothing alone, not total generation. Production smoothing was accepted in `a506198`; it was not re-investigated during the resumed session.
 
-This is an investigation checkpoint, not Task 6C acceptance or a Phase 2 recommendation.
+Resumed decisions: [IslandModel](ISLAND_MODEL.md), [marine projection](MARINE_PROJECTION.md), [erosion noise](EROSION_NOISE.md), [dependency table](DEPENDENCIES.md). This historical investigation record is not a Phase 2 recommendation; final gate status belongs in the final report.

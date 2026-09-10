@@ -149,6 +149,13 @@ public final class ReproductionClient {
                     allUnregistered &= !((List<?>)Evidence.field(raccoonman.reterraforged.concurrent.cache.CacheManager.class,"CACHES")).contains(Evidence.field(context.cache,"cache"));
                     DisposalChecks.awaitReturned(context);
                     live += DisposalChecks.stats(context,"cellPool").live()+DisposalChecks.stats(context,"chunkPool").live();
+                    var bridge=context.generator.getHeightmap().paBridge();
+                    if(bridge!=null){
+                        var islands=bridge.macro().islands();var stats=islands.cacheStats();
+                        if(stats.get("frontEntries")!=0||stats.get("entries")!=0)throw new AssertionError("Island cache retained after runtime unload");
+                        try{islands.islands(bridge.macro().sites().at(0,0));throw new AssertionError("Island query after runtime unload");}catch(IllegalStateException expected){}
+                        out.row("task6c_island_disposal","worldIndex",worldIndex,"reopened",task6Reopened,"cache",stats,"postCloseQueryRejected",true);
+                    }
                 }
                 out.row("disposal","case","actual world unload","seed",currentSeed(),"worldIndex",worldIndex,"contexts",worldContexts.size(),"allClosed",allClosed,"allUnregistered",allUnregistered,"livePooledBorrows",live);
                 if(task6bDisposedSource!=null){

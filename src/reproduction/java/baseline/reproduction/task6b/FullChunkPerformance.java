@@ -55,8 +55,16 @@ public final class FullChunkPerformance {
         }
         if(source instanceof ClimateBiomeSource climateSource){
             out.row("task6b_cache_metrics","phase","after paired corpus","distance",climateSource.distanceCacheStats(),"surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());
-            LocalityTrace.enabled=true;
-            try{level.getChunk((6128>>4)+64,(6240>>4)+64);}finally{LocalityTrace.flush(out);}
+            int traceIndex=0;
+            for(int[] p:new int[][]{{7152,7264},{300000,160000},{-310000,-170000}}){
+                var before=Metrics.snapshot();var surfaceBefore=climateSource.surfaceCacheStats();
+                long start=System.nanoTime();LocalityTrace.enabled=true;
+                try{level.getChunk(p[0]>>4,p[1]>>4);}finally{LocalityTrace.flush(out);}
+                out.row("task6c_cold_queries","traceIndex",traceIndex++,"blockX",p[0],"blockZ",p[1],"diagnosticWallNanos",System.nanoTime()-start,
+                    "beforeCounters",before,"afterCounters",Metrics.snapshot(),"surfaceBefore",surfaceBefore,"surfaceAfter",climateSource.surfaceCacheStats(),
+                    "scope","Trace-enabled FULL request after paired timing corpus; new remote regions for indices 1/2; instrumentation and flush included, not release performance");
+                out.flush();
+            }
             out.row("task6b_cache_metrics","phase","after locality chunk","distance",climateSource.distanceCacheStats(),"surface",climateSource.surfaceCacheStats(),"climate",climateSource.climateCacheStats(),"geography",climateSource.surfaceGeographyCacheStats(),"winners",climateSource.surfaceWinnerCacheStats());out.flush();
         }
         if(Runtime.getRuntime().availableProcessors()==8)FullOutputEvidence.run(level,out);

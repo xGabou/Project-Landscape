@@ -36,6 +36,7 @@ public final class WorldgenBenchmark {
             var registries=new RegistrySetBuilder().add(RTFRegistries.NOISE,c->PresetNoiseData.bootstrap(preset,c))
                     .build(RegistryAccess.EMPTY);
             if(System.getProperty("task6b.mode","acquisition").equals("island-experiment")){IslandExperiment.run(out);return;}
+            if(System.getProperty("task6b.mode","acquisition").equals("erosion-noise-experiment")){ErosionNoiseExperiment.run(out);return;}
             if(System.getProperty("task6b.mode","acquisition").equals("macro-determinism")){
                 baseline.reproduction.geography.GeographySurvey.determinism(out,MacroGeographySettings.defaults());return;
             }
@@ -62,6 +63,10 @@ public final class WorldgenBenchmark {
             }
             if(System.getProperty("task6b.mode","acquisition").equals("marine-opportunity")) {
                 try {MarineProjectionExperiment.opportunity(context,out);} finally {context.cache.close();}
+                return;
+            }
+            if(System.getProperty("task6b.mode","acquisition").equals("cold-analysis")) {
+                try {ColdTraceAnalysis.run(context,out);} finally {context.cache.close();}
                 return;
             }
             if(System.getProperty("task6b.mode","acquisition").equals("smoothing-experiment")) {
