@@ -58,6 +58,11 @@ minecraft {
             property 'task1a.repeats', providers.gradleProperty('reproRepeats').getOrElse('3')
             property 'task1a.points', providers.gradleProperty('reproPoints').getOrElse('')
             property 'task6b.final', providers.gradleProperty('task6bFinal').getOrElse('false')
+            property 'phase2a.runtime', providers.gradleProperty('phase2aRuntime').getOrElse('false')
+            if (providers.gradleProperty('phase2aPaJar').isPresent()) {
+                property 'mixin.env.remapRefMap', 'true'
+                property 'mixin.env.refMapRemappingFile', file('build/createSrgToMcp/output.srg').absolutePath
+            }
             // Task 1C test corpus only; no production generation-version mechanism.
             property 'task1c.fixtureFile', file('docs/task1c/evidence/fixture_manifest.json').absolutePath
             if (providers.gradleProperty('reproPreset').isPresent()) {
@@ -103,7 +108,18 @@ mixin {
 }
 sourceSets.main.resources.srcDir 'src/generated/resources'
 
+// File dependencies bypass ForgeGradle remapping. Stage the supplied jar under a
+// content-addressed local module so rebuilt companion jars cannot hit a stale mapping cache.
+def phase2aPaVersion = null
+if (providers.gradleProperty('phase2aPaJar').isPresent()) {
+    def paJar = file(providers.gradleProperty('phase2aPaJar').get())
+    phase2aPaVersion = java.security.MessageDigest.getInstance('SHA-256').digest(paJar.bytes).encodeHex().toString()
+    copy { from paJar; into layout.buildDirectory.dir('phase2a-pa-repo'); rename { "pa-bridge-${phase2aPaVersion}.jar" } }
+}
 repositories {
+    if (phase2aPaVersion != null) {
+        flatDir { dirs layout.buildDirectory.dir('phase2a-pa-repo'); content { includeGroup 'phase2a.local' } }
+    }
     mavenCentral()
     maven { url = 'https://maven.minecraftforge.net/' }
     maven {
@@ -113,6 +129,13 @@ repositories {
 }
 
 dependencies {
+    if (providers.gradleProperty('phase2aPaJar').isPresent()) {
+        runtimeOnly fg.deobf("phase2a.local:pa-bridge:${phase2aPaVersion}")
+        runtimeOnly fg.deobf('curse.maven:gabous-libs-1367332:8280104')
+        runtimeOnly fg.deobf('curse.maven:cool-rain-reforged-1346978:7270440')
+        runtimeOnly fg.deobf('curse.maven:architectury-api-419699:5137938')
+        runtimeOnly fg.deobf('curse.maven:cloth-config-348521:5729105')
+    }
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     compileOnly fg.deobf("curse.maven:terrablender-563928:${terrablender_curse_file}")
@@ -206,4 +229,11 @@ tasks.matching { it.name == 'runReproductionClient' }.configureEach {
     doLast {
         if (!marker.isFile()) throw new GradleException('Task 1A reproduction harness did not finish; inspect run/task1a/logs/latest.log')
     }
+}
+
+tasks.register('phase2aHistoryChecks', JavaExec) {
+    dependsOn tasks.named('performanceClasses')
+    classpath = sourceSets.performance.runtimeClasspath
+    mainClass = 'baseline.reproduction.performance.RuntimeHistoryChecks'
+    args file('build/phase2a-history/history.dat').absolutePath
 }
