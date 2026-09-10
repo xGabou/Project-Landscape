@@ -130,3 +130,5 @@ run/
 .project
 
 *.launch
+
+*.jfr
