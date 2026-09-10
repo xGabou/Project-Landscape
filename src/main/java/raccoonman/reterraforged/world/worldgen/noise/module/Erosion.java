@@ -1,5 +1,7 @@
 package raccoonman.reterraforged.world.worldgen.noise.module;
 
+import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
+
 import java.util.Arrays;
 
 import com.mojang.serialization.Codec;
@@ -28,9 +30,11 @@ public record Erosion(Noise input, int seed, int octaves, float strength, float 
 
 	@Override
 	public float compute(float x, float z, int seed) {
-		float value = this.input.compute(x, z, seed);
+		long measured=Stage.EROSION_NOISE.start();
+        float value = this.input.compute(x, z, seed);
 		float erosion = this.getErosionValue(x, z, this.cache.get());
-		return NoiseUtil.lerp(erosion, value, this.blendMode.blend(value, erosion, this.strength));
+		float result=NoiseUtil.lerp(erosion, value, this.blendMode.blend(value, erosion, this.strength));
+        Stage.EROSION_NOISE.end(measured);return result;
 	}
 
 	@Override

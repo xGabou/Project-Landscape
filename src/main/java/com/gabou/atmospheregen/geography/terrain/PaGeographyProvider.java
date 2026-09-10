@@ -1,6 +1,8 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
 package com.gabou.atmospheregen.geography.terrain;
 
+import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
+
 import com.gabou.atmospheregen.api.geography.*;
 import com.gabou.atmospheregen.geography.ocean.CoarseDistanceField;
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
@@ -49,7 +51,9 @@ public final class PaGeographyProvider implements GeographyProvider {
     public SurfaceTile snapshotSurfaceTile(int x,int z){
         if(context.cache.isClosed())throw new IllegalStateException("V1 geography context is closed");
         int tx=context.cache.chunkToTile(x>>4),tz=context.cache.chunkToTile(z>>4);
+        long measured=Stage.SURFACE_ACQUISITION.start();
         var tile=context.cache.provide(tx,tz);
+        Stage.SURFACE_ACQUISITION.end(measured);
         int side=tile.getChunksSize().size()*16,originX=tx*side,originZ=tz*side;
         float[] elevation=new float[side*side],mountains=new float[side*side];
         for(int dz=0;dz<side;dz++)for(int dx=0;dx<side;dx++){

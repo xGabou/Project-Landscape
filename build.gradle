@@ -84,6 +84,7 @@ minecraft {
                 workingDirectory project.file('run/task6b-offline')
                 mods { task6b_performance { source sourceSets.performance } }
                 property 'task6b.output', file(providers.gradleProperty('task6bOutput').get()).absolutePath
+                property 'task6c.metrics', providers.gradleProperty('task6cMetrics').getOrElse('false')
                 property 'task6b.mode', providers.gradleProperty('task6bMode').getOrElse('acquisition')
                 property 'task6b.sourceChecks', providers.gradleProperty('task6bSourceChecks').getOrElse('false')
                 property 'task1c.fixtureFile', file('docs/task1c/evidence/fixture_manifest.json').absolutePath

@@ -5,6 +5,7 @@ import com.gabou.atmospheregen.api.geography.MacroGeographyProvider.IslandClass;
 import com.gabou.atmospheregen.config.MacroGeographySettings;
 import com.gabou.atmospheregen.generation.seed.*;
 import java.util.*;
+import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
 
 /** Explicit independent coastal/oceanic islands and bounded clusters. Immutable cached geometry. */
 public final class IslandModel {
@@ -19,7 +20,15 @@ public final class IslandModel {
         islandSeed=seeds.seed(SeedDomain.ISLANDS);clusterSeed=seeds.seed(SeedDomain.ARCHIPELAGOS);
         this.settings=settings;this.continent=continent;
     }
-    public synchronized List<Island> islands(MacroSiteField.Site site) {
+    public List<Island> islands(MacroSiteField.Site site) {
+        long waiting=Stage.ISLAND_WAIT.start();
+        synchronized(this) {
+            Stage.ISLAND_WAIT.end(waiting);
+            long working=Stage.ISLAND_WORK.start();
+            try {return islandsLocked(site);} finally {Stage.ISLAND_WORK.end(working);}
+        }
+    }
+    private List<Island> islandsLocked(MacroSiteField.Site site) {
         List<Island> found=cache.get(site.id());if(found!=null){hits++;return found;}misses++;
         List<Island> result=new ArrayList<>();
         long h=MacroSiteField.hash(islandSeed,site.gridX(),site.gridZ());

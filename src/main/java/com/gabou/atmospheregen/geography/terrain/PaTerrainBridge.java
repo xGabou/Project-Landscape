@@ -1,6 +1,8 @@
 /* Original V1 composition adapter, All Rights Reserved. Composes the retained MIT RTF terrain backend. */
 package com.gabou.atmospheregen.geography.terrain;
 
+import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
+
 import com.gabou.atmospheregen.api.geography.MacroGeographyProvider.MacroSample;
 import com.gabou.atmospheregen.config.MacroGeographySettings;
 import com.gabou.atmospheregen.generation.seed.*;
@@ -31,16 +33,22 @@ public final class PaTerrainBridge implements Continent {
     public GeographyPipeline<Cell,Rivermap,Tile> pipeline(WorldFilters filters) {
         return new GeographyPipeline<>(this::apply,(cell,x,z)->{},this::hydrology,this::legacyHints,(tile,optional)->{
             filters.apply(tile,optional);
+            long measured=Stage.SHORELINE.start();
             tile.iterate((cell,x,z)->finalizeShoreline(cell,tile.getBlockX()+x,tile.getBlockZ()+z));
+            Stage.SHORELINE.end(measured);
         });
     }
     @Override public void apply(Cell cell,float x,float z) {
+        long measured=Stage.MACRO.start();
         var sample=macro.sampleMacro(x,z);var site=macro.sites().at(x,z);
+        Stage.MACRO.end(measured);
         cell.resetMountainContributions();cell.terrain=TerrainType.FLATS;
         cell.continentX=(int)site.x();cell.continentZ=(int)site.z();cell.continentId=(float)com.gabou.atmospheregen.geography.continent.MacroSiteField.unit(site.id());
         cell.beachNoise=0;cell.continentEdge=1; // Select only the retained regional land graph.
         if(sample.land()) {
+            long terrainTime=Stage.TERRAIN_HEIGHT.start();
             backend.terrainStage().apply(cell,x,z);
+            Stage.TERRAIN_HEIGHT.end(terrainTime);
             double alpha=Math.min(1,sample.shorelineProfileBlocks()/384);alpha=alpha*alpha*(3-2*alpha);
             cell.height=(float)(levels.water+(Math.max(cell.height,levels.water+levels.scale(2))-levels.water)*alpha);
             cell.mountainChainContribution((float)(cell.mountainChainContribution()*alpha));
@@ -53,11 +61,11 @@ public final class PaTerrainBridge implements Continent {
         var sample=macro.sampleMacro(x,z);
         if(!sample.land()||sample.islandClass()!=com.gabou.atmospheregen.api.geography.MacroGeographyProvider.IslandClass.NONE)return previous;
         Rivermap map=previous!=null&&previous.getX()==cell.continentX&&previous.getZ()==cell.continentZ?previous:rivers.map(cell.continentX,cell.continentZ);
-        map.apply(cell,x,z);return map;
+        long measured=Stage.HYDROLOGY.start();map.apply(cell,x,z);Stage.HYDROLOGY.end(measured);return map;
     }
     public void legacyHints(Cell cell,float x,float z,boolean enabled) {
         Terrain physical=cell.terrain;
-        backend.legacyParameters().apply(cell,x,z,enabled);
+        long measured=Stage.LEGACY_HINTS.start();backend.legacyParameters().apply(cell,x,z,enabled);Stage.LEGACY_HINTS.end(measured);
         // Legacy biome parameters remain temporary. Their biome-center coast mutation has no V1 authority.
         cell.terrain=physical;
     }

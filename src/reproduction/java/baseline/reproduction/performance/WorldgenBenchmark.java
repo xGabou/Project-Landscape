@@ -52,6 +52,10 @@ public final class WorldgenBenchmark {
                 try {OwnershipChecks.run(context,out);} finally {context.cache.close();}
                 return;
             }
+            if(System.getProperty("task6b.mode","acquisition").equals("smoothing-experiment")) {
+                try {SmoothingExperiment.run(context,out);} finally {context.cache.close();}
+                return;
+            }
             if(System.getProperty("task6b.mode","acquisition").equals("erosion-experiment")) {
                 try {ErosionExperiment.run(context,out);} finally {context.cache.close();}
                 return;
@@ -114,7 +118,8 @@ public final class WorldgenBenchmark {
         long processCpu=os.getProcessCpuTime();
         long id=Thread.currentThread().getId(),allocated=bean.getThreadAllocatedBytes(id),cpu=bean.getCurrentThreadCpuTime(),start=System.nanoTime();
         for(int i=0;i<count;i++)action.run();
-        return Map.of("name",name,"count",count,"wallNanos",System.nanoTime()-start,
+        var metrics=com.gabou.atmospheregen.geography.terrain.TerrainMetrics.snapshot();
+        return Map.of("terrainCumulative",metrics,"name",name,"count",count,"wallNanos",System.nanoTime()-start,
                 "processCpuNanos",os.getProcessCpuTime()-processCpu,"callingThreadCpuNanos",bean.getCurrentThreadCpuTime()-cpu,"callingThreadAllocatedBytes",bean.getThreadAllocatedBytes(id)-allocated);
     }
     static LinkedHashMap<String,List<CacheReplay.Point>> scenarios(){
