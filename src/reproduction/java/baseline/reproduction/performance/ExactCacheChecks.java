@@ -1,7 +1,7 @@
 /* Original concurrency and lifecycle regression. All Rights Reserved. */
 package baseline.reproduction.performance;
 
-import com.gabou.atmospheregen.generation.cache.ExactCache;
+import com.gabou.projectlandscape.generation.cache.ExactCache;
 import java.nio.file.Path;
 import java.util.*;
 import java.util.concurrent.*;

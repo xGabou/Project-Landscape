@@ -1,14 +1,14 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
 package baseline.reproduction.performance;
-import com.gabou.atmospheregen.geography.continent.*;
-import com.gabou.atmospheregen.geography.continent.IslandModel.Island;
-import com.gabou.atmospheregen.geography.continent.IslandModel.Sample;
+import com.gabou.projectlandscape.geography.continent.*;
+import com.gabou.projectlandscape.geography.continent.IslandModel.Island;
+import com.gabou.projectlandscape.geography.continent.IslandModel.Sample;
 
-import com.gabou.atmospheregen.api.geography.MacroGeographyProvider.IslandClass;
-import com.gabou.atmospheregen.config.MacroGeographySettings;
-import com.gabou.atmospheregen.generation.seed.*;
+import com.gabou.projectlandscape.api.geography.MacroGeographyProvider.IslandClass;
+import com.gabou.projectlandscape.config.MacroGeographySettings;
+import com.gabou.projectlandscape.generation.seed.*;
 import java.util.*;
-import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
+import com.gabou.projectlandscape.geography.terrain.TerrainMetrics.Stage;
 
 /** Explicit independent coastal/oceanic islands and bounded clusters. Immutable cached geometry. */
 final class ReferenceIslandModel {

@@ -30,7 +30,7 @@ public class RTFForge {
     		modBus.addListener(RTFForgeClient::registerPresetEditors);
     	}
     	modBus.addListener(RTFForge::gatherData);
-        net.minecraftforge.common.MinecraftForge.EVENT_BUS.addListener(com.gabou.atmospheregen.climate.ClimateDebugCommand::register);
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS.addListener(com.gabou.projectlandscape.climate.ClimateDebugCommand::register);
 
 		RegistryUtil.register(modBus);
         net.minecraftforge.common.MinecraftForge.EVENT_BUS.addListener(RTFForge::unloadLevel);

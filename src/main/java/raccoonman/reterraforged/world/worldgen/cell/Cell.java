@@ -8,7 +8,7 @@ import raccoonman.reterraforged.world.worldgen.cell.biome.type.BiomeType;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.Terrain;
 import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
 
-public class Cell implements com.gabou.atmospheregen.geography.GeographyWorkspace {
+public class Cell implements com.gabou.projectlandscape.geography.GeographyWorkspace {
     private static final Cell DEFAULTS = new Cell();
     private static final Cell EMPTY = new Cell() {
 

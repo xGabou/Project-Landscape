@@ -1,7 +1,7 @@
 /* Original exact projection experiment. All Rights Reserved. */
 package baseline.reproduction.performance;
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
-import com.gabou.atmospheregen.geography.terrain.PaGeographyProvider;
+import com.gabou.projectlandscape.geography.terrain.PaGeographyProvider;
 import java.nio.file.Path;
 import java.util.*;
 final class MarineProjectionExperiment {
@@ -68,13 +68,13 @@ final class MarineProjectionExperiment {
                 // Keep raw finalized-field checks there; compare complete climate inputs inside its domain.
                 if(Math.abs(x)<29980000&&Math.abs(z)<29980000){
                 var distances=geography.distanceField().sample(x,z);
-                var candidate=new com.gabou.atmospheregen.climate.ClimateGeography.Sample((double)actualElevation-context.levels.waterLevel,
+                var candidate=new com.gabou.projectlandscape.climate.ClimateGeography.Sample((double)actualElevation-context.levels.waterLevel,
                     distances.marineShoreline().valueBlocks(),distances.oceanWater().valueBlocks(),0,macro.waterBody());
-                var reference=new com.gabou.atmospheregen.climate.ClimateGeography.Sample(surface.seaRelativeElevation(x,z),distances.marineShoreline().valueBlocks(),distances.oceanWater().valueBlocks(),surface.mountainInfluence(x,z),macro.waterBody());
+                var reference=new com.gabou.projectlandscape.climate.ClimateGeography.Sample(surface.seaRelativeElevation(x,z),distances.marineShoreline().valueBlocks(),distances.oceanWater().valueBlocks(),surface.mountainInfluence(x,z),macro.waterBody());
                 if(!reference.equals(candidate)||geography.marineSeaRelativeElevation(macro)!=candidate.elevationBlocks())throw new AssertionError("Downstream climate projection at "+x+","+z);
                 var geo=geography.sample(x,z);
                 if(geo.elevationBlockY()!=(double)actualElevation||geo.seaRelativeElevationBlocks()!=candidate.elevationBlocks()
-                   ||geo.landform()!=com.gabou.atmospheregen.api.geography.Landform.OCEAN)
+                   ||geo.landform()!=com.gabou.projectlandscape.api.geography.Landform.OCEAN)
                     throw new AssertionError("Public geography projection");
                 }
                 categories.merge(macro.waterBody().name(),1L,Long::sum);

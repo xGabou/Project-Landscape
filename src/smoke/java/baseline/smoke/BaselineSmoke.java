@@ -87,10 +87,10 @@ public final class BaselineSmoke {
                 Path pack = root.resolve("datapacks/task0-preset");
                 if(geographyV1) {
                     if(vanilla)throw new IllegalArgumentException("V1 and vanilla smoke are separate cases");
-                    var selection=com.gabou.atmospheregen.persistence.DevelopmentGeographySelection.path(root);
+                    var selection=com.gabou.projectlandscape.persistence.DevelopmentGeographySelection.path(root);
                     Files.createDirectories(selection.getParent());
-                    Files.writeString(selection,com.gabou.atmospheregen.config.MacroGeographySettings.CODEC.encodeStart(
-                        com.mojang.serialization.JsonOps.INSTANCE,com.gabou.atmospheregen.config.MacroGeographySettings.defaults()).getOrThrow(false,s->{}).toString(),java.nio.file.StandardOpenOption.CREATE_NEW);
+                    Files.writeString(selection,com.gabou.projectlandscape.config.MacroGeographySettings.CODEC.encodeStart(
+                        com.mojang.serialization.JsonOps.INSTANCE,com.gabou.projectlandscape.config.MacroGeographySettings.defaults()).getOrThrow(false,s->{}).toString(),java.nio.file.StandardOpenOption.CREATE_NEW);
                 }
                 if (!vanilla) {
                     Files.createDirectories(pack);
@@ -127,7 +127,7 @@ public final class BaselineSmoke {
                     if(geographyV1) {
                         var c=state.generatorContext();var bridge=c.generator.getHeightmap().paBridge();
                         if(bridge==null)throw new AssertionError("V1 development world did not install new geography");
-                        String manifest=com.gabou.atmospheregen.persistence.GenerationManifestStore.encode(c.generationContext().manifest());
+                        String manifest=com.gabou.projectlandscape.persistence.GenerationManifestStore.encode(c.generationContext().manifest());
                         var topology=new java.util.ArrayList<String>();
                         for(int z=-32768;z<=32768;z+=4096)for(int x=-32768;x<=32768;x+=4096)topology.add(bridge.macro().sampleMacro(x,z).toString());
                         if(reopened&&(!manifest.equals(initialV1Manifest)||!topology.equals(initialV1Topology)))throw new AssertionError("V1 save/reopen manifest/topology changed");
@@ -137,7 +137,7 @@ public final class BaselineSmoke {
                     task2Evidence.add(java.util.Map.of("phase", reopened ? "reopened" : "initial", "vanilla", vanilla,
                         "existingTask1CWorld", existingWorld, "terraBlender", ModList.get().isLoaded("terrablender"),
                         "metadata", vanilla ? java.util.Map.of("ownership", "foreign_untouched") :
-                            com.gabou.atmospheregen.generation.context.GenerationDiagnostics.describe(state.generatorContext().generationContext())));
+                            com.gabou.projectlandscape.generation.context.GenerationDiagnostics.describe(state.generatorContext().generationContext())));
                     if (vanilla && !reopened) {
                         var reload = server.reloadResources(server.getPackRepository().getSelectedIds());
                         server.managedBlock(reload::isDone);

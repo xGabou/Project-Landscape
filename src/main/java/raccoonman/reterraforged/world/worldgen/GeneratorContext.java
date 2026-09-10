@@ -23,32 +23,32 @@ public class GeneratorContext {
     public TileCache cache;
     public WorldLookup lookup;
     // Task 2 metadata only. Sampling continues using the existing cheap WorldLookup token.
-    private volatile com.gabou.atmospheregen.generation.context.WorldGenerationContext generationContext;
-    private com.gabou.atmospheregen.geography.terrain.PaGeographyProvider canonicalGeography;
-    private com.gabou.atmospheregen.climate.CanonicalClimateService canonicalClimate;
+    private volatile com.gabou.projectlandscape.generation.context.WorldGenerationContext generationContext;
+    private com.gabou.projectlandscape.geography.terrain.PaGeographyProvider canonicalGeography;
+    private com.gabou.projectlandscape.climate.CanonicalClimateService canonicalClimate;
 
-    public synchronized com.gabou.atmospheregen.geography.terrain.PaGeographyProvider canonicalGeography() {
+    public synchronized com.gabou.projectlandscape.geography.terrain.PaGeographyProvider canonicalGeography() {
         if(cache==null||cache.isClosed())throw new IllegalStateException("Canonical geography context is disposed");
-        if(canonicalGeography==null)canonicalGeography=new com.gabou.atmospheregen.geography.terrain.PaGeographyProvider(this);
+        if(canonicalGeography==null)canonicalGeography=new com.gabou.projectlandscape.geography.terrain.PaGeographyProvider(this);
         return canonicalGeography;
     }
 
-    public synchronized com.gabou.atmospheregen.climate.CanonicalClimateService canonicalClimate(
-            com.gabou.atmospheregen.generation.context.WorldGenerationContext generation) {
+    public synchronized com.gabou.projectlandscape.climate.CanonicalClimateService canonicalClimate(
+            com.gabou.projectlandscape.generation.context.WorldGenerationContext generation) {
         if(generation!=generationContext||generation==null)throw new IllegalArgumentException("Climate service requires its bound generation context");
         if(cache==null||cache.isClosed())throw new IllegalStateException("Canonical climate context is disposed");
-        if(canonicalClimate==null)canonicalClimate=new com.gabou.atmospheregen.climate.CanonicalClimateService(canonicalGeography(),generation);
+        if(canonicalClimate==null)canonicalClimate=new com.gabou.projectlandscape.climate.CanonicalClimateService(canonicalGeography(),generation);
         return canonicalClimate;
     }
 
-    public synchronized void bindGenerationContext(com.gabou.atmospheregen.generation.context.WorldGenerationContext context) {
+    public synchronized void bindGenerationContext(com.gabou.projectlandscape.generation.context.WorldGenerationContext context) {
         if (this.generationContext != null) throw new IllegalStateException("RTF generation metadata is already bound");
         if (context.runtimeToken() != this.lookup.samplingIdentity()) throw new IllegalArgumentException("Generation metadata must share the owning lookup's cache identity");
         this.generationContext = java.util.Objects.requireNonNull(context);
     }
 
     @Nullable
-    public com.gabou.atmospheregen.generation.context.WorldGenerationContext generationContext() {
+    public com.gabou.projectlandscape.generation.context.WorldGenerationContext generationContext() {
         return this.generationContext;
     }
     

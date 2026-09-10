@@ -1,12 +1,12 @@
 /* Original development tests. All Rights Reserved. */
 package baseline.reproduction;
 import raccoonman.reterraforged.world.worldgen.RTFRandomState;
-import com.gabou.atmospheregen.config.*;
-import com.gabou.atmospheregen.generation.version.*;
-import com.gabou.atmospheregen.generation.seed.*;
-import com.gabou.atmospheregen.generation.context.*;
-import com.gabou.atmospheregen.persistence.*;
-import com.gabou.atmospheregen.compat.legacy.LegacyPresetSnapshot;
+import com.gabou.projectlandscape.config.*;
+import com.gabou.projectlandscape.generation.version.*;
+import com.gabou.projectlandscape.generation.seed.*;
+import com.gabou.projectlandscape.generation.context.*;
+import com.gabou.projectlandscape.persistence.*;
+import com.gabou.projectlandscape.compat.legacy.LegacyPresetSnapshot;
 import com.mojang.serialization.*;
 import java.util.*;
 import net.minecraft.server.level.ServerLevel;
@@ -61,7 +61,7 @@ public final class FoundationTests {
             var other=((RTFRandomState)(Object)level.getServer().getLevel(dim).getChunkSource().randomState()).generatorContext();
             if(other!=null&&other.generationContext()!=null)throw new AssertionError("Companion forced into foreign dimension");
         }
-        var provider=com.gabou.atmospheregen.compat.legacy.LegacyRtfGeographyAdapter.forLevel(level);
+        var provider=com.gabou.projectlandscape.compat.legacy.LegacyRtfGeographyAdapter.forLevel(level);
         int[][] points={{0,0},{-1,-1},{127,128},{-129,-128},{128,128},{80000,-80000}};
         for(int[] point:points) {
             int x=point[0],z=point[1];var a=provider.sample(x,z);var b=provider.sample(x,z);
@@ -79,15 +79,15 @@ public final class FoundationTests {
         out.row("world_binding_checks","canonicalEvictionEqual",true,"netherEndUnbound",true,"reloadRejectedBeforeApplication",true,"runtimeTokenBoundToLegacyLookup",true,"manifest",GenerationManifestStore.encode(context.manifest()));
     }
     private static void api(Evidence out) {
-        var metrics=com.gabou.atmospheregen.api.geography.GeographyMetrics.unknown();
-        var hydrology=new com.gabou.atmospheregen.api.geography.HydrologySample(com.gabou.atmospheregen.api.geography.WaterCategory.LAND,false,false,false,Optional.empty(),Optional.empty());
-        var sample=new com.gabou.atmospheregen.api.geography.GeoSample(new com.gabou.atmospheregen.api.geography.BlockPosition(-1,-129),64,1,hydrology.water(),com.gabou.atmospheregen.api.geography.Landform.PLAINS,metrics,hydrology);
+        var metrics=com.gabou.projectlandscape.api.geography.GeographyMetrics.unknown();
+        var hydrology=new com.gabou.projectlandscape.api.geography.HydrologySample(com.gabou.projectlandscape.api.geography.WaterCategory.LAND,false,false,false,Optional.empty(),Optional.empty());
+        var sample=new com.gabou.projectlandscape.api.geography.GeoSample(new com.gabou.projectlandscape.api.geography.BlockPosition(-1,-129),64,1,hydrology.water(),com.gabou.projectlandscape.api.geography.Landform.PLAINS,metrics,hydrology);
         if(sample.metrics().mountainInfluence().isPresent()||sample.hydrology().segmentIdentity().isPresent())throw new AssertionError("Unknown geography fabricated");
         List<Runnable> invalid=List.of(
-            ()->new com.gabou.atmospheregen.api.geography.Metric(Double.NaN,com.gabou.atmospheregen.api.geography.Metric.Quality.MODELLED,1),
-            ()->new com.gabou.atmospheregen.api.geography.Metric(1,com.gabou.atmospheregen.api.geography.Metric.Quality.MODELLED,0),
-            ()->new com.gabou.atmospheregen.api.climate.WindDirection(0,0),
-            ()->new com.gabou.atmospheregen.api.climate.ClimateBaseline(10,-1,.5,1,.5,Optional.empty()));
+            ()->new com.gabou.projectlandscape.api.geography.Metric(Double.NaN,com.gabou.projectlandscape.api.geography.Metric.Quality.MODELLED,1),
+            ()->new com.gabou.projectlandscape.api.geography.Metric(1,com.gabou.projectlandscape.api.geography.Metric.Quality.MODELLED,0),
+            ()->new com.gabou.projectlandscape.api.climate.WindDirection(0,0),
+            ()->new com.gabou.projectlandscape.api.climate.ClimateBaseline(10,-1,.5,1,.5,Optional.empty()));
         for(Runnable check:invalid)try{check.run();throw new AssertionError("Invalid API value accepted");}catch(IllegalArgumentException expected){}
         try{UnavailableGenerationServices.plannedGeography().sample(0,0);throw new AssertionError("Unimplemented geography fallback");}catch(UnsupportedOperationException expected){}
         try{UnavailableGenerationServices.baselineClimate().sample(0,0);throw new AssertionError("RTF hints used as physical climate");}catch(UnsupportedOperationException expected){}
@@ -104,7 +104,7 @@ public final class FoundationTests {
         var content=new ManifestContent(GenerationVersions.legacy(),level.getSeed(),level.dimension().location(),config,
             new BaselineClimateConfig(Optional.empty()),new BiomeResolverConfig(Optional.empty()),Map.of("test:effective_preset",checksum),Optional.empty());
         var manifest=GenerationManifest.create(content);
-        var catalog=new com.gabou.atmospheregen.biome.VanillaBiomeCatalog();
+        var catalog=new com.gabou.projectlandscape.biome.VanillaBiomeCatalog();
         var planned=GenerationManifest.create(new ManifestContent(GenerationVersions.planned(),level.getSeed(),level.dimension().location(),
             new WorldGeographyConfig(Optional.empty(),Optional.of(new PlannedGeographySettings(16384,1000,1200,2000,.5,Optional.of(MacroGeographySettings.defaults())))),
             new BaselineClimateConfig(Optional.of(new BaselineClimateConfig.Planned(100000,.0065,.5,.5))),

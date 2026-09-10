@@ -3,26 +3,28 @@ loaderVersion="[47,)"
 license="ARR"
 
 [[mods]]
-modId="reterraforged"
-displayName="ReTerraForged"
+modId="projectlandscape"
+displayName="Project Landscape"
 version="0.0.6"
 authors="dags,Won-Ton,Gabou"
 credits="dags,Won-Ton,Gabou"
 logoFile="logo.png"
-displayURL="https://github.com/racoonman2/reterraforged/"
-issueTrackerURL="https://github.com/racoonman2/reterraforged/issues"
+displayURL="https://github.com/xGabou/Project-Landscape/"
+issueTrackerURL="https://github.com/xGabou/Project-Landscape/issues"
 description="A continuation of https://github.com/TerraForged/TerraForged"
 
-[[dependencies.reterraforged]]
+
+[[dependencies.projectlandscape]]
     modId="forge"
     mandatory=true
-    versionRange="[47,)"
+    versionRange="[47.4,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.reterraforged]]
+[[dependencies.projectlandscape]]
 	modId = "minecraft"
 	mandatory = true
 	versionRange = "[1.20.1,)"
 	ordering = "NONE"
 	side = "BOTH"
+

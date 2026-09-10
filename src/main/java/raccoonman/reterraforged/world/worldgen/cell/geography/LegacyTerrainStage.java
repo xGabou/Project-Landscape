@@ -1,7 +1,7 @@
 /* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.geography;
 
-import com.gabou.atmospheregen.geography.TerrainStage;
+import com.gabou.projectlandscape.geography.TerrainStage;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.CellPopulator;
 

@@ -1,6 +1,6 @@
 package baseline.reproduction.observer;
 import baseline.reproduction.task6b.LocalityTrace;
-import com.gabou.atmospheregen.biome.ClimateBiomeSource;
+import com.gabou.projectlandscape.biome.ClimateBiomeSource;
 import net.minecraft.world.level.biome.Climate;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.*;

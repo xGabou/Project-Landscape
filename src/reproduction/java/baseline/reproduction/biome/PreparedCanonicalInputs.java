@@ -2,12 +2,12 @@
 package baseline.reproduction.biome;
 
 import baseline.reproduction.Evidence;
-import com.gabou.atmospheregen.api.geography.GeoSample;
-import com.gabou.atmospheregen.biome.*;
-import com.gabou.atmospheregen.climate.*;
-import com.gabou.atmospheregen.config.BaselineClimateConfig;
-import com.gabou.atmospheregen.generation.seed.GenerationSeedService;
-import com.gabou.atmospheregen.geography.terrain.PaGeographyProvider;
+import com.gabou.projectlandscape.api.geography.GeoSample;
+import com.gabou.projectlandscape.biome.*;
+import com.gabou.projectlandscape.climate.*;
+import com.gabou.projectlandscape.config.BaselineClimateConfig;
+import com.gabou.projectlandscape.generation.seed.GenerationSeedService;
+import com.gabou.projectlandscape.geography.terrain.PaGeographyProvider;
 import java.util.*;
 
 /** Survey-only exact point snapshots. Production equations execute unchanged over this input. */
@@ -30,7 +30,7 @@ final class PreparedCanonicalInputs implements ClimateGeography {
             .thenComparingInt(p->provider.surfaceTileCoordinate(p.x)).thenComparingInt(Point::z).thenComparingInt(Point::x));
         var targetSet=new HashSet<>(targets);
         var input=new CanonicalClimateGeography(provider);
-        var reference=ClimateGeographyAdapters.of(provider,provider.macroProvider(),new com.gabou.atmospheregen.geography.ocean.CoarseDistanceField(provider.macroProvider()));
+        var reference=ClimateGeographyAdapters.of(provider,provider.macroProvider(),new com.gabou.projectlandscape.geography.ocean.CoarseDistanceField(provider.macroProvider()));
         long start=System.nanoTime();int completed=0,verified=0;
         for(var p:ordered){
             samples.put(p,input.sample(p.x,p.z));

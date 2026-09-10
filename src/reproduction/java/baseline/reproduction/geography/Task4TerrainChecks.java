@@ -2,10 +2,10 @@
 package baseline.reproduction.geography;
 
 import baseline.reproduction.Evidence;
-import com.gabou.atmospheregen.config.MacroGeographySettings;
-import com.gabou.atmospheregen.generation.seed.*;
-import com.gabou.atmospheregen.generation.version.*;
-import com.gabou.atmospheregen.geography.terrain.PaGeographyInstallation;
+import com.gabou.projectlandscape.config.MacroGeographySettings;
+import com.gabou.projectlandscape.generation.seed.*;
+import com.gabou.projectlandscape.generation.version.*;
+import com.gabou.projectlandscape.geography.terrain.PaGeographyInstallation;
 import net.minecraft.server.level.ServerLevel;
 import raccoonman.reterraforged.registries.RTFRegistries;
 import raccoonman.reterraforged.world.worldgen.*;
@@ -49,7 +49,7 @@ public final class Task4TerrainChecks {
                     if(!first.get(i).equals(Evidence.cell(cell,c.generator.getHeightmap())))throw new AssertionError("Warm/order canonical disagreement");
                 }
                 out.row("v1_terrain","seed",Long.toString(seed),"canonicalChecks",checked,"reverseWarmExact",true,"digest",Evidence.hash(first),"riverCacheEntries",bridge.rivers().retainedEntries());
-                var provider=new com.gabou.atmospheregen.geography.terrain.PaGeographyProvider(c);
+                var provider=new com.gabou.projectlandscape.geography.terrain.PaGeographyProvider(c);
                 for(int i=0;i<Math.min(4,points.size());i++) {
                     var point=points.get(i);var sample=provider.sampleDetailed(point[0],point[1]);
                     out.row("v1_debug_samples","seed",Long.toString(seed),"version","PA_GEOGRAPHY_V1","x",point[0],"z",point[1],
@@ -74,7 +74,7 @@ public final class Task4TerrainChecks {
                         "repetition",repetition,"tiles",tiles.length,"elapsedNs",System.nanoTime()-start);
                 }
                 if(v1) {
-                    var provider=new com.gabou.atmospheregen.geography.terrain.PaGeographyProvider(c);
+                    var provider=new com.gabou.projectlandscape.geography.terrain.PaGeographyProvider(c);
                     for(int i=0;i<8;i++)provider.sample(i*32,0);
                     for(int repetition=0;repetition<5;repetition++) {
                         double sum=0;long start=System.nanoTime();

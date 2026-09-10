@@ -1,11 +1,11 @@
 /* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.geography;
 
-import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
+import com.gabou.projectlandscape.geography.terrain.TerrainMetrics.Stage;
 
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
 import raccoonman.reterraforged.world.worldgen.WorldErosion;
-import com.gabou.atmospheregen.geography.GeographyFinalizationStage;
+import com.gabou.projectlandscape.geography.GeographyFinalizationStage;
 
 import java.util.function.IntFunction;
 
@@ -38,7 +38,7 @@ public class LegacyGeographyFinalizationStage implements GeographyFinalizationSt
         this.settings = context.preset.filters();
         this.beach = BeachDetect.make(context);
         var originalSmoothing = Smoothing.make(context.preset.filters().smoothing, context.levels);
-        this.smoothing = reuseInvariantStrength ? new com.gabou.atmospheregen.geography.terrain.ExactSmoothing(originalSmoothing) : originalSmoothing;
+        this.smoothing = reuseInvariantStrength ? new com.gabou.projectlandscape.geography.terrain.ExactSmoothing(originalSmoothing) : originalSmoothing;
         this.steepness = Steepness.make(1, 10.0F, context.levels);
         this.corrections = new NoiseCorrection(context.levels);
         this.erosion = new WorldErosion<>(factory, (e, size) -> e.getSize() == size);

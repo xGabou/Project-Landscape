@@ -1,9 +1,9 @@
 /* Original development cache experiment. All Rights Reserved. */
 package baseline.reproduction.performance;
 
-import com.gabou.atmospheregen.climate.*;
-import com.gabou.atmospheregen.config.BaselineClimateConfig;
-import com.gabou.atmospheregen.generation.seed.NamedSeedService;
+import com.gabou.projectlandscape.climate.*;
+import com.gabou.projectlandscape.config.BaselineClimateConfig;
+import com.gabou.projectlandscape.generation.seed.NamedSeedService;
 import java.util.*;
 
 /** Coordinates are obtained by executing the unchanged model. No simulated climate is reported. */
@@ -15,7 +15,7 @@ final class CacheReplay {
         for(int i=0;i<queries.size();i++){
             int query=i;var p=queries.get(i);
             model.sample((x,z)->{trace.add(new Access(query,new Point(x,z)));return new ClimateGeography.Sample(0,0,0,0,
-                    com.gabou.atmospheregen.api.geography.MacroGeographyProvider.MarineClass.MAJOR_OCEAN);},p.x,p.z);
+                    com.gabou.projectlandscape.api.geography.MacroGeographyProvider.MarineClass.MAJOR_OCEAN);},p.x,p.z);
         }
         return trace;
     }

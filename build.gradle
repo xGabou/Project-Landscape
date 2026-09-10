@@ -1,9 +1,13 @@
+import groovy.json.JsonOutput
+
 plugins {
     id 'java'
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '6.0.42'
     id 'org.spongepowered.mixin' version '0.7.38'
+    id 'com.hypherionmc.modutils.modpublisher' version '2.2.1' // CurseForge uploader
+    id "com.modrinth.minotaur" version "2.8.10" // Modrinth uploader
 }
 
 group = maven_group
@@ -16,15 +20,7 @@ java {
 
 // Development-only smoke harness. Never packaged in the production mod jar.
 sourceSets {
-    performance {
-        java.srcDir 'src/reproduction/java'
-        java.include 'baseline/reproduction/**'
-        java.exclude 'baseline/reproduction/ReproductionClient.java'
-        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
-        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
-    }
     reproduction {
-        java.exclude 'baseline/reproduction/performance/**'
         compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
         runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
     }
@@ -57,12 +53,6 @@ minecraft {
             property 'task1a.seeds', providers.gradleProperty('reproSeeds').getOrElse('8675309,4303642605,42,-987654321')
             property 'task1a.repeats', providers.gradleProperty('reproRepeats').getOrElse('3')
             property 'task1a.points', providers.gradleProperty('reproPoints').getOrElse('')
-            property 'task6b.final', providers.gradleProperty('task6bFinal').getOrElse('false')
-            property 'phase2a.runtime', providers.gradleProperty('phase2aRuntime').getOrElse('false')
-            if (providers.gradleProperty('phase2aPaJar').isPresent()) {
-                property 'mixin.env.remapRefMap', 'true'
-                property 'mixin.env.refMapRemappingFile', file('build/createSrgToMcp/output.srg').absolutePath
-            }
             // Task 1C test corpus only; no production generation-version mechanism.
             property 'task1c.fixtureFile', file('docs/task1c/evidence/fixture_manifest.json').absolutePath
             if (providers.gradleProperty('reproPreset').isPresent()) {
@@ -76,7 +66,6 @@ minecraft {
             mods { baseline_smoke { source sourceSets.smoke } }
             property 'mixin.debug.export', 'true'
             property 'task1b.smokeVanilla', providers.gradleProperty('smokeVanilla').getOrElse('false')
-            property 'task4.smokeV1', providers.gradleProperty('smokeV1').getOrElse('false')
             if (providers.gradleProperty('smokeExistingWorld').isPresent()) {
                 property 'task2.existingWorld', providers.gradleProperty('smokeExistingWorld').get()
             }
@@ -85,17 +74,7 @@ minecraft {
         server { args '--nogui' }
         data {
             workingDirectory project.file('run/data')
-            if (providers.gradleProperty('task6bOutput').isPresent()) {
-                workingDirectory project.file('run/task6b-offline')
-                mods { task6b_performance { source sourceSets.performance } }
-                property 'task6b.output', file(providers.gradleProperty('task6bOutput').get()).absolutePath
-                property 'task6c.metrics', providers.gradleProperty('task6cMetrics').getOrElse('false')
-                property 'task6b.mode', providers.gradleProperty('task6bMode').getOrElse('acquisition')
-                property 'task6b.sourceChecks', providers.gradleProperty('task6bSourceChecks').getOrElse('false')
-                property 'task1c.fixtureFile', file('docs/task1c/evidence/fixture_manifest.json').absolutePath
-                jvmArgs '-Xmx6G', "-XX:ActiveProcessorCount=${providers.gradleProperty('task6bWorkers').getOrElse('8')}"
-            }
-            args '--mod', providers.gradleProperty('task6bOutput').isPresent() ? 'task6b_performance' : mod_id, '--all', '--output', file(providers.gradleProperty('task6bOutput').isPresent() ? 'build/task6b-datagen-unused' : 'src/generated/resources/'),
+            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'),
                  '--existing', file('src/main/resources/')
         }
     }
@@ -108,18 +87,7 @@ mixin {
 }
 sourceSets.main.resources.srcDir 'src/generated/resources'
 
-// File dependencies bypass ForgeGradle remapping. Stage the supplied jar under a
-// content-addressed local module so rebuilt companion jars cannot hit a stale mapping cache.
-def phase2aPaVersion = null
-if (providers.gradleProperty('phase2aPaJar').isPresent()) {
-    def paJar = file(providers.gradleProperty('phase2aPaJar').get())
-    phase2aPaVersion = java.security.MessageDigest.getInstance('SHA-256').digest(paJar.bytes).encodeHex().toString()
-    copy { from paJar; into layout.buildDirectory.dir('phase2a-pa-repo'); rename { "pa-bridge-${phase2aPaVersion}.jar" } }
-}
 repositories {
-    if (phase2aPaVersion != null) {
-        flatDir { dirs layout.buildDirectory.dir('phase2a-pa-repo'); content { includeGroup 'phase2a.local' } }
-    }
     mavenCentral()
     maven { url = 'https://maven.minecraftforge.net/' }
     maven {
@@ -129,13 +97,6 @@ repositories {
 }
 
 dependencies {
-    if (providers.gradleProperty('phase2aPaJar').isPresent()) {
-        runtimeOnly fg.deobf("phase2a.local:pa-bridge:${phase2aPaVersion}")
-        runtimeOnly fg.deobf('curse.maven:gabous-libs-1367332:8280104')
-        runtimeOnly fg.deobf('curse.maven:cool-rain-reforged-1346978:7270440')
-        runtimeOnly fg.deobf('curse.maven:architectury-api-419699:5137938')
-        runtimeOnly fg.deobf('curse.maven:cloth-config-348521:5729105')
-    }
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     compileOnly fg.deobf("curse.maven:terrablender-563928:${terrablender_curse_file}")
@@ -143,11 +104,30 @@ dependencies {
         runtimeOnly fg.deobf("curse.maven:terrablender-563928:${terrablender_curse_file}")
     }
     if (providers.gradleProperty('withDevelopmentMods').get().toBoolean()) {
-        runtimeOnly fg.deobf('curse.maven:project-atmosphere-1258344:8799655')
+        runtimeOnly fg.deobf('curse.maven:project-atmosphere-1258344:8851671')
         runtimeOnly fg.deobf('curse.maven:gabous-libs-1367332:8774253')
         runtimeOnly fg.deobf('curse.maven:glitchcore-955399:5787839')
         runtimeOnly fg.deobf('curse.maven:serene-seasons-291874:8246702')
         runtimeOnly fg.deobf('curse.maven:simple-clouds-1121215:6928978')
+        runtimeOnly fg.deobf('curse.maven:architectury-api-419699:5137938')
+    }
+}
+tasks.register("runClientWithMods", Exec) {
+    group = "forgegradle runs"
+    description = "Runs the Minecraft client with development mods and TerraBlender"
+
+    def isWindows = System.getProperty("os.name").toLowerCase().contains("windows")
+
+    if (isWindows) {
+        commandLine "cmd", "/c", "gradlew.bat",
+                "runClient",
+                "-PwithDevelopmentMods=true",
+                "-PwithTerraBlender=true"
+    } else {
+        commandLine "./gradlew",
+                "runClient",
+                "-PwithDevelopmentMods=true",
+                "-PwithTerraBlender=true"
     }
 }
 
@@ -167,53 +147,6 @@ tasks.named('jar', Jar) {
     finalizedBy 'reobfJar'
 }
 tasks.named('sourcesJar', Jar) { from('LICENSE') { into 'META-INF' } }
-
-// Offline production macro provider survey; no Minecraft client, chunks or terrain erosion.
-tasks.register('task6bCacheChecks', JavaExec) {
-    dependsOn tasks.named('performanceClasses')
-    classpath = sourceSets.performance.runtimeClasspath
-    mainClass = 'baseline.reproduction.performance.ExactCacheChecks'
-    args file(providers.gradleProperty('task6bOutput').getOrElse('build/task6b-cache-checks')).absolutePath
-}
-
-tasks.register('task6bJfrSummary', JavaExec) {
-    dependsOn tasks.named('performanceClasses')
-    classpath = sourceSets.performance.runtimeClasspath
-    mainClass = 'baseline.reproduction.performance.ProfileSummary'
-    args providers.gradleProperty('task6bJfr').getOrElse(''), providers.gradleProperty('task6bSummary').getOrElse('')
-}
-
-tasks.register('task4Survey', JavaExec) {
-    dependsOn tasks.named('reproductionClasses')
-    classpath = sourceSets.reproduction.runtimeClasspath
-    mainClass = 'baseline.reproduction.geography.GeographySurvey'
-    maxHeapSize = '2G'
-    args file(providers.gradleProperty('task4Output').getOrElse('build/task4-survey')).absolutePath
-}
-
-// Offline Task 5 climate fixtures and V1 distribution survey.
-tasks.register('task5ClimateSurvey', JavaExec) {
-    dependsOn tasks.named('reproductionClasses')
-    classpath = sourceSets.reproduction.runtimeClasspath
-    mainClass = 'baseline.reproduction.climate.ClimateSurvey'
-    maxHeapSize = '2G'
-    args file(providers.gradleProperty('task5Output').getOrElse('build/task5-climate-survey')).absolutePath
-}
-tasks.register('task5bClimateAudit', JavaExec) {
-    dependsOn tasks.named('reproductionClasses')
-    classpath = sourceSets.reproduction.runtimeClasspath
-    mainClass = 'baseline.reproduction.climate.ClimateCalibrationAudit'
-    maxHeapSize = '2G'
-    args file(providers.gradleProperty('task5bOutput').getOrElse('build/task5b-climate-audit')).absolutePath
-}
-tasks.register('task6BiomeSurvey', JavaExec) {
-    dependsOn tasks.named('reproductionClasses')
-    classpath = sourceSets.reproduction.runtimeClasspath
-    mainClass = 'baseline.reproduction.biome.BiomeSurvey'
-    systemProperty 'task6.checksOnly', providers.gradleProperty('task6ChecksOnly').getOrElse('false')
-    maxHeapSize = '2G'
-    args file(providers.gradleProperty('task6Output').getOrElse('build/task6-biome-survey')).absolutePath
-}
 
 tasks.matching { it.name == 'runSmokeClient' }.configureEach {
     def marker = file('run/task0-smoke/task0-pass.txt')
@@ -236,4 +169,90 @@ tasks.register('phase2aHistoryChecks', JavaExec) {
     classpath = sourceSets.performance.runtimeClasspath
     mainClass = 'baseline.reproduction.performance.RuntimeHistoryChecks'
     args file('build/phase2a-history/history.dat').absolutePath
+}
+tasks.register("discordWebhook") {
+    doLast {
+        def webhookUrl = System.getenv("DISCORD_WEBHOOK_URL")?.trim()
+        if (!webhookUrl) {
+            println "Skipping Discord webhook notification: DISCORD_WEBHOOK_URL not set."
+            return
+        }
+
+        def changelogText = rootProject.file("PLChangelog.md").text
+
+        def payload = [
+                username        : "Build Bot",
+                allowed_mentions: [parse: ["roles"]],
+                content         : "**New release published!** 🎉\n" +
+                        "<@&1537735740367183892>\n" + // role mention
+                        "Project: ${mod_name}\n" +
+                        "Version: v${project.mod_version}-1.20.1\n\n" +
+                        "${changelogText.take(1891)}"
+        ]
+
+        println "Sending release notification to Discord..."
+        def connection = new URL(webhookUrl).openConnection()
+        connection.with {
+            doOutput = true
+            requestMethod = "POST"
+            setRequestProperty("Content-Type", "application/json")
+            outputStream.withWriter("UTF-8") { it << JsonOutput.toJson(payload) }
+            println "Webhook sent with response code: ${responseCode}"
+        }
+    }
+}
+def releaseJarFile = layout.buildDirectory.file("libs/${base.archivesName.get()}-${project.version}.jar")
+modrinth {
+    token = System.getenv("MODRINTH_TOKEN")
+    projectId = "Xuhmo3Js" // from your Modrinth project URL
+    versionNumber = "Forge-${project.version}"
+    versionName = "Project Landscape ${mod_version}"
+    changelog = rootProject.file("PLChangelog.md").text
+    gameVersions = ["1.20.1"]
+    loaders = ["forge"]
+    versionType = "alpha"
+    dependencies {
+        optional.project "qIWoLcKJ" //TODO change after 0.2
+        required.project "N8aGZtvj"
+        optional.project "vdjF5PL5" //TODO change after 0.2
+    }
+    uploadFile = releaseJarFile.get().asFile
+}
+def curseForgeToken = System.getenv("CURSEFORGE_TOKEN")?.trim()
+def hasCurseForgeToken = curseForgeToken != null && !curseForgeToken.isEmpty()
+if (hasCurseForgeToken) {
+    publisher {
+        apiKeys {
+            curseforge curseForgeToken
+        }
+        setCurseID("1687466")
+        setVersionType("alpha")
+        setChangelog(rootProject.file("PLChangelog.md"))
+        setDisplayName("Forge-${project.version}")
+        setGameVersions("1.20.1")
+        setLoaders("forge")
+        setCurseEnvironment("both")
+        getJavaVersions().set([JavaVersion.VERSION_17])
+        setArtifact(tasks.named("jar"))
+        setDebug(providers.gradleProperty("publisherDebug").map { it.toBoolean() }.orElse(false).get())
+        curseDepends {
+            optional "project-atmosphere"       // Moonlight Lib
+            required "gabous-libs"  // Gabou's Libs
+            optional "dynamictrees" // Dynamic Trees
+        }
+    }
+} else {
+    logger.lifecycle("CURSEFORGE_TOKEN not set; CurseForge upload tasks will be disabled.")
+    tasks.named("publishCurseforge").configure { enabled = false }
+}
+
+tasks.named("publishCurseforge").configure {
+    dependsOn("build")
+}
+
+tasks.register("curseforge1504017") {
+    group = "publishing"
+    description = "Publishes the Forge release to CurseForge project 1504017."
+    dependsOn("publishCurseforge")
+    enabled = hasCurseForgeToken
 }

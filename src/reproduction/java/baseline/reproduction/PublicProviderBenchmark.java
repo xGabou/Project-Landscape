@@ -5,8 +5,8 @@ package baseline.reproduction;
 import java.lang.management.ManagementFactory;
 import java.util.*;
 import net.minecraft.server.level.ServerLevel;
-import com.gabou.atmospheregen.api.geography.GeoSample;
-import com.gabou.atmospheregen.compat.legacy.LegacyRtfGeographyAdapter;
+import com.gabou.projectlandscape.api.geography.GeoSample;
+import com.gabou.projectlandscape.compat.legacy.LegacyRtfGeographyAdapter;
 
 /** Result escapes through volatile storage: do not benchmark only an optimized-away elevation read. */
 public final class PublicProviderBenchmark {

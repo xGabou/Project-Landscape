@@ -1,8 +1,8 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
 package baseline.reproduction.geography;
 
-import com.gabou.atmospheregen.api.geography.MacroGeographyProvider;
-import com.gabou.atmospheregen.geography.ocean.MajorOceanCorridor;
+import com.gabou.projectlandscape.api.geography.MacroGeographyProvider;
+import com.gabou.projectlandscape.geography.ocean.MajorOceanCorridor;
 import java.util.*;
 
 /** Offline measurements call the production predicate. No duplicate topology implementation. */

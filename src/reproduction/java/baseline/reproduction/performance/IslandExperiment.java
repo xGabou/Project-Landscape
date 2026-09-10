@@ -1,10 +1,10 @@
 /* Original bounded read-mostly cache experiment. All Rights Reserved. */
 package baseline.reproduction.performance;
 
-import com.gabou.atmospheregen.geography.continent.*;
-import com.gabou.atmospheregen.config.MacroGeographySettings;
-import com.gabou.atmospheregen.generation.seed.*;
-import com.gabou.atmospheregen.generation.version.GenerationVersions;
+import com.gabou.projectlandscape.geography.continent.*;
+import com.gabou.projectlandscape.config.MacroGeographySettings;
+import com.gabou.projectlandscape.generation.seed.*;
+import com.gabou.projectlandscape.generation.version.GenerationVersions;
 import net.minecraft.resources.ResourceLocation;
 import java.util.*;
 import java.util.concurrent.*;

@@ -2,10 +2,10 @@
 package baseline.reproduction.biome;
 
 import baseline.reproduction.Evidence;
-import com.gabou.atmospheregen.biome.*;
-import com.gabou.atmospheregen.climate.*;
-import com.gabou.atmospheregen.config.*;
-import com.gabou.atmospheregen.generation.seed.*;
+import com.gabou.projectlandscape.biome.*;
+import com.gabou.projectlandscape.climate.*;
+import com.gabou.projectlandscape.config.*;
+import com.gabou.projectlandscape.generation.seed.*;
 import java.util.*;
 import java.util.concurrent.*;
 

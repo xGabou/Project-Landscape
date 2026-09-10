@@ -2,7 +2,7 @@
 package baseline.reproduction.biome;
 
 import baseline.reproduction.Evidence;
-import com.gabou.atmospheregen.compat.legacy.V1TerraBlenderData;
+import com.gabou.projectlandscape.compat.legacy.V1TerraBlenderData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraft.world.level.block.Blocks;

@@ -1,7 +1,7 @@
 /* Derived from ReTerraForged, Copyright (c) 2023 ReTerraForged, MIT License. See LICENSE. */
 package raccoonman.reterraforged.world.worldgen.cell.geography;
 
-import com.gabou.atmospheregen.geography.HydrologyStage;
+import com.gabou.projectlandscape.geography.HydrologyStage;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.heightmap.Levels;
 import raccoonman.reterraforged.world.worldgen.cell.rivermap.Rivermap;

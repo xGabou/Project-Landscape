@@ -2,10 +2,10 @@
 package baseline.reproduction.biome;
 
 import baseline.reproduction.Evidence;
-import com.gabou.atmospheregen.biome.*;
-import com.gabou.atmospheregen.climate.*;
-import com.gabou.atmospheregen.geography.terrain.PaGeographyProvider;
-import com.gabou.atmospheregen.geography.ocean.CoarseDistanceField;
+import com.gabou.projectlandscape.biome.*;
+import com.gabou.projectlandscape.climate.*;
+import com.gabou.projectlandscape.geography.terrain.PaGeographyProvider;
+import com.gabou.projectlandscape.geography.ocean.CoarseDistanceField;
 import com.mojang.serialization.JsonOps;
 import net.minecraft.resources.RegistryOps;
 import net.minecraft.server.level.ServerLevel;

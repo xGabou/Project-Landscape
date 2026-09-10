@@ -1,14 +1,14 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
 package baseline.reproduction.climate;
 
-import com.gabou.atmospheregen.api.climate.*;
-import com.gabou.atmospheregen.api.geography.MacroGeographyProvider;
-import com.gabou.atmospheregen.climate.*;
-import com.gabou.atmospheregen.config.*;
-import com.gabou.atmospheregen.generation.seed.NamedSeedService;
-import com.gabou.atmospheregen.generation.version.GenerationVersions;
-import com.gabou.atmospheregen.geography.continent.PaMacroGeography;
-import com.gabou.atmospheregen.geography.ocean.CoarseDistanceField;
+import com.gabou.projectlandscape.api.climate.*;
+import com.gabou.projectlandscape.api.geography.MacroGeographyProvider;
+import com.gabou.projectlandscape.climate.*;
+import com.gabou.projectlandscape.config.*;
+import com.gabou.projectlandscape.generation.seed.NamedSeedService;
+import com.gabou.projectlandscape.generation.version.GenerationVersions;
+import com.gabou.projectlandscape.geography.continent.PaMacroGeography;
+import com.gabou.projectlandscape.geography.ocean.CoarseDistanceField;
 import com.google.gson.GsonBuilder;
 import net.minecraft.resources.ResourceLocation;
 import java.nio.charset.StandardCharsets;
@@ -19,7 +19,7 @@ import java.util.*;
 public final class ClimateSurvey {
     private static final long[] SEEDS={8675309,4303642605L,42,-987654321,0,Long.MAX_VALUE,Long.MIN_VALUE+1,-1,1,12345,67890,314159,271828,20260908,-424242,987654321012345L};
     private static final BaselineClimateConfig.Planned CONFIG=new BaselineClimateConfig.Planned(100000,0,.0065,.5,1,4096,.85,12000,24000,256,1,.10);
-    private static final com.gabou.atmospheregen.generation.version.GenerationVersions VERSION=GenerationVersions.climateV1();
+    private static final com.gabou.projectlandscape.generation.version.GenerationVersions VERSION=GenerationVersions.climateV1();
     private static NamedSeedService seeds(long seed){return new NamedSeedService(seed,new ResourceLocation("minecraft","overworld"),VERSION);}
     public static void main(String[] args)throws Exception {
         Path out=Path.of(args[0]);if(Files.exists(out))throw new IllegalArgumentException("Refusing existing climate survey directory: "+out);Files.createDirectories(out);
@@ -42,12 +42,12 @@ public final class ClimateSurvey {
     private static String csv(String n,ClimateBaseline b){return n+","+b.annualRainfallMm()+","+b.potentialEvaporationMm()+","+b.ecologicalMoistureIndex()+","+b.rainShadow();}
     private static void v1Survey(Path out)throws Exception {List<String> rows=new ArrayList<>(List.of("seed,x,z,latitude,temperatureC,rainfallMm,evaporationMm,moistureIndex,rainShadow,windX,windZ,marineClass"));
         List<String> summary=new ArrayList<>(List.of("seed,temperatureMin,temperatureMax,temperatureMean,rainfallMin,rainfallMax,rainfallMean,evaporationMean,moistureMean,rainShadowMean,windChanges"));
-        for(long seed:SEEDS){var macro=new PaMacroGeography(seeds(seed),com.gabou.atmospheregen.config.MacroGeographySettings.defaults());var input=ClimateGeographyAdapters.macroOnly(macro,new CoarseDistanceField(macro));var provider=new PaBaselineClimateProvider(input,seeds(seed),CONFIG);double tmin=1e9,tmax=-1e9,ts=0,rmin=1e9,rmax=-1e9,rs=0,es=0,ms=0,ss=0;int n=0,changes=0;WindDirection prev=null;
+        for(long seed:SEEDS){var macro=new PaMacroGeography(seeds(seed),com.gabou.projectlandscape.config.MacroGeographySettings.defaults());var input=ClimateGeographyAdapters.macroOnly(macro,new CoarseDistanceField(macro));var provider=new PaBaselineClimateProvider(input,seeds(seed),CONFIG);double tmin=1e9,tmax=-1e9,ts=0,rmin=1e9,rmax=-1e9,rs=0,es=0,ms=0,ss=0;int n=0,changes=0;WindDirection prev=null;
             for(int z=-32768;z<=32768;z+=4096)for(int x=-32768;x<=32768;x+=4096){var c=provider.sample(x,z);var m=macro.sampleMacro(x,z);var w=c.prevailingWind().orElseThrow();rows.add(seed+","+x+","+z+","+((double)z/100000*90)+","+c.meanTemperatureCelsius()+","+c.annualRainfallMm()+","+c.potentialEvaporationMm()+","+c.ecologicalMoistureIndex()+","+c.rainShadow()+","+w.x()+","+w.z()+","+m.waterBody());tmin=Math.min(tmin,c.meanTemperatureCelsius());tmax=Math.max(tmax,c.meanTemperatureCelsius());ts+=c.meanTemperatureCelsius();rmin=Math.min(rmin,c.annualRainfallMm());rmax=Math.max(rmax,c.annualRainfallMm());rs+=c.annualRainfallMm();es+=c.potentialEvaporationMm();ms+=c.ecologicalMoistureIndex();ss+=c.rainShadow();if(prev!=null&&Math.abs(prev.x()-w.x())>.2)changes++;prev=w;n++;}
             summary.add(seed+","+tmin+","+tmax+","+ts/n+","+rmin+","+rmax+","+rs/n+","+es/n+","+ms/n+","+ss/n+","+changes);}
         writeLines(out,"climate_transects.csv",rows);writeLines(out,"climate_distribution.csv",summary);
     }
-    private static void determinism(Path out)throws Exception {var macro=new PaMacroGeography(seeds(8675309),com.gabou.atmospheregen.config.MacroGeographySettings.defaults());var input=ClimateGeographyAdapters.macroOnly(macro,new CoarseDistanceField(macro));var p=new PaBaselineClimateProvider(input,seeds(8675309),CONFIG);int[] order={0,1,2,3,4,5,6,7,8,9};String a=digest(p,order);int[] rev={9,8,7,6,5,4,3,2,1,0};String b=digest(p,rev);p.clear();String c=digest(p,order);if(!a.equals(b)||!a.equals(c))throw new AssertionError("climate order/cache determinism");var otherMacro=new PaMacroGeography(seeds(4303642605L),com.gabou.atmospheregen.config.MacroGeographySettings.defaults());var other=new PaBaselineClimateProvider(ClimateGeographyAdapters.macroOnly(otherMacro,new CoarseDistanceField(otherMacro)),seeds(4303642605L),CONFIG);write(out,"determinism_digests.csv",List.of("case,digest","forward,"+a,"reverse,"+b,"cold,"+c,"collision_pair,"+digest(other,order)));write(out,"seed_divergence.json",new GsonBuilder().setPrettyPrinting().create().toJson(Map.of("legacy","unchanged","v1ClimateDifferent",!a.equals(digest(other,order)))));}
+    private static void determinism(Path out)throws Exception {var macro=new PaMacroGeography(seeds(8675309),com.gabou.projectlandscape.config.MacroGeographySettings.defaults());var input=ClimateGeographyAdapters.macroOnly(macro,new CoarseDistanceField(macro));var p=new PaBaselineClimateProvider(input,seeds(8675309),CONFIG);int[] order={0,1,2,3,4,5,6,7,8,9};String a=digest(p,order);int[] rev={9,8,7,6,5,4,3,2,1,0};String b=digest(p,rev);p.clear();String c=digest(p,order);if(!a.equals(b)||!a.equals(c))throw new AssertionError("climate order/cache determinism");var otherMacro=new PaMacroGeography(seeds(4303642605L),com.gabou.projectlandscape.config.MacroGeographySettings.defaults());var other=new PaBaselineClimateProvider(ClimateGeographyAdapters.macroOnly(otherMacro,new CoarseDistanceField(otherMacro)),seeds(4303642605L),CONFIG);write(out,"determinism_digests.csv",List.of("case,digest","forward,"+a,"reverse,"+b,"cold,"+c,"collision_pair,"+digest(other,order)));write(out,"seed_divergence.json",new GsonBuilder().setPrettyPrinting().create().toJson(Map.of("legacy","unchanged","v1ClimateDifferent",!a.equals(digest(other,order)))));}
     private static String digest(PaBaselineClimateProvider p,int[] order){long[] values=new long[10];for(int i:order){var c=p.sample(i*509-2000,i*401-1000);values[i]=Double.doubleToRawLongBits(c.meanTemperatureCelsius())^Long.rotateLeft(Double.doubleToRawLongBits(c.annualRainfallMm()),17);}long h=1125899906842597L;for(long value:values){h=31*h+value;}return Long.toUnsignedString(h);}
     private static void write(Path out,String name,Object value)throws Exception{Files.writeString(out.resolve(name),value instanceof String?safe((String)value):new GsonBuilder().setPrettyPrinting().create().toJson(value),StandardCharsets.UTF_8,StandardOpenOption.CREATE_NEW);}
     private static void writeLines(Path out,String name,List<String> lines)throws Exception{Files.write(out.resolve(name),lines,StandardCharsets.UTF_8,StandardOpenOption.CREATE_NEW);}

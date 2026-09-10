@@ -1,5 +1,5 @@
 package baseline.reproduction.performance;
-import com.gabou.atmospheregen.runtime.*;
+import com.gabou.projectlandscape.runtime.*;
 import net.minecraft.nbt.*;
 import java.nio.file.*;
 import java.util.*;
@@ -10,7 +10,7 @@ public final class RuntimeHistoryChecks {
     private static RuntimeClimateSample sample(long t,double c,double rain){return new RuntimeClimateSample(t,c,rain,.7,2,-3,1013.25);}
     private static String worldId(Path data,boolean existingHistory) {
         try {
-            var method=Class.forName("com.gabou.atmospheregen.runtime.ClimateWorldIdentity").getDeclaredMethod("loadOrCreate",Path.class,boolean.class);
+            var method=Class.forName("com.gabou.projectlandscape.runtime.ClimateWorldIdentity").getDeclaredMethod("loadOrCreate",Path.class,boolean.class);
             method.setAccessible(true);return (String)method.invoke(null,data,existingHistory);
         }catch(ReflectiveOperationException ex){throw new IllegalStateException(ex);}
     }

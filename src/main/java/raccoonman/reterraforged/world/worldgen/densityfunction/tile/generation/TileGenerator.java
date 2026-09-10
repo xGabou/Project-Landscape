@@ -2,10 +2,10 @@
  * See LICENSE for the applicable copyright and permission notice. */
 package raccoonman.reterraforged.world.worldgen.densityfunction.tile.generation;
 
-import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
+import com.gabou.projectlandscape.geography.terrain.TerrainMetrics.Stage;
 
 import java.util.concurrent.CompletableFuture;
-import com.gabou.atmospheregen.geography.GeographyPipeline;
+import com.gabou.projectlandscape.geography.GeographyPipeline;
 
 import raccoonman.reterraforged.concurrent.ThreadPools;
 import raccoonman.reterraforged.concurrent.pool.ArrayPool;
@@ -93,7 +93,7 @@ public class TileGenerator {
 	    }
 		} catch (Throwable failure) { return this.finish(tile, futures, true, failure); }
 		var result=this.finish(tile, futures, true, null);
-        if(com.gabou.atmospheregen.geography.terrain.TerrainMetrics.ENABLED)result.whenComplete((v,e)->Stage.TILE.end(measured));
+        if(com.gabou.projectlandscape.geography.terrain.TerrainMetrics.ENABLED)result.whenComplete((v,e)->Stage.TILE.end(measured));
         return result;
 	}
 	

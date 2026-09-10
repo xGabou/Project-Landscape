@@ -17,7 +17,7 @@ final class ErosionNoiseExperiment {
             if(calls++==0)return input.compute(x,z,seed);
             var key=new Key(Float.floatToRawIntBits(x),Float.floatToRawIntBits(z),seed);lattice++;
             if(previous.contains(key))duplicates++;current.add(key);
-            int slot=(int)com.gabou.atmospheregen.geography.continent.MacroSiteField.mix(((long)key.x()<<32)^(key.z()&0xffffffffL)^key.seed())&127;
+            int slot=(int)com.gabou.projectlandscape.geography.continent.MacroSiteField.mix(((long)key.x()<<32)^(key.z()&0xffffffffL)^key.seed())&127;
             if(reuse&&key.equals(keys[slot])){hits++;return values[slot];}
             float value=input.compute(x,z,seed);if(reuse){keys[slot]=key;values[slot]=value;}return value;
         }

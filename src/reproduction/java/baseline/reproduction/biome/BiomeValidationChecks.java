@@ -1,13 +1,13 @@
 /* Original development harness. All Rights Reserved. */
 package baseline.reproduction.biome;
 
-import com.gabou.atmospheregen.api.climate.*;
-import com.gabou.atmospheregen.api.geography.*;
-import com.gabou.atmospheregen.biome.*;
-import com.gabou.atmospheregen.climate.*;
-import com.gabou.atmospheregen.config.*;
-import com.gabou.atmospheregen.generation.seed.*;
-import com.gabou.atmospheregen.generation.version.GenerationVersions;
+import com.gabou.projectlandscape.api.climate.*;
+import com.gabou.projectlandscape.api.geography.*;
+import com.gabou.projectlandscape.biome.*;
+import com.gabou.projectlandscape.climate.*;
+import com.gabou.projectlandscape.config.*;
+import com.gabou.projectlandscape.generation.seed.*;
+import com.gabou.projectlandscape.generation.version.GenerationVersions;
 import com.google.gson.GsonBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biomes;

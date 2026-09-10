@@ -7,7 +7,7 @@ see `TASK_2_VERSIONED_GENERATION_FOUNDATION.md` and `evidence/final_summary.json
 
 ## Versions and planned configuration codecs
 
-New source lives exclusively under `com.gabou.atmospheregen`; no legacy IDs changed.
+New source lives exclusively under `com.gabou.projectlandscape`; no legacy IDs changed.
 Separate schema, geography, baseline-climate and biome-resolver versions exist.
 Only the legacy tuple passes functional backend dispatch. Planned controls are
 explicitly inactive, not a working new generator.

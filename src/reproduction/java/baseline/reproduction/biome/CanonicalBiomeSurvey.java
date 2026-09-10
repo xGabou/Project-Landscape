@@ -2,12 +2,12 @@
 package baseline.reproduction.biome;
 
 import baseline.reproduction.Evidence;
-import com.gabou.atmospheregen.biome.*;
-import com.gabou.atmospheregen.climate.*;
-import com.gabou.atmospheregen.config.*;
-import com.gabou.atmospheregen.generation.seed.*;
-import com.gabou.atmospheregen.generation.version.*;
-import com.gabou.atmospheregen.geography.terrain.*;
+import com.gabou.projectlandscape.biome.*;
+import com.gabou.projectlandscape.climate.*;
+import com.gabou.projectlandscape.config.*;
+import com.gabou.projectlandscape.generation.seed.*;
+import com.gabou.projectlandscape.generation.version.*;
+import com.gabou.projectlandscape.geography.terrain.*;
 import net.minecraft.server.level.ServerLevel;
 import raccoonman.reterraforged.world.worldgen.*;
 import raccoonman.reterraforged.registries.RTFRegistries;

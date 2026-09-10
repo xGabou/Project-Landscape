@@ -6,7 +6,7 @@ import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainCategory;
 import raccoonman.reterraforged.world.worldgen.biome.Continentalness;
 import raccoonman.reterraforged.world.worldgen.noise.NoiseUtil;
 
-import com.gabou.atmospheregen.compat.legacy.LegacyPreFilterCompatibility;
+import com.gabou.projectlandscape.compat.legacy.LegacyPreFilterCompatibility;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.climate.Climate;
 import raccoonman.reterraforged.world.worldgen.cell.heightmap.Levels;

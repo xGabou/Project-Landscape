@@ -1,10 +1,10 @@
 package baseline.reproduction.performance;
 import java.nio.file.Path;
 import java.util.*;
-import com.gabou.atmospheregen.geography.continent.*;
-import com.gabou.atmospheregen.config.MacroGeographySettings;
-import com.gabou.atmospheregen.generation.seed.NamedSeedService;
-import com.gabou.atmospheregen.generation.version.GenerationVersions;
+import com.gabou.projectlandscape.geography.continent.*;
+import com.gabou.projectlandscape.config.MacroGeographySettings;
+import com.gabou.projectlandscape.generation.seed.NamedSeedService;
+import com.gabou.projectlandscape.generation.version.GenerationVersions;
 import net.minecraft.resources.ResourceLocation;
 final class IslandEvictionChecks {
     static void run(Path out)throws Exception {

@@ -1,14 +1,14 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
 package baseline.reproduction.climate;
 
-import com.gabou.atmospheregen.api.climate.*;
-import com.gabou.atmospheregen.api.geography.MacroGeographyProvider;
-import com.gabou.atmospheregen.climate.*;
-import com.gabou.atmospheregen.config.*;
-import com.gabou.atmospheregen.generation.seed.NamedSeedService;
-import com.gabou.atmospheregen.generation.version.GenerationVersions;
-import com.gabou.atmospheregen.geography.continent.PaMacroGeography;
-import com.gabou.atmospheregen.geography.ocean.CoarseDistanceField;
+import com.gabou.projectlandscape.api.climate.*;
+import com.gabou.projectlandscape.api.geography.MacroGeographyProvider;
+import com.gabou.projectlandscape.climate.*;
+import com.gabou.projectlandscape.config.*;
+import com.gabou.projectlandscape.generation.seed.NamedSeedService;
+import com.gabou.projectlandscape.generation.version.GenerationVersions;
+import com.gabou.projectlandscape.geography.continent.PaMacroGeography;
+import com.gabou.projectlandscape.geography.ocean.CoarseDistanceField;
 import com.google.gson.GsonBuilder;
 import net.minecraft.resources.ResourceLocation;
 import java.nio.charset.StandardCharsets;

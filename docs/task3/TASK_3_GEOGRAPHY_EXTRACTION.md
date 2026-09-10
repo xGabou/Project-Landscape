@@ -69,7 +69,7 @@ It will be isolated as a legacy coast-compatibility rule, never future baseline-
 
 ## Extraction direction and constraints
 
-Original contracts/orchestration will use `com.gabou.atmospheregen.geography` with generic internal
+Original contracts/orchestration will use `com.gabou.projectlandscape.geography` with generic internal
 workspace/tile types. Legacy algorithm adapters remain MIT-derived in the inherited namespace.
 Cell remains the pooled workspace, implementing a geography-only view without a per-cell wrapper.
 Compatibility fields remain separately documented in Cell until later migration; no public API leaks it.
@@ -104,7 +104,7 @@ Task 4 continent/ocean redesign, new climate/biome authority and runtime integra
 
 ## Implemented architecture
 
-Original ARR contracts under `com.gabou.atmospheregen.geography`:
+Original ARR contracts under `com.gabou.projectlandscape.geography`:
 `GeographyWorkspace`, `ContinentStage`, `TerrainStage`, `HydrologyStage`,
 `GeographyFinalizationStage`, and generic batched `GeographyPipeline<W,R,T>`.
 The explicit `compat.legacy.LegacyPreFilterCompatibility` hook is the only old-classification

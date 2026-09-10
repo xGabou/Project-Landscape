@@ -2,8 +2,8 @@
 package baseline.reproduction.biome;
 
 import baseline.reproduction.Evidence;
-import com.gabou.atmospheregen.biome.*;
-import com.gabou.atmospheregen.geography.terrain.PaGeographyProvider;
+import com.gabou.projectlandscape.biome.*;
+import com.gabou.projectlandscape.geography.terrain.PaGeographyProvider;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.*;
 import net.minecraft.core.registries.Registries;

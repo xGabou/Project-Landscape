@@ -1,8 +1,8 @@
 /* Original exact surface reuse regression and microbenchmark. All Rights Reserved. */
 package baseline.reproduction.performance;
 
-import com.gabou.atmospheregen.biome.*;
-import com.gabou.atmospheregen.generation.context.WorldGenerationContext;
+import com.gabou.projectlandscape.biome.*;
+import com.gabou.projectlandscape.generation.context.WorldGenerationContext;
 import raccoonman.reterraforged.world.worldgen.GeneratorContext;
 import net.minecraft.core.*;
 import net.minecraft.world.level.biome.*;

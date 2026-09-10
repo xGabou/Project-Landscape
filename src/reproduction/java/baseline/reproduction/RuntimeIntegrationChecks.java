@@ -1,6 +1,6 @@
 package baseline.reproduction;
 
-import com.gabou.atmospheregen.runtime.*;
+import com.gabou.projectlandscape.runtime.*;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;

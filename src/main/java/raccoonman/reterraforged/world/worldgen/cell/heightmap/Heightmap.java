@@ -16,7 +16,7 @@ import raccoonman.reterraforged.world.worldgen.noise.module.Noise;
  */
 public record Heightmap(LegacyContinentStage continentStage, LegacyTerrainStage terrainStage,
         LegacyHydrologyStage hydrologyStage, LegacyMinecraftParameterAdapter legacyParameters,
-        Levels levels, ControlPoints controlPoints, com.gabou.atmospheregen.geography.terrain.PaTerrainBridge paBridge) {
+        Levels levels, ControlPoints controlPoints, com.gabou.projectlandscape.geography.terrain.PaTerrainBridge paBridge) {
     public Heightmap(LegacyContinentStage continent, LegacyTerrainStage terrain, LegacyHydrologyStage hydrology,
             LegacyMinecraftParameterAdapter parameters, Levels levels, ControlPoints controls) {
         this(continent,terrain,hydrology,parameters,levels,controls,null);

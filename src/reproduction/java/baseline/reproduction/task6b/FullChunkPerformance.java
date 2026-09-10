@@ -3,7 +3,7 @@ package baseline.reproduction.task6b;
 
 import baseline.reproduction.Evidence;
 import baseline.reproduction.Metrics;
-import com.gabou.atmospheregen.biome.ClimateBiomeSource;
+import com.gabou.projectlandscape.biome.ClimateBiomeSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 import java.lang.management.ManagementFactory;

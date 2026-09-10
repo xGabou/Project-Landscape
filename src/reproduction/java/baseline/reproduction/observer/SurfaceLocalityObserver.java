@@ -1,6 +1,6 @@
 package baseline.reproduction.observer;
 import baseline.reproduction.task6b.LocalityTrace;
-import com.gabou.atmospheregen.geography.terrain.PaGeographyProvider;
+import com.gabou.projectlandscape.geography.terrain.PaGeographyProvider;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;

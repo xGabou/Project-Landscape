@@ -8,7 +8,7 @@ This report does not authorize Task 3.
 
 ## Scope and architecture
 
-All original architecture is under `com.gabou.atmospheregen`. New persisted data uses
+All original architecture is under `com.gabou.projectlandscape`. New persisted data uses
 `atmospheregen`. The mod ID, inherited `Gabou.projectlandscape` packages, registry IDs,
 datapack IDs, presets and resource assets remain unchanged. Original files are ARR;
 modified inherited files retain MIT provenance. Existing third-party notices remain intact.

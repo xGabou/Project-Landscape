@@ -1,12 +1,12 @@
 /* Original offline performance harness. All Rights Reserved. */
 package baseline.reproduction.performance;
 
-import com.gabou.atmospheregen.biome.CanonicalClimateGeography;
-import com.gabou.atmospheregen.climate.PaBaselineClimateProvider;
-import com.gabou.atmospheregen.config.*;
-import com.gabou.atmospheregen.generation.seed.NamedSeedService;
-import com.gabou.atmospheregen.generation.version.GenerationVersions;
-import com.gabou.atmospheregen.geography.terrain.*;
+import com.gabou.projectlandscape.biome.CanonicalClimateGeography;
+import com.gabou.projectlandscape.climate.PaBaselineClimateProvider;
+import com.gabou.projectlandscape.config.*;
+import com.gabou.projectlandscape.generation.seed.NamedSeedService;
+import com.gabou.projectlandscape.generation.version.GenerationVersions;
+import com.gabou.projectlandscape.geography.terrain.*;
 import com.google.gson.GsonBuilder;
 import net.minecraft.core.*;
 import net.minecraft.resources.ResourceLocation;
@@ -17,7 +17,7 @@ import raccoonman.reterraforged.world.worldgen.GeneratorContext;
 import java.nio.file.*;
 import java.lang.management.ManagementFactory;
 import java.util.*;
-import com.gabou.atmospheregen.climate.BaselineClimateModel;
+import com.gabou.projectlandscape.climate.BaselineClimateModel;
 import jdk.jfr.Recording;
 import jdk.jfr.Configuration;
 
@@ -109,7 +109,7 @@ public final class WorldgenBenchmark {
                             int index=0;
                             for(var p:scenario.getValue()){
                                 measurements.add(measure("pass"+pass+"_query"+index++,1,()->{sink=c.sample(p.x(),p.z());}));
-                                var value=(com.gabou.atmospheregen.api.climate.ClimateBaseline)sink;
+                                var value=(com.gabou.projectlandscape.api.climate.ClimateBaseline)sink;
                                 outputs.add(Map.of("x",p.x(),"z",p.z(),"rawDoubleBits",List.of(
                                         Double.doubleToRawLongBits(value.meanTemperatureCelsius()),Double.doubleToRawLongBits(value.annualRainfallMm()),
                                         Double.doubleToRawLongBits(value.ecologicalMoistureIndex()),Double.doubleToRawLongBits(value.potentialEvaporationMm()),
@@ -137,7 +137,7 @@ public final class WorldgenBenchmark {
         long processCpu=os.getProcessCpuTime();
         long id=Thread.currentThread().getId(),allocated=bean.getThreadAllocatedBytes(id),cpu=bean.getCurrentThreadCpuTime(),start=System.nanoTime();
         for(int i=0;i<count;i++)action.run();
-        var metrics=com.gabou.atmospheregen.geography.terrain.TerrainMetrics.snapshot();
+        var metrics=com.gabou.projectlandscape.geography.terrain.TerrainMetrics.snapshot();
         return Map.of("terrainCumulative",metrics,"name",name,"count",count,"wallNanos",System.nanoTime()-start,
                 "processCpuNanos",os.getProcessCpuTime()-processCpu,"callingThreadCpuNanos",bean.getCurrentThreadCpuTime()-cpu,"callingThreadAllocatedBytes",bean.getThreadAllocatedBytes(id)-allocated);
     }

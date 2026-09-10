@@ -4,7 +4,7 @@ package baseline.reproduction;
 import java.nio.file.*;
 import java.util.*;
 import net.minecraft.server.level.ServerLevel;
-import com.gabou.atmospheregen.compat.legacy.LegacyRtfGeographyAdapter;
+import com.gabou.projectlandscape.compat.legacy.LegacyRtfGeographyAdapter;
 import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import raccoonman.reterraforged.world.worldgen.cell.Cell;
 import raccoonman.reterraforged.world.worldgen.cell.CellPopulator;

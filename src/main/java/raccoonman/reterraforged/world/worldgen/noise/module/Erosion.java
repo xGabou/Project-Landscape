@@ -1,6 +1,6 @@
 package raccoonman.reterraforged.world.worldgen.noise.module;
 
-import com.gabou.atmospheregen.geography.terrain.TerrainMetrics.Stage;
+import com.gabou.projectlandscape.geography.terrain.TerrainMetrics.Stage;
 
 import java.util.Arrays;
 

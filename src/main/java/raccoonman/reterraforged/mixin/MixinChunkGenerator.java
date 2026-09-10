@@ -1,6 +1,6 @@
 /* Original Project Atmosphere companion architecture. All Rights Reserved. */
 package raccoonman.reterraforged.mixin;
-import com.gabou.atmospheregen.biome.ClimateBiomeSourceAccess;
+import com.gabou.projectlandscape.biome.ClimateBiomeSourceAccess;
 import net.minecraft.world.level.biome.BiomeSource;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import org.spongepowered.asm.mixin.*;

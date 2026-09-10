@@ -2,8 +2,8 @@
 package baseline.reproduction.task6b;
 
 import baseline.reproduction.Evidence;
-import com.gabou.atmospheregen.biome.ClimateBiomeSource;
-import com.gabou.atmospheregen.geography.terrain.PaGeographyProvider;
+import com.gabou.projectlandscape.biome.ClimateBiomeSource;
+import com.gabou.projectlandscape.geography.terrain.PaGeographyProvider;
 import net.minecraft.server.level.ServerLevel;
 import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 import java.util.*;

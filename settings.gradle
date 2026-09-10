@@ -2,6 +2,13 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven { url = 'https://maven.minecraftforge.net/' }
+        maven {
+            name = 'FirstDark'
+            url = 'https://maven.firstdark.dev/releases'
+        }
     }
 }
-rootProject.name = 'ReTerraForged'
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+}
+rootProject.name = 'Project-Landscape'

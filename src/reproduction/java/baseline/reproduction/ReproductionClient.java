@@ -38,9 +38,9 @@ public final class ReproductionClient {
     private boolean foundationReopened;
     private boolean task6Reopened;
     private String task6Digest;
-    private com.gabou.atmospheregen.biome.ClimateBiomeSource task6bDisposedSource;
-    private com.gabou.atmospheregen.generation.context.WorldGenerationContext previousFoundationContext;
-    private com.gabou.atmospheregen.api.geography.GeographyProvider previousFoundationProvider;
+    private com.gabou.projectlandscape.biome.ClimateBiomeSource task6bDisposedSource;
+    private com.gabou.projectlandscape.generation.context.WorldGenerationContext previousFoundationContext;
+    private com.gabou.projectlandscape.api.geography.GeographyProvider previousFoundationProvider;
     private List<raccoonman.reterraforged.world.worldgen.GeneratorContext> worldContexts=List.of();
     public ReproductionClient(){MinecraftForge.EVENT_BUS.addListener(this::tick);}
     private void tick(TickEvent.ClientTickEvent event){
@@ -100,8 +100,8 @@ public final class ReproductionClient {
                             if(metadata==null)throw new AssertionError("Missing automatic world manifest binding");
                             if(foundationReopened && (!metadata.contextId().equals(previousFoundationContext.contextId()) || metadata.runtimeToken()==previousFoundationContext.runtimeToken()))throw new AssertionError("Reopened context persistence/isolation");
                             previousFoundationContext=metadata;
-                            previousFoundationProvider=com.gabou.atmospheregen.compat.legacy.LegacyRtfGeographyAdapter.forLevel(server.overworld());
-                            out.row("world_binding","phase",foundationReopened?"reopened":"created","metadata",com.gabou.atmospheregen.generation.context.GenerationDiagnostics.describe(metadata),"persistedContextStable",true);
+                            previousFoundationProvider=com.gabou.projectlandscape.compat.legacy.LegacyRtfGeographyAdapter.forLevel(server.overworld());
+                            out.row("world_binding","phase",foundationReopened?"reopened":"created","metadata",com.gabou.projectlandscape.generation.context.GenerationDiagnostics.describe(metadata),"persistedContextStable",true);
                             ((net.minecraft.world.level.storage.PrimaryLevelData)server.getWorldData()).withConfirmedWarning(true);
                             server.saveEverything(false,true,true);
                         } else if(task1c.equals("task6b")) {
@@ -142,7 +142,7 @@ public final class ReproductionClient {
                     if(context!=null)worldContexts.add(context);
                 }
                 work.join();
-                if(task1c.equals("task6b") && mc.getSingleplayerServer().overworld().getChunkSource().getGenerator().getBiomeSource() instanceof com.gabou.atmospheregen.biome.ClimateBiomeSource source)task6bDisposedSource=source;
+                if(task1c.equals("task6b") && mc.getSingleplayerServer().overworld().getChunkSource().getGenerator().getBiomeSource() instanceof com.gabou.projectlandscape.biome.ClimateBiomeSource source)task6bDisposedSource=source;
                 stage=4;mc.level.disconnect();mc.clearLevel();mc.setScreen(new TitleScreen());
             }else if(stage==4&&mc.getSingleplayerServer()==null){
                 boolean allClosed=true,allUnregistered=true;long live=0;
