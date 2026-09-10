@@ -1,13 +1,17 @@
-/* Derived from ReTerraForged Smoothing, MIT License. Development experiment. */
-package baseline.reproduction.performance;
+/* Derived from ReTerraForged Smoothing, MIT License. Exact V1 ordered-kernel specialization. */
+package com.gabou.atmospheregen.geography.terrain;
 
 import raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.*;
 import raccoonman.reterraforged.world.worldgen.noise.NoiseUtil;
 
-final class KernelSmoothing implements Filter {
+public final class ExactSmoothing implements Filter {
     private final Smoothing source;
-    KernelSmoothing(Smoothing source) { this.source=source; }
+    public ExactSmoothing(Smoothing source) { this.source=source; }
     public void apply(Filterable map,int seedX,int seedZ,int iterations) {
+        // Keep pathological/custom kernels on their established path, without allocating a huge kernel.
+        if(!Float.isFinite(source.smoothingRadius()) || source.smoothingRadius()<0 || source.smoothingRadius()>32) {
+            source.apply(map,seedX,seedZ,iterations);return;
+        }
         int radius=NoiseUtil.round(source.smoothingRadius()+0.5F);
         float radiusSq=source.smoothingRadius()*source.smoothingRadius();
         int width=2*radius+1;

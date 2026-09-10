@@ -12,7 +12,7 @@ final class SmoothingExperiment {
         var measurements=new ArrayList<Object>();long checked=0;
         for(int[] point:new int[][]{{0,0},{47,48},{-224,-96},{-64,-1172},{64,468},{-64,-3907}}){
             var input=context.cache.provide(point[0],point[1]);int size=input.getBlockSize().total();
-            var reference=Smoothing.make(context.preset.filters().smoothing,context.levels);var candidate=new KernelSmoothing(reference);
+            var reference=Smoothing.make(context.preset.filters().smoothing,context.levels);var candidate=new com.gabou.atmospheregen.geography.terrain.ExactSmoothing(reference);
             for(int pass=-2;pass<7;pass++){
                 var a=input.snapshot();var b=input.snapshot();long before,referenceNs,candidateNs;
                 if((pass&1)==0){

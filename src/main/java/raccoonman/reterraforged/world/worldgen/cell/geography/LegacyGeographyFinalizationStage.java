@@ -20,7 +20,7 @@ import raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Steep
 
 /** Frozen whole-tile physical finalization; no climate or biome resolver dependency. */
 public class LegacyGeographyFinalizationStage implements GeographyFinalizationStage<Tile> {
-    private Smoothing smoothing;
+    private raccoonman.reterraforged.world.worldgen.densityfunction.tile.filter.Filter smoothing;
     private Steepness steepness;
     private BeachDetect beach;
     private NoiseCorrection corrections;
@@ -37,7 +37,8 @@ public class LegacyGeographyFinalizationStage implements GeographyFinalizationSt
         IntFunction<Erosion> factory = Erosion.factory(context, reuseInvariantStrength);
         this.settings = context.preset.filters();
         this.beach = BeachDetect.make(context);
-        this.smoothing = Smoothing.make(context.preset.filters().smoothing, context.levels);
+        var originalSmoothing = Smoothing.make(context.preset.filters().smoothing, context.levels);
+        this.smoothing = reuseInvariantStrength ? new com.gabou.atmospheregen.geography.terrain.ExactSmoothing(originalSmoothing) : originalSmoothing;
         this.steepness = Steepness.make(1, 10.0F, context.levels);
         this.corrections = new NoiseCorrection(context.levels);
         this.erosion = new WorldErosion<>(factory, (e, size) -> e.getSize() == size);
