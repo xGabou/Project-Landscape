@@ -6,7 +6,7 @@ modId="task6b_performance"
 version="1"
 displayName="Task 6B headless reproduction benchmark"
 [[dependencies.task6b_performance]]
-modId="reterraforged"
+modId="projectlandscape"
 mandatory=true
 versionRange="[0.0.6,)"
 ordering="AFTER"

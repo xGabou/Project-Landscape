@@ -55,27 +55,33 @@ public final class ReproductionClient {
                 CreateWorldScreen.openFresh(mc,mc.screen);
             }else if(stage==1&&mc.screen instanceof CreateWorldScreen screen){
                 stage=2;String name=run+"-seed"+worldIndex;
-                Path root=mc.gameDirectory.toPath().resolve("saves").resolve(name), pack=root.resolve("datapacks/reproduction-preset");Files.createDirectories(pack);
+                Path root=mc.gameDirectory.toPath().resolve("saves").resolve(name), pack=root.resolve("datapacks/reproduction-preset");
+                boolean legacyExport=Boolean.getBoolean("task1a.exportLegacyPreset")||System.getProperty("task1a.presetFile")!=null;
+                if(legacyExport)Files.createDirectories(pack);
                 if((task1c.equals("task6-biomes") || task1c.equals("task6b")) && worldIndex==0) {
                     Files.createDirectories(root.resolve("data/atmospheregen"));
                     Files.writeString(root.resolve("data/atmospheregen/development_biomes_v1.json"),"{\"climate\":{\"latitudeScaleBlocks\":100000,\"equatorZ\":0,\"lapseCelsiusPerBlock\":0.0065,\"oceanInfluence\":0.5,\"continentalityStrength\":1,\"windBandScaleBlocks\":4096,\"orographicStrength\":0.85,\"rainShadowRecoveryDistance\":12000,\"climateProfileDistance\":24000,\"climateProfileStep\":256,\"evaporationStrength\":1,\"regionalVariationStrength\":0.1},\"resolver\":{\"spatialResolutionBlocks\":64,\"fallbackWeight\":1,\"regionalVariationScaleBlocks\":4096,\"regionalVariationStrength\":0.18,\"transitionSoftness\":0.12}}");
                 }
-                var selected = Presets.makeLegacyDefault();
-                if (System.getProperty("task1a.presetFile") != null) {
-                    var json = com.google.gson.JsonParser.parseString(Files.readString(Path.of(System.getProperty("task1a.presetFile"))));
-                    selected = raccoonman.reterraforged.data.worldgen.preset.settings.Preset.DIRECT_CODEC.parse(com.mojang.serialization.JsonOps.INSTANCE, json).getOrThrow(false, RTFCommon.LOGGER::error);
+                var config=screen.getUiState().getSettings().dataConfiguration();
+                var data=config;
+                if(legacyExport){
+                    var selected=Presets.makeLegacyDefault();
+                    if(System.getProperty("task1a.presetFile")!=null){
+                        var json=com.google.gson.JsonParser.parseString(Files.readString(Path.of(System.getProperty("task1a.presetFile"))));
+                        selected=raccoonman.reterraforged.data.worldgen.preset.settings.Preset.DIRECT_CODEC.parse(com.mojang.serialization.JsonOps.INSTANCE,json).getOrThrow(false,RTFCommon.LOGGER::error);
+                    }
+                    if(worldIndex==3&&full)selected.miscellaneous().customBiomeFeatures=false;
+                    Datapacks.makePreset(selected,screen.getUiState().getSettings().worldgenLoadContext(),root.resolve("export"),pack,"Task 1A selected preset").run();
+                    if(worldIndex==0&&full){
+                        var disabled=Presets.makeLegacyDefault();disabled.miscellaneous().customBiomeFeatures=false;
+                        try{Datapacks.makePreset(disabled,screen.getUiState().getSettings().worldgenLoadContext(),root.resolve("disabled-work"),root.resolve("disabled-pack"),"Disabled custom features reproduction").run();
+                            disabledBootstrapSucceeded=true;
+                            out.row("vegetation_disabled","bootstrap","success","loadAttempted",false,"note","Separate disabled-preset world follows the three comparator worlds");
+                        }catch(Throwable ex){out.row("vegetation_disabled","bootstrap","failed","error",Evidence.failure(ex),"exceptionTree",Evidence.trace(ex),"loadAttempted",false,"reason","No complete pack available after bootstrap failure");}
+                    }
+                    var enabled=new ArrayList<>(config.dataPacks().getEnabled());enabled.add("file/reproduction-preset");
+                    data=new WorldDataConfiguration(new DataPackConfig(enabled,List.of()),config.enabledFeatures());
                 }
-                if(worldIndex==3&&full)selected.miscellaneous().customBiomeFeatures=false;
-                Datapacks.makePreset(selected,screen.getUiState().getSettings().worldgenLoadContext(),root.resolve("export"),pack,"Task 1A selected preset").run();
-                if(worldIndex==0&&full){
-                    var disabled=Presets.makeLegacyDefault();disabled.miscellaneous().customBiomeFeatures=false;
-                    try{Datapacks.makePreset(disabled,screen.getUiState().getSettings().worldgenLoadContext(),root.resolve("disabled-work"),root.resolve("disabled-pack"),"Disabled custom features reproduction").run();
-                        disabledBootstrapSucceeded=true;
-                        out.row("vegetation_disabled","bootstrap","success","loadAttempted",false,"note","Separate disabled-preset world follows the three comparator worlds");
-                    }catch(Throwable ex){out.row("vegetation_disabled","bootstrap","failed","error",Evidence.failure(ex),"exceptionTree",Evidence.trace(ex),"loadAttempted",false,"reason","No complete pack available after bootstrap failure");}
-                }
-                var config=screen.getUiState().getSettings().dataConfiguration();var enabled=new ArrayList<>(config.dataPacks().getEnabled());enabled.add("file/reproduction-preset");
-                var data=new WorldDataConfiguration(new DataPackConfig(enabled,List.of()),config.enabledFeatures());
                 var settings=new LevelSettings(name,GameType.CREATIVE,false,Difficulty.PEACEFUL,true,new GameRules(),data);
                 mc.createWorldOpenFlows().createFreshLevel(name,settings,new WorldOptions(currentSeed(),true,false),
                     registry->registry.registryOrThrow(Registries.WORLD_PRESET).getHolderOrThrow(WorldPresets.NORMAL).value().createWorldDimensions());
@@ -100,7 +106,7 @@ public final class ReproductionClient {
                             if(metadata==null)throw new AssertionError("Missing automatic world manifest binding");
                             if(foundationReopened && (!metadata.contextId().equals(previousFoundationContext.contextId()) || metadata.runtimeToken()==previousFoundationContext.runtimeToken()))throw new AssertionError("Reopened context persistence/isolation");
                             previousFoundationContext=metadata;
-                            previousFoundationProvider=com.gabou.projectlandscape.compat.legacy.LegacyRtfGeographyAdapter.forLevel(server.overworld());
+                            previousFoundationProvider=((RTFRandomState)(Object)server.overworld().getChunkSource().randomState()).generatorContext().canonicalGeography();
                             out.row("world_binding","phase",foundationReopened?"reopened":"created","metadata",com.gabou.projectlandscape.generation.context.GenerationDiagnostics.describe(metadata),"persistedContextStable",true);
                             ((net.minecraft.world.level.storage.PrimaryLevelData)server.getWorldData()).withConfirmedWarning(true);
                             server.saveEverything(false,true,true);

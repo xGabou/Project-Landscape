@@ -23,7 +23,7 @@ import raccoonman.reterraforged.world.worldgen.surface.RTFSurfaceSystem;
 import raccoonman.reterraforged.world.worldgen.surface.rule.StrataRule;
 
 @Mixin(SurfaceSystem.class)
-@Implements(@Interface(iface = RTFSurfaceSystem.class, prefix = RTFCommon.MOD_ID + "$RTFSurfaceSystem$"))
+@Implements(@Interface(iface = RTFSurfaceSystem.class, prefix = "reterraforged$RTFSurfaceSystem$"))
 class MixinSurfaceSystem {
 	private static final ResourceLocation GEOLOGY_RANDOM = RTFCommon.location("geology");
 	private RandomState randomState;

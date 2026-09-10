@@ -6,7 +6,7 @@ modId="baseline_smoke"
 version="1"
 displayName="Task 0 development smoke harness"
 [[dependencies.baseline_smoke]]
-modId="reterraforged"
+modId="projectlandscape"
 mandatory=true
 versionRange="[0.0.6,)"
 ordering="AFTER"

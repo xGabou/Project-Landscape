@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "projectlandscape:willow/large",
+    "features": [
+      {
+        "chance": 0.2,
+        "feature": "projectlandscape:willow/small"
+      },
+      {
+        "chance": 0.35,
+        "feature": "projectlandscape:willow/large"
+      }
+    ]
+  }
+}

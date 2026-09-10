@@ -188,12 +188,15 @@ class PresetListPage extends BisectedPage<PresetConfigScreen, PresetEntry, Abstr
 		entries.addAll(this.listPresets(PRESET_PATH));
 		entries.addAll(this.listPresets(LEGACY_PRESET_PATH));
 		
-		entries.add(new PresetEntry(Component.translatable(RTFTranslationKeys.GUI_DEFAULT_PRESET_NAME).withStyle(ChatFormatting.GRAY), Presets.makeLegacyDefault(), true, this));
+		PresetEntry defaultPreset = new PresetEntry(Component.translatable(RTFTranslationKeys.GUI_DEFAULT_PRESET_NAME).withStyle(ChatFormatting.GRAY), Presets.makeLegacyDefault(), true, this);
+		entries.add(defaultPreset);
 		entries.add(new PresetEntry(Component.translatable(RTFTranslationKeys.GUI_BEAUTIFUL_PRESET_NAME).withStyle(ChatFormatting.GRAY), Presets.makeLegacyBeautiful(), true, this));
 		entries.add(new PresetEntry(Component.translatable(RTFTranslationKeys.GUI_HUGE_BIOMES_PRESET_NAME).withStyle(ChatFormatting.GRAY), Presets.makeLegacyHugeBiomes(), true, this));
 		entries.add(new PresetEntry(Component.translatable(RTFTranslationKeys.GUI_LITE_PRESET_NAME).withStyle(ChatFormatting.GRAY), Presets.makeLegacyLite(), true, this));
 		entries.add(new PresetEntry(Component.translatable(RTFTranslationKeys.GUI_VANILLAISH_PRESET_NAME).withStyle(ChatFormatting.GRAY), Presets.makeLegacyVanillaish(), true, this));
 		this.left.replaceEntries(entries.stream().map(WidgetList.Entry::new).toList());
+		this.left.select(defaultPreset);
+		this.selectPreset(defaultPreset);
 	}
 	
 	private boolean isValidPresetName(String text) {

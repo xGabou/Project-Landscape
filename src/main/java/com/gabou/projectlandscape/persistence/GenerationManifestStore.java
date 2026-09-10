@@ -12,7 +12,7 @@ import java.util.*;
 
 /** World-storage-lock-owned initialization I/O only. Never called by sample or noise compute. */
 public final class GenerationManifestStore {
-    public enum ResolutionKind { EXPLICIT_LEGACY_ASSIGNMENT, EXISTING_MANIFEST, EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT, EXPLICIT_V1_CLIMATE_ASSIGNMENT, EXPLICIT_V1_BIOME_ASSIGNMENT }
+    public enum ResolutionKind { EXPLICIT_LEGACY_ASSIGNMENT, EXISTING_MANIFEST, EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT, EXPLICIT_V1_CLIMATE_ASSIGNMENT, EXPLICIT_V1_BIOME_ASSIGNMENT, AUTOMATIC_PROJECT_LANDSCAPE_DEFAULT }
     public record Resolution(GenerationManifest manifest, ResolutionKind kind) {}
     private GenerationManifestStore() {}
 
@@ -24,6 +24,14 @@ public final class GenerationManifestStore {
      * Caller owns Minecraft's world save lock. Existing files are never overwritten or migrated.
      */
     public static Optional<Resolution> resolve(Path file, Optional<GenerationManifest> recognizedLegacy) throws IOException {
+        return resolve(file, recognizedLegacy, null);
+    }
+
+    /**
+     * {@code creationKind} documents why a newly recognized router received its manifest.
+     * It is ignored for a persisted manifest, whose identity remains authoritative.
+     */
+    public static Optional<Resolution> resolve(Path file, Optional<GenerationManifest> recognizedLegacy, ResolutionKind creationKind) throws IOException {
         if (Files.exists(file)) {
             GenerationManifest persisted = read(file);
             persisted.content().versions().requireFunctionalBackend();
@@ -50,7 +58,7 @@ public final class GenerationManifestStore {
             // Same-directory rename, deliberately WITHOUT REPLACE_EXISTING. A competing writer is an error.
             Files.move(temporary, file);
         } finally { Files.deleteIfExists(temporary); }
-        return Optional.of(new Resolution(manifest, manifest.content().versions().equals(com.gabou.projectlandscape.generation.version.GenerationVersions.geographyV1())
+        return Optional.of(new Resolution(manifest, creationKind != null ? creationKind : manifest.content().versions().equals(com.gabou.projectlandscape.generation.version.GenerationVersions.geographyV1())
             ? ResolutionKind.EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT
             : manifest.content().versions().equals(com.gabou.projectlandscape.generation.version.GenerationVersions.climateV1())
                 ? ResolutionKind.EXPLICIT_V1_CLIMATE_ASSIGNMENT

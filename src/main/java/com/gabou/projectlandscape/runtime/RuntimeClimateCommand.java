@@ -6,8 +6,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import raccoonman.reterraforged.RTFCommon;
 
-@Mod.EventBusSubscriber(modid="reterraforged")
+@Mod.EventBusSubscriber(modid=RTFCommon.MOD_ID)
 public final class RuntimeClimateCommand {
     private RuntimeClimateCommand() { }
     @SubscribeEvent public static void register(RegisterCommandsEvent event) {

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "projectlandscape:dark_oak/large",
+    "features": [
+      {
+        "chance": 0.025,
+        "feature": "projectlandscape:mushrooms/huge_brown_mushroom"
+      },
+      {
+        "chance": 0.05,
+        "feature": "projectlandscape:mushrooms/huge_red_mushroom"
+      },
+      {
+        "chance": 0.3,
+        "feature": "projectlandscape:dark_oak/large"
+      },
+      {
+        "chance": 0.2,
+        "feature": "projectlandscape:dark_oak/small"
+      },
+      {
+        "chance": 0.05,
+        "feature": "projectlandscape:birch/forest"
+      },
+      {
+        "chance": 0.025,
+        "feature": "projectlandscape:oak/forest"
+      }
+    ]
+  }
+}

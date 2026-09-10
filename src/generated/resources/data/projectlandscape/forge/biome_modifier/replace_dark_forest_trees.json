@@ -1,0 +1,8 @@
+{
+  "type": "reterraforged:replace",
+  "biomes": "minecraft:dark_forest",
+  "replacements": {
+    "minecraft:dark_forest_vegetation": "projectlandscape:dark_forest_trees"
+  },
+  "step": "vegetal_decoration"
+}

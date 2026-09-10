@@ -25,21 +25,42 @@ public final class LegacyWorldBinding {
     public static void bind(ServerLevel level, Path dimensionDirectory, ChunkGenerator generator, RTFRandomState state) {
         Path file = GenerationManifestStore.path(dimensionDirectory);
         Optional<GenerationManifest> recognized = Optional.empty();
-        // Phase 1 only claims actual RTF Overworld routers, not mere availability of RTF registry tags.
+        GenerationManifestStore.ResolutionKind creationKind = null;
+        // Project Landscape owns every new Overworld router supplied by its built-in default data.
         if (level.dimension().equals(Level.OVERWORLD) && usesLegacyCells(generator)) {
             var legacy = state.requireGeneratorContext("freeze LEGACY_RTF_V0 manifest before chunk generation");
             if (state.preset() == null) throw new IllegalStateException("RTF router has no identifiable active preset in " + level.dimension().location());
-            recognized = Optional.of(GenerationManifest.create(new ManifestContent(GenerationVersions.legacy(), level.getSeed(),
-                level.dimension().location(), new WorldGeographyConfig(Optional.of(LegacyPresetSnapshot.capture(legacy.preset)), Optional.empty()),
-                new BaselineClimateConfig(Optional.empty()), new BiomeResolverConfig(Optional.empty()),
-                LegacyGenerationData.capture(level, generator), Optional.empty())));
-            var developer=DevelopmentBiomeSelection.requested(dimensionDirectory,level,generator,legacy)
-                .or(()->DevelopmentClimateSelection.requested(dimensionDirectory,level,generator,legacy))
-                .or(()->DevelopmentGeographySelection.requested(dimensionDirectory,level,generator,legacy));
-            if(developer.isPresent())recognized=developer;
+            if (java.nio.file.Files.exists(file)) {
+                GenerationManifest persisted;
+                try { persisted = GenerationManifestStore.read(file); }
+                catch (IOException failure) { throw new UncheckedIOException("Cannot read persisted generation manifest for " + level.dimension().location(), failure); }
+                if (persisted.content().worldSeed() != level.getSeed() || !persisted.content().dimension().equals(level.dimension().location()))
+                    throw new IllegalStateException("Persisted generation manifest does not belong to this Overworld");
+                boolean legacyManifest = persisted.content().versions().equals(GenerationVersions.legacy());
+                if (legacyManifest != state.usesLegacyData())
+                    throw new IllegalStateException("Persisted generation manifest/backend namespace mismatch; restore the matching Project Landscape or legacy data");
+                recognized = Optional.of(persisted);
+            } else if (state.usesLegacyData()) {
+                recognized = Optional.of(legacyManifest(level, generator, legacy));
+                creationKind = GenerationManifestStore.ResolutionKind.EXPLICIT_LEGACY_ASSIGNMENT;
+            } else {
+                recognized = Optional.of(plannedManifest(level, generator, legacy));
+                var developer=DevelopmentBiomeSelection.requested(dimensionDirectory,level,generator,legacy)
+                    .or(()->DevelopmentClimateSelection.requested(dimensionDirectory,level,generator,legacy))
+                    .or(()->DevelopmentGeographySelection.requested(dimensionDirectory,level,generator,legacy));
+                if(developer.isPresent()) {
+                    recognized=developer;
+                    var versions = developer.get().content().versions();
+                    creationKind = versions.equals(GenerationVersions.geographyV1())
+                        ? GenerationManifestStore.ResolutionKind.EXPLICIT_V1_DEVELOPMENT_ASSIGNMENT
+                        : versions.equals(GenerationVersions.climateV1())
+                            ? GenerationManifestStore.ResolutionKind.EXPLICIT_V1_CLIMATE_ASSIGNMENT
+                            : GenerationManifestStore.ResolutionKind.EXPLICIT_V1_BIOME_ASSIGNMENT;
+                } else creationKind = GenerationManifestStore.ResolutionKind.AUTOMATIC_PROJECT_LANDSCAPE_DEFAULT;
+            }
         }
         try {
-            GenerationManifestStore.resolve(file, recognized).ifPresent(resolution -> {
+            GenerationManifestStore.resolve(file, recognized, creationKind).ifPresent(resolution -> {
                 var legacy = state.requireGeneratorContext("bind persisted generation metadata");
                 if(resolution.manifest().content().versions().equals(GenerationVersions.geographyV1()) || resolution.manifest().content().versions().equals(GenerationVersions.climateV1()) || resolution.manifest().content().versions().equals(GenerationVersions.planned())) {
                     var config=raccoonman.reterraforged.config.PerformanceConfig.read(raccoonman.reterraforged.config.PerformanceConfig.DEFAULT_FILE_PATH)
@@ -54,6 +75,28 @@ public final class LegacyWorldBinding {
                     resolution.manifest().content().versions().geography(), level.dimension().location(), resolution.manifest().fingerprint().sha256());
             });
         } catch (IOException failure) { throw new UncheckedIOException("Cannot persist generation manifest for " + level.dimension().location() + "; world generation must not proceed", failure); }
+    }
+
+    private static GenerationManifest legacyManifest(ServerLevel level, ChunkGenerator generator, raccoonman.reterraforged.world.worldgen.GeneratorContext legacy) {
+        return GenerationManifest.create(new ManifestContent(GenerationVersions.legacy(), level.getSeed(), level.dimension().location(),
+            new WorldGeographyConfig(Optional.of(LegacyPresetSnapshot.capture(legacy.preset)), Optional.empty()),
+            new BaselineClimateConfig(Optional.empty()), new BiomeResolverConfig(Optional.empty()),
+            LegacyGenerationData.capture(level, generator), Optional.empty()));
+    }
+
+    private static GenerationManifest plannedManifest(ServerLevel level, ChunkGenerator generator, raccoonman.reterraforged.world.worldgen.GeneratorContext legacy) {
+        var macro = MacroGeographySettings.defaults();
+        var settings = new PlannedGeographySettings(macro.continentScaleBlocks(), macro.minimumMajorOceanWidthBlocks(),
+            legacy.preset.terrain().general.terrainRegionSize, 1000, 0, Optional.of(macro));
+        var climate = new BaselineClimateConfig.Planned(100000, 0, .0065, .5, 1, 4096, .85, 12000, 24000, 256, 1, .10);
+        var resolver = new BiomeResolverConfig.Planned(64, 1);
+        var data = new java.util.TreeMap<>(LegacyGenerationData.capture(level, generator));
+        var retained = LegacyPresetSnapshot.capture(legacy.preset);
+        data.put("retained_terrain_effective_preset", GenerationFingerprint.of(retained.effectivePreset()));
+        data.put("retained_tile_geometry", GenerationFingerprint.of(CanonicalJson.of(new com.google.gson.JsonPrimitive("tile=3;border=" + retained.borderChunks()))));
+        return GenerationManifest.create(new ManifestContent(GenerationVersions.planned(), level.getSeed(), level.dimension().location(),
+            new WorldGeographyConfig(Optional.empty(), Optional.of(settings)), new BaselineClimateConfig(Optional.of(climate)),
+            new BiomeResolverConfig(Optional.of(resolver)), data, Optional.of(new com.gabou.projectlandscape.biome.VanillaBiomeCatalog().fingerprint())));
     }
 
     private static boolean usesLegacyCells(ChunkGenerator generator) {

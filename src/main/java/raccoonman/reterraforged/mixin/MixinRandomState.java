@@ -18,6 +18,7 @@ import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderLookup.RegistryLookup;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.levelgen.DensityFunction;
 import net.minecraft.world.level.levelgen.DensityFunction.NoiseHolder;
@@ -58,6 +59,7 @@ class MixinRandomState {
 	
 	private long seed;
 	private String rtfDimension;
+	private boolean legacyData;
 	
 	@Redirect(
 		at = @At(
@@ -93,8 +95,18 @@ class MixinRandomState {
 	}
 
 	public void reterraforged$RTFRandomState$initialize(RegistryAccess registries) {
-		RegistryLookup<Preset> presets = registries.lookup(RTFRegistries.PRESET).orElse(null);
-		if (presets == null || presets.get(Preset.KEY).isEmpty()) {
+		RegistryLookup<Preset> presets = registries.lookup(RTFRegistries.LEGACY_PRESET).orElse(null);
+		ResourceKey<net.minecraft.core.Registry<Noise>> noiseKey = RTFRegistries.LEGACY_NOISE;
+		ResourceKey<Preset> presetKey = RTFRegistries.createLegacyKey(RTFRegistries.LEGACY_PRESET, "preset");
+		this.legacyData = presets != null && presets.get(presetKey).isPresent();
+		// An old exported datapack deliberately wins over the bundled default. Its router
+		// was decoded from legacy data and must keep its legacy manifest/backend identity.
+		if (!this.legacyData) {
+			presets = registries.lookup(RTFRegistries.PRESET).orElse(null);
+			noiseKey = RTFRegistries.NOISE;
+			presetKey = Preset.KEY;
+		}
+		if (presets == null || presets.get(presetKey).isEmpty()) {
 			if (this.hasContext) {
 				throw new IllegalStateException("Cannot initialize ReTerraForged " + this.reterraforged$RTFRandomState$contextDescription()
 						+ ": density router requires generation context but the RTF preset is missing");
@@ -102,7 +114,8 @@ class MixinRandomState {
 			// Do not claim a vanilla/foreign router merely by wrapping unused RTF tags.
 			return;
 		}
-		RegistryLookup<Noise> noises = registries.lookupOrThrow(RTFRegistries.NOISE);
+		RegistryLookup<Noise> noises = registries.lookupOrThrow(noiseKey);
+		final ResourceKey<Preset> activePresetKey = presetKey;
 		RegistryLookup<DensityFunction> functions = registries.lookupOrThrow(Registries.DENSITY_FUNCTION);
 
 		functions.get(RTFDensityFunctionTags.ADDITIONAL_NOISE_ROUTER_FUNCTIONS).ifPresent((set) -> {
@@ -115,7 +128,7 @@ class MixinRandomState {
 			});
 		}
 		
-		presets.get(Preset.KEY).ifPresentOrElse((presetHolder) -> {
+		presets.get(activePresetKey).ifPresentOrElse((presetHolder) -> {
 			this.preset = presetHolder.value();
 
 			if(this.hasContext) {
@@ -138,6 +151,8 @@ class MixinRandomState {
 	}
 
 	public boolean reterraforged$RTFRandomState$requiresGeneratorContext() { return this.hasContext; }
+
+	public boolean reterraforged$RTFRandomState$usesLegacyData() { return this.legacyData; }
 
 	public String reterraforged$RTFRandomState$contextDescription() {
 		return "dimension=" + (this.rtfDimension == null ? "<unbound; ChunkMap initialization not completed>" : this.rtfDimension) + ", seed=" + this.seed;

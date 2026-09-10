@@ -7,6 +7,7 @@ import com.gabou.projectlandscape.generation.seed.*;
 import com.gabou.projectlandscape.generation.context.*;
 import com.gabou.projectlandscape.persistence.*;
 import com.gabou.projectlandscape.compat.legacy.LegacyPresetSnapshot;
+import com.gabou.projectlandscape.biome.ClimateBiomeSource;
 import com.mojang.serialization.*;
 import java.util.*;
 import net.minecraft.server.level.ServerLevel;
@@ -52,8 +53,23 @@ public final class FoundationTests {
         binding(level,out);
     }
     private static void binding(ServerLevel level,Evidence out) throws Exception {
-        var legacy=((RTFRandomState)(Object)level.getChunkSource().randomState()).generatorContext();
+        var state=(RTFRandomState)(Object)level.getChunkSource().randomState();
+        var legacy=state.generatorContext();
         var context=legacy.generationContext();
+        if(!state.requiresGeneratorContext()||state.usesLegacyData())throw new AssertionError("Fresh normal world did not use the Project Landscape router/data");
+        if(!(level.getChunkSource().getGenerator() instanceof net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator noise))throw new AssertionError("Fresh normal world is not noise based");
+        var markers=new java.util.concurrent.atomic.AtomicBoolean();
+        noise.generatorSettings().value().noiseRouter().mapAll(function->{if(function instanceof raccoonman.reterraforged.world.worldgen.densityfunction.CellSampler.Marker)markers.set(true);return function;});
+        if(!markers.get())throw new AssertionError("Fresh normal world router has no RTF CellSampler marker");
+        if(!(level.getChunkSource().getGenerator().getBiomeSource() instanceof ClimateBiomeSource))throw new AssertionError("Fresh normal world has no climate biome source");
+        if(!context.manifest().content().versions().equals(GenerationVersions.planned()))throw new AssertionError("Fresh normal world did not receive the V1 generation stack");
+        var macro=MacroGeographySettings.defaults();
+        var expectedGeography=new PlannedGeographySettings(macro.continentScaleBlocks(),macro.minimumMajorOceanWidthBlocks(),legacy.preset.terrain().general.terrainRegionSize,1000,0,Optional.of(macro));
+        var expectedClimate=new BaselineClimateConfig.Planned(100000,0,.0065,.5,1,4096,.85,12000,24000,256,1,.10);
+        var expectedResolver=new BiomeResolverConfig.Planned(64,1);
+        if(!context.manifest().content().geography().planned().orElseThrow().equals(expectedGeography)
+            ||!context.manifest().content().baselineClimate().planned().orElseThrow().equals(expectedClimate)
+            ||!context.manifest().content().biomeResolver().planned().orElseThrow().equals(expectedResolver))throw new AssertionError("Fresh normal world V1 defaults differ from the development selection defaults");
         if(context==null||context.runtimeToken()!=legacy.lookup.samplingIdentity())throw new AssertionError("World context not bound to cache token");
         var emptyObjectHash=GenerationFingerprint.of(new CanonicalJson("{}"));
         for(String key:List.of("nbt_resources","worldgen_json_resources"))if(emptyObjectHash.equals(context.manifest().content().data().get(key)))throw new AssertionError("Default world resource capture is empty: "+key);
@@ -61,13 +77,13 @@ public final class FoundationTests {
             var other=((RTFRandomState)(Object)level.getServer().getLevel(dim).getChunkSource().randomState()).generatorContext();
             if(other!=null&&other.generationContext()!=null)throw new AssertionError("Companion forced into foreign dimension");
         }
-        var provider=com.gabou.projectlandscape.compat.legacy.LegacyRtfGeographyAdapter.forLevel(level);
+        var provider=legacy.canonicalGeography();
         int[][] points={{0,0},{-1,-1},{127,128},{-129,-128},{128,128},{80000,-80000}};
         for(int[] point:points) {
             int x=point[0],z=point[1];var a=provider.sample(x,z);var b=provider.sample(x,z);
             var expected=new raccoonman.reterraforged.world.worldgen.cell.Cell();legacy.lookup.applyCell(expected,x,z,true,true);
             if(!a.equals(b)||a.elevationBlockY()!=(double)(expected.height*legacy.levels.worldHeight))throw new AssertionError("Canonical provider used noncanonical height");
-            if(!provider.hydrology().sample(x,z).equals(a.hydrology()))throw new AssertionError("Hydrology semantics");
+            if(!provider.sample(x,z).hydrology().equals(a.hydrology()))throw new AssertionError("Hydrology semantics");
             out.row("canonical_provider","x",x,"z",z,"elevationBlockY",a.elevationBlockY(),"seaRelativeElevationBlocks",a.seaRelativeElevationBlocks(),"water",a.water().name(),"landform",a.landform().name(),"mountainInfluenceKnown",a.metrics().mountainInfluence().isPresent(),"cacheWarmEqual",true,"filteredHeightEqual",true);
         }
         int x=80000,z=-80000;var before=provider.sample(x,z);
@@ -76,7 +92,9 @@ public final class FoundationTests {
         if(!before.equals(provider.sample(x,z)))throw new AssertionError("Provider changed on eviction/reload");
         var reload=level.getServer().reloadResources(level.getServer().getPackRepository().getSelectedIds());
         if(!reload.isCompletedExceptionally())throw new AssertionError("Live reload bypasses frozen generation manifest");
-        out.row("world_binding_checks","canonicalEvictionEqual",true,"netherEndUnbound",true,"reloadRejectedBeforeApplication",true,"runtimeTokenBoundToLegacyLookup",true,"manifest",GenerationManifestStore.encode(context.manifest()));
+        out.row("world_binding_checks","canonicalEvictionEqual",true,"netherEndUnbound",true,"reloadRejectedBeforeApplication",true,"runtimeTokenBoundToRouterLookup",true,
+            "normalOverworldCellRouter",true,"generatorContextPresent",true,"projectLandscapeData",true,"climateBiomeSource",true,
+            "geography",context.manifest().content().versions().geography().name(),"baselineClimate",context.manifest().content().versions().baselineClimate().name(),"biomeResolver",context.manifest().content().versions().biomeResolver().name(),"manifest",GenerationManifestStore.encode(context.manifest()));
     }
     private static void api(Evidence out) {
         var metrics=com.gabou.projectlandscape.api.geography.GeographyMetrics.unknown();
@@ -184,7 +202,7 @@ public final class FoundationTests {
         for(var domain:SeedDomain.values()) {
             long a=new NamedSeedService(42,dimensions.get(0),GenerationVersions.planned()).seed(domain);
             long b=new NamedSeedService(42,dimensions.get(0),onlyClimateChanged).seed(domain);
-            boolean climate=domain==SeedDomain.BASELINE_TEMPERATURE||domain==SeedDomain.BASELINE_PRECIPITATION;
+            boolean climate=domain.name().startsWith("BASELINE_");
             if((a!=b)!=climate)throw new AssertionError("Stage algorithm version isolation");
         }
     }

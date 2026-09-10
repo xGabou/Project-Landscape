@@ -1,0 +1,13 @@
+{
+  "type": "reterraforged:replace",
+  "biomes": [
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna"
+  ],
+  "replacements": {
+    "minecraft:trees_savanna": "projectlandscape:savanna_trees",
+    "minecraft:trees_windswept_savanna": "projectlandscape:savanna_trees"
+  },
+  "step": "vegetal_decoration"
+}

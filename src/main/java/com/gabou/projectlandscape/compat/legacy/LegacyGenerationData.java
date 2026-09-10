@@ -80,7 +80,7 @@ public final class LegacyGenerationData {
         JsonObject dependencies = new JsonObject();
         // Conservative: unknown external mods may affect worldgen via code not represented in datapacks.
         // The mod's own release number is deliberately NOT a generation algorithm version.
-        net.minecraftforge.fml.ModList.get().getMods().stream().filter(mod -> !Set.of("reterraforged", "task1a_reproduction", "baseline_smoke").contains(mod.getModId()))
+        net.minecraftforge.fml.ModList.get().getMods().stream().filter(mod -> !Set.of(raccoonman.reterraforged.RTFCommon.MOD_ID, "reterraforged", "task1a_reproduction", "baseline_smoke").contains(mod.getModId()))
             .forEach(mod -> dependencies.addProperty(mod.getModId(), mod.getVersion().toString()));
         result.put("external_mod_versions", GenerationFingerprint.of(CanonicalJson.of(dependencies)));
         if (raccoonman.reterraforged.world.worldgen.terrablender.TBCompat.isEnabled())

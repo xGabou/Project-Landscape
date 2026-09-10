@@ -1,0 +1,12 @@
+{
+  "type": "reterraforged:replace",
+  "biomes": [
+    "minecraft:grove",
+    "minecraft:windswept_forest"
+  ],
+  "replacements": {
+    "minecraft:trees_grove": "projectlandscape:fir_trees",
+    "minecraft:trees_windswept_forest": "projectlandscape:fir_trees"
+  },
+  "step": "vegetal_decoration"
+}

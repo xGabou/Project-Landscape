@@ -26,13 +26,15 @@ import raccoonman.reterraforged.world.worldgen.structure.rule.StructureRules;
 import raccoonman.reterraforged.world.worldgen.surface.rule.RTFSurfaceRules;
 
 public class RTFCommon {
-	public static final String MOD_ID = "reterraforged";
+	public static final String MOD_ID = "projectlandscape";
+	/** Serialized namespace retained solely so existing ReTerraForged worlds can still load. */
+	public static final String LEGACY_DATA_NAMESPACE = "reterraforged";
 	public static final String LEGACY_MOD_ID = "terraforged";
-	public static final Logger LOGGER = LogManager.getLogger("ReTerraForged");
+	public static final Logger LOGGER = LogManager.getLogger("projectlandscape");
 
 	public static void bootstrap() {
 		RTFBuiltInRegistries.bootstrap();
-		RegistryUtil.register(net.minecraft.core.registries.BuiltInRegistries.BIOME_SOURCE,
+		RegistryUtil.registerProjectLandscape(net.minecraft.core.registries.BuiltInRegistries.BIOME_SOURCE,
 			"atmospheregen:climate_biomes_v1", com.gabou.projectlandscape.biome.ClimateBiomeSource.CODEC);
 		TemplatePlacements.bootstrap();
 		TemplateDecorators.bootstrap();
@@ -48,14 +50,24 @@ public class RTFCommon {
 		BiomeModifiers.bootstrap();
 		RTFSurfaceRules.bootstrap();
 		StructureRules.bootstrap();
-		
+
 		RegistryUtil.createDataRegistry(RTFRegistries.NOISE, Noise.DIRECT_CODEC);
 		RegistryUtil.createDataRegistry(RTFRegistries.PRESET, Preset.DIRECT_CODEC);
 		RegistryUtil.createDataRegistry(RTFRegistries.STRUCTURE_RULE, StructureRule.DIRECT_CODEC);
+		RegistryUtil.createLegacyDataRegistry("worldgen/noise", Noise.DIRECT_CODEC);
+		RegistryUtil.createLegacyDataRegistry("worldgen/preset", Preset.DIRECT_CODEC);
+		RegistryUtil.createLegacyDataRegistry("worldgen/structure_rule", StructureRule.DIRECT_CODEC);
 	}
-	
+
 	public static ResourceLocation location(String name) {
 		if (name.contains(":")) return new ResourceLocation(name);
 		return new ResourceLocation(RTFCommon.MOD_ID, name);
+	}
+
+	public static ResourceLocation legacyDataLocation(String name) {
+		// Registry entries occasionally arrive as a fully-qualified id (for example
+		// forge:biome_modifier). The retained namespace owns only the path portion.
+		ResourceLocation location = new ResourceLocation(name);
+		return new ResourceLocation(LEGACY_DATA_NAMESPACE, location.getPath());
 	}
 }

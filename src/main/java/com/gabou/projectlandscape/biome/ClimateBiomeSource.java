@@ -78,7 +78,11 @@ public final class ClimateBiomeSource extends BiomeSource {
                         .sorted(Comparator.comparing(h->h.unwrapKey().orElseThrow().location().toString()))).distinct();
     }
     @Override public Holder<Biome> getNoiseBiome(int quartX,int quartY,int quartZ,Climate.Sampler sampler){
-        if(geography==null)throw new IllegalStateException("V1 biome source must be bound to its manifest before sampling");
+        // Saved dimensions decode the serializable placeholder before ChunkMap installs
+        // its live generation context. Chunk preparation may briefly query it during
+        // that hand-off, so preserve the retained source instead of crashing/replacing
+        // existing chunks with a synthetic V1 context.
+        if(geography==null)return retained.getNoiseBiome(quartX,quartY,quartZ,sampler);
         int x=QuartPos.toBlock(quartX),y=QuartPos.toBlock(quartY),z=QuartPos.toBlock(quartZ);
         long columnKey=((long)quartX<<32)^(quartZ&0xffffffffL);
         var g=surfaceGeography.get(columnKey,ignored->BiomeGeography.sample(geography,x,z));

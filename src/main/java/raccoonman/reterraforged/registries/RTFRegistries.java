@@ -30,12 +30,22 @@ public class RTFRegistries {
 
 	@Deprecated
 	public static final ResourceKey<Registry<Preset>> PRESET = createKey("worldgen/preset");
+	public static final ResourceKey<Registry<Noise>> LEGACY_NOISE = legacyRegistryKey("worldgen/noise");
+	public static final ResourceKey<Registry<Preset>> LEGACY_PRESET = legacyRegistryKey("worldgen/preset");
 	
 	public static <T> ResourceKey<T> createKey(ResourceKey<? extends Registry<T>> registryKey, String valueKey) {
 		return ResourceKey.create(registryKey, RTFCommon.location(valueKey));
 	}
 
+	public static <T> ResourceKey<T> createLegacyKey(ResourceKey<? extends Registry<T>> registryKey, String valueKey) {
+		return ResourceKey.create(registryKey, RTFCommon.legacyDataLocation(valueKey));
+	}
+
 	private static <T> ResourceKey<Registry<T>> createKey(String key) {
 		return ResourceKey.createRegistryKey(RTFCommon.location(key));
+	}
+
+	private static <T> ResourceKey<Registry<T>> legacyRegistryKey(String key) {
+		return ResourceKey.createRegistryKey(RTFCommon.legacyDataLocation(key));
 	}
 }

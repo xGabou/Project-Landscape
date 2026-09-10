@@ -27,6 +27,14 @@ public final class RuntimeIntegrationChecks {
         }
         if(service==null)throw new AssertionError(RuntimeClimateLifecycle.status(level));
         var p=level.players().get(0);int x=p.getBlockX(),z=p.getBlockZ();
+        // Capture the region's baseline through the installed worldgen biome source,
+        // never through the runtime weather API. A spawn at (8,8) need not naturally
+        // hit the provider's fixed (0,0) representative point before this check.
+        if(service.baseline().sample(x,z).isEmpty()) {
+            var source=level.getChunkSource().getGenerator().getBiomeSource();
+            if(source instanceof com.gabou.projectlandscape.biome.ClimateBiomeSource climate)
+                climate.sampleClimate(0,0);
+        }
         if(reopened&&service.history().region(x,z).orElseThrow().observationCount()<savedCount)throw new AssertionError("History not restored");
         retained=service;retainedLevel=level;retainedHistory=service.history();
         try { retainedSession=Evidence.field(Evidence.field(service,"provider"),"session"); }

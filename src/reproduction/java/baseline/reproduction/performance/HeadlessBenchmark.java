@@ -1,7 +1,6 @@
 /* Original development harness. All Rights Reserved. */
 package baseline.reproduction.performance;
 
-@net.minecraftforge.fml.common.Mod("task6b_performance")
 public final class HeadlessBenchmark {
     public HeadlessBenchmark() {
         net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext.get().getModEventBus()

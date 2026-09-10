@@ -39,6 +39,7 @@ import raccoonman.reterraforged.world.worldgen.cell.terrain.TerrainType;
 @Mod("baseline_smoke")
 public final class BaselineSmoke {
     private final boolean vanilla = Boolean.getBoolean("task1b.smokeVanilla");
+    private final boolean legacyExport = Boolean.getBoolean("task1b.exportLegacyPreset");
     private final boolean geographyV1 = Boolean.getBoolean("task4.smokeV1");
     private String initialV1Manifest;
     private java.util.List<String> initialV1Topology;
@@ -69,7 +70,7 @@ public final class BaselineSmoke {
             }
             if (++ticks > 20 * 600) throw new IllegalStateException("Smoke test timed out at stage " + stage);
             if (stage == 0 && mc.screen instanceof TitleScreen && mc.getOverlay() == null) {
-                RTFCommon.LOGGER.info("TASK0 TITLE_SCREEN modDetected={} world={}", ModList.get().isLoaded("reterraforged"), world);
+                RTFCommon.LOGGER.info("TASK0 TITLE_SCREEN modDetected={} world={}", ModList.get().isLoaded(RTFCommon.MOD_ID), world);
                 stage = 1;
                 mc.options.pauseOnLostFocus = false;
                 mc.options.renderDistance().set(4);
@@ -92,7 +93,7 @@ public final class BaselineSmoke {
                     Files.writeString(selection,com.gabou.projectlandscape.config.MacroGeographySettings.CODEC.encodeStart(
                         com.mojang.serialization.JsonOps.INSTANCE,com.gabou.projectlandscape.config.MacroGeographySettings.defaults()).getOrThrow(false,s->{}).toString(),java.nio.file.StandardOpenOption.CREATE_NEW);
                 }
-                if (!vanilla) {
+                if (!vanilla && legacyExport) {
                     Files.createDirectories(pack);
                     Datapacks.makePreset(Presets.makeLegacyDefault(), create.getUiState().getSettings().worldgenLoadContext(),
                         root.resolve("export-work"), pack, "Task 0 Legacy Default").run();
@@ -100,7 +101,7 @@ public final class BaselineSmoke {
                 }
                 var config = create.getUiState().getSettings().dataConfiguration();
                 var enabled = new ArrayList<>(config.dataPacks().getEnabled());
-                if (!vanilla) enabled.add("file/task0-preset");
+                if (!vanilla && legacyExport) enabled.add("file/task0-preset");
                 var data = new WorldDataConfiguration(new DataPackConfig(enabled, List.of()), config.enabledFeatures());
                 var settings = new LevelSettings(world, GameType.CREATIVE, false, Difficulty.PEACEFUL, true, new GameRules(), data);
                 mc.createWorldOpenFlows().createFreshLevel(world, settings, new WorldOptions(8675309L, true, false),
@@ -158,7 +159,7 @@ public final class BaselineSmoke {
                         RTFCommon.LOGGER.info("TASK0 CHUNK reopened={} x={} z={} status={} height={} surface={} biome={}",
                             reopened, x, z, chunk.getStatus(), y, block, level.getBiome(new BlockPos(x, y, z)).unwrapKey());
                     }
-                    if (!reopened && !vanilla && !geographyV1) {
+                    if (!reopened && !vanilla && legacyExport && !geographyV1) {
                         // Conversion comparator coverage, not a cached/uncached determinism test.
                         var found = new java.util.HashSet<String>();
                         var heightmap = state.generatorContext().generator.getHeightmap();
@@ -196,7 +197,7 @@ public final class BaselineSmoke {
             } else if (stage == 7 && mc.getSingleplayerServer() == null) {
                 stage = 99;
                 if (vanilla) RTFCommon.LOGGER.info("TASK0 PASS: title, vanilla world without RTF preset, full chunks, save, reopen, additional full chunks; world={}", world);
-                else RTFCommon.LOGGER.info("TASK0 PASS: title, preset export/load, full chunks, save, reopen, additional full chunks; world={}", world);
+                else RTFCommon.LOGGER.info("TASK0 PASS: title, normal Project Landscape world, full chunks, save, reopen, additional full chunks; world={}", world);
                 Files.writeString(mc.gameDirectory.toPath().resolve("task0-pass.txt"), world + "\n");
                 Files.writeString(mc.gameDirectory.toPath().resolve("task2-smoke-evidence.json"),
                     new com.google.gson.GsonBuilder().setPrettyPrinting().create().toJson(task2Evidence));

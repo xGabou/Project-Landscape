@@ -1,0 +1,12 @@
+{
+  "type": "reterraforged:replace",
+  "biomes": [
+    "minecraft:jungle",
+    "minecraft:bamboo_jungle"
+  ],
+  "replacements": {
+    "minecraft:bamboo_vegetation": "projectlandscape:jungle_trees",
+    "minecraft:trees_jungle": "projectlandscape:jungle_trees"
+  },
+  "step": "vegetal_decoration"
+}

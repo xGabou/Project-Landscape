@@ -12,10 +12,11 @@ import net.minecraftforge.event.server.ServerStoppingEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import raccoonman.reterraforged.RTFCommon;
 import raccoonman.reterraforged.world.worldgen.RTFRandomState;
 
 /** Forge registrations only; runtime state is keyed by live level identity and removed on unload. */
-@Mod.EventBusSubscriber(modid="reterraforged")
+@Mod.EventBusSubscriber(modid=RTFCommon.MOD_ID)
 public final class RuntimeClimateLifecycle {
     private static final Map<ServerLevel,RuntimeClimateService> SERVICES=new IdentityHashMap<>();
     private static final Map<ServerLevel,String> STATUS=new IdentityHashMap<>();

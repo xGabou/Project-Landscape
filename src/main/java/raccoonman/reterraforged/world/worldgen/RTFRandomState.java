@@ -14,6 +14,8 @@ public interface RTFRandomState {
 	void initialize(RegistryAccess registries, String dimension);
 
 	boolean requiresGeneratorContext();
+	/** True only when the active router was decoded from retained ReTerraForged data. */
+	boolean usesLegacyData();
 	String contextDescription();
 
 	default GeneratorContext requireGeneratorContext(String operation) {
