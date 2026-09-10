@@ -1,0 +1,112 @@
+[
+  {
+    "stage": "Task5",
+    "file": "climate_distribution.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "climate_transects.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "completion.json",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "configuration.json",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "determinism_digests.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "multi_range.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "rainfall_fixtures.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "seed_divergence.json",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "synthetic_orographic.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "synthetic_temperature.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task5",
+    "file": "wind_reversal.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "descriptor_validation.json",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "determinism.json",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "manifest.json",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "orographic_biome_transect.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "semantic_assertions.json",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "synthetic_elevation_transect.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "synthetic_moisture_transect.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "synthetic_temperature_transect.csv",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "unreachable_descriptors.json",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "validation_summary.json",
+    "exact": true
+  },
+  {
+    "stage": "Task6",
+    "file": "vanilla_biome_catalog.json",
+    "exact": true
+  }
+]

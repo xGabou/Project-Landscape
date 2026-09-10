@@ -1,0 +1,99 @@
+{
+  "failureRetry": true,
+  "worldIsolation": true,
+  "workerChecks": [
+    {
+      "stats": {
+        "capacityWaits": 0,
+        "entries": 8,
+        "hits": 0,
+        "waits": 0,
+        "evictions": 9993,
+        "peakInFlight": 1,
+        "failures": 0,
+        "capacity": 8,
+        "inFlight": 0,
+        "misses": 10001
+      },
+      "workers": 1,
+      "exact": true,
+      "churnQueries": 10000,
+      "singleFlightLoads": 1
+    },
+    {
+      "stats": {
+        "capacityWaits": 0,
+        "entries": 8,
+        "hits": 415,
+        "waits": 258,
+        "evictions": 19321,
+        "peakInFlight": 2,
+        "failures": 0,
+        "capacity": 8,
+        "inFlight": 0,
+        "misses": 19329
+      },
+      "workers": 2,
+      "exact": true,
+      "churnQueries": 20000,
+      "singleFlightLoads": 1
+    },
+    {
+      "stats": {
+        "capacityWaits": 0,
+        "entries": 8,
+        "hits": 10848,
+        "waits": 4064,
+        "evictions": 65088,
+        "peakInFlight": 6,
+        "failures": 0,
+        "capacity": 8,
+        "inFlight": 0,
+        "misses": 65096
+      },
+      "workers": 8,
+      "exact": true,
+      "churnQueries": 80000,
+      "singleFlightLoads": 1
+    },
+    {
+      "stats": {
+        "capacityWaits": 0,
+        "entries": 8,
+        "hits": 44072,
+        "waits": 18731,
+        "evictions": 177213,
+        "peakInFlight": 7,
+        "failures": 0,
+        "capacity": 8,
+        "inFlight": 0,
+        "misses": 177221
+      },
+      "workers": 24,
+      "exact": true,
+      "churnQueries": 240000,
+      "singleFlightLoads": 1
+    },
+    {
+      "stats": {
+        "capacityWaits": 0,
+        "entries": 8,
+        "hits": 103481,
+        "waits": 40787,
+        "evictions": 335772,
+        "peakInFlight": 7,
+        "failures": 0,
+        "capacity": 8,
+        "inFlight": 0,
+        "misses": 335780
+      },
+      "workers": 48,
+      "exact": true,
+      "churnQueries": 480000,
+      "singleFlightLoads": 1
+    }
+  ],
+  "inFlightDisposal": true,
+  "scope": "exact cache concurrency mechanics; real terrain worker determinism is a separate gate",
+  "recreatedWorld": true
+}

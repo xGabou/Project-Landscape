@@ -1,0 +1,32 @@
+[
+  {
+    "sha256": "d153b575c045c1958fea3a7c1e25441d94cff4b2bb3f74a5bc13610b07df45e7",
+    "reverse": false,
+    "workers": 1
+  },
+  {
+    "sha256": "d153b575c045c1958fea3a7c1e25441d94cff4b2bb3f74a5bc13610b07df45e7",
+    "reverse": true,
+    "workers": 1
+  },
+  {
+    "sha256": "d153b575c045c1958fea3a7c1e25441d94cff4b2bb3f74a5bc13610b07df45e7",
+    "reverse": false,
+    "workers": 2
+  },
+  {
+    "sha256": "d153b575c045c1958fea3a7c1e25441d94cff4b2bb3f74a5bc13610b07df45e7",
+    "reverse": true,
+    "workers": 2
+  },
+  {
+    "sha256": "d153b575c045c1958fea3a7c1e25441d94cff4b2bb3f74a5bc13610b07df45e7",
+    "reverse": false,
+    "workers": 8
+  },
+  {
+    "sha256": "d153b575c045c1958fea3a7c1e25441d94cff4b2bb3f74a5bc13610b07df45e7",
+    "reverse": true,
+    "workers": 8
+  }
+]

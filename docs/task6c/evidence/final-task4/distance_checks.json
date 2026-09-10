@@ -1,0 +1,182 @@
+[
+  {
+    "x": -4097,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 2235.423828125,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 2235.423828125,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": -4096,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 2235.423828125,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 0.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 2235.423828125,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 0.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": -4095,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 2235.423828125,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 2235.423828125,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": -1,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 1683.5771484375,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": 0,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 1683.5771484375,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 0.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 0.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": 1,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 1683.5771484375,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": 4095,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 2048.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 2048.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": 4096,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 2048.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 0.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 2048.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 0.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": 4097,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 2048.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 2048.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 1.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  },
+  {
+    "x": 8192,
+    "z": 8192,
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 5633.45458984375,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 0.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 5633.45458984375,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 0.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    }
+  }
+]

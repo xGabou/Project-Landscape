@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "source": "build/task6c-final-legacy",
+      "table": "canonical_geography",
+      "exact": 595
+    },
+    {
+      "source": "build/task6c-final-legacy",
+      "table": "legacy_direct_samples",
+      "exact": 595
+    },
+    {
+      "source": "build/task6c-final-legacy",
+      "table": "biome_hints",
+      "exact": 595
+    },
+    {
+      "source": "build/task6c-final-legacy",
+      "table": "seed_collision",
+      "exact": 85
+    },
+    {
+      "source": "build/task6c-final-legacy",
+      "table": "cached_direct_comparison",
+      "exact": 595
+    },
+    {
+      "source": "build/task6c-final-legacy-tb",
+      "table": "canonical_geography",
+      "exact": 595
+    },
+    {
+      "source": "build/task6c-final-legacy-tb",
+      "table": "legacy_direct_samples",
+      "exact": 595
+    },
+    {
+      "source": "build/task6c-final-legacy-tb",
+      "table": "biome_hints",
+      "exact": 595
+    },
+    {
+      "source": "build/task6c-final-legacy-tb",
+      "table": "seed_collision",
+      "exact": 85
+    },
+    {
+      "source": "build/task6c-final-legacy-tb",
+      "table": "cached_direct_comparison",
+      "exact": 595
+    },
+    {
+      "source": "build/task6c-final-legacy-tb",
+      "table": "minecraft_biomes",
+      "exact": 85
+    }
+  ],
+  "tiles": [
+    {
+      "suite": "golden-24",
+      "source": "build/task6c-final-legacy",
+      "exact": 105,
+      "reused": false
+    },
+    {
+      "suite": "golden-2",
+      "source": "docs/task6b/evidence/legacy-offline/golden-2",
+      "exact": 105,
+      "reused": true
+    },
+    {
+      "suite": "golden-48",
+      "source": "docs/task6b/evidence/legacy-offline/golden-48",
+      "exact": 105,
+      "reused": true
+    },
+    {
+      "suite": "golden-repeat",
+      "source": "docs/task6b/evidence/legacy-offline/golden-repeat",
+      "exact": 105,
+      "reused": true
+    },
+    {
+      "suite": "golden-tb",
+      "source": "build/task6c-final-legacy-tb",
+      "exact": 105,
+      "reused": false
+    }
+  ],
+  "geography": "595/595",
+  "hints": "595/595",
+  "biomeKeys": "85/85",
+  "standaloneTiles": "420/420",
+  "terraBlenderTiles": "105/105",
+  "legacySeedCollisionPreserved": true,
+  "scope": "Current standalone offline and TerraBlender runtime comparisons; unchanged legacy scheduling path reuses frozen 2/48/repeat suites. Holder observations are current TerraBlender runtime; no offline holder claim."
+}

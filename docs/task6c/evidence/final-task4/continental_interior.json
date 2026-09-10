@@ -1,0 +1,130 @@
+[
+  {
+    "beyond500Fraction": 0.8499789151182905,
+    "seed": "8675309",
+    "beyond1000Fraction": 0.6858868989732954,
+    "maximumSampledLatticeDistanceBlocks": 5955.783743555503,
+    "landSamples": 116197,
+    "beyond2000Fraction": 0.4116199213404821
+  },
+  {
+    "beyond500Fraction": 0.8524590163934426,
+    "seed": "4303642605",
+    "beyond1000Fraction": 0.6921713643025118,
+    "maximumSampledLatticeDistanceBlocks": 5966.7773546530125,
+    "landSamples": 117364,
+    "beyond2000Fraction": 0.4261613441941311
+  },
+  {
+    "beyond500Fraction": 0.8441145006556698,
+    "seed": "42",
+    "beyond1000Fraction": 0.6705086617433915,
+    "maximumSampledLatticeDistanceBlocks": 5929.5922288130405,
+    "landSamples": 115912,
+    "beyond2000Fraction": 0.3724290841327904
+  },
+  {
+    "beyond500Fraction": 0.8527033372171887,
+    "seed": "-987654321",
+    "beyond1000Fraction": 0.6939464027963759,
+    "maximumSampledLatticeDistanceBlocks": 5955.783743555503,
+    "landSamples": 115006,
+    "beyond2000Fraction": 0.4343599464375772
+  },
+  {
+    "beyond500Fraction": 0.8463076477861672,
+    "seed": "0",
+    "beyond1000Fraction": 0.6778476405952663,
+    "maximumSampledLatticeDistanceBlocks": 5966.7773546530125,
+    "landSamples": 114033,
+    "beyond2000Fraction": 0.39449983776626063
+  },
+  {
+    "beyond500Fraction": 0.8496351618164649,
+    "seed": "9223372036854775807",
+    "beyond1000Fraction": 0.685724096488969,
+    "maximumSampledLatticeDistanceBlocks": 5999.637322372078,
+    "landSamples": 116490,
+    "beyond2000Fraction": 0.41230148510601766
+  },
+  {
+    "beyond500Fraction": 0.849415750836193,
+    "seed": "-9223372036854775807",
+    "beyond1000Fraction": 0.6846878936623083,
+    "maximumSampledLatticeDistanceBlocks": 5917.145257639025,
+    "landSamples": 115105,
+    "beyond2000Fraction": 0.4100169410538204
+  },
+  {
+    "beyond500Fraction": 0.8464845057519863,
+    "seed": "1",
+    "beyond1000Fraction": 0.6775628490389867,
+    "maximumSampledLatticeDistanceBlocks": 5937.875714428519,
+    "landSamples": 113526,
+    "beyond2000Fraction": 0.39311699522576327
+  },
+  {
+    "beyond500Fraction": 0.8494187454589489,
+    "seed": "-1",
+    "beyond1000Fraction": 0.6846780611009238,
+    "maximumSampledLatticeDistanceBlocks": 5900.508452667448,
+    "landSamples": 115612,
+    "beyond2000Fraction": 0.4103034287098225
+  },
+  {
+    "beyond500Fraction": 0.8463125049580876,
+    "seed": "12345",
+    "beyond1000Fraction": 0.6773320640628994,
+    "maximumSampledLatticeDistanceBlocks": 5939.255172157533,
+    "landSamples": 113451,
+    "beyond2000Fraction": 0.3932182175564781
+  },
+  {
+    "beyond500Fraction": 0.8465406821387582,
+    "seed": "67890",
+    "beyond1000Fraction": 0.6779421943035369,
+    "maximumSampledLatticeDistanceBlocks": 5861.505608629919,
+    "landSamples": 114141,
+    "beyond2000Fraction": 0.3948449724463602
+  },
+  {
+    "beyond500Fraction": 0.848966627507288,
+    "seed": "314159",
+    "beyond1000Fraction": 0.6840273245442283,
+    "maximumSampledLatticeDistanceBlocks": 5950.279321174763,
+    "landSamples": 114915,
+    "beyond2000Fraction": 0.4094243571335335
+  },
+  {
+    "beyond500Fraction": 0.8497069736796476,
+    "seed": "271828",
+    "beyond1000Fraction": 0.6848753337725838,
+    "maximumSampledLatticeDistanceBlocks": 5929.5922288130405,
+    "landSamples": 115348,
+    "beyond2000Fraction": 0.40936123729930296
+  },
+  {
+    "beyond500Fraction": 0.8502043423850738,
+    "seed": "20260908",
+    "beyond1000Fraction": 0.6878768519896035,
+    "maximumSampledLatticeDistanceBlocks": 5922.680474244748,
+    "landSamples": 114269,
+    "beyond2000Fraction": 0.4202102057425898
+  },
+  {
+    "beyond500Fraction": 0.8512888244332798,
+    "seed": "-424242",
+    "beyond1000Fraction": 0.6899829077536644,
+    "maximumSampledLatticeDistanceBlocks": 5955.783743555503,
+    "landSamples": 115842,
+    "beyond2000Fraction": 0.42319711330950777
+  },
+  {
+    "beyond500Fraction": 0.8516553553588039,
+    "seed": "987654321012345",
+    "beyond1000Fraction": 0.6908567885072519,
+    "maximumSampledLatticeDistanceBlocks": 5966.7773546530125,
+    "landSamples": 116108,
+    "beyond2000Fraction": 0.42444103765459745
+  }
+]
