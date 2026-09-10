@@ -23,9 +23,6 @@
   	"terrablender.MixinTargetPoint",
   	"terrablender.MixinNoiseChunk"
   ],
-  "client": [
-  	"ScreenInvoker"
-  ],
   "injectors": {
     "defaultRequire": 1
   }
