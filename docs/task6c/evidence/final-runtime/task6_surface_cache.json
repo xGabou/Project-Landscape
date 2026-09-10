@@ -1,0 +1,36 @@
+[
+  {
+    "checked": 9,
+    "exact": true,
+    "stats": {
+      "inFlight": 0,
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 0,
+      "capacity": 1024,
+      "entries": 0,
+      "retainedArrayBytes": 0,
+      "misses": 0,
+      "failures": 0,
+      "peakInFlight": 0
+    }
+  },
+  {
+    "checked": 9,
+    "exact": true,
+    "stats": {
+      "inFlight": 0,
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 0,
+      "capacity": 1024,
+      "entries": 0,
+      "retainedArrayBytes": 0,
+      "misses": 0,
+      "failures": 0,
+      "peakInFlight": 0
+    }
+  }
+]

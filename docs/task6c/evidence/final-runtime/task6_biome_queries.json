@@ -1,0 +1,62 @@
+[
+  {
+    "reopened": false,
+    "count": 16,
+    "elapsedNs": 60000,
+    "surfaceCache": {
+      "inFlight": 0,
+      "evictions": 1436,
+      "waits": 935,
+      "capacityWaits": 0,
+      "hits": 338226,
+      "capacity": 1024,
+      "entries": 1024,
+      "retainedArrayBytes": 134217728,
+      "misses": 2460,
+      "failures": 0,
+      "peakInFlight": 7
+    },
+    "climateCache": {
+      "evictions": 2781,
+      "waits": 0,
+      "hits": 7,
+      "entries": 4096,
+      "capacityWaits": 0,
+      "misses": 6877,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 49
+    }
+  },
+  {
+    "reopened": true,
+    "count": 16,
+    "elapsedNs": 48300,
+    "surfaceCache": {
+      "inFlight": 0,
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 0,
+      "capacity": 1024,
+      "entries": 25,
+      "retainedArrayBytes": 3276800,
+      "misses": 25,
+      "failures": 0,
+      "peakInFlight": 1
+    },
+    "climateCache": {
+      "evictions": 0,
+      "waits": 0,
+      "hits": 0,
+      "entries": 1,
+      "capacityWaits": 0,
+      "misses": 1,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 1
+    }
+  }
+]

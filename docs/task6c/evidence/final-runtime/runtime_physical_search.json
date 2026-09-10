@@ -1,0 +1,9 @@
+[
+  {
+    "sampledPoints": 81,
+    "waterClassesFound": [
+      "LAND"
+    ],
+    "scope": "bounded canonical site patch; absent wetland/coast/river classes are not proven unreachable"
+  }
+]

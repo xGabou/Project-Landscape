@@ -1,0 +1,34 @@
+[
+  {
+    "worldIndex": 0,
+    "reopened": false,
+    "cache": {
+      "frontHits": 0,
+      "frontCapacity": 64,
+      "frontEntries": 0,
+      "hits": 121358,
+      "capacity": 256,
+      "entries": 0,
+      "backingHits": 121358,
+      "misses": 59,
+      "frontHitCountingEnabled": 0
+    },
+    "postCloseQueryRejected": true
+  },
+  {
+    "worldIndex": 0,
+    "reopened": true,
+    "cache": {
+      "frontHits": 0,
+      "frontCapacity": 64,
+      "frontEntries": 0,
+      "hits": 7096,
+      "capacity": 256,
+      "entries": 0,
+      "backingHits": 7096,
+      "misses": 6,
+      "frontHitCountingEnabled": 0
+    },
+    "postCloseQueryRejected": true
+  }
+]

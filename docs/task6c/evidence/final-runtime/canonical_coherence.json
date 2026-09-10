@@ -1,0 +1,94 @@
+[
+  {
+    "seed": "8675309",
+    "stepBlocks": 4,
+    "samples": 9,
+    "adjacentEdges": 12,
+    "differentBiomeEdges": 0,
+    "boundaryFraction": 0.0,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 0,
+    "biomeDigest": "e1155cd6b897f2b65f3fd6d96cc06a3a1f68ca8b5ffa6af43e96e5569c5ee4d7",
+    "climateCache": {
+      "evictions": 0,
+      "waits": 0,
+      "hits": 60,
+      "entries": 17,
+      "capacityWaits": 0,
+      "misses": 17,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 1
+    }
+  },
+  {
+    "seed": "4303642605",
+    "stepBlocks": 4,
+    "samples": 9,
+    "adjacentEdges": 12,
+    "differentBiomeEdges": 0,
+    "boundaryFraction": 0.0,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 0,
+    "biomeDigest": "e1155cd6b897f2b65f3fd6d96cc06a3a1f68ca8b5ffa6af43e96e5569c5ee4d7",
+    "climateCache": {
+      "evictions": 0,
+      "waits": 0,
+      "hits": 60,
+      "entries": 17,
+      "capacityWaits": 0,
+      "misses": 17,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 1
+    }
+  },
+  {
+    "seed": "67890",
+    "stepBlocks": 4,
+    "samples": 9,
+    "adjacentEdges": 12,
+    "differentBiomeEdges": 0,
+    "boundaryFraction": 0.0,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 0,
+    "biomeDigest": "e1155cd6b897f2b65f3fd6d96cc06a3a1f68ca8b5ffa6af43e96e5569c5ee4d7",
+    "climateCache": {
+      "evictions": 0,
+      "waits": 0,
+      "hits": 39,
+      "entries": 10,
+      "capacityWaits": 0,
+      "misses": 10,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 1
+    }
+  },
+  {
+    "seed": "20260908",
+    "stepBlocks": 4,
+    "samples": 9,
+    "adjacentEdges": 12,
+    "differentBiomeEdges": 0,
+    "boundaryFraction": 0.0,
+    "isolatedInteriorCells": 0,
+    "lowMarginBelow002": 0,
+    "biomeDigest": "e1155cd6b897f2b65f3fd6d96cc06a3a1f68ca8b5ffa6af43e96e5569c5ee4d7",
+    "climateCache": {
+      "evictions": 0,
+      "waits": 0,
+      "hits": 39,
+      "entries": 10,
+      "capacityWaits": 0,
+      "misses": 10,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 1
+    }
+  }
+]

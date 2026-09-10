@@ -1,0 +1,22 @@
+{
+  "Task6B": {
+    "samples": 14,
+    "totalSeconds": 5.4e-06,
+    "medianSeconds": 4e-07,
+    "p95Seconds": 6e-07,
+    "minimumSeconds": 3e-07,
+    "maximumSeconds": 6e-07,
+    "sampleStandardDeviationSeconds": 8.644378215075664e-08,
+    "throughputChunksPerSecond": 2592592.592592593
+  },
+  "Task6C": {
+    "samples": 14,
+    "totalSeconds": 5.100000000000001e-06,
+    "medianSeconds": 3e-07,
+    "p95Seconds": 6e-07,
+    "minimumSeconds": 3e-07,
+    "maximumSeconds": 6e-07,
+    "sampleStandardDeviationSeconds": 9.28782731664065e-08,
+    "throughputChunksPerSecond": 2745098.039215686
+  }
+}

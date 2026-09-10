@@ -1,0 +1,107 @@
+[
+  {
+    "scenario": "sequential_generation",
+    "summedDiagnosticSeconds": {
+      "BATCH": 38.416374,
+      "BEACH": 0.0310119,
+      "CORRECTIONS": 0.0490412,
+      "EROSION": 4.3201688,
+      "EROSION_NOISE": 15.7812465,
+      "HYDROLOGY": 2.7209397,
+      "ISLAND_WAIT": 4.0973809,
+      "ISLAND_WORK": 0.1668027,
+      "LEGACY_HINTS": 5.2158269,
+      "MACRO": 3.9581485,
+      "SHORELINE": 0.8672254,
+      "SMOOTHING": 0.2195567,
+      "STEEPNESS": 0.1593852,
+      "SURFACE_ACQUISITION": 11.4414364,
+      "TERRAIN_HEIGHT": 21.2550345,
+      "TILE": 11.4321101
+    }
+  },
+  {
+    "scenario": "spawn_expansion",
+    "summedDiagnosticSeconds": {
+      "BATCH": 28.7355973,
+      "BEACH": 0.0235791,
+      "CORRECTIONS": 0.0377857,
+      "EROSION": 3.346779,
+      "EROSION_NOISE": 11.5480743,
+      "HYDROLOGY": 1.6313623,
+      "ISLAND_WAIT": 3.7188857,
+      "ISLAND_WORK": 0.1233687,
+      "LEGACY_HINTS": 4.0081967,
+      "MACRO": 3.3543567,
+      "SHORELINE": 0.6622314,
+      "SMOOTHING": 0.1684053,
+      "STEEPNESS": 0.1223492,
+      "SURFACE_ACQUISITION": 8.6710901,
+      "TERRAIN_HEIGHT": 15.4148773,
+      "TILE": 8.6638158
+    }
+  },
+  {
+    "scenario": "scattered_generation",
+    "summedDiagnosticSeconds": {
+      "BATCH": 224.4540591,
+      "BEACH": 0.1925293,
+      "CORRECTIONS": 0.2925227,
+      "EROSION": 29.6281586,
+      "EROSION_NOISE": 51.5777107,
+      "HYDROLOGY": 5.2904719,
+      "ISLAND_WAIT": 76.2073045,
+      "ISLAND_WORK": 2.4455705,
+      "LEGACY_HINTS": 30.2225902,
+      "MACRO": 54.426478,
+      "SHORELINE": 6.6602533,
+      "SMOOTHING": 1.5083534,
+      "STEEPNESS": 1.0670656,
+      "SURFACE_ACQUISITION": 72.0028474,
+      "TERRAIN_HEIGHT": 71.8902077,
+      "TILE": 71.9430465
+    }
+  },
+  {
+    "scenario": "interleaved_regions",
+    "summedDiagnosticSeconds": {
+      "BATCH": 82.6551255,
+      "BEACH": 0.066644,
+      "CORRECTIONS": 0.1042095,
+      "EROSION": 10.2747686,
+      "EROSION_NOISE": 25.8828289,
+      "HYDROLOGY": 2.6033195,
+      "ISLAND_WAIT": 21.6583473,
+      "ISLAND_WORK": 0.7278982,
+      "LEGACY_HINTS": 10.9441143,
+      "MACRO": 15.8551459,
+      "SHORELINE": 2.2586635,
+      "SMOOTHING": 0.5239706,
+      "STEEPNESS": 0.3735942,
+      "SURFACE_ACQUISITION": 25.8186206,
+      "TERRAIN_HEIGHT": 34.4231661,
+      "TILE": 25.797527
+    }
+  },
+  {
+    "scenario": "climate_heavy",
+    "summedDiagnosticSeconds": {
+      "BATCH": 18.1169532,
+      "BEACH": 0.015656,
+      "CORRECTIONS": 0.024492,
+      "EROSION": 2.1384097,
+      "EROSION_NOISE": 7.335554,
+      "HYDROLOGY": 1.1024137,
+      "ISLAND_WAIT": 2.1581948,
+      "ISLAND_WORK": 0.0717304,
+      "LEGACY_HINTS": 2.4994695,
+      "MACRO": 1.9716597,
+      "SHORELINE": 0.414074,
+      "SMOOTHING": 0.1070091,
+      "STEEPNESS": 0.0797451,
+      "SURFACE_ACQUISITION": 5.517537,
+      "TERRAIN_HEIGHT": 9.9414567,
+      "TILE": 5.5131363
+    }
+  }
+]

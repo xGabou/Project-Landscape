@@ -1,0 +1,30 @@
+[
+  {
+    "seed": "8675309",
+    "samples": 17,
+    "climateEquationsNs": 460500,
+    "resolverSelectNs": 29800,
+    "scope": "cold climate over prepared exact canonical inputs; acquisition separate, diagnostic explain excluded"
+  },
+  {
+    "seed": "4303642605",
+    "samples": 17,
+    "climateEquationsNs": 210500,
+    "resolverSelectNs": 14900,
+    "scope": "cold climate over prepared exact canonical inputs; acquisition separate, diagnostic explain excluded"
+  },
+  {
+    "seed": "67890",
+    "samples": 10,
+    "climateEquationsNs": 58700,
+    "resolverSelectNs": 7300,
+    "scope": "cold climate over prepared exact canonical inputs; acquisition separate, diagnostic explain excluded"
+  },
+  {
+    "seed": "20260908",
+    "samples": 10,
+    "climateEquationsNs": 105500,
+    "resolverSelectNs": 50100,
+    "scope": "cold climate over prepared exact canonical inputs; acquisition separate, diagnostic explain excluded"
+  }
+]

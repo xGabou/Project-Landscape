@@ -1,0 +1,458 @@
+[
+  {
+    "seed": "8675309",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -7969,
+    "z": -8369,
+    "macro": {
+      "siteId": -2972952762625899513,
+      "landness": 0.9999999999753871,
+      "continentality": 1.0,
+      "waterBody": "LAND",
+      "corridorId": 5326696592000587459,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": 6430.9497956830255,
+      "shelfFraction": 0.0,
+      "marineDepthBlocks": 0.0
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 5837.6982421875,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 59.07622195096772,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 5837.6982421875,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 59.07622195096772,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 99.1085433959961,
+    "terrain": "MOUNTAIN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "8675309",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -1734,
+    "z": -8369,
+    "macro": {
+      "siteId": -2972952762625899513,
+      "landness": 0.10799736769640711,
+      "continentality": 0.008902062028897952,
+      "waterBody": "LAND",
+      "corridorId": 5326696592000587459,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": 55.51114444556572,
+      "shelfFraction": 0.0,
+      "marineDepthBlocks": 0.0
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 256.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 75.92759709091287,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 256.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 75.92759709091287,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 63.01580047607422,
+    "terrain": "OTHER",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "8675309",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -1382,
+    "z": -7229,
+    "macro": {
+      "siteId": -2972952762625899513,
+      "landness": -0.2548628427409192,
+      "continentality": 0.0,
+      "waterBody": "COASTAL_WATER",
+      "corridorId": 5326696592000587459,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": -133.4305924615101,
+      "shelfFraction": 1.0,
+      "marineDepthBlocks": 6.254559021633285
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 181.0193328857422,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 66.30987860040162,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 66.30987860040162,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 55.74544143676758,
+    "terrain": "OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "8675309",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -4630,
+    "z": -3326,
+    "macro": {
+      "siteId": -2972952762625899513,
+      "landness": -0.2097445905544752,
+      "continentality": 0.0,
+      "waterBody": "COASTAL_WATER",
+      "corridorId": 3835493709063524441,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": -109.00693448139222,
+      "shelfFraction": 1.0,
+      "marineDepthBlocks": 5.109700053815261
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 181.0193328857422,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 22.090722034374522,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 22.090722034374522,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 56.89030075073242,
+    "terrain": "OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "4303642605",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -8282,
+    "z": -8453,
+    "macro": {
+      "siteId": 6669969800301552729,
+      "landness": 0.9999999999679328,
+      "continentality": 1.0,
+      "waterBody": "LAND",
+      "corridorId": 3256006417999382109,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": 6363.2211188037745,
+      "shelfFraction": 0.0,
+      "marineDepthBlocks": 0.0
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 5788.37451171875,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 38.3275357934736,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 5788.37451171875,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 38.3275357934736,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 85.05106353759766,
+    "terrain": "MOUNTAIN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "4303642605",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -2124,
+    "z": -8453,
+    "macro": {
+      "siteId": 6669969800301552729,
+      "landness": -0.5413916620269014,
+      "continentality": 0.0,
+      "waterBody": "COASTAL_WATER",
+      "corridorId": -8462603296906511832,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": -310.33456956339825,
+      "shelfFraction": 1.0,
+      "marineDepthBlocks": 14.546932948284294
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 362.0386657714844,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 52.23983154643591,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 52.23983154643591,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 47.453067779541016,
+    "terrain": "OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "4303642605",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -2830,
+    "z": -5762,
+    "macro": {
+      "siteId": 6669969800301552729,
+      "landness": -0.1979884306358669,
+      "continentality": 0.0,
+      "waterBody": "COASTAL_WATER",
+      "corridorId": -8462603296906511832,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": -102.72667852622571,
+      "shelfFraction": 1.0,
+      "marineDepthBlocks": 4.81531305591683
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 128.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 14.142135623730951,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 14.142135623730951,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 57.184688568115234,
+    "terrain": "OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "4303642605",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -4884,
+    "z": -2904,
+    "macro": {
+      "siteId": 6669969800301552729,
+      "landness": -0.200639903636617,
+      "continentality": 0.0,
+      "waterBody": "COASTAL_WATER",
+      "corridorId": -2668264470508333051,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": -104.14039516925779,
+      "shelfFraction": 1.0,
+      "marineDepthBlocks": 4.881581023558958
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 128.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 44.721359549995796,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 44.721359549995796,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 57.1184196472168,
+    "terrain": "OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "42",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -7936,
+    "z": -8298,
+    "macro": {
+      "siteId": -2027968360178509330,
+      "landness": 0.9999999997045778,
+      "continentality": 0.9439869540051312,
+      "waterBody": "LAND",
+      "corridorId": 8980221270438432746,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": 5794.755264697591,
+      "shelfFraction": 0.0,
+      "marineDepthBlocks": 0.0
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 5772.78564453125,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 22.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 5772.78564453125,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 22.0,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 100.86449432373047,
+    "terrain": "OTHER",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "42",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -1797,
+    "z": -8298,
+    "macro": {
+      "siteId": -2027968360178509330,
+      "landness": 0.19624083706989667,
+      "continentality": 0.01658290051021588,
+      "waterBody": "LAND",
+      "corridorId": 8980221270438432746,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": 101.79573947269563,
+      "shelfFraction": 0.0,
+      "marineDepthBlocks": 0.0
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 128.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 22.561028345356956,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 128.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 22.561028345356956,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 66.53610229492188,
+    "terrain": "OTHER",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "42",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -1518,
+    "z": -7841,
+    "macro": {
+      "siteId": -2027968360178509330,
+      "landness": -0.19193671734676093,
+      "continentality": 0.0,
+      "waterBody": "COASTAL_WATER",
+      "corridorId": 8980221270438432746,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": -99.50576158007682,
+      "shelfFraction": 1.0,
+      "marineDepthBlocks": 4.6643325740661
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 128.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 37.589892258425,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 37.589892258425,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 57.33566665649414,
+    "terrain": "OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  },
+  {
+    "seed": "42",
+    "version": "PA_GEOGRAPHY_V1",
+    "x": -5913,
+    "z": -2525,
+    "macro": {
+      "siteId": -2027968360178509330,
+      "landness": -0.18735045680116735,
+      "continentality": 0.0,
+      "waterBody": "COASTAL_WATER",
+      "corridorId": 3357647027896061176,
+      "inReservedCorridor": false,
+      "islandClass": "NONE",
+      "archipelagoId": 0,
+      "shorelineProfileBlocks": -97.06998948557336,
+      "shelfFraction": 1.0,
+      "marineDepthBlocks": 4.550155757136252
+    },
+    "distances": {
+      "marineShoreline": {
+        "valueBlocks": 181.0193328857422,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 43.01162633521314,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      },
+      "oceanWater": {
+        "valueBlocks": 0.0,
+        "resolutionBlocks": 128,
+        "querySnappingErrorBlocks": 43.01162633521314,
+        "quality": "SAMPLED_LATTICE_ESTIMATE"
+      }
+    },
+    "elevation": 57.44984436035156,
+    "terrain": "OCEAN",
+    "river": false,
+    "lake": false,
+    "wetland": false
+  }
+]

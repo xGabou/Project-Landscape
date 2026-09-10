@@ -1,0 +1,287 @@
+{
+  "canonical": [
+    {
+      "blockX": 8192,
+      "blockZ": 0,
+      "exact": true,
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "surfaceBiome": "minecraft:deep_lukewarm_ocean"
+    },
+    {
+      "blockX": 8208,
+      "blockZ": 0,
+      "exact": true,
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "surfaceBiome": "minecraft:deep_lukewarm_ocean"
+    },
+    {
+      "blockX": 8224,
+      "blockZ": 0,
+      "exact": true,
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "surfaceBiome": "minecraft:deep_lukewarm_ocean"
+    },
+    {
+      "blockX": 8240,
+      "blockZ": 0,
+      "exact": true,
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "surfaceBiome": "minecraft:deep_lukewarm_ocean"
+    },
+    {
+      "blockX": 6128,
+      "blockZ": 6240,
+      "exact": true,
+      "landform": "PLAINS",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:plains"
+    },
+    {
+      "blockX": 6144,
+      "blockZ": 6240,
+      "exact": true,
+      "landform": "MOUNTAIN",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:stony_peaks"
+    },
+    {
+      "blockX": -28672,
+      "blockZ": -12288,
+      "exact": true,
+      "landform": "OTHER",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:plains"
+    },
+    {
+      "blockX": -28656,
+      "blockZ": -12288,
+      "exact": true,
+      "landform": "OTHER",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:plains"
+    },
+    {
+      "blockX": -8192,
+      "blockZ": -150000,
+      "exact": true,
+      "landform": "PLAINS",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:old_growth_pine_taiga"
+    },
+    {
+      "blockX": 8192,
+      "blockZ": 60000,
+      "exact": true,
+      "landform": "OTHER",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:windswept_hills"
+    },
+    {
+      "blockX": -8192,
+      "blockZ": -500000,
+      "exact": true,
+      "landform": "OTHER",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:grove"
+    },
+    {
+      "blockX": 0,
+      "blockZ": -2000000,
+      "exact": true,
+      "landform": "OCEAN",
+      "water": "DEEP_OCEAN",
+      "surfaceBiome": "minecraft:deep_frozen_ocean"
+    },
+    {
+      "blockX": -7969,
+      "blockZ": -8369,
+      "exact": true,
+      "landform": "MOUNTAIN",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:stony_peaks"
+    },
+    {
+      "blockX": -1734,
+      "blockZ": -8369,
+      "exact": true,
+      "landform": "OTHER",
+      "water": "LAND",
+      "surfaceBiome": "minecraft:forest"
+    }
+  ],
+  "storedDigests": [
+    {
+      "version": "V1",
+      "index": 0,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 1,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 2,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 3,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 4,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 5,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 6,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 7,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 8,
+      "biomesExact": true,
+      "blocksExact": false
+    },
+    {
+      "version": "V1",
+      "index": 9,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 10,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 11,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "V1",
+      "index": 12,
+      "biomesExact": true,
+      "blocksExact": false
+    },
+    {
+      "version": "V1",
+      "index": 13,
+      "biomesExact": true,
+      "blocksExact": false
+    },
+    {
+      "version": "legacy",
+      "index": 0,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 1,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 2,
+      "biomesExact": true,
+      "blocksExact": false
+    },
+    {
+      "version": "legacy",
+      "index": 3,
+      "biomesExact": true,
+      "blocksExact": false
+    },
+    {
+      "version": "legacy",
+      "index": 4,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 5,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 6,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 7,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 8,
+      "biomesExact": true,
+      "blocksExact": false
+    },
+    {
+      "version": "legacy",
+      "index": 9,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 10,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 11,
+      "biomesExact": true,
+      "blocksExact": true
+    },
+    {
+      "version": "legacy",
+      "index": 12,
+      "biomesExact": true,
+      "blocksExact": false
+    },
+    {
+      "version": "legacy",
+      "index": 13,
+      "biomesExact": true,
+      "blocksExact": true
+    }
+  ],
+  "blockScope": "Block digest differences remain diagnostic only under the documented Task6B repeated-baseline feature-order variance. Canonical geography, finalized tiles, climate, surface winners and stored biomes require exact equality."
+}

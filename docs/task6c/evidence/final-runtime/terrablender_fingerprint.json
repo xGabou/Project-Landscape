@@ -1,0 +1,16 @@
+[
+  {
+    "reopened": false,
+    "stableAfterInitialization": true,
+    "registeredRuleChangeDetected": true,
+    "fixtureRestored": true,
+    "fingerprint": "f3cc9c0b1895ae4b858ff2c404dc5b52736a606a0ab36eff3d5383fa0ee738ad"
+  },
+  {
+    "reopened": true,
+    "stableAfterInitialization": true,
+    "registeredRuleChangeDetected": true,
+    "fixtureRestored": true,
+    "fingerprint": "f3cc9c0b1895ae4b858ff2c404dc5b52736a606a0ab36eff3d5383fa0ee738ad"
+  }
+]

@@ -1,0 +1,947 @@
+[
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8179ef348cb6214dced805c5b96400dc8eccce27cc093510ba608c1348a1b2ae"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "09b381acc6ace892f7c836cb9f2deb7f27b56850ca0f8af2ba4ab67cfe263b20"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "c4ac5380b9d7f1c68ba5e9406f1e2dde5f13b8d603a6413f65a766b059b7b594"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "7adac3b56e1b1d41f9e991a27f0e4c3480e9baa6f4c9ef245bc273abbcedbf30"
+  },
+  {
+    "seed": "8675309",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "a7dd60a0a30c4617e11aa7b19a20b1918a87924450bed2ba032dd8be3d38ee67"
+  },
+  {
+    "seed": "8675309",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "a7dd60a0a30c4617e11aa7b19a20b1918a87924450bed2ba032dd8be3d38ee67"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "7adac3b56e1b1d41f9e991a27f0e4c3480e9baa6f4c9ef245bc273abbcedbf30"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "c4ac5380b9d7f1c68ba5e9406f1e2dde5f13b8d603a6413f65a766b059b7b594"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "09b381acc6ace892f7c836cb9f2deb7f27b56850ca0f8af2ba4ab67cfe263b20"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8179ef348cb6214dced805c5b96400dc8eccce27cc093510ba608c1348a1b2ae"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8179ef348cb6214dced805c5b96400dc8eccce27cc093510ba608c1348a1b2ae"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "09b381acc6ace892f7c836cb9f2deb7f27b56850ca0f8af2ba4ab67cfe263b20"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "c4ac5380b9d7f1c68ba5e9406f1e2dde5f13b8d603a6413f65a766b059b7b594"
+  },
+  {
+    "seed": "8675309",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "7adac3b56e1b1d41f9e991a27f0e4c3480e9baa6f4c9ef245bc273abbcedbf30"
+  },
+  {
+    "seed": "8675309",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "a7dd60a0a30c4617e11aa7b19a20b1918a87924450bed2ba032dd8be3d38ee67"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8179ef348cb6214dced805c5b96400dc8eccce27cc093510ba608c1348a1b2ae"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "09b381acc6ace892f7c836cb9f2deb7f27b56850ca0f8af2ba4ab67cfe263b20"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "c4ac5380b9d7f1c68ba5e9406f1e2dde5f13b8d603a6413f65a766b059b7b594"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "7adac3b56e1b1d41f9e991a27f0e4c3480e9baa6f4c9ef245bc273abbcedbf30"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "a7dd60a0a30c4617e11aa7b19a20b1918a87924450bed2ba032dd8be3d38ee67"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "a7dd60a0a30c4617e11aa7b19a20b1918a87924450bed2ba032dd8be3d38ee67"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "7adac3b56e1b1d41f9e991a27f0e4c3480e9baa6f4c9ef245bc273abbcedbf30"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "c4ac5380b9d7f1c68ba5e9406f1e2dde5f13b8d603a6413f65a766b059b7b594"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "09b381acc6ace892f7c836cb9f2deb7f27b56850ca0f8af2ba4ab67cfe263b20"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8179ef348cb6214dced805c5b96400dc8eccce27cc093510ba608c1348a1b2ae"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8179ef348cb6214dced805c5b96400dc8eccce27cc093510ba608c1348a1b2ae"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "09b381acc6ace892f7c836cb9f2deb7f27b56850ca0f8af2ba4ab67cfe263b20"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "c4ac5380b9d7f1c68ba5e9406f1e2dde5f13b8d603a6413f65a766b059b7b594"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "7adac3b56e1b1d41f9e991a27f0e4c3480e9baa6f4c9ef245bc273abbcedbf30"
+  },
+  {
+    "seed": "4303642605",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "a7dd60a0a30c4617e11aa7b19a20b1918a87924450bed2ba032dd8be3d38ee67"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "13a22fb0e6226785a10b3965ae30ae925894ce1fc76e4c12b181302fba32ce18"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "42",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "4d3cef5192a134fc180b3cb2897212081832fda2048a32c1fb9f3f0d62526c4a"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d8ccbb36e73d086328df1ca71fc9892891f581774b3b05430ced3e54838e3e6c"
+  },
+  {
+    "seed": "42",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "42",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d8ccbb36e73d086328df1ca71fc9892891f581774b3b05430ced3e54838e3e6c"
+  },
+  {
+    "seed": "42",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "4d3cef5192a134fc180b3cb2897212081832fda2048a32c1fb9f3f0d62526c4a"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "13a22fb0e6226785a10b3965ae30ae925894ce1fc76e4c12b181302fba32ce18"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "13a22fb0e6226785a10b3965ae30ae925894ce1fc76e4c12b181302fba32ce18"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "42",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "4d3cef5192a134fc180b3cb2897212081832fda2048a32c1fb9f3f0d62526c4a"
+  },
+  {
+    "seed": "42",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d8ccbb36e73d086328df1ca71fc9892891f581774b3b05430ced3e54838e3e6c"
+  },
+  {
+    "seed": "42",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "-987654321",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "d2d155feff24c88da759dd657fdfd44c236055c1cc790b5bff7268c0c67f575a"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "e374c18ddb901c3fc82d71bedb3999e02e145264ca2f529739ed01417ba8a0cd"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "638c9c3d38d18ff9b54f73138fc682a0a75accb1d6dd64536166731d6ff62e9f"
+  },
+  {
+    "seed": "0",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "154fc0ede2308b3f624e3213d34faafb63fca2ea5dc2a5c39048da5e13054b46"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "3cf54a72ea43b40e150c031c65b5604130fc64f342fe25f703b576ecb86fda0a"
+  },
+  {
+    "seed": "0",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "80c2b0196224850c628469a22bc2da9ebf9d578e2b236369d6f3bb3803f42d23"
+  },
+  {
+    "seed": "0",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "80c2b0196224850c628469a22bc2da9ebf9d578e2b236369d6f3bb3803f42d23"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "3cf54a72ea43b40e150c031c65b5604130fc64f342fe25f703b576ecb86fda0a"
+  },
+  {
+    "seed": "0",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "154fc0ede2308b3f624e3213d34faafb63fca2ea5dc2a5c39048da5e13054b46"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "638c9c3d38d18ff9b54f73138fc682a0a75accb1d6dd64536166731d6ff62e9f"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "e374c18ddb901c3fc82d71bedb3999e02e145264ca2f529739ed01417ba8a0cd"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "e374c18ddb901c3fc82d71bedb3999e02e145264ca2f529739ed01417ba8a0cd"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "638c9c3d38d18ff9b54f73138fc682a0a75accb1d6dd64536166731d6ff62e9f"
+  },
+  {
+    "seed": "0",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "154fc0ede2308b3f624e3213d34faafb63fca2ea5dc2a5c39048da5e13054b46"
+  },
+  {
+    "seed": "0",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "3cf54a72ea43b40e150c031c65b5604130fc64f342fe25f703b576ecb86fda0a"
+  },
+  {
+    "seed": "0",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "80c2b0196224850c628469a22bc2da9ebf9d578e2b236369d6f3bb3803f42d23"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "2ebd5c2123d186589c5714da21f6d64a59694ab50e006c52563209bc892a89b0"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "86afe1d18fe17846b9a263a657c24af54113bf2aa56df543086847b3a949264b"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8201c0fce7010c7b369ae658c1fba24592742a136964b4cace6bddbcf034acaf"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "e3d5a122a4a299d69ad75687c6facdee6393e21617705636a2d954bb6412d214"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "43126a07f958c7dda0692ef0cf11a71c780016126c7b3241e909b9191897aad5"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "43126a07f958c7dda0692ef0cf11a71c780016126c7b3241e909b9191897aad5"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "e3d5a122a4a299d69ad75687c6facdee6393e21617705636a2d954bb6412d214"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8201c0fce7010c7b369ae658c1fba24592742a136964b4cace6bddbcf034acaf"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "86afe1d18fe17846b9a263a657c24af54113bf2aa56df543086847b3a949264b"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "2ebd5c2123d186589c5714da21f6d64a59694ab50e006c52563209bc892a89b0"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "2ebd5c2123d186589c5714da21f6d64a59694ab50e006c52563209bc892a89b0"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "86afe1d18fe17846b9a263a657c24af54113bf2aa56df543086847b3a949264b"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "8201c0fce7010c7b369ae658c1fba24592742a136964b4cace6bddbcf034acaf"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "e3d5a122a4a299d69ad75687c6facdee6393e21617705636a2d954bb6412d214"
+  },
+  {
+    "seed": "9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "43126a07f958c7dda0692ef0cf11a71c780016126c7b3241e909b9191897aad5"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "5dd87b794139db2a6ddf8ead4ebad3c349aafa58d436e415ec14b360e007ee19"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "564d097ef6c5760a28043509714924187e0d884b7c9258259ad70073e4ab5bab"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "5e09597ea9ff582d70a08477d2613f73e32cbc71dae856e4782fbb9886971633"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "b55d26bba2b612e9e13086da94c1384967dbb252a16d918f8d90c87184efb81c"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "center_first",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "57ba651c51b95aa5a025394c1282aad3ca06b52b7314e037b6f97d93c884f671"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "57ba651c51b95aa5a025394c1282aad3ca06b52b7314e037b6f97d93c884f671"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "b55d26bba2b612e9e13086da94c1384967dbb252a16d918f8d90c87184efb81c"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "5e09597ea9ff582d70a08477d2613f73e32cbc71dae856e4782fbb9886971633"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "564d097ef6c5760a28043509714924187e0d884b7c9258259ad70073e4ab5bab"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "reverse",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "5dd87b794139db2a6ddf8ead4ebad3c349aafa58d436e415ec14b360e007ee19"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "5dd87b794139db2a6ddf8ead4ebad3c349aafa58d436e415ec14b360e007ee19"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": -1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "564d097ef6c5760a28043509714924187e0d884b7c9258259ad70073e4ab5bab"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "5e09597ea9ff582d70a08477d2613f73e32cbc71dae856e4782fbb9886971633"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": 0,
+    "tileZ": 1,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "b55d26bba2b612e9e13086da94c1384967dbb252a16d918f8d90c87184efb81c"
+  },
+  {
+    "seed": "-9223372036854775807",
+    "tileX": -1,
+    "tileZ": 0,
+    "workers": 8,
+    "order": "parallel",
+    "semantics": "captured pre-carving population weights transported with finalized tile",
+    "sha256": "57ba651c51b95aa5a025394c1282aad3ca06b52b7314e037b6f97d93c884f671"
+  }
+]

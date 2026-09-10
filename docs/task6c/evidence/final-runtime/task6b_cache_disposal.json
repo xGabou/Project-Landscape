@@ -1,0 +1,126 @@
+[
+  {
+    "distance": {
+      "hits": 678148,
+      "entries": 0,
+      "capacity": 32,
+      "misses": 158,
+      "retainedArrayBytes": 0
+    },
+    "postCloseQueriesRejected": true,
+    "worldIndex": 0,
+    "reopened": false,
+    "surface": {
+      "inFlight": 0,
+      "evictions": 1542,
+      "waits": 935,
+      "capacityWaits": 0,
+      "hits": 338906,
+      "capacity": 1024,
+      "entries": 0,
+      "retainedArrayBytes": 0,
+      "misses": 2566,
+      "failures": 0,
+      "peakInFlight": 7
+    },
+    "climate": {
+      "evictions": 2807,
+      "waits": 0,
+      "hits": 12,
+      "entries": 0,
+      "capacityWaits": 0,
+      "misses": 6903,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 49
+    },
+    "winners": {
+      "evictions": 25294,
+      "waits": 0,
+      "hits": 2114246,
+      "entries": 0,
+      "capacityWaits": 0,
+      "misses": 29390,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 49
+    },
+    "geography": {
+      "evictions": 28663,
+      "waits": 0,
+      "hits": 2310584,
+      "entries": 0,
+      "capacityWaits": 0,
+      "misses": 32759,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 5
+    },
+    "allEmpty": true
+  },
+  {
+    "distance": {
+      "hits": 106,
+      "entries": 0,
+      "capacity": 32,
+      "misses": 8,
+      "retainedArrayBytes": 0
+    },
+    "postCloseQueriesRejected": true,
+    "worldIndex": 0,
+    "reopened": true,
+    "surface": {
+      "inFlight": 0,
+      "evictions": 0,
+      "waits": 0,
+      "capacityWaits": 0,
+      "hits": 0,
+      "capacity": 1024,
+      "entries": 0,
+      "retainedArrayBytes": 0,
+      "misses": 25,
+      "failures": 0,
+      "peakInFlight": 1
+    },
+    "climate": {
+      "evictions": 0,
+      "waits": 0,
+      "hits": 0,
+      "entries": 0,
+      "capacityWaits": 0,
+      "misses": 1,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 1
+    },
+    "winners": {
+      "evictions": 0,
+      "waits": 0,
+      "hits": 0,
+      "entries": 0,
+      "capacityWaits": 0,
+      "misses": 16,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 1
+    },
+    "geography": {
+      "evictions": 0,
+      "waits": 0,
+      "hits": 0,
+      "entries": 0,
+      "capacityWaits": 0,
+      "misses": 16,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 1
+    },
+    "allEmpty": true
+  }
+]

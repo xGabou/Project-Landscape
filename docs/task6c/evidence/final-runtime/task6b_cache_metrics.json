@@ -1,0 +1,120 @@
+[
+  {
+    "phase": "after paired corpus",
+    "distance": {
+      "hits": 530813,
+      "entries": 32,
+      "capacity": 32,
+      "misses": 75,
+      "retainedArrayBytes": 262144
+    },
+    "surface": {
+      "inFlight": 0,
+      "evictions": 775,
+      "waits": 810,
+      "capacityWaits": 0,
+      "hits": 296938,
+      "capacity": 1024,
+      "entries": 1024,
+      "retainedArrayBytes": 134217728,
+      "misses": 1799,
+      "failures": 0,
+      "peakInFlight": 6
+    },
+    "climate": {
+      "evictions": 1280,
+      "waits": 0,
+      "hits": 0,
+      "entries": 4096,
+      "capacityWaits": 0,
+      "misses": 5376,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 49
+    },
+    "geography": {
+      "evictions": 24034,
+      "waits": 0,
+      "hits": 2028851,
+      "entries": 4096,
+      "capacityWaits": 0,
+      "misses": 28130,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 5
+    },
+    "winners": {
+      "evictions": 21448,
+      "waits": 0,
+      "hits": 1875152,
+      "entries": 4096,
+      "capacityWaits": 0,
+      "misses": 25544,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 49
+    }
+  },
+  {
+    "phase": "after locality chunk",
+    "distance": {
+      "hits": 673677,
+      "entries": 32,
+      "capacity": 32,
+      "misses": 84,
+      "retainedArrayBytes": 262144
+    },
+    "surface": {
+      "inFlight": 0,
+      "evictions": 1099,
+      "waits": 935,
+      "capacityWaits": 0,
+      "hits": 337972,
+      "capacity": 1024,
+      "entries": 1024,
+      "retainedArrayBytes": 134217728,
+      "misses": 2123,
+      "failures": 0,
+      "peakInFlight": 7
+    },
+    "climate": {
+      "evictions": 2768,
+      "waits": 0,
+      "hits": 0,
+      "entries": 4096,
+      "capacityWaits": 0,
+      "misses": 6864,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 49
+    },
+    "geography": {
+      "evictions": 27817,
+      "waits": 0,
+      "hits": 2255843,
+      "entries": 4096,
+      "capacityWaits": 0,
+      "misses": 31913,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 5
+    },
+    "winners": {
+      "evictions": 24449,
+      "waits": 0,
+      "hits": 2059504,
+      "entries": 4096,
+      "capacityWaits": 0,
+      "misses": 28545,
+      "inFlight": 0,
+      "capacity": 4096,
+      "failures": 0,
+      "peakInFlight": 49
+    }
+  }
+]

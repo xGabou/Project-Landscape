@@ -1,0 +1,1502 @@
+[
+  {
+    "seed": "8675309",
+    "x": -4,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.692138494547095,
+    "rainfallMm": 1157.4717199971662,
+    "evaporationMm": 928.4584929018476,
+    "ratio": 1.2466596286706904,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.983148574829102,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 0,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.43195228337414,
+    "rainfallMm": 1283.0124109426938,
+    "evaporationMm": 923.7751411007346,
+    "ratio": 1.3888795593848802,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.964110374450684,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 4,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.43195228337414,
+    "rainfallMm": 1283.0124109426938,
+    "evaporationMm": 923.7751411007346,
+    "ratio": 1.3888795593848802,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.94494342803955,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": -4,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.40107452614882,
+    "rainfallMm": 1270.1668259560656,
+    "evaporationMm": 923.2193414706787,
+    "ratio": 1.3758017936806903,
+    "rainShadow": 0.054572483675981324,
+    "elevationBlockY": 13.962494850158691,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 0,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.330036861073662,
+    "rainfallMm": 1238.5850036011605,
+    "evaporationMm": 921.9406634993259,
+    "ratio": 1.3434541425908872,
+    "rainShadow": 0.05671340300245902,
+    "elevationBlockY": 13.94355583190918,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 4,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.330036861073662,
+    "rainfallMm": 1240.0028513409368,
+    "evaporationMm": 921.9406634993259,
+    "ratio": 1.3449920373772986,
+    "rainShadow": 0.058524326339811174,
+    "elevationBlockY": 13.924488067626953,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": -4,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.400530646231484,
+    "rainfallMm": 1269.9816115603235,
+    "evaporationMm": 923.2095516321667,
+    "ratio": 1.375615762764899,
+    "rainShadow": 0.05541716153867392,
+    "elevationBlockY": 13.941763877868652,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 0,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.329492981156324,
+    "rainfallMm": 1238.0324412538387,
+    "evaporationMm": 921.9308736608139,
+    "ratio": 1.3428690551796416,
+    "rainShadow": 0.056029819309573355,
+    "elevationBlockY": 13.92292308807373,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 4,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.329492981156324,
+    "rainfallMm": 1238.6176497915005,
+    "evaporationMm": 921.9308736608139,
+    "ratio": 1.343503819188941,
+    "rainShadow": 0.05678927454013944,
+    "elevationBlockY": 13.903955459594727,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": -8192,
+    "z": -500000,
+    "winner": "minecraft:grove",
+    "traits": [
+      "BOREAL_FOREST",
+      "HIGHLAND",
+      "SNOW"
+    ],
+    "temperatureC": -6.489458468423376,
+    "rainfallMm": 713.0300184067711,
+    "evaporationMm": 504.65462302219856,
+    "ratio": 1.4129069384853463,
+    "rainShadow": 0.5301212365202644,
+    "elevationBlockY": 117.69122314453125,
+    "water": "LAND",
+    "landform": "HILLS",
+    "winnerScore": 0.7687100510590693,
+    "secondCandidate": "minecraft:snowy_taiga",
+    "margin": 0.12563383195228506,
+    "topCandidates": [
+      {
+        "key": "minecraft:grove",
+        "score": 0.7687100510590693
+      },
+      {
+        "key": "minecraft:snowy_taiga",
+        "score": 0.6430762191067843
+      },
+      {
+        "key": "minecraft:ice_spikes",
+        "score": 0.6410086385661208
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": -8192,
+    "z": -150000,
+    "winner": "minecraft:old_growth_pine_taiga",
+    "traits": [
+      "BOREAL_FOREST"
+    ],
+    "temperatureC": 4.9757405464019255,
+    "rainfallMm": 971.3823411045202,
+    "evaporationMm": 617.0027298915471,
+    "ratio": 1.5743566341679942,
+    "rainShadow": 0.33449512316853103,
+    "elevationBlockY": 98.02029418945312,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "winnerScore": 0.9132672627791083,
+    "secondCandidate": "minecraft:old_growth_spruce_taiga",
+    "margin": 0.006872683207363894,
+    "topCandidates": [
+      {
+        "key": "minecraft:old_growth_pine_taiga",
+        "score": 0.9132672627791083
+      },
+      {
+        "key": "minecraft:old_growth_spruce_taiga",
+        "score": 0.9063945795717444
+      },
+      {
+        "key": "minecraft:taiga",
+        "score": 0.8388397217860197
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 150000,
+    "winner": "minecraft:old_growth_spruce_taiga",
+    "traits": [
+      "BOREAL_FOREST"
+    ],
+    "temperatureC": 5.213794281876086,
+    "rainfallMm": 1010.6386994607708,
+    "evaporationMm": 618.8606074233377,
+    "ratio": 1.6330635482982574,
+    "rainShadow": 0.2974584476999697,
+    "elevationBlockY": 76.08502960205078,
+    "water": "LAND",
+    "landform": "HILLS",
+    "winnerScore": 0.9103153934079348,
+    "secondCandidate": "minecraft:meadow",
+    "margin": 0.012032831346185158,
+    "topCandidates": [
+      {
+        "key": "minecraft:old_growth_spruce_taiga",
+        "score": 0.9103153934079348
+      },
+      {
+        "key": "minecraft:meadow",
+        "score": 0.8982825620617496
+      },
+      {
+        "key": "minecraft:old_growth_pine_taiga",
+        "score": 0.8945739080936687
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 60000,
+    "winner": "minecraft:windswept_hills",
+    "traits": [
+      "GRASSLAND",
+      "HIGHLAND"
+    ],
+    "temperatureC": 11.846081129842519,
+    "rainfallMm": 785.4939032147604,
+    "evaporationMm": 781.4414809602908,
+    "ratio": 1.0051858294615863,
+    "rainShadow": 0.4801381285110949,
+    "elevationBlockY": 74.64720916748047,
+    "water": "LAND",
+    "landform": "HILLS",
+    "winnerScore": 0.8997395142993995,
+    "secondCandidate": "minecraft:forest",
+    "margin": 0.03758361343741645,
+    "topCandidates": [
+      {
+        "key": "minecraft:windswept_hills",
+        "score": 0.8997395142993995
+      },
+      {
+        "key": "minecraft:forest",
+        "score": 0.862155900861983
+      },
+      {
+        "key": "minecraft:old_growth_pine_taiga",
+        "score": 0.8435575914669496
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 0,
+    "z": -2000000,
+    "winner": "minecraft:deep_frozen_ocean",
+    "traits": [
+      "MARINE",
+      "SNOW"
+    ],
+    "temperatureC": -5.767609878483632,
+    "rainfallMm": 1246.100683385747,
+    "evaporationMm": 430.0,
+    "ratio": 2.897908566013365,
+    "rainShadow": 0.0,
+    "elevationBlockY": 12.238232612609863,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_frozen_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": -8192,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.34373283962494,
+    "rainfallMm": 1281.9726611767915,
+    "evaporationMm": 922.1871911132489,
+    "ratio": 1.390143642777358,
+    "rainShadow": 0.08724290323022676,
+    "elevationBlockY": 9.9447021484375,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": 8192,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.340855298800644,
+    "rainfallMm": 1240.5293935145255,
+    "evaporationMm": 922.1353953784117,
+    "ratio": 1.3452790118803066,
+    "rainShadow": 0.04553955210643673,
+    "elevationBlockY": 15.079315185546875,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "8675309",
+    "x": -28672,
+    "z": -12288,
+    "winner": "minecraft:plains",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 19.439665191080696,
+    "rainfallMm": 420.91051529063907,
+    "evaporationMm": 885.9147538456809,
+    "ratio": 0.47511401459734376,
+    "rainShadow": 0.3848346408310495,
+    "elevationBlockY": 113.13597106933594,
+    "water": "LAND",
+    "landform": "OTHER",
+    "winnerScore": 0.9020279477063121,
+    "secondCandidate": "minecraft:savanna",
+    "margin": 0.20650954893202644,
+    "topCandidates": [
+      {
+        "key": "minecraft:plains",
+        "score": 0.9020279477063121
+      },
+      {
+        "key": "minecraft:savanna",
+        "score": 0.6955183987742857
+      },
+      {
+        "key": "minecraft:forest",
+        "score": 0.38987940657228276
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": -4,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.623427855709796,
+    "rainfallMm": 1313.0600657299028,
+    "evaporationMm": 927.2217014027763,
+    "ratio": 1.4161230952030124,
+    "rainShadow": 0.1085096223737159,
+    "elevationBlockY": 9.367642402648926,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 0,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.352552376050895,
+    "rainfallMm": 1447.596857619764,
+    "evaporationMm": 922.3459427689161,
+    "ratio": 1.5694727872646412,
+    "rainShadow": 0.10850435732671883,
+    "elevationBlockY": 9.367328643798828,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 4,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.352552376050895,
+    "rainfallMm": 1447.4000382050478,
+    "evaporationMm": 922.3459427689161,
+    "ratio": 1.5692593972494748,
+    "rainShadow": 0.1082141991538182,
+    "elevationBlockY": 9.367035865783691,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": -4,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.67387969416816,
+    "rainfallMm": 1304.882278354342,
+    "evaporationMm": 928.1298344950269,
+    "ratio": 1.4059264446167674,
+    "rainShadow": 0.11756622418544835,
+    "elevationBlockY": 9.332619667053223,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 0,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.51767138243844,
+    "rainfallMm": 1367.9993462783077,
+    "evaporationMm": 925.318084883892,
+    "ratio": 1.4784098232014593,
+    "rainShadow": 0.11644157490272601,
+    "elevationBlockY": 9.33228874206543,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 4,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.51767138243844,
+    "rainfallMm": 1366.6984293925907,
+    "evaporationMm": 925.318084883892,
+    "ratio": 1.477003910027418,
+    "rainShadow": 0.1150292536903737,
+    "elevationBlockY": 9.331979751586914,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": -4,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.673335814250823,
+    "rainfallMm": 1317.9167701383137,
+    "evaporationMm": 928.1200446565149,
+    "ratio": 1.4199852462254035,
+    "rainShadow": 0.11884108197039758,
+    "elevationBlockY": 9.29761028289795,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 0,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.517127502521102,
+    "rainfallMm": 1380.2836667609988,
+    "evaporationMm": 925.3082950453799,
+    "ratio": 1.4917013866100763,
+    "rainShadow": 0.11612899112138596,
+    "elevationBlockY": 9.297261238098145,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 4,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.517127502521102,
+    "rainfallMm": 1378.637813922191,
+    "evaporationMm": 925.3082950453799,
+    "ratio": 1.4899226790726854,
+    "rainShadow": 0.1142551145190024,
+    "elevationBlockY": 9.29693603515625,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": -8192,
+    "z": -500000,
+    "winner": "minecraft:grove",
+    "traits": [
+      "BOREAL_FOREST",
+      "HIGHLAND",
+      "SNOW"
+    ],
+    "temperatureC": -6.380458045745643,
+    "rainfallMm": 746.8144477621306,
+    "evaporationMm": 504.17233712763766,
+    "ratio": 1.4812681949526814,
+    "rainShadow": 0.49421024044464557,
+    "elevationBlockY": 117.69122314453125,
+    "water": "LAND",
+    "landform": "HILLS",
+    "winnerScore": 0.7756656032375163,
+    "secondCandidate": "minecraft:snowy_taiga",
+    "margin": 0.09720686065499162,
+    "topCandidates": [
+      {
+        "key": "minecraft:grove",
+        "score": 0.7756656032375163
+      },
+      {
+        "key": "minecraft:snowy_taiga",
+        "score": 0.6784587425825247
+      },
+      {
+        "key": "minecraft:windswept_hills",
+        "score": 0.5887574301359358
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": -8192,
+    "z": -150000,
+    "winner": "minecraft:old_growth_pine_taiga",
+    "traits": [
+      "BOREAL_FOREST"
+    ],
+    "temperatureC": 4.668775173542434,
+    "rainfallMm": 871.5418416149301,
+    "evaporationMm": 618.6417999406722,
+    "ratio": 1.4087988262327427,
+    "rainShadow": 0.4025556503195763,
+    "elevationBlockY": 98.64993286132812,
+    "water": "LAND",
+    "landform": "PLAINS",
+    "winnerScore": 0.906439505775154,
+    "secondCandidate": "minecraft:old_growth_spruce_taiga",
+    "margin": 0.05153951727991091,
+    "topCandidates": [
+      {
+        "key": "minecraft:old_growth_pine_taiga",
+        "score": 0.906439505775154
+      },
+      {
+        "key": "minecraft:old_growth_spruce_taiga",
+        "score": 0.8548999884952431
+      },
+      {
+        "key": "minecraft:taiga",
+        "score": 0.7419030394568285
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 8192,
+    "z": 150000,
+    "winner": "minecraft:old_growth_spruce_taiga",
+    "traits": [
+      "BOREAL_FOREST"
+    ],
+    "temperatureC": 4.988627844368417,
+    "rainfallMm": 1124.3242915431595,
+    "evaporationMm": 615.3852473288058,
+    "ratio": 1.827025097568553,
+    "rainShadow": 0.24201500496033596,
+    "elevationBlockY": 81.20268249511719,
+    "water": "LAND",
+    "landform": "HILLS",
+    "winnerScore": 0.9016342708326801,
+    "secondCandidate": "minecraft:old_growth_pine_taiga",
+    "margin": 0.0013606183309854414,
+    "topCandidates": [
+      {
+        "key": "minecraft:old_growth_spruce_taiga",
+        "score": 0.9016342708326801
+      },
+      {
+        "key": "minecraft:old_growth_pine_taiga",
+        "score": 0.9002736525016947
+      },
+      {
+        "key": "minecraft:windswept_forest",
+        "score": 0.8987811005473773
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 8192,
+    "z": 60000,
+    "winner": "minecraft:windswept_hills",
+    "traits": [
+      "GRASSLAND",
+      "HIGHLAND"
+    ],
+    "temperatureC": 11.46115774902424,
+    "rainfallMm": 723.9614793955091,
+    "evaporationMm": 781.1569814200288,
+    "ratio": 0.9267810396822586,
+    "rainShadow": 0.5187044876986766,
+    "elevationBlockY": 103.4585952758789,
+    "water": "LAND",
+    "landform": "HILLS",
+    "winnerScore": 0.9053045968569938,
+    "secondCandidate": "minecraft:plains",
+    "margin": 0.02183375302136714,
+    "topCandidates": [
+      {
+        "key": "minecraft:windswept_hills",
+        "score": 0.9053045968569938
+      },
+      {
+        "key": "minecraft:plains",
+        "score": 0.8834708438356267
+      },
+      {
+        "key": "minecraft:windswept_gravelly_hills",
+        "score": 0.8374043744683439
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 0,
+    "z": -2000000,
+    "winner": "minecraft:deep_frozen_ocean",
+    "traits": [
+      "MARINE",
+      "SNOW"
+    ],
+    "temperatureC": -6.073572558800761,
+    "rainfallMm": 1159.1428569445122,
+    "evaporationMm": 430.0,
+    "ratio": 2.6956810626616563,
+    "rainShadow": 0.0,
+    "elevationBlockY": 6.820616722106934,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_frozen_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": -8192,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.51385408807932,
+    "rainfallMm": 1390.5380958918383,
+    "evaporationMm": 925.2493735854277,
+    "ratio": 1.502879262164073,
+    "rainShadow": 0.054252158020190774,
+    "elevationBlockY": 9.531410217285156,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": 8192,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.672371373943157,
+    "rainfallMm": 1344.843287294137,
+    "evaporationMm": 928.1026847309768,
+    "ratio": 1.449024239902892,
+    "rainShadow": 0.06676147976235786,
+    "elevationBlockY": 9.617938041687012,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "4303642605",
+    "x": -28672,
+    "z": -12288,
+    "winner": "minecraft:lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 21.2016295827511,
+    "rainfallMm": 530.9173718378074,
+    "evaporationMm": 901.6293324895198,
+    "ratio": 0.5888421690672743,
+    "rainShadow": 0.3099983542043431,
+    "elevationBlockY": 61.15385055541992,
+    "water": "SHALLOW_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": -4,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.56316472923819,
+    "rainfallMm": 1287.390815282607,
+    "evaporationMm": 926.1369651262874,
+    "ratio": 1.3900652535848834,
+    "rainShadow": 0.041386201580428175,
+    "elevationBlockY": 13.120322227478027,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": 0,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.421192944420323,
+    "rainfallMm": 1329.4437446744578,
+    "evaporationMm": 923.5814729995658,
+    "ratio": 1.4394439294637982,
+    "rainShadow": 0.039597352718879826,
+    "elevationBlockY": 13.112011909484863,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": 4,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.421192944420323,
+    "rainfallMm": 1328.401212644612,
+    "evaporationMm": 923.5814729995658,
+    "ratio": 1.4383151367580937,
+    "rainShadow": 0.03858654047937264,
+    "elevationBlockY": 13.10360050201416,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": -4,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.345393453412914,
+    "rainfallMm": 1316.7285060502786,
+    "evaporationMm": 922.2170821614325,
+    "ratio": 1.42778585597679,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.09139633178711,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": 0,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.375513859371953,
+    "rainfallMm": 1209.9258152885477,
+    "evaporationMm": 922.7592494686951,
+    "ratio": 1.3112042127837753,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.083163261413574,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": 4,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.375513859371953,
+    "rainfallMm": 1209.9258152885477,
+    "evaporationMm": 922.7592494686951,
+    "ratio": 1.3112042127837753,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.074830055236816,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": -4,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.344849573495576,
+    "rainfallMm": 1316.7285060502786,
+    "evaporationMm": 922.2072923229204,
+    "ratio": 1.4278010128651342,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.062409400939941,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": 0,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.374969979454615,
+    "rainfallMm": 1209.9258152885477,
+    "evaporationMm": 922.7494596301831,
+    "ratio": 1.3112181239027312,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.054253578186035,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": 4,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.374969979454615,
+    "rainfallMm": 1209.9258152885477,
+    "evaporationMm": 922.7494596301831,
+    "ratio": 1.3112181239027312,
+    "rainShadow": 0.0,
+    "elevationBlockY": 13.045998573303223,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "67890",
+    "x": -24576,
+    "z": -8192,
+    "winner": "minecraft:savanna",
+    "traits": [
+      "GRASSLAND"
+    ],
+    "temperatureC": 22.533635045623956,
+    "rainfallMm": 693.5634447182772,
+    "evaporationMm": 940.023025323874,
+    "ratio": 0.7378153790215064,
+    "rainShadow": 0.429056584780152,
+    "elevationBlockY": 111.04176330566406,
+    "water": "LAND",
+    "landform": "PLATEAU",
+    "winnerScore": 0.9172365148011252,
+    "secondCandidate": "minecraft:plains",
+    "margin": 0.006594727638017717,
+    "topCandidates": [
+      {
+        "key": "minecraft:savanna",
+        "score": 0.9172365148011252
+      },
+      {
+        "key": "minecraft:plains",
+        "score": 0.9106417871631075
+      },
+      {
+        "key": "minecraft:forest",
+        "score": 0.6844915022661251
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": -4,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.327671599402034,
+    "rainfallMm": 1282.7794010850744,
+    "evaporationMm": 921.8980887892367,
+    "ratio": 1.3914546701900605,
+    "rainShadow": 0.12014910240917576,
+    "elevationBlockY": 10.488991737365723,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": 0,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.52304474908821,
+    "rainfallMm": 1301.5285070403047,
+    "evaporationMm": 925.4148054835878,
+    "ratio": 1.4064271495636747,
+    "rainShadow": 0.12150608317265257,
+    "elevationBlockY": 10.443480491638184,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": 4,
+    "z": -4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.52304474908821,
+    "rainfallMm": 1300.505217206384,
+    "evaporationMm": 925.4148054835878,
+    "ratio": 1.4053213861504925,
+    "rainShadow": 0.12041297923013428,
+    "elevationBlockY": 10.397953987121582,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": -4,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.436480751261232,
+    "rainfallMm": 1325.5568952016413,
+    "evaporationMm": 923.8566535227021,
+    "ratio": 1.4348079760504404,
+    "rainShadow": 0.156554624316236,
+    "elevationBlockY": 10.488876342773438,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": 0,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.318096277425028,
+    "rainfallMm": 1484.565031425595,
+    "evaporationMm": 921.7257329936505,
+    "ratio": 1.610636416327352,
+    "rainShadow": 0.15257873309556735,
+    "elevationBlockY": 10.443375587463379,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": 4,
+    "z": 0,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.318096277425028,
+    "rainfallMm": 1483.1886923905756,
+    "evaporationMm": 921.7257329936505,
+    "ratio": 1.6091431966137728,
+    "rainShadow": 0.1530824050203981,
+    "elevationBlockY": 10.397860527038574,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": -4,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.435936871343895,
+    "rainfallMm": 1326.5190596354512,
+    "evaporationMm": 923.8468636841901,
+    "ratio": 1.4358646565573139,
+    "rainShadow": 0.15761901604832862,
+    "elevationBlockY": 10.488752365112305,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": 0,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.31755239750769,
+    "rainfallMm": 1486.0356830672558,
+    "evaporationMm": 921.7159431551383,
+    "ratio": 1.6122490818379325,
+    "rainShadow": 0.15400783245884977,
+    "elevationBlockY": 10.443263053894043,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": 4,
+    "z": 4,
+    "winner": "minecraft:deep_lukewarm_ocean",
+    "traits": [
+      "MARINE"
+    ],
+    "temperatureC": 22.31755239750769,
+    "rainfallMm": 1483.0671488363137,
+    "evaporationMm": 921.7159431551383,
+    "ratio": 1.609028421228786,
+    "rainShadow": 0.15115586801926778,
+    "elevationBlockY": 10.397758483886719,
+    "water": "DEEP_OCEAN",
+    "landform": "OCEAN",
+    "winnerScore": 1.0,
+    "secondCandidate": null,
+    "margin": 1.0,
+    "topCandidates": [
+      {
+        "key": "minecraft:deep_lukewarm_ocean",
+        "score": 1.0
+      }
+    ]
+  },
+  {
+    "seed": "20260908",
+    "x": -8192,
+    "z": -8192,
+    "winner": "minecraft:forest",
+    "traits": [
+      "FOREST"
+    ],
+    "temperatureC": 22.746787191469036,
+    "rainfallMm": 876.3641498091621,
+    "evaporationMm": 941.5831416698496,
+    "ratio": 0.9307347498331109,
+    "rainShadow": 0.29992246024149316,
+    "elevationBlockY": 111.04175567626953,
+    "water": "LAND",
+    "landform": "HILLS",
+    "winnerScore": 0.8381187572274459,
+    "secondCandidate": "minecraft:plains",
+    "margin": 0.022330785449997892,
+    "topCandidates": [
+      {
+        "key": "minecraft:forest",
+        "score": 0.8381187572274459
+      },
+      {
+        "key": "minecraft:plains",
+        "score": 0.815787971777448
+      },
+      {
+        "key": "minecraft:savanna",
+        "score": 0.7711057796360367
+      }
+    ]
+  }
+]
